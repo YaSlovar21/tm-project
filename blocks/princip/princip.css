@@ -1,0 +1,41 @@
+.princip {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.princip__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+.princip__heading {
+    width: 636px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.princip__image {
+    transform: skewY(15deg);
+    margin-right: 70px;
+}
+
+
+.princip__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E7E7E7;
+    text-align: center;
+}

@@ -1,0 +1,182 @@
+.info {
+    height: 75vh;
+    max-width: 91%;
+    margin: 20px auto 80px;
+    display: flex;
+}
+
+/*Левый блок*/
+.info__main {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.info__main::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.info__sale-link {
+    text-decoration: none;
+    color: #FF5E3A;
+    line-height: 51px;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.info__sale-link_custom::after {
+    content: '\2192';
+}
+
+.info__sale-link_active::after {
+    content: '  \2717';
+    font-weight: 600;
+    color: rgba(242, 242, 242, .5);
+}
+
+.info__sale-link:hover {
+    transform: translateY(-3px);
+}
+
+
+.info__heading {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.info__main-img {
+    max-width: 80%;
+    max-height: 55vh;
+}
+
+
+/* Ниже стили статьи в блоке  info__container*/
+.info__container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 300px);
+    height: 100%;
+
+    line-height: 1.4;
+    color: rgb(226, 226, 226);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*блок картинка + текст*/
+.info__img-and-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info__paragraph-img {
+    margin: 0;
+}
+.info__image {
+    margin: 5px 20px 10px 10px;
+    width: 30%;
+}
+
+
+.info__sale {
+    line-height: 1.8;
+}
+
+.info__span-accent {
+    color: #FF5E3A;
+    font-weight: bold;
+}
+.info__span-italic {
+    font-style: italic;
+}
+
+.info__quote {
+    padding-left: 30px;
+    border-left: 2px solid #FF5E3A;
+}
+
+.info__link-in-text {
+    text-decoration: underline;
+    color: rgba(242, 242, 242);
+    opacity: 0.7;
+    transition: all .4s linear;
+}
+
+.info__link-in-text:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+/*СПИСОК*/
+.info__list-heading {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.info__list {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.info__list-item {
+    position: relative;
+}
+.info__list-item::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: #FF5E3A;
+    top: calc(50% - 1px);
+    left: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+/*Стили swiper*/
+.info__container .swiper-slide {
+    font-size: 18px;
+    height: auto;  /*Без этого пропадает скролл!!!!!*/
+    
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 30px 30px 20px;
+  }
+
+.info__container .swiper-scrollbar-drag {
+    background: #FF5E3A;
+    
+}
+.info__container .swiper-scrollbar-drag:hover {
+    cursor: pointer;
+}

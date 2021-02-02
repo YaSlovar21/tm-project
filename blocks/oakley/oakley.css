@@ -1,0 +1,25 @@
+.oakley {
+    position: relative;
+  }
+
+.oakley_gradient::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 10%;
+      background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686591 71.01%,  #74686591 99.5%);
+      /*background-color: rgba(0, 0, 0, 0.527);*/
+      top:0;
+      left: 0;
+}
+    
+.oakley_gradient::before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: calc(10% + 20px);
+      background: linear-gradient(90.05deg,  #74686591 0.03%, #74686591 71.01%, rgba(196, 196, 196, 0) 99.51%);
+      /*background-color: rgba(0, 0, 0, 0.527);*/
+      top:0;
+      right: 0;
+    }

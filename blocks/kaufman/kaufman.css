@@ -1,0 +1,40 @@
+.kaufman {
+    position: relative;
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    /*background: url(../../images/sots_kauf.svg) no-repeat bottom right;*/
+ 
+    
+  }
+  
+
+  .kaufman_bg_fixed {
+    background: url(../../images/bg_kaufman.png) no-repeat right;
+    background-attachment: fixed;
+  }
+
+
+  .kaufman_gradient::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 10%;
+    background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686591 71.01%,  #74686591 99.5%);
+    top:0;
+    left: 0;
+  }
+  
+  .kaufman_gradient::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 10%;
+    background: linear-gradient(90.05deg,  #74686591 0.03%, #74686591 71.01%, rgba(196, 196, 196, 0) 99.51%);
+    top:0;
+    right: 0;
+  }
+
+  .kaufman_1vh {
+    height: 90vh;
+  }

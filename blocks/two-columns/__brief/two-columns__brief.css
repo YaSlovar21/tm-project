@@ -1,0 +1,22 @@
+.two-columns__brief {
+    width: 175px;
+    /*color: #2F80ED;*/
+    color: #FF5E3A;
+    
+    /*модификаторы*/
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+.two-columns__brief_uppercase {
+  text-transform: uppercase;
+}
+
+  @media screen and (max-width: 769px) {
+    .two-columns__brief  {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
