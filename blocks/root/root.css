@@ -22,6 +22,12 @@ html, body, main {
     height: 100%;
 }
 
+
+input {
+    font-family: inherit; 
+  
+   }
+
 :root {
     --swiper-theme-color: #e7451c;
 }

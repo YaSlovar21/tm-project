@@ -92,6 +92,12 @@
 @import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
 @import url(../blocks/feynman/__title/feynman__title.css);
 
+@import url(../blocks/localprod/localprod.css);
+@import url(../blocks/localprod/__link/localprod__link.css);
+@import url(../blocks/localprod/__subtitle/localprod__subtitle.css);
+@import url(../blocks/localprod/__title/localprod__title.css);
+
+
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);

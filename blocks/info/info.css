@@ -97,8 +97,11 @@
 
 
 .info__sale {
-    line-height: 1.8;
+    line-height: 1.6;
 }
+
+
+/*АКЦЕНТЫ*/
 
 .info__span-accent {
     color: #FF5E3A;
@@ -107,10 +110,47 @@
 .info__span-italic {
     font-style: italic;
 }
+.info__span-bsz-accent {
+    color: #2F80ED;
+    position: relative;
+    padding-left: 30px;
+}
+.info__span-bsz-accent::before {
+    position: absolute;
+    left: 0px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/logo_BSZ_svg.svg');
+    background-position: center;
+    background-size: contain;
+}
 
+.info__span-termoblok-accent {
+    color: #a3a3a3;
+    position: relative;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.info__span-termoblok-accent::before {
+    position: absolute;
+    left: 0px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/mini_tm_logo_w-o-text.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*ЦИТАТА*/
 .info__quote {
     padding-left: 30px;
     border-left: 2px solid #FF5E3A;
+    line-height: 1.2;
 }
 
 .info__link-in-text {
@@ -157,9 +197,13 @@
 
 
 
+/*СТАНДАРТНЫЙ ПАРАГРАФ*/
+.info__paragraph {
+    line-height: 1.6;
+}
 
 
-
+/*.*/
 
 
 
