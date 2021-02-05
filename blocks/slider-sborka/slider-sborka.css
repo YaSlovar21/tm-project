@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
 }
 
 @media screen and (max-width:768px) {
@@ -49,12 +50,40 @@
     overflow: hidden;
 }
 
+
+
+
 @media screen and (max-width:768px) {
     .slider-text-sborka  {
-        width: 80%;
-        margin: 0 auto;
+        /*width: 80%;
+        margin: 0 auto;*/
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2f2f2f8f;
+        z-index: 4;
+        
     }
+
+    .slider-text-sborka .swiper-wrapper {
+        align-items: center;
+    }
+    .slider-text-sborka__feat {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+    }
+
 }
+
 
 .slider-text-sborka .swiper-pagination-bullet {
     width: 20px;
