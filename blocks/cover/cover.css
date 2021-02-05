@@ -44,12 +44,15 @@
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:420px) {
     .cover {
-    margin-top: 64px;
+        margin-top: 64px;
     }
     .cover::after {
-        top: 25px;
+        top: 20%;
+        left: 20px;
+        width: 50px;
+        height: 50px;
     }
 }
 
