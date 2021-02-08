@@ -522,16 +522,27 @@
         <li class="map__list-item" data-html="">Челябинск</li>
         <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
         <li class="map__list-item" data-html="">Якутск</li>
+        <div class="map__popup">
+          <span class="map__popup-close"><--</span>
+          <div class="map__popup-container">
+            <b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>
+          </div>
+          
+        </div>
       </ul>
       <div class="map__partner"></div>
+      
     </section>
 
     <script>
 
       partners = document.querySelectorAll('.map__list-item');
       dinamic_info = document.querySelector('.map__partner');
+      dinamic_info_popup = document.querySelector('.map__popup');
+      dinamic_info_popup_container = document.querySelector('.map__popup-container');
 
-      for (i=0; i<partners.length; i++) {
+      popup_close_button = document.querySelector(".map__popup-close");
+      /*for (i=0; i<partners.length; i++) {
         partners[i].addEventListener('click', function (element) {
           info = this.getAttribute('data-html');
           //.innerHTML =  +' '+this.top + ' '+ this.left;
@@ -541,11 +552,18 @@
           dinamic_info.style.setProperty('transform-origin', 'center');
           dinamic_info.innerHTML= '<div class="animate__animated animate__fadeInUp">'+info+'</div>';
           var toscroll = document.querySelector(".map__heading");
-
-          /*element.scrollIntoView();
-          element.scrollIntoView(false);
-          element.scrollIntoView({block: "end"});*/
           toscroll.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        });*/
+
+        for (i=0; i<partners.length; i++) {
+        partners[i].addEventListener('click', function (element) {
+          info = this.getAttribute('data-html');
+          //.innerHTML =  +' '+this.top + ' '+ this.left;
+          dinamic_info_popup_container.innerHTML= '<div class="animate__animated animate__fadeInUp">'+info+'</div>';
+          dinamic_info_popup.classList.add('map__popup_opened');
+        });
+        popup_close_button.addEventListener('click', function (element) {
+          dinamic_info_popup.classList.remove('map__popup_opened');
         });
       }
       

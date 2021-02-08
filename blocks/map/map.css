@@ -3,6 +3,8 @@
     
 }
 
+
+
 .map__heading {
     margin: 0 auto;
     width: 650px;
@@ -11,7 +13,16 @@
     font-size: 36px;
 }
 
+@media screen and (max-width: 768px) {
+    .map__heading {
+    font-size: 18px;
+    width: 100%;
+    }
+}
+
 .map__list {
+    position: relative;
+
     background-image: url(../../images/map_up_footer.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +31,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 400px;
 
     justify-content: center;
     align-items: center;
@@ -28,17 +39,75 @@
     margin: 52px auto 30px;
     padding: 0;
     
-    width: 70vw;
+    width: 80%;
 }
 
+
+.map__popup {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 5px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -webkit-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -moz-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -ms-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -o-transition: opacity 0.7s, visibility 0s linear 0.3s;
+}
+
+
+@media screen and (max-width:768px) {
+    .map__popup {
+        position: fixed;
+    }
+}
+
+.map__popup_opened {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 1250px) {
+    .map__list {
+        width: 90%;
+        height: 500px;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .map__list {
-        width: 90vw;
-        height: 70vh;
+        width: 730px;
+        height: 620px;
     }
-
 }
+
+@media screen and (max-width: 768px) {
+    .map__list {
+        width: 90%;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .map__list {
+        width: 95%;
+        height: 650px;
+    }
+}
+
+
 .map__list-item {
     padding: 10px;
     margin-bottom: 10px;
@@ -49,6 +118,15 @@
 
     width: 192px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .map__list-item {
+        width: 130px;
+        font-size: 14px;
+        padding: 5px;
+        
+    }
 }
 
 .map__partner {
