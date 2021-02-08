@@ -30,7 +30,12 @@
 @import url(../blocks/burton/__subtitle/burton__subtitle.css);
 @import url(../blocks/burton/__title/burton__title.css);
 
-
+@import url(../blocks/flexburton/flexburton.css);
+@import url(../blocks/flexburton/__link/flexburton__link.css);
+@import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);
+@import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__title/flexburton__title.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);

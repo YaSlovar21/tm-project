@@ -4,7 +4,6 @@
     font-size: 76px;
     font-weight: bold;
     margin-left: 64px;
-    width: 730px;
     z-index: 1;
     color: #c4c4c4;
   }
@@ -12,9 +11,7 @@
 
   @media screen and (max-width: 1023px) {
     .flexburton__title {
-      /*top: 45%; */
-      /* top: 40%; */
-      width: 50%;
+ 
       font-size: 48px;
       margin-left: 10px;
     }
@@ -22,15 +19,13 @@
   @media screen and (max-width: 768px) {
     .flexburton__title {
       font-size: 36px;
-      width: 50%;
       margin-left: 10px;
     }
   }
 
   @media screen and (max-width: 550px) {
     .flexburton__title {
-      font-size: 28px;
-      width: 50%;
+      font-size: 18px;
       margin-left: 10px;
     }
   }

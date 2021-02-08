@@ -13,6 +13,7 @@
     align-items:flex-start;
     justify-content: space-between;*/
     justify-content: space-between;
+    
     overflow: hidden;
 
     /*background-color: #f2f2f250;*/
@@ -25,22 +26,25 @@
     align-items:flex-start;
     justify-content: space-between;
 
-    flex: 5 1 750px;
+    flex: 5 1 650px;
   }
 
   .flexburton__main-image {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+   /* object-fit: contain;
+    object-position: 0 0;*/
   }
   
   .flexburton__right-side {
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    flex: 1 1 300px;
-
+    /*display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    */
+    align-self: center;
+    flex: 1 1 450px;
+    max-height: 90%;
   }
 
   
@@ -84,7 +88,7 @@
 
   @media screen and (max-width: 550px) {
     .flexburton__breadcrumbs {
-      
+      width: 40%;
     }
   }
 
@@ -108,4 +112,13 @@
   right: -150px;
   z-index: -1;
   transform: scale(0.7);
+}
+
+.flexburton__svg {
+  position: absolute;
+  bottom: 5px;
+  left:-10%;
+  height: 110%;
+  width: auto;
+  z-index: -1;
 }

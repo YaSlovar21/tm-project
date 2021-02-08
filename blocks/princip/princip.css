@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 700px;
+    flex: 1 0 70%;
 }
 
 .princip__heading {
@@ -27,9 +28,22 @@
     color: #C0C0C0;
 }
 
+@media screen and (max-width:768px) {
+    .princip__heading {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
 .princip__image {
     transform: skewY(15deg);
     margin-right: 70px;
+
+    flex: 0 1 280px;
+}
+.princip__image-svg {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -38,4 +52,10 @@
     line-height: 1.5;
     color: #E7E7E7;
     text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .princip__text {
+        font-size: 16px;
+    }
 }
