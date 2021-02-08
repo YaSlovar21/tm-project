@@ -120,7 +120,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
     .map__list-item {
         width: 130px;
         font-size: 14px;
