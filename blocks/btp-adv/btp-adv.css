@@ -9,14 +9,25 @@
 .btp-adv__link {
     text-decoration: none;
     color: #a1a1a1;
-    line-height: 51px;
+    line-height: 1.4;
     font-size: 36px;
     font-weight: normal;
 }
 
+@media screen and (max-width:1024px) {
+    .btp-adv__link {
+        font-size:  24px;
+    }
+}
+
 .btp-adv__feats {
     position: relative;
-    
+    flex: 0 1 840px;
+}
+
+.btp-adv__image {
+    max-width: 100%;
+    height: auto;
 }
 
 .btp-adv__plus {
