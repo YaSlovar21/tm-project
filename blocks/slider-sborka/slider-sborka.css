@@ -61,11 +61,13 @@
         top: 0;
         left: 0;
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         
         z-index: 4;
+        background: radial-gradient(50% 50% at 50% 50%, #f2f2f267 0%, rgba(196, 196, 196, 0) 100%);
         
     }
 
@@ -81,6 +83,18 @@
     }
 
 }
+
+.slider-text-sborka__head {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slider-text-sborka__text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
 
 
 .slider-text-sborka .swiper-pagination-bullet {
