@@ -2,7 +2,7 @@
 
     position: relative;
     height: 65vh;
-    min-height: 450px;
+    
     max-height: 756px;
     /*background-color: #F2F2F2;*/
     /* выше установили ограничения для секции */
@@ -29,35 +29,43 @@
     flex: 5 1 650px;
   }
 
-  .flexburton__main-image {
-    max-width: 100%;
-    max-height: 100%;
-   /* object-fit: contain;
-    object-position: 0 0;*/
-  }
+
   
   .flexburton__right-side {
     position: relative;
-    /*display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    */
-    align-self: center;
     flex: 1 1 450px;
-    max-height: 90%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 
-  
+
+.flexburton__main-image {
+    max-width: 100%;
+    max-height: 88%;
+    
+    /*margin: auto 0;*/
+
+   /* object-fit: contain;
+    object-position: 0 0;*/
+  }
 
   @media screen and (max-width: 1025px) {
     .flexburton {
-      height: 500px;
+      height: 400px;
     }
   }
 
   @media screen and (max-width: 767px) {
     .flexburton {
-      height: 250px;
+      height: 350px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .flexburton {
+      height: 280px;
     }
   }
 
@@ -117,8 +125,9 @@
 .flexburton__svg {
   position: absolute;
   bottom: 5px;
-  left:-10%;
-  height: 110%;
+  bottom: 5%;
+  left:5%;
+  height: 80%;
   width: auto;
   z-index: -1;
 }
