@@ -1,0 +1,111 @@
+.flexburton {
+
+    position: relative;
+    height: 65vh;
+    min-height: 450px;
+    max-height: 756px;
+    /*background-color: #F2F2F2;*/
+    /* выше установили ограничения для секции */
+    display: flex;
+
+    /*
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;*/
+    justify-content: space-between;
+    overflow: hidden;
+
+    /*background-color: #f2f2f250;*/
+  }
+
+  .flexburton__left-side {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+
+    flex: 5 1 750px;
+  }
+
+  .flexburton__main-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .flexburton__right-side {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    flex: 1 1 300px;
+
+  }
+
+  
+
+  @media screen and (max-width: 1025px) {
+    .flexburton {
+      height: 500px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .flexburton {
+      height: 250px;
+    }
+  }
+
+  .flexburton__breadcrumbs {
+    margin-left: 64px;
+    margin-top: 20px;
+    padding: 15px 0;
+    position: relative;
+    font-size: 18px;
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    .flexburton__breadcrumbs{
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .flexburton__breadcrumbs{
+      font-size: 14px;
+      
+    }
+  }
+  
+
+  @media screen and (max-width: 550px) {
+    .flexburton__breadcrumbs {
+      
+    }
+  }
+
+/*
+.flexburton__breadcrumbs::after {
+    top:0;
+    left: -100%;
+    right: -5%;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 210%;
+    border-radius: 7px;
+    background-color: rgba(242, 242, 242, 0.123);
+}
+
+*/
+.flexburton__btp {
+  position: absolute;
+  bottom: 150px;
+  right: -150px;
+  z-index: -1;
+  transform: scale(0.7);
+}
