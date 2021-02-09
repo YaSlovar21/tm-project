@@ -45,6 +45,12 @@
     }
 }
 
+@media screen and (max-width:400px) {
+    .plates__svg {
+        height: 200px;
+    }
+}
+
 .plates__description {
     box-shadow: 3px;
     /*background-color: #2f2f2f;*/
