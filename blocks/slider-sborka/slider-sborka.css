@@ -5,6 +5,14 @@
     opacity: 1;
 }
 
+@media screen and (max-width:450px) {
+    .slider-sborka__svg {
+        width: 90%;
+        top: 10%;
+        left: 5%;
+    }
+}
+
 .circle_wow {
     transition: all .5s linear;
 }
@@ -12,6 +20,11 @@
     color: #FF5E3A;
 }
 
+@media screen and (max-width:768px) {
+    .slider-sborka_pagination {
+        display: none;
+    }
+}
 
 .tech-interactive {
     display: flex;
@@ -31,7 +44,16 @@
     width: 600px;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
+
+@media screen and (max-width:450px) {
+    .slider-sborka {
+        max-width: 95%;
+    }
+}
+
+
 
 .slider-sborka__img {
     max-width: 40%;

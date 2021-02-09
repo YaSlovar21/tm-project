@@ -23,3 +23,10 @@
       top:0;
       right: 0;
     }
+
+
+@media screen and (max-width:768px) {
+  .oakley_gradient::before {
+    width: calc(10%);
+  }
+}
