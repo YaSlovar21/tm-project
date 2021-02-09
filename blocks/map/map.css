@@ -125,6 +125,7 @@
 
 
 .map__list-item {
+    box-sizing: border-box;
     padding: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -134,10 +135,11 @@
 
     width: 192px;
     cursor: pointer;
+    transition: opacity .2s ease-in;
 }
 
 .map__list-item_active {
-    font-weight: 600;
+    background-color: #f2f2f217;
     color: #e7451c;
     border-left: 3px solid #e7451c;
 }
