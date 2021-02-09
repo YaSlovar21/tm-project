@@ -51,6 +51,12 @@
   animation: fadeInOutMy1 1.1s linear;
 }
 
+@media screen and (max-width:768px) {
+  .techniques__after_before {
+    width: 9%;
+  }
+}
+
 @keyframes fadeInOutMy1 {
   0% {
     transform: skewX(-60deg);
