@@ -136,6 +136,12 @@
     cursor: pointer;
 }
 
+.map__list-item_active {
+    font-weight: 600;
+    color: #e7451c;
+    border-left: 3px solid #e7451c;
+}
+
 @media screen and (max-width: 450px) {
     .map__list-item {
         width: 130px;

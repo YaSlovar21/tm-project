@@ -1,7 +1,7 @@
     
 var path = document.querySelector('.circle_wow');
 var len_dash = path.getTotalLength();
-console.log(len_dash);
+//console.log(len_dash);
 
 
 var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
@@ -44,10 +44,10 @@ var slider_sborka = new Swiper('.slider-sborka', {
     el: '.slider-sborka_pagination',
     renderCustom: function (slider_sborka, current, total) {
         let a = current + ' of ' + total;
-        console.log(a);
+        //console.log(a);
         dash_current = (1- current/total)*len_dash;
-        console.log(dash_current);
-        console.log()
+        //console.log(dash_current);
+        //console.log()
         anime({
             targets: '.circle_wow',
             strokeDashoffset: [anime.setDashoffset, dash_current],
@@ -91,13 +91,13 @@ function handleAnimationEnd(event) {
 
 slider_sborka.on('slideChange', function () {
     //var ggg = $('.content-slider .content-slide').eq(swiper.activeIndex);
-    console.log('slide changed');
+   //  console.log('slide changed');
     let arr = slider_sborka.slides[slider_sborka.activeIndex].querySelectorAll('.wow1');
-    console.log(arr);
-    console.log(arr.length);
+    // console.log(arr);
+   // console.log(arr.length);
     for (i=0; i<arr.length; i++) {
         animation_class = arr[i].getAttribute("data-class-animaton");
-        console.log(animation_class);
+    //    console.log(animation_class);
         duration_custom = arr[i].getAttribute("data-animaton-duration");
         arr[i].style.setProperty('--animate-duration', duration_custom);
         arr[i].classList.add("animate__animated", animation_class);

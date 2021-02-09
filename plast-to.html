@@ -540,7 +540,7 @@
     </section>
 
     <script>
-
+      
       partners = document.querySelectorAll('.map__list-item');
       dinamic_info = document.querySelector('.map__partner');
       dinamic_info_popup = document.querySelector('.map__popup');
@@ -566,11 +566,18 @@
           //.innerHTML =  +' '+this.top + ' '+ this.left;
           dinamic_info_popup_container.innerHTML= '<div class="animate__animated animate__fadeInUp">'+info+'</div>';
           dinamic_info_popup.classList.add('map__popup_opened');
+          this.classList.add('map__list-item_active');
         });
+        }
+
+      
+
         popup_close_button.addEventListener('click', function (element) {
           dinamic_info_popup.classList.remove('map__popup_opened');
+          map_active = document.querySelector('.map__list-item_active')
+          map_active.classList.remove('map__list-item_active');
         });
-      }
+      
       
     </script>
     <section class="up-footer">
