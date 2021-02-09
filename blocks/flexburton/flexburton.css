@@ -1,54 +1,11 @@
 .flexburton {
-
     position: relative;
     height: 65vh;
-    
     max-height: 756px;
-    /*background-color: #F2F2F2;*/
-    /* выше установили ограничения для секции */
-    display: flex;
 
-    /*
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: space-between;*/
+    display: flex;
     justify-content: space-between;
-    
     overflow: hidden;
-
-    /*background-color: #f2f2f250;*/
-  }
-
-  .flexburton__left-side {
-    
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: space-between;
-
-    flex: 5 1 650px;
-  }
-
-
-  
-  .flexburton__right-side {
-    position: relative;
-    flex: 1 1 450px;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-
-.flexburton__main-image {
-    max-width: 100%;
-    max-height: 88%;
-    
-    /*margin: auto 0;*/
-
-   /* object-fit: contain;
-    object-position: 0 0;*/
   }
 
   @media screen and (max-width: 1025px) {
@@ -69,6 +26,36 @@
     }
   }
 
+
+  .flexburton__left-side {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+
+    flex: 5 1 650px;
+  }
+  
+  .flexburton__right-side {
+    position: relative;
+    flex: 1 1 450px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+.flexburton__main-image {
+    max-width: 100%;
+    max-height: 88%;
+    object-fit: contain;
+
+
+    /*margin: auto 0;*/
+  }
+
+  
   .flexburton__breadcrumbs {
     margin-left: 64px;
     margin-top: 20px;
@@ -114,13 +101,6 @@
 }
 
 */
-.flexburton__btp {
-  position: absolute;
-  bottom: 150px;
-  right: -150px;
-  z-index: -1;
-  transform: scale(0.7);
-}
 
 .flexburton__svg {
   position: absolute;

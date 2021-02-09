@@ -51,7 +51,7 @@
     transition: transform 500ms, -webkit-transform 500ms;
     background-color: #2f2f2f;
     transform: translateX(110%);
-    transition-delay: 400ms;
+    transition-delay: 0ms;
     z-index: 4;
   }
 
@@ -59,9 +59,6 @@
     transform: translateX(0%);
   }
 }
-
-
-
 
 .nav__menu-links {
     display: flex;
