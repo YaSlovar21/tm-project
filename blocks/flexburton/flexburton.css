@@ -62,13 +62,14 @@
     padding: 15px 0;
     position: relative;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .flexburton__breadcrumbs-link {
     text-decoration: underline;
     color: #c4c4c4;
-    line-height: 1.1;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 
   .flexburton__breadcrumbs-link::after {

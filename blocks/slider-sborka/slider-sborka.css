@@ -47,9 +47,10 @@
     overflow: hidden;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:600px) {
     .slider-sborka {
         max-width: 95%;
+        height: 400px;
     }
 }
 

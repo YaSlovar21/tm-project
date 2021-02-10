@@ -9,3 +9,9 @@
       margin-top: 50px;
     }
   }
+
+  @media screen and (max-width:450px) {
+    .description {
+      margin-top: 0px;
+    }
+  }
