@@ -218,9 +218,22 @@
     </div>
   </div>
 
-  <div class="project-description-section">
-    
+  <div class="projects__popup">
+    <div class="projects__popup-container">
+      <div class="projects__romb">
+        <img class="projects__romb-image" src="images/3-to-small-to-big.jpg">
+        </div>
+      <div class="projects__romb">
+        <img class="projects__romb-image" src="images/3-to-small-to-big.jpg">
+      </div>
+      <div class="projects__romb">
+        <img class="projects__romb-image" src="images/3-to-small-to-big.jpg">
+      </div>
+
+      <span class="projects__popup-close-button">&cross;</span>
+    </div>
   </div>
+
 </section>
 
 <section class="types">
@@ -535,7 +548,6 @@
     </section>
 
     <script>
-      
       partners = document.querySelectorAll('.map__list-item');
       dinamic_info = document.querySelector('.map__partner');
       dinamic_info_popup = document.querySelector('.map__popup');
@@ -572,13 +584,81 @@
         });
     </script>
 
+    <script>
+      projects= document.querySelectorAll('.projects__item');
+      projects_popup = document.querySelector('.projects__popup');
+      projects_close_button = document.querySelector(".projects__popup-close-button");
+
+      for (i=0; i<projects.length; i++) {
+        projects[i].addEventListener('click', function (element) {
+          //info = this.getAttribute('data-html');
+          //.innerHTML =  +' '+this.top + ' '+ this.left;
+          //dinamic_info_popup_container.innerHTML= '<div class="animate__animated animate__fadeInUp">'+info+'</div>';
+          projects_popup.classList.add('projects__popup_opened');
+          //this.classList.add('map__list-item_active');
+        });
+      }
+
+      projects_close_button.addEventListener('click', function (element) {
+        projects_popup.classList.remove('projects__popup_opened');
+          
+        });
+    </script>
+
     <section class="up-footer">
       <ul class="up-footer__list">
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
+        <li class="up-footer__list-item up-footer__call  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
       </ul>
     </section>
+    
+
+
+    <section class="popup" id="popupCards" novalidate>
+      <form class="popup__container" name="Card" method="post" action="#" id="formCard">
+        <button class="popup__button-close" id="formCards-close" type="reset" aria-label="Закрыть">&cross;</button>
+        <h2 class="popup__title">Заявка на обратный звонок</h2>
+        <input class="popup__input popup__input_type_place" id="place-input" type="text" required
+          placeholder="Как к Вам обращаться" name="name" minlength="1" maxlength="30" />
+        <span class="popup__span-error" id="place-input-error"></span>
+        <input class="popup__input popup__input_type_link" id="link-input" type="url" required
+          placeholder="Номер телефона" name="link" />
+        <span class="popup__span-error" id="link-input-error"></span>
+        <button class="popup__button-save" id="cards-save" type="submit">
+          Отправить
+        </button>
+      </form>
+    </section>
+
+    <section class="popup" id="popupProfile" novalidate>
+      <form class="popup__container" name="formProfile" method="post" action="#" id="formProfile">
+        <button class="popup__button-close" type="reset" aria-label="Закрыть"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input class="popup__input popup__input_type_name" id="name-input" type="text" required placeholder="Имя"
+          name="name" pattern="[A-Za-zА-Яа-яЁё -]*" minlength="2" maxlength="40" />
+        <span class="popup__span-error" id="name-input-error"></span>
+        <input class="popup__input popup__input_type_job" id="job-input" type="text" required placeholder="О себе"
+          name="about" minlength="2" maxlength="200" />
+        <span class="popup__span-error" id="job-input-error"></span>
+        <button class="popup__button-save" id="profile-save" type="submit">
+          Сохранить
+        </button>
+      </form>
+    </section>
+
+    <script>
+      callback = document.querySelector('.up-footer__call');
+      popup_all = document.querySelector('.popup');
+      popup_all_close_button = document.querySelector('.popup__button-close');
+      callback.addEventListener('click', function(element) {
+        popup_all.classList.add('popup_opened');
+      });
+      popup_all_close_button.addEventListener('click', function(element) {
+        popup_all.classList.remove('popup_opened');
+      });
+    </script>
+
 
     </main>
     <footer class="footer">
