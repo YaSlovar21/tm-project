@@ -63,6 +63,27 @@
     font-size: 18px;
   }
 
+  .burton__breadcrumbs-link {
+    text-decoration: underline;
+    color: #f2f2f2;
+    line-height: 1.1;
+    margin-bottom: 7px;
+  }
+
+  .burton__breadcrumbs-link::after {
+    content: ' \2192';
+    color: #FF5E3A;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .burton__breadcrumbs-link_type_here {
+    text-decoration: none;
+  }
+  .burton__breadcrumbs-link_type_here::after {
+    content: '';
+  }
   
   @media screen and (max-width: 1024px) {
     .burton__breadcrumbs{
@@ -75,14 +96,13 @@
   @media screen and (max-width: 768px) {
     .burton__breadcrumbs{
       font-size: 14px;
-      
     }
   }
   
 
   @media screen and (max-width: 550px) {
     .burton__breadcrumbs {
-      
+      font-size: 12px;
     }
   }
 

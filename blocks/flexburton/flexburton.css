@@ -64,6 +64,27 @@
     font-size: 18px;
   }
 
+  .flexburton__breadcrumbs-link {
+    text-decoration: underline;
+    color: #c4c4c4;
+    line-height: 1.1;
+    margin-bottom: 7px;
+  }
+
+  .flexburton__breadcrumbs-link::after {
+    content: ' \2192';
+    color: #FF5E3A;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .flexburton__breadcrumbs-link_type_here {
+    text-decoration: none;
+  }
+  .flexburton__breadcrumbs-link_type_here::after {
+    content: '';
+  }
   
   @media screen and (max-width: 1024px) {
     .flexburton__breadcrumbs{
@@ -76,14 +97,13 @@
   @media screen and (max-width: 768px) {
     .flexburton__breadcrumbs{
       font-size: 14px;
-      
     }
   }
   
 
   @media screen and (max-width: 550px) {
     .flexburton__breadcrumbs {
-      width: 40%;
+      font-size: 12px;
     }
   }
 
