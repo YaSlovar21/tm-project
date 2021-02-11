@@ -132,3 +132,16 @@
   width: auto;
   z-index: -1;
 }
+
+@media screen and (max-width: 540px) {
+  .flexburton__svg_page_btp {
+    left: 0%;
+    bottom: 0%;
+    height: 55%;
+  }
+  .flexburton__svg_page_pizh {
+    left: 0%;
+    bottom: 5%;
+    height: 61%;
+  }
+}
