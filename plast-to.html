@@ -352,14 +352,20 @@
                 <div class="swiper-slide">
                   <!--<img data-src="path/to/picture-1.jpg" class="swiper-lazy" />
                   <div class="swiper-lazy-preloader"></div>-->
-                  <img src="images/raschet-kp.png" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  <div class="swiper-zoom-container">
+                    <img src="images/raschet-kp.png" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img data-src="images/raschet-sp.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  <div class="swiper-zoom-container">
+                    <img data-src="images/raschet-sp.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  </div>
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide">
-                  <img data-src="images/raschet-teh-dann.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  <div class="swiper-zoom-container">
+                    <img data-src="images/raschet-teh-dann.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                  </div>
                   <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
@@ -760,6 +766,7 @@
     preloadImages: false,
     // Enable lazy loading
     lazy: true,
+    zoom: true,
     cssMode: false,
     mousewheel: false,
     // If we need pagination
