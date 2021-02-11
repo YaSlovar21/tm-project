@@ -99,6 +99,7 @@
 
 .feedback__document {
     cursor: pointer;
+    padding-right: 5px;
     flex: 0 1 110px;
 }
 
