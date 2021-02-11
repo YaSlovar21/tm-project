@@ -41,7 +41,14 @@
 
 
 .feedback__logo {
-    flex: 0 1 187px;
+    flex: 0 1.2 187px;
+}
+
+@media screen and (max-width:500px) {
+    .feedback__logo {
+        align-self: flex-start;
+        padding-top: 4%;
+    }
 }
 
 .feedback__logo-image {
@@ -56,7 +63,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    flex: 0 3 576px;
+    flex: 0 1 576px;
 }
 
 .feedback__text-title {
@@ -81,6 +88,7 @@
     
     border-left: 3px solid  #FF5E3A;
     padding-left: 10px;
+    padding-right: 5px;
 }
 
 @media screen and (max-width:500px) {
