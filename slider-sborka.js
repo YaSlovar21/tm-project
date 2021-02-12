@@ -1,6 +1,11 @@
     
-var path = document.querySelector('.circle_wow');
-var len_dash = path.getTotalLength();
+try {
+  var path = document.querySelector('.circle_wow');
+  var len_dash = path.getTotalLength();
+}
+catch (err) {
+
+}
 //console.log(len_dash);
 
 

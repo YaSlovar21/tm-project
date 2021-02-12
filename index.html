@@ -474,7 +474,8 @@
     </div>
   </main>
 
-<script src="vendor/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/anime.min.js"></script>
 
 <script>
@@ -594,7 +595,7 @@
 </script>
 
 <script>
-	swiper.on('slideChange', function () {
+	/*swiper.on('slideChange', function () {
 		//var ggg = $('.content-slider .content-slide').eq(swiper.activeIndex);
 		console.log('slide changed');
 		let arr = swiper.slides[swiper.activeIndex].querySelectorAll('.wow1');
@@ -607,11 +608,11 @@
 			arr[i].style.setProperty('--animate-duration', duration_custom);
 			arr[i].classList.add('animate__animated', animation_class);
 		}
-	});
+	});*/  //коммент для мозилы
 	</script>
 
 <script>
-  var swiperInfo = new Swiper('.scroll-slider', {
+  const swiperInfo = new Swiper('.scroll-slider', {
     direction: 'vertical',
     slidesPerView: 'auto',
     freeMode: true,

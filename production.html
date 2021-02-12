@@ -166,9 +166,9 @@
             </div>
           </footer>
         </div>
-        <script src="js/wow.min.js"></script>
+        
+        <!--<script src="js/wow.min.js"></script>
         <script> new WOW().init(); </script>
-        <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script> 
         <script src="js/anime.min.js"></script>
         <script>/*
           let el = document.querySelectorAll('.honeycomb path');
@@ -217,7 +217,7 @@
             
           </script>
           <script>
-            function randomValues() {
+            /*function randomValues() {
             let el = document.querySelectorAll('.honeycomb path');
             anime({
               targets: [el],
@@ -235,15 +235,16 @@
             });
           }
 
-          randomValues();
+          randomValues();*/ //для мозилы
           </script>
 
 
 
+        -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
           <script>
-            var types_swiper = new Swiper('.product-types', {
+            const types_swiper = new Swiper('.product-types', {
               // Optional parameters
               direction: 'horizontal',
               slidesPerView: 3,
@@ -255,7 +256,7 @@
               },
               speed: 800,
               //loop: true,
-              parallax: true,
+              //parallax: true,
               effect: 'slide',
               keyboard: {
                 enabled: true,
