@@ -641,7 +641,7 @@
 
     <section class="popup" id="popupProfile" novalidate>
       <form class="popup__container" name="formProfile" method="post" action="#" id="formProfile">
-        <button class="popup__button-close" type="reset" aria-label="Закрыть"></button>
+        <button class="popup__button-close" id="formCards-close" type="reset" aria-label="Закрыть">&cross;</button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <input class="popup__input popup__input_type_name" id="name-input" type="text" required placeholder="Имя"
           name="name" pattern="[A-Za-zА-Яа-яЁё -]*" minlength="2" maxlength="40" />
@@ -657,8 +657,8 @@
 
     <script>
       callback = document.querySelector('.up-footer__call');
-      popup_all = document.querySelector('.popup');
-      popup_all_close_button = document.querySelector('.popup__button-close');
+      popup_all = document.querySelector('#popupCards.popup');
+      popup_all_close_button = document.querySelector('#popupCards .popup__button-close');
       callback.addEventListener('click', function(element) {
         popup_all.classList.add('popup_opened');
       });
