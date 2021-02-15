@@ -46,10 +46,10 @@
 .illustration__stripe-green {
   z-index: 4;
   position: absolute;
-    left: -2%;
+    left: 15%;
     bottom: -13%;
     width: 15.58%;
-    padding-top: 9%;
+    padding-top: 6%;
     transform-origin: right;
     transform: skewY(20deg);
     border-radius: 0 4px 4px 4px;
@@ -60,13 +60,13 @@
 
 .illustration__stripe-blue {
   position: absolute;
-    bottom: -1%;
-    left: -2%;
+    bottom: 0%;
+    left: 15%;
     /* left: 50%; */
-    width: 100%;
+    width: 70%;
     /* margin-left: -39.5%; */
     /* margin-bottom: -25%; */
-  padding-top: 10%;
+  padding-top: 6%;
   transform-origin: left;
   transform: skewY(-15.5deg);
   border-radius: 4px;
@@ -86,8 +86,8 @@
   background-size: contain;
   transform: skewY(-20.5deg);
   
-  bottom: 2%;
-  left: -2%;
+  bottom: -2%;
+  left: 15%;
   animation: l .9s cubic-bezier(.47,0,.65,.78) both .9s;
 }
 
