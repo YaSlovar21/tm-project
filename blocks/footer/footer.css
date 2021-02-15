@@ -79,8 +79,10 @@
 .illustration__tmb {
   position: absolute;
   z-index: 5;
-  width: 140px;
-  height: 40px;
+  /*width: 140px;
+  height: 40px;*/
+  width: 8vw;
+  height: calc(0.29 * 8vw);
   background-image: url(../../images/svg-teplohit.svg);
   background-repeat: no-repeat;
   background-size: contain;
