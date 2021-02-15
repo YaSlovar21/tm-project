@@ -116,7 +116,7 @@
         z-index: 1;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: calc(100% - 300px);
         height: 600px;
 }
 
@@ -152,6 +152,8 @@
     top: 0!important;
     right: 0;
     transform: translate3d(0,0,0);
+
+    box-sizing: border-box;
 }
 
 .btp-schemes__bullet {

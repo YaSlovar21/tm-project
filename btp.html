@@ -136,16 +136,17 @@
         </div>
         <h2 class="section-title" style="margin-top: 80px;">Схемы комплектации тепловых пунктов</h2>
 
-
+        <div style="display: flex; flex-direction: row;">
+        <div class="btp-schemes__pagination-container">
+          <!--<span class="btp-schemes__bullet btp-schemes__bullet_active">Узел ввода</span>
+          <span class="btp-schemes__bullet">Зависимое отоппление</span>
+          <span class="btp-schemes__bullet">Независимое отопление</span>
+          <span class="btp-schemes__bullet">Одноступенчатое ГВС</span>
+          <span class="btp-schemes__bullet">Двухступенчатое ГВС моноблок</span>
+          <span class="btp-schemes__bullet">Двухступенчатое ГВС с двумя теплообменниками</span>-->
+        </div>
         <div class="btp-schemes">
-          <div class="btp-schemes__pagination-container">
-            <!--<span class="btp-schemes__bullet btp-schemes__bullet_active">Узел ввода</span>
-            <span class="btp-schemes__bullet">Зависимое отоппление</span>
-            <span class="btp-schemes__bullet">Независимое отопление</span>
-            <span class="btp-schemes__bullet">Одноступенчатое ГВС</span>
-            <span class="btp-schemes__bullet">Двухступенчатое ГВС моноблок</span>
-            <span class="btp-schemes__bullet">Двухступенчатое ГВС с двумя теплообменниками</span>-->
-          </div>
+          
             <div class="swiper-wrapper">
               <div class="btp-schemes__sheme swiper-slide">
                 <img src="images/sheme__test.svg" class="btp-schemes__img">
@@ -169,7 +170,7 @@
 
           
         </div>
-
+      </div>
 
 
         <section class="oakley">
@@ -293,90 +294,6 @@
          <script>
          new WOW().init();
          </script>
-        <script>
-          
-          let phrases = [
-              {text: 'Пластинчатые пастеризаторы подробнее', image: 'images/raschet-kp.png' },
-              {text: 'охладители подробнее', image: 'images/raschet-sp.png' },
-              {text: 'ПОУ подр', image: 'images/raschet-teh-dann.png' }
-          ];
-      
-          let button1 = document.querySelector('#khan_1');
-          let button2 = document.querySelector('#khan_2');
-          let button3 = document.querySelector('#khan_3');
-          let image = document.querySelector('.khan__book-pic');
-          
-          /*let hides_block = document.querySelector('.plates__interactive');
-          let hide = document.querySelector('.no-display');
-          let hideFromTop = hides_block.getBoundingClientRect().top;
-          console.log(hideFromTop);
-          let ppx = document.querySelector(".ppx");
-          ppx.innerHTML = hideFromTop;
-          function showOnScroll() {
-              
-              let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-              console.log(scrollTop);
-              ppx.innerHTML = 'our=' + hideFromTop + '<br> scrTop='+scrollTop;
-            // Check scroll position
-              if (hideFromTop < scrollTop + 600) {
-                hide.classList.remove('no-display')
-            // Remove this listener for better pref
-                window.removeEventListener('scroll', showOnScroll, false);
-            }
-          }
-      
-      /*
-          var hides = document.querySelectorAll('.no-display'), index, item;
-          var hides_block = document.querySelector('.plates__interactive');
-          for (index = 0; index < hides.length; index++) {
-            item = hides[index];
-            hides_block.addEventListener('scroll', function () {
-              console.log('fasdf');
-              item.classList.remove('no-display');
-            });
-          }
-      */
-          button1.addEventListener('click', function () {
-              let randomElement = phrases[0];
-              //smoothly(phrase, 'textContent', randomElement.text);
-              smoothly(image, 'src', randomElement.image);
-      
-              button1.classList.add('khan__list-item_active');
-              button2.classList.remove('khan__list-item_active');
-              button3.classList.remove('khan__list-item_active');
-          });
-      
-          button2.addEventListener('click', function () {
-              let randomElement = phrases[1];
-              //smoothly(phrase, 'textContent', randomElement.text);
-              smoothly(image, 'src', randomElement.image);
-      
-              button2.classList.add('khan__list-item_active');
-              button1.classList.remove('khan__list-item_active');
-              button3.classList.remove('khan__list-item_active');
-          });
-      
-          button3.addEventListener('click', function () {
-              let randomElement = phrases[2];
-              //smoothly(phrase, 'textContent', randomElement.text);
-              smoothly(image, 'src', randomElement.image);
-      
-              button3.classList.add('khan__list-item_active');
-              button1.classList.remove('khan__list-item_active');
-              button2.classList.remove('khan__list-item_active');
-          });
-        </script>
-        <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
-        <script>
-         /* var bar = document.querySelector(".progress div");
-          var ppx = document.querySelector(".ppx");
-          addEventListener("scroll", function() {
-            var max = document.body.scrollHeight - innerHeight;
-            var percent = (pageYOffset / max) * 100;
-            bar.style.width = percent + "%";
-            ppx.innerHTML = max + ' ' + pageYOffset;
-          });*/
-        </script>
          
          <script src="js/anime.min.js"></script>
          <script>
