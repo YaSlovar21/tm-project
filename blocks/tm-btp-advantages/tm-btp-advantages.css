@@ -4,8 +4,12 @@
     width: 100%;
     height: 600px;
     position: relative;
-    background: url(../../images/polygon_btp.svg) center no-repeat;
-    background-size: 50%;
+    /*background: url(../../images/polygon_btp.svg) center no-repeat;*/
+    background: url(../../images/triangle_btp_bg.png);
+    /*background-size: 50%;*/
+    background-size: cover, 100%;
+    background-position: 0 20px;
+    background-repeat: no-repeat;
     display: flex;
     /*justify-content: center;*/
     justify-content: space-evenly;
