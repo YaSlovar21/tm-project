@@ -561,8 +561,12 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+ 
+  });
+  swiper_on_video.on('orientationchange', function () {
+    swiper_on_video.update();
+  });
   
-});
 </script>
 
 <script>
