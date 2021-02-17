@@ -1,0 +1,119 @@
+/*
+       <section class="turnkey">
+          <div class="turnkey__heading">
+            <h2 class="turnkey__title">Готовые решения</h2>
+            <p class="turnkey__intro">Блочные тепловые пункты, пищевые установки на базе пластинчатых теплообменников</p>
+            <a class="turnkey__consultation">Проконсультироваться со специалистом завода --></a>
+          </div>
+          <div class="turnkey__solutions">
+            <div class="turnkey__solution">
+              <img src="images/btp-adv-img.png" class="turnkey__image">
+              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
+              <a class="turnkey__solution-detail-link">Подробнее</a>
+            </div>
+            <div class="turnkey__line"></div>
+            <div class="turnkey__solution">
+              <img src="images/teplojit-pou.png" class="turnkey__image">
+              <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
+              <a class="turnkey__solution-detail-link">Подробнее</a>
+            </div>
+          </div>
+        </section>
+*/
+
+.turnkey {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.turnkey__heading {
+    position: relative;
+}
+
+.turnkey__title {
+    text-align: center;
+    margin: 0px auto 20px auto;
+    width: 60%;
+    line-height: 1.15;
+    font-size: 36px;
+    font-weight: bold;
+
+    color: rgba(242, 242, 242, 1);
+}
+
+.turnkey__intro {
+    text-align: center;
+    margin: 0 auto 20px;
+    font-size: 18px;
+
+    max-width: 450px;
+    line-height: 1.3;
+
+    color: rgba(242, 242, 242, 1);
+}
+
+.turnkey__consultation-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 282px;
+    max-height: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 121.52%;
+    /* or 29px */
+
+    text-align: center;
+
+    color: #F45836;
+
+    text-decoration: none;
+}
+
+.turnkey__solutions {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.turnkey__solution {
+    flex: 0 1 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.turnkey__solution-description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 121.52%;
+    /* or 29px */
+
+
+    color: rgba(242, 242, 242, 1);
+}
+.turnkey__image {
+    max-width: 100%;
+    height: 40vh;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+
+.turnkey__line {
+    width: 3px;
+    height: 500px;
+
+    background-color: rgba(242, 242, 242, 0.4);
+    margin: 0 3px;
+}
+
+.turnkey__solution-detail-link {
+    align-self: center;
+}
