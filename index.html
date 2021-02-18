@@ -155,7 +155,7 @@
         <div class="test-width"></div>
       </nav>
       <div class="video-container">
-        <video poster="images/bg_onload.svg" autoplay="true" playsinline="playsinline" muted="muted" loop="loop">
+        <video poster="images/bg_onload.svg" class="myvideo" autoplay="true" playsinline="playsinline" muted="muted" loop="loop">
           <source src="videos/tm_test_video.mp4" type="video/mp4">
           <source src="videos/tm_test_video.mp4" type="video/webm">
           Your browser does not support the video tag.
@@ -255,8 +255,8 @@
           </div>
       </section>
 
-      <div class="swiper-slide double-section" style="display: flex;">
-          <section class="localprod localprod_size_50 double-section__first localprod_bg_orange">
+      <div class="swiper-slide double-section" style="display: flex;overflow: hidden;">
+          <section class="localprod localprod_size_50 double-section__first localprod_bg_orange" style="overflow: hidden;">
               <div class="bg-video"></div> <!--Затеменение видео-->
               
               <h2 class="localprod__title localprod__title_size_50 double-section__first">Пластинчатые теплообменники российского производства</h2>
@@ -285,7 +285,7 @@
               
           </section>
 
-          <section class="double-section__second" style="">
+          <section class="double-section__second" style=" ">
             <div class="bg_abs"></div>
 
               <div class="scroll-slider" style="width: 80%; height: 80%; color: rgb(248, 248, 248); overflow: hidden;">
@@ -512,8 +512,12 @@
     </div>
   </main>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+
+
+  <script src="vendor/swiper-bundle.min.js"></script>
+
 <script src="js/anime.min.js"></script>
 
 <script>
@@ -557,14 +561,16 @@
         endDelay: 1000,
       });
     };
-    if (main_swiper.activeIndex==5) {
-      video_containers=document.querySelectorAll('.video-container');
-      console.log(video_containers);
-      video_containers[1].style.setProperty('position', 'relative');
-      video_containers[1].insertAdjacentHTML('afterbegin',video_containers[0].innerHTML);
+    if (main_swiper.activeIndex==4) {
+      //video_containers=document.querySelectorAll('.video-container');
+      //console.log(video_containers);
+      //video_containers[1].style.setProperty('position', 'relative');
+      //video_containers[1].insertAdjacentHTML('afterbegin',video_containers[0].innerHTML);
       /*video_containers[0].innerHTML = '';
       video_containers[0].classList.remove('.video-container');*/
-      
+      main_video = document.querySelector('.myvideo');
+      main_video.currentTime=0;
+
     };
 
 	});
