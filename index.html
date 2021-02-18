@@ -46,10 +46,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: -10;
     overflow: hidden;
     width: 100%;
     height: 100%;
+    
   }
 
   .video-container video {
@@ -477,7 +478,18 @@
        <div class="swiper-slide" style="/*width: 100%; height: 100%; background-color: #f2f2f210;*/overflow: hidden;">
           <div class="photo-grid" style="margin-top: 0; max-width: 100%; top:0;">
             <figure class="photo-grid__item wow1" data-animaton-delay="1s" data-class-animaton="animate__fadeInUp"><img class="photo-grid__image photo-grid__image_position_right"  src="images/prod-big-1.jpg"></figure>
-            <figure class="photo-grid__item wow1" data-animaton-delay="2s" data-class-animaton="animate__fadeInLeft"><img class="photo-grid__image photo-grid__image_position_center" src="images/metall-cut-big.png"></figure>
+            <figure class="photo-grid__item wow1" data-animaton-delay="2s" data-class-animaton="animate__fadeInLeft">
+              <!--<img class="photo-grid__image photo-grid__image_position_center" src="images/metall-cut-big.png">-->
+              
+                <!--<div class="video-container">
+                  <video poster="images/bg_onload.svg" autoplay="true" playsinline="playsinline" muted="muted" loop="loop">
+                    <source src="videos/tm_test_video.mp4" type="video/mp4">
+                    <source src="videos/tm_test_video.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>-->
+            
+            </figure>
             <figure class="photo-grid__item"><img class="photo-grid__image photo-grid__image_position_right" src="images/grospiron.JPG"></figure>
             <figure class="photo-grid__item wow1" data-animaton-delay="3s" data-class-animaton="animate__fadeInDownBig"><img class="photo-grid__image wow1" src="images/press-plast-ready.jpg"></figure>
             <figure class="photo-grid__item wow1" data-animaton-delay="4s" data-class-animaton="animate__fadeInBottom"><img class="photo-grid__image" src="images/press-plast-zag.jpg"></figure>
@@ -544,7 +556,17 @@
         duration: 3000,
         endDelay: 1000,
       });
-    }
+    };
+    if (main_swiper.activeIndex==5) {
+      video_containers=document.querySelectorAll('.video-container');
+      console.log(video_containers);
+      video_containers[1].style.setProperty('position', 'relative');
+      video_containers[1].insertAdjacentHTML('afterbegin',video_containers[0].innerHTML);
+      /*video_containers[0].innerHTML = '';
+      video_containers[0].classList.remove('.video-container');*/
+      
+    };
+
 	});
 	</script>
 
