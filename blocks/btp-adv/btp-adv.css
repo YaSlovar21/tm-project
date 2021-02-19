@@ -1,16 +1,16 @@
 .btp-adv {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 80px 0;
+    justify-content: space-between;
+    width: 80%;
+    margin: 80px auto;
 }
 
 .btp-adv__link {
     text-decoration: none;
-    color: #a1a1a1;
+    color: #e7451c;
     line-height: 1.4;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: normal;
 }
 
