@@ -259,7 +259,7 @@
           <section class=" double-section__first localprod localprod_size_50" style="overflow: hidden;">
               <div class="bg-video"></div> <!--Затеменение видео-->
               
-              <h2 class="localprod__title localprod__title_size_50">Пластинчатые теплообменники российского производства</h2>
+              <h2 class="localprod__title localprod__title_size_50 wow1" data-class-animaton="animate__fadeInLeft" data-animation-dur="1.5s">Пластинчатые теплообменники российского производства</h2>
               <!--<div style="z-index: 3; font-size: 24px; color: rgb(255, 255, 255); display: flex; justify-content: space-evenly; align-items: center; position: relative;"><p>Пластины от ДУ25 до ДУ</p><span style="z-index: 4; position: absolute; right: -60px; font-size: 28px; font-weight: 500;" class="du250">100</span></div>-->
               <div class="localprod__content">
                 
@@ -271,12 +271,12 @@
                   <div style="z-index: 3; font-size: 24px; color: rgb(255, 255, 255); display: flex; justify-content: space-evenly; align-items: center; position: relative;"><p>Пластины от ДУ25 до ДУ</p><span style="z-index: 4; position: absolute; right: -60px; font-size: 28px; font-weight: 500;" class="du250">100</span></div>
                 </div> -->
                 <div class="localprod__adv">
-                <ul class="list">
+                <ul class="list wow1" data-class-animaton="animate__fadeInRight" data-animation-dur="1.5s">
                   <li class="list__item list__item_font_18 list__item_theme_dark">Пластины собственного производства</li>
                   <li class="list__item list__item_font_18 list__item_theme_dark">Выгодные цены за счет 100% локализации</li>
                   <li class="list__item list__item_font_18 list__item_theme_dark">Оперативный расчёт и сопровождение квалифицированными инженерами</li>
                 </ul>
-                <a class="localprod__link link-beauty wow1" data-class-animaton="animate__pulse" data-animation-del-class="animate__delay-1s" data-wow-offset="300" href="#">Пластинчатые теплообменники &#8594;</a>
+                <a class="localprod__link link-beauty wow1" data-class-animaton="animate__pulse" data-animation-dur="1.5s" data-animation-del-class="animate__delay-1s" data-wow-offset="300" href="plast-to.html">Пластинчатые теплообменники &#8594;</a>
                 </div>
               </div>
               
@@ -432,7 +432,7 @@
               <div class="turnkey__solution wow1" data-animation-dur="2s" data-class-animaton="animate__fadeInUp">
                 <img src="images/btp-adv-img.png" class="turnkey__image">
                 <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
-                <a class="turnkey__solution-detail-link po__link" href="#">Подробнее</a>
+                <a class="turnkey__solution-detail-link po__link" href="btp.html">Подробнее</a>
               </div>
               <div class="turnkey__line"></div>
               <div class="turnkey__solution wow1" data-animation-dur="3s" data-class-animaton="animate__fadeInUp"  > <!--data-animation-del-class="animate__delay-1s"-->
@@ -450,12 +450,12 @@
               <div class="bg_abs"></div>
               <h2 class="cover__title" style="    margin: 0 auto;">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
               <ul class="list">
-                <li class="list__item list__item_theme_dark">79 лет высокой деловой репутации</li>
-                <li class="list__item  list__item_theme_dark">14 предприятий бизнес-центров</li>
-                <li class="list__item list__item_theme_dark">2500 сотрудников</li>
+                <li class="list__item list__item_theme_dark list__item_font_18">79 лет высокой деловой репутации</li>
+                <li class="list__item  list__item_theme_dark list__item_font_18" >14 предприятий бизнес-центров</li>
+                <li class="list__item list__item_theme_dark list__item_font_18">2500 сотрудников</li>
 
               </ul>
-              <a class="up-footer__list-item up-footer__call" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</a>
+              <a class="up-footer__list-item up-footer__call" style="padding: 1%; color:rgba(255, 255, 255, 0.671); cursor: pointer;" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</a>
               <section class="popup popup_page_index"  id="popupCards" novalidate>
                 <form class="popup__container" name="Card" method="post" action="#" id="formCard">
                   <button class="popup__button-close" id="formCards-close" type="reset" aria-label="Закрыть">&cross;</button>
@@ -791,13 +791,20 @@
 <script>
   callback = document.querySelector('.up-footer__call');
   popup_all = document.querySelector('#popupCards.popup');
+
+  popup_container = document.querySelector('#popupCards.popup .popup__container');
+
   popup_all_close_button = document.querySelector('#popupCards .popup__button-close');
   callback.addEventListener('click', function(element) {
     popup_all.classList.add('popup_opened');
+    popup_container.classList.add('popup__container_animated', 'animate__animated');
   });
+
   popup_all_close_button.addEventListener('click', function(element) {
     popup_all.classList.remove('popup_opened');
+    popup_container.classList.remove('popup__container_animated', 'animate__animated');
   });
+
   /*popup_all.addEventListener('click', function(element) {
     popup_all.classList.remove('popup_opened');
   });*/

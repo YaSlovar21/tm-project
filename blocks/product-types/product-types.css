@@ -61,7 +61,14 @@
     z-index: 22;
     text-decoration: none;
     font-size: 24px;
-    color: #FF5E3A;;
+    color: #FF5E3A;
+}
+
+.product-types .swiper-button-next {
+    color: #FF5E3A;
+}
+.product-types .swiper-button-prev {
+    color: #FF5E3A;
 }
 
 @media screen and (max-width:768px) {

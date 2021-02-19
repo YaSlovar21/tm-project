@@ -128,8 +128,9 @@
     width: 3px;
     height: 500px;
 
-    background-color: rgba(242, 242, 242, 0.4);
+    /*background-color: rgba(242, 242, 242, 0.4);*/
     margin: 0 3px;
+    background:linear-gradient(180deg, rgba(247, 247, 247, 0) 0%, #F7F7F7 49.49%, rgba(247, 247, 247, 0) 92.71%);
 }
 
 @media screen and (max-width: 768px) {
