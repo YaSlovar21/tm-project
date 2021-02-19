@@ -797,12 +797,15 @@
   popup_all_close_button = document.querySelector('#popupCards .popup__button-close');
   callback.addEventListener('click', function(element) {
     popup_all.classList.add('popup_opened');
-    popup_container.classList.add('popup__container_animated', 'animate__animated');
+    popup_container.classList.remove('popup__container_animated_out', 'animate__animated');
+    popup_container.classList.add('popup__container_animated_in', 'animate__animated');
   });
 
   popup_all_close_button.addEventListener('click', function(element) {
+    
+    popup_container.classList.remove('popup__container_animated_out', 'animate__animated');
+    popup_container.classList.add('popup__container_animated_out', 'animate__animated');
     popup_all.classList.remove('popup_opened');
-    popup_container.classList.remove('popup__container_animated', 'animate__animated');
   });
 
   /*popup_all.addEventListener('click', function(element) {
