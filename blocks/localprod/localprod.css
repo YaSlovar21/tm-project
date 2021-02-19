@@ -2,20 +2,25 @@
   position: relative;
  
 
-  background-size: 682px 455px;
+  /*background-color: #2f2f2fab;*/
+  background-size: 50vw 20vh;
+  background-position: bottom;
+ /* background-size: 682px 455px;
   background: url(../../images/feynman8.png) no-repeat bottom left;
-
+*/
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   z-index: 3;
+  align-self: stretch;
 }
 
 .localprod__content {
   display: flex;
   flex-direction: row;
  
-  align-items: center;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
 .localprod__image {
@@ -28,7 +33,11 @@
 }
 
 .localprod__adv {
-  flex: 5 10 70%;
+  flex: 0 1 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 768px) {
@@ -51,7 +60,7 @@
     max-width: 100%;
   }
 }
-
+/*
 @media screen and (max-width:1024px) {
   .localprod {
   background-size: 450px;
@@ -65,7 +74,7 @@
   background-size: 373px;
   }
 }
-
+*/
 .localprod__after {
 transition: all 1s linear;
 
@@ -76,6 +85,17 @@ height: 2px;
 width: calc(100% - 682px);
 background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686573 71.01%, rgba(196, 196, 196, 0) 99.51%);
 /*animation: fadeInOutMy 3s linear;*/
+}
+
+.localprod::after{
+  position: absolute;
+  content: '';
+  height: 20vh;
+  width: 100%;
+
+  background-color: #2f2f2fa8;
+  bottom: 0;
+  left: 0;
 }
 
 

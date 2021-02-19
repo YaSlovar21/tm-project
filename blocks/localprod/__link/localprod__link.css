@@ -3,12 +3,20 @@
     position: relative;
     z-index: 3;
     text-decoration: none;
-    color: #ececec;
+    color: #f77b42;
     line-height: 1.4;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: normal;
-    width: 250px;
+    max-width: 260px;
 
     justify-self: flex-end;
     
   }
+
+.localprod__link::before {
+  content: 'Перейти в раздел\b';
+  font-size: 14px;
+  font-style: italic;
+  display: inline-flex;
+  color: rgba(242, 242, 242, .5);
+}

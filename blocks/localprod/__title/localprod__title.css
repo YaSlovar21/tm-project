@@ -7,6 +7,8 @@
   font-size: 62px;
   font-weight: bold;
   color: #c4c4c4;
+
+  
 }
 
 .localprod__title_size_50 {
@@ -16,6 +18,8 @@ font-size: 42px;
 
 color: #ffffff;
 z-index: 3;
+
+padding-top: 20%;
 }
 
 @media screen and (max-width:1024px) {
