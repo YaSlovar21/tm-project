@@ -122,6 +122,12 @@
   .swiper-scrollbar-main .swiper-scrollbar-drag:hover {
     cursor: pointer;
 }
+
+.footer-slide {
+      height: 320px;
+
+			color: #fff;
+}
 </style>
 
 
@@ -173,19 +179,19 @@
 
               <div class="swiper-wrapper">
                 <div class="video-main__slider-block swiper-slide">
-                  <h2 class="video-main__title">Разработка и производство пластин и уплотнений</h2>
+                  <h2 class="video-main__title" data-swiper-parallax-scale="0.5"  data-swiper-parallax-opacity="0.7" data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Разработка и производство пластин и уплотнений</h2>
                   <p class="video-main__desc">Предприятие выпускает <span class="video-main__span-accent">самый широкий типоразмерный ряд пластин в России</span>. Инженеры компании разрабатывают и осваивают новые виды пластин. В настоящее время запущена в производство пластина ДУ 200 мм.</p>
                 </div>
                 <div class="video-main__slider-block swiper-slide">
-                  <h2 class="video-main__title">Теплообменники для горячего водоснабжения и отопления</h2>
+                  <h2 class="video-main__title" data-swiper-parallax-scale="0.5"  data-swiper-parallax-opacity="0.7" data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для горячего водоснабжения и отопления</h2>
                   <p class="video-main__desc">Основное направление компании - производство теплообменников<span class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20 мВт, от небольших котельных до микрорайонов.</p>
                 </div>
                 <div class="video-main__slider-block swiper-slide">
-                  <h2 class="video-main__title">Теплообменники для пищевой промышленности</h2>
+                  <h2 class="video-main__title" data-swiper-parallax-scale="0.5"  data-swiper-parallax-opacity="0.7" data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для пищевой промышленности</h2>
                   <p class="video-main__desc">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый теплообменник в <span class="video-main__span-accent">пищевых технологических процессах</span> любой сложности.</p>
                 </div>
                 <div class="video-main__slider-block swiper-slide">
-                  <h2 class="video-main__title">Блочные тепловые пункты</h2>
+                  <h2 class="video-main__title" data-swiper-parallax-scale="0.5"  data-swiper-parallax-opacity="0.7" data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
                   <p class="video-main__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на территории предприятия</span>, гарантия целиком на изделие.</p>
                 </div>
               </div>
@@ -421,6 +427,7 @@
         </div>
 
         <div class="swiper-slide">
+          <div class="swiper-lazy-preloader"></div>
           <div class="bg-video"></div>
           <section class="turnkey">
             <div class="turnkey__heading">
@@ -446,8 +453,8 @@
 
 
           <div class="swiper-slide double-section" style=" overflow: hidden; /*width: 100%; height: 100%; background-color: rgba(109, 109, 109, 0.438); display: flex; flex-direction: column; justify-content: space-between;*/">
-            <div class="double-section__first" style="flex-direction: column; align-items: center; justify-content: space-evenly;">
-              <div class="bg_abs"></div>
+            <div class="double-section__first"  style="flex-direction: column; align-items: center; justify-content: space-evenly;">
+              <div class="bg_abs swiper-lazy" data-background="images/bg_my.jpg"><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
               <h2 class="cover__title" style="    margin: 0 auto;">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
               <ul class="list">
                 <li class="list__item list__item_theme_dark list__item_font_18">79 лет высокой деловой репутации</li>
@@ -535,6 +542,32 @@
             </ul>
           </section>
         </div>
+
+        <div class="swiper-slide footer-slide footer">
+          
+          <div class="footer__columns">
+            <div class="footer__column footer__column_content_copyright">
+              <!--<img class="logo logo_place_footer" src="images/logo_profi_place_footer.svg" alt="Профи">-->
+              <!--<p class="footer__author">&copy; 2020, Вячеслав Невьянцев</p>-->
+            </div>
+            <nav class="footer__column footer__column_content_info">
+              <h3 class="footer__column-heading">Разделы сайта</h3>
+              <ul class="footer__column-links">
+                <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Главная</a></li>
+                <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Расчёт теплообменника</a></li>
+                <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Проекты</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__column footer__column_content_social">
+              <h3 class="footer__column-heading">Соцсети</h3>
+              <ul class="footer__column-links">
+                <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="Фэйсбук">Facebook</a></li>
+                <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
+                <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="Инстаграм">Instagram</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
       <div class="swiper-scrollbar"></div>
       <div class="swiper-pagination"></div>
@@ -553,6 +586,7 @@
 <script>
   var main_swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
+    slidesPerView: 'auto',
     mousewheel: true,
     effect: 'slide',
     speed: 800,
@@ -570,6 +604,11 @@
         type: 'progressbar',
         
       },   
+
+      // Disable preloading of all images
+      preloadImages: false,
+      // Enable lazy loading
+      lazy: true,
   });
 </script>
 
@@ -610,7 +649,7 @@
 
 <script>
   var swiper_on_video = new Swiper('.video-main__slider', {
-  speed: 500,
+  speed: 1000,
   autoplay: {
     delay: 2000,
   },
@@ -619,7 +658,7 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
- 
+  parallax: true,
   });
   swiper_on_video.on('orientationchange', function () {
     swiper_on_video.update();
