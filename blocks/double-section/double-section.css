@@ -41,3 +41,7 @@
         flex-basis: 75%;
     }
 }
+
+.double-section__second_position_ds {
+    justify-content: flex-start;
+}

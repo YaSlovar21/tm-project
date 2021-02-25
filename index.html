@@ -484,18 +484,41 @@
             </div>
           </section>
         </div>
+        <style>
+          .logo-list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
+          }
+          .logo-list__logo-container {
+            flex: 0 1 150px;
+          }
+          .logo-list__list {
+            flex: 0 1 300px;
+          }
+          .logo-list__logo {
+            width: 100%;
+            height: auto;
+          }
+        </style>
 
           <div class="swiper-slide double-section" style=" overflow: hidden; /*width: 100%; height: 100%; background-color: rgba(109, 109, 109, 0.438); display: flex; flex-direction: column; justify-content: space-between;*/">
-            <div class="double-section__first"  style="flex-direction: column; align-items: center; justify-content: space-evenly;">
+            <div class="double-section__first"  style="flex-direction: column; align-items: center; justify-content: space-between;">
               <div class="bg_abs swiper-lazy" data-background="images/bg_my.jpg"><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
-              <h2 class="cover__title" style="    margin: 0 auto;">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
-              <ul class="list">
-                <li class="list__item list__item_theme_dark list__item_font_18">79 лет высокой деловой репутации</li>
-                <li class="list__item  list__item_theme_dark list__item_font_18" >14 предприятий бизнес-центров</li>
-                <li class="list__item list__item_theme_dark list__item_font_18">2500 сотрудников</li>
+              <h2 class="localprod__title_tmprod">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
+              
+              <div class="logo-list">
+                <div class="logo-list__logo-container">
+                  <img src="images/logo_BSZ_svg.svg" class="logo-list__logo">
+                </div>
+                <ul class="list">
+                  <li class="list__item list__item_theme_dark list__item_font_18">79 лет высокой деловой репутации</li>
+                  <li class="list__item  list__item_theme_dark list__item_font_18" >14 предприятий бизнес-центров</li>
+                  <li class="list__item list__item_theme_dark list__item_font_18">2500 сотрудников</li>
 
-              </ul>
+                </ul>
+              </div>
               <a class="up-footer__list-item up-footer__call" style="padding: 1%; color:rgba(255, 255, 255, 0.671); cursor: pointer;" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</a>
               <section class="popup popup_page_index"  id="popupCards" novalidate>
                 <form class="popup__container" name="Card" method="post" action="#" id="formCard">
@@ -514,12 +537,12 @@
               </section>
 
             </div>
-            <div class="double-section__second" style="flex-direction: column;">
-            <section class="cover" style="margin-top: 0; width: 100%;">
+            <div class="double-section__second double-section__second_position_ds" style="flex-direction: column;">
+            <section class="cover cover_position_ds" style="margin-top: 0; width: 100%;">
               <a class="cover__overlay" href="#">
                   <!--<h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
                   <p class="cover__subtitle">79 лет высокой деловой репутации · 14 предприятий бизнес-центров · 2500 сотрудников</p>-->
-                  <p class="cover__subtitle">Подробнее о производстве пластин, уплотнений и теплообменников --></p>
+                  <p class="cover__subtitle" style="font-weight: 600;">Подробнее о производстве пластин, уплотнений и теплообменников --></p>
               </a>
             </section>
     
@@ -643,6 +666,8 @@
       preloadImages: false,
       // Enable lazy loading
       lazy: true,
+      //freeMode: true,
+      
   });
 </script>
 

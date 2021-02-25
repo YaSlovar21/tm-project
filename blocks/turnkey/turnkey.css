@@ -23,7 +23,7 @@
 
 .turnkey {
     padding-top: 10%;
-    padding-bottom: 10%;
+    /*padding-bottom: 10%;*/
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -80,6 +80,8 @@
     position: relative;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .turnkey__solutions {
         flex-direction: column;
@@ -91,7 +93,9 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+
+    margin: auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,10 +110,24 @@
     font-size: 24px;
     line-height: 121.52%;
     /* or 29px */
-
+    margin: 0;
 
     color: rgba(242, 242, 242, 1);
 }
+
+@media screen and (max-width:1024px) {
+    .turnkey__solution-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height:700px) {
+    .turnkey__solution-description {
+        font-size: 18px;
+    }
+}
+
+
 .turnkey__image {
     max-width: 100%;
     height: 40vh;

@@ -13,6 +13,8 @@
     justify-content: stretch;
  }
 
+
+/*
 .cover::after {
     content: '';
     position: absolute;
@@ -24,7 +26,7 @@
     background-size: cover;
     z-index: -1;
 }
-
+*/
 @media screen and (min-width:1184px) {
     .cover {
         max-width: 100%;
@@ -56,3 +58,6 @@
     }
 }
 
+.cover_position_ds {
+    min-height: calc(0.30*(49vw));
+ }
