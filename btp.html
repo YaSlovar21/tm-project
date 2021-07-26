@@ -77,8 +77,8 @@
         </div>
         </div>
 
-        <section class="description">
-          <div class="two-columns two-columns_shadow wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
+        <section class="description stickaround">
+          <div class="two-columns two-columns_stickied wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
             <h2 class="two-columns__brief">Производство блочных тепловых пунктов</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">БТП - блочные тепловые пункты - готовое решение от производителя теплообменного оборудования. Другими словами, это блочные ИТП, которые изготавливаются и испытываются на территории предприятия.</p>
@@ -172,9 +172,10 @@
         </div>
       </div>
 
-
+      <section class="btp-presentation" style="background-color: #f2f2f210; margin-top: 50px;">
+        
         <section class="oakley" >
-          <div class="two-columns" style="background-color: #2f2f2f34;">
+          <div class="two-columns">
             <h2 class="two-columns__brief two-columns__brief_uppercase">БТП "Термоблок"</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">Блочные тепловые пункты изготавливаются на базе производственных мощностей компании ООО "Термоблок".Являясь непосредственным производителем пластинчатых теплообменников (ТМ - "Теплохит"), мы обладаем большим опытом производства теплообменного оборудования и установок.</p>
@@ -183,7 +184,7 @@
           </div>
         </section>
 
-        <section class="btp-adv" style="background-color: #2f2f2f34;">
+        <section class="btp-adv">
           <div class="btp-adv__feats">
             <img src="images/btp-adv-img.png" class="btp-adv__image">
             <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay=".5s" data-wow-duration="3s">
@@ -198,51 +199,98 @@
           </div>
           <a href="#" class="btp-adv__link link-beauty">Рассчитать стоимость  &#8594;</a>
         </section>
-        <script src="js/anime.min.js"></script>
-        <script>
-          /*anime({
-            targets: '.btp-adv__feat',
-            opacity: 1,
-            delay: function(el, i) { return i * 400; },
-            direction: 'alternate',
-            loop: false,
-            autoplay: true,
-            easing: 'easeInOutSine'
-          });*/
-        </script>
-
-
-        <!-- ПЕРЕНЕСТИ НА СТРАНИЦУ "О КОМПАНИИ"
-        <section class="cover">
-          <a class="cover__overlay" href="#">
-              <h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
-              <p class="cover__subtitle">79 лет высокой деловой репутации · 14 предприятий бизнес-центров · 2500 сотрудников</p>
-          </a>
-        </section>
-
-        <section class="bsz">
-          <div class="tablemod tablemod_theme_dark">
-            <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-offset="50">
-                <h3 class="tablemod__heading tablemod__heading_theme_dark">Лабораторная проверка металла</h3>
-                <p class="tablemod__text tablemod__text_theme_dark">Нержавеющая сталь для теплообменников проходит проверку на соответствие маркам 304 и 316 ANSI.</p>
+        <div class="btp-presentation__callback" style="max-width: 80%; margin: 30px auto 0;">
+          <form class="lineform" method="post" action="#" id="formCallBack" name="formCallBack" novalidate>
+            <h2 class="lineform__heading">Проконсультироваться с инженером</h2>
+            <p class="lineform__description">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
+            <div style="border: 0; padding: 0;">
+              <input class="lineform__input lineform__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
+              <span class="lineform__input-error name-input-error"></span>
+              <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <span class="lineform__input-error tel-input-error"></span>
+              <button class="lineform__button-save lineform__button-save_type_callback" type="submit">Оставить заявку</button>
             </div>
-            <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay=".5s" data-wow-offset="50">
-              <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие производственные возможности</h3>
-              <p class="tablemod__text tablemod__text_theme_dark">Производственные мощности и научно-технический потенциал  завода позволяет изготавливать как новые изделия, так и совершенствовать производственную базу для теплообменников.</p>
-            </div>
-            <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight"  data-wow-delay="1s" data-wow-offset="50">
-              <h3 class="tablemod__heading tablemod__heading_theme_dark">Система контроля качества</h3>
-              <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного дочернего предприятия холдинга - Барнаульского патронного завода.</p>
-            </div>
-            <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay="1.5s" data-wow-offset="50">
-              <h3 class="tablemod__heading tablemod__heading_theme_dark">Ответственность за репутацию</h3>
-              <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного дочернего предприятия холдинга - Барнаульского патронного завода.</p>
-            </div>
+          </form>
         </div>
-        </section>
-        -->
+      </section>  
+      <style>
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        
+        .swiper-slide-btp {
+          text-align: center;
+          font-size: 18px;
+          background: rgba(66, 66, 66, 0.678);
 
-        <img src="images/btp-slider-imit.png" width="100%">
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .swiper-slide .btp-big-swiper__image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+      <div class="btp-big-swiper" style="height: 500px; width: 100%;">
+        <div class="swiper-container btpBigSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiperBigBtp = new Swiper(".btpBigSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+      
 
         <section class="bpou">
           <div class="bpou__info">

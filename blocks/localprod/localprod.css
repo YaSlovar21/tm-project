@@ -30,6 +30,7 @@
   flex: 0 1 30%;
   
   object-fit: contain;
+  
 }
 
 .localprod__adv {
@@ -93,8 +94,8 @@ background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686573 71
   height: 20vh;
   width: 100%;
 
-  background-color: #2f2f2fa8;
-  bottom: 0;
+  background: linear-gradient(180deg, rgba(125, 125, 125, 0.024) 0%, rgba(125, 125, 125, 0.3) 54.23%, rgba(125, 125, 125, 0) 100%);;
+  bottom: 90px;
   left: 0;
 }
 

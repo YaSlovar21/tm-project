@@ -34,6 +34,7 @@
     text-align: center;
 
     color: rgba(0, 147, 221, 0.22);
+    /*color: #ff5e3a25;*/
   }
 
   @media screen and (max-width:500px) {

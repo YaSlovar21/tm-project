@@ -1,0 +1,8 @@
+@import url(./__heading/lineform__heading.css);
+@import url(./__input/lineform__input.css);
+@import url(./__button-save/lineform__button-save.css);
+@import url(./__description/lineform__description.css);
+
+.lineform {
+    padding-bottom: 80px;
+}

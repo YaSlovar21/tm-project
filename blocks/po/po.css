@@ -76,6 +76,10 @@
     transition: all .8s ease-in-out;
 }
 
+.po__link:hover {
+    color: #f2f2f2;
+}
+
 .po__link::before {
     content: '';
     position: absolute;

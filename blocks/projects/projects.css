@@ -273,3 +273,32 @@
     color: white;
     cursor: pointer;
   }
+
+
+
+  .projects__title_page_index {
+    font-size: 36px;
+    width: 397px;
+    margin: 0;
+    font-weight: 800;
+    flex-wrap: wrap;
+    color: #f2f2f2;
+    text-transform: uppercase;
+}
+
+.projects__header_page_index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 67px; */
+    line-height: 1.19;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin:  90px auto 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects__header {
+        max-width: 80%;
+    }
+}

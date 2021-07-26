@@ -15,11 +15,16 @@
     -moz-text-size-adjust: 100%;
   }
 
+@media screen and (max-width: 1600px) {
+    .page {
+        max-width: 90%;
+    }
+}
 
 html, body, main {
-    position: relative;
+    /*position: relative;
     height: 100%;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;*/
 }
 
 .swiper-container {
@@ -35,6 +40,7 @@ input {
 
 :root {
     --swiper-theme-color: #e7451c;
+    --sticky-around-color: #ff5e3a49;
 }
 
 

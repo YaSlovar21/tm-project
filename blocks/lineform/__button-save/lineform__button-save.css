@@ -1,0 +1,14 @@
+.lineform__button-save {
+
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #c4c4c430;
+    border: none;
+    color: white;
+    min-height: 30px;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    padding: 15px;
+    transition: opacity linear 0.5s;
+}

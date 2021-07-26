@@ -1,0 +1,46 @@
+.stickaround {
+    border-right: 2px solid var(--sticky-around-color);
+    border-left: 2px solid var(--sticky-around-color);
+    position: relative;
+}
+
+.stickaround::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 2px;
+    background-color: var(--sticky-around-color);
+}
+
+.stickaround::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: var(--sticky-around-color);
+}
+
+/*
+.stickaround::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 30%;
+    background-color: var(--sticky-around-color);
+}
+
+.stickaround::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 30%;
+    background-color: var(--sticky-around-color);
+}*/
