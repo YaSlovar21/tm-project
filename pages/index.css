@@ -218,3 +218,25 @@
 
 /*Теплообменник блок основной*/
 @import url(../blocks/heatex/heatex.css);
+
+/*Часто задаваемые вопросы*/
+@import url(../blocks/frequently/frequently.css);
+
+
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+/*Контакты*/
+@import url(../blocks/contacts/contacts.css);
+
+/*Грид 1большая + 4 блока*/
+@import url(../blocks/tmproduction/tmproduction.css);
+
+
+/*Грид полный цикл*/
+@import url(../blocks/wholecycle-grid/wholecycle-grid.css);
+
+/*Аннотации и описание на странице О компании*/
+@import url(../blocks/company-description/company-description.css);
+@import url(../blocks/annotation/annotation.css);
+

@@ -1,0 +1,51 @@
+.annotation {
+    margin: 30px 0;
+    border-left: 2px solid #E7441C;
+    padding-left: 25px;
+    display: flex;
+   
+}
+
+.annotation__text {
+    max-width: 460px;
+    
+}
+
+.annotation__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.4;
+
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+.annotation__intro {
+    max-width: 377px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #FFFFFF;
+    margin: 12px 0 0;
+}
+
+.annotation__links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.annotation__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E7441C;
+}
+
+.annotation__link_download {
+    margin-left: 25px;
+}
+.annotation__link_download:nth-of-type(n + 1) {
+    margin-top: 18px;
+}

@@ -162,3 +162,6 @@
 
 @import url(../blocks/bpou/bpou.css);
 @import url(../blocks/lineform/lineform.css);
+
+/*Спаны*/
+@import url(../blocks/span/span.css);
