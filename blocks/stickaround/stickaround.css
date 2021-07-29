@@ -10,14 +10,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
-    padding-bottom: 30%;
+    width: 90%;
+    padding-bottom: 20%;
     overflow: hidden;
     background-image: url(../../images/stickaround_two_col.svg);
     background-size: contain, 100%;
     background-position: top left;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.2;
     /*background-color: var(--sticky-around-color);*/
 }
 
@@ -26,14 +26,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30%;
-    padding-bottom: 30%;
+    width: 90%;
+    padding-bottom: 20%;
     overflow: hidden;
     background-image: url(../../images/stickaround_two_col_bottom.svg);
     background-size: contain, 100%;
     background-position: right bottom;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 

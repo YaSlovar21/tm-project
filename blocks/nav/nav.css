@@ -209,7 +209,7 @@
     position: absolute;
     content: '';
     height: 100%;
-    width: 3px;
+    width: 2px;
     bottom: 0;
     left: -9px;
     top: 0;
@@ -226,7 +226,7 @@
   }
 
   .nav__sub-ul-item:hover::before {
-    background-color:#FF5E3A;
+    background-color:#ff5e3ac7;
   }
 
   .nav__sub-ul-item:hover .nav__sub-link 

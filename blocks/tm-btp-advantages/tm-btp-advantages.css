@@ -18,7 +18,7 @@
 
 .tm-btp-advantages__heading {
     font-size: 36px;
-    max-width: 360px;
+    max-width: 440px;
     color: #f2f2f2;
     opacity: 0.8;
     text-align: left;
@@ -27,7 +27,7 @@
 }
 
 .tm-btp-advantages__wrapper {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     /*display: flex;
     justify-content: space-between;
@@ -37,13 +37,15 @@
 }
 
 .tm-btp-advantages__intro {
-    display: flex; 
-    flex-direction: column;  
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-self: stretch;
-    margin: 60px 0 0 ;
-    max-width: 400px;
+    /* margin: 60px 0 0; */
+    max-width: 520px;
+    background-color: #2f2f2f48;
 }
 
 .tm-btp-advantages__introbutton {

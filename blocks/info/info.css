@@ -1,13 +1,16 @@
 .info {
-    height: 75vh;
-    max-width: 91%;
+    height: 70vh;
+    /*max-width: 91%;*/
     margin: 20px auto 80px;
     display: flex;
 }
 
+.info p {
+    font-size: 18px;
+}
 /*Левый блок*/
 .info__main {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

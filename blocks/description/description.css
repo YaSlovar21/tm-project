@@ -1,8 +1,7 @@
 .description {
     display: flex;
-
-    margin: 100px auto 0;
-
+    /*    margin: 100px auto 0;*/
+    margin: 0 auto 0;
   }
 
 

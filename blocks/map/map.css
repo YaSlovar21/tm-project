@@ -22,24 +22,25 @@
 
 .map__list {
     position: relative;
-
     background-image: url(../../images/map_up_footer.png);
     background-position: center;
     background-repeat: no-repeat;
     list-style-type: none;
-
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    height: 400px;
-
+    height: 390px;
     justify-content: center;
-    align-items: center;
-
+    /* align-items: center; */
     margin: 52px auto 30px;
     padding: 0;
-    
-    width: 80%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, 192px); */
+    grid-template-rows: repeat;
+    max-width: 80%;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fill, 38px);
+    gap: 10px;
 }
 
 
@@ -144,7 +145,7 @@
 .map__list-item {
     box-sizing: border-box;
     padding: 10px;
-    margin-bottom: 10px;
+
     position: relative;
 
     background-color: #f2f2f223;
