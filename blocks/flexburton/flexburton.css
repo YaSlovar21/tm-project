@@ -52,7 +52,7 @@
   }
 
 .flexburton__main-image {
-    max-width: 100%;
+    /*max-width: 100%;*/
     max-height: 88%;
     object-fit: contain;
 
@@ -62,8 +62,8 @@
 
   
   .flexburton__breadcrumbs {
-    /*margin-left: 64px;*/
-    margin-top: 20px;
+    /*margin-left: 64px;
+    margin-top: 20px;*/
     padding: 15px 0;
     position: relative;
     font-size: 18px;
@@ -76,6 +76,27 @@
     color: #c4c4c4d5;
     margin-bottom: 3px;
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .flexburton__breadcrumbs-link{
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .flexburton__breadcrumbs-link{
+      font-size: 14px;
+    }
+  }
+  
+
+  @media screen and (max-width: 550px) {
+    .flexburton__breadcrumbs-link {
+      font-size: 12px;
+    }
   }
 
   .flexburton__breadcrumbs-link::after {
@@ -96,23 +117,11 @@
   @media screen and (max-width: 1024px) {
     .flexburton__breadcrumbs{
       margin-left: 10px;
-      font-size: 16px;
     }
   }
   
 
-  @media screen and (max-width: 768px) {
-    .flexburton__breadcrumbs{
-      font-size: 14px;
-    }
-  }
   
-
-  @media screen and (max-width: 550px) {
-    .flexburton__breadcrumbs {
-      font-size: 12px;
-    }
-  }
 
 /*
 .flexburton__breadcrumbs::after {

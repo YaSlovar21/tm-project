@@ -33,7 +33,13 @@
     justify-content: space-between;
     align-items: center;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 580px 1fr;
+
+
+    grid-template-rows: 800px;
+    justify-items: center;
+    align-items: start;
+
 }
 
 .tm-btp-advantages__intro {
@@ -46,6 +52,8 @@
     /* margin: 60px 0 0; */
     max-width: 520px;
     background-color: #2f2f2f48;
+
+    justify-self: start;
 }
 
 .tm-btp-advantages__introbutton {

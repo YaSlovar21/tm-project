@@ -5,3 +5,11 @@
   .link-beauty:hover {
     opacity: .6;
   }
+
+  .link-beauty_background {
+    transition: opacity .2s linear;
+  }
+  
+  .link-beauty_background:hover {
+    opacity: .6;
+  }
