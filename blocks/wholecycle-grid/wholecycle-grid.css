@@ -21,6 +21,8 @@
 .pictitletext:nth-child(2n) {
     margin-top: 70px;
 }
+
+
 .pictitletext:nth-child(2n)::after {
     position: absolute;
     content: '';
@@ -56,6 +58,29 @@
     background-color: tomato;
     left: -38px;
     top: -38px;
+}
+
+@media screen and (max-width: 1280px) {
+    .pictitletext:nth-child(2n)::after {
+        width: 1px;
+        bottom: -9px;
+        right: -9px;
+    }
+    .pictitletext:nth-child(2n)::before {
+        height: 1px;
+        bottom: -9px;
+        right: -9px;
+    }
+    .pictitletext:nth-child(2n + 1)::after {
+        width: 1px;
+        left: -9px;
+        top: -9px;
+    }
+    .pictitletext:nth-child(2n + 1)::before {
+        height: 1px;
+        left: -9px;
+        top: -9px;
+    }
 }
 
 .pictitletext__img-container {
