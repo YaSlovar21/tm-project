@@ -3,11 +3,6 @@
     width: 282px;
   }
 
-
-.table__cell:nth-of-type(2n+2) .table__heading_page_btp {
-    text-align: right;
- }
-
- .table__cell:nth-of-type(2n+2) .table__text_page_btp {
-  text-align: right;
+.table__cell_type_grid {
+  width: 90%;
 }

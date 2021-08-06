@@ -29,17 +29,17 @@
 }
 
 @media screen and (max-width:768px) {
-    .double-section {
-        flex-direction: column;
+    /*.double-section {
+
         align-items: stretch;
     }
     .double-section__first {
-        flex-basis: 25%;
+        flex-basis: 30%;
         max-width: 100%;
     }
     .double-section__second {
-        flex-basis: 75%;
-    }
+        flex-basis: 70%;
+    }*/
 }
 
 .double-section__second_position_ds {

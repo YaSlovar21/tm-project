@@ -41,8 +41,31 @@ input {
 :root {
     --swiper-theme-color: #e7451c;
     --sticky-around-color: #ff5e3a49;
+    --cell-heading-font: 24px;
+    --cell-description-font: 18px;
 }
 
+@media screen and (max-width: 1024px){
+    :root {
+        /*table*/
+        --cell-heading-font: 22px;
+        --cell-description-font: 16px;
+    }
+}
+@media screen and (max-width: 768px){
+    :root {
+        /*table*/
+        --cell-heading-font: 18px;
+        --cell-description-font: 14px;
+    }
+}
+@media screen and (max-width: 450px){
+    :root {
+        /*table*/
+        --cell-heading-font: 16px;
+        --cell-description-font: 12px;
+    }
+}
 
 .page_index {
     font-family: 'Inter', Arial, sans-serif;

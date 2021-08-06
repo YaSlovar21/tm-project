@@ -14,9 +14,9 @@
 
 .bpou {
     display: flex;
-    /*max-width: 95%;
-    margin: 0 auto;*/
-    justify-content: space-evenly;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
 
     position: relative;
 
