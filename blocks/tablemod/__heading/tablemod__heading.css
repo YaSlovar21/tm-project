@@ -1,6 +1,6 @@
 .tablemod__heading {
     line-height: 1.15;
-    font-size: var(--cell-h-font);
+    font-size: var(--cell-heading-font);
     font-weight: bold;
     margin: 0 0 0 30px;
     position: relative;

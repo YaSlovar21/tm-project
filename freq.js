@@ -11,6 +11,7 @@ questions.forEach(element => {
     questionElem.classList.toggle('frequently__item_active');
     console.log(evt.target.closest('.frequently__item'));
     answerElem.classList.toggle('animate__animated');
-    answerElem.classList.toggle('animate__fadeIn');
+    answerElem.classList.toggle('animate__slow');
+    answerElem.classList.toggle('animate__fadeIn');animate__slow
   })
 });

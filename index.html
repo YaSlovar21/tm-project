@@ -123,7 +123,7 @@
   <!--<div class="bg-video"></div>-->
   <div class="bg"></div>
   <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
-  
+
   <main>
     <div style="display: flex; position: relative; min-height: 70vh;">
       <nav class="nav nav_abs nav_mobile">
@@ -224,14 +224,14 @@
     </div>
 
     <!--Слайд с продукцией-->
-    <section style="position: relative; 
-          display: flex; 
-          flex-direction: column; 
-          justify-content: space-evenly; 
-          background-color: #c4c4c410; 
-          background-attachment: fixed; 
-          padding-bottom: 50px; 
-          background-size: cover; 
+    <section style="position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: #c4c4c410;
+          background-attachment: fixed;
+          padding-bottom: 50px;
+          background-size: cover;
           background-position: center;
           background-image: url(./images/test/ufa_test_opct.png);">
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #2f2f2fa4;"></div>
@@ -251,7 +251,7 @@
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Пластинчатые теплообменники</h2>
-              
+
               <div class="product-types__description">
                 <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
                   data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
@@ -261,7 +261,7 @@
                   data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
                   data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
-              
+
             </div>
           </div>
           <div class="product-types__type swiper-slide">
@@ -271,7 +271,7 @@
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Пищевые теплообменники</h2>
-              
+
               <div class="product-types__description">
                 <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
                   data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
@@ -281,7 +281,7 @@
                   data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
                   data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
-              
+
             </div>
           </div>
           <div class="product-types__type swiper-slide">
@@ -291,7 +291,7 @@
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Блочные тепловые пункты</h2>
-              
+
               <div class="product-types__description">
                 <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
                   data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
@@ -301,7 +301,7 @@
                   data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
                   data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
-              
+
             </div>
           </div>
           <div class="product-types__type swiper-slide">
@@ -311,7 +311,7 @@
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Установки ПОУ</h2>
-              
+
               <div class="product-types__description">
                 <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
                   data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
@@ -338,7 +338,7 @@
         flex: 0 1 50%;
         position: relative;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         max-height: 90vh;
@@ -346,10 +346,13 @@
       .ds-intro__brand {
         display: flex;
         /* margin: 20px 0 0 3%; */
-        align-self: start;
+        align-self: stretch;
         flex-basis: 40px;
         flex-shrink: 1;
         flex-grow: 0;
+        justify-content: start;
+        /*padding-right: 2%;*/
+        flex-wrap: wrap-reverse;
       }
       .ds-intro__img-container {
         position: relative;
@@ -359,6 +362,8 @@
         display: flex;
         height: 100%; /*вписываем во флекс базис 100%, без этого картинка не ужимается*/
         width: 100%;
+        /*background: radial-gradient(82.11% 14% at 50% 91.55%, rgba(255, 255, 255, 0.51) 6.77%, rgba(255, 255, 255, 0.16) 48.88%, rgba(255, 255, 255, 0) 100%);*/
+        background:radial-gradient(34.78% 8.45% at 50% 91.55%, rgba(255, 255, 255, 0.51) 6.77%, rgba(255, 255, 255, 0.16) 48.88%, rgba(255, 255, 255, 0) 100%);
       }
       .ds-intro__image {
         width: 100%;
@@ -368,8 +373,8 @@
       }
       .ds-intro__details {
         display: flex;
-        /* margin-top: 25px; */
-        flex-basis: 200px;
+        /* margin-top: 25px;
+        flex-basis: 200px;*/
         align-self: stretch;
         justify-content: space-between;
         flex-shrink: 0;
@@ -377,14 +382,14 @@
       }
     </style>
 
-    <!--ОСНОВНОЙ ДВУХСЕКЦИОННЫЙ СЛАЙД--!-->
-    <h2 class="turnkey__title" style="margin-top: 100px;">Пластинчатые теплообменники</h2>
-    <p class="section-subtitle" style="text-transform: uppercase; margin-bottom: 40px;">Российского производства</p>
+    <!--ОСНОВНОЙ ДВУХСЕКЦИОННЫЙ СЛАЙД--!
+    <h2 class="turnkey__title" style="margin-top: 100px; display: none;">Пластинчатые теплообменники</h2>
+    <p class="section-subtitle" style=" visibility: hidden; text-transform: uppercase; margin-bottom: 40px;">Российского производства</p>-->
     <div class="double-section" style="display: flex;
-      overflow: hidden; 
-      height: 90vh; 
-      align-items: stretch; 
-      margin-top: 0px;">
+      overflow: hidden;
+      height: 90vh;
+      align-items: stretch;
+      margin: 100px 0 150px;">
       <section class="ds-intro" style="overflow: hidden;">
         <!--<div class="bg-video"></div> Затеменение видео
         <h2 class="localprod__title localprod__title_size_50 wow1"
@@ -392,19 +397,21 @@
           data-class-animaton="animate__fadeInLeft" data-animation-dur="1.5s">Пластинчатые теплообменники российского
           производства</h2>-->
         <div class="ds-intro__brand" >
-          <img src="./images/logo_teplohit_with_tepl.svg" class="wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
-          <p style="color: #c4c4c4; 
-          font-weight: 200; 
-          font-size: 14px; 
-          max-width: 180px; 
-          font-style: italic; 
-          line-height: 1.4; 
+          <h2 style="text-transform: uppercase; font-size: 20px; width: 400px; color: #fff; line-height: 1.4;">Пластинчатые теплообменники российского производства</h2>
+          <img src="./images/logo_teplohit_with_tepl.svg" style="margin-left: 5%; min-width: 0; max-width: 195px;" class="wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
+          <p style="color: #c4c4c4;
+          font-weight: 200;
+          font-size: 14px;
+          max-width: 180px;
+          font-style: italic;
+          line-height: 1.4;
+          display: none;
           margin: 10px 0 0 25px;" class="wow animate__fadeIn" data-wow-offset="200" data-wow-delay="1.6s" >Торговая марка предприятия Термоблок</p>
-        </div> 
+        </div>
         <div class="ds-intro__img-container">
           <img src="images/ti45_new.png" class="ds-intro__image" alt="Пластинчатый теплообменник">
         </div>
-         
+
         <div class="ds-intro__details">
           <ul class="list wow animate__fadeInUp" style="z-index: 22; max-width: 420px; margin-left: 3%;" data-animation-dur="1.5s">
               <li class="list__item  list__item_block_localprod">Пластины собственного производства</li>
@@ -425,7 +432,7 @@
         <div class="scroll-slider"
           style="width: 100%; height: 100%; color: rgb(248, 248, 248); overflow: hidden;">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="height: auto;">
+            <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 5%;">
               <h3 class="info__h3" style="margin-top: 0;">История производства теплообменников</h3>
               <p class="info__paragraph">В конце 80-х годов <span class="info__span-bsz-accent">Барнаульский
                   станкостроительный завод</span> постепенно стал переходить на выпуск гражданской продукции.
@@ -624,29 +631,217 @@
 
       </section>
     </div>
+    <style>
+      .mainmodels {
+        /*margin-top: 160px;*/
+      }
+      .mainmodels__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
 
+        color: #cacaca;
+
+        margin: 0;
+        white-space:nowrap;
+      }
+      .mainmodels__wrapper {
+        width: 75%;
+        background-color: rgba(47, 47, 47, 0.5);
+        box-sizing: border-box;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 1%;
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: 1100px) {
+        .mainmodels__wrapper {
+          width: 100%;
+        }
+      }
+      .timodels {
+        justify-content: center;
+        flex-basis: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 89px);
+        grid-template-rows: repeat(3, 67px);
+        gap: 30px 60px;
+        grid-auto-flow: column;
+        /*ul*/
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      .timodels__link {
+        text-decoration: none;
+      }
+
+
+
+      .timodels__ptotitle {
+        margin: 0;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #E4E4E4;
+        transition: color 0.4s linear;
+      }
+
+      .timodels__link:hover .timodels__ptotitle {
+        color: #ff5e3a;
+      }
+
+      .timodels__ptodu {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+
+        color: #939393;
+
+      }
+    </style>
+    <!--Типоразмерный ряд-->
+    <section class="mainmodels">
+
+      <div class="mainmodels__wrapper">
+        <h2 class="mainmodels__title">Модельный ряд теплообменников</h2>
+        <ul class="timodels">
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti025.html">
+              <h5 class="timodels__ptotitle">ТИ025</h5>
+              <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ077</h5>
+              <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti13.html">
+              <h5 class="timodels__ptotitle">ТИ13</h5>
+              <p class="timodels__ptodu">(ду 50, 65)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti16-5.html">
+              <h5 class="timodels__ptotitle">ТИ16,5</h5>
+              <p class="timodels__ptodu">(ду 80)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti18.html">
+              <h5 class="timodels__ptotitle">ТИ18</h5>
+              <p class="timodels__ptodu">(ду 50, 65)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti28.html">
+              <h5 class="timodels__ptotitle">ТИ28</h5>
+              <p class="timodels__ptodu">(ду 65)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ45</h5>
+              <p class="timodels__ptodu">(ду 100, 125)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ52</h5>
+              <p class="timodels__ptodu">(ду 150)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ65</h5>
+              <p class="timodels__ptodu">(ду 50, 65)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ82</h5>
+              <p class="timodels__ptodu">(ду 150)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ95</h5>
+              <p class="timodels__ptodu">(ду 200, 250)</p>
+            </a>
+          </li>
+          <li class="timodels__pto">
+            <a class="timodels__link" href="./catalog/ti077.html">
+              <h5 class="timodels__ptotitle">ТИ116</h5>
+              <p class="timodels__ptodu">(ду 200, 250)</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <style>
+      .turnkey_main {
+        padding-top: 0;
+        margin-top: 75px;
+      }
+      .turnkey__title_main {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.3;
+        color: #FFFFFF;
+        margin: 0;
+      }
+
+      .turnkey__intro_main {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 1.4;
+
+        color: #C9C9C9;
+
+        max-width: 616px;
+      }
+
+      .turnkey__aboutsolution {
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+        max-width: 95%;
+        margin:  48px auto 0;
+      }
+    </style>
 
     <!--Слайд БТП-ПИЩ-УСТАНОВКИ-->
     <section class="">
       <!--<div class="bg-video"></div>-->
-      <div class="turnkey">
+      <div class="turnkey turnkey_main">
         <div class="turnkey__heading">
-          <h2 class="turnkey__title">Готовые решения</h2>
-          <p class="turnkey__intro">Блочные тепловые пункты, пищевые установки на базе пластинчатых теплообменников</p>
-          <a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода --></a>
+          <h2 class="turnkey__title_main">Готовые решения</h2>
+          <p class="turnkey__intro_main">На базе теплоообменников собственного производства предприятие предлагает готовые решения.</p>
+          <!--<a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода</a>-->
         </div>
         <div class="turnkey__solutions">
           <div class="turnkey__solution">
             <img src="images/btp-adv-img.png" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
-            <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
-            <a class="turnkey__solution-detail-link po__link" href="btp.html">Подробнее</a>
-          </div>
+            <div class="turnkey__aboutsolution">
+              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
+              <a class="turnkey__solution-detail-link po__link po__link_page_main" href="btp.html">Подробнее</a>
+            </div>
+            </div>
           <div class="turnkey__line"></div>
           <div class="turnkey__solution">
             <!--data-animation-del-class="animate__delay-1s"-->
             <img src="images/teplojit-pou.png" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s" data-wow-duration="1.5s">
-            <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
-            <a class="turnkey__solution-detail-link po__link" href="#">Подробнее</a>
+            <div class="turnkey__aboutsolution">
+              <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
+              <a class="turnkey__solution-detail-link po__link po__link_page_main" href="#">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
@@ -684,9 +879,9 @@
         style="flex-direction: column; align-items: flex-start; padding: 2%;">
         <img src="./images/logo_bsx_n_tm.svg" style="min-width: 210px;">
         <h2 style="color: #f2f2f2; font-size:36px; font-weight:600; text-transform:uppercase;margin: 40px 0 15px 0;">ООО “Термоблок”</h2>
-        <p style="max-width: 529px; 
-          color: #f2f2f2; 
-          font-size: 24px; 
+        <p style="max-width: 529px;
+          color: #f2f2f2;
+          font-size: 24px;
           line-height: 1.3;
           margin: 0;">предприятие холдиноговой компании “Барнаульский
         станкостроительный завод”</p>
@@ -933,13 +1128,13 @@
          romb_before.classList.remove('animate__animated', 'animation_romb');
          romb_after.classList.remove('animate__animated', 'animation_romb');
        } catch (error) {
-         
+
        }
-   	
-       
+
+
        romb_before.classList.add('animate__animated', 'animation_romb');
        romb_after.classList.add('animate__animated', 'animation_romb');
-     	
+
        /*animation_class = arr[i].getAttribute("data-class-animaton");
          console.log(animation_class);
          duration_custom = arr[i].getAttribute("data-animation-dur");
@@ -1067,7 +1262,7 @@
                 main_swiper.params.freeMode = false;
               }
       }
-  
+
     window.onresize = function( event ) {
       const windowInnerWidth = window.innerWidth;
       let test_width = document.querySelector('.test-width');
