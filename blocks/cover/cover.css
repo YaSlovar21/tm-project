@@ -7,7 +7,7 @@
     background-size: cover;
     background-image: url(../../images/place_new_1.jpg);
     background-repeat: no-repeat;
-    
+
     display: flex;
     align-items: stretch;
     justify-content: stretch;
@@ -30,7 +30,8 @@
 @media screen and (min-width:1184px) {
     .cover {
         max-width: 100%;
-        min-height: 513px;
+        /*min-height: 513px;*/
+        min-height: 350px;
     }
  }
 
