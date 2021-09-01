@@ -35,6 +35,7 @@ const showInputError = (formElement, inputElement, errorMessage) => {
   inputElement.classList.add('form__input_type_error');
   errorElement.textContent = errorMessage;
   errorElement.classList.add('form__input-error_active');
+  freezePlaceholder(formElement, inputElement);
 };
 
 const hideInputError = (formElement, inputElement) => {
@@ -42,6 +43,7 @@ const hideInputError = (formElement, inputElement) => {
   inputElement.classList.remove('form__input_type_error');
   errorElement.classList.remove('form__input-error_active');
   errorElement.textContent = '';
+
 };
 
 const checkInputValidity = (formElement, inputElement) => {
@@ -68,7 +70,7 @@ const hasInvalidInput = (inputList) => {
 
 const setEventListeners = (formElement) => {
   const inputList = Array.from(formElement.querySelectorAll('.form__input'));
-  const buttonElement = formElement.querySelector('.form__submit');
+  // const buttonElement = formElement.querySelector('.form__submit');
   //toggleButtonState(inputList, buttonElement);
 
   inputList.forEach((inputElement) => {
@@ -85,11 +87,11 @@ const enableValidation = () => {
     formElement.addEventListener('submit', function (evt) {
       evt.preventDefault();
     });
-
-    const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
+    setEventListeners(formElement);
+    /*const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
     fieldsetList.forEach((fieldSet) => {
           setEventListeners(fieldSet);
-    });
+    });*/
   });
 };
 

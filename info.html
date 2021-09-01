@@ -229,41 +229,129 @@
           </div>
 
         </section>-->
-        <form class="form form-big" novalidate>
-          <span style="position: absolute; top:0; left: 0;"><img src="./images/rect_sect.svg" width="30%"></span>
-          <span style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="./images/rect_sect.svg" width="30%"></span>
-          <fieldset class="form__set">
-            <label class="form__field">
-              <input type="" name="t_gre_mass" id="temp-grin-input" class="form__input" required minlength="1">
-              <span class="form__placeholder temp-grin-input-placeholder">
-                Температура среды на входе
-              </span>
-            </label>
-            <label class="form__field" style="margin-top: 115px;">
-              <input type=""  id="temp-grout-input" class="form__input" novalidate required minlength="7">
-              <span class="form__placeholder temp-grout-input-placeholder">
-                Температура среды на выходе
-              </span>
-              <span class="form__input-error temp-grout-input-error"></span>
-            </label>
-          </fieldset>
-          <img src="./images/to_online.png" style="flex-basis: 172px;">
-          <fieldset class="form__set">
-            <label class="form__field">
-              <input type="" name="t_gre_mass" id="temp-nagrin-input" class="form__input" required minlength="1">
-              <span class="form__placeholder temp-nagrin-input-placeholder">
-                Температура среды на выходе
-              </span>
-            </label>
-            <label class="form__field" style="margin-top: 115px;">
-              <input type=""  id="temp-nagrout-input" class="form__input"  required minlength="7">
-              <span class="form__placeholder temp-nagrout-input-placeholder">
-                Температура среды на входе
-              </span>
-              <span class="form__input-error temp-nagrout-input-error"></span>
-            </label>
-          </fieldset>
 
+        <style>
+          .form__select {
+            border-radius: 0px;
+            border: none;
+            color: #fff;
+            font-weight: 300;
+            font-size: 16px;
+            margin-left: 10px;
+            border-bottom: 1px solid #c2c2c2;
+            background: transparent;
+            /*height: 36px;*/
+            /*padding: 0 5px;*/
+            padding: 7px 0;
+            box-sizing: border-box;
+            outline: none;
+            position: relative;
+            transition: all .6s linear;
+          }
+          .formbig__subst-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 1.2;
+            letter-spacing: -0.035em;
+          }
+          .formbig__subst-title_hot {
+            color: #D92921;
+          }
+          .formbig__subst-title_cold {
+            color: #0093DD;
+          }
+        </style>
+        <form class="form form-big"  novalidate>
+          <div style="display: flex;justify-content: space-between; margin-bottom: 100px;">
+            <div style="display: flex; align-items: center;">
+              <h3 class="formbig__subst-title formbig__subst-title_hot">Греющая сторона</h3>
+              <select class="form__select" name="t_typesr">
+                <option class="raschet__option" value="Вода">вода</option>
+                <option  class="raschet__option" value="Пар">пар</option>
+                <option  class="raschet__option" value="Масло">масло</option>
+              </select>
+            </div>
+            <div style="text-align: right; display: flex; align-items: center;">
+              <h3 class="formbig__subst-title formbig__subst-title_cold">Нагреваемая сторона</h3>
+              <select class="form__select" name="t_typesr">
+                <option class="raschet__option" value="Вода">вода</option>
+                <option  class="raschet__option" value="Пар">пар</option>
+                <option  class="raschet__option" value="Масло">масло</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex; justify-content: space-between; flex-direction: row;">
+            <fieldset class="" style="border: none;
+                              padding: 0;
+                              margin: 0;
+                              flex-basis: 267px;
+                              min-width: 0;">
+              <label class="form__field">
+                <input name="t_gre_mass" id="temp-grin-input" class="form__input" novalidate required min="1">
+                <span class="form__placeholder temp-grin-input-placeholder">
+                  Температура среды на входе
+                </span>
+                <span class="form__input-error temp-grin-input-error"></span>
+              </label>
+              <label class="form__field" style="margin-top: 115px;">
+                <input type=""  id="temp-grout-input" class="form__input" novalidate required minlength="7">
+                <span class="form__placeholder temp-grout-input-placeholder">
+                  Температура среды на выходе
+                </span>
+                <span class="form__input-error temp-grout-input-error"></span>
+              </label>
+            </fieldset>
+            <img src="./images/to_online.png" style="flex-basis: 172px; object-fit: contain;">
+            <fieldset class="" style="border: none;
+                          padding: 0;
+                          margin: 0;
+                          flex-basis: 287px;
+                          min-width: 0;">
+              <label class="form__field">
+                <input type="" name="t_gre_mass" id="temp-nagrout-input" class="form__input" required minlength="1">
+                <span class="form__placeholder temp-nagrout-input-placeholder">
+                  Температура среды на выходе
+                </span>
+                <span class="form__input-error temp-nagrout-input-error"></span>
+              </label>
+              <label class="form__field" style="margin-top: 115px;">
+                <input type=""  id="temp-nagrin-input" class="form__input"  required minlength="7">
+                <span class="form__placeholder temp-nagrin-input-placeholder">
+                  Температура среды на входе
+                </span>
+                <span class="form__input-error temp-nagrin-input-error"></span>
+              </label>
+            </fieldset>
+          </div>
+          <div style="display:flex;align-self:flex-end; align-items: center; max-width: 287px; margin-top: 77px;">
+            <label class="form__field" style="min-width: 0;">
+              <input type=""  id="rash-input" class="form__input"  required minlength="7">
+              <span class="form__placeholder rash-input-placeholder">
+                Расход нагреваемой среды
+              </span>
+              <span class="form__input-error rash-input-error"></span>
+            </label>
+            <select class="form__select" name="t_typesr">
+              <option class="raschet__option" value="Вода">м3/ч</option>
+              <option class="raschet__option" value="Пар">т/ч</option>
+            </select>
+          </div>
+          <div style="display:flex;align-self:flex-end; align-items: center; max-width: 287px;">
+            <label class="form__field" style="min-width: 0;">
+              <input type=""  id="q-input" class="form__input"  required minlength="7">
+              <span class="form__placeholder q-input-placeholder">
+                Мощность теплообменника
+              </span>
+              <span class="form__input-error q-input-error"></span>
+            </label>
+            <select class="form__select" name="t_typesr">
+              <option class="raschet__option" value="Вода">квт</option>
+              <option class="raschet__option" value="Пар">мвт</option>
+            </select>
+          </div>
+          <button type="submit" style="margin-top:32px;background-color:tomato; align-self: stretch; border: none; font-weight: 800; font-size: 18px; color: white; padding: 16px 0;">Рассчитать теплообменник</button>
         </form>
 
         <section class="raschet raschet_active">
