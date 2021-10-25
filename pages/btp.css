@@ -95,7 +95,7 @@
 
 @import url(../blocks/table/table.css);
 
-
+@import url(../blocks/introgrid/introgrid.css);
 
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__link/feynman__link.css);

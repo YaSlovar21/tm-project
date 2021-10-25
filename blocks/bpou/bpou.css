@@ -4,7 +4,7 @@
             <span class="bpou__intro">Смотрите также</span>
             <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
             <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
-            <div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>     
+            <div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
           </div>
           <div class="bpou__image-container">
             <img src="images/teplojit-pou.png" class="bpou__image">
@@ -20,8 +20,8 @@
 
     position: relative;
 
-    margin-bottom: 20px; /*временно*/
-    margin-top: 90px;
+    margin-bottom: 50px; /*временно*/
+    margin-top: 140px;
     padding-bottom: 20px; /*временно*/
 }
 

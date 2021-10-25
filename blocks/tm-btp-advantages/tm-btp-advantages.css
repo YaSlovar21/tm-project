@@ -57,7 +57,7 @@
 }
 
 .tm-btp-advantages__introbutton {
-    width: 100%; 
+    width: 100%;
     max-width: 100%;
 }
 
@@ -112,7 +112,7 @@
     color: #FF5E3A;
     margin: 0 0 20px;
     font-size: 24px;
-    
+
 }
 
 .tm-btp-advantages__feat-desc {
@@ -153,7 +153,7 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
-  
+
 }
 
 .btp-schemes__pagination-container {
@@ -163,7 +163,7 @@
     margin-top: 10px;
     text-align: center;
     transition: .3s opacity;
-    
+
     z-index: 10;
     width: 300px;
     display: flex;
@@ -172,7 +172,7 @@
     bottom: 15px;
     top: 0!important;
     right: 0;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)!important;
 
     box-sizing: border-box;
 }
@@ -212,7 +212,7 @@
 
 /*****ROOT*****/
 .swiper-container-vertical>.swiper-pagination-bullets {
-    right: 0px; 
-    top: 0; 
-    transform: translate3d(0px,0,0); 
+    right: 0px;
+    top: 0;
+    transform: translate3d(0px,0,0);
 }

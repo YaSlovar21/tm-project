@@ -150,6 +150,8 @@
 @import url(../blocks/food-type/food-type.css);
 @import url(../blocks/feedback/feedback.css);
 
+@import url(../blocks/introgrid/introgrid.css);
+
 /*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
 @import url(../blocks/info/info.css);
 
