@@ -60,9 +60,9 @@
 
       perspective: 200px;
 
-      right: -20px;
-      bottom: 160px;
-
+      /*right: -20px;
+      bottom: 160px;*/
+      margin-top: 180px;
       align-self: flex-end;
       animation-name: rotate_romb;
     }
@@ -90,6 +90,7 @@
       box-sizing: border-box;
 
     }
+
     .video-main__slider .swiper-button-prev {
       right: 80px;
       left: auto;
@@ -133,7 +134,8 @@
             <ul class="nav__submenu">
               <li class="nav__sub-ul-item"><a class="nav__sub-link" href="plast-to.html">Пластинчатые теплообменники</a>
               </li>
-              <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a></li>
+              <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a>
+              </li>
               <li class="nav__sub-ul-item"><a class="nav__sub-link" href="btp.html">Блочные тепловые пункты</a></li>
               <li class="nav__sub-ul-item"><a class="nav__sub-link" href="#">Пастеризационно охладительные установки</a>
               </li>
@@ -152,15 +154,14 @@
         <div class="test-width"></div>
       </nav>
       <div class="bg-video"></div>
-      <div style="position: relative; display: flex; flex-direction: column; width: 600px; justify-content: space-evenly; ">
-        <img style="width: 300px; position: relative; z-index: 22; margin-top: 100px; margin-left: 40px;" class="video-main__logo animate__animated animate__slow animate__fadeInLeft" src="images/tmlogo-1.svg">
-        <div class="header__contacts" style="margin-top: 30px; margin-left: 20px;">
-          <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
-          <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
-        </div>
-        <div class="video-container" style="margin-top: 160px;">
-          <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true" playsinline="playsinline" muted="muted"
-            loop="loop">
+      <div
+        style="position: relative; display: flex; flex-direction: column; width: 600px; justify-content: space-evenly; ">
+        <img style="width: 250px; position: relative; z-index: 22; margin-top: 60px; margin-left: 40px;"
+          class="video-main__logo animate__animated animate__slow animate__fadeInLeft" src="images/tmlogo-1.svg">
+
+        <div class="video-container" style="margin-top: 260px;">
+          <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
+            playsinline="playsinline" muted="muted" loop="loop">
             <source src="videos/tm_test_video.mp4" type="video/mp4">
             <source src="videos/tm_test_video.mp4" type="video/webm">
             Your browser does not support the video tag.
@@ -168,6 +169,13 @@
         </div>
         <div style="position: absolute; width: 100%; height: 100%; background-color: #f2f2f2;opacity: 0.1;"></div>
       </div>
+      <div style="display:flex;
+                  flex-direction: column;
+                  justify-content: flex-start;">
+       <div class="header__contacts" style="margin-top: 80px;">
+          <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
+          <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
+        </div>
       <div class="romb-container">
         <div class="romb-container-before"></div>
 
@@ -207,7 +215,8 @@
                 data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
               <p class="video-main__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
                 <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
-                  территории предприятия</span>, гарантия целиком на изделие.</p>
+                  территории предприятия</span>, гарантия целиком на изделие.
+              </p>
 
             </div>
           </div>
@@ -220,7 +229,7 @@
         </div>
         <div class="romb-container-after"></div>
       </div>
-
+      </div>
     </div>
 
     <!--Слайд с продукцией-->
@@ -238,8 +247,16 @@
       <div class="two-columns" data-wow-offset="450" data-wow-mobile="false">
         <h2 class="two-columns__brief">Продукция предприятия</h2>
         <div class="two-columns__main-text">
-          <p class="two-columns__paragraph" style="font-size: 18px;">Производство теплообменного оборудования «Термоблок» имеет только современное оборудование для производства пластинчатых теплообменников. Данный завод теплообменного оборудования относится к крупной холдинговой компании России, и имеет более 1 тыс. клиентов в год. До недавнего времени производства теплообменного оборудования в России не было, и в большинстве случаев компании обращались к мировым производителям. Теплообменное оборудование иностранных марок, по отношению к Российскому производству, имеет очень высокую цену и долгую доставку. Именно поэтому стоит отметить, что нужно выбирать Российское производство теплообменного оборудования, сэкономив при этом деньги и время.</p>
-          <p class="two-columns__paragraph" style="font-size: 18px;">Важнейшим звеном в подобных системах является теплообменное оборудование</p>
+          <p class="two-columns__paragraph" style="font-size: 18px;">Производство теплообменного оборудования
+            «Термоблок» имеет только современное оборудование для производства пластинчатых теплообменников. Данный
+            завод теплообменного оборудования относится к крупной холдинговой компании России, и имеет более 1 тыс.
+            клиентов в год. До недавнего времени производства теплообменного оборудования в России не было, и в
+            большинстве случаев компании обращались к мировым производителям. Теплообменное оборудование иностранных
+            марок, по отношению к Российскому производству, имеет очень высокую цену и долгую доставку. Именно поэтому
+            стоит отметить, что нужно выбирать Российское производство теплообменного оборудования, сэкономив при этом
+            деньги и время.</p>
+          <p class="two-columns__paragraph" style="font-size: 18px;">Важнейшим звеном в подобных системах является
+            теплообменное оборудование</p>
         </div>
       </div>
       <div class="product-types" style="margin-top: 20px;">
@@ -343,6 +360,7 @@
         flex-direction: column;
         max-height: 90vh;
       }
+
       .ds-intro__brand {
         display: flex;
         /* margin: 20px 0 0 3%; */
@@ -354,23 +372,27 @@
         /*padding-right: 2%;*/
         flex-wrap: wrap-reverse;
       }
+
       .ds-intro__img-container {
         position: relative;
         z-index: 3;
         flex: 0 1 512px;
         min-height: 0;
         display: flex;
-        height: 100%; /*вписываем во флекс базис 100%, без этого картинка не ужимается*/
+        height: 100%;
+        /*вписываем во флекс базис 100%, без этого картинка не ужимается*/
         width: 100%;
         /*background: radial-gradient(82.11% 14% at 50% 91.55%, rgba(255, 255, 255, 0.51) 6.77%, rgba(255, 255, 255, 0.16) 48.88%, rgba(255, 255, 255, 0) 100%);*/
-        background:radial-gradient(34.78% 8.45% at 50% 91.55%, rgba(255, 255, 255, 0.51) 6.77%, rgba(255, 255, 255, 0.16) 48.88%, rgba(255, 255, 255, 0) 100%);
+        background: radial-gradient(34.78% 8.45% at 50% 91.55%, rgba(255, 255, 255, 0.51) 6.77%, rgba(255, 255, 255, 0.16) 48.88%, rgba(255, 255, 255, 0) 100%);
       }
+
       .ds-intro__image {
         width: 100%;
         height: 100%;
         object-fit: contain;
         object-position: center;
       }
+
       .ds-intro__details {
         display: flex;
         /* margin-top: 25px;
@@ -396,9 +418,11 @@
           style="font-weight: 500; text-transform: uppercase; font-size: 36px;"
           data-class-animaton="animate__fadeInLeft" data-animation-dur="1.5s">Пластинчатые теплообменники российского
           производства</h2>-->
-        <div class="ds-intro__brand" >
-          <h2 style="text-transform: uppercase; font-size: 20px; width: 400px; color: #fff; line-height: 1.4;">Пластинчатые теплообменники российского производства</h2>
-          <img src="./images/logo_teplohit_with_tepl.svg" style="margin-left: 5%; min-width: 0; max-width: 195px;" class="wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
+        <div class="ds-intro__brand">
+          <h2 style="text-transform: uppercase; font-size: 20px; width: 400px; color: #fff; line-height: 1.4;">
+            Пластинчатые теплообменники российского производства</h2>
+          <img src="./images/logo_teplohit_with_tepl.svg" style="margin-left: 5%; min-width: 0; max-width: 195px;"
+            class="wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
           <p style="color: #c4c4c4;
           font-weight: 200;
           font-size: 14px;
@@ -406,31 +430,34 @@
           font-style: italic;
           line-height: 1.4;
           display: none;
-          margin: 10px 0 0 25px;" class="wow animate__fadeIn" data-wow-offset="200" data-wow-delay="1.6s" >Торговая марка предприятия Термоблок</p>
+          margin: 10px 0 0 25px;" class="wow animate__fadeIn" data-wow-offset="200" data-wow-delay="1.6s">Торговая
+            марка предприятия Термоблок</p>
         </div>
         <div class="ds-intro__img-container">
           <img src="images/ti45_new.png" class="ds-intro__image" alt="Пластинчатый теплообменник">
         </div>
 
         <div class="ds-intro__details">
-          <ul class="list wow animate__fadeInUp" style="z-index: 22; max-width: 420px; margin-left: 3%;" data-animation-dur="1.5s">
-              <li class="list__item  list__item_block_localprod">Пластины собственного производства</li>
-              <li class="list__item  list__item_block_localprod">Выгодные цены за счет 100% локализации
-              </li>
-              <li class="list__item  list__item_block_localprod">Оперативный расчёт и сопровождение
-                квалифицированными инженерами</li>
+          <ul class="list wow animate__fadeInUp" style="z-index: 22; max-width: 420px; margin-left: 3%;"
+            data-animation-dur="1.5s">
+            <li class="list__item  list__item_block_localprod">Пластины собственного производства</li>
+            <li class="list__item  list__item_block_localprod">Выгодные цены за счет 100% локализации
+            </li>
+            <li class="list__item  list__item_block_localprod">Оперативный расчёт и сопровождение
+              квалифицированными инженерами</li>
           </ul>
-          <a class="localprod__link link-beauty wow pulse" style="min-width: 260px;" data-wow-duration="1.5s" data-wow-delay="1s"
-              data-animation-del-class="animate__delay-1s"  href="plast-to.html">Пластинчатые
-              теплообменники &#8594;</a>
+          <a class="localprod__link link-beauty wow pulse" style="min-width: 260px;" data-wow-duration="1.5s"
+            data-wow-delay="1s" data-animation-del-class="animate__delay-1s" href="plast-to.html">Пластинчатые
+            теплообменники &#8594;</a>
         </div>
       </section>
 
       <section class="double-section__second" style="">
-        <div style="position: absolute; top:0; left: 0; width: 50%;"><img src="./images/rect_sect.svg" width="70%"></div>
-        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img src="./images/rect_sect.svg" width="70%"></div>
-        <div class="scroll-slider"
-          style="width: 100%; height: 100%; color: rgb(248, 248, 248); overflow: hidden;">
+        <div style="position: absolute; top:0; left: 0; width: 50%;"><img src="./images/rect_sect.svg" width="70%">
+        </div>
+        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img
+            src="./images/rect_sect.svg" width="70%"></div>
+        <div class="scroll-slider" style="width: 100%; height: 100%; color: rgb(248, 248, 248); overflow: hidden;">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 5%;">
               <h3 class="info__h3" style="margin-top: 0;">История производства теплообменников</h3>
@@ -634,7 +661,9 @@
     <style>
       .mainmodels {
         /*margin-top: 160px;*/
+        display: flex;
       }
+
       .mainmodels__title {
         font-style: normal;
         font-weight: 800;
@@ -643,8 +672,9 @@
         color: #cacaca;
 
         margin: 0;
-        white-space:nowrap;
+        white-space: nowrap;
       }
+
       .mainmodels__wrapper {
         width: 75%;
         background-color: rgba(47, 47, 47, 0.5);
@@ -655,11 +685,42 @@
         display: flex;
         justify-content: center;
       }
+
       @media screen and (max-width: 1100px) {
         .mainmodels__wrapper {
           width: 100%;
         }
       }
+
+      .mainmodels__turnbutton {
+        display: flex;
+
+        background-color: #f2f2f210;
+        position: relative;
+        color: #f2f2f2;
+        border: none;
+        font-size: 20px;
+
+        padding: 30px;
+        cursor: pointer;
+        transition: color 0.4s linear;
+      }
+
+      .mainmodels__turnbutton:hover {
+        color: #ff5e3a;
+      }
+
+      .mainmodels__turnbutton::before {
+        content: '';
+        position: relative;
+        height: 40px;
+        width: 40px;
+        background-image: url('images/turnbutton.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
       .timodels {
         justify-content: center;
         flex-basis: 100%;
@@ -673,6 +734,7 @@
         margin: 0;
         list-style-type: none;
       }
+
       .timodels__link {
         text-decoration: none;
       }
@@ -708,6 +770,7 @@
 
       <div class="mainmodels__wrapper">
         <h2 class="mainmodels__title">Модельный ряд теплообменников</h2>
+
         <ul class="timodels">
           <li class="timodels__pto">
             <a class="timodels__link" href="./catalog/ti025.html">
@@ -783,6 +846,7 @@
           </li>
         </ul>
       </div>
+      <button class="mainmodels__turnbutton">Смотреть в пищевом исполнении</button>
     </section>
 
     <style>
@@ -790,6 +854,7 @@
         padding-top: 0;
         margin-top: 75px;
       }
+
       .turnkey__title_main {
         font-weight: bold;
         font-size: 24px;
@@ -814,9 +879,24 @@
       .turnkey__aboutsolution {
         display: flex;
         align-items: center;
+        flex-direction: column;
         margin-top: 48px;
-        max-width: 95%;
-        margin:  48px auto 0;
+        max-width: 75%;
+        margin: 48px auto 0;
+      }
+
+      .turnkey__solution-description {
+        text-align: center;
+      }
+
+      .turnkey__solution-detail-link {
+        width: 90%;
+        background-color: #c4c4c43f;
+        margin-top: 30px;
+        text-decoration: none;
+        text-align: center;
+        color: #f2f2f2;
+        padding: 15px 0 15px;
       }
     </style>
 
@@ -826,24 +906,26 @@
       <div class="turnkey turnkey_main">
         <div class="turnkey__heading">
           <h2 class="turnkey__title_main">Готовые решения</h2>
-          <p class="turnkey__intro_main">На базе теплоообменников собственного производства предприятие предлагает готовые решения.</p>
+          <p class="turnkey__intro_main">На базе теплоообменников собственного производства предприятие предлагает
+            готовые решения.</p>
           <!--<a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода</a>-->
         </div>
         <div class="turnkey__solutions">
           <div class="turnkey__solution">
             <img src="images/btp-adv-img.png" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
-              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
-              <a class="turnkey__solution-detail-link po__link po__link_page_main" href="btp.html">Подробнее</a>
+              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства<a style="margin-left: 30px; text-decoration: none;" href="#">Перейти --></a></p>
+              <a class="turnkey__solution-detail-link" href="btp.html">Подробнее</a>
             </div>
-            </div>
+          </div>
           <div class="turnkey__line"></div>
           <div class="turnkey__solution">
             <!--data-animation-del-class="animate__delay-1s"-->
-            <img src="images/teplojit-pou.png" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s" data-wow-duration="1.5s">
+            <img src="images/teplojit-pou.png" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s"
+              data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
               <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
-              <a class="turnkey__solution-detail-link po__link po__link_page_main" href="#">Подробнее</a>
+              <a class="turnkey__solution-detail-link" href="#">Подробнее</a>
             </div>
           </div>
         </div>
@@ -873,27 +955,47 @@
       }
     </style>
 
-<style>
-  .bsz-intro {
-    display: flex;
-    margin-top: 100px;
-  }
-  .bsz-intro__text {
-    flex-basis: 30%;
-    flex-shrink: 0;
-    flex-grow: 0;
-  }
-  .bsz-intro__cover {
-    flex-basis: 100%;
-    margin: 0;
-  }
-</style>
+    <style>
+      .bsz-intro {
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        justify-content: space-between;
+        max-width: 98%;
 
-<section class="bsz-intro">
+      }
 
-  <div class="cover bsz-intro__cover">
-    <a class="cover__overlay" style="flex-direction: row;" href="#">
-        <!--<h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
+      .bsz-intro__text {
+        flex-basis: 30%;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      .bsz-intro__cover {
+        flex-basis: 55%;
+        margin: 0;
+      }
+    </style>
+
+    <div class="turnkey__heading" style="max-width: 98%; margin: 120px auto 0;">
+      <h2 class="turnkey__title_main">О производстве</h2>
+      <p class="turnkey__intro_main" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
+        полным циклом производства пластинчатых теплообменников</p>
+    </div>
+
+    <section class="bsz-intro">
+      <div style="position: relative; overflow: hidden;">
+        <img src="./images/logo_BSZ_svg.svg" style="position: absolute;top: -50px;left: -50px; z-index: 1; width: 70%; opacity: 0.3;">
+        <p class="turnkey__intro_main" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
+            class="span span_color_orange span_uppercase">ООО "Термоблок" </span>-предприятие холдиноговой компании
+          “Барнаульский
+          станкостроительный завод”</p>
+        <p class="turnkey__intro_main"style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
+          партнерам преимущества в плане качества продуции</p>
+      </div>
+      <div class="cover bsz-intro__cover">
+        <a class="cover__overlay" style="flex-direction: row;" href="#">
+          <!--<h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
         <p class="cover__subtitle">79 лет высокой деловой репутации · 14 предприятий бизнес-центров · 2500 сотрудников</p>
 
         <div class="double-section__first"
@@ -901,56 +1003,57 @@
           <img src="./images/logo_bsx_n_tm.svg" style="min-width: 210px;">
 
         </div> -->
-        <div class="bsz-intro__text">
-          <h2 style="color: #ff5e3a; font-size:28px; font-weight:800; text-transform:uppercase;margin: 40px 0 15px 0;">ООО “Термоблок”</h2>
-          <p style="max-width: 399px;
-                  color: #f2f2f2;
-                  font-size: 18px;
-                  line-height: 1.3;
-                  margin: 0;">предприятие холдиноговой компании “Барнаульский
-          станкостроительный завод”</p>
+          <ul class="list" style="margin-left: 50px; margin-top: 50px;">
+            <li class="list__item list__item_theme_dark list__item_theme_bsz list__item_font_24">80 лет высокой деловой
+              репутации</li>
+            <li class="list__item  list__item_theme_dark list__item_theme_bsz list__item_font_24">13 предприятий
+              бизнес-центров</li>
+            <li class="list__item list__item_theme_dark list__item_theme_bsz list__item_font_24">2500 сотрудников</li>
+
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <section class="bsz">
+      <div class="tablemod tablemod_theme_dark">
+        <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-offset="50">
+          <h3 class="tablemod__heading tablemod__heading_theme_dark">Лабораторная проверка металла</h3>
+          <p class="tablemod__text tablemod__text_theme_dark">Нержавеющая сталь для теплообменников проходит проверку на
+            соответствие маркам 304 и 316 ANSI.</p>
         </div>
-        <ul class="list" style="margin-left: 50px; margin-top: 50px;">
-          <li class="list__item list__item_theme_dark list__item_theme_bsz list__item_font_24">80 лет высокой деловой репутации</li>
-          <li class="list__item  list__item_theme_dark list__item_theme_bsz list__item_font_24">13 предприятий бизнес-центров</li>
-          <li class="list__item list__item_theme_dark list__item_theme_bsz list__item_font_24">2500 сотрудников</li>
-
-        </ul>
-    </a>
-  </div>
-</section>
-
-<section class="bsz">
-  <div class="tablemod tablemod_theme_dark">
-    <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-offset="50">
-        <h3 class="tablemod__heading tablemod__heading_theme_dark">Лабораторная проверка металла</h3>
-        <p class="tablemod__text tablemod__text_theme_dark">Нержавеющая сталь для теплообменников проходит проверку на соответствие маркам 304 и 316 ANSI.</p>
-    </div>
-    <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay=".5s" data-wow-offset="50">
-      <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие производственные возможности</h3>
-      <p class="tablemod__text tablemod__text_theme_dark">Производственные мощности и научно-технический потенциал  завода позволяет изготавливать как новые изделия, так и совершенствовать производственную базу для теплообменников.</p>
-    </div>
-    <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight"  data-wow-delay="1s" data-wow-offset="50">
-      <h3 class="tablemod__heading tablemod__heading_theme_dark">Система контроля качества</h3>
-      <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного дочернего предприятия холдинга - Барнаульского патронного завода.</p>
-    </div>
-    <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay="1.5s" data-wow-offset="50">
-      <h3 class="tablemod__heading tablemod__heading_theme_dark">Ответственность за репутацию</h3>
-      <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного дочернего предприятия холдинга - Барнаульского патронного завода.</p>
-    </div>
-</div>
-</section>
+        <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay=".5s"
+          data-wow-offset="50">
+          <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие производственные возможности</h3>
+          <p class="tablemod__text tablemod__text_theme_dark">Производственные мощности и научно-технический потенциал
+            завода позволяет изготавливать как новые изделия, так и совершенствовать производственную базу для
+            теплообменников.</p>
+        </div>
+        <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay="1s"
+          data-wow-offset="50">
+          <h3 class="tablemod__heading tablemod__heading_theme_dark">Система контроля качества</h3>
+          <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного
+            дочернего предприятия холдинга - Барнаульского патронного завода.</p>
+        </div>
+        <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay="1.5s"
+          data-wow-offset="50">
+          <h3 class="tablemod__heading tablemod__heading_theme_dark">Ответственность за репутацию</h3>
+          <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного
+            дочернего предприятия холдинга - Барнаульского патронного завода.</p>
+        </div>
+      </div>
+    </section>
 
 
     <!--Слайд Галлерея + UP FOOTER
     <div class="swiper-slide" style="/*width: 100%; height: 100%; background-color: #f2f2f210;*/overflow: hidden;">-->
-      <div class="photo-grid" style="margin-top: 40px; max-width: 100%; top:0;">
-        <figure class="photo-grid__item wow1" data-animation-dur="1s" data-class-animaton="animate__fadeInUp"><img
-            class="photo-grid__image photo-grid__image_position_right" src="images/prod-big-1.jpg"></figure>
-        <figure class="photo-grid__item wow1" data-animation-dur="2s" data-class-animaton="animate__fadeInLeft">
-          <img class="photo-grid__image photo-grid__image_position_center" src="images/metall-cut-big.png">
+    <div class="photo-grid" style="margin-top: 40px; max-width: 100%; top:0;">
+      <figure class="photo-grid__item wow1" data-animation-dur="1s" data-class-animaton="animate__fadeInUp"><img
+          class="photo-grid__image photo-grid__image_position_right" src="images/prod-big-1.jpg"></figure>
+      <figure class="photo-grid__item wow1" data-animation-dur="2s" data-class-animaton="animate__fadeInLeft">
+        <img class="photo-grid__image photo-grid__image_position_center" src="images/metall-cut-big.png">
 
-          <!--<div class="video-container">
+        <!--<div class="video-container">
                   <video poster="images/bg_onload.svg" autoplay="true" playsinline="playsinline" muted="muted" loop="loop">
                     <source src="videos/tm_test_video.mp4" type="video/mp4">
                     <source src="videos/tm_test_video.mp4" type="video/webm">
@@ -958,26 +1061,26 @@
                   </video>
                 </div>-->
 
-        </figure>
-        <figure class="photo-grid__item"><img class="photo-grid__image photo-grid__image_position_right"
-            src="images/grospiron.JPG"></figure>
-        <figure class="photo-grid__item wow1" data-animation-dur="3s" data-class-animaton="animate__fadeInDownBig"><img
-            class="photo-grid__image wow1" src="images/press-plast-ready.jpg"></figure>
-        <figure class="photo-grid__item wow1" data-animation-dur="4s" data-class-animaton="animate__fadeInBottom"><img
-            class="photo-grid__image" src="images/press-plast-zag.jpg"></figure>
-        <a class="photo-grid__item link-in-grid" href="#"
-          style="z-index: 7; color: white; font-size: 18px; align-self: stretch; text-decoration: none; justify-self: stretch;">Подробнее
-          о производстве &#8594;</a>
-        <figure class="photo-grid__item wow1" data-animation-dur="4s" data-class-animaton="animate__fadeInRight"><img
-            class="photo-grid__image photo-grid__image_position_center" src="images/3-to-small-to-big.jpg"></figure>
-      </div>
-      <section class="up-footer up-footer_bg_none">
-        <ul class="up-footer__list">
-          <li class="up-footer__list-item" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-          <li class="up-footer__list-item" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
-          <li class="up-footer__list-item " data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
-        </ul>
-      </section>
+      </figure>
+      <figure class="photo-grid__item"><img class="photo-grid__image photo-grid__image_position_right"
+          src="images/grospiron.JPG"></figure>
+      <figure class="photo-grid__item wow1" data-animation-dur="3s" data-class-animaton="animate__fadeInDownBig"><img
+          class="photo-grid__image wow1" src="images/press-plast-ready.jpg"></figure>
+      <figure class="photo-grid__item wow1" data-animation-dur="4s" data-class-animaton="animate__fadeInBottom"><img
+          class="photo-grid__image" src="images/press-plast-zag.jpg"></figure>
+      <a class="photo-grid__item link-in-grid" href="#"
+        style="z-index: 7; color: white; font-size: 18px; align-self: stretch; text-decoration: none; justify-self: stretch;">Подробнее
+        о производстве &#8594;</a>
+      <figure class="photo-grid__item wow1" data-animation-dur="4s" data-class-animaton="animate__fadeInRight"><img
+          class="photo-grid__image photo-grid__image_position_center" src="images/3-to-small-to-big.jpg"></figure>
+    </div>
+    <section class="up-footer up-footer_bg_none">
+      <ul class="up-footer__list">
+        <li class="up-footer__list-item" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+        <li class="up-footer__list-item" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
+        <li class="up-footer__list-item " data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
+      </ul>
+    </section>
     </div>
 
     <!--FOOTER-->

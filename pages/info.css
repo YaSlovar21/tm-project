@@ -71,13 +71,21 @@
   flex-direction: row;
   align-items: center;
 }
+
+@keyframes autofill {
+  to {
+    color: #fff;
+    background: transparent;
+  }
+}
+/*
 @-webkit-keyframes autofill {
   to {
     color: #fff;
     background: transparent;
   }
 }
-
+*/
 
 .form__input {
   min-width: 0;
@@ -96,9 +104,15 @@
   padding: 7px 0;
   color: #fff;
 }
-.form__input:-webkit-autofill {
+form__input:-internal-autofill-selected{
+/*.form__input:-internal-autofill-selected {*/
+  background-color: transparent !important;
+  background-image: none !important;
+  color: rgb(255, 255, 255) !important;
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
+  animation-name: autofill;
+  animation-fill-mode: both;
 }
 
 .form__text {

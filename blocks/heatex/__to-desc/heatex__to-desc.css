@@ -12,3 +12,9 @@
         max-width: 630px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .heatex__to-desc {
+        font-size: 14px;
+    }
+}
