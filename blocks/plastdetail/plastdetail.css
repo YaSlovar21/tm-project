@@ -1,0 +1,13 @@
+.plastdetail {
+
+}
+
+.plastdetail__container {
+  position: relative;
+}
+
+.plastdetail__detailslist {
+  position: absolute;
+  top: 231px;
+  left: 193px;
+}
