@@ -5,18 +5,21 @@
     text-decoration: none;
     color: #f77b42;
     line-height: 1.4;
-    font-size: 26px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: 500;
     max-width: 260px;
 
     justify-self: flex-end;
-    
+    align-self: flex-end;
+
   }
 
 .localprod__link::before {
-  content: 'Перейти в раздел\b';
-  font-size: 14px;
+  content: 'Перейти в раздел';
+  width: 100%;
+  font-size: 11px;
   font-style: italic;
+  font-weight: 200;
   display: inline-flex;
   color: rgba(242, 242, 242, .5);
 }

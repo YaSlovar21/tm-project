@@ -1,0 +1,14 @@
+.bsz-new {
+  background-color: #2f2f2f49;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.bsz-new__img {
+  flex-basis: 40%;
+  min-width: 0;
+  position: relative;
+  bottom: 50px;
+}

@@ -62,8 +62,9 @@
 
       /*right: -20px;
       bottom: 160px;*/
-      margin-top: 180px;
-      align-self: flex-end;
+      /*margin-top: 180px;
+
+      align-self: flex-end;*/
       animation-name: rotate_romb;
     }
 
@@ -126,8 +127,28 @@
   <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
 
   <main>
-    <div style="display: flex; position: relative; min-height: 70vh;">
-      <nav class="nav nav_abs nav_mobile">
+    <div style="display: flex; position: relative; min-height: 70vh; justify-content: stretch;">
+      <div class="bg-video"></div>
+      <div
+        style="position: relative; display: flex; flex-direction: column; width: 600px; justify-content: space-evenly; ">
+        <img style="width: 250px; position: relative; z-index: 22; margin-top: 60px; margin-left: 40px;"
+          class="video-main__logo animate__animated animate__slow animate__fadeInLeft" src="images/tmlogo-1.svg">
+
+        <div class="video-container" style="margin-top: 260px;">
+          <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
+            playsinline="playsinline" muted="muted" loop="loop">
+            <source src="videos/tm_test_video.mp4" type="video/mp4">
+            <source src="videos/tm_test_video.mp4" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style="position: absolute; width: 100%; height: 100%; background-color: #f2f2f2;opacity: 0.1;"></div>
+      </div>
+      <div style="display:flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: stretch;">
+      <nav class="nav nav_mobile">
         <ul class="nav__menu-links">
           <li class="nav__ul-item"><a class="nav__link" href="index.html">Главная</a></li>
           <li class="nav__ul-item"><a class="nav__link" href="production.html">Продукция</a>
@@ -153,29 +174,10 @@
         </ul>
         <div class="test-width"></div>
       </nav>
-      <div class="bg-video"></div>
-      <div
-        style="position: relative; display: flex; flex-direction: column; width: 600px; justify-content: space-evenly; ">
-        <img style="width: 250px; position: relative; z-index: 22; margin-top: 60px; margin-left: 40px;"
-          class="video-main__logo animate__animated animate__slow animate__fadeInLeft" src="images/tmlogo-1.svg">
-
-        <div class="video-container" style="margin-top: 260px;">
-          <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
-            playsinline="playsinline" muted="muted" loop="loop">
-            <source src="videos/tm_test_video.mp4" type="video/mp4">
-            <source src="videos/tm_test_video.mp4" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div style="position: absolute; width: 100%; height: 100%; background-color: #f2f2f2;opacity: 0.1;"></div>
-      </div>
-      <div style="display:flex;
-                  flex-direction: column;
-                  justify-content: flex-start;">
-       <div class="header__contacts" style="margin-top: 80px;">
+      <div class="header__contacts" style="margin-top: 80px;">
           <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
           <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
-        </div>
+      </div>
       <div class="romb-container">
         <div class="romb-container-before"></div>
 
@@ -911,23 +913,22 @@
           <!--<a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода</a>-->
         </div>
         <div class="turnkey__solutions">
-          <div class="turnkey__solution">
+          <a class="turnkey__solution link-beauty_moveup" href="#" >
             <img src="images/btp-adv-img.png" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
-              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства<a style="margin-left: 30px; text-decoration: none;" href="#">Перейти --></a></p>
-              <a class="turnkey__solution-detail-link" href="btp.html">Подробнее</a>
+              <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
             </div>
-          </div>
+          </a>
           <div class="turnkey__line"></div>
-          <div class="turnkey__solution">
+          <a class="turnkey__solution link-beauty_moveup" href="#">
             <!--data-animation-del-class="animate__delay-1s"-->
             <img src="images/teplojit-pou.png" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s"
               data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
               <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
-              <a class="turnkey__solution-detail-link" href="#">Подробнее</a>
+              <!--<a class="turnkey__solution-detail-link" href="#">Подробнее</a>-->
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -982,7 +983,7 @@
       <p class="turnkey__intro_main" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
         полным циклом производства пластинчатых теплообменников</p>
     </div>
-
+    <!--
     <section class="bsz-intro">
       <div style="position: relative; overflow: hidden;">
         <img src="./images/logo_BSZ_svg.svg" style="position: absolute;top: -50px;left: -50px; z-index: 1; width: 70%; opacity: 0.3;">
@@ -995,14 +996,14 @@
       </div>
       <div class="cover bsz-intro__cover">
         <a class="cover__overlay" style="flex-direction: row;" href="#">
-          <!--<h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
+          --><!--<h2 class="cover__title">ООО “Термоблок” - предприятие холдиноговой компании “Барнаульский станкостроительный завод”</h2>
         <p class="cover__subtitle">79 лет высокой деловой репутации · 14 предприятий бизнес-центров · 2500 сотрудников</p>
 
         <div class="double-section__first"
           style="flex-direction: column; align-items: flex-start; padding: 2%;">
           <img src="./images/logo_bsx_n_tm.svg" style="min-width: 210px;">
 
-        </div> -->
+        </div> -->  <!--
           <ul class="list" style="margin-left: 50px; margin-top: 50px;">
             <li class="list__item list__item_theme_dark list__item_theme_bsz list__item_font_24">80 лет высокой деловой
               репутации</li>
@@ -1013,8 +1014,19 @@
           </ul>
         </a>
       </div>
-    </section>
+    </section> -->
 
+    <section class="bsz-new">
+      <div class="bsz-new__intro">
+        <p class="turnkey__intro_main" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
+          class="span span_color_orange span_uppercase">ООО "Термоблок" </span>-предприятие холдиноговой компании
+        “Барнаульский
+        станкостроительный завод”</p>
+      <p class="turnkey__intro_main"style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
+        партнерам преимущества в плане качества продуции</p>
+      </div>
+      <img class="bsz-new__img" src="./images/place_new_1.jpg">
+    </section>
     <section class="bsz">
       <div class="tablemod tablemod_theme_dark">
         <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-offset="50">
