@@ -9,12 +9,12 @@
 
 .up-footer {
   box-sizing: border-box;
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
   background-color: #f2f2f234;
   min-height: 50px;
   font-size: 18px;
   color: #a8a8a8;
-}  
+}
 
 
 .up-footer_bg_none {
@@ -58,7 +58,7 @@
   }
   50% {
     transform:skewY(20deg) scaleX(1);
-    
+
   }
   to {
     transform-origin: left;
@@ -74,9 +74,9 @@
 /****************/
 
 .anim-wave {
-  transform-origin: left; 
+  transform-origin: left;
   transform: skew(-30deg,20deg);
-  
+
   position: absolute;
   top:299px;
   left:58px;
@@ -84,9 +84,9 @@
 }
 
 .anim-wave1 {
-  transform-origin: right; 
+  transform-origin: right;
   transform: skew(-30deg,20deg);
-  
+
   position: absolute;
   top: 375px;
   left: 90px;
