@@ -2,7 +2,8 @@
   display: flex;
   position: relative;
   min-height: 70vh;
-  justify-content: stretch;
+  justify-content: space-between;
+
 }
 
 .header-index__logo-img {
@@ -27,7 +28,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  flex-basis: 900px;
+  flex-basis: 800px;
 }
 
 .header-index__undernav {
@@ -43,6 +44,11 @@
   background-color: #2f2f2f;
   color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 172px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .header-index__slider-container {
@@ -50,4 +56,35 @@
   flex-basis: 100%;
   align-items: center;
   padding: 0 10px;
+}
+
+.header-index__title {
+  font-size: 42px;
+  color: #f2f2f2;
+  /* width: 800px; */
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.header-index__desc {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #f2f2f2;
+  /*width: 800px;*/
+  margin: 0;
+  font-weight: 200;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-index__title {
+    font-size: 24px;
+  }
+  .header-index__desc {
+    font-size: 18px;
+  }
 }
