@@ -5,6 +5,7 @@
     grid-column-gap: 30px;
 
     margin-top: 30px;
+    padding-bottom: 50px;
 }
 
 .contacts__heading {
@@ -18,7 +19,8 @@
     position: relative;
     z-index: 3;
 
-    margin: 0;
+    margin: 40px 0 0;
+
 }
 
 .contacts__intro {
@@ -40,6 +42,31 @@
 
 .contacts__main {
     position: relative;
+    padding: 0 30px;
+}
+
+.contacts__main-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 157%;
+  /* or 28px */
+
+  letter-spacing: -0.035em;
+
+  color: #757575;
+}
+
+.contacts__tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 157%;
+  /* or 28px */
+
+  letter-spacing: -0.035em;
+
+  color: #F2F2F2;
 }
 
 .contacts__recv {

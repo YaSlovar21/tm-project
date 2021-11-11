@@ -15,7 +15,10 @@ export default class PopupWithImage extends Popup {
     }
 
     close() {
-        this._popupImage.src = "";
+        setTimeout(()=> {
+          this._popupImage.src = "";
+        }, 500)
+
         this._popupImage.alt = "";
         super.close();
     }

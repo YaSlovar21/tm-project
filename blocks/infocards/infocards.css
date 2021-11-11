@@ -1,0 +1,160 @@
+/* секция для грида + кнопка "еще" */
+.cards {
+  display: block;
+  padding:70px 0;
+}
+
+.cards__more-button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  width: 320px;
+  height: 36px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+
+  border: 1px solid #424242;
+  border-radius: 5px;
+
+  margin: 50px auto 0;
+  display: block;
+}
+
+.cards__notfound {
+  text-align: center;
+  padding:40px 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Грид и карточки */
+
+.films {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-rows: repeat(auto-fit, 319px);
+  gap: 32px 28px;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .films {
+      grid-template-columns: repeat(auto-fit, 342px);
+      grid-template-rows: repeat(auto-fit, 309px);
+      gap: 35px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .films {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-template-rows: repeat(auto-fit, 271px);
+      gap: 35px 24px;
+
+  }
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  border-radius: 6px;
+  background-color: #222222;
+
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+
+
+}
+
+.film__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 18px;
+  flex-basis: 54px;
+}
+
+.film__name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.film__duration {
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #8B8B8B;
+  white-space: nowrap;
+}
+
+.film__poster {
+  max-width: 100%;
+  flex-basis: 200px;
+  object-position: center;
+  object-fit: contain;
+  min-height: 0;
+
+  cursor: pointer;
+}
+
+.film__footer {
+  flex-basis: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film__save-button {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+  width: 100px;
+  height: 29px;
+  background-color: #313131;
+  color: #ffffff;
+
+  font-size: 12px;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+}
+
+
+.film__save-button::after {
+  content: 'Сохранить';
+}
+
+.film__save-button_active {
+  background-color: #EE3465;
+}
+
+.film__save-button_active::after {
+  content: '\002713';
+}
+
+.film__save-button_saved::after {
+  content: '\002717';
+}
+
+
+@media screen and (max-width: 768px) {
+  .film__poster{
+      flex-basis: 190px;
+  }
+}

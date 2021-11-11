@@ -107,3 +107,14 @@ input {
     opacity: 0.8;
 }
 
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-padding-in-grid {
+  padding-left: 40px;
+}

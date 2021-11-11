@@ -1,6 +1,8 @@
 .company-description__paragraph {
     font-size: 18px;
-    line-height: 1.4;
-    color: #FFFFFF;
+    line-height: 1.5;
+    color: #c4c4c4;
+    font-weight: 300;
     max-width: 80%;
+    margin: 0 0 40px;
 }

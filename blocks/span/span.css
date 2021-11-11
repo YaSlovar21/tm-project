@@ -16,3 +16,7 @@
 .span_uppercase {
     text-transform: uppercase;
 }
+
+.span-no-wrap {
+  white-space: nowrap;
+}

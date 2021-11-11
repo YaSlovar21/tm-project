@@ -103,36 +103,36 @@
         </div>
 
         <section class="contacts">
-            <div class="contacts__intro">
-                <h1 class="contacts__heading">Контакты производственного предприятия ООО “Термоблок”</h1>
+            <div class="contacts__intro contact-padding-in-grid">
+                <h1 class="contacts__heading">Контакты ООО “Термоблок”</h1>
             </div>
             <div class="contacts__main">
-                <div style="position: absolute; top:0; left: 0;"><img src="./images/rect_sect.svg" width="30%"></div>
-                <ul>
+                <div style="position: absolute; top:0; left: 0; z-index: 0;"><img src="./images/rect_sect.svg" width="30%"></div>
+                <ul class="contact-list">
                     <li>
-                        <ul>
-                            <h3>Контакты:</h3>
-                            <li><a href="#">market@termoblok.ru</a></li>
-                            <li><a type="tel"> +7 (385) 299-69-80</a></li>
+                        <ul class="contact-list">
+                            <h3 class="contacts__main-title">Контакты:</h3>
+                            <li><a  class="contacts__tel" href="#">market@termoblok.ru</a></li>
+                            <li><a  class="contacts__tel" > +7 (385) 299-69-80</a></li>
                         </ul>
                     </li>
                     <li>
-                        <p>Телефон горячей линии: 8-800-700-29-24</p>
+                        <p class="contacts__tel"><span  class="contacts__main-title">Телефон горячей линии: </span>8-800-700-29-24</p>
                     </li>
                     <li>
-                        <h3>Производство и отдел продаж:</h3>
-                        <p>
-                          г. Барнаул, ул. Кулагина 28 
-                          (Барнаульский станкостроительный завод)
+                        <h3 class="contacts__main-title">Производство и отдел продаж:</h3>
+                        <p class="contacts__tel" style="max-width: 300px;">
+                          г. Барнаул, ул. Кулагина 28
+                          <span style="white-space: nowrap;">(Барнаульский станкостроительный завод)</span>
                         </p>
                     </li>
                 </ul>
-                <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
+                <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); z-index: 0;"><img src="./images/rect_sect.svg" width="30%"></div>
             </div>
-            <div class="contacts__recv">
+            <div class="contacts__recv contact-padding-in-grid">
                 <h2>Реквизиты ООО "Термоблок"</h2>
                 <p>
-                    <ul>
+                    <ul class="contact-list">
                         <li>ООО "Термоблок"</li>
                         <li>ИНН/КПП: 2224044880/222401001</li>
                         <li>Банк: Алтайское отделение № 8644 Сбербанка России г. Барнаул</li>
@@ -149,19 +149,31 @@
                 <p>Приёмная: +7 (3852) 77-55-92</p>
                 <p>Отдел металлообработки: +7 (3852) 53-28-43</p>
             </div>
-            <div style="max-width: 100%;">
-                <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A397d4c8a0bcca922b57633d6c446b7c965f2df02e0e40f00addca2ad1b45d0da&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>-->
+            <div>
+
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A397d4c8a0bcca922b57633d6c446b7c965f2df02e0e40f00addca2ad1b45d0da&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
-            <div>
-                <ul>
-                    <h3>Дополнительный офис</h3>
-                    <li>Адрес: г. Одинцово, поселок Акулова, ул. Новая. д. 144</li>
-                    <li>Телефон: 8 (495) 122-24-52</li>
+            <div class="contacts__msk contact-padding-in-grid">
+                <ul class="contact-list">
+                    <h3 class="contacts__main-title">Дополнительный офис</h3>
+                    <li class="contacts__tel">Адрес: г. Одинцово, поселок Акулова, ул. Новая. д. 144</li>
+                    <li class="contacts__tel">Телефон: 8 (495) 122-24-52</li>
                 </ul>
             </div>
         </section>
       </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <ul class="map__list">
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </ul>
+        <div class="map__partner"></div>
+
+      </section>
       <footer class="footer">
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">

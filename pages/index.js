@@ -214,3 +214,12 @@ popupInfoCloseButton.addEventListener('click', function () {
   }
 });
 
+/* Слайдер в хидере на главной */
+
+const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  parallax: true,
+});

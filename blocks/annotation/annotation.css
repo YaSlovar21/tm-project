@@ -3,12 +3,12 @@
     border-left: 2px solid #E7441C;
     padding-left: 25px;
     display: flex;
-   
+
 }
 
 .annotation__text {
     max-width: 460px;
-    
+
 }
 
 .annotation__title {
@@ -26,7 +26,8 @@
     max-width: 377px;
     font-size: 18px;
     line-height: 1.4;
-    color: #FFFFFF;
+    color: #c4c4c4;
+    font-weight: 300;
     margin: 12px 0 0;
 }
 
@@ -41,6 +42,15 @@
     font-size: 18px;
     font-weight: 600;
     color: #E7441C;
+}
+
+.annotation__images {
+  display: flex;
+  align-items: flex-start;
+}
+
+.annotation__images img:first-child {
+  margin-right: 5px;
 }
 
 .annotation__link_download {
