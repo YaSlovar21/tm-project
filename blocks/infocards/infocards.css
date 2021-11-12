@@ -1,10 +1,10 @@
 /* секция для грида + кнопка "еще" */
-.cards {
+.infocards {
   display: block;
   padding:70px 0;
 }
 
-.cards__more-button {
+.infocards__more-button {
   border: none;
   outline: none;
   background: transparent;
@@ -23,7 +23,7 @@
   display: block;
 }
 
-.cards__notfound {
+.infocards__notfound {
   text-align: center;
   padding:40px 0;
   color: #ffffff;
@@ -32,10 +32,11 @@
 
 /* Грид и карточки */
 
-.films {
+.infoitems {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
-  grid-template-rows: repeat(auto-fit, 319px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 241px);
+  grid-auto-rows: 241px;
   gap: 32px 28px;
   justify-content: center;
 
@@ -45,7 +46,7 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .films {
+  .infoitems {
       grid-template-columns: repeat(auto-fit, 342px);
       grid-template-rows: repeat(auto-fit, 309px);
       gap: 35px 24px;
@@ -53,7 +54,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .films {
+  .infoitems {
       grid-template-columns: repeat(auto-fit, 300px);
       grid-template-rows: repeat(auto-fit, 271px);
       gap: 35px 24px;
@@ -61,48 +62,76 @@
   }
 }
 
-.film {
+.infoitem {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
   border-radius: 6px;
-  background-color: #222222;
+  background-color: rgba(82, 82, 82, 0.23);
 
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
 
 
+
 }
 
-.film__header {
+.infoitem__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 18px;
   flex-basis: 54px;
+  flex-shrink: 0;
+  padding: 0 30px;
 }
 
-.film__name {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.1;
-  color: #ffffff;
+.infoitem__link {
+  flex-basis: 100%;
+  text-decoration: none;
+}
+
+
+
+.infoitem__name {
+  margin: 50px 0 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: -0.035em;
+
+  color: #CDCDCD;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 0 30px;
+
+  transition: color .3s ease-in;
 }
 
-.film__duration {
+.infoitem__description {
   margin: 0;
-  font-size: 13px;
+  padding: 0 30px;
+  font-style: normal;
   font-weight: normal;
-  color: #8B8B8B;
-  white-space: nowrap;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  letter-spacing: -0.035em;
+
+  color: #CDCDCD;
+  transition: color .3s ease-in;
 }
 
-.film__poster {
+.infoitem__link:hover .infoitem__name, .infoitem__link:hover .infoitem__description {
+  color: #FF5E3A;
+}
+
+.infoitem__poster {
   max-width: 100%;
   flex-basis: 200px;
   object-position: center;
@@ -112,20 +141,19 @@
   cursor: pointer;
 }
 
-.film__footer {
+.infoitem__footer {
   flex-basis: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.film__save-button {
+.infoitem__span-button {
   border: none;
   outline: none;
   border-radius: 30px;
 
-  width: 100px;
-  height: 29px;
+  padding: 10px 15px;
   background-color: #313131;
   color: #ffffff;
 
@@ -136,25 +164,25 @@
 }
 
 
-.film__save-button::after {
+.infoitem__save-button::after {
   content: 'Сохранить';
 }
 
-.film__save-button_active {
+.infoitem__save-button_active {
   background-color: #EE3465;
 }
 
-.film__save-button_active::after {
+.infoitem__save-button_active::after {
   content: '\002713';
 }
 
-.film__save-button_saved::after {
+.infoitem__save-button_saved::after {
   content: '\002717';
 }
 
 
 @media screen and (max-width: 768px) {
-  .film__poster{
+  .infoitem__poster{
       flex-basis: 190px;
   }
 }
