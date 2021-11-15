@@ -126,18 +126,29 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide header-index__slide">
                 <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
-                <p class="header-index__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
-                  <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
-                    территории предприятия</span>, гарантия целиком на изделие.
+                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Разработка и производство пластин и
+                  уплотнений</h2>
+                <p class="header-index__desc">Предприятие выпускает <span class="video-main__span-accent">самый широкий
+                  типоразмерный ряд пластин в России</span>. Инженеры компании разрабатывают и осваивают новые виды
+                пластин. В настоящее время запущена в производство пластина ДУ 250 мм.
                 </p>
               </div>
               <div class="swiper-slide header-index__slide">
                 <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
-                <p class="header-index__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
-                  <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
-                    территории предприятия</span>, гарантия целиком на изделие.
+                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для горячего
+                  водоснабжения и отопления</h2>
+                <p class="header-index__desc">Основное направление компании - производство теплообменников<span
+                  class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20
+                мВт, от небольших котельных до микрорайонов.
+                </p>
+              </div>
+              <div class="swiper-slide header-index__slide">
+                <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
+                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для пищевой
+                  промышленности</h2>
+                <p class="header-index__desc">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
+                  теплообменник в <span class="video-main__span-accent">пищевых технологических процессах</span> любой
+                  сложности.
                 </p>
               </div>
               <div class="swiper-slide header-index__slide">
@@ -1282,7 +1293,7 @@
           <button class="popup__button-close link-beauty" type="button"></button>
           <form class="popup__form raschet-bem_theme_white" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
               <h2 class="popup__title">Заявка на расчёт</h2>
-              <fieldset class="raschet-bem__substantions">
+              <div class="raschet-bem__substantions">
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
                   <select class="raschet-bem__select" name="t_typesr">
@@ -1299,9 +1310,9 @@
                     <option value="Масло">масло</option>
                   </select>
                 </div>
-              </fieldset>
+              </div>
               <div class="raschet-bem__temperatures">
-                <fieldset class="raschet-bem__temperature-set">
+                <div class="raschet-bem__temperature-set">
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на входе</span>
                     <input name="t_gre_mass" id="temp-grin-input" class="raschet-bem__input" novalidate required min="1">
@@ -1312,9 +1323,9 @@
                     <input name="" id="temp-grout-input" class="raschet-bem__input" novalidate required min="1">
                     <span class="raschet-bem__input-error  temp-grout-input-error"></span>
                   </label>
-                </fieldset>
+                </div>
                 <img class="raschet-bem__temperature-img" src="./images/to_online.png" alt="Рассчитываемый теплообменник">
-                <fieldset class="raschet-bem__temperature-set">
+                <div class="raschet-bem__temperature-set">
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на выходе</span>
                     <input type="" name="t_gre_mass" id="temp-nagrout-input" class="raschet-bem__input" required minlength="1">
@@ -1325,7 +1336,7 @@
                     <input type=""  id="temp-nagrin-input" class="raschet-bem__input" required minlength="1">
                     <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
                   </label>
-                </fieldset>
+                </div>
               </div>
               <div class="raschet-bem__parameters">
                 <p style="margin:0; flex-basis: 250px; font-size: 16px; font-weight: 200; color: #2f2f2f;line-height: 1.3;">Для расчёта необходима мощность теплообменника или расход по нагреваемой среде</p>
@@ -1353,7 +1364,7 @@
                   </select>
                 </div>
               </div>
-              <button style="width: 100%; margin-top: 0; background-color: #2f2f2f;" class="popup__button-save popup__button-save_type_callback" type="submit">Отправить</button>
+              <button style="width: 100%; margin-top: 0; background-color: #ff5e3a;" class="popup__button-save popup__button-save_type_callback" type="submit">Отправить</button>
           </form>
       </div>
     </div>
