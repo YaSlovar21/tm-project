@@ -4,6 +4,8 @@
     margin: auto;
 
     /*height: 330px;*/
+    max-width: 768px;
+    width: 100%;
 }
 
 

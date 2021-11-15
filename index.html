@@ -154,7 +154,6 @@
 
       </div>
     </div>
-
     <!--Слайд с продукцией-->
     <section style="position: relative;
           display: flex;
@@ -966,7 +965,7 @@
     </div>
     <section class="up-footer up-footer_bg_none">
       <ul class="up-footer__list">
-        <li class="up-footer__list-item" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+        <li class="up-footer__list-item popup-raschet-button" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
         <li class="up-footer__list-item popup-callback-button" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
         <li class="up-footer__list-item " data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
       </ul>
@@ -1277,6 +1276,88 @@
     </div>
   </div>
 
+    <!--Форма обратного звонка  -->
+    <div class="popup popup-raschet">
+      <div class="popup__container popup__container_type_big">
+          <button class="popup__button-close link-beauty" type="button"></button>
+          <form class="popup__form raschet-bem_theme_white" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
+              <h2 class="popup__title">Заявка на расчёт</h2>
+              <fieldset class="raschet-bem__substantions">
+                <div class="raschet-bem__subst-selection-block">
+                  <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
+                  <select class="raschet-bem__select" name="t_typesr">
+                    <option value="Вода">вода</option>
+                    <option value="Пар">пар</option>
+                    <option value="Масло">масло</option>
+                  </select>
+                </div>
+                <div class="raschet-bem__subst-selection-block">
+                  <h3 class="raschet-bem__subst-title raschet-bem__subst-title_cold">Нагреваемая сторона</h3>
+                  <select class="raschet-bem__select" name="t_typesr">
+                    <option value="Вода">вода</option>
+                    <option value="Пар">пар</option>
+                    <option value="Масло">масло</option>
+                  </select>
+                </div>
+              </fieldset>
+              <div class="raschet-bem__temperatures">
+                <fieldset class="raschet-bem__temperature-set">
+                  <label>
+                    <span class="raschet-bem__label-title">Температура среды на входе</span>
+                    <input name="t_gre_mass" id="temp-grin-input" class="raschet-bem__input" novalidate required min="1">
+                    <span class="raschet-bem__input-error temp-grin-input-error"></span>
+                  </label>
+                  <label>
+                    <span class="raschet-bem__label-title">Температура среды на выходе</span>
+                    <input name="" id="temp-grout-input" class="raschet-bem__input" novalidate required min="1">
+                    <span class="raschet-bem__input-error  temp-grout-input-error"></span>
+                  </label>
+                </fieldset>
+                <img class="raschet-bem__temperature-img" src="./images/to_online.png" alt="Рассчитываемый теплообменник">
+                <fieldset class="raschet-bem__temperature-set">
+                  <label>
+                    <span class="raschet-bem__label-title">Температура среды на выходе</span>
+                    <input type="" name="t_gre_mass" id="temp-nagrout-input" class="raschet-bem__input" required minlength="1">
+                    <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
+                  </label>
+                  <label>
+                    <span class="raschet-bem__label-title">Температура среды на входе</span>
+                    <input type=""  id="temp-nagrin-input" class="raschet-bem__input" required minlength="1">
+                    <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="raschet-bem__parameters">
+                <p style="margin:0; flex-basis: 250px; font-size: 16px; font-weight: 200; color: #2f2f2f;line-height: 1.3;">Для расчёта необходима мощность теплообменника или расход по нагреваемой среде</p>
+                <div class="raschet-bem__subst-selection-block" style="flex-basis: 167px; align-items: stretch; margin-right: 30px;">
+                  <label class="raschet-bem__field">
+                    <span class="raschet-bem__label-title">Мощность теплообменника</span>
+                    <input type=""  id="q-input" class="raschet-bem__input"  required minlength="1">
+                    <span class="raschet-bem__input-error q-input-error"></span>
+                  </label>
+                  <select class="raschet-bem__select" name="t_typesr" style="background-color: #c4c4c4;">
+                    <option value="Вода">квт</option>
+                    <option value="Пар">мвт</option>
+                  </select>
+                </div>
+
+                <div class="raschet-bem__subst-selection-block" style="flex-basis: 199px;align-items: stretch;">
+                  <label class="raschet-bem__field">
+                    <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
+                    <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                    <span class="raschet-bem__input-error rash-input-error"></span>
+                  </label>
+                  <select class="raschet-bem__select" name="t_typesr" style="background-color: #c4c4c4;">
+                    <option value="Вода">м3/ч</option>
+                    <option value="Пар">т/ч</option>
+                  </select>
+                </div>
+              </div>
+              <button style="width: 100%; margin-top: 0; background-color: #2f2f2f;" class="popup__button-save popup__button-save_type_callback" type="submit">Отправить</button>
+          </form>
+      </div>
+    </div>
+
   <!--Форма модального окна с картинкой-->
   <div class="popup popup_darked popup-viewport">
     <div class="popup__container">
@@ -1322,6 +1403,7 @@
   </template>
 
   <script type="module" src="./pages/index.js"></script>
+  <script type="module" src="./pages/map.js"></script>
 </body>
 
 </html>

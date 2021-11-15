@@ -23,20 +23,20 @@ import {
   //данные проектов
   //initialProjects,
   initialHeatEx,
-  initialPartners,
+  // initialPartners,
 
   cardsContainerSelector, //селектор секции куда грузятся карточки
   cardTemplateSelector,   //шаблон карточки
 
   popupImageSelector,     //попап с картинкой (селектор)
   callBackPopupSelector,  //попап с формой обратного звонка (селектор)
+
   popupWithToSelector,    //попап с теплообменником
 
   //кнопки открытия модальных окон
-  callBackPopupOpenButton,
-  popupWithSertifOpenButton,
 
-  platesSvg,
+
+
 
   //конфиги
   popupImageSelectorsCongig,
@@ -46,30 +46,29 @@ import {
 
   //идентификатор Formspree формы обратного звонка
   callbackFormId,
-  formCallBack,
-  callbackSubmitButton,
+
   menuConfig,
 
-  partnersSectionConfig,
+  // partnersSectionConfig,
 } from '../js/utils/constants.js';
 
 import {
   renderLoading
 } from'../js/utils/utils.js';
 
+const formCallBack= document.forms.formCallBack;
+const callbackSubmitButton = formCallBack.querySelector('.popup__button-save');
 
-initialPartners.sort(function(a,b) {
-  const aSecondName = a.name.toLowerCase();
-  const bSecondName = b.name.toLowerCase();
-  if (aSecondName > bSecondName) return 1;
-  if (aSecondName < bSecondName) return -1;
-  return 0;
-});
+//кнопки открытия модальных окон
+const callBackPopupOpenButton = document.querySelector('.popup-callback-button');
+const raschetPopupOpenButton = document.querySelector('.popup-raschet-button')
 
-const mapSection = document.querySelector('.map');
-const mapList = mapSection.querySelector('.map__list');
-const dinamicInfoPopup = mapSection.querySelector('.map__popup');
-const popupInfoCloseButton = dinamicInfoPopup.querySelector(".map__popup-close");
+//интеактивные пластины
+const platesSvg = document.querySelector('.plates__svg');
+
+
+// const dinamicInfoPopup = mapSection.querySelector('.map__popup');
+// const popupInfoCloseButton = dinamicInfoPopup.querySelector(".map__popup-close");
 
 
 const formValidatorCallBack = new FormValidator(formValidatorConfig, formCallBack);
@@ -104,31 +103,6 @@ function createCard(item) {
   return cardToAdd;
 }
 
-function createPartner(dataJson) {
-  const partner = new Partner({
-    name: dataJson.name,
-    htmlData: dataJson.htmlData,
-    classActive: partnersSectionConfig.activeClass,
-    handleItemClick: (dataHtml) => {
-      //(desc, link) передаем во внутреннем методе карточки
-      popupInfoOpen(dataHtml);
-    },
-  }, partnersSectionConfig.itemTemplateSelelector);
-  const partnerToAdd = partner.generatePartner()
-  return partnerToAdd;
-}
-
-
-
-const partnerList = new Section({
-  data: initialPartners,
-  renderer: (itemData) => {
-    const partner = createPartner(itemData);
-    partnerList.setItem(partner);
-  }
-}, partnersSectionConfig.containerSelector);
-
-partnerList.renderItems();
 
 
 const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
@@ -156,15 +130,40 @@ const popupCallBack = new PopupWithForm({
   },
 }, callBackPopupSelector)
 
+const popupRaschet = new PopupWithForm({
+  formSubmitHandler: (formCallbackData) => {
+    // const name = formCallbackData.name;
+    // const tel = formCallbackData.tel;
+    // renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
+    // formApi.sendCallForm(name, tel, callbackFormId)
+    //   .then((response) => {
+    //     console.log(response)
+    //     popupCallBack.close();
+    //     //сделать сообщение об успешной отправке
+     //  })
+     //  .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
+     //  .finally(() => {
+    //     formValidatorCallBack.disableSaveButton();
+    //     renderLoading(false, callbackSubmitButton, 'Отправить', 'Отправка...');
+    //   });
+  },
+  formCleanError: () => {
+    formValidatorCallBack.cleanAllErrors();
+  },
+}, '.popup-raschet')
 
 popupImage.setEventListeners();
 popupCallBack.setEventListeners();
+popupRaschet.setEventListeners();
 
 //popupHeatEx.setEventListeners();
 
 //навешиваем слушатели на элементы сайта
 callBackPopupOpenButton.addEventListener("mousedown", () => {
   popupCallBack.open();
+})
+raschetPopupOpenButton.addEventListener("mousedown", () => {
+  popupRaschet.open();
 })
 
 
@@ -186,33 +185,6 @@ document.querySelectorAll('.photo-grid__item').forEach((item) => {
 });
 
 
-/*Карта партнеров*/
-
-const dinamicInfoPopupContainer = dinamicInfoPopup.querySelector('.map__popup-container');
-
-function popupInfoOpen(dataHtml) {
-  if (dataHtml) {
-    const partnerEl = dataHtml.map(el => {
-      const listItem = document.createElement('li');
-      listItem.classList.add('map__container-li');
-      listItem.textContent = el;
-      return listItem;
-    });
-    partnerEl[0].setAttribute('style','font-weight:bold; margin-bottom:10px;');
-    //dinamicInfoPopupContainer.innerHTML= '<div class="animate__animated animate__fadeInUp">'+dataHtml+'</div>';
-    dinamicInfoPopupContainer.prepend(...partnerEl);
-  }
-  dinamicInfoPopup.classList.add('map__popup_opened');
-}
-
-popupInfoCloseButton.addEventListener('click', function () {
-  dinamicInfoPopup.classList.remove('map__popup_opened');
-  dinamicInfoPopupContainer.innerHTML ='';
-  let mapActive = mapList.querySelector('.map__list-item_active')
-  if (mapActive) {
-    mapActive.classList.remove('map__list-item_active');
-  }
-});
 
 /* Слайдер в хидере на главной */
 
@@ -222,4 +194,9 @@ const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
     prevEl: ".swiper-button-prev",
   },
   parallax: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: true,
 });

@@ -170,7 +170,19 @@ export const initialPartners = [
   {
     name: 'Иркутск',
     htmlData: ['ООО \"Константа\"', '+7(234)234-123'],
-  }
+  },
+  {
+    name: 'Ижевск',
+    htmlData: ['ООО \"Отопление качество\"', '+7(234)234-123'],
+  },
+  {
+    name: 'Вологда',
+    htmlData: ['ООО \"Протемол\"', '+7(234)234-123'],
+  },
+  {
+    name: 'Санкт-Петербург',
+    htmlData: ['ООО \"Хортэк-ОПТ\"', '+7(234)234-123'],
+  },
 ]
 
 export const ESC_CODE = 'Escape';
@@ -193,6 +205,7 @@ export const callBackPopupSelector = '.popup-callback';
 export const popupWithToSelector = '.popup-to';
 
 //формы
+/*
 export const formCallBack= document.forms.formCallBack;
 export const callbackSubmitButton = formCallBack.querySelector('.popup__button-save');
 
@@ -202,6 +215,8 @@ export const popupWithSertifOpenButton = document.querySelector('.about__doc');
 
 //интеактивные пластины
 export const platesSvg = document.querySelector('.plates__svg');
+*/
+
 
 //конфиги
 

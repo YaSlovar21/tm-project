@@ -1,0 +1,15 @@
+.raschet-bem__subst-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.raschet-bem__subst-title_hot {
+  color: #D92921;
+}
+
+.raschet-bem__subst-title_cold {
+  color: #0093DD;
+}

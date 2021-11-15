@@ -270,3 +270,5 @@
 
 /*Пластина пластинчатого теплообменника ГРИД*/
 @import url(../blocks/plastdetail/plastdetail.css);
+
+@import url(../blocks/raschet-bem/raschet-bem.css);

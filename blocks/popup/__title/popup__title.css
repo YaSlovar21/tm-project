@@ -6,6 +6,11 @@
     margin: 0 0 54px;
 }
 
+.popup__title_th_dark {
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 550px) {
     .popup__title {
         font-size: 18px;

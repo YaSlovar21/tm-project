@@ -1,0 +1,18 @@
+.raschet-bem__input {
+  min-width: 0;
+  width: 100%;
+  
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 7px 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #979797;
+
+
+  transition: 0.3s;
+  /*position: relative;*/
+}
