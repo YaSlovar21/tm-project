@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пластинчатые теплообменники от производителя | ООО "Профи"</title>
+  <title>Пластинчатые теплообменники от производителя</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="pages/index.css">
   <link rel="stylesheet" href="pages/info.css">
@@ -263,10 +263,10 @@
           <div class="inforaschet__desc">
             <h2 class="inforaschet__title">Расчёт пластинчатого теплообменника</h2>
             <p class="inforaschet__details">Расчёт выполняется под контролем квалифицированных инженеров.</p>
-            <!--<img class="inforaschet__example" src="./images/raschet-kp.png" alt="Пример расчёта пластинчатого теплообменника">-->
+            <!--<img class="inforaschet__example" src="./images/raschet-kp.png" alt="Пример расчёта пластинчатого теплообменника">
             <button type="button">Пример расчёта</button>
             <p class="inforaschet__action">Вы также можете оставить заявку на обратный звонок, инженер перезвонит Вам в течение 30 секунд</p>
-            <button class="inforaschet__button-action">Заказать звонок</button>
+            <button class="inforaschet__button-action">Заказать звонок</button>-->
           </div>
           <form class="form form-big"  novalidate>
             <div style="display: flex;justify-content: space-between; margin-bottom: 100px;">
@@ -439,69 +439,17 @@
 
         </section>-->
         <section class="map">
-            <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-            <ul class="map__list">
-              <li class="map__list-item" data-html="<b>ООО «ИК «Теплогазстрой»</b> 8(8182)-639-739 <a href='http://tgs29.ru/'>asdf</a>">Архангельск</li>
-              <li class="map__list-item" data-html="">Барнаул</li>
-              <li class="map__list-item" data-html="">Благовещенск</li>
-              <li class="map__list-item" data-html="">Владивосток</li>
-              <li class="map__list-item" data-html="">Вологда</li>
-              <li class="map__list-item" data-html="">Екатеринбург</li>
-              <li class="map__list-item" data-html="">Ижевск</li>
-              <li class="map__list-item" data-html="">Иркутск</li>
-              <li class="map__list-item" data-html="">Казань</li>
-              <li class="map__list-item" data-html="">Кемерово</li>
-              <li class="map__list-item" data-html="">Краснодар</li>
-              <li class="map__list-item" data-html="">Красноярск</li>
-              <li class="map__list-item" data-html="">Магнитогорск</li>
-              <li class="map__list-item" data-html="">Махачкала</li>
-              <li class="map__list-item" data-html="">Набережные челны</li>
-              <li class="map__list-item" data-html="<p><b>ООО АМИТО</b><br> 8-913-806-6226</p><br> <ul style='margin:0px!important;'> <li>Продажи <li>Сервис </ul><br>">Новокузнецк</li>
-              <li class="map__list-item" data-html="">Новосибирск</li>
-              <li class="map__list-item" data-html="">Омск</li>
-              <li class="map__list-item" data-html="">Оренбург</li>
-              <li class="map__list-item" data-html="">Пермь</li>
-              <li class="map__list-item" data-html="">Ростов-на-Дону</li>
-              <li class="map__list-item" data-html="">Санкт-Петербург</li>
-              <li class="map__list-item" data-html="">Севастополь</li>
-              <li class="map__list-item" data-html="">Ставрополь</li>
-              <li class="map__list-item" data-html="">Сургут</li>
-              <li class="map__list-item" data-html="">Томск</li>
-              <li class="map__list-item" data-html="">Тюмень</li>
-              <li class="map__list-item" data-html="">Улан-удэ</li>
-              <li class="map__list-item" data-html="">Уфа</li>
-              <li class="map__list-item" data-html="">Хабаровск</li>
-              <li class="map__list-item" data-html="">Челябинск</li>
-              <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
-              <li class="map__list-item" data-html="">Якутск</li>
-            </ul>
-            <div class="map__partner"></div>
-          </section>
+          <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+          <ul class="map__list">
+            <!--Сюда встанут карточки партнеров-->
+            <div class="map__popup">
+              <span class="map__popup-close">&lt;-- Назад</span>
+              <ul class="map__popup-container"></ul>
+            </div>
+          </ul>
+          <div class="map__partner"></div>
 
-          <script>
-
-            partners = document.querySelectorAll('.map__list-item');
-            dinamic_info = document.querySelector('.map__partner');
-
-            for (i=0; i<partners.length; i++) {
-              partners[i].addEventListener('click', function (element) {
-                info = this.getAttribute('data-html');
-                //.innerHTML =  +' '+this.top + ' '+ this.left;
-                dinamic_info.style.setProperty('height', 'auto');
-                dinamic_info.style.setProperty('padding', '50px 0');
-                dinamic_info.style.setProperty('transition', 'height 1s, padding 1s');
-                dinamic_info.style.setProperty('transform-origin', 'center');
-                dinamic_info.innerHTML= '<div class="animate__animated animate__fadeInUp">'+info+'</div>';
-                var toscroll = document.querySelector(".map__heading");
-
-                /*element.scrollIntoView();
-                element.scrollIntoView(false);
-                element.scrollIntoView({block: "end"});*/
-                toscroll.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-              });
-            }
-
-          </script>
+        </section>
           <section class="up-footer">
             <ul class="up-footer__list">
               <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
@@ -515,6 +463,11 @@
               <div class="footer__column footer__column_content_copyright">
                 <!--<img class="logo logo_place_footer" src="images/logo_profi_place_footer.svg" alt="Профи">-->
                 <!--<p class="footer__author">&copy; 2020, Вячеслав Невьянцев</p>-->
+                <div class="header__lang-column">
+                  <!--<a class="header__lang-link header__lang-link_underlined">Ru</a>-->
+                  <img src="images/logo_BSZ_svg.svg" style="height:60px; margin-right:10px;">
+                  <p style="margin: 0; padding: 0; width: 260px; font-size: 14px; color: white;">Предприятие холдинговой компании "Барнаульский станкостроительный завод" <a href="#" style="text-decoration: none; color: #0093dd;;" class="link-beauty">Подробнее →</a></p>
+              </div>
               </div>
               <nav class="footer__column footer__column_content_info">
                 <h3 class="footer__column-heading">Разделы сайта</h3>
@@ -535,12 +488,13 @@
             </div>
           </footer>
         </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>
 
-          <script src="vendor/swiper-bundle.min.js"></script>
+
           <script>
             const swiperInfo = new Swiper('.info__container', {
               direction: 'vertical',
@@ -559,30 +513,12 @@
             });
 
           </script>
-
-
-          <script>
-            raschet_form = document.querySelector('.raschet');
-            open_button = document.querySelector('.info__sale-link');
-            let open=0;
-            open_button.addEventListener('click', function () {
-              if (open==0) {
-                raschet_form.classList.add('raschet_active');
-                open_button.classList.add('info__sale-link_active');
-                open_button.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-                open = 1;
-              }
-              else {
-                raschet_form.classList.remove('raschet_active');
-                open_button.classList.remove('info__sale-link_active');
-
-                open = 0;
-              }
-            });
-
-
-
-          </script>
+      <!--Шаблон элемента партнера на карте-->
+      <template id="partner-item-template">
+        <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+      </template>
       <script src="./formvalidation.js"></script>
+      <script src="./pages/map.js" type="module"></script>
+
 </body>
 </html>

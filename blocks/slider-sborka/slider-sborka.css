@@ -88,10 +88,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         z-index: 4;
         background: radial-gradient(50% 50% at 50% 50%, #2f2f2fa4 0%, rgba(196, 196, 196, 0) 100%);
-        
+
     }
 
     .slider-text-sborka .swiper-wrapper {
@@ -108,8 +108,11 @@
 }
 
 .slider-text-sborka__head {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto 20px;
+  font-size: 22px;
+  color: tomato;
+
 }
 
 .slider-text-sborka__text {
