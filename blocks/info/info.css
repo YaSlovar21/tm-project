@@ -1,13 +1,14 @@
 .info {
     height: 70vh;
     /*max-width: 91%;*/
-    margin: 20px auto 80px;
+    margin: 40px auto 80px;
     display: flex;
 }
 
 .info p {
     font-size: 18px;
 }
+
 /*Левый блок*/
 .info__main {
     width: 400px;
@@ -32,11 +33,15 @@
 }
 
 .info__sale-link {
+    padding: 10px;
+    background-color: #2f2f2f;
+    width: 80%;
     text-decoration: none;
     color: #FF5E3A;
     line-height: 51px;
     font-size: 18px;
     font-weight: normal;
+    text-align: center;
     cursor: pointer;
     transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
@@ -59,13 +64,17 @@
 .info__heading {
     font-size: 24px;
     color: white;
-    text-align: center;
+    /*text-align: center;*/
+    max-width: 80%;
+    margin: 20px auto;
+
 }
 
 .info__main-img {
     max-width: 80%;
     max-height: 55vh;
     min-height: 0;
+    flex-basis: 400px;
 }
 
 
@@ -215,7 +224,7 @@
 .info__container .swiper-slide {
     font-size: 18px;
     height: auto;  /*Без этого пропадает скролл!!!!!*/
-    
+
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0px 30px 30px 20px;
@@ -223,7 +232,7 @@
 
 .info__container .swiper-scrollbar-drag {
     background: #FF5E3A;
-    
+
 }
 .info__container .swiper-scrollbar-drag:hover {
     cursor: pointer;
