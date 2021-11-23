@@ -1,12 +1,23 @@
 .inforaschet {
   display: flex;
-  padding: 50px 0;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #2f2f2f;
+  transition: all 1s linear;
+  transition: max-height .8s cubic-bezier(0,1,0,1),margin .4s linear;
 }
 
+.inforaschet_active {
+  max-height: 1000px;
+  margin-top: 30px;
+  transition: max-height 1s ease-in-out,margin .4s ease-out;
+}
 .inforaschet__desc {
+  margin-left: 40px;
+  padding-top: 40px;
   max-width: 400px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -28,6 +39,19 @@
   width: 70%;
   margin: 0 auto;
   opacity: 0.5;
+}
+
+.inforaschet__example-button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+
+  color: #009EE0;
+  text-decoration: dotted;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .inforaschet__action {
