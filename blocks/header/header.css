@@ -40,6 +40,12 @@
     max-width: 200px;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    max-width: 100px;
+  }
+}
 .header__under-nav {
     display: flex;
     justify-content: space-between;

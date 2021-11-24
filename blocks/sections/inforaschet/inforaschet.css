@@ -13,24 +13,24 @@
   transition: max-height 1s ease-in-out,margin .4s ease-out;
 }
 .inforaschet__desc {
-  margin-left: 40px;
-  padding-top: 40px;
-  max-width: 400px;
+  padding-left: 30px;
+  padding-top: 30px;
+  max-width: 300px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
 .inforaschet__title {
-  max-width: 280px;
-  margin: 0 auto;
-
+  /*max-width: 280px;
+  /*margin: 0 auto;*/
+  margin: 0;
   color: #ffffff;
 }
 
 .inforaschet__details {
-  max-width: 280px;
-  margin: 50px auto;
+  /*max-width: 280px;*/
+  margin-top: 50px;
 
   color: #ffffff;
 }
@@ -79,5 +79,8 @@
 @media screen and (max-width:1024px) {
   .inforaschet {
     flex-direction: column;
+  }
+  .inforaschet__desc {
+    max-width: 500px;
   }
 }

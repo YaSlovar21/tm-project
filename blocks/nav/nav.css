@@ -92,6 +92,13 @@
     position: relative;
 }
 
+.nav__ul-item:nth-of-type(1) {
+  padding-left: 0;
+}
+.nav__ul-item:last-of-type {
+  padding-right: 0;
+}
+
 @media screen and (max-width:768px) {
   .nav__ul-item {
     text-align: left;

@@ -19,7 +19,7 @@
     position: relative;
     z-index: 3;
 
-    margin: 40px 0 0;
+    margin: 40px 0 40px;
 
 }
 
@@ -73,3 +73,9 @@
     color: #f2f2f2;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+}
