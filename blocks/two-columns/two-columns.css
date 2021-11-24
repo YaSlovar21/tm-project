@@ -13,6 +13,10 @@
   }
 
 
+
+.two-columns_wide {
+  width: 90%;
+}
 .two-columns_shadow {
   box-shadow: 0px 2px #ff5e3a5e;
   border-top: 2px solid #FF5E3A5e;
