@@ -1,11 +1,16 @@
 .bsz-new {
   background-color: #2f2f2f49;
-  display: flex;
-  margin-top: 50px;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
 
+  margin-top: 50px;
+
+}
+.bsz-new__content {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
 .bsz-new__img {
   flex-basis: 40%;
   min-width: 0;
@@ -15,8 +20,24 @@
   width: 100%;
 }
 
+
+.bsz-new__text {
+  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #C9C9C9;
+  max-width: 600px;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .bsz-new__text{
+    font-size: var(--cell-heading-font);
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .bsz-new {
+  .bsz-new__content {
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 30px;

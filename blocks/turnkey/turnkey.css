@@ -21,93 +21,87 @@
         </section>
 */
 
-.turnkey {
-    padding-top: 10%;
-    /*padding-bottom: 10%;*/
-    padding-left: 1%;
-    padding-right: 1%;
-}
 
+.turnkey {
+  padding-top: 0;
+  margin-top: 75px;
+}
 .turnkey__heading {
     position: relative;
 }
 
 .turnkey__title {
-    text-align: center;
-    margin: 0px auto 20px auto;
-    width: 60%;
-    line-height: 1.15;
-    font-size: 36px;
-    font-weight: bold;
-
-    text-transform: uppercase;
-
-    color: rgba(242, 242, 242, 1);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .turnkey__intro {
-    text-align: center;
-    margin: 0 auto 20px;
-    font-size: 18px;
+  font-weight: normal;
+  font-size: 22px;
 
-    max-width: 450px;
-    line-height: 1.3;
+  line-height: 1.4;
 
-    color: #c4c4c4;
+  color: #C9C9C9;
+
+  max-width: 616px;
+
+  margin: 25px 0 75px;
 }
 
-.turnkey__consultation-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    max-width: 282px;
-    max-height: 52px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 121.52%;
-    /* or 29px */
-
-    text-align: center;
-
-    color: #F45836;
-    background-color: #c4c4c415;
-    text-decoration: none;
-    padding: 7px;
+@media screen and (max-width: 1024px) {
+  .turnkey__intro {
+    font-size: var(--cell-heading-font);
+  }
 }
-
 .turnkey__solutions {
-    display: flex;
-    /*justify-content: space-evenly;*/
-    position: relative;
-    margin-top: 30px;
-}
+      display: flex;
+      /*justify-content: space-evenly;*/
+      position: relative;
+      margin-top: 30px;
+  }
 
 
 
-@media screen and (max-width: 768px) {
-    .turnkey__solutions {
-        flex-direction: column;
-    }
-}
+  @media screen and (max-width: 768px) {
+      .turnkey__solutions {
+          flex-direction: column;
+      }
+  }
 
-.turnkey__solution {
+  .turnkey__solution {
     flex: 0 1 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     margin: auto 0;
-
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .turnkey__solution {
-        flex: 0 1 35%;
-    }
+.turnkey__aboutsolution {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 48px;
+  max-width: 75%;
+  margin: 48px auto 0;
+}
+
+.turnkey__solution-description {
+  text-align: center;
+}
+
+.turnkey__solution-detail-link {
+  width: 90%;
+  background-color: #c4c4c43f;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 15px 0 15px;
 }
 
 .turnkey__solution-description {
