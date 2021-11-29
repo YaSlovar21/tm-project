@@ -45,7 +45,7 @@
 
 @media screen and (max-width:768px) {
     .product-types__heading {
-        
+
         font-size: 24px;
         width: 100%;
         max-width: 80%;
@@ -60,15 +60,21 @@
     margin: 0;
 
     font-weight: 300;
-    
+
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
     .product-types__p {
-        font-size: 16px;
+        font-size: 14px;
         max-width: 80%;
         margin: 0 auto 30px;
     }
+}
+
+@media screen and (max-width:768px) {
+  .product-types__p {
+      font-size: 12px;
+  }
 }
 
 .product-types__link{
@@ -81,14 +87,14 @@
 
 .product-types .swiper-button-next {
     color: #FF5E3A;
-    
+
     top: 40%;
     right: 8%;
 }
 
 .product-types .swiper-button-prev {
     color: #FF5E3A;
-    
+
     top: 40%;
     left: 8%;
 }

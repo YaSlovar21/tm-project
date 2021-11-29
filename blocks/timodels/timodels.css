@@ -41,3 +41,16 @@
   color: #939393;
 
 }
+
+@media screen and (max-width: 768px) {
+  .timodels {
+    grid-template-columns: repeat(4, 65px);
+    gap: 15px 10px;
+  }
+  .timodels__ptotitle {
+    font-size: 18px;
+  }
+  .timodels__ptodu {
+    font-size: 12px;
+  }
+}

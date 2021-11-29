@@ -80,6 +80,16 @@
     margin: auto 0;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .turnkey__solution {
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2f2f2f28;
+    margin-bottom: 30px;
+    border: 1px solid #f2f2f221;
+  }
+}
 
 .turnkey__aboutsolution {
   display: flex;
@@ -123,7 +133,7 @@
 
 @media screen and (max-height:700px) {
     .turnkey__solution-description {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -139,6 +149,8 @@
 @media screen and (max-width: 768px) {
     .turnkey__image {
         max-height: 20vh;
+        min-width: 0;
+        object-position: center;
     }
 }
 

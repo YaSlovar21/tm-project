@@ -176,7 +176,7 @@
       <div class="two-columns" data-wow-offset="450" data-wow-mobile="false">
         <h2 class="two-columns__brief">Продукция предприятия</h2>
         <div class="two-columns__main-text">
-          <p class="two-columns__paragraph" style="font-size: 18px;">Производство теплообменного оборудования
+          <p class="two-columns__paragraph two-columns__paragraph_page_main">Производство теплообменного оборудования
             «Термоблок» имеет только современное оборудование для производства пластинчатых теплообменников. Данный
             завод теплообменного оборудования относится к крупной холдинговой компании России, и имеет более 1 тыс.
             клиентов в год. До недавнего времени производства теплообменного оборудования в России не было, и в
@@ -184,7 +184,7 @@
             марок, по отношению к Российскому производству, имеет очень высокую цену и долгую доставку. Именно поэтому
             стоит отметить, что нужно выбирать Российское производство теплообменного оборудования, сэкономив при этом
             деньги и время.</p>
-          <p class="two-columns__paragraph" style="font-size: 18px;">Важнейшим звеном в подобных системах является
+          <p class="two-columns__paragraph two-columns__paragraph_page_main">Важнейшим звеном в подобных системах является
             теплообменное оборудование</p>
         </div>
       </div>
@@ -286,12 +286,12 @@
     <h2 class="turnkey__title" style="margin-top: 100px; display: none;">Пластинчатые теплообменники</h2>
     <p class="section-subtitle" style=" visibility: hidden; text-transform: uppercase; margin-bottom: 40px;">Российского производства</p>-->
     <div class="ds">
-      <section class="ds-intro" style="overflow: hidden;">
+      <section class="ds-intro">
         <div class="ds-intro__brand">
-          <h2 style="text-transform: uppercase; font-size: 20px; width: 400px; color: #fff; line-height: 1.4;">
+          <h2  class="ds-intro__title">
             Пластинчатые теплообменники российского производства</h2>
           <img src="./images/logo_teplohit_with_tepl.svg" style="margin-left: 5%; min-width: 0; max-width: 195px;"
-            class="wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
+            class="ds-intro__image wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
           <p style="color: #c4c4c4;
           font-weight: 200;
           font-size: 14px;
@@ -315,7 +315,7 @@
             <li class="list__item  list__item_block_localprod">Оперативный расчёт и сопровождение
               квалифицированными инженерами</li>
           </ul>
-          <a class="ds-intro__link-to link-beauty wow pulse" style="min-width: 260px;" data-wow-duration="1.5s"
+          <a class="ds-intro__link-to link-beauty wow pulse" style="" data-wow-duration="1.5s"
             data-wow-delay="1s" data-animation-del-class="animate__delay-1s" href="plast-to.html">Пластинчатые
             теплообменники &#8594;</a>
         </div>
@@ -491,14 +491,14 @@
                   convallis vestibulum dolor non volutpat. Vivamus vestibulum quam ut ultricies pretium.</p>
               </div>
               <h3>Выгоды при сотрудничестве с производителем полного цикла</h3>
-              <p>Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec
+              <p class="info__paragraph">Suspendisse rhoncus fringilla nisl. Mauris eget lorem ac urna consectetur convallis non vel mi. Donec
                 libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel
                 scelerisque lobortis, ipsum leo sollicitudin metus, eget sagittis ante orci eu ipsum. Nulla ac
                 mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. Cras odio risus,
                 sagittis ut nunc vitae, aliquam consectetur purus. Vivamus ornare nunc vel tellus facilisis, quis
                 dictum elit tincidunt. Donec accumsan nisi at laoreet sodales. Cras at ullamcorper massa. Maecenas
                 at facilisis ex. Nam mollis dignissim purus id efficitur.</p>
-              <p>
+              <p class="info__paragraph">
               <h3 class="info__list-heading">Vestibulum elementum</h3>
               <ul class="info__list">
                 <li class="info__list-item">Curabitur sed sodales</li>
@@ -509,7 +509,7 @@
                 <li class="info__list-item">efficitur vitae mattis et, pretium in augue</li>
               </ul>
               </p>
-              <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas
+              <p class="info__paragraph">Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas
                 faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis
                 vitae <a href="#" class="info__link-in-text">arcu rhoncus</a>, faucibus magna ut, tempus metus. Cras in
                 nibh sed ipsum consequat rhoncus. Proin
@@ -533,6 +533,23 @@
         display: flex;
       }
 
+      .mainmodels__wrapper {
+        width: 75%;
+        background-color: rgba(47, 47, 47, 0.5);
+        box-sizing: border-box;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 1%;
+
+        display: grid;
+        grid-template-columns: minmax(min-content, 400px) 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "title models"
+          ". models"
+          "button models";
+      }
+
       .mainmodels__title {
         font-style: normal;
         font-weight: 800;
@@ -542,23 +559,22 @@
 
         margin: 0;
         white-space: nowrap;
+        grid-area: title;
       }
 
-      .mainmodels__wrapper {
-        width: 75%;
-        background-color: rgba(47, 47, 47, 0.5);
-        box-sizing: border-box;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 1%;
-        display: flex;
-        justify-content: center;
-      }
 
-      @media screen and (max-width: 1100px) {
-        .mainmodels__wrapper {
-          width: 100%;
-        }
+
+
+      .mainmodels__raschet {
+        border: none;
+        outline: none;
+        background-color: #2f2f2fd0;
+        color: #c4c4c4;
+        padding: 20px;
+        grid-area: button;
+      }
+      .mainmodels__models {
+        grid-area: models;
       }
 
       .mainmodels__turnbutton {
@@ -584,17 +600,53 @@
         position: relative;
         height: 40px;
         width: 40px;
+        margin-right: 10px;
         background-image: url('images/turnbutton.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.4s ease-in;
+
       }
       .mainmodels__turnbutton:hover::before {
         transform: rotate(180deg);
       }
 
 
+      @media screen and (max-width: 1300px) {
+        .mainmodels {
+          flex-direction: column;
+        }
+        .mainmodels__wrapper {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .mainmodels {
+          flex-direction: column;
+        }
+        .mainmodels__wrapper {
+          width: 100%;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "title"
+          "models"
+          "button";
+          gap: 30px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .mainmodels__title {
+          font-size: 18px;
+          white-space:normal;
+        }
+        .mainmodels__turnbutton {
+          padding: 10px;
+          font-size: 16px;
+          align-items: center;
+        }
+      }
     </style>
     <!--Типоразмерный ряд-->
     <section class="mainmodels">
@@ -602,7 +654,7 @@
       <div class="mainmodels__wrapper">
         <h2 class="mainmodels__title">Модельный ряд теплообменников</h2>
 
-        <ul class="timodels">
+        <ul class="mainmodels__models timodels">
           <li class="timodels__pto">
             <a class="timodels__link" href="./catalog/ti025.html">
               <h5 class="timodels__ptotitle">ТИ025</h5>
@@ -676,6 +728,7 @@
             </a>
           </li>
         </ul>
+        <button class="mainmodels__raschet">Рассчитать теплообменник</button>
       </div>
       <button class="mainmodels__turnbutton">Смотреть в пищевом исполнении</button>
     </section>
