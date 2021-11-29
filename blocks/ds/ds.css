@@ -116,7 +116,7 @@
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 230px;
-    grid-template-rows: auto 30vh;
+    grid-template-rows: 70px 30vh;
   }
   .ds-second {
     max-width: 100%;
