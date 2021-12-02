@@ -3,17 +3,19 @@
 @import url(../blocks/root/root.css);
 
 @import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
 
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+
 @import url(../blocks/link-beauty/link-beauty.css);
 @import url(../blocks/rotation/rotation.css);
 
-@import url(../blocks/sections/header-index/header-index.css);
-
-@import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
 @import url(../blocks/stickaround/stickaround.css);
 
@@ -22,11 +24,11 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__link/header__link.css);
-
 @import url(../blocks/header/__lang-link/header__lang-link.css);
 @import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
 @import url(../blocks/header/__lang-column/header__lang-column.css);
 @import url(../blocks/header/__contacts/header__contacts.css);
+
 
 @import url(../blocks/burton/burton.css);
 @import url(../blocks/burton/__link/burton__link.css);
@@ -46,8 +48,6 @@
 
 
 
-
-
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 
@@ -59,6 +59,7 @@
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
 @import url(../blocks/cards/__title/cards__title.css);
+
 
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
@@ -137,13 +138,7 @@
 
 
 
-@import url(../blocks/photo-grid/photo-grid.css);
-@import url(../blocks/photo-grid/__item/photo-grid__item.css);
-@import url(../blocks/photo-grid/__image/photo-grid__image.css);
 
-@import url(../blocks/map/map.css);
-
-@import url(../blocks/oakley/oakley.css);
 
 
 /*ПИЩЕВОЙ ГРИД*/
@@ -158,8 +153,7 @@
 @import url(../blocks/info/info.css);
 
 
-/*ПРОДУКЦИЯ*/
-@import url(../blocks/product-types/product-types.css);
+
 
 
 /*БСЗ-БЛОК*/
@@ -179,12 +173,12 @@
 @import url(../blocks/tablemod/__text/tablemod__text.css);
 @import url(../blocks/tablemod/__text/_theme/tablemod__text_theme_dark.css);
 
-@import url(../blocks/bsz-new/bsz-new.css);
+
 
 
 /*ПЕРВЫЙ БЛОК ГЛАВНОЙ*/
 @import url(../blocks/video-main/video-main.css);
-@import url(../blocks/double-section/double-section.css);
+
 
 
 
@@ -238,42 +232,59 @@
 @import url(../blocks/popup/__to-name/popup__to-name.css);
 @import url(../blocks/popup/__to-desc/popup__to-desc.css);
 @import url(../blocks/popup/__to-3dlink/popup__to-3dlink.css);
-/*ГОТОВЫЕ РЕШЕНИЯ*/
 
-@import url(../blocks/turnkey/turnkey.css);
 
 
 /*Теплообменник блок основной*/
 @import url(../blocks/heatex/heatex.css);
-
 /*Часто задаваемые вопросы*/
 @import url(../blocks/frequently/frequently.css);
 
 
-/*Спаны*/
-@import url(../blocks/span/span.css);
+
 
 /*Контакты*/
 @import url(../blocks/contacts/contacts.css);
 
+
+
 /*Грид 1большая + 4 блока*/
 @import url(../blocks/tmproduction/tmproduction.css);
-
-
 /*Грид полный цикл*/
 @import url(../blocks/wholecycle-grid/wholecycle-grid.css);
+
+
 
 /*Аннотации и описание на странице О компании*/
 @import url(../blocks/company-description/company-description.css);
 @import url(../blocks/annotation/annotation.css);
 
 
-/*Пластина пластинчатого теплообменника ГРИД*/
-@import url(../blocks/plastdetail/plastdetail.css);
+
+
 
 @import url(../blocks/raschet-bem/raschet-bem.css);
 
 
+/*Блоки секций главной страницы*/
+
+@import url(../blocks/sections/header-index/header-index.css);
+/*ПРОДУКЦИЯ 3D Slider*/
+@import url(../blocks/product-types/product-types.css);
+@import url(../blocks/ds/ds.css);
+
+@import url(../blocks/mainmodels/mainmodels.css);
 @import url(../blocks/timodels/timodels.css);
 
-@import url(../blocks/ds/ds.css);
+/*ГОТОВЫЕ РЕШЕНИЯ*/
+@import url(../blocks/turnkey/turnkey.css);
+
+@import url(../blocks/bsz-new/bsz-new.css);
+
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/photo-grid/__item/photo-grid__item.css);
+@import url(../blocks/photo-grid/__image/photo-grid__image.css);
+
+@import url(../blocks/map/map.css);
+
+@import url(../blocks/oakley/oakley.css);

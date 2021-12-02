@@ -28,8 +28,9 @@
 
 .tech-interactive {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -109,7 +110,7 @@
 
 .slider-text-sborka__head {
   width: 70%;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   font-size: 22px;
   color: tomato;
 
@@ -117,7 +118,7 @@
 
 .slider-text-sborka__text {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 
