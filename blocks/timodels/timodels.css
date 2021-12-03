@@ -45,12 +45,13 @@
 @media screen and (max-width: 768px) {
   .timodels {
     grid-template-columns: repeat(4, 65px);
-    gap: 15px 10px;
+    gap: 20px 17px;
   }
   .timodels__ptotitle {
     font-size: 18px;
+    font-weight: 600;
   }
   .timodels__ptodu {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

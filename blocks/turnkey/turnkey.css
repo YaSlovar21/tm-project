@@ -39,6 +39,13 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .turnkey__title {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 .turnkey__intro {
   font-weight: normal;
   font-size: 22px;
@@ -55,8 +62,21 @@
 @media screen and (max-width: 1024px) {
   .turnkey__intro {
     font-size: var(--cell-heading-font);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .turnkey__intro {
+    font-size: 14px;
+    text-align: center;
+    max-width: calc(100% - 40px);
+  }
+}
+
+
+
 .turnkey__solutions {
       display: flex;
       /*justify-content: space-evenly;*/

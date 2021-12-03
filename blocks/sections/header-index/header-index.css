@@ -99,7 +99,14 @@
     max-width: 55vw;
   }
 }
-
+@media screen and (max-width: 1440px) {
+  .header-index__title {
+    font-size: 36px;
+  }
+  .header-index__desc {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header-index__title {
     font-size: 24px;
