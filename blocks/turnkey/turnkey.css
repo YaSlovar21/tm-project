@@ -38,16 +38,16 @@
 @media screen and (max-width: 1024px) {
   .turnkey__intro {
     font-size: var(--cell-heading-font);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
   }
 }
 @media screen and (max-width: 768px) {
   .turnkey__intro {
     font-size: 14px;
     text-align: center;
-    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
   }
 }
 
@@ -92,7 +92,7 @@
     content: '';
     width: 40%;
     height: 2px;
-    background: linear-gradient(269.98deg, rgba(231, 68, 28, 0) 12.23%, rgba(231, 68, 28, 0.88) 40.15%, rgba(231, 68, 28, 0) 95.48%);
+    background: linear-gradient(269.98deg, rgba(231, 68, 28, 0) 12.23%, rgba(231, 68, 28, 0.48) 40.15%, rgba(231, 68, 28, 0) 95.48%);
   }
   .turnkey__solution::before {
     position: absolute;
@@ -101,7 +101,7 @@
     content: '';
     width: 40%;
     height: 2px;
-    background: linear-gradient(269.98deg, rgba(231, 68, 28, 0) 12.23%, rgba(231, 68, 28, 0.88) 40.15%, rgba(231, 68, 28, 0) 95.48%);
+    background: linear-gradient(269.98deg, rgba(231, 68, 28, 0) 12.23%, rgba(231, 68, 28, 0.48) 60.15%, rgba(231, 68, 28, 0) 95.48%);
   }
   .turnkey__solution:hover {
 
