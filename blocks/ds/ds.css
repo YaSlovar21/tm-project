@@ -187,3 +187,33 @@
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .ds-intro {
+    max-height: 30vh;
+    grid-template-columns: 1fr;
+  }
+  .ds-intro__title {
+    font-size: 15px;
+  }
+  .ds-intro__list {
+    text-align: center;
+  }
+  .ds-intro__list-item {
+    font-size: 12px;
+  }
+  .ds-intro__img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+    width: auto;
+    z-index: -1;
+  }
+  .ds-intro__link-to {
+    text-align: center;
+  }
+  .ds-intro__link-to::before {
+    justify-content: center;
+  }
+}
