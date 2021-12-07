@@ -131,6 +131,7 @@
   }
   .ds-second {
     max-width: 100%;
+    flex-basis: 100%;
   }
   .ds-intro__title {
     font-size: 16px;

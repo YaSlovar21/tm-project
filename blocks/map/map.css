@@ -12,11 +12,13 @@
     text-align: center;
     color: white;
     font-size: 36px;
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 768px) {
     .map__heading {
     font-size: 18px;
+    text-transform: uppercase;
     width: 100%;
     }
 }
@@ -35,7 +37,7 @@
     flex-wrap: wrap;
     height: 350px;
 
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     margin: 52px auto 30px;
@@ -93,17 +95,7 @@
     position: relative;
     z-index: 2;
 }
-.map__popup-close::after {
-   /* content: '';
-    position: absolute;
-    height: 4px;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
 
-    bottom: -1px;
-    right: -8px;
-    z-index: -1;*/
-}
 
 
 @media screen and (max-width:768px) {
@@ -122,21 +114,21 @@
 @media screen and (max-width: 1250px) {
     .map__list {
         width: 90%;
-        height: 500px;
+        height: 620px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .map__list {
         width: 730px;
-        height: 620px;
+
     }
 }
 
 @media screen and (max-width: 768px) {
     .map__list {
         width: 90%;
-        height: 900px;
+        height: 600px;
     }
 }
 

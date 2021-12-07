@@ -111,3 +111,24 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .po {
+    flex-direction: column-reverse;
+    align-items: center;
+    border-top: 2px solid #e7451c7c;
+  }
+  .po__description {
+    border: none;
+  }
+  .po__heading {
+    margin: 0 0 20px;
+
+  }
+  .po__text {
+    font-size: 14px;
+  }
+  .po__link {
+    font-size: 14px;
+    text-align: center;
+  }
+}

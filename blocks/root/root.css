@@ -118,3 +118,11 @@ input {
 .contact-padding-in-grid {
   padding-left: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .big-form-mob {
+    display:inline;
+  }
+  .big-form-desc {
+    display: none;
+  }
+}
