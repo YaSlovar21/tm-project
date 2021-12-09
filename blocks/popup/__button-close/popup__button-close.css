@@ -28,7 +28,7 @@
   width: 31px;
   height: 31px;
   background: transparent;
-  background-image: url(../../images/close-icon.svg);
+  background-image: url(../../../images/close-icon.svg);
   background-size: cover;
   color: rgb(255, 255, 255);
   position: absolute;
