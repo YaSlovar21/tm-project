@@ -7,7 +7,7 @@
   <title>Блочные тепловые пункты</title>
   <link rel="stylesheet" href="pages/index.css">
   <link rel="stylesheet" href="styles/animate.css">
-
+  <link rel="stylesheet" href="pages/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Link Swiper's CSS -->
@@ -73,7 +73,7 @@
 <body class="page">
   <!--<div class="bg-video"></div>-->
   <div class="bg"></div>
-  <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
+  <!--<img class="nav-mobile-logo" src="images/menu-link-mobile.svg">-->
 
   <main>
     <div class="header-index">
@@ -108,6 +108,7 @@
             <li class="nav__ul-item"><a class="nav__link" href="about.html">О компании</a></li>
             <li class="nav__ul-item"><a class="nav__link" href="contacts.html">Контакты</a></li>
           </ul>
+          <button class="nav__mobile-icon"><img src="images/menu-link-mobile.svg" style="width: 30px;" ></button>
         </nav>
         <div class="header-index__undernav">
           <div class="header__contacts">
@@ -789,17 +790,36 @@
 
     </section>
     <!--FOOTER-->
-    <div class="swiper-slide footer-slide footer">
+    <div class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <!--<img class="logo logo_place_footer" src="images/logo_profi_place_footer.svg" alt="Профи">-->
-          <!--<p class="footer__author">&copy; 2020, Вячеслав Невьянцев</p>-->
+
+          <div class="footer__tm">
+            <img class="footer__tm-logo" src="./images/header-logo-1.svg">
+            <ul class="footer__contacts-list">
+              <h4 class="footer__tm-head">ООО "Термоблок"</h4>
+              <p class="footer__tm-desc">Производство и разработка теплообменных пластин, пластинчатых теплообменников.</p>
+                <li class="footer__contacts-list-item">
+                  <h5 class="footer__contact-head">Телефон:</h5>
+                  <a class="footer__contact-link" type="tel">8 (3852) 77-26-38</a>
+                </li>
+                <li class="footer__contacts-list-item">
+                  <h5 class="footer__contact-head">E-mail:</h5>
+                  <a class="footer__contact-link" type="tel">market@termoblok.ru</a>
+                </li>
+                <li class="footer__contacts-list-item">
+                  <h5 class="footer__contact-head">Адрес производства:</h5>
+                  <a class="footer__contact-link" type="tel">656002, Алтайский край, г. Барнаул, ул.П.С.Кулагина, 28
+                  </a>
+                </li>
+            </ul>
+          </div>
           <div class="header__lang-column">
             <!--<a class="header__lang-link header__lang-link_underlined">Ru</a>-->
             <img src="images/logo_BSZ_svg.svg" style="height:60px; margin-right:10px;">
             <p style="margin: 0; padding: 0; width: 260px; font-size: 14px; color: white;">Предприятие холдинговой компании "Барнаульский станкостроительный завод" <a href="#" style="text-decoration: none; color: #0093dd;;" class="link-beauty">Подробнее →</a></p>
 
-        </div>
+          </div>
         </div>
         <nav class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">Разделы сайта</h3>
@@ -1043,34 +1063,6 @@
   </script>
 
 
-  <script>
-    let mob_menu_link = document.querySelector('.nav-mobile-logo');
-    let menu = document.querySelector('.nav');
-
-    //mob_menu_link.style.setProperty('--animate-duration', '3s');
-    //mob_menu_link.classList.add('fadeIn');
-
-    mob_menu_link.addEventListener('click', function () {
-      if (menu.classList.contains('nav_mobile_active')) {
-
-        menu.classList.remove('nav_mobile_active');
-        //mob_menu_link.setAttribute("src", "images/menu-link-mobile.svg");
-        smoothly(mob_menu_link, 'src', "images/menu-link-mobile.svg");
-
-      }
-      else {
-        menu.classList.add('nav_mobile_active');
-
-        smoothly(mob_menu_link, 'src', "images/dngb_ballotx.svg");
-        //mob_menu_link.setAttribute("src", "images/dngb_ballotx.svg");
-
-
-      }
-      console.log(menu.classList)
-    });
-  </script>
-
-
   <!--Форма обратного звонка  -->
   <div class="popup popup-callback">
     <div class="popup__container">
@@ -1084,6 +1076,22 @@
             <span class="popup__input-error tel-input-error"></span>
             <button class="popup__button-save popup__button-save_type_callback" type="submit">Отправить</button>
         </form>
+    </div>
+  </div>
+
+  <!--Всплывающее меню-->
+  <div class="popup popup_type_menu popup-menu popup_opened">
+    <div class="popup__container popup__container_menu">
+      <button class="popup__button-close popup__button-close_menu"></button>
+      <nav class="popup__menu">
+        <a class="popup__navlink" href="/">Главная</a>
+        <a class="popup__navlink" href="/movies">Продукция</a>
+        <a class="popup__navlink" href="/saved-movies">Сервис</a>
+        <a class="popup__navlink" href="/saved-movies">Блог производителя</a>
+        <a class="popup__navlink" href="/saved-movies">О компании</a>
+        <a class="popup__navlink" href="/saved-movies">Контакты</a>
+      </nav>
+      <a class="auth" href="/profile">Аккаунт</a>
     </div>
   </div>
 
@@ -1215,6 +1223,7 @@
 
   <script type="module" src="./pages/index.js"></script>
   <script type="module" src="./pages/map.js"></script>
+  <script type="module" src="./pages/all.js"></script>
 </body>
 
 </html>

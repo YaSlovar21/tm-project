@@ -22,3 +22,27 @@
         height: 20px;
     }
 }
+
+
+.popup__button-close_menu {
+  width: 31px;
+  height: 31px;
+  background: transparent;
+  background-image: url(../../images/close-icon.svg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  top: 22px;
+  right: 22px;
+}
+
+@media (max-width: 550px) {
+  .popup__button-close_menu {
+      top: 13px;
+      right: 13px;
+  }
+}
+

@@ -206,7 +206,7 @@ export const partnersSectionConfig = {
 export const popupImageSelector = '.popup-viewport';
 export const callBackPopupSelector = '.popup-callback';
 export const popupWithToSelector = '.popup-to';
-
+export const popupWithMenuSelector = '.popup-menu';
 //формы
 /*
 export const formCallBack= document.forms.formCallBack;

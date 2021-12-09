@@ -7,6 +7,64 @@
     color: white;
   }
 
+.footer__tm {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__tm-logo {
+  flex-basis: 100px;
+  min-width: 60px;
+}
+
+.footer__tm-head {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #676767;
+}
+
+.footer__tm-desc {
+  margin: 16px 0 27px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #EDEDED;
+  max-width: 335px;
+}
+
+.footer__contacts-list {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__contacts-list-item {
+  margin-bottom: 16px;
+}
+.footer__contact-head {
+  margin: 0 0 5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #6C6C6C;
+}
+
+.footer__contact-link {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133.52%;
+  /* or 16px */
+
+  letter-spacing: -0.035em;
+
+  color: #DFDFDF;
+}
+
+/*------------------------------------*/
 .up-footer {
   box-sizing: border-box;
   padding: 20px 0 10px;

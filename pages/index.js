@@ -74,11 +74,11 @@ const platesSvg = document.querySelector('.plates__svg');
 const formValidatorCallBack = new FormValidator(formValidatorConfig, formCallBack);
 formValidatorCallBack.enableValidation();
 
-const menu = new Menu(menuConfig);
-menu.setEventListeners();
+//const menu = new Menu(menuConfig);
+//menu.setEventListeners();
 
-const mobileMenuButton = document.querySelector('.nav-mobile-logo');
-mobileMenuButton.addEventListener('click', () => menu.mobileOpen());
+//const mobileMenuButton = document.querySelector('.nav-mobile-logo');
+//mobileMenuButton.addEventListener('click', () => menu.mobileOpen());
 
 const formApi = new Api({
   baseUrl: 'https://formspree.io',
