@@ -5,3 +5,11 @@
     margin: 0 0 16px;
     padding: 0;
   }
+
+  @media screen and (max-width: 1024px) {
+    .footer__column-links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+  }

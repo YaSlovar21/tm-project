@@ -3,5 +3,11 @@
     color: white;
     margin-bottom: 10px;
     font-size: 15px;
-    
   }
+
+
+@media screen and (max-width: 1024px) {
+  .footer__link {
+    font-size: 10px;
+  }
+}
