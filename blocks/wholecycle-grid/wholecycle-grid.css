@@ -13,6 +13,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+  .wholecycle-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+}
+
 .pictitletext {
     display: flex;
     position: relative;

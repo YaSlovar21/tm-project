@@ -11,6 +11,7 @@
   background-color: #2f2f2fa3;
   box-sizing: border-box;
   max-width: 100%;
+  position: relative;
 }
 
 .form__set {

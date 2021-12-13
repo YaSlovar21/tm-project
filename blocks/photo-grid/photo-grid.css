@@ -22,7 +22,14 @@
 @media screen and (max-width:800px) {
     .photo-grid {
         grid-template-columns: repeat(4, 1fr) 2fr 4fr;
+        gap: 4px;
     }
+}
+@media screen and (max-width:500px) {
+  .photo-grid {
+      
+      gap: 2px;
+  }
 }
 
 
