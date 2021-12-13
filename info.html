@@ -147,85 +147,6 @@
         </div>
         </section>
 
-
-
-        <!--<section class="raschet raschet_active">
-
-          <div class="raschet__nagrevaemaya">
-            <p class="raschet__head-min">Температура греющей среды <br><span class="raschet__span_type_heat">(на входе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one" style="margin-bottom: 105px;">
-
-            <p class="raschet__head-min">Температура греющей среды <br><span class="raschet__span_type_heat">(на выходе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one raschet__input_heatout">
-
-            <p class="raschet__head-min">Тип греющей среды</p>
-            <select class="raschet__input raschet__input_one" name="t_typesr">
-              <option class="raschet__option" value="Вода">Вода</option>
-              <option class="raschet__option" value="Пар">Пар</option>
-              <option class="raschet__option" value="Масло">Масло</option>
-              <option class="raschet__option" value="Этиленгликоль">Этиленгликоль</option>
-              <option class="raschet__option" value="Пропиленгликоль">Пропиленгликоль</option>
-            </select>
-
-
-          <p class="raschet__head-min">Расход греющей среды</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input  raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option  class="raschet__option" value="Пар">Гкал/ч</option>
-                <option  class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-
-
-            <p class="raschet__head-min">Мощность (тепловая нагрузка)</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input  raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option  class="raschet__option" value="Пар">Гкал/ч</option>
-                <option  class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-          </div>
-
-          <img src="images/to_taschet_demo2.svg" class="raschet__image" style="">
-
-          <div class="raschet__nagrevaemaya">
-
-            <p class="raschet__head-min">Температура нагреваемой среды <br><span class="raschet__span_type_cold">(на выходе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one" style="margin-bottom: 105px;">
-            <p class="raschet__head-min">Температура нагреваемой среды <br><span class="raschet__span_type_cold">(на входе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one">
-
-            <p class="raschet__head-min">Тип нагреваемой среды</p>
-            <select class="raschet__input raschet__input_one" name="t_typesr">
-										<option  class="raschet__option" value="Вода">Вода</option>
-										<option  class="raschet__option" value="Пар">Пар</option>
-										<option  class="raschet__option" value="Масло">Масло</option>
-										<option  class="raschet__option" value="Этиленгликоль">Этиленгликоль</option>
-										<option  class="raschet__option" value="Пропиленгликоль">Пропиленгликоль</option>
-            </select>
-
-
-            <p class="raschet__head-min">Расход нагреваемой среды</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option class="raschet__option" value="Пар">Гкал/ч</option>
-                <option class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-
-            <div class="beauty-button"><a href="#" class="po__link" style="width: 100%;font-size: 16px;margin: 0; color: white;">Рассчитать теплообменник</a></div>
-            </div>
-
-          </div>
-
-        </section>-->
-
         <style>
           .form__select {
             border-radius: 0px;
@@ -260,10 +181,31 @@
           }
 
           .form__popup {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
             position: absolute;
             width: 100%;
+            top: 0;
+            padding: 30px;
+            box-sizing: border-box;
+            left: 0;
             height: 100%;
             background-color: #2f2f2f;
+          }
+          .form__popup_opened {
+            display: flex;
+          }
+          .form__close-popup {
+            font-size: 16px;
+            color: #FF5E3A;
+            font-weight: 500;
+            display: flex;
+            background: none;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            align-self: flex-start;
           }
         </style>
 
@@ -366,8 +308,8 @@
                 <option class="raschet__option" value="Пар">мвт</option>
               </select>
             </div>
-            <button type="button" style="margin-top:32px;background-color:#FF5E3A; align-self: stretch; border: none; font-weight: 800; font-size: 18px; color: white; padding: 16px 0;">Рассчитать теплообменник</button>
-            <div class="form__popup">
+            <button type="button" class="form-popup-open-button" style="margin-top:32px;background-color:#FF5E3A; align-self: stretch; border: none; font-weight: 800; font-size: 18px; color: white; padding: 16px 0;">Рассчитать теплообменник</button>
+            <div class="form__popup form__popup_opened">
               <label class="form__field" style="min-width: 0;">
                 <input type=""  id="q-input" class="form__input"  required minlength="7">
                 <span class="form__placeholder q-input-placeholder">
@@ -382,88 +324,12 @@
                 </span>
                 <span class="form__input-error q-input-error"></span>
               </label>
+              <button type="submit" class="popup__button-save popup__button-save_type_callback">Отправить</button>
+              <button type="button" class="form__close-popup">⟵Назад</button>
             </div>
           </form>
         </section>
 
-
-<!--
-        <section class="raschet raschet_active">
-
-          <div class="raschet__nagrevaemaya">
-            <p class="raschet__head-min">Температура греющей среды <br><span class="raschet__span_type_heat">(на входе)</span></p>
-
-
-            <p class="raschet__head-min">Температура греющей среды <br><span class="raschet__span_type_heat">(на выходе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one raschet__input_heatout">
-
-            <p class="raschet__head-min">Тип греющей среды</p>
-            <select class="raschet__input raschet__input_one" name="t_typesr">
-              <option class="raschet__option" value="Вода">Вода</option>
-              <option class="raschet__option" value="Пар">Пар</option>
-              <option class="raschet__option" value="Масло">Масло</option>
-              <option class="raschet__option" value="Этиленгликоль">Этиленгликоль</option>
-              <option class="raschet__option" value="Пропиленгликоль">Пропиленгликоль</option>
-            </select>
-
-
-          <p class="raschet__head-min">Расход греющей среды</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input  raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option  class="raschet__option" value="Пар">Гкал/ч</option>
-                <option  class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-
-
-            <p class="raschet__head-min">Мощность (тепловая нагрузка)</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input  raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option  class="raschet__option" value="Пар">Гкал/ч</option>
-                <option  class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-          </div>
-
-          <img src="images/to_taschet_demo2.svg" class="raschet__image" style="">
-
-          <div class="raschet__nagrevaemaya">
-
-            <p class="raschet__head-min">Температура нагреваемой среды <br><span class="raschet__span_type_cold">(на выходе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one" style="margin-bottom: 105px;">
-            <p class="raschet__head-min">Температура нагреваемой среды <br><span class="raschet__span_type_cold">(на входе)</span></p>
-            <input type="text" name="t_gre_mass" class="raschet__input raschet__input_one">
-
-            <p class="raschet__head-min">Тип нагреваемой среды</p>
-            <select class="raschet__input raschet__input_one" name="t_typesr">
-										<option  class="raschet__option" value="Вода">Вода</option>
-										<option  class="raschet__option" value="Пар">Пар</option>
-										<option  class="raschet__option" value="Масло">Масло</option>
-										<option  class="raschet__option" value="Этиленгликоль">Этиленгликоль</option>
-										<option  class="raschet__option" value="Пропиленгликоль">Пропиленгликоль</option>
-            </select>
-
-
-            <p class="raschet__head-min">Расход нагреваемой среды</p>
-            <div class="raschet__input_double-columns">
-              <input type="text" name="t_gre_mass" class="raschet__input raschet__mini-input">
-              <select class="raschet__input raschet__mini-metrica" name="t_typesr">
-                <option class="raschet__option" value="Вода">Квт</option>
-                <option class="raschet__option" value="Пар">Гкал/ч</option>
-                <option class="raschet__option" value="Масло">мВт</option>
-              </select>
-            </div>
-
-            <div class="beauty-button"><a href="#" class="po__link" style="width: 100%;font-size: 16px;margin: 0; color: white;">Рассчитать теплообменник</a></div>
-            </div>
-
-          </div>
-
-        </section>-->
         <section class="map">
           <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
           <ul class="map__list">
@@ -519,7 +385,18 @@
         <script>
             new WOW().init();
         </script>
-
+        <script>
+          const closeRaschetPopupButton = document.querySelector('.form__close-popup');
+          const openRaschetPopupButton = document.querySelector('.form-popup-open-button');
+          const formPopup = document.querySelector('.form__popup');
+          openRaschetPopupButton.addEventListener('click', (evt) => {
+            formPopup.classList.add('form__popup_opened');
+          });
+          closeRaschetPopupButton.addEventListener('click', (evt) => {
+            console.log(evt.target.closest('.form__popup'));
+            evt.target.closest('.form__popup').classList.remove('form__popup_opened');
+          });
+        </script>
 
           <script>
             const swiperInfo = new Swiper('.info__container', {
