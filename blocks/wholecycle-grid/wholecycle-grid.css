@@ -16,7 +16,7 @@
 @media screen and (max-width: 768px) {
   .wholecycle-grid {
     grid-template-columns: 1fr;
-    gap: 70px;
+    gap: 80px;
   }
 }
 
@@ -104,7 +104,7 @@
     margin-left: 30px;
     flex-basis: 354px;
     flex-grow: 0;
-    flex-shrink: 2;
+    flex-shrink: 1;
 }
 
 
@@ -134,7 +134,23 @@
 
     .pictitletext__descripion {
         font-weight: 200;
-        font-size: 15px;
+        font-size: 14px;
 
     }
+}
+
+
+@media screen and (max-width: 768px) {
+  .pictitletext__img-container {
+    flex-basis: 70px;
+  }
+  .pictitletext__container {
+    margin-left: 10px;
+  }
+  .pictitletext__heading {
+    font-size: 16px;
+  }
+  .pictitletext:nth-child(2n) {
+    margin-top: 0;
+}
 }
