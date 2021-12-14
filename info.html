@@ -396,6 +396,10 @@
             console.log(evt.target.closest('.form__popup'));
             evt.target.closest('.form__popup').classList.remove('form__popup_opened');
           });
+          var form = document.querySelector('form');
+          form.addEventListener('change', function() {
+              alert('Hi!');
+          });
         </script>
 
           <script>

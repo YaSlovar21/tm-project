@@ -30,3 +30,15 @@
       font-size: 12px;
     }
   }
+
+.two-columns__brief_page_service {
+  width: 383px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 134.5%;
+  /* or 32px */
+
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
