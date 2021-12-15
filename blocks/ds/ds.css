@@ -198,7 +198,7 @@
 
 @media screen and (max-width: 500px) {
   .ds-intro {
-    max-height: 30vh;
+    
     grid-template-columns: 1fr;
   }
   .ds-intro__title {
