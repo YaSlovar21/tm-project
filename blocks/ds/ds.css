@@ -133,8 +133,8 @@
     display: grid;
     grid-template-columns: 1fr 230px;
     /*grid-template-rows: minmax(70px, fit-content) 30vh;*/
-    grid-template-rows: 1fr 3fr;
-    max-height: 40vh;
+    
+
   }
   .ds-second {
     max-width: 100%;
@@ -198,7 +198,7 @@
 
 @media screen and (max-width: 500px) {
   .ds-intro {
-    
+
     grid-template-columns: 1fr;
   }
   .ds-intro__title {
