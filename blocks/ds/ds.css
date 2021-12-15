@@ -1,13 +1,20 @@
 .ds {
-  display: flex;
+  /*display: flex;
   overflow: hidden;
   height: 90vh;
+  align-items: stretch;
+  margin: 100px 0 150px;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90vh;
+  overflow: hidden;
+    /* height: 90vh; */
   align-items: stretch;
   margin: 100px 0 150px;
 }
 
 .ds-intro {
-  max-width: 50%;
+
   flex: 0 1 50%;
   position: relative;
   display: flex;
@@ -25,9 +32,8 @@
 }
 
 .ds-second {
-  min-width: 50%;
-  /* height: 100%;*/
-  max-width: 50%;
+  /* height: 100%;
+  max-width: 50%;*/
   flex: 0 1 50%;
   position: relative;
   display: flex;
@@ -119,7 +125,8 @@
 
 @media screen and (max-width: 1024px) {
   .ds {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 80vh;
   }
   .ds-intro {
     max-width: 100%;

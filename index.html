@@ -44,6 +44,20 @@
     .video-main__slider .swiper-button-next {
       top: 100%;
     }
+
+    .video-container {
+      position: relative;
+    }
+    .video-container::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f2f2f23a;
+      z-index: 2;
+    }
   </style>
 
 
@@ -55,20 +69,13 @@
 
   <main>
     <div class="header-index">
-      <div class="header-index__left">
+      <!--<div class="header-index__left">-->
         <a class="header-index__logo-container">
           <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="images/tmlogo-1.svg">
         </a>
-        <div class="video-container" style="margin-top: 260px;">
-          <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
-            playsinline="playsinline" muted="muted" loop="loop">
-            <source src="videos/tm_test_video.mp4" type="video/mp4">
-            <source src="videos/tm_test_video.mp4" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div style="position: absolute; width: 100%; height: 100%; background-color: #f2f2f2;opacity: 0.1;"></div>
-      </div>
+
+        <!--<div style="position: absolute; width: 100%; height: 100%; background-color: #f2f2f2;opacity: 0.1;"></div>
+      </div>-->
       <div class="header-index__right">
         <nav class="nav">
           <ul class="nav__menu-links">
@@ -96,48 +103,57 @@
           <a href="#" class="header-index__link-lk link-beauty">Перейти в личный кабинет --></a>
         </div>
 
-        <div class="header-index__slider-container">
-          <div class="swiper mainHeaderSlider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide header-index__slide">
-                <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Разработка и производство пластин и
-                  уплотнений</h2>
-                <p class="header-index__desc">Предприятие выпускает <span class="video-main__span-accent">самый широкий
-                  типоразмерный ряд пластин в России</span>. Инженеры компании разрабатывают и осваивают новые виды
-                пластин. В настоящее время запущена в производство пластина ДУ 250 мм.
-                </p>
-              </div>
-              <div class="swiper-slide header-index__slide">
-                <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для горячего
-                  водоснабжения и отопления</h2>
-                <p class="header-index__desc">Основное направление компании - производство теплообменников<span
-                  class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20
-                мВт, от небольших котельных до микрорайонов.
-                </p>
-              </div>
-              <div class="swiper-slide header-index__slide">
-                <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для пищевой
-                  промышленности</h2>
-                <p class="header-index__desc">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
-                  теплообменник в <span class="video-main__span-accent">пищевых технологических процессах</span> любой
-                  сложности.
-                </p>
-              </div>
-              <div class="swiper-slide header-index__slide">
-                <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                  data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
-                <p class="header-index__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
-                  <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
-                    территории предприятия</span>, гарантия целиком на изделие.
-                </p>
-              </div>
+
+
+      </div>
+      <div class="video-container" style="padding-top: 260px; position: relative;">
+        <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
+          playsinline="playsinline" muted="muted" loop="loop">
+          <source src="videos/tm_test_video.mp4" type="video/mp4">
+          <source src="videos/tm_test_video.mp4" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="header-index__slider-container">
+        <div class="swiper mainHeaderSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide header-index__slide">
+              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
+                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Разработка и производство пластин и
+                уплотнений</h2>
+              <p class="header-index__desc">Предприятие выпускает <span class="video-main__span-accent">самый широкий
+                типоразмерный ряд пластин в России</span>. Инженеры компании разрабатывают и осваивают новые виды
+              пластин. В настоящее время запущена в производство пластина ДУ 250 мм.
+              </p>
+            </div>
+            <div class="swiper-slide header-index__slide">
+              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
+                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для горячего
+                водоснабжения и отопления</h2>
+              <p class="header-index__desc">Основное направление компании - производство теплообменников<span
+                class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20
+              мВт, от небольших котельных до микрорайонов.
+              </p>
+            </div>
+            <div class="swiper-slide header-index__slide">
+              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
+                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для пищевой
+                промышленности</h2>
+              <p class="header-index__desc">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
+                теплообменник в <span class="video-main__span-accent">пищевых технологических процессах</span> любой
+                сложности.
+              </p>
+            </div>
+            <div class="swiper-slide header-index__slide">
+              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
+                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
+              <p class="header-index__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
+                <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
+                  территории предприятия</span>, гарантия целиком на изделие.
+              </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <!--Слайд с продукцией-->
