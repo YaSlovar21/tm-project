@@ -58,6 +58,8 @@
   padding: 0 10px;
   /*width: 100%;  ВЫДАЕТ 1440*/
   max-width: 800px;
+  border: 2px solid #ff634738;
+  margin-bottom: 30px;
 }
 
 .header-index__slide {
@@ -95,6 +97,13 @@
 
 .header-index__logo-container {
   background-color: #f2f2f23a;
+  padding: 20px;
+}
+
+.header-index__video-container {
+
+
+  padding-top: 260px; position: relative;
 }
 
 @media screen and (max-width: 1440px) {
@@ -119,5 +128,33 @@
   }
   .header-index__link-lk {
     display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .header-index__right {
+    flex-direction: row-reverse;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .header-index {
+    grid-template-columns: 1fr;
+  }
+  .header-index__slider-container {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .header-index__logo-container {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .header-index__video-container {
+    padding: 0;
+
+    grid-row: 2/3;
+    position: relative;
+    grid-column: 1/2;
+
   }
 }
