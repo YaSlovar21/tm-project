@@ -968,9 +968,26 @@
   <template id="partner-item-template">
     <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
   </template>
-
-
+  <!--Шаблон карточки проекта-->
+  <template id="project-template">
+    <div class="projects__item wow animate__fadeInUp" data-wow-delay="1s">
+      <img  class="projects__image"  src="images/timashevsk_condit.png">
+      <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
+    </div>
+  </template>
+  <!--Форма модального окна с картинкой-->
+  <div class="popup popup_darked popup-viewport">
+    <div class="popup__container">
+        <button class="popup__button-close link-beauty" type="button"></button>
+        <div class="popup__image-view">
+            <img class="popup__image" alt="картинка под загрузку" src="">
+            <p class="popup__image-description"></p>
+        </div>
+    </div>
+  </div>
+  
   <script type="module" src="./pages/map.js"></script>
+  <script type="module" src="./pages/pto.js"></script>
   <script src="js/anime.min.js"></script>
   <script src="slider-sborka.js"></script>
 

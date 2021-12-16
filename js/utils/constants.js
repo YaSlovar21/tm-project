@@ -2,11 +2,21 @@
 //import timashevskCondit from '../../images/projects/timashevsk_condit.png';
 //import ufaUmnDom from '../../images/projects/ufa_umn_dom.png';
 
-//import ti077Img from '../../images/descTO/ti077.png';
+const zatonUfa = new URL('../../images/projects/ufa_zaton.png', import.meta.url);
+const timashevskCondit = new URL('../../images/timashevsk_condit.png', import.meta.url);
+const ufaUmnDom = new URL('../../images/projects/ufa_umn_dom.png', import.meta.url);
+
+const ti077Img = new URL('../../images/descTO/ti077.png', import.meta.url);
 
 export const callbackFormId = 'mdoygyzz';
 
-/*
+
+//секция, куда загружаются карточки проектов
+export const projectsContainerSelector = '.projects__items';
+
+//template карточки проекта
+export const projectTemplateSelector = "#project-template";
+
 export const initialProjects = [
     {
       name: "Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»",
@@ -21,7 +31,8 @@ export const initialProjects = [
       link: ufaUmnDom,
     },
 ];
-*/
+
+
 
 export const initialHeatEx = {
   'ti-025': {
@@ -32,7 +43,7 @@ export const initialHeatEx = {
   },
   'ti-077': {
     name: "ТИ 077",
-    img: "../../images/descTO/ti077new.png",
+    img: ti077Img,
     desc: "ТИ077 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40.Конструкция пластины позволяет формировать 12 разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу, при этом сопротивление греющей и нагревающей жидкости может быть разное. Особая конструкция клипа надежно закрепляет уплотнение на пластину (рисунок 1,2), тем  самым исключает обрыв при монтаже пластины.",
     link3d: "",
   },
