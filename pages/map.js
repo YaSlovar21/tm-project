@@ -27,9 +27,9 @@ function createPartner(dataJson) {
     name: dataJson.name,
     htmlData: dataJson.htmlData,
     classActive: partnersSectionConfig.activeClass,
-    handleItemClick: (dataHtml) => {
+    handleItemClick: (nameOfPartner, telephoneNumbers, site) => {
       //(desc, link) передаем во внутреннем методе карточки
-      popupInfoOpen(dataHtml);
+      popupInfoOpen(nameOfPartner, telephoneNumbers, site);
     },
   }, partnersSectionConfig.itemTemplateSelelector);
   const partnerToAdd = partner.generatePartner()
@@ -46,9 +46,16 @@ const partnerList = new Section({
 
 partnerList.renderItems();
 
-function popupInfoOpen(dataHtml) {
-  if (dataHtml) {
-    const partnerEl = dataHtml.map(el => {
+function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
+  if (nameOfPartner !== '') {
+    const listItem = document.createElement('li');
+    listItem.classList.add('map__container-li');
+    listItem.textContent = nameOfPartner;
+    listItem.setAttribute('style','font-weight:bold; margin-bottom:10px;');
+    dinamicInfoPopupContainer.append(listItem);
+  }
+  if (telephoneNumbers !== '') {
+    const partnerEl = telephoneNumbers.map(el => {
       const listItem = document.createElement('li');
       listItem.classList.add('map__container-li');
       listItem.textContent = el;
@@ -56,7 +63,15 @@ function popupInfoOpen(dataHtml) {
     });
     partnerEl[0].setAttribute('style','font-weight:bold; margin-bottom:10px;');
     //dinamicInfoPopupContainer.innerHTML= '<div class="animate__animated animate__fadeInUp">'+dataHtml+'</div>';
-    dinamicInfoPopupContainer.prepend(...partnerEl);
+    dinamicInfoPopupContainer.append(...partnerEl);
+  }
+  if (site !== '') {
+    const listItem1 = document.createElement('a');
+    listItem1.classList.add('map__container-li');
+    listItem1.textContent = site;
+    listItem1.href = site;
+    //listItem.setAttribute('style','font-weight:bold; margin-bottom:10px;');
+    dinamicInfoPopupContainer.append(listItem1);
   }
   dinamicInfoPopup.classList.add('map__popup_opened');
 }

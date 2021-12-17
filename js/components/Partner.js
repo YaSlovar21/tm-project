@@ -3,7 +3,26 @@ export default class Partner {
         this._name = name;
         this._itemTemplateSelelector = projectItemSelector;
         this._htmlData = htmlData;
-        //коллбэк 
+        if (htmlData.nameOfPartner) {
+          this._nameOfPartner = htmlData.nameOfPartner;
+        } else {
+          this._nameOfPartner = '';
+        }
+        if (htmlData.telephoneNumbers) {
+          this._telephoneNumbers = htmlData.telephoneNumbers;
+        } else {
+          this._telephoneNumbers = '';
+        }
+        if (htmlData.site) {
+          this._site = htmlData.site;
+        } else {
+          this._site = '';
+        }
+
+        console.log(this);
+
+
+        //коллбэк
         this._handleItemClick = handleItemClick;
         this._activeClass = classActive;
     }
@@ -15,16 +34,16 @@ export default class Partner {
             .querySelector('.map__list-item')
             .cloneNode(true);
 
-        return itemElement;    
+        return itemElement;
     }
 
     generatePartner() {
         this._element = this._getItemTemplate();
 
         /*Задать название и атрибут data-html*/
-        this._element.setAttribute('data-html', this._htmlData);
+        //this._element.setAttribute('data-html', this._htmlData);
         this._element.textContent = this._name;
-        
+
         this._setEventListeners();
         return this._element;
     }
@@ -35,7 +54,7 @@ export default class Partner {
 
     _setEventListeners() {
         this._element.addEventListener('mousedown', ()=> {
-            this._handleItemClick(this._htmlData);
+            this._handleItemClick(this._nameOfPartner, this._telephoneNumbers, this._site);
             this._toogleActive();
         });
     }

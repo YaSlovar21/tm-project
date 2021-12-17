@@ -111,8 +111,27 @@ export const initialHeatEx = {
     link3d: "",
   },
 }
-
 export const initialPartners = [
+  {
+    name: 'Чита',
+    htmlData: {
+      nameOfPartner: 'ООО \"Интерсервис\"',
+      telephoneNumbers: ['+7(234)234-123', '+7(999)999-123'],
+      site: 'http://interservice.com',
+    }
+  },
+  {
+    name: 'Архангельск',
+    htmlData: {
+      nameOfPartner: 'ООО \"Теплогазстрой\"',
+      telephoneNumbers: ['+7(999)999-123'],
+      site: 'http://interservice1.com',
+    },
+  },
+
+]
+
+export const initialPartners1 = [
   {
     name: 'Чита',
     htmlData: ['ООО \"Интерсервис\"']

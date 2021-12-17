@@ -1,11 +1,15 @@
 import {
   //данные проектов
   initialProjects,
+  //данные теплообменников
+  initialHeatEx,
   projectsContainerSelector, //селектор секции куда грузятся карточки
   projectTemplateSelector,   //шаблон карточки
 
   popupImageSelector,
   popupImageSelectorsCongig,
+  popupToConfig,
+  popupWithToSelector,
 } from '../js/utils/constants.js';
 
 import Section from '../js/components/Section.js';
@@ -36,6 +40,7 @@ const projectList = new Section({
     //item - объект карточки со всеми свойствами
     const card = createCard(item);
     projectList.setItem(card);
+
   }
 }, projectsContainerSelector);
 
@@ -43,3 +48,16 @@ projectList.renderItems();
 
 const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
 popupImage.setEventListeners();
+
+
+
+//интеактивные пластины
+import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
+const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);
+const platesSvg = document.querySelector('.plates__svg');
+
+platesSvg.addEventListener("click", (evt) => {
+  popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
+  console.log(initialHeatEx[evt.target.dataset.to]);
+});
+
