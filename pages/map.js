@@ -51,7 +51,7 @@ function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
     const listItem = document.createElement('li');
     listItem.classList.add('map__container-li');
     listItem.textContent = nameOfPartner;
-    listItem.setAttribute('style','font-weight:bold; margin-bottom:10px;');
+    listItem.setAttribute('style','font-weight:bold; margin-bottom:15px;');
     dinamicInfoPopupContainer.append(listItem);
   }
   if (telephoneNumbers !== '') {
@@ -59,18 +59,21 @@ function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
       const listItem = document.createElement('li');
       listItem.classList.add('map__container-li');
       listItem.textContent = el;
+      listItem.setAttribute('style','font-weight:300; margin-bottom:5px;');
       return listItem;
     });
-    partnerEl[0].setAttribute('style','font-weight:bold; margin-bottom:10px;');
+    //partnerEl[-1].setAttribute('style','font-weight:bold; margin-bottom:10px;');
     //dinamicInfoPopupContainer.innerHTML= '<div class="animate__animated animate__fadeInUp">'+dataHtml+'</div>';
     dinamicInfoPopupContainer.append(...partnerEl);
   }
   if (site !== '') {
-    const listItem1 = document.createElement('a');
+    const listItem1 = document.createElement('li');
     listItem1.classList.add('map__container-li');
-    listItem1.textContent = site;
-    listItem1.href = site;
-    //listItem.setAttribute('style','font-weight:bold; margin-bottom:10px;');
+    const link = document.createElement('a');
+    link.textContent = site;
+    link.href = site;
+    listItem1.append(link);
+    listItem1.setAttribute('style','margin-top:10px;');
     dinamicInfoPopupContainer.append(listItem1);
   }
   dinamicInfoPopup.classList.add('map__popup_opened');

@@ -6,6 +6,8 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 36px;
+    
+    position: relative;
 }
 
 .popup__form_type_big {

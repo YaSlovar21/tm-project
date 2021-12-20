@@ -232,7 +232,7 @@
 @import url(../blocks/popup/__to-name/popup__to-name.css);
 @import url(../blocks/popup/__to-desc/popup__to-desc.css);
 @import url(../blocks/popup/__to-3dlink/popup__to-3dlink.css);
-
+@import url(../blocks/popup/__form-fio/popup__form-fio.css);
 
 
 /*Теплообменник блок основной*/

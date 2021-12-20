@@ -82,8 +82,13 @@
     animation: fadeInUp 0.4s linear;
 }
 
+
+
 .map__popup-container a {
     color:#f2f2f2;
+}
+.map__container-li a {
+  color: #e7451c;
 }
 
 .map__popup-close {

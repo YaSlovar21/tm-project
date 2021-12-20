@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="pages/index.css">
   <link rel="stylesheet" href="styles/animate.css">
   <link rel="stylesheet" href="pages/all.css">
+  <link rel="stylesheet" href="pages/bem-elements.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Link Swiper's CSS -->
@@ -1040,8 +1041,9 @@
     <div class="popup popup-raschet">
       <div class="popup__container popup__container_type_big">
           <button class="popup__button-close link-beauty" type="button"></button>
-          <form class="popup__form raschet-bem_theme_white" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
-              <h2 class="popup__title">Заявка на расчёт</h2>
+          <form class="popup__form raschet-bem" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
+              <h2 class="raschet-bem__title">Заявка на расчёт</h2>
+              <!--Среды вход/выход-->
               <div class="raschet-bem__substantions">
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
@@ -1060,6 +1062,7 @@
                   </select>
                 </div>
               </div>
+              <!--Температурные графики (темп - изображения - темп)-->
               <div class="raschet-bem__temperatures">
                 <div class="raschet-bem__temperature-set">
                   <label>
@@ -1087,37 +1090,74 @@
                   </label>
                 </div>
               </div>
+              <!--Дополнительные параметры (мощность, расход по нагреваемой среде)-->
               <div class="raschet-bem__parameters">
-                <p style="margin:0; flex-basis: 250px; font-size: 16px; font-weight: 200; color: #2f2f2f;line-height: 1.3;">Для расчёта необходима мощность теплообменника или расход по нагреваемой среде</p>
-                <div class="raschet-bem__subst-selection-block" style="flex-basis: 167px; align-items: stretch; margin-right: 30px;">
+
+                <p class="raschet-bem__comment">Для расчёта необходима мощность теплообменника <span class="span_color_orange">или</span> расход по нагреваемой среде</p>
+                <div class="raschet-bem__subst-selection-block" style="flex-basis: 187px; align-items: stretch; margin-right: 30px;">
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Мощность теплообменника</span>
-                    <input type=""  id="q-input" class="raschet-bem__input"  required minlength="1">
-                    <span class="raschet-bem__input-error q-input-error"></span>
+                    <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
+                      <input type=""  id="q-input" class="raschet-bem__input"  required minlength="1">
+                      <select class="raschet-bem__select" name="t_typesr" >
+                        <option value="Вода">квт</option>
+                        <option value="Пар">мвт</option>
+                      </select>
+                      <span class="raschet-bem__input-error q-input-error"></span>
+                    </fieldset>
+
                   </label>
-                  <select class="raschet-bem__select" name="t_typesr" style="background-color: #c4c4c4;">
-                    <option value="Вода">квт</option>
-                    <option value="Пар">мвт</option>
-                  </select>
                 </div>
 
                 <div class="raschet-bem__subst-selection-block" style="flex-basis: 199px;align-items: stretch;">
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
+                    <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
+                      <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                      <select class="raschet-bem__select" name="t_typesr" >
+                        <option value="Вода">м3/ч</option>
+                        <option value="Пар">т/ч</option>
+                      </select>
+                      <span class="raschet-bem__input-error rash-input-error"></span>
+                    </fieldset>
+                  </label>
+                </div>
+              </div>
+              <!--<button class="popup__button-save popup__button-save_type_callback form-next-step" type="submit">Отправить</button>-->
+              <button class="form-next-step button-bem" type="submit">Рассчитать теплообменник</button>
+              <div class="popup__form-fio popup-absolute">
+                <h3 class="raschet-bem__title">Куда мы можем отправить расчёт?</h3>
+                  <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
+                  <label class="raschet-bem__field">
+                    <span class="raschet-bem__label-title">Как к Вам обращаться?</span>
                     <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
                     <span class="raschet-bem__input-error rash-input-error"></span>
                   </label>
-                  <select class="raschet-bem__select" name="t_typesr" style="background-color: #c4c4c4;">
-                    <option value="Вода">м3/ч</option>
-                    <option value="Пар">т/ч</option>
-                  </select>
+                  <label class="raschet-bem__field">
+                    <span class="raschet-bem__label-title">Почта или телефон, куда удобнее принять расчёт</span>
+                    <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                    <span class="raschet-bem__input-error rash-input-error"></span>
+                  </label>
+                </fieldset>
+                <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">
+                  <button type="button"  class="button-bem button-bem_back form-back-button" style="flex-basis: 200px">Назад</button>
+                  <button type="submit" class="button-bem " style="flex-basis: 100%;">Отправить</button>
                 </div>
               </div>
-              <button style="width: 100%; margin-top: 0; background-color: #ff5e3a;" class="popup__button-save popup__button-save_type_callback" type="submit">Отправить</button>
           </form>
       </div>
     </div>
-
+    <script>
+      const backButton = document.querySelector('.form-back-button');
+      const nextButton = document.querySelector('.form-next-step');
+      const popupAbsolute = document.querySelector('.popup-absolute');
+      backButton.addEventListener('mousedown', (evt)=> {
+        popupAbsolute.classList.remove('popup__form-fio_opened');
+      })
+      nextButton.addEventListener('mousedown', ()=> {
+        popupAbsolute.classList.add('popup__form-fio_opened');
+      })
+    </script>
   <!--Форма модального окна с картинкой-->
   <div class="popup popup_darked popup-viewport">
     <div class="popup__container">
@@ -1150,7 +1190,7 @@
         </div>
         <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
           <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
-       
+
     </div>
   </div>
 

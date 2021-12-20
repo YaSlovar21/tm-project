@@ -128,7 +128,116 @@ export const initialPartners = [
       site: 'http://interservice1.com',
     },
   },
-
+  {
+    name: 'Краснодар',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Астрахань',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Ростов-на-Дону',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Севастополь',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Ставрополь',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Махачкала',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Волгоград',
+    htmlData: {
+      nameOfPartner: 'ООО \"Ютермо\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Новосибирск',
+    htmlData: {
+      nameOfPartner: 'ООО \"Инженерные системы\"',
+      telephoneNumbers: ['+7-903-900-36-63'],
+    },
+  },
+  {
+    name: 'Искитим',
+    htmlData: {
+      nameOfPartner: 'ООО \"Инженерные системы\"',
+      telephoneNumbers: ['+7-903-900-36-63'],
+    },
+  },
+  {
+    name: 'Омск',
+    htmlData: {
+      nameOfPartner: 'ООО \"Теплосервис\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Оренбург',
+    htmlData: {
+      nameOfPartner: 'ООО \"Отопление качество\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://utermo.ru/',
+    },
+  },
+  {
+    name: 'Томск',
+    htmlData: {
+      nameOfPartner: 'ООО \"Амито\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://amito-t.ru/',
+    },
+  },
+  {
+    name: 'Уфа',
+    htmlData: {
+      nameOfPartner: 'ООО \"Партнер\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://amito-t.ru/',
+    },
+  },
+  {
+    name: 'Стерлитамак',
+    htmlData: {
+      nameOfPartner: 'ООО \"Партнер\"',
+      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      site: 'https://amito-t.ru/',
+    },
+  },
 ]
 
 export const initialPartners1 = [
