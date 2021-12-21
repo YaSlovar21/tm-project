@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.popup__form_callback {
+  width: 430px;
+}
+
 .popup__form_type_big {
   max-width: 768px;
 }
