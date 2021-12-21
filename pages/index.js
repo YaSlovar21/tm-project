@@ -2,14 +2,14 @@
 // import WOW from 'wow.js';
 // import anime from 'animejs/lib/anime.es.js';
 
-import Section from '../js/components/Section.js';
 import Card from '../js/components/Card.js';
-import Menu from '../js/components/Menu.js';
-import Partner from '../js/components/Partner.js';
+
 
 import FormValidator from '../js/components/FormValidator.js';
 import PopupWithForm from '../js/components/PopupWithForm.js';
-//import PopupConfirm from '../js/components/PopupConfirm.js';
+import PopupWithBigForm from '../js/components/PopupWithBigForm.js';
+
+
 import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 import Api from '../js/components/Api.js';
@@ -128,29 +128,33 @@ const popupCallBack = new PopupWithForm({
   formCleanError: () => {
     formValidatorCallBack.cleanAllErrors();
   },
-}, callBackPopupSelector)
+}, callBackPopupSelector, '.popup__form', '.popup__input');
 
-const popupRaschet = new PopupWithForm({
+
+
+const popupRaschet = new PopupWithBigForm({
   formSubmitHandler: (formCallbackData) => {
-    // const name = formCallbackData.name;
-    // const tel = formCallbackData.tel;
+    //const name = formCallbackData.name;
+    const name='test';
+    const tel = formCallbackData;
     // renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
-    // formApi.sendCallForm(name, tel, callbackFormId)
+    //formApi.sendCallForm(name, tel, callbackFormId)
     //   .then((response) => {
     //     console.log(response)
     //     popupCallBack.close();
     //     //сделать сообщение об успешной отправке
-     //  })
-     //  .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
+     // })
+      // .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
      //  .finally(() => {
     //     formValidatorCallBack.disableSaveButton();
     //     renderLoading(false, callbackSubmitButton, 'Отправить', 'Отправка...');
     //   });
+    console.log(formCallbackData);
   },
   formCleanError: () => {
     formValidatorCallBack.cleanAllErrors();
   },
-}, '.popup-raschet')
+}, '.popup-raschet', '.raschet-bem', '.raschet-bem__input')
 
 popupImage.setEventListeners();
 popupCallBack.setEventListeners();
@@ -159,6 +163,7 @@ popupRaschet.setEventListeners();
 //popupHeatEx.setEventListeners();
 
 //навешиваем слушатели на элементы сайта
+//сделать forEach по всем кнопкам с селектором "кнопки открытия попапа"
 callBackPopupOpenButton.addEventListener("mousedown", () => {
   popupCallBack.open();
 })

@@ -1010,7 +1010,7 @@
   <div class="popup popup-callback">
     <div class="popup__container">
         <button class="popup__button-close link-beauty" type="button"></button>
-        <form class="popup__form" method="post" action="#" id="formCallBack" name="formCallBack" novalidate>
+        <form class="popup__form popup__form_theme_tm" method="post" action="#" id="formCallBack" name="formCallBack" novalidate>
             <h2 class="popup__title">Заявка на обратный звонок</h2>
             <input class="popup__input popup__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
             <span class="popup__input-error name-input-error"></span>
@@ -1047,7 +1047,7 @@
               <div class="raschet-bem__substantions">
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
-                  <select class="raschet-bem__select" name="t_typesr">
+                  <select data-alias="Греющая сторона" class="raschet-bem__input raschet-bem__select" name="t_typesr">
                     <option value="Вода">вода</option>
                     <option value="Пар">пар</option>
                     <option value="Масло">масло</option>
@@ -1055,7 +1055,7 @@
                 </div>
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_cold">Нагреваемая сторона</h3>
-                  <select class="raschet-bem__select" name="t_typesr">
+                  <select data-alias="Нагреваемая сторона" class="raschet-bem__input raschet-bem__select" name="t_typesr">
                     <option value="Вода">вода</option>
                     <option value="Пар">пар</option>
                     <option value="Масло">масло</option>
@@ -1067,12 +1067,12 @@
                 <div class="raschet-bem__temperature-set">
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на входе</span>
-                    <input name="t_gre_mass" id="temp-grin-input" class="raschet-bem__input" novalidate required min="1">
+                    <input data-alias="Температура греющей среды на входе" name="t_gre_mass" id="temp-grin-input" class="raschet-bem__input" novalidate required min="1">
                     <span class="raschet-bem__input-error temp-grin-input-error"></span>
                   </label>
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                    <input name="" id="temp-grout-input" class="raschet-bem__input" novalidate required min="1">
+                    <input data-alias="Температура греющей среды на выходе" name="" id="temp-grout-input" class="raschet-bem__input" novalidate required min="1">
                     <span class="raschet-bem__input-error  temp-grout-input-error"></span>
                   </label>
                 </div>
@@ -1080,12 +1080,12 @@
                 <div class="raschet-bem__temperature-set">
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                    <input type="" name="t_gre_mass" id="temp-nagrout-input" class="raschet-bem__input" required minlength="1">
+                    <input data-alias="Температура нагреваемой среды на выходе" type="" name="t_gre_mass" id="temp-nagrout-input" class="raschet-bem__input" required minlength="1">
                     <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
                   </label>
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на входе</span>
-                    <input type=""  id="temp-nagrin-input" class="raschet-bem__input" required minlength="1">
+                    <input data-alias="Температура нагреваемой среды на входе" type=""  id="temp-nagrin-input" class="raschet-bem__input" required minlength="1">
                     <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
                   </label>
                 </div>
@@ -1098,7 +1098,7 @@
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Мощность теплообменника</span>
                     <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
-                      <input type=""  id="q-input" class="raschet-bem__input"  required minlength="1">
+                      <input data-alias="Мощность" type=""  id="q-input" class="raschet-bem__input"  required minlength="1">
                       <select class="raschet-bem__select" name="t_typesr" >
                         <option value="Вода">квт</option>
                         <option value="Пар">мвт</option>
@@ -1113,7 +1113,7 @@
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
                     <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
-                      <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                      <input data-alias="Расход нагреваемой среды" type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
                       <select class="raschet-bem__select" name="t_typesr" >
                         <option value="Вода">м3/ч</option>
                         <option value="Пар">т/ч</option>
@@ -1124,18 +1124,18 @@
                 </div>
               </div>
               <!--<button class="popup__button-save popup__button-save_type_callback form-next-step" type="submit">Отправить</button>-->
-              <button class="form-next-step button-bem" type="submit">Рассчитать теплообменник</button>
+              <button class="form-next-step button-bem" type="button">Далее</button>
               <div class="popup__form-fio popup-absolute">
                 <h3 class="raschet-bem__title">Куда мы можем отправить расчёт?</h3>
                   <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Как к Вам обращаться?</span>
-                    <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                    <input name="name" data-alias="Имя" type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
                     <span class="raschet-bem__input-error rash-input-error"></span>
                   </label>
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Почта или телефон, куда удобнее принять расчёт</span>
-                    <input type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
+                    <input name="contact" data-alias="Контакт" type=""  id="rash-input" class="raschet-bem__input"  required minlength="1">
                     <span class="raschet-bem__input-error rash-input-error"></span>
                   </label>
                 </fieldset>

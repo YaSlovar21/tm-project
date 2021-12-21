@@ -5,12 +5,11 @@
 
   font-size: 18px;
 
-  padding: 10px 0;
+  padding: 13px 0;
   background-color: #4e4e4e;
   transition: all .7s ease-in;
   color: #f2f2f2;
   text-align: center;
-
 }
 
 .button-bem_back {
@@ -19,4 +18,22 @@
 }
 .button-bem:hover {
   background-color: #2f2f2f86;
+}
+
+.button-bem_disabled {
+  box-sizing: border-box;
+  border: 1px solid #4e4e4e;
+  background: none;
+
+  display: flex;
+  flex-direction: column;
+  color: #4e4e4e;
+  align-items: center;
+}
+.button-bem_disabled::after {
+  content: 'Введите температурные графики, чтобы расчёт стал возможным';
+  font-size: 10px;
+  font-weight: 200;
+  color: #f2f2f2;
+  margin-top: 5px;
 }

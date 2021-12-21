@@ -3,10 +3,10 @@
     flex-direction: column;
     max-width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 36px;
-    
+    background-color: #2f2f2f;
+    border-radius: 2px;
+    padding: 0px;
+
     position: relative;
 }
 
