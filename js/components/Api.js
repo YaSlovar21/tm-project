@@ -22,8 +22,9 @@ export default class Api {
     }
 */
     sendCallForm(name, number, formId) {
-        return fetch(`${this._baseUrl}/f/${formId}`, {
-            method: 'POST',
+       //return fetch(`${this._baseUrl}/f/${formId}`, {
+        return fetch(`${this._baseUrl}`, {
+            method : 'POST',
             headers: this._headers,
             body: JSON.stringify({
                 name: name,
@@ -31,6 +32,7 @@ export default class Api {
             }),
         })
         .then((response) => {
+            console.log(response);
             return this._isResponseOk(response);
         })
     }
