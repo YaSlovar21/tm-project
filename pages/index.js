@@ -85,8 +85,8 @@ const formApi = new Api({
 
   baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
   headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json;charset=UTF-8'
+    'Accept': '*/*',
+    'Content-Type': 'text/plain'
   },
 });
 
