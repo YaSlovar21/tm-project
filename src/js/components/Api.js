@@ -1,0 +1,40 @@
+export default class Api {
+    constructor({baseUrl, headers}) {
+        this._baseUrl = baseUrl;
+        this._headers = headers;
+    }
+
+    _isResponseOk(response) {
+        if (response.ok) {
+            return response.json();
+        } else {
+            return Promise.reject(`Ошибка: ${response.status}`);
+        }
+    }
+
+ /*   getInitialCards() {
+        return fetch(`${this._baseUrl}/cards`, {
+            headers: this._headers,
+        })
+        .then((response) => {
+            return this._isResponseOk(response);
+        })
+    }
+*/
+    sendCallForm(name, number) {
+        return fetch(`${this._baseUrl}`, {
+            method : 'POST',
+            headers: this._headers,
+            body: JSON.stringify({
+                name: name,
+                number: number,
+            }),
+            isBase64Encoded: false
+        })
+        .then((response) => {
+            console.log(response);
+            return this._isResponseOk(response);
+        })
+    }
+
+}
