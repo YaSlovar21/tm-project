@@ -18,43 +18,10 @@
     <div class="bg"></div>
     <div class="page">
       <header class="header">
-        <a href="index.html" class="header__logo"
-          ><img src="images/header-logo-1.svg" width="100%"
+        <a href="index.html" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"
         /></a>
         <div class="header__right">
-          <nav class="nav">
-            <ul class="nav__menu-links">
-              <li class="nav__ul-item"><a class="nav__link" href="/">Главная</a></li>
-              <li class="nav__ul-item">
-                <a class="nav__link" href="./production.html">Продукция</a>
-                <ul class="nav__submenu">
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="plast-to.html">Пластинчатые теплообменники</a></li>
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a></li>
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="btp.html" >Блочные тепловые пункты</a></li>
-                </ul>
-              </li>
-              <li class="nav__ul-item"><a class="nav__link" href="service.html">Сервис</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="info_main.html">Блог производителя</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="about.html">О компании</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header__under-nav">
-            <div class="header__contacts">
-              <a class="header__link link-beauty" href="tel:73852772563"
-                >8 (3852)77-25-63</a
-              >
-              <a
-                class="header__link link-beauty"
-                href="mailto:sales@termoblok.ru"
-                >sales@termoblok.ru</a
-              >
-            </div>
-            <div class="header__breadcrumbs">
-              <a class="header_download-link" href="#">Скачать референс-бук</a>
-              <a class="header_download-link" href="#">Скачать каталог</a>
-            </div>
-          </div>
+          <%= require('html-loader!./inner-header.html').default %>
         </div>
       </header>
 
@@ -78,25 +45,25 @@
             <a class="productcard" href="./plast-to.html">
 
                 <h3 class="productcard__heading">Пластинчатые теплообменники</h3>
-                <img class="productcard__image" src="./images/ti45_new.png" alt="Пластинчатые теплообменники">
+                <img class="productcard__image" src="<%=require('./images/ti45_new.png')%>" alt="Пластинчатые теплообменники">
 
             </a>
             <a class="productcard"  href="./presentation.html">
 
                 <h3 class="productcard__heading">Пищевые теплообменники</h3>
-                <img class="productcard__image"   src="./images/many-section-grid.png" alt="Пищевые теплообменники">
+                <img class="productcard__image"   src="<%=require('./images/many-section-grid.png')%>" alt="Пищевые теплообменники">
 
             </a>
             <a class="productcard"  href="./btp.html">
 
                 <h3 class="productcard__heading">Блочные тепловые пункты</h3>
-                <img class="productcard__image"  src="./images/btp_now.png" alt="Блочные тепловые пункты">
+                <img class="productcard__image"  src="<%=require('./images/btp_now.png')%>" alt="Блочные тепловые пункты">
 
             </a>
             <a class="productcard"  href="#">
 
                 <h3 class="productcard__heading">Установки ПОУ</h3>
-                <img class="productcard__image"  src="./images/teplojit-pou.png" alt="Пастеризационная охладительная установка">
+                <img class="productcard__image"  src="<%=require('./images/teplojit-pou.png')%>" alt="Пастеризационная охладительная установка">
 
             </a>
         </section>
@@ -111,7 +78,7 @@
         <section class="wholecycle-grid">
             <div class="pictitletext">
               <div class="pictitletext__img-container">
-                <img src="./images/wholecycle/1plast.png" class="pictitletext__image">
+                <img src="<%=require('./images/wholecycle/1plast.png')%>" class="pictitletext__image">
               </div>
               <div class="pictitletext__container">
                 <h3 class="pictitletext__heading">Разработка и производство
@@ -121,7 +88,7 @@
             </div>
             <div class="pictitletext">
               <div class="pictitletext__img-container">
-                <img src="./images/wholecycle/2pressf.png" class="pictitletext__image">
+                <img src="<%=require('./images/wholecycle/2pressf.png')%>" class="pictitletext__image">
               </div>
               <div class="pictitletext__container">
                 <h3 class="pictitletext__heading">Производство оснастки и пресс-форм</h3>
@@ -130,7 +97,7 @@
             </div>
             <div class="pictitletext">
               <div class="pictitletext__img-container">
-                <img src="./images/wholecycle/3prog.png" class="pictitletext__image">
+                <img src="<%=require('./images/wholecycle/3prog.png')%>" class="pictitletext__image">
               </div>
               <div class="pictitletext__container">
                 <h3 class="pictitletext__heading">Собственная программа расчёта теплообменников</h3>
@@ -139,7 +106,7 @@
             </div>
             <div class="pictitletext">
               <div class="pictitletext__img-container">
-                <img src="./images/wholecycle/4sborka.png" class="pictitletext__image">
+                <img src="<%=require('./images/wholecycle/4sborka.png')%>" class="pictitletext__image">
               </div>
               <div class="pictitletext__container">
                 <h3 class="pictitletext__heading">Сборка и испытание теплообменников</h3>
@@ -171,33 +138,8 @@
         </ul>
       </main>
       <footer class="footer">
-        <div class="footer__columns">
-          <div class="footer__column footer__column_content_copyright">
-            <!--<img class="logo logo_place_footer" src="images/logo_profi_place_footer.svg" alt="Профи">-->
-            <!--<p class="footer__author">&copy; 2020, Вячеслав Невьянцев</p>-->
-            <div class="header__lang-column">
-              <!--<a class="header__lang-link header__lang-link_underlined">Ru</a>-->
-              <img src="images/logo_BSZ_svg.svg" style="height:60px; margin-right:10px;">
-              <p style="margin: 0; padding: 0; width: 260px; font-size: 14px; color: white;">Предприятие холдинговой компании "Барнаульский станкостроительный завод" <a href="#" style="text-decoration: none; color: #0093dd;;" class="link-beauty">Подробнее →</a></p>
-          </div>
-          </div>
-          <nav class="footer__column footer__column_content_info">
-            <h3 class="footer__column-heading">Разделы сайта</h3>
-            <ul class="footer__column-links">
-              <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Главная</a></li>
-              <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Расчёт теплообменника</a></li>
-              <li class="footer__ul-item"><a href="#" class="footer__link link-beauty">Проекты</a></li>
-            </ul>
-          </nav>
-          <nav class="footer__column footer__column_content_social">
-            <h3 class="footer__column-heading">Соцсети</h3>
-            <ul class="footer__column-links">
-              <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="Фэйсбук">Facebook</a></li>
-              <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
-              <li class="footer__ul-item"><a href="#" target="_blank" class="footer__link link-beauty"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="Инстаграм">Instagram</a></li>
-            </ul>
-          </nav>
-        </div>
+
+        <%= require('html-loader!./inner-footer.html').default %>
       </footer>
     </div>
 

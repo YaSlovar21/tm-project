@@ -17,16 +17,13 @@
 @import url(../blocks/header/__lang-column/header__lang-column.css);
 @import url(../blocks/header/__contacts/header__contacts.css);
 
+/*Теплообменник блок основной*/
+@import url(../blocks/heatex/heatex.css);
+/*Часто задаваемые вопросы*/
+@import url(../blocks/frequently/frequently.css);
 
-@import url(../blocks/product-types/product-types.css);
-
-/*Грид 1большая + 4 блока*/
-@import url(../blocks/tmproduction/tmproduction.css);
-/*Грид полный цикл*/
-@import url(../blocks/wholecycle-grid/wholecycle-grid.css);
-
-@import url(../blocks/plastdetail/plastdetail.css);
-
+@import url(../blocks/khan/khan.css);
+@import url(../blocks/khan/_page_heatex/khan_page_heatex.css);
 
 
 @import url(../blocks/footer/footer.css);

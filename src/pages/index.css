@@ -236,10 +236,7 @@
 @import url(../blocks/popup/__form-fio/popup__form-fio.css);
 
 
-/*Теплообменник блок основной*/
-@import url(../blocks/heatex/heatex.css);
-/*Часто задаваемые вопросы*/
-@import url(../blocks/frequently/frequently.css);
+
 
 
 
@@ -249,10 +246,7 @@
 
 
 
-/*Грид 1большая + 4 блока*/
-@import url(../blocks/tmproduction/tmproduction.css);
-/*Грид полный цикл*/
-@import url(../blocks/wholecycle-grid/wholecycle-grid.css);
+;
 
 
 

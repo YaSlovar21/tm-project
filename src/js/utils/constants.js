@@ -9,13 +9,13 @@ const ufaUmnDom = new URL('../../images/projects/ufa_umn_dom.png', import.meta.u
 const ti025Img = new URL('../../images/descTO/ti077.png', import.meta.url);
 const ti077Img = new URL('../../images/descTO/ti077new.png', import.meta.url);
 const ti13Img = new URL('../../images/descTO/ti13new.png', import.meta.url);
-const ti18Img = new URL('../../images/descTO/ti18new.png', import.meta.url);
+const ti18Img = new URL('../../images/descTO/ti18.png', import.meta.url);
 const ti28Img = new URL('../../images/descTO/ti28new.png', import.meta.url);
 const ti45Img = new URL('../../images/descTO/ti45new.png', import.meta.url);
 const ti52Img = new URL('../../images/descTO/ti077.png', import.meta.url);
 const ti65Img = new URL('../../images/descTO/ti077.png', import.meta.url);
 const ti82Img = new URL('../../images/descTO/ti077.png', import.meta.url);
-const ti95Img = new URL('../../images/descTO/ti95new.png', import.meta.url);
+const ti95Img = new URL('../../images/descTO/ti95.png', import.meta.url);
 
 export const callbackFormId = 'mdoygyzz';
 
