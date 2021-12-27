@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блочные тепловые пункты</title>
-  <link rel="stylesheet" href="pages/bem-elements.css">
-
+  
 
   <style>
     #swipermain.swiper-container .swiper-scrollbar {
@@ -63,7 +62,7 @@
         <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>">
       </a>
     <div class="header-index__right">
-        <nav class="nav">
+        <!--<nav class="nav">
           <ul class="nav__menu-links">
             <li class="nav__ul-item"><a class="nav__link" href="/">Главная</a></li>
             <li class="nav__ul-item">
@@ -86,10 +85,10 @@
               <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
               <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
           </div>
-          <a href="#" class="header-index__link-lk link-beauty">Перейти в личный кабинет --></a>
+          <a href="#" class="header-index__link-lk link-beauty">Перейти в личный кабинет -></a>
         </div>
-
-
+      -->
+      <%= require('html-loader!./inner-header.html').default %>
 
     </div>
     <div class="header-index__video-container" style="">
@@ -770,11 +769,12 @@
       <div class="map__partner"></div>
 
     </section>
-    <!--FOOTER-->
-    <div class="footer">
-      <%= require('html-loader!./inner-footer.html').default %>
-    </div>
   </main>
+    <!--FOOTER-->
+
+      <%= require('html-loader!./inner-footer.html').default %>
+
+ 
 
   <!--Форма обратного звонка  -->
   <div class="popup popup-callback">

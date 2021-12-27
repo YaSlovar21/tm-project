@@ -1,6 +1,8 @@
 import Partner from '../js/components/Partner.js';
 import Section from '../js/components/Section.js';
 
+import './map.css'
+
 import {
   initialPartners,
   partnersSectionConfig,

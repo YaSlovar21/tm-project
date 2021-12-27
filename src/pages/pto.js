@@ -1,6 +1,9 @@
+import Swiper from 'swiper/bundle';
+
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import '../pages/index.css';
+import './pto.css';
 
 import {
   //данные проектов
@@ -64,3 +67,54 @@ platesSvg.addEventListener("click", (evt) => {
   console.log(initialHeatEx[evt.target.dataset.to]);
 });
 
+
+var mySwiper1 = new Swiper('.khan__book-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  //loop: true,
+  effect: 'coverflow',
+  speed: 700,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
+  zoom: true,
+  cssMode: false,
+  mousewheel: false,
+  // If we need pagination
+  pagination: {
+    type: 'bullets',
+    el: '.khan__list',
+    clickable: true,
+    bulletClass: 'khan__list-item',
+    bulletActiveClass: 'khan__list-item_active',
+    renderBullet: function (index, className) {
+        let a = '';
+        if (index==0) {
+          a = 'Коммерческое предложение'
+        }
+        if (index==1) {
+          a = 'Спецификация'
+        }
+        if (index==2) {
+          a = 'Тех. данные'
+        }
+        return '<li class=' + className + '>' + a + '</li>';
+        //<li id="khan_1" class="khan__list-item khan__list-item_active">Коммерческое предложение</li>
+    }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    //el: '.swiper-scrollbar',
+  },
+})

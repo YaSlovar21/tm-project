@@ -240,24 +240,6 @@
 
 
 
-
-/*Контакты*/
-@import url(../blocks/contacts/contacts.css);
-
-
-
-;
-
-
-
-/*Аннотации и описание на странице О компании*/
-@import url(../blocks/company-description/company-description.css);
-@import url(../blocks/annotation/annotation.css);
-
-
-
-
-
 @import url(../blocks/raschet-bem/raschet-bem.css);
 
 
@@ -268,8 +250,11 @@
 @import url(../blocks/product-types/product-types.css);
 @import url(../blocks/ds/ds.css);
 
+
+
 @import url(../blocks/mainmodels/mainmodels.css);
 @import url(../blocks/timodels/timodels.css);
+
 
 /*ГОТОВЫЕ РЕШЕНИЯ*/
 @import url(../blocks/turnkey/turnkey.css);
@@ -280,6 +265,6 @@
 @import url(../blocks/photo-grid/__item/photo-grid__item.css);
 @import url(../blocks/photo-grid/__image/photo-grid__image.css);
 
-@import url(../blocks/map/map.css);
+
 
 @import url(../blocks/oakley/oakley.css);

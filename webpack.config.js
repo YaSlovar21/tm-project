@@ -13,6 +13,9 @@ module.exports = {
     pto: './src/pages/pto.js',
     ti: './src/pages/ti.js',
     production: './src/pages/production.js',
+    service: './src/pages/service.js',
+    about: './src/pages/about.js',
+    contacts: './src/pages/contacts.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -83,6 +86,24 @@ module.exports = {
       filename: 'plastinchatye-teploobmenniki.html',
       chunks: ['pto',  'all', 'map'],
     }),
+    new HtmlWebpackPlugin({
+      title: '1truty3',
+      template: './src/service.html', 
+      filename: 'service.html',
+      chunks: ['service',  'all', 'map'],
+    }),
+    new HtmlWebpackPlugin({
+      title: '1truty3',
+      template: './src/about.html', 
+      filename: 'about.html',
+      chunks: ['about',  'all', 'map'],
+    }),
+    new HtmlWebpackPlugin({
+      title: '1truty3',
+      template: './src/contacts.html', 
+      filename: 'contacts.html',
+      chunks: ['contacts',  'all', 'map'],
+    }),
     /*---------------------ТЕПЛООБМЕННИКИ------------------------------------------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ025 пластинчатый разборный',
@@ -97,7 +118,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/Lo1bdjAoi7LVyQ',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                  /*--2-------ТИ077----------- */
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ077 пластинчатый разборный',
@@ -112,7 +133,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                  /*---3------ТИ13----------- */
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ13 пластинчатый разборный',
@@ -127,7 +148,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/7C26Ov2CVbgl6w',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                  /*--4-------ТИ18-----------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ18 пластинчатый разборный',
@@ -142,7 +163,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/O2lzhXAOWaA4ug',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                  /*--5-------ТИ16,5-----------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ16,5 пластинчатый разборный',
@@ -157,7 +178,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': '',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                  /*--6-------ТИ28-----------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ18 пластинчатый разборный',
@@ -172,7 +193,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                 /*--7-------ТИ45-----------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ18 пластинчатый разборный',
@@ -187,7 +208,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),                                    /*--8-------ТИ65-----------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ18 пластинчатый разборный',
@@ -202,7 +223,7 @@ module.exports = {
         пластину (рисунок 1,2), тем самым исключает обрыв при монтаже пластины.`,
         'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
       },
-      chunks: ['ti'],
+      chunks: ['ti', 'all'],
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

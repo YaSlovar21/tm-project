@@ -4,42 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пластинчатые теплообменники от производителя</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
 </head>
 <body class="page">
   <div class="bg"></div>
   <div >
 
     <header class="header">
-      <a href="index.html" class="header__logo"><img  src="images/header-logo-1.svg" width="100%"></a>
+      <a href="index.html" class="header__logo">
+        <img  src="<%=require('./images/header-logo-1.svg')%>" width="100%">
+      </a>
       <div class="header__right">
-        <nav class="nav">
-          <ul class="nav__menu-links">
-            <li class="nav__ul-item"><a class="nav__link" href="/">Главная</a></li>
-            <li class="nav__ul-item">
-              <a class="nav__link" href="./production.html">Продукция</a>
-              <ul class="nav__submenu">
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="plast-to.html">Пластинчатые теплообменники</a></li>
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a></li>
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="btp.html" >Блочные тепловые пункты</a></li>
-              </ul>
-            </li>
-            <li class="nav__ul-item"><a class="nav__link" href="service.html">Сервис</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="info_main.html">Блог производителя</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="about.html">О компании</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="header__under-nav">
-          <div class="header__contacts">
-              <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
-              <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
-          </div>
-          <div class="header__breadcrumbs">
-              <a class="header_download-link" href="#">Скачать референс-бук</a>
-              <a class="header_download-link" href="#">Скачать каталог</a>
-          </div>
-        </div>
+        <%= require('html-loader!./inner-header.html').default %>
       </div>
   </header>
 
@@ -416,7 +392,7 @@
         </div>
 
         <div class="flexburton__right-side">
-          <img class="flexburton__main-image" src="images/ti45_new.png" alt="Пластинчатый теплообменник">
+          <img class="flexburton__main-image" src="<%=require('./images/ti45_new.png')%>" alt="Пластинчатый теплообменник">
 
           <!--<svg class="flexburton__svg rotation" width="674" height="674" viewBox="0 0 674 674" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M272.606 6.1454C117.288 36.1981 0 172.902 0 337C0 501.098 117.288 637.802      272.606 667.855V661.74C120.623 631.773 6 497.772 6 337C6 176.228 120.623 42.2269 272.606 12.2599V6.1454ZM323.216      667.718C327.787 667.905 332.383 668 337 668C519.806 668 668 519.806 668 337C668 154.194 519.806 6 337 6C332.383 6 327.787 6.09455 323.216 6.28181V0.27677C327.788 0.0928449 332.383 0 337 0C523.12 0 674 150.88 674 337C674 523.12 523.12 674 337 674C332.383 674 327.788 673.907 323.216 673.723V667.718Z" fill="#FF5E3A"/>
@@ -429,7 +405,7 @@
         <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
           <h2 class="two-columns__brief two-columns__brief_wide">Гарантии качества пластинчатых теплообменников</h2>
           <div class="two-columns__main-text">
-            <p class="two-columns__paragraph">На базе пластин собственного производства изготавливаются теплообменники торговой марки <img src="./images/svg-teplohit.svg" style="height: 26px;position: relative;top: 8px;" alt="Теплохит"> для различных отраслей: жилично-коммунальное хозяйство, пищевая промышленность и прочие технологические процессы теплообмена.  Производство теплообменников 100% локализовано на территории предприятия.</p>
+            <p class="two-columns__paragraph">На базе пластин собственного производства изготавливаются теплообменники торговой марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 26px;position: relative;top: 8px;" alt="Теплохит"> для различных отраслей: жилично-коммунальное хозяйство, пищевая промышленность и прочие технологические процессы теплообмена.  Производство теплообменников 100% локализовано на территории предприятия.</p>
             <p class="two-columns__paragraph">Обеспечивается полный контроль качества на каждом участке производства: сталь на входе проходил лабораторную проверку на соответствие заявленной марке, проводится индивидуальная проверка пластин, собранный теплообменник испытывается гидравлическим давлением.</p>
           </div>
         </div>
@@ -718,24 +694,24 @@
   <section class="plastdetail" style="background-color: #2f2f2f34;">
     <div class="plastdetail__content">
       <h2 class="plastdetail__title">Пластина пластинчатого теплообменника</h2>
-      <img src="./images/plastdetailimg.png" class="plastdetail__image"  alt="Пластина пластинчатого теплообменника">
+      <img src="<%=require('./images/plastdetailimg.png')%>" class="plastdetail__image"  alt="Пластина пластинчатого теплообменника">
       <ul class="plastdetail__detailslist">
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="./images/details1_asim_canali.png">
+            <img class="plastdetail__iimage" src="<%=require('./images/details1_asim_canali.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Ассиметричные каналы</h3>
               <p class="plastdetail__idesc"> Пластина по одной стороне имеет широкие каналы, а по другой узкие. Возможно создать 11 типов каналов, что позволяет оптимизировать количество пластин, тем самым снизив стоимость теплообменника без потери его эффективности.</p>
             </div>
           </li>
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="./images/details2_klips.png">
+            <img class="plastdetail__iimage" src="<%=require('./images/details2_klips.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Форма клипа</h3>
               <p class="plastdetail__idesc">Препятсятвует разрыву и клип не слетает.</p>
             </div>
           </li>
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="./images/details3_burts.png">
+            <img class="plastdetail__iimage" src="<%=require('./images/details3_burts.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Два бурта</h3>
               <p class="plastdetail__idesc">Два бурта уплотнения противостоят давлению внутри теплообменника.</p>
@@ -763,18 +739,18 @@
                   <!--<img data-src="path/to/picture-1.jpg" class="swiper-lazy" />
                   <div class="swiper-lazy-preloader"></div>-->
                   <div class="swiper-zoom-container">
-                    <img src="images/raschet-kp.png" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                    <img src="<%=require('./images/raschet-kp.png')%>" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-zoom-container">
-                    <img data-src="images/raschet-sp.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                    <img data-src="<%=require('./images/raschet-sp.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
                   </div>
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-zoom-container">
-                    <img data-src="images/raschet-teh-dann.png" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+                    <img data-src="<%=require('./images/raschet-teh-dann.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
                   </div>
                   <div class="swiper-lazy-preloader"></div>
                 </div>
@@ -830,7 +806,7 @@
       <div style="overflow: hidden;">  <!--Костыль для overflow картинки программы расчёта-->
         <section class="princip">
           <div class="princip__image wow animate__zoomIn" data-wow-offset="100">
-            <img class="princip__image-svg"  src="images/princip_demo.svg">
+            <img class="princip__image-svg"  src="<%=require('./images/princip_demo.svg')%>">
           </div>
           <div class="princip__description">
             <h2 class="princip__heading wow animate__fadeInUp" data-wow-offset="100">Принцип работы пластинчатых теплообменников</h2>
@@ -844,7 +820,7 @@
             <p class="po__text wow animate__fadeInUp" data-wow-offset="100">Разработанная нами программа предназначена для расчета пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности.</p>
             <a href="#" class=" wow animate__fadeInUp po__link" data-wow-offset="200">Запросить программу расчёта</a>
           </div>
-          <img src="images/program_mini.png" class="po__image">
+          <img src="<%=require('./images/program_mini.png')%>" class="po__image">
         </section>
       </div>
 
@@ -876,56 +852,7 @@
   </div>
 
 <script>
-  var mySwiper1 = new Swiper('.khan__book-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    //loop: true,
-    effect: 'coverflow',
-    speed: 700,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    preloadImages: false,
-    // Enable lazy loading
-    lazy: true,
-    zoom: true,
-    cssMode: false,
-    mousewheel: false,
-    // If we need pagination
-    pagination: {
-      type: 'bullets',
-      el: '.khan__list',
-      clickable: true,
-      bulletClass: 'khan__list-item',
-      bulletActiveClass: 'khan__list-item_active',
-      renderBullet: function (index, className) {
-          let a = '';
-          if (index==0) {
-            a = 'Коммерческое предложение'
-          }
-          if (index==1) {
-            a = 'Спецификация'
-          }
-          if (index==2) {
-            a = 'Тех. данные'
-          }
-          return '<li class=' + className + '>' + a + '</li>';
-          //<li id="khan_1" class="khan__list-item khan__list-item_active">Коммерческое предложение</li>
-      }
-    },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      //el: '.swiper-scrollbar',
-    },
-  })
 </script>
   <!--Шаблон элемента партнера на карте-->
   <template id="partner-item-template">
@@ -957,8 +884,8 @@
             <p class="popup__image-description"></p>
         </div>-->
         <div class="popup__to-info heatex" style="max-width: 100%;">
-          <div style="position: absolute; top:0; left: 0;"><img src="./images/rect_sect.svg" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
+          <div style="position: absolute; top:0; left: 0;"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
           <img class="popup__to-img" src="">
           <div class="popup__desc-container">
             <span class="span span_comment">Теплообменник</span>
@@ -968,15 +895,12 @@
             <a class="popup__to-3dlink heatex__to-3dlink" href="">12341234</a>
           </div>
         </div>
-        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
-          <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
+        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
 
     </div>
   </div>
-  <!--
-  <script type="module" src="./pages/map.js"></script>
-  <script type="module" src="./pages/pto.js"></script>
-  <script src="js/anime.min.js"></script>-->
+
   <script src="js/slider-sborka.js"></script>
 
 </body>
