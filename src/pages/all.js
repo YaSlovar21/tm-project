@@ -1,3 +1,5 @@
+import './all.css'
+
 import Popup from '../js/components/Popup.js';
 import {popupWithMenuSelector} from '../js/utils/constants.js';
 

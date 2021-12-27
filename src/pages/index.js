@@ -18,7 +18,7 @@ import Api from '../js/components/Api.js';
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import '../pages/index.css';
-import '../pages/bem-elements.css'
+
 //import '../pages/CNAME';
 
 import {

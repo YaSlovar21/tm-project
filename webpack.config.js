@@ -16,6 +16,8 @@ module.exports = {
     service: './src/pages/service.js',
     about: './src/pages/about.js',
     contacts: './src/pages/contacts.js',
+    blogSection: './src/pages/blog-section.js',
+    blogPage: './src/pages/blog-page.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -77,7 +79,7 @@ module.exports = {
       title: 'Производство теплообменого оборудования, пластинчатых теплообменников, тепловых пунктов',
       template: './src/production.html', 
       filename: 'production.html',
-      chunks: ['production'],
+      chunks: ['production', 'all'],
       inject: true,
     }),
     new HtmlWebpackPlugin({
@@ -97,6 +99,18 @@ module.exports = {
       template: './src/about.html', 
       filename: 'about.html',
       chunks: ['about',  'all', 'map'],
+    }),
+    new HtmlWebpackPlugin({
+      title: '1truty3',
+      template: './src/blog-section.html', 
+      filename: 'blog-proizvodstva/index.html',
+      chunks: ['blogSection',  'all', 'map'],
+    }),
+    new HtmlWebpackPlugin({
+      title: '1truty3',
+      template: './src/blog-page.html', 
+      filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
+      chunks: ['blogPage',  'all', 'map'],
     }),
     new HtmlWebpackPlugin({
       title: '1truty3',

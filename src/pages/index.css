@@ -1,10 +1,4 @@
 
-@import url(../styles/normalize.css);
-@import url(../blocks/root/root.css);
-
-@import url(../vendor/fonts/fonts.css);
-/*Спаны*/
-@import url(../blocks/span/span.css);
 
 
 @import url(../blocks/section-title/section-title.css);
@@ -149,8 +143,6 @@
 
 @import url(../blocks/introgrid/introgrid.css);
 
-/*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
-@import url(../blocks/info/info.css);
 
 
 
@@ -190,9 +182,7 @@
 @import url(../blocks/slider-sborka/slider-sborka.css);
 
 
-/*КАРТОЧКА КАТАЛОГА СТАТЕЙ*/
-@import url(../blocks/info-card/info-card.css);
-@import url(../blocks/infocards/infocards.css);
+
 
 
 
