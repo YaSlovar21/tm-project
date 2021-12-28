@@ -116,17 +116,17 @@ const popupRaschet = new PopupWithBigForm({
     const name='test';
     const tel = formCallbackData;
     // renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
-    //formApi.sendCallForm(name, tel, callbackFormId)
-    //   .then((response) => {
-    //     console.log(response)
+    formApi.sendBigForm(formCallbackData)
+       .then((response) => {
+         console.log(response)
     //     popupCallBack.close();
     //     //сделать сообщение об успешной отправке
-     // })
-      // .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
-     //  .finally(() => {
+      })
+       .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
+       .finally(() => {
     //     formValidatorCallBack.disableSaveButton();
     //     renderLoading(false, callbackSubmitButton, 'Отправить', 'Отправка...');
-    //   });
+       });
     console.log(formCallbackData);
   },
   formCleanError: () => {
