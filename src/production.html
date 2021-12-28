@@ -3,15 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блочные тепловые пункты</title>
-  <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="pages/production.css">
-  <link rel="stylesheet" href="styles/animate.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -27,8 +20,8 @@
 
       <main class="content">
         <div class="flexburton__breadcrumbs">
-          <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
-          <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here">Контакты</a>
+          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+          <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here">Продукция</a>
         </div>
 
         <section class="tmproduction">
@@ -45,25 +38,25 @@
             <a class="productcard" href="/plastinchatye-teploobmenniki.html">
 
                 <h3 class="productcard__heading">Пластинчатые теплообменники</h3>
-                <img class="productcard__image" src="<%=require('./images/ti45_new.png')%>" alt="Пластинчатые теплообменники">
+                <img class="productcard__image" src="<%=require('./images/main_mini/ti45_new.png')%>" alt="Пластинчатые теплообменники">
 
             </a>
             <a class="productcard"  href="/pishchevye-teploobmenniki.html">
 
                 <h3 class="productcard__heading">Пищевые теплообменники</h3>
-                <img class="productcard__image"   src="<%=require('./images/many-section-grid.png')%>" alt="Пищевые теплообменники">
+                <img class="productcard__image"   src="<%=require('./images/main_mini/many-section-grid.png')%>" alt="Пищевые теплообменники">
 
             </a>
-            <a class="productcard"  href="/pishchevye-teploobmenniki.html">
+            <a class="productcard"  href="/blochnye-teplovye-punkty.html">
 
                 <h3 class="productcard__heading">Блочные тепловые пункты</h3>
-                <img class="productcard__image"  src="<%=require('./images/btp_now.png')%>" alt="Блочные тепловые пункты">
+                <img class="productcard__image"  src="<%=require('./images/main_mini/btp_now.png')%>" alt="Блочные тепловые пункты">
 
             </a>
             <a class="productcard"  href="#">
 
                 <h3 class="productcard__heading">Установки ПОУ</h3>
-                <img class="productcard__image"  src="<%=require('./images/teplojit-pou.png')%>" alt="Пастеризационная охладительная установка">
+                <img class="productcard__image"  src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Пастеризационная охладительная установка">
 
             </a>
         </section>
@@ -137,10 +130,10 @@
           <li class="list__item">и других технологических теплообменных процессах</li>
         </ul>
       </main>
-      
+
 
       <%= require('html-loader!./inner-footer.html').default %>
-      
+
     </div>
 
 </body>
