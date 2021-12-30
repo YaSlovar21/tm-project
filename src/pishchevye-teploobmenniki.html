@@ -12,40 +12,11 @@
     <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
     <div class="page">
 
-      <header class="header">
-        <a href="index.html" class="header__logo"><img  src="images/header-logo-1.svg" width="100%"></a>
-        <div class="header__right">
-          <nav class="nav">
-            <ul class="nav__menu-links">
-              <li class="nav__ul-item"><a class="nav__link" href="/">Главная</a></li>
-              <li class="nav__ul-item">
-                <a class="nav__link" href="./production.html">Продукция</a>
-                <ul class="nav__submenu">
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="plast-to.html">Пластинчатые теплообменники</a></li>
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a></li>
-                  <li class="nav__sub-ul-item"><a class="nav__sub-link" href="btp.html" >Блочные тепловые пункты</a></li>
-                </ul>
-              </li>
-              <li class="nav__ul-item"><a class="nav__link" href="service.html">Сервис</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="info_main.html">Блог производителя</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="about.html">О компании</a></li>
-              <li class="nav__ul-item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header__under-nav">
-            <div class="header__contacts">
-                <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
-                <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
-            </div>
-            <div class="header__breadcrumbs">
-                <!--<a class="header__lang-link header__lang-link_underlined">Ru</a>
-                <p style="margin: 0; padding: 0; width: 260px; font-size: 14px; color: black;">Предприятие холдинговой компании "Барнаульский станкостроительный завод" <a href="#" class="header__link link-beauty">Подробнее &#8594;</a></p>
-                <img src="images/logo_BSZ_svg.svg" height="80px">-->
-                <a class="header_download-link" href="#">Скачать референс-бук</a>
-                <a class="header_download-link" href="#">Скачать каталог</a>
-            </div>
-          </div>
-        </div>
+    <header class="header">
+      <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
+      <div class="header__right">
+          <%= require('html-loader!./inner-header.html').default %>
+      </div>
     </header>
 
       <main class="content">
@@ -417,61 +388,5 @@
 
 
 
-          <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-          <script>
-            var mySwiper = new Swiper('.food-types-container', {
-              // Optional parameters
-              direction: 'horizontal',
-              autoplay: {
-                delay: 3000,
-              },
-              speed: 800,
-              //loop: true,
-              parallax: true,
-              effect: 'slide',
-              keyboard: {
-                enabled: true,
-                onlyInViewport: false,
-              },
-              // If we need pagination
-              pagination: {
-                type: 'bullets',
-                el: '.food-type__pagination-container',
-                clickable: true,
-                bulletClass: 'food-type__bullet',
-                bulletActiveClass: 'food-type__bullet_active',
-                renderBullet: function (index, className) {
-                    let a = '';
-                    if (index==0) {
-                      a = 'Односекционные'
-                    }
-                    if (index==1) {
-                      a = 'Многосекицонные'
-                    }
-                    if (index==2) {
-                      a = 'Установки ПОУ'
-                    }
-		                return '<span class=' + className + '>' + a + '</span>';
-		            }
-              },
-
-              // Navigation arrows
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-
-              // And if we need scrollbar
-              scrollbar: {
-                //el: '.swiper-scrollbar',
-              },
-            });
-            mySwiper.on('orientationchange', function () {
-              swiper_on_video.update();
-              console.log('UPDATED_ORIENT');
-            });
-          </script>
       </body>
       </html>

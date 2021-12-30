@@ -1,4 +1,9 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
 
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
 
 
 @import url(../blocks/section-title/section-title.css);
@@ -24,28 +29,11 @@
 @import url(../blocks/header/__contacts/header__contacts.css);
 
 
-@import url(../blocks/burton/burton.css);
-@import url(../blocks/burton/__link/burton__link.css);
-@import url(../blocks/burton/__main-illustration/burton__main-illustration.css);
-@import url(../blocks/burton/__square-pic/burton__square-pic.css);
-@import url(../blocks/burton/__subtitle/burton__subtitle.css);
-@import url(../blocks/burton/__title/burton__title.css);
-
-
-@import url(../blocks/flexburton/flexburton.css);
-@import url(../blocks/flexburton/__link/flexburton__link.css);
-@import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);
-@import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
-@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
-@import url(../blocks/flexburton/__title/flexburton__title.css);
-
-
-
-
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 
-@import url(../blocks/techniques/techniques.css);
+
+
 
 @import url(../blocks/digits/digits.css);
 @import url(../blocks/cards/cards.css);
@@ -60,9 +48,6 @@
 @import url(../blocks/video/__iframes/video__iframes.css);
 
 
-@import url(../blocks/types/types.css);
-
-
 @import url(../blocks/description/description.css);
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
@@ -70,10 +55,6 @@
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
-
-
-@import url(../blocks/khan/khan.css);
-@import url(../blocks/khan/_page_heatex/khan_page_heatex.css);
 
 
 
@@ -87,29 +68,22 @@
 @import url(../blocks/table/__text/table__text.css);
 @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
 
-*/
+
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
 @import url(../blocks/feynman/__title/feynman__title.css);
 
+/*
 @import url(../blocks/localprod/localprod.css);
 @import url(../blocks/localprod/__link/localprod__link.css);
 @import url(../blocks/localprod/__subtitle/localprod__subtitle.css);
 @import url(../blocks/localprod/__title/localprod__title.css);
-
+*/
 
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-
-
-@import url(../blocks/princip/princip.css);
-@import url(../blocks/po/po.css);
-
-
-
-
 
 
 
@@ -127,27 +101,15 @@
 
 
 
-/*ПИЩЕВОЙ ГРИД*/
-
-@import url(../blocks/food-grid/food-grid.css);
-@import url(../blocks/food-type/food-type.css);
-@import url(../blocks/feedback/feedback.css);
-
-@import url(../blocks/introgrid/introgrid.css);
-
-
-
-
-
-
-/*БСЗ-БЛОК*/
+/*БСЗ-БЛОК
 @import url(../blocks/cover/cover.css);
 @import url(../blocks/cover/__title/cover__title.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);
 @import url(../blocks/cover/__overlay/cover__overlay.css);
 @import url(../blocks/cover/__background/cover__background.css);
+@import url(../blocks/tm-btp-advantages/tm-btp-advantages.css);*/
+
 @import url(../blocks/bsz/bsz.css);
-@import url(../blocks/tm-btp-advantages/tm-btp-advantages.css);
 @import url(../blocks/tablemod/tablemod.css);
 @import url(../blocks/tablemod/_theme/tablemod_theme_dark.css);
 @import url(../blocks/tablemod/__cell/tablemod__cell.css);
@@ -168,10 +130,6 @@
 
 /*ОБЩИЙ ДЛЯ ВСЕХ СПИСОК*/
 @import url(../blocks/list/list.css);
-
-
-/*ПРЕИМУЩЕСТВА В ВИДЕ СЛАЙДЕРА СБОРКИ*/
-@import url(../blocks/slider-sborka/slider-sborka.css);
 
 
 
