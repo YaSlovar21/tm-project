@@ -1,23 +1,24 @@
 .mainmodels {
   /*margin-top: 160px;*/
   display: flex;
+  background-color: rgba(47,47,47,.5);
 }
 
 .mainmodels__wrapper {
-  width: 75%;
-  background-color: rgba(47, 47, 47, 0.5);
+  width: 1600px;
+  margin: 0 auto;
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 1%;
 
   display: grid;
-  grid-template-columns: minmax(min-content, 400px) 1fr;
+  grid-template-columns: minmax(min-content, 400px) 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "title models"
-    ". models"
-    "button models";
+    "title models turnbutton"
+    ". models turnbutton"
+    "button models turnbutton";
 }
 
 .mainmodels__title {
@@ -51,6 +52,7 @@
 
 .mainmodels__turnbutton {
   display: flex;
+  grid-area: turnbutton;
 
   background-color: #f2f2f210;
   position: relative;

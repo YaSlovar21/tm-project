@@ -5,11 +5,11 @@
 
 }
 .bsz-new__content {
-  max-width: 90%;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
+
 }
 .bsz-new__img {
   flex-basis: 40%;

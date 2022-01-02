@@ -1,6 +1,7 @@
 .turnkey {
   padding-top: 0;
-  margin-top: 75px;
+  margin: 75px auto 0;
+  max-width: 1600px;
 }
 .turnkey__heading {
     position: relative;

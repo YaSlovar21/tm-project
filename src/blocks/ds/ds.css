@@ -10,7 +10,8 @@
   overflow: hidden;
     /* height: 90vh; */
   align-items: stretch;
-  margin: 100px 0 150px;
+  margin: 100px auto 150px;
+  max-width: 1600px;
 }
 
 .ds-intro {
