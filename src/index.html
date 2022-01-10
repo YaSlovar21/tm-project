@@ -65,7 +65,7 @@
   <main>
     <div class="header-index">
       <a class="header-index__logo-container">
-        <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>">
+        <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>" alt="Лого Термоблок">
       </a>
     <div class="header-index__right">
         <!--<nav class="nav">
@@ -98,6 +98,7 @@
 
     </div>
     <div class="header-index__video-container" style="">
+      <figure class="header-index__darked"></figure>
       <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
         playsinline="playsinline" muted="muted" loop="loop">
         <source src="videos/tm_test_video.mp4" type="video/mp4">
@@ -180,7 +181,7 @@
           <div class="product-types__type swiper-slide">
             <img class="product-types__image" src="<%=require('./images/3dSlider/pto.png')%>" data-swiper-parallax-scale="0.5"
               data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" width="100%" height="450px"
-              style="object-fit: contain;object-position: center;">
+              style="object-fit: contain;object-position: center;" alt="Пластинчатый теплообменник для жкх">
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Пластинчатые теплообменники</h2>
@@ -200,7 +201,7 @@
           <div class="product-types__type swiper-slide">
             <img class="product-types__image" src="<%=require('./images/3dSlider/food.png')%>" data-swiper-parallax-scale="0.5"
               data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" width="100%" height="450px"
-              style="object-fit: contain;object-position: center;">
+              style="object-fit: contain;object-position: center;"  alt="Пластинчатый теплообменник пищевого исполнения">
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Пищевые теплообменники</h2>
@@ -220,7 +221,7 @@
           <div class="product-types__type swiper-slide">
             <img class="product-types__image" src="<%=require('./images/3dSlider/btp.png')%>" data-swiper-parallax-scale="0.5"
               data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" width="100%" height="450px"
-              style="object-fit: contain;object-position: center;">
+              style="object-fit: contain;object-position: center;"  alt="Блочный тепловой пункт">
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Блочные тепловые пункты</h2>
@@ -240,7 +241,7 @@
           <div class="product-types__type swiper-slide">
             <img class="product-types__image" src="<%=require('./images/3dSlider/pou.png')%>" data-swiper-parallax-scale="0.5"
               data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" width="100%" height="450px"
-              style="object-fit: contain;object-position: center;">
+              style="object-fit: contain;object-position: center;"  alt="Пастеризационная охладительная установка с пластинчатыми теплообменниками">
             <div class="product-types__category-info" data-swiper-parallax-opacity="0">
               <h2 class="product-types__heading" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Установки ПОУ</h2>
@@ -346,36 +347,7 @@
               <p><svg class="plates__svg"  style="width: 90%; margin-top:30px; margin-bottom:50px;transform: skewY(-15deg);" width="933"
                   height="320" viewBox="0 0 933 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <style>
-                    .plast:hover {
-                      transform: translate(10px, 10px);
-                      fill: #ff5e3ac7;
-                      cursor: pointer;
-                    }
-
-                    .plast {
-                      transition: all .2s linear;
-                      stroke: #c4c4c4;
-                      stroke-width: 2px;
-
-                      fill: rgba(170, 170, 170, 0.411);
-                    }
-
-                    .podp {
-                      fill: rgba(255, 255, 255);
-                    }
-
-                    #pl1 {
-                      position: relative;
-                      width: 200px;
-                      height: 300px;
-                    }
-
-                    .pl1__text {
-                      font-size: 20px;
-                      color: white;
-                      width: 50px;
-                      height: 20px;
-                    }
+                    
                   </style>
                   <path class="plast" data-to="ti-18"
                     d="M139.67 297.525H135.694C133.109 297.525 130.525 297.525 128.039 297.525C127.344 297.525 126.747 297.325 126.25 296.825C124.162 294.725 124.063 294.725 124.063 291.725C124.063 249.025 124.063 206.325 123.964 163.625C123.964 161.225 125.554 160.425 126.846 159.125C126.946 158.925 127.344 159.025 127.642 159.025C131.419 159.025 135.197 159.025 138.974 159.025C139.173 159.025 139.372 159.125 139.769 159.225C139.769 160.425 139.769 161.625 139.769 162.825C139.869 164.325 140.863 165.325 142.155 165.525C143.746 165.725 145.038 164.625 145.138 163.025C145.237 162.325 145.138 161.525 145.138 160.825C145.138 160.325 145.138 159.825 145.138 159.125H146.827C150.008 159.125 153.19 159.125 156.371 159.125C157.365 159.125 158.06 159.425 158.856 160.125C160.247 161.325 160.645 162.625 160.645 164.525C160.546 207.425 160.546 250.325 160.645 293.225C160.645 293.825 160.744 294.625 160.347 295.025C159.552 296.025 158.558 296.825 157.663 297.725C157.464 297.825 157.166 297.825 156.868 297.825C153.19 297.825 149.412 297.825 145.734 297.825C145.436 297.825 145.237 297.725 144.939 297.725C144.939 296.725 144.939 295.725 144.939 294.725C144.939 292.625 143.845 291.325 142.255 291.325C140.465 291.425 139.272 292.825 139.471 294.725C139.67 295.425 139.67 296.325 139.67 297.525ZM147.523 289.325C147.523 292.225 149.71 294.425 152.593 294.425C155.376 294.425 157.563 292.125 157.563 289.225C157.563 286.525 155.277 284.225 152.494 284.225C149.71 284.325 147.424 286.525 147.523 289.325ZM137.185 167.125C137.185 164.325 134.998 162.025 132.215 162.025H132.115C129.332 162.025 127.045 164.325 127.045 167.225C127.045 169.925 129.332 172.225 132.016 172.225C134.799 172.225 137.085 170.025 137.085 167.225C137.185 167.225 137.185 167.125 137.185 167.125ZM152.593 162.025C149.81 162.025 147.623 164.225 147.523 166.925C147.424 169.825 149.611 172.125 152.394 172.225C155.178 172.325 157.464 170.025 157.563 167.225C157.563 164.425 155.277 162.025 152.593 162.025ZM132.215 284.325C129.431 284.325 127.145 286.525 127.145 289.325C127.145 289.325 127.145 289.325 127.145 289.425C127.145 292.225 129.332 294.525 132.215 294.525C134.998 294.525 137.185 292.325 137.185 289.525C137.284 286.525 135.097 284.325 132.215 284.325Z"
@@ -853,7 +825,7 @@
                     <span class="raschet-bem__input-error  temp-grout-input-error"></span>
                   </label>
                 </div>
-                <img class="raschet-bem__temperature-img" src="./images/to_online.png" alt="Рассчитываемый теплообменник">
+                <img class="raschet-bem__temperature-img" src="<%=require('./images/to_online.png')%>" alt="Рассчитываемый теплообменник">
                 <div class="raschet-bem__temperature-set">
                   <label>
                     <span class="raschet-bem__label-title">Температура среды на выходе</span>

@@ -20,6 +20,7 @@ import 'animate.css';
 import '../pages/index.css';
 
 //import '../pages/CNAME';
+import '../videos/tm_test_video.mp4'
 
 import {
   initialHeatEx,

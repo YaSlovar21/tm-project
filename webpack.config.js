@@ -47,7 +47,18 @@ module.exports = {
         // исключает папку node_modules, файлы в ней обрабатывать не нужно
         exclude: '/node_modules/'
       },
-
+      {
+        test: /\.mp4$/,
+        use: [
+            {
+                loader: "file-loader",
+                options: {
+                    name: "[name].[ext]",
+                    outputPath: "videos"
+                }
+            }
+        ]
+    },
       {
         // регулярное выражение, которое ищет все файлы с такими расширениями
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
