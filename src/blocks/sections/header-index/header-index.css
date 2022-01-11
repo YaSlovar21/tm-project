@@ -4,7 +4,7 @@
   min-height: 70vh;
   grid-template-columns: auto 1fr;
   column-gap: 30px;
-  
+
 }
 
 .header-index__logo-container {
@@ -117,6 +117,8 @@
 
 .header-index__video-container {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .header-index__darked {

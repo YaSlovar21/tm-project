@@ -157,3 +157,30 @@ input {
     width: 50px;
     height: 20px;
   }
+
+
+  /**/
+.content {
+   
+}
+
+.content__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #f2f2f2;
+  margin: 0 auto 20px;
+}
+
+.content__title_type_h2product {
+  margin-top: 70px;
+  text-transform: uppercase;
+  color: #c4c4c4;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+  .content__title {
+    max-width: calc(100% - 40px);
+  }
+}

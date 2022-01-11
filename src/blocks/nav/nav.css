@@ -208,15 +208,14 @@
   .nav__sub-ul-item::after {
     position: absolute;
     content: '';
-    height: 1px;
+    height: 2px;
     width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(270deg,  rgba(196, 196, 196, 0) 0.77%, #C4C4C4 41.28%, rgba(196, 196, 196, 0) 99.23%);
-
-
+    background: linear-gradient(270deg,  rgba(196, 196, 196, 0) 0.77%, #b9b9b9 41.28%, rgba(196, 196, 196, 0) 99.23%);
     transition: all .4s linear;
+    opacity: .1;
   }
 
   .nav__sub-ul-item::before {
@@ -285,5 +284,14 @@
 
   .nav__mobile-icon {
     background: none;
+    display: none;
+  }
 
+  @media screen and (max-width: 1024px) {
+    .nav__mobile-icon {
+      display: block;
+    }
+    .nav__menu-links {
+      display: none;
+    }
   }

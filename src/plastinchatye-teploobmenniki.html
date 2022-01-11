@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    .techniques__title {
 
+
+      max-width: 230px;
+      text-align: left;
+      color: #f2f2f2;
+      line-height: 1.4;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  </style>
 </head>
 <body class="page">
   <div class="bg"></div>
@@ -342,44 +355,7 @@
             </svg>
           </div>
 
-          <script src="./js/anime.min.js"></script>
-
-          <script>
-            let pageY= 0;
-            let isPlaying = 1;
-
-            const el = document.querySelectorAll('.honeycomb path');
-            function randomValues() {
-              if (pageY<300){
-                anime({
-                  targets: [el],
-                  fill: function() {
-                    let a = anime.random(0, 4);
-                    if (a == 0) {
-                        return '#ff5e3a'
-                      } else {
-                        return 'rgb(50, 50, 52);'
-                      }
-                    },
-                    easing: 'steps(1)',
-                  duration: 5400,
-                  complete: randomValues,
-                });
-              }
-            }
-            randomValues();
-
-            window.addEventListener('scroll', function() {
-              pageY = pageYOffset;
-              if (pageY > 300 && isPlaying) {
-                isPlaying = 0;
-              }
-              if (pageY < 300 && !isPlaying) {
-                randomValues();
-                isPlaying = 1;
-              }
-            });
-          </script>
+       
         <div class="flexburton__left-side">
           <div class="flexburton__breadcrumbs">
             <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
@@ -401,7 +377,6 @@
       </div>
 
       <section class="description">
-
         <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
           <h2 class="two-columns__brief two-columns__brief_wide">Гарантии качества пластинчатых теплообменников</h2>
           <div class="two-columns__main-text">
@@ -410,29 +385,13 @@
           </div>
         </div>
       </section>
-      <style>
-        .techniques__title {
 
-
-          max-width: 230px;
-          text-align: left;
-          color: #f2f2f2;
-          line-height: 1.4;
-          font-size: 18px;
-          font-weight: 500;
-          text-transform: uppercase;
-          margin: 0;
-        }
-      </style>
       <section class="techniques">
         <h2 class="techniques__title">Основные премиущества</h2>
         <!--<p class="section-subtitle">Пластинчатых теплообменников Теплохит</p>-->
-
         <div class="tech-interactive">
-
           <div class="slider-text-sborka slider-container">
               <div class="swiper-wrapper">
-
                   <div class="swiper-slide slider-text-sborka__feat">
                       <h3 class="slider-text-sborka__head">Cтанина</h3>
                       <p class="info__sale text-colot-white slider-text-sborka__text"> Donec
@@ -490,7 +449,7 @@
                   <img class="slider-sborka__img wow1" data-class-animaton="animate__fadeInLeft" data-animaton-duration="1s" src="<%=require('./images/nord/ppanel.png')%>">
               </div>
               <div class="swiper-slide">
-                  <img class="slider-sborka__img" src="images/nord/bezshildika.png">
+                  <img class="slider-sborka__img wow1" src="<%=require('./images/nord/bezshildika.png')%>"">
               </div>
               <div class="swiper-slide">
                   <img class="slider-sborka__img wow1" data-class-animaton="animate__fadeInBottomLeft" data-animaton-duration="1s"  src="<%=require('./images/nord/shild.png')%>">
@@ -550,7 +509,7 @@
 <section class="plates" style="background-color: #2f2f2f34;background-attachment: fixed;">
    <div class="plates__interactive">
      <div class="illustration__stripe-blue wow"></div>
-  
+
                  <svg  class="plates__svg" viewBox="0 0 1298 476"   fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:30px;transform: skewY(-15deg);">
                   <style>
                   .plast:hover {

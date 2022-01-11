@@ -9,14 +9,14 @@
     <div class="bg"></div>
     <div class="page">
       <header class="header">
-        <a href="index.html" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
+        <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
         <div class="header__right">
           <%= require('html-loader!./inner-header.html').default %>
         </div>
       </header>
 
       <main class="content">
-        <div class="flexburton__breadcrumbs">
+        <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
           <a class="flexburton__breadcrumbs-link" href="/production.html">Продукция</a>
           <a class="flexburton__breadcrumbs-link" href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники</a>

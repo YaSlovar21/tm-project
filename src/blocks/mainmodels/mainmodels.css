@@ -10,7 +10,7 @@
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 1%;
+  /*padding-left: 1%;*/
 
   display: grid;
   grid-template-columns: minmax(min-content, 400px) 1fr 1fr;
@@ -93,6 +93,13 @@
   }
   .mainmodels__wrapper {
     width: 100%;
+    grid-template-columns: minmax(min-content, 400px) 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    ". turnbutton"
+    "title models"
+    ". models"
+    "button models";
   }
   .mainmodels__title {
     text-align: center;
@@ -116,6 +123,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "turnbutton"
     "title"
     "models"
     "button";

@@ -21,7 +21,7 @@
 @import url(../blocks/header/__contacts/header__contacts.css);
 
 
-
+@import url(../blocks/list/list.css);
 
 @import url(../blocks/flexburton/flexburton.css);
 @import url(../blocks/flexburton/__link/flexburton__link.css);

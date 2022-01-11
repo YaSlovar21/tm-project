@@ -73,7 +73,12 @@
     color: #f2f2f2;
 }
 
-
+@media screen and (min-width: 1440px) {
+  .contacts {
+    max-width: calc(100% - 40px);
+    margin: 30px auto;
+  }
+}
 @media screen and (max-width: 1024px) {
   .contacts {
     grid-template-columns: 1fr;

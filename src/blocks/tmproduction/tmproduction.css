@@ -76,7 +76,12 @@
     margin-bottom: 20px;
 }
 
-
+@media screen and (min-width: 1440px) {
+  .tmproduction {
+    max-width: calc(100% - 40px);
+    margin: 80px auto 0;
+}
+}
 @media screen and (max-width: 1440px) {
     .tmproduction {
         grid-template-rows: 30vw 30vw;

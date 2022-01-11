@@ -139,7 +139,7 @@ popupImage.setEventListeners();
 popupCallBack.setEventListeners();
 popupRaschet.setEventListeners();
 
-//popupHeatEx.setEventListeners();
+popupHeatEx.setEventListeners();
 
 //навешиваем слушатели на элементы сайта
 //сделать forEach по всем кнопкам с селектором "кнопки открытия попапа"

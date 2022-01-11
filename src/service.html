@@ -4,56 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-
   </head>
-
   <body>
     <div class="bg"></div>
     <div class="page">
       <header class="header">
-        <a href="index.html" class="header__logo">
-          <img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/>
-        </a>
+        <a href="index.html" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
         <div class="header__right">
           <%= require('html-loader!./inner-header.html').default %>
         </div>
       </header>
 
       <main class="content">
-        <div class="flexburton__breadcrumbs">
+        <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
           <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href=".">Сервис и обслуживание теплообменников</a>
         </div>
-        <style>
-          .service__list {
-            padding: 0;
-            margin: 0;
-          }
-        </style>
+        <h1 class="content__title">Сервис и обслуживание теплообменников</h1>
         <section class="service">
-          <h1 class="service__heading">Сервис и обслуживание теплообменников</h1>
+
           <ul class="service__list">
             <li class="two-columns two-columns_page_service">
               <h2 class="two-columns__brief two-columns__brief_page_service">Промывка теплообменника</h2>
-              <div class="two-columns__main-text">
+              <div class="two-columns__main-text two-columns__main-text_page_service">
                 <p class="two-columns__paragraph">При эксплуатации пластинчатых теплообменников, между пластинами может появиться накипь или засоры. Таки образом может нарушиться нормальная работа теплообменного оборудования. Чтобы обеспечить таким аппаратам нормальную работу, нужна промывка теплообменников. Сервисная служба компании «Термоблок» специализируется на разборной промывке теплообменников. Это гарантирует качество и надёжность дальнейшей эксплуатации теплообменного аппарата и не наносит вреда уплотнениям, чего нельзя сказать о безразборной промывке теплообменников.</p>
                 <p class="two-columns__paragraph">При всей трудоемкости разборного метода промывки теплообменников, по сравнению с безразборным методом очистки теплообменников, он дает ряд важных преимуществ и позволяет полностью справиться с самыми сложными загрязнениями.</p>
               </div>
             </li>
             <li class="two-columns two-columns_page_service">
               <h2 class="two-columns__brief two-columns__brief_page_service">Замена уплотнений и пластин</h2>
-                <ul class="two-columns__main-text two-columns__paragraph">
-                  <h3>Поставка необходимых материалов</h3>
-                  <li>прокладок, пластин и элементов рамы (для ПТО всех производителей);</li>
-                  <li>химических реагентов для очистки теплообменников;</li>
-                  <li>химических реагентов для стабилизационной обработка теплоносителей;</li>
-                  <li>комплектующих и деталей теплообменников;</li>
-                  <li>сопутствующего оборудования.</li>
+                <ul class="two-columns__main-text two-columns__paragraph two-columns__main-text_page_service service__list">
+                  <h3 class="service__subtitle">Поставка необходимых материалов</h3>
+                  <li>прокладок, пластин и элементов рамы собственного производства <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™</li>
+                  <li>химических реагентов для очистки теплообменников</li>
+                  <li>химических реагентов для стабилизационной обработка теплоносителей</li>
+                  <li>комплектующих и деталей теплообменников</li>
+                  <li>сопутствующего оборудования</li>
                 </ul>
             </li>
             <li class="two-columns two-columns_page_service">
               <h2 class="two-columns__brief two-columns__brief_page_service">Консультации по работе теплооменного аппарата, монтажу и обслуживанию</h2>
-              <div class="two-columns__main-text">
+              <div class="two-columns__main-text two-columns__main-text_page_service">
                 <p class="two-columns__paragraph">Мы предоставляем техническое консультирование по вопросам эксплуатации теплообменного оборудования. Наши сотрудники прошли необходимое обучение и имеют сертификаты.</p>
               </div>
             </li>

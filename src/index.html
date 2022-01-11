@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Блочные тепловые пункты</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 
 
   <style>
@@ -49,6 +49,16 @@
       background-color: #f2f2f23a;
       z-index: 2;
     }
+    .mainHeaderSlider {
+      max-width: 120%;
+    }
+    /*ВАЖНО*/
+    .scroll-slider {
+        width: 100%;
+        height: 100%;
+        color: rgb(248, 248, 248);
+        overflow: hidden;
+      }
   </style>
 
 
@@ -56,56 +66,22 @@
 
 <body class="page">
   <div class="bg"></div>
-  <style>
-    .mainHeaderSlider {
-      max-width: 120%;
-
-    }
-  </style>
   <main>
     <div class="header-index">
       <a class="header-index__logo-container">
         <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>" alt="Лого Термоблок">
       </a>
-    <div class="header-index__right">
-        <!--<nav class="nav">
-          <ul class="nav__menu-links">
-            <li class="nav__ul-item"><a class="nav__link" href="/">Главная</a></li>
-            <li class="nav__ul-item">
-              <a class="nav__link" href="./production.html">Продукция</a>
-              <ul class="nav__submenu">
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a></li>
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="presentation.html">Пищевые теплообменники</a></li>
-                <li class="nav__sub-ul-item"><a class="nav__sub-link" href="btp.html" >Блочные тепловые пункты</a></li>
-              </ul>
-            </li>
-            <li class="nav__ul-item"><a class="nav__link" href="#">Сервис</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="./blog-proizvodstva/">Блог производителя</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="about.html">О компании</a></li>
-            <li class="nav__ul-item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-          </ul>
-          <button class="nav__mobile-icon"><img src="images/menu-link-mobile.svg" style="width: 30px;" ></button>
-        </nav>
-        <div class="header-index__undernav">
-          <div class="header__contacts">
-              <a class="header__link link-beauty" href="tel:73852772563">8 (3852)77-25-63</a>
-              <a class="header__link link-beauty" href="mailto:sales@termoblok.ru">sales@termoblok.ru</a>
-          </div>
-          <a href="#" class="header-index__link-lk link-beauty">Перейти в личный кабинет -></a>
-        </div>
-      -->
-      <%= require('html-loader!./inner-header.html').default %>
-
-    </div>
-    <div class="header-index__video-container" style="">
-      <figure class="header-index__darked"></figure>
-      <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
-        playsinline="playsinline" muted="muted" loop="loop">
-        <source src="videos/tm_test_video.mp4" type="video/mp4">
-        
-        Your browser does not support the video tag.
-      </video>
-    </div>
+      <div class="header-index__right">
+        <%= require('html-loader!./inner-header.html').default %>
+      </div>
+      <div class="header-index__video-container">
+        <figure class="header-index__darked"></figure>
+        <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
+          playsinline="playsinline" muted="muted" loop="loop">
+          <source src="videos/tm_test_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="header-index__slider-container">
         <figure class="header-index__slider-background"></figure>
         <div class="swiper mainHeaderSlider">
@@ -192,8 +168,7 @@
                   пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
                   прочих отраслей, требующих пищевого исполнения теплообменника</p>
                 <a href="plast-to.html" class="link-beauty product-types__link" data-swiper-parallax-x="50%"
-                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
-                  data-swiper-parallax-duration="1000">Перейти &#8594;</a>
+                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
 
             </div>
@@ -212,8 +187,7 @@
                   пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
                   прочих отраслей, требующих пищевого исполнения теплообменника</p>
                 <a href="presentation.html" class="link-beauty product-types__link" data-swiper-parallax-x="50%"
-                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
-                  data-swiper-parallax-duration="1000">Перейти &#8594;</a>
+                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
 
             </div>
@@ -232,8 +206,7 @@
                   пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
                   прочих отраслей, требующих пищевого исполнения теплообменника</p>
                 <a href="btp.html" class="link-beauty product-types__link" data-swiper-parallax-x="50%"
-                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
-                  data-swiper-parallax-duration="1000">Перейти &#8594;</a>
+                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
 
             </div>
@@ -252,39 +225,24 @@
                   пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
                   прочих отраслей, требующих пищевого исполнения теплообменника</p>
                 <a href="#" class="link-beauty product-types__link" data-swiper-parallax-x="50%"
-                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"
-                  data-swiper-parallax-duration="1000">Перейти &#8594;</a>
+                  data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               </div>
             </div>
           </div>
-
-
         </div>
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
     </section>
-
-    <style>
-      .scroll-slider {
-        width: 100%;
-        height: 100%;
-        color: rgb(248, 248, 248);
-        overflow: hidden;
-      }
-    </style>
-
-    <!--ОСНОВНОЙ ДВУХСЕКЦИОННЫЙ СЛАЙД--!
-    <h2 class="turnkey__title" style="margin-top: 100px; display: none;">Пластинчатые теплообменники</h2>
-    <p class="section-subtitle" style=" visibility: hidden; text-transform: uppercase; margin-bottom: 40px;">Российского производства</p>-->
-    <div class="ds">
-      <section class="ds-intro">
+    
+    <!--ОСНОВНОЙ ДВУХСЕКЦИОННЫЙ СЛАЙД-->
+    <section class="ds">
+      <div class="ds-intro">
         <div class="ds-intro__brand">
           <h2  class="ds-intro__title">
             Пластинчатые теплообменники российского производства</h2>
-          <img src="<%=require('./images/logo_teplohit_with_tepl.svg')%>" style=""
-            class="ds-intro__logo wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
+          <img src="<%=require('./images/logo_teplohit_with_tepl.svg')%>" alt="Логотип пластинчатых теплообменников Теплохит" class="ds-intro__logo wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
           <p style="color: #c4c4c4;
           font-weight: 200;
           font-size: 14px;
@@ -308,17 +266,17 @@
             <li class="list__item ds-intro__list-item list__item_block_localprod">Оперативный расчёт и сопровождение
               квалифицированными инженерами</li>
           </ul>
-          <a class="ds-intro__link-to link-beauty wow pulse" style="" data-wow-duration="1.5s"
-            data-wow-delay="1s" data-animation-del-class="animate__delay-1s" href="plast-to.html">Пластинчатые
-            теплообменники &#8594;</a>
+          <a class="ds-intro__link-to link-beauty wow pulse"
+            data-wow-duration="1.5s"
+            data-wow-delay="1s"
+            data-animation-del-class="animate__delay-1s"
+            href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники &#8594;</a>
         </div>
-      </section>
+      </div>
 
-      <section class="ds-second " style="">
-        <div style="position: absolute; top:0; left: 0; width: 50%;"><img src="<%=require('./images/rect_sect.svg')%>" width="70%">
-        </div>
-        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img
-            src="<%=require('././images/rect_sect.svg')%>" width="70%"></div>
+      <div class="ds-second">
+        <div style="position: absolute; top:0; left: 0; width: 50%;"><img src="<%=require('./images/rect_sect.svg')%>" style="width: 70%;" alt="Декор" ></div>
+        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img src="<%=require('././images/rect_sect.svg')%>" style="width: 70%;" alt="Декор"></div>
         <div class="scroll-slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 5%;">
@@ -347,7 +305,7 @@
               <p><svg class="plates__svg"  style="width: 90%; margin-top:30px; margin-bottom:50px;transform: skewY(-15deg);" width="933"
                   height="320" viewBox="0 0 933 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <style>
-                    
+
                   </style>
                   <path class="plast" data-to="ti-18"
                     d="M139.67 297.525H135.694C133.109 297.525 130.525 297.525 128.039 297.525C127.344 297.525 126.747 297.325 126.25 296.825C124.162 294.725 124.063 294.725 124.063 291.725C124.063 249.025 124.063 206.325 123.964 163.625C123.964 161.225 125.554 160.425 126.846 159.125C126.946 158.925 127.344 159.025 127.642 159.025C131.419 159.025 135.197 159.025 138.974 159.025C139.173 159.025 139.372 159.125 139.769 159.225C139.769 160.425 139.769 161.625 139.769 162.825C139.869 164.325 140.863 165.325 142.155 165.525C143.746 165.725 145.038 164.625 145.138 163.025C145.237 162.325 145.138 161.525 145.138 160.825C145.138 160.325 145.138 159.825 145.138 159.125H146.827C150.008 159.125 153.19 159.125 156.371 159.125C157.365 159.125 158.06 159.425 158.856 160.125C160.247 161.325 160.645 162.625 160.645 164.525C160.546 207.425 160.546 250.325 160.645 293.225C160.645 293.825 160.744 294.625 160.347 295.025C159.552 296.025 158.558 296.825 157.663 297.725C157.464 297.825 157.166 297.825 156.868 297.825C153.19 297.825 149.412 297.825 145.734 297.825C145.436 297.825 145.237 297.725 144.939 297.725C144.939 296.725 144.939 295.725 144.939 294.725C144.939 292.625 143.845 291.325 142.255 291.325C140.465 291.425 139.272 292.825 139.471 294.725C139.67 295.425 139.67 296.325 139.67 297.525ZM147.523 289.325C147.523 292.225 149.71 294.425 152.593 294.425C155.376 294.425 157.563 292.125 157.563 289.225C157.563 286.525 155.277 284.225 152.494 284.225C149.71 284.325 147.424 286.525 147.523 289.325ZM137.185 167.125C137.185 164.325 134.998 162.025 132.215 162.025H132.115C129.332 162.025 127.045 164.325 127.045 167.225C127.045 169.925 129.332 172.225 132.016 172.225C134.799 172.225 137.085 170.025 137.085 167.225C137.185 167.225 137.185 167.125 137.185 167.125ZM152.593 162.025C149.81 162.025 147.623 164.225 147.523 166.925C147.424 169.825 149.611 172.125 152.394 172.225C155.178 172.325 157.464 170.025 157.563 167.225C157.563 164.425 155.277 162.025 152.593 162.025ZM132.215 284.325C129.431 284.325 127.145 286.525 127.145 289.325C127.145 289.325 127.145 289.325 127.145 289.425C127.145 292.225 129.332 294.525 132.215 294.525C134.998 294.525 137.185 292.325 137.185 289.525C137.284 286.525 135.097 284.325 132.215 284.325Z"
@@ -445,7 +403,7 @@
               </ul>
               </p>
               <div class="info__img-and-text">
-                <img src="<%=require('./images/ufa_zaton.png')%>" class="info__image">
+                <img src="<%=require('./images/ufa_zaton.png')%>" alt="Реализованный проект котельной с пластинчатым теплообменником Теплохит" class="info__image">
                 <p class="info__paragraph-img">С примерами проектов и статьями вы можете ознакомиться в информационном
                   разделе сайта. Etiam elit ante, luctus non ante sit
                   amet, sodales vulputate odio. Aenean tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
@@ -489,17 +447,13 @@
         </div>
 
 
-      </section>
-    </div>
-    <style>
+      </div>
+    </section>
 
-    </style>
     <!--Типоразмерный ряд-->
     <section class="mainmodels">
-
       <div class="mainmodels__wrapper">
         <h2 class="mainmodels__title">Модельный ряд теплообменников</h2>
-
         <ul class="mainmodels__models timodels">
           <li class="timodels__pto">
             <a class="timodels__link" href="./catalog/ti-025.html">
@@ -577,12 +531,8 @@
         <button class="mainmodels__raschet">Рассчитать теплообменник</button>
         <button class="mainmodels__turnbutton">Смотреть в пищевом исполнении</button>
       </div>
-     
+
     </section>
-
-    <style>
-
-    </style>
 
     <!--Слайд БТП-ПИЩ-УСТАНОВКИ-->
     <section class="turnkey">
@@ -595,7 +545,7 @@
         </div>
         <div class="turnkey__solutions">
           <a class="turnkey__solution link-beauty_moveup" href="#" >
-            <img src="<%=require('./images/main_mini/btp-adv-img.png')%>" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
+            <img src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
               <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
               <span class="turnkey__solution-detail-link" href="#">Подробнее &#8594;</span>
@@ -604,7 +554,7 @@
           <div class="turnkey__line"></div>
           <a class="turnkey__solution link-beauty_moveup" href="#">
             <!--data-animation-del-class="animate__delay-1s"-->
-            <img src="<%=require('./images/main_mini/teplojit-pou.png')%>" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s"
+            <img src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка" class="turnkey__image wow animate__fadeInUp" data-wow-delay="0.6s"
               data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
               <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
@@ -612,75 +562,29 @@
             </div>
           </a>
         </div>
-  
     </section>
 
-    <!--Стили к ФАБРИКЕ-->
-    <style>
-      .logo-list {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-      }
-
-      .logo-list__logo-container {
-        flex: 0 1 150px;
-      }
-
-      .logo-list__list {
-        flex: 0 1 300px;
-      }
-
-      .logo-list__logo {
-        width: 100%;
-        height: auto;
-      }
-    </style>
-
-    <style>
-      .bsz-intro {
-        display: flex;
-        margin: auto;
-        margin-top: 30px;
-        justify-content: space-between;
-        max-width: 98%;
-
-      }
-
-      .bsz-intro__text {
-        flex-basis: 30%;
-        flex-shrink: 0;
-        flex-grow: 0;
-      }
-
-      .bsz-intro__cover {
-        flex-basis: 55%;
-        margin: 0;
-      }
-    </style>
     <section class="bsz">
-    <div class="bsz__wrapper">
-      <div class="turnkey__heading" style="margin-top: 120px;">
-        <h2 class="turnkey__title">О производстве</h2>
-        <p class="turnkey__intro" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
-          полным циклом производства пластинчатых теплообменников</p>
-      </div>
-    </div>
-    <div class="bsz-new">
-      <div class="bsz-new__content bsz__wrapper">
-        <div class="bsz-new__intro">
-          <p class="bsz-new__text" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
-            class="span span_color_orange span_uppercase">ООО "Термоблок" </span>- предприятие холдиноговой компании
-          “Барнаульский
-          станкостроительный завод”</p>
-        <p class="bsz-new__text" style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
-          партнерам преимущества в плане качества продуции и выгодной цены за счёт оптовой закупки металла и серийного производства.</p>
+      <div class="bsz__wrapper">
+        <div class="turnkey__heading" style="margin-top: 120px;">
+          <h2 class="turnkey__title">О производстве</h2>
+          <p class="turnkey__intro" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
+            полным циклом производства пластинчатых теплообменников</p>
         </div>
-        <img class="bsz-new__img" src="<%=require('./images/place_new_1.jpg')%>">
       </div>
-    </div>
-   
+      <div class="bsz-new">
+        <div class="bsz-new__content bsz__wrapper">
+          <div class="bsz-new__intro">
+            <p class="bsz-new__text" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
+              class="span span_color_orange span_uppercase">ООО "Термоблок" </span>- предприятие холдиноговой компании
+            “Барнаульский
+            станкостроительный завод”</p>
+          <p class="bsz-new__text" style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
+            партнерам преимущества в плане качества продуции и выгодной цены за счёт оптовой закупки металла и серийного производства.</p>
+          </div>
+          <img class="bsz-new__img" src="<%=require('./images/place_new_1.jpg')%>" alt="Вид на станкостроительный завод сверху">
+        </div>
+      </div>
       <div class="tablemod tablemod_theme_dark bsz__wrapper">
         <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-offset="50">
           <h3 class="tablemod__heading tablemod__heading_theme_dark">Лабораторная проверка металла</h3>
@@ -709,9 +613,7 @@
       </div>
     </section>
 
-
-    <!--Слайд Галлерея + UP FOOTER
-    <div class="swiper-slide" style="/*width: 100%; height: 100%; background-color: #f2f2f210;*/overflow: hidden;">-->
+    <!--Галлерея + UP FOOTER-->
     <div class="photo-grid" style="margin-top: 40px; max-width: 100%; top:0;">
       <figure class="photo-grid__item wow1" data-animation-dur="1s" data-class-animaton="animate__fadeInUp"><img
           class="photo-grid__image photo-grid__image_position_right" alt="Процесс сборки пластинчатого теплообменника" src="<%=require('./images/prod-big-1.png')%>"></figure>
@@ -735,7 +637,7 @@
         <li class="up-footer__list-item " data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
       </ul>
     </section>
-    </div>
+
     <section class="map">
       <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
       <ul class="map__list">
@@ -749,11 +651,8 @@
 
     </section>
   </main>
-    <!--FOOTER-->
-
-      <%= require('html-loader!./inner-footer.html').default %>
-
-
+  <!--FOOTER-->
+  <%= require('html-loader!./inner-footer.html').default %>
 
   <!--Форма обратного звонка  -->
   <div class="popup popup-callback">
@@ -917,9 +816,9 @@
             <p class="popup__image-description"></p>
         </div>-->
         <div class="heatex popup__to-info" style="max-width: 100%;">
-          <div style="position: absolute; top:0; left: 0;"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <img class="popup__to-img" src="">
+          <div style="position: absolute; top:0; left: 0;width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
+          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1); width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
+          <img class="popup__to-img" alt="Фотореалистика пластинчатый теплообменник" src="">
           <div class="popup__desc-container">
             <span class="span span_comment">Теплообменник</span>
             <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
@@ -928,15 +827,15 @@
             <a class="popup__to-3dlink heatex__to-3dlink" href="">12341234</a>
           </div>
         </div>
-        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
+          <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 30%; height: auto;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
     </div>
   </div>
 
   <!--Шаблон карточки проекта-->
   <template id="project-template">
     <div class="projects__item">
-      <img class="projects__image" src="">
+      <img class="projects__image" alt="Здесь будет фото проекта" src="">
       <p class="projects__item-description">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</p>
     </div>
   </template>
@@ -945,8 +844,5 @@
   <template id="partner-item-template">
     <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
   </template>
-
-
 </body>
-
 </html>

@@ -52,19 +52,20 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
-    
+
     padding: 20px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 141.52%;
-    
+
 }
 
 .about__description-paragraph {
     width: 673px;
     margin: 0;
 }
+
 
 @media screen and (max-width:767px) {
     .about__description-paragraph {

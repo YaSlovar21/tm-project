@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import WOW from 'wow.js';
+import anime from 'animejs/lib/anime.es.js';
 import './pto.css';
 
 const wowAnimation = new WOW({
@@ -67,14 +68,16 @@ const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelec
 popupImage.setEventListeners();
 
 
-
 //интеактивные пластины
 import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);
+
+popupHeatEx.setEventListeners();
 const platesSvg = document.querySelector('.plates__svg');
 
 platesSvg.addEventListener("click", (evt) => {
   popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
+
   console.log(initialHeatEx[evt.target.dataset.to]);
 });
 
@@ -130,7 +133,7 @@ var mySwiper1 = new Swiper('.khan__book-container', {
   },
 });
 
-    
+
 try {
   var path = document.querySelector('.circle_wow');
   var len_dash = path.getTotalLength();
@@ -158,7 +161,7 @@ var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   },
-    
+
 });
 
 var slider_sborka = new Swiper('.slider-sborka', {
@@ -185,13 +188,13 @@ var slider_sborka = new Swiper('.slider-sborka', {
         const dash_current = (1- current/total)*len_dash;
         //console.log(dash_current);
         //console.log()
-        /*anime({
+        anime({
             targets: '.circle_wow',
             strokeDashoffset: [anime.setDashoffset, dash_current],
             duration: 100,
-        });*/
+        });
         return a;
-    } 
+    }
   },
 
 
@@ -200,56 +203,58 @@ var slider_sborka = new Swiper('.slider-sborka', {
 slider_sborka.controller.control = swiper_text_on_sborka;
 swiper_text_on_sborka.controller.control = slider_sborka;
 
-const animateCSS = (element, animation, prefix = 'animate__') =>
-  // We create a Promise and return it
-  new Promise((resolve, reject) => {
-    const animationName = `${animation}`;
-    const node = document.querySelector(element);
+const animateCSS1 = (element, animation, prefix = 'animate__') =>
+    new Promise((resolve, reject) => {
+      const imgToAnime = element.querySelector('.wow1');
+      const animationName = imgToAnime.getAttribute("data-class-animaton");
+      imgToAnime.classList.add(`${prefix}animated`, animationName);
 
-    node.classList.add(`${prefix}animated`, animationName);
+      function handleAnimationEnd(event) {
+        event.stopPropagation();
+        imgToAnime.classList.remove(`${prefix}animated`, animationName);
+        resolve('Animation ended');
+      }
 
-    // When the animation ends, we clean the classes and resolve the Promise
-    function handleAnimationEnd(event) {
-      event.stopPropagation();
-      node.classList.remove(`${prefix}animated`, animationName);
-      resolve('Animation ended');
-    }
-
-    node.addEventListener('animationend', handleAnimationEnd, {once: true});
-  });
-
-
-function handleAnimationEnd(event) {
-    event.stopPropagation();
-    node.classList.remove(`${prefix}animated`, animationName);
-    resolve('Animation ended');
-  }
-
+      imgToAnime.addEventListener('animationend', handleAnimationEnd, {once: true});
+    });
 
 slider_sborka.on('slideChange', function () {
-    //var ggg = $('.content-slider .content-slide').eq(swiper.activeIndex);
-   //  console.log('slide changed');
-    let arr = slider_sborka.slides[slider_sborka.activeIndex].querySelectorAll('.wow1');
-    // console.log(arr);
-   // console.log(arr.length);
-    for (i=0; i<arr.length; i++) {
-        animation_class = arr[i].getAttribute("data-class-animaton");
-    //    console.log(animation_class);
-        duration_custom = arr[i].getAttribute("data-animaton-duration");
-        arr[i].style.setProperty('--animate-duration', duration_custom);
-        arr[i].classList.add("animate__animated", animation_class);
-    }
-    if (slider_sborka.activeIndex > 0) {
-      let arr1 = slider_sborka.slides[slider_sborka.activeIndex-1].querySelectorAll('.wow1');
-      for (i=0; i<arr1.length; i++) {
-        animation_class = arr1[i].getAttribute("data-class-animaton");
-        duration_custom = arr1[i].getAttribute("data-animaton-duration");
-        //arr1[i].style.setProperty('--animate-duration', duration_custom);
-        arr1[i].classList.remove("animate__animated");
-        arr1[i].classList.remove(animation_class);
-      }
-    }
-    
-  
+   console.log(slider_sborka.slides[slider_sborka.activeIndex]);
+   animateCSS1(slider_sborka.slides[slider_sborka.activeIndex], 'animate__fadeInRight')
 });
 
+
+let pageY= 0;
+let isPlaying = 1;
+
+const el = document.querySelectorAll(".honeycomb path");
+function randomValues() {
+  if (pageY < 300) {
+    anime({
+      targets: [el],
+      fill: function () {
+        let a = anime.random(0, 4);
+        if (a == 0) {
+          return "#ff5e3a";
+        } else {
+          return "rgb(50, 50, 52);";
+        }
+      },
+      easing: "steps(1)",
+      duration: 5400,
+      complete: randomValues,
+    });
+  }
+}
+randomValues();
+
+window.addEventListener("scroll", function () {
+  pageY = pageYOffset;
+  if (pageY > 300 && isPlaying) {
+    isPlaying = 0;
+  }
+  if (pageY < 300 && !isPlaying) {
+    randomValues();
+    isPlaying = 1;
+  }
+});

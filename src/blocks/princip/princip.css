@@ -41,6 +41,13 @@
 
     flex: 0 1 280px;
 }
+
+@media screen and (min-width: 1440px) {
+  .princip__image {
+    margin-right: 210px;
+  }
+}
+
 .princip__image-svg {
     width: 100%;
     height: auto;

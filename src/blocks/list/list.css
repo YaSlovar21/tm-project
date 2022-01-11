@@ -59,3 +59,10 @@
 .list__item_theme_bsz::before {
     color: #0093dd8c;
 }
+
+@media screen and (min-width: 1440px) {
+  .list_page_product {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
