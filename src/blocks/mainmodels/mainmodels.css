@@ -93,6 +93,7 @@
   }
   .mainmodels__wrapper {
     width: 100%;
+    padding-top: 0;
     grid-template-columns: minmax(min-content, 400px) 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
@@ -106,7 +107,8 @@
     margin-bottom: 30px;
   }
   .mainmodels__turnbutton {
-
+    max-height: 50px;
+    justify-self: end;
     align-items: center;
     flex-direction: row-reverse;
     padding: 10px 30px;
@@ -136,6 +138,7 @@
   .mainmodels__raschet {
     min-width: 536px;
   }
+
 }
 @media screen and (max-width: 768px) {
   .mainmodels__title {

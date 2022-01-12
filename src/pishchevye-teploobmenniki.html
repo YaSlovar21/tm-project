@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
 </head>
 
 <body>
+  <%= require('html-loader!./inner-metrika.html').default %>
     <div class="bg"></div>
     <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
     <div class="page">
@@ -142,7 +144,7 @@
               </div>
           </div>
           <div class="food-type swiper-slide">
-            <img src="<%=require('./images/many-section-grid.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="1400">
+            <img src="<%=require('./images/food-many-sect.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="1400">
             <div class="food-type__description" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
               <h2 class="food-type__title">Многосекционные теплообменники</h2>
               <div class="food-type__main-text">

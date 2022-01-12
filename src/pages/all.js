@@ -1,4 +1,5 @@
-import './all.css'
+import './all.css';
+import '../images/favicon.svg';
 
 import Popup from '../js/components/Popup.js';
 import {popupWithMenuSelector} from '../js/utils/constants.js';

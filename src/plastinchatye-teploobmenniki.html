@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     .techniques__title {
 
@@ -20,6 +21,7 @@
   </style>
 </head>
 <body class="page">
+  <%= require('html-loader!./inner-metrika.html').default %>
   <div class="bg"></div>
   <div>
 
@@ -355,7 +357,7 @@
             </svg>
           </div>
 
-       
+
         <div class="flexburton__left-side">
           <div class="flexburton__breadcrumbs">
             <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
@@ -502,7 +504,7 @@
     <h2 class="two-columns__brief two-columns__brief_uppercase">Изготовление пластин от ДУ25 до ДУ250</h2>
     <div class="two-columns__main-text">
       <p class="two-columns__paragraph">Предприятие “Термоблок” разрабатывает и изготавливает пластины и уплотнения. Мы являемся единственным в России производителем пластин ДУ250.</p>
-      <p class="two-columns__paragraph">Широкий типоразмерный ряд производимых пластин позволяет изготавливать теплообменники от 5 кВт до 25 мВт как для небольших жилых домов, так и для целых микрорайонов.</p>
+      <p class="two-columns__paragraph">Широкий типоразмерный ряд производимых пластин позволяет изготавливать теплообменники <span class="span-no-wrap">от 5 кВт до 25 мВт</span> как для небольших жилых домов, так и для целых микрорайонов.</p>
     </div>
   </div>
 </section>
@@ -774,7 +776,7 @@
             <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
             <p class="popup__to-desc popup__to-desc_theme_dark heatex__to-desc heatex__to-desc_theme_dark">rehgoreqwghorqeghh</p>
             <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-            <a class="popup__to-3dlink heatex__to-3dlink" href="">12341234</a>
+            <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти --></a>
           </div>
         </div>
         <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>

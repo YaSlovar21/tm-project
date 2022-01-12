@@ -17,7 +17,7 @@
     position: relative;
     justify-content: flex-end;
     align-items:center;
-    
+
     /*min-height: 600px;*/
     margin-bottom: 40px;
     max-width: 1000px;
@@ -27,9 +27,12 @@
     padding-top: 5%;
     padding-bottom: 10%;
 }
-
-
-
+@media screen and (min-width:1440px) {
+  .plates__interactive {
+    min-width: 1000px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width:1024px) {
     .plates__interactive {
         /*max-width: 768px;
@@ -109,7 +112,7 @@
       background: linear-gradient(40deg,#f2f2f2,#cfcfce18);
       animation: l .9s cubic-bezier(.47,0,.65,.78) both; /*.9s;*/
   }
-  
+
   .illustration__stripe-blue {
     position: absolute;
       bottom: 0%;
@@ -127,7 +130,7 @@
     background-image: linear-gradient(40deg,#E7441C,#e7451c2d);
     animation: m .6s cubic-bezier(.39,.58,.57,1) both; /* 1.2s;*/
   }
-  
+
   .illustration__tmb {
     position: absolute;
     z-index: 5;
@@ -139,7 +142,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     transform: skewY(-20.5deg);
-    
+
     bottom: -2%;
     left: 15%;
     animation: l .9s cubic-bezier(.47,0,.65,.78) both .9s;
