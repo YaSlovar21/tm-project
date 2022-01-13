@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide-btp {
+      text-align: center;
+      font-size: 18px;
+      background: rgba(66, 66, 66, 0.678);
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      align-self: flex-end;
+    }
+
+    .swiper-slide .btp-big-swiper__image {
+      display: block;
+      width: 100%;
+
+      object-fit: contain;
+      object-position: bottom;
+    }
+
+    .btp-big-swiper {
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .btp-big-swiper .swiper-wrapper {
+      align-items: flex-end;
+    }
+  </style>
 </head>
 
 <body>
@@ -12,7 +57,7 @@
   <div class="bg"></div>
   <div class="page">
     <header class="header">
-      <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
+      <a href="/" class="header__logo"><img alt="Лого Термоблок" src="<%=require('./images/header-logo-1.svg')%>" width="100%"/></a>
       <div class="header__right">
         <%= require('html-loader!./inner-header.html').default %>
       </div>
@@ -54,8 +99,8 @@
           <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Рассчитать тепловой пункт</a>
         </div>
         <div class="table table_page_btp introgrid__feat" style="flex: 0 0 570px; position: relative;">
-          <div style="position: absolute; top:0; left: 0px;"><img src="./images/rect_sect.svg" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0px; transform: scaleX(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
+          <div style="position: absolute; top:0; left: 0px;"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+          <div style="position: absolute; top:0; right: 0px; transform: scaleX(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
           <div class="table__cell">
               <h3 class="table__heading table__heading_page_btp">Расчёт и подбор</h3>
               <p class="table__text table__text_page_btp">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
@@ -72,8 +117,8 @@
               <h3 class="table__heading table__heading_page_btp table__heading_align_right">Доставка и гарантия</h3>
               <p class="table__text table__text_page_btp table__text_align_right">Разбейте навык на элементы.</p>
           </div>
-          <div style="position: absolute; bottom:-60px; left: 0px; transform: scaleY(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
-          <div style="position: absolute; bottom:-60px; right: 0px; transform: scale(-1);"><img src="./images/rect_sect.svg" width="30%"></div>
+          <div style="position: absolute; bottom:-60px; left: 0px; transform: scaleY(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+          <div style="position: absolute; bottom:-60px; right: 0px; transform: scale(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
         </div>
       </section>
 
@@ -83,7 +128,7 @@
 
         <h2 class="section-title" style="margin-top: 80px;">Схемы комплектации тепловых пунктов</h2>
 
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row; max-width: 1600px; margin: 0 auto;">
         <div class="btp-schemes__pagination-container">
           <!--<span class="btp-schemes__bullet btp-schemes__bullet_active">Узел ввода</span>
           <span class="btp-schemes__bullet">Зависимое отоппление</span>
@@ -96,22 +141,22 @@
 
             <div class="swiper-wrapper">
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/uzel_vvoda.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/uzel_vvoda.svg')%>" alt="Узел ввода и учета схема" class="btp-schemes__img">
               </div>
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/otop_zav.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/otop_zav.svg')%>" alt="Узел зависимого отопления схема" class="btp-schemes__img">
               </div>
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/svg_top_nez.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/svg_top_nez.svg')%>" alt="Узел независимого отопления схема" class="btp-schemes__img">
               </div>
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/svg_gvs.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/svg_gvs.svg')%>" alt="Узел ГВС горячего водоснабжения схема" class="btp-schemes__img">
               </div>
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/gvs_monoblok.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/gvs_monoblok.svg')%>" alt="Узел ГВС с моноблоком двухступенчатая схема" class="btp-schemes__img">
               </div>
               <div class="btp-schemes__sheme swiper-slide">
-                <img src="<%=require('./images/schemes_btp/two_step_gvs.svg')%>" class="btp-schemes__img">
+                <img src="<%=require('./images/schemes_btp/two_step_gvs.svg')%>" alt="Узел ГВС двухступенчатая схема с двумя теплообменниками" class="btp-schemes__img">
               </div>
           </div>
 
@@ -160,46 +205,7 @@
           </form>
         </div>
       </section>
-      <style>
-        .swiper-container {
-          width: 100%;
-          height: 100%;
-        }
 
-        .swiper-slide-btp {
-          text-align: center;
-          font-size: 18px;
-          background: rgba(66, 66, 66, 0.678);
-
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-
-        .swiper-slide .btp-big-swiper__image {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .btp-big-swiper {
-          height: 440px;
-          width: 100%;
-          overflow: hidden;
-          position: relative;
-        }
-      </style>
 
       <div class="btp-big-swiper">
         <div class="swiper-container btpBigSwiper">
@@ -250,59 +256,26 @@
       </div>
 
     </section>
-
-        <section class="bpou">
-          <div class="bpou__info">
-            <span class="bpou__intro">Смотрите также</span>
-            <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
-            <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
-            <div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
-          </div>
-          <div class="bpou__image-container">
-            <img src="<%=require('./images/pou_page_btp.png')%>" class="bpou__image">
-          </div>
-        </section>
-
-        <section class="up-footer up-footer_bg_none ">
-            <ul class="up-footer__list">
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
-            </ul>
-          </section>
+    <section class="bpou">
+      <div class="bpou__info">
+        <span class="bpou__intro">Смотрите также</span>
+        <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
+        <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
+        <div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
+      </div>
+      <div class="bpou__image-container">
+        <img src="<%=require('./images/pou_page_btp.png')%>" class="bpou__image">
+      </div>
+    </section>
+    <section class="up-footer up-footer_bg_none ">
+      <ul class="up-footer__list">
+        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
+        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
+      </ul>
+    </section>
           </main>
           <%= require('html-loader!./inner-footer.html').default %>
   </div> <!--page-->
-
-        <script>
-          anime({
-              targets: 'path',
-              fill: function() {
-                  let a=anime.random(0, 1);
-                  if (a==0) {
-                      return '#ffffff';
-                  } else {
-                      return '#000000';
-                  }
-              },
-              easing: 'linear',
-              duration: 1,
-              complete: randomValues
-          });
-          randomValues();
-      </script>
-
-
-         <script src="js/anime.min.js"></script>
-         <script>
-          anime({
-            targets: '.tm-btp-advantages path',
-            strokeDashoffset: [anime.setDashoffset, 2],
-            easing: 'steps(5)',
-            duration: 3500,
-            delay: function(el, i) { return i * 250 },
-            direction: 'normal',
-          });
-        </script>
-      </body>
-      </html>
+  </body>
+</html>
