@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
   <style>
     .swiper-container {
       width: 100%;
@@ -211,17 +212,15 @@
         <div class="swiper-container btpBigSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="btp-big-swiper__image" src="<%=require('./images/btp-slider-1.png')%>" />
+              <img class="btp-big-swiper__image" src="<%=require('./images/btp_slider/btp-slider-1.png')%>" />
             </div>
             <div class="swiper-slide">
-              <img class="btp-big-swiper__image" src="<%=require('./images/btp-slider-2.png')%>" />
+              <img class="btp-big-swiper__image" src="<%=require('./images/btp_slider/btp-slider-2.png')%>" />
             </div>
             <div class="swiper-slide">
-              <img class="btp-big-swiper__image" src="<%=require('./images/btp-slider-3.png')%>" />
+              <img class="btp-big-swiper__image" src="<%=require('./images/btp_slider/btp-slider-3.png')%>" />
             </div>
-            <div class="swiper-slide">
-              <img class="btp-big-swiper__image" src="<%=require('./images/btp-slider-4.png')%>" />
-            </div>
+
 
           </div>
           <div class="swiper-button-next"></div>

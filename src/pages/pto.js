@@ -143,9 +143,17 @@ catch (err) {
 }
 //console.log(len_dash);
 
+const advantages = {
+  1: 'Общие',
+  2: 'Пластины и уплотнения',
+  3: 'Опции',
+  4: 'Конструкция',
+  5: 'Партнерам'
+}
 
 var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
-    speed: 1000,
+    type: 'bullets',
+    speed: 1500,
     mousewheel: true,
     autoplay: false,
     spacebetween: 350,
@@ -154,11 +162,14 @@ var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
     pagination: {
-    el: '.swiper-pagination',
+    bulletClass: 'slider-text-sborka__bullet',
+    bulletActiveClass: 'slider-text-sborka__bullet_active',
+    el: '.swiper-pagination-1',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class="' + className + '">' + advantages[index + 1] + '</span>';
     },
   },
 
@@ -169,8 +180,8 @@ var slider_sborka = new Swiper('.slider-sborka', {
   direction: 'horizontal',
   //loop: true,
   effect: 'fade',
-  parallax: true,
-  speed: 1000,
+  //parallax: true,
+  speed: 1500,
   keyboard: {
     enabled: true,
     onlyInViewport: false,

@@ -14,13 +14,15 @@ export default class PopupWithBigForm extends Popup {
         // достаём все элементы полей
         this._inputList = this._formElement.querySelectorAll(this._inputSelector); //'.popup__input'
 
-        // создаём пустой объект
+        // создаём пустой объект 
         this._formValues = {};
 
         // добавляем в этот объект значения всех полей
         this._inputList.forEach(input => {
           if (input.dataset.alias) {
             this._formValues[input.dataset.alias] = input.value;
+          } else {
+            this._formValues[input.name] = input.value;
           }
         });
         // возвращаем объект значений

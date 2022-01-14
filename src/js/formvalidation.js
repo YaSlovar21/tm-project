@@ -29,7 +29,7 @@ const activateForm = () => {
 };
 
 activateForm();
-
+/*
 const showInputError = (formElement, inputElement, errorMessage) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   inputElement.classList.add('form__input_type_error');
@@ -53,14 +53,14 @@ const checkInputValidity = (formElement, inputElement) => {
     hideInputError(formElement, inputElement);
   }
 };
-/*
-const toggleButtonState = (inputList, buttonElement) => {
-  if (hasInvalidInput(inputList)) {
-    buttonElement.classList.add('button_inactive');
-  } else {
-    buttonElement.classList.remove('button_inactive');
-  }
-};*/
+
+//const toggleButtonState = (inputList, buttonElement) => {
+//  if (hasInvalidInput(inputList)) {
+///    buttonElement.classList.add('button_inactive');
+//  } else {
+ //   buttonElement.classList.remove('button_inactive');
+//  }
+//};
 const hasInvalidInput = (inputList) => {
   return inputList.some((inputElement) => {
     return !inputElement.validity.valid;
@@ -88,11 +88,12 @@ const enableValidation = () => {
       evt.preventDefault();
     });
     setEventListeners(formElement);
-    /*const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
-    fieldsetList.forEach((fieldSet) => {
-          setEventListeners(fieldSet);
-    });*/
+    //const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
+    //fieldsetList.forEach((fieldSet) => {
+    //      setEventListeners(fieldSet);
+    //});
   });
 };
 
 enableValidation();
+*/

@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 
 const faviconPath = 'src/images/favicon.svg';
+const canonicalURL = 'https://www.profi-heat.ru'
 
 module.exports = {
   entry: { 
@@ -80,6 +81,19 @@ module.exports = {
         ]
       },
       {
+        // регулярное выражение, которое ищет все файлы с такими расширениями
+        test: /\.(doc|pdf)$/,
+        use: [
+          {
+              loader: "file-loader",
+              options: {
+                  name: "[name].[ext]",
+                  outputPath: "docu"
+              }
+          }
+        ]
+      },
+      {
         test: /CNAME/,
         loader: 'file-loader',
         options: {
@@ -104,6 +118,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL,
+      },
       title: 'Российский производитель пластин и пластинчатых теплообменников Термоблок',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -112,7 +129,11 @@ module.exports = {
       template: './src/index.html', // путь к файлу index.html
       chunks: ['index', 'all', 'map'],
     }),                                   /*---------ПРОДУКЦИЯ----------- */
-    new HtmlWebpackPlugin({       
+    new HtmlWebpackPlugin({   
+      templateParameters: {
+        canonicalURL,
+      },
+
       title: 'Производство теплообменого оборудования, пластинчатых теплообменников, тепловых пунктов',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -124,6 +145,9 @@ module.exports = {
       inject: true,
     }),                                   /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL,
+      },
       title: 'Пластинчатые теплообменники, производство полного цикла, для горячего водоснабжения, отопления, пищевые',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -134,6 +158,9 @@ module.exports = {
       chunks: ['pto',  'all', 'map'],
     }),                                   /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Пищевые теплообменники | Пластинчатые пастеризаторы и охладители | ООЛ | для молока, сусла и пищевых жидкостей',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -144,6 +171,9 @@ module.exports = {
       chunks: ['ptoFood',  'all', 'map'],
     }),                                   /*---------БЛОЧНЫЕ ТЕПЛОВЫЕ ПУНТЫ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Блочные тепловые пункты | Производство тепловых узлов, модулей итп заводской готовности',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -154,6 +184,9 @@ module.exports = {
       chunks: ['btp',  'all', 'map'],
     }),                                   /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Производство и поставка запасных частей на теплообменники Теплохит',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -164,6 +197,9 @@ module.exports = {
       chunks: ['service',  'all', 'map'],
     }),                                   /*---------О КОМПАНИИ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'О производстве пластинчатых теплообменников, этапы производства, испытания, реализуемая продукция',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -174,6 +210,9 @@ module.exports = {
       chunks: ['about',  'all', 'map'],
     }),                                   /*---------КОНТАКТЫ----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Контакты ООО Термоблок',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -184,6 +223,9 @@ module.exports = {
       chunks: ['contacts',  'all', 'map'],
     }),                                   /*---------СЕКЦИЯ БЛОГА----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Новое в производстве пластинчатых теплообменников',
       meta: {
         keywords: 'российское производство теплообменников', 
@@ -194,6 +236,9 @@ module.exports = {
       chunks: ['blogSection',  'all', 'map'],
     }),                                   /*---------СТРАНИЦЫ БЛОГА----------- */
     new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
       title: 'Пластинчатые теплообменники отопления',
       meta: {
         keywords: 'теплообменники отопления, пластинчатые теплообменники отопления', 

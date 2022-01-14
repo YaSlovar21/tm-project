@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/blog-proizvodstva"  rel="canonical" />
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
@@ -32,7 +33,7 @@
               <div class="infoitem__header">
                 <span class="infoitem__span-button">Проект</span>
               </div>
-              <a class="infoitem__link" href="./plastinchatye-teploobmenniki-otopleniya.html">
+              <a class="infoitem__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
                 <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
               </a>

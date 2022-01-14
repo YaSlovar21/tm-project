@@ -1,7 +1,7 @@
 .raschet-bem__input {
   min-width: 0;
-  width: 100%;
-  
+
+
   font-size: 20px;
   line-height: 1.2;
   color: #fff;
@@ -15,4 +15,8 @@
 
   transition: 0.3s;
   /*position: relative;*/
+}
+
+.raschet-bem__input_type_flex {
+  width: 100%;
 }

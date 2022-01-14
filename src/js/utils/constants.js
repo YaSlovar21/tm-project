@@ -6,15 +6,15 @@ const zatonUfa = new URL('../../images/projects/ufa_zaton.png', import.meta.url)
 const timashevskCondit = new URL('../../images/timashevsk_condit.png', import.meta.url);
 const ufaUmnDom = new URL('../../images/projects/ufa_umn_dom.png', import.meta.url);
 
-const ti025Img = new URL('../../images/descTO/ti077.png', import.meta.url);
+const ti025Img = new URL('../../images/descTO/ti025.png', import.meta.url);
 const ti077Img = new URL('../../images/descTO/ti077.png', import.meta.url);
 const ti13Img = new URL('../../images/descTO/ti13.png', import.meta.url);
 const ti18Img = new URL('../../images/descTO/ti18.png', import.meta.url);
 const ti28Img = new URL('../../images/descTO/ti28.png', import.meta.url);
 const ti45Img = new URL('../../images/descTO/ti45.png', import.meta.url);
-const ti52Img = new URL('../../images/descTO/ti077.png', import.meta.url);
+const ti52Img = new URL('../../images/descTO/ti52.png', import.meta.url);
 const ti65Img = new URL('../../images/descTO/ti077.png', import.meta.url);
-const ti82Img = new URL('../../images/descTO/ti077.png', import.meta.url);
+const ti82Img = new URL('../../images/descTO/ti82.png', import.meta.url);
 const ti95Img = new URL('../../images/descTO/ti95.png', import.meta.url);
 
 export const callbackFormId = 'mdoygyzz';
@@ -124,16 +124,15 @@ export const initialPartners = [
     name: 'Чита',
     htmlData: {
       nameOfPartner: 'ООО \"Интерсервис\"',
-      telephoneNumbers: ['+7(234)234-123', '+7(999)999-123'],
-      site: 'http://interservice.com',
+      telephoneNumbers: ['8-914-130-30-30'],
     }
   },
   {
     name: 'Архангельск',
     htmlData: {
       nameOfPartner: 'ООО \"Теплогазстрой\"',
-      telephoneNumbers: ['+7(999)999-123'],
-      site: 'http://interservice1.com',
+      telephoneNumbers: ['8(8182)-639-739'],
+      site: 'http://tgs29.ru/',
     },
   },
   {
@@ -209,24 +208,22 @@ export const initialPartners = [
   {
     name: 'Омск',
     htmlData: {
-      nameOfPartner: 'ООО \"Теплосервис\"',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
+      nameOfPartner: 'ООО \"Термополис+\"',
+      telephoneNumbers: ['+7(3812) 660-137'],
     },
   },
   {
     name: 'Оренбург',
     htmlData: {
       nameOfPartner: 'ООО \"Отопление качество\"',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
+      telephoneNumbers: ['8-922-555-75-17'],
     },
   },
   {
     name: 'Томск',
     htmlData: {
       nameOfPartner: 'ООО \"Амито\"',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
+      telephoneNumbers: ['8 (3822) 978-933'],
       site: 'https://amito-t.ru/',
     },
   },
@@ -234,54 +231,50 @@ export const initialPartners = [
     name: 'Уфа',
     htmlData: {
       nameOfPartner: 'ООО \"Партнер\"',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://amito-t.ru/',
+      telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
+      site: 'http://www.partnerufa.ru',
     },
   },
   {
     name: 'Стерлитамак',
     htmlData: {
       nameOfPartner: 'ООО \"Партнер\"',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://amito-t.ru/',
+      telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
+      site: 'http://www.partnerufa.ru',
     },
   },
   {
     name: 'Владивосток',
     htmlData: {
       nameOfPartner: 'ООО \"Солид ДВ\"',
-      telephoneNumbers: ['+7(234)234-123'],
-      //site: 'https://amito-t.ru/',
+      telephoneNumbers: ['+7-902-482-7837', '+7-902-480-5454'],
     },
   },
   {
     name: 'Иркутск',
     htmlData: {
       nameOfPartner: 'ООО \"Константа\"',
-      telephoneNumbers: ['+7(234)234-123'],
-
+      telephoneNumbers: ['+7 (3952) 42-87-03 '],
     },
   },
   {
     name: 'Ижевск',
     htmlData: {
       nameOfPartner: 'ООО \"Отопление качество\"',
-      telephoneNumbers: ['+7(234)234-123'],
-      site: 'https://12312.ru/',
+      telephoneNumbers: ['+7 (3412) 27-18-78'],
     },
   },
   {
     name: 'Вологда',
     htmlData: {
-      nameOfPartner: 'ООО \"Отопление качество\"',
-      telephoneNumbers: ['+7(234)234-123'],
+      nameOfPartner: 'ООО \"Протемол\"',
     },
   },
   {
     name: 'Санкт-Петербург',
     htmlData: {
       nameOfPartner: 'ООО \"Хортэк-ОПТ\"',
-      telephoneNumbers: ['+7(234)234-123'],
+      telephoneNumbers: ['+7 (812) 703-42-30'],
     },
   },
 ];
@@ -346,5 +339,13 @@ export const formValidatorConfig = {
   inactiveButtonClass: 'popup__button-save_disabled',
   inputErrorClass: 'popup__input_type_error',
   errorClass: 'popup__input-error_visible'
+}
+
+export const raschetValidatorConfig = {
+  inputSelector: '.raschet-bem__input ',
+  submitButtonSelector: '.raschet-bem__submit-button',
+  inactiveButtonClass: 'raschet-bem__submit-button_disabled',
+  inputErrorClass: 'raschet-bem__input_type_error',
+  errorClass: 'raschet-bem__input-error_visible'
 }
 

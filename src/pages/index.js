@@ -20,7 +20,14 @@ import 'animate.css';
 import '../pages/index.css';
 
 //import '../pages/CNAME';
-import '../videos/tm_test_video.mp4'
+import '../videos/tm_test_video.mp4';
+
+import '../userfiles/Опросный_лист_Термоблок_для_подбора_БТП.doc';
+import '../userfiles/Опросный_лист_для_подбора_теплообменника.doc';
+import '../userfiles/Референс_бук_Термоблок.pdf';
+import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
+import '../userfiles/termoblok_catalog.pdf';
+
 
 import {
   initialHeatEx,
@@ -36,8 +43,10 @@ import {
   popupImageSelectorsCongig,
   popupToConfig,
   formValidatorConfig,
+  raschetValidatorConfig,
   //идентификатор Formspree формы обратного звонка
   callbackFormId,
+
 } from '../js/utils/constants.js';
 
 import {
@@ -45,7 +54,11 @@ import {
 } from'../js/utils/utils.js';
 
 const formCallBack= document.forms.formCallBack;
+const raschetForm = document.forms.formRaschetPopup;
 const callbackSubmitButton = formCallBack.querySelector('.popup__button-save');
+const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-button')
+
+console.log(raschetForm);
 
 //кнопки открытия модальных окон
 const callBackPopupOpenButton = document.querySelector('.popup-callback-button');
@@ -55,13 +68,11 @@ const raschetPopupOpenButton = document.querySelector('.popup-raschet-button')
 const platesSvg = document.querySelector('.plates__svg');
 
 
-// const dinamicInfoPopup = mapSection.querySelector('.map__popup');
-// const popupInfoCloseButton = dinamicInfoPopup.querySelector(".map__popup-close");
-
 
 const formValidatorCallBack = new FormValidator(formValidatorConfig, formCallBack);
 formValidatorCallBack.enableValidation();
-
+const raschetValidatorForm = new FormValidator(raschetValidatorConfig, raschetForm);
+raschetValidatorForm.enableValidation();
 
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
@@ -116,29 +127,28 @@ const popupRaschet = new PopupWithBigForm({
     //const name = formCallbackData.name;
     const name='test';
     const tel = formCallbackData;
-    // renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
+    renderLoading(true, raschetSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
     formApi.sendBigForm(formCallbackData)
        .then((response) => {
          console.log(response)
-    //     popupCallBack.close();
+         popupRaschet.close();
     //     //сделать сообщение об успешной отправке
       })
        .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
        .finally(() => {
-    //     formValidatorCallBack.disableSaveButton();
-    //     renderLoading(false, callbackSubmitButton, 'Отправить', 'Отправка...');
+          raschetValidatorForm.disableSaveButton();
+          renderLoading(false, raschetSubmitButton, 'Отправить', 'Отправка...');
        });
     console.log(formCallbackData);
   },
   formCleanError: () => {
-    formValidatorCallBack.cleanAllErrors();
+    raschetValidatorForm.cleanAllErrors();
   },
 }, '.popup-raschet', '.raschet-bem', '.raschet-bem__input')
 
 popupImage.setEventListeners();
 popupCallBack.setEventListeners();
 popupRaschet.setEventListeners();
-
 popupHeatEx.setEventListeners();
 
 //навешиваем слушатели на элементы сайта

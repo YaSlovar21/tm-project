@@ -4,13 +4,15 @@
 
 @import url(./__substantions/raschet-bem__substantions.css);
 @import url(./__subst-title/raschet-bem__subst-title.css);
-@import url(./__select/raschet-bem__select.css);
+
 @import url(./__subst-selection-block/raschet-bem__subst-selection-block.css);
 
 /* <!--Температурные графики (темп - изображения - темп)--> */
 @import url(./__temperatures/raschet-bem__temperatures.css);
 @import url(./__temperature-set/raschet-bem__temperature-set.css);
 @import url(./__temperature-img/raschet-bem__temperature-img.css);
+
+
 
 /* <!--Дополнительные параметры (мощность, расход по нагреваемой среде)--> */
 @import url(./__parameters/raschet-bem__parameters.css);
@@ -22,10 +24,16 @@
 @import url(./__input/raschet-bem__input.css);
 @import url(./__input-error/raschet-bem__input-error.css);
 
+
+@import url(./__select/raschet-bem__select.css);
+
+@import url(./__submit-button/raschet-bem__submit-button.css);
+
 .raschet-bem {
   padding: 0px;
   background-color: #2f2f2f;
   width: 100%;
+  max-height: 100vh;
   box-sizing: border-box;
   border-radius: 2px;
 }

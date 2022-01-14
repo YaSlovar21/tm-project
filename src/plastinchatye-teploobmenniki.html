@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
   <style>
     .techniques__title {
 
@@ -389,7 +390,11 @@
       </section>
 
       <section class="techniques">
-        <h2 class="techniques__title">Основные премиущества</h2>
+        <div class="two-columns" style="width: 100%;">
+          <h2 class="techniques__title">Основные премиущества</h2>
+          <div class="swiper-pagination-1"></div>
+        </div>
+
         <!--<p class="section-subtitle">Пластинчатых теплообменников Теплохит</p>-->
         <div class="tech-interactive">
           <div class="slider-text-sborka slider-container">
@@ -405,36 +410,40 @@
                       <h3 class="slider-text-sborka__head">Пакет пластин</h3>
                       <p class="text-colot-white slider-text-sborka__text">
                           <ul class="list">
-                            <li class="list__item text-colot-white">Curabitur sed sodales</li>
-                            <li class="list__item text-colot-white">efficitur vitae mattis et, pretium in augue</li>
-                            <li class="list__item text-colot-white">Curabitur sed sodales</li>
-                            <li class="list__item text-colot-white">efficitur vitae mattis et, pretium in augue</li>
-                            <li class="list__item text-colot-white">Curabitur sed sodales</li>
-                            <li class="list__item text-colot-white">efficitur vitae mattis et, pretium in augue</li>
+                            <li class="list__item text-colot-white">Теплообменные пластины и уплотнения собственного производства</li>
+                            <li class="list__item text-colot-white">Низкие цены за счет 100% локализации производства</li>
+                            <li class="list__item text-colot-white">Высокая эффективность и надежность</li>
                           </ul>
                         </p>
                   </div>
                   <div class="swiper-slide slider-text-sborka__feat">
                       <h3 class="slider-text-sborka__head">Плита</h3>
-                      <p class="info__sale text-colot-white slider-text-sborka__text">Основное направление компании - производство теплообменников<span class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20 мВт, от небольших котельных до микрорайонов.</p>
+                      <p class="info__sale text-colot-white slider-text-sborka__text">Бесплатная комплектация ответными фланцами</p>
                   </div>
                   <div class="swiper-slide slider-text-sborka__feat">
-                      <h3 class="slider-text-sborka__head">Стяжки</h3>
-                      <p class="info__sale text-colot-white slider-text-sborka__text"> Donec
-                          libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel
-                          scelerisque <span class="info__span-accent">lobortis, ipsum leo sollicitudin metus</span>, eget sagittis ante orci eu ipsum. Nulla ac
-                          mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. </p>
+                      <h3 class="slider-text-sborka__head">Конструкция</h3>
+                      <p class="info__sale text-colot-white slider-text-sborka__text">
+                        <ul class="list">
+                          <li class="list__item text-colot-white">Стальные шпильки из стали 40Х с накатной резьбой</li>
+                          <li class="list__item text-colot-white">Удлиненная гайка из стали 40Х с повышенным запасом прочности</li>
+                          <li class="list__item text-colot-white">Направляющие балки из нержавеющей стали</li>
+                          <li class="list__item text-colot-white">Надежная конструкция рамы</li>
+                        </ul>
+                      </p>
                   </div>
                   <div class="swiper-slide slider-text-sborka__feat">
                       <h3 class="slider-text-sborka__head">Бренд</h3>
-                      <p class="info__sale text-colot-white slider-text-sborka__text"> Donec
-                          libero dolor, volutpat ut urna sit amet, aliquet molestie purus. Phasellus faucibus, leo vel
-                          scelerisque <span class="info__span-accent">lobortis, ipsum leo sollicitudin metus</span>, eget sagittis ante orci eu ipsum. Nulla ac
-                          mauris eu risus sagittis scelerisque iaculis bibendum mauris. Cras ut egestas orci. </p>
+                      <p class="info__sale text-colot-white slider-text-sborka__text">
+                        <ul>
+                        <li class="text-colot-white">В 2014 году конструкторское бюро завода обновило линейку выпускаемых пластин и уплотнений.
+                        Общий опыт производства составляет <span class="info__span-accent">25 лет</span></li>
+                        <li class="text-colot-white">Контроль качества на каждом этапе производства, теплообменные аппараты соответствуют требованиям безопасности установленным на единой территории Таможенного союза</li>
+                        </ul>
+                      </p>
                   </div>
 
               </div>
-              <div class="swiper-pagination"></div>
+
           </div>
 
 
