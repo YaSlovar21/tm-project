@@ -1,6 +1,6 @@
 .footer__columns {
     display: flex;
-    width: calc(100% - 40px);
+    max-width: 1600px;
     margin: auto;
     justify-content: space-between;
 

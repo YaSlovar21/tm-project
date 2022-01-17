@@ -12,10 +12,22 @@
 @import url(./__to-name/heatex__to-name.css);
 
 .heatex {
-    display: flex;
-    max-width: 1200px;
+
     margin: 50px auto 50px;
     padding: 50px 0 50px;
-
     position: relative;
+    max-width: 1600px;
+}
+
+.heatex__content {
+  max-width: 1200px;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .heatex__content {
+    max-width: 1290px;
+  }
 }

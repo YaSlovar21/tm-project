@@ -74,3 +74,10 @@
     opacity: 1;
     transition-delay: 0s;
 }
+
+/*
+@media screen and (min-width: 1440px) {
+  .frequently {
+    max-width: 1600px;
+  }
+}*/

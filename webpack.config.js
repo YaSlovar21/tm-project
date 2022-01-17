@@ -2,9 +2,36 @@ const path = require('path'); // подключаем path к конфигу в�
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const now = require("date-now")
+
+
 
 const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.profi-heat.ru'
+
+const paths = [
+  {
+    path: '/plastinchatye-teploobmenniki.html',
+    lastmod: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  },
+  {
+    path: '/pishchevye-teploobmenniki.html',
+    lastmod: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  },
+  {
+    path: '/blochnye-teplovye-punkty.html',
+    lastmod: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  },
+
+];
+
 
 module.exports = {
   entry: { 
@@ -434,6 +461,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
-    })
+    }),
+    new SitemapPlugin({ base: canonicalURL, paths })
   ] 
 }

@@ -45,7 +45,7 @@ import {
   formValidatorConfig,
   raschetValidatorConfig,
   //идентификатор Formspree формы обратного звонка
-  callbackFormId,
+  //callbackFormId,
 
 } from '../js/utils/constants.js';
 
@@ -104,7 +104,7 @@ const popupCallBack = new PopupWithForm({
     const name = formCallbackData.name;
     const tel = formCallbackData.tel;
     renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
-    formApi.sendCallForm(name, tel, callbackFormId)
+    formApi.sendCallForm(name, tel)
       .then((response) => {
         console.log(response)
         popupCallBack.close();
@@ -158,7 +158,11 @@ callBackPopupOpenButton.addEventListener("mousedown", () => {
 })
 raschetPopupOpenButton.addEventListener("mousedown", () => {
   popupRaschet.open();
-})
+});
+
+document.querySelector('.mainmodels__raschet').addEventListener("mousedown", () => {
+  popupRaschet.open();
+});
 
 platesSvg.addEventListener("click", (evt) => {
   popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
@@ -174,6 +178,18 @@ document.querySelectorAll('.photo-grid__item').forEach((item) => {
     });
   });
 });
+
+
+const backButton = document.querySelector('.form-back-button');
+      const nextButton = document.querySelector('.form-next-step');
+      const popupAbsolute = document.querySelector('.popup-absolute');
+      backButton.addEventListener('mousedown', (evt)=> {
+        popupAbsolute.classList.remove('popup__form-fio_opened');
+      })
+      nextButton.addEventListener('mousedown', ()=> {
+        popupAbsolute.classList.add('popup__form-fio_opened');
+      })
+
 
 /* Слайдер в хидере на главной */
 
@@ -266,12 +282,3 @@ const types_swiper = new Swiper('.product-types', {
 })
 types_swiper.update();
 
-const backButton = document.querySelector('.form-back-button');
-      const nextButton = document.querySelector('.form-next-step');
-      const popupAbsolute = document.querySelector('.popup-absolute');
-      backButton.addEventListener('mousedown', (evt)=> {
-        popupAbsolute.classList.remove('popup__form-fio_opened');
-      })
-      nextButton.addEventListener('mousedown', ()=> {
-        popupAbsolute.classList.add('popup__form-fio_opened');
-      })

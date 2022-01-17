@@ -45,6 +45,7 @@
   padding: 20px;
   box-sizing: border-box;
   grid-area: button;
+  align-self: center;
 }
 .mainmodels__models {
   grid-area: models;

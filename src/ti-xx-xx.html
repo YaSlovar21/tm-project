@@ -29,17 +29,19 @@
         <section class="heatex">
           <div style="position: absolute; top:0; left: 0;"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
           <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div class="heatex__img-container">
-            <img class="heatex__to-img" src="<%=require('./images/descTO/'+ tialias)%>" />
-          </div>
-          <div class="heatex__desc-container">
-            <span class="span span_comment">Теплообменник</span>
-            <h3 class="heatex__to-name"><%=heading%></h3>
-            <p class="heatex__to-desc heatex__to-desc_theme_dark">
-              <%=description%>
-            </p>
-            <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-            <a class="heatex__to-3dlink link-beauty" href="<%=link3d%>" target="_blank">3D модели (IGES, DWG) для <%=heading%></a>
+          <div class="heatex__content">
+            <div class="heatex__img-container">
+              <img class="heatex__to-img" src="<%=require('./images/descTO/'+ tialias)%>" />
+            </div>
+            <div class="heatex__desc-container">
+              <span class="span span_comment">Теплообменник</span>
+              <h3 class="heatex__to-name"><%=heading%></h3>
+              <p class="heatex__to-desc heatex__to-desc_theme_dark">
+                <%=description%>
+              </p>
+              <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
+              <a class="heatex__to-3dlink link-beauty" href="<%=link3d%>" target="_blank">3D модели (IGES, DWG) для <%=heading%></a>
+            </div>
           </div>
           <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
           <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
@@ -62,7 +64,7 @@
                 <img
                   src="images/descTO/drawingTest.png"
                   class="khan__book-pic khan__book-pic_page_heatex"
-                  alt="Коммерческое предложение по пластинчатому теплообменнику"
+                  alt="Чертеж пластинчатого теплообменника <%= heading%>"
                 />
               </div>
               <a

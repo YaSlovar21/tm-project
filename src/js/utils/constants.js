@@ -13,7 +13,7 @@ const ti18Img = new URL('../../images/descTO/ti18.png', import.meta.url);
 const ti28Img = new URL('../../images/descTO/ti28.png', import.meta.url);
 const ti45Img = new URL('../../images/descTO/ti45.png', import.meta.url);
 const ti52Img = new URL('../../images/descTO/ti52.png', import.meta.url);
-const ti65Img = new URL('../../images/descTO/ti077.png', import.meta.url);
+const ti65Img = new URL('../../images/descTO/ti65.png', import.meta.url);
 const ti82Img = new URL('../../images/descTO/ti82.png', import.meta.url);
 const ti95Img = new URL('../../images/descTO/ti95.png', import.meta.url);
 
@@ -48,62 +48,72 @@ export const initialHeatEx = {
     name: "ТИ 025",
     img: ti025Img,
     desc: "ТИ025 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40.Конструкция пластины позволяет формировать 12 разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу, при этом сопротивление греющей и нагревающей жидкости может быть разное. Особая конструкция клипа надежно закрепляет уплотнение на пластину, тем самым исключает обрыв при монтаже пластины.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/p4EH75u--S1Dzg",
+    baseUrl: '/catalog/ti-025.html'
   },
   'ti-077': {
     name: "ТИ 077",
     img: ti077Img,
     desc: "ТИ077 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40.Конструкция пластины позволяет формировать 12 разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу, при этом сопротивление греющей и нагревающей жидкости может быть разное. Особая конструкция клипа надежно закрепляет уплотнение на пластину (рисунок 1,2), тем  самым исключает обрыв при монтаже пластины.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg",
+    baseUrl: '/catalog/ti-077.html'
   },
   'ti-13': {
     name: "ТИ 13",
     img: ti13Img,
     desc: "Технические параметры пластины ТИ 13 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/7C26Ov2CVbgl6w",
+    baseUrl: '/catalog/ti-13.html'
   },
   'ti-18': {
     name: "ТИ 18",
     img: ti18Img,
     desc: "Линейка теплообменников ТИ18 имеет диаметр условного прохода до Ду65. Технические параметры пластины позволяют использовать ее для сборки экономических и эффективных теплообменников, а также заменять в уже имеющих теплообменниках пластины марки FP 20.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/O2lzhXAOWaA4ug",
+    baseUrl: '/catalog/ti-18.html'
   },
   'ti-16-5': {
     name: "ТИ 16,5",
     img: "",
     desc: "Технические параметры пластины ТИ 13 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
     link3d: "",
+    baseUrl: '/catalog/ti-16-5.html'
   },
   'ti-28': {
     name: "ТИ 28",
     img: ti28Img,
     desc: "Технические параметры пластины ТИ 13 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+    baseUrl: '/catalog/ti-28.html'
   },
   'ti-45': {
     name: "ТИ 45",
     img: ti45Img,
     desc: "Технические параметры пластины ТИ 13 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
 
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+    baseUrl: '/catalog/ti-45.html'
   },
   'ti-65': {
     name: "ТИ 65",
     img: ti65Img,
     desc: "..............",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/1c62zYE1I9yvyA",
+    baseUrl: '/catalog/ti-65.html'
   },
   'ti-52': {
     name: "ТИ 52",
     img: ti52Img,
     desc: "..............",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/1c62zYE1I9yvyA",
+    baseUrl: '/catalog/ti-52.html'
   },
   'ti-82': {
     name: "ТИ 82",
     img: ti82Img,
     desc: "Технические параметры пластины ТИ 13 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
-    link3d: "",
+    link3d: "https://disk.yandex.ru/d/1c62zYE1I9yvyA",
+    baseUrl: '/catalog/ti-82.html'
   },
   'ti-95': {
     name: "ТИ 95",
@@ -111,12 +121,14 @@ export const initialHeatEx = {
     desc: "Технические параметры пластины ТИ 95 позволяют использовать ее для сборки экономичных и эффективных теплообменников, а так же заменять в уже имеющихся теплообменниках пластины марки FP 14, GC, G.",
 
     link3d: "",
+    baseUrl: '/catalog/ti-95.html'
   },
   'ti-116': {
     name: "ТИ 116",
     img: "",
     desc: "..............",
     link3d: "",
+    baseUrl: '/catalog/ti-116.html'
   },
 }
 export const initialPartners = [
@@ -313,11 +325,6 @@ export const platesSvg = document.querySelector('.plates__svg');
 
 
 //конфиги
-
-export const menuConfig = {
-  navSelector: '.nav',
-  navItemClass: 'nav__ul-item',
-}
 
 
 // конфиг селекторов в модальном окне с картиной и подписью

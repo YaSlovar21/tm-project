@@ -63,3 +63,9 @@
 @import url(../blocks/po/po.css);
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/footer/footer.css);
+
+
+@import url(../blocks/heatex/__models-heading/heatex__models-heading.css);
+@import url(../blocks/heatex/__models-heading/_theme_dark/heatex__models-heading_theme_dark.css);
+
+@import url(../blocks/heatex/__to-3dlink/heatex__to-3dlink.css);

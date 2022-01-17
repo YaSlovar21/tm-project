@@ -1,4 +1,5 @@
 import '../pages/ti.css';
+import 'animate.css';
 
 const questions = Array.from(
   document

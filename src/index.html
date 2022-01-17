@@ -49,9 +49,7 @@
       background-color: #f2f2f23a;
       z-index: 2;
     }
-    .mainHeaderSlider {
-      max-width: 120%;
-    }
+
     /*ВАЖНО*/
     .scroll-slider {
         width: 100%;
@@ -68,23 +66,30 @@
   <%= require('html-loader!./inner-metrika.html').default %>
   <div class="bg"></div>
   <main>
-    <div class="header-index">
-      <a class="header-index__logo-container" href="/">
+    <section class="header-index">
+      <div class="header-index__logo-container">
+      <a class="" href="/">
         <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>" alt="Лого Термоблок">
       </a>
+
+      </div>
       <div class="header-index__right">
         <%= require('html-loader!./inner-header.html').default %>
       </div>
+      <div style="position: relative; "><figure class="header-index__darked"></figure></div>
+      <h1 class="header-index__main-heading">Производитель пластин, пластинчатых теплообменников блочных тепловых пунктов</h1>
       <div class="header-index__video-container">
         <figure class="header-index__darked"></figure>
+
         <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay="true"
           playsinline="playsinline" muted="muted" loop="loop">
           <source src="videos/tm_test_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+
       <div class="header-index__slider-container">
-        <figure class="header-index__slider-background"></figure>
+        <!--<img class="header-index__slider-background" src="<%=require('./images/back-index-slider.svg')%>"></figure>-->
         <div class="swiper mainHeaderSlider">
           <div class="swiper-wrapper">
             <div class="swiper-slide header-index__slide">
@@ -125,7 +130,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Слайд с продукцией-->
     <section style="position: relative;
           display: flex;
@@ -447,7 +452,6 @@
           <div class="swiper-scrollbar swiper-scrollbar-main"></div>
         </div>
 
-
       </div>
     </section>
 
@@ -529,7 +533,7 @@
             </a>
           </li>
         </ul>
-        <button class="mainmodels__raschet">Рассчитать теплообменник</button>
+        <button class="mainmodels__raschet button-bem">Рассчитать теплообменник</button>
         <button class="mainmodels__turnbutton">Смотреть в пищевом исполнении</button>
       </div>
 
@@ -545,7 +549,7 @@
           <!--<a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода</a>-->
         </div>
         <div class="turnkey__solutions">
-          <a class="turnkey__solution link-beauty_moveup" href="#" >
+          <a class="turnkey__solution link-beauty_moveup" href="/blochnye-teplovye-punkty.html" >
             <img src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт" class="turnkey__image wow animate__fadeInUp" data-wow-duration="1.5s">
             <div class="turnkey__aboutsolution">
               <p class="turnkey__solution-description">Блочные тепловые пункты для жилично-коммунального хозяйства</p>
@@ -747,10 +751,10 @@
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Мощность теплообменника</span>
                     <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
-                      <input data-alias="Мощность" type=""  id="q-input" class="raschet-bem__input raschet-bem__input_type_flex"  required minlength="1">
-                      <select class="raschet-bem__select" name="t_typesr" >
-                        <option value="Вода">квт</option>
-                        <option value="Пар">мвт</option>
+                      <input data-alias="Мощность" type="" name="moshnost"  id="q-input" class="raschet-bem__input raschet-bem__input_type_flex"  required minlength="1">
+                      <select class="raschet-bem__select" name="t_typesr1" >
+                        <option selected value="квт">квт</option>
+                        <option value="мвт">мвт</option>
                       </select>
                       <span class="raschet-bem__input-error q-input-error"></span>
                     </fieldset>
@@ -762,10 +766,10 @@
                   <label class="raschet-bem__field">
                     <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
                     <fieldset style="display: flex; margin: 0; padding: 0; border: none;">
-                      <input data-alias="Расход нагреваемой среды" type=""  id="rash-input" class="raschet-bem__input raschet-bem__input_type_flex"  required minlength="1">
-                      <select class="raschet-bem__select" name="t_typesr" >
-                        <option value="Вода">м3/ч</option>
-                        <option value="Пар">т/ч</option>
+                      <input data-alias="Расход нагреваемой среды" name="rashod" type=""  id="rash-input" class="raschet-bem__input raschet-bem__input_type_flex"  required minlength="1">
+                      <select class="raschet-bem__select" name="t_typesr2" >
+                        <option selected value="м3/ч">м3/ч</option>
+                        <option value="т/ч">т/ч</option>
                       </select>
                       <span class="raschet-bem__input-error rash-input-error"></span>
                     </fieldset>
@@ -824,8 +828,7 @@
             <span class="span span_comment">Теплообменник</span>
             <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
             <p class="popup__to-desc popup__to-desc_theme_dark heatex__to-desc heatex__to-desc_theme_dark">rehgoreqwghorqeghh</p>
-            <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-            <a class="popup__to-3dlink heatex__to-3dlink" href="">12341234</a>
+            <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
           </div>
         </div>
         <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>

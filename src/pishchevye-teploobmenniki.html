@@ -9,9 +9,8 @@
 </head>
 
 <body>
-  <%= require('html-loader!./inner-metrika.html').default %>
+    <%= require('html-loader!./inner-metrika.html').default %>
     <div class="bg"></div>
-    <img class="nav-mobile-logo" src="images/menu-link-mobile.svg">
     <div class="page">
 
     <header class="header">
@@ -53,70 +52,33 @@
             </div>
           </div>
         </section>
-        <!--
-        <section class="kaufman">
 
-          <div class="projects__header" style="max-width: 80%; margin: 0 auto;">
-            <h2 class="projects__title" style="font-weight: 800;">Области применения</h2>
-            <p class="projects__description">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
-          </div>
-          <div class="table table_theme_dark">
-              <div class="table__cell table__cell_theme_dark">
-                  <h3 class="table__heading table__heading_theme_dark">Горячее водоснабжение</h3>
-                  <p class="table__text table__text_theme_dark">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
-              </div>
-              <div class="table__cell table__cell_theme_dark">
-                  <h3 class="table__heading table__heading_theme_dark">Системы отопления</h3>
-                  <p class="table__text table__text_theme_dark">Теплообменники для отопления </p>
-              </div>
-              <div class="table__cell table__cell_theme_dark">
-                  <h3 class="table__heading table__heading_theme_dark">Пищевая промышленность</h3>
-                  <p class="table__text table__text_theme_dark">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
-              </div>
-              <div class="table__cell table__cell_theme_dark">
-                  <h3 class="table__heading table__heading_theme_dark">Фармацевтика</h3>
-                  <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
-              </div>
-
-              <div class="table__cell table__cell_theme_dark table__cell_size_large">
-                  <h3 class="table__heading table__heading_theme_dark ">Исполнение теплообменника</h3>
-                  <p class="table__text table__text_theme_dark">
-                    <ul class="list">
-                      <li class="list__item list__item_font_18">Односекционные</li>
-                      <li  class="list__item list__item_font_18">Многосекционные</li>
-                      <li  class="list__item list__item_font_18">Готовое решение на базе теплообменников</li>
-                    </ul>
-                  </p>
-              </div>
-          </div>
-      </section>
--->
       <section class="introgrid">
-        <h2 class="introgrid__header">Преимущества работы с производителем</h2>
+        <h2 class="introgrid__header">Области применения</h2>
         <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
         <div class="introgrid__button">
-          <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Рассчитать тепловой пункт</a>
+          <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
         </div>
         <div class="introgrid__feat">
-          <div class="table table_theme_dark" style="max-width: 650px;">
+          <div class="table table_theme_dark" style="display: grid; grid-template-columns: 1fr 1fr; width: 100%;">
             <div class="table__cell table__cell_theme_dark">
-                <h3 class="table__heading table__heading_theme_dark">Горячее водоснабжение</h3>
+                <h3 class="table__heading table__heading_theme_dark">Пластинчатые пастеризаторы</h3>
                 <p class="table__text table__text_theme_dark">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
             </div>
             <div class="table__cell table__cell_theme_dark">
-                <h3 class="table__heading table__heading_theme_dark">Системы отопления</h3>
-                <p class="table__text table__text_theme_dark">Теплообменники для отопления </p>
+                <h3 class="table__heading table__heading_theme_dark">Пластинчатые охладители (ООЛ)</h3>
+                <p class="table__text table__text_theme_dark">Теплообменники для охлаждения молока и прочих пищевых жидкостей</p>
             </div>
             <div class="table__cell table__cell_theme_dark">
-                <h3 class="table__heading table__heading_theme_dark">Пищевая промышленность</h3>
+                <h3 class="table__heading table__heading_theme_dark">Теплообменники в масложировой отрасли</h3>
                 <p class="table__text table__text_theme_dark">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
             </div>
             <div class="table__cell table__cell_theme_dark">
-                <h3 class="table__heading table__heading_theme_dark">Фармацевтика</h3>
-                <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
+                <h3 class="table__heading table__heading_theme_dark">Технические процессы теплообмена при производстве спиртов, сусла</h3>
+                <p class="table__text table__text_theme_dark">Пастеризация и охлаждения сусла (возможно изготовления многоступенчатого теплообменника)</p>
             </div>
 
-            <div class="table__cell table__cell_theme_dark table__cell_size_large">
+            <div class="table__cell table__cell_theme_dark table__cell_size_large" style="grid-column: span 2;">
                 <h3 class="table__heading table__heading_theme_dark ">Исполнение теплообменника</h3>
                 <p class="table__text table__text_theme_dark">
                   <ul class="list">
