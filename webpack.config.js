@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const now = require("date-now")
 
-
+const dateNow = (new Date()).toString();
 
 const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.profi-heat.ru'
@@ -13,19 +13,19 @@ const canonicalURL = 'https://www.profi-heat.ru'
 const paths = [
   {
     path: '/plastinchatye-teploobmenniki.html',
-    lastmod: true,
+    lastmod: dateNow,
     priority: 0.8,
     changefreq: 'monthly'
   },
   {
     path: '/pishchevye-teploobmenniki.html',
-    lastmod: true,
+    lastmod: dateNow,
     priority: 0.8,
     changefreq: 'monthly'
   },
   {
     path: '/blochnye-teplovye-punkty.html',
-    lastmod: true,
+    lastmod: '2015-01-04',
     priority: 0.8,
     changefreq: 'monthly'
   },
