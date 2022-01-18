@@ -12,12 +12,12 @@
     <div class="bg"></div>
     <div class="page">
       <header class="header">
-        <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок" width="100%"/></a>
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
           <%= require('html-loader!./inner-header.html').default %>
         </div>
       </header>
-
+      <p style="color: #f2f2f2";><%= compilation.assets.source %></p>
       <main class="content">
         <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>

@@ -7,6 +7,7 @@ export default class PopupWithBigForm extends Popup {
         this._formCleanError = formCleanError;
         this._formElement = this._modal.querySelector(formSelector); //.popup__form
         this._inputSelector = formInputSelector;
+        this._absolutePopup = this._modal.querySelector('.popup-absolute');
     }
 
     //собираем поля формы
@@ -40,6 +41,10 @@ export default class PopupWithBigForm extends Popup {
         super.close();
         this._formElement.reset();
         this._formCleanError();
+        if (this._absolutePopup.classList.contains('popup__form-fio_opened')) {
+          console.log('Открыто!');
+          this._absolutePopup.classList.remove('popup__form-fio_opened');
+        }
     }
 
     setEventListeners() {

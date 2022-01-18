@@ -132,7 +132,7 @@ const popupRaschet = new PopupWithBigForm({
        .then((response) => {
          console.log(response)
          popupRaschet.close();
-    //     //сделать сообщение об успешной отправке
+        //сделать сообщение об успешной отправке
       })
        .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
        .finally(() => {

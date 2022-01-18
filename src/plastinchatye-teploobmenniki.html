@@ -8,8 +8,6 @@
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
   <style>
     .techniques__title {
-
-
       max-width: 230px;
       text-align: left;
       color: #f2f2f2;
@@ -28,7 +26,7 @@
 
     <header class="header">
       <a href="/" class="header__logo">
-        <img  src="<%=require('./images/header-logo-1.svg')%>" width="100%">
+        <img class="header__logo-img"  src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок" >
       </a>
       <div class="header__right">
         <%= require('html-loader!./inner-header.html').default %>
@@ -451,19 +449,19 @@
           <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                  <img class="slider-sborka__img wow animate__fadeInRight" src="<%=require('./images/nord/zpanel.png')%>">
+                  <img alt="Станина теплообменника" class="slider-sborka__img wow animate__fadeInRight" src="<%=require('./images/nord/zpanel.png')%>">
               </div>
               <div class="swiper-slide">
-                  <img class="slider-sborka__img wow1" data-class-animaton="animate__fadeInRight" data-animaton-duration="1s" src="<%=require('./images/nord/plastina.png')%>">
+                  <img alt="Пластины и уплотнения теплообменника" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInRight" data-animaton-duration="1s" src="<%=require('./images/nord/plastina.png')%>">
               </div>
               <div class="swiper-slide">
-                  <img class="slider-sborka__img wow1" data-class-animaton="animate__fadeInLeft" data-animaton-duration="1s" src="<%=require('./images/nord/ppanel.png')%>">
+                  <img alt="Прижимная плита теплообменника" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInLeft" data-animaton-duration="1s" src="<%=require('./images/nord/ppanel.png')%>">
               </div>
               <div class="swiper-slide">
-                  <img class="slider-sborka__img wow1" src="<%=require('./images/nord/bezshildika.png')%>"">
+                  <img alt="Пластинчатый теплообменник в сборе" class="slider-sborka__img wow1" src="<%=require('./images/nord/bezshildika.png')%>"">
               </div>
               <div class="swiper-slide">
-                  <img class="slider-sborka__img wow1" data-class-animaton="animate__fadeInBottomLeft" data-animaton-duration="1s"  src="<%=require('./images/nord/shild.png')%>">
+                  <img alt="Пластинчатый теплообменник ТИ марки Теплохит" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInBottomLeft" data-animaton-duration="1s"  src="<%=require('./images/nord/shild.png')%>">
               </div>
 
           </div>
@@ -517,7 +515,7 @@
     </div>
   </div>
 </section>
-<section class="plates" style="background-color: #2f2f2f34;background-attachment: fixed;">
+<div class="plates" style="background-color: #2f2f2f34;background-attachment: fixed;">
    <div class="plates__interactive">
      <div class="illustration__stripe-blue wow"></div>
 
@@ -575,7 +573,7 @@
        <div class="illustration__stripe-green wow"></div>
        <div class="illustration__tmb wow"></div>
    </div>
- </section>
+  </div>
   <!--
       <section class="feynman" style="background-color: #2f2f2f34;">
         <h2 class="feynman__title">Пластины для пластинчатых теплообменников</h2>
@@ -590,21 +588,21 @@
       <img src="<%=require('./images/plastdetailimg.png')%>" class="plastdetail__image"  alt="Пластина пластинчатого теплообменника">
       <ul class="plastdetail__detailslist">
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="<%=require('./images/details1_asim_canali.png')%>">
+            <img alt="Ассиметричные каналы на теплообменных пластинах" class="plastdetail__iimage" src="<%=require('./images/details1_asim_canali.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Ассиметричные каналы</h3>
               <p class="plastdetail__idesc"> Пластина по одной стороне имеет широкие каналы, а по другой узкие. Возможно создать 11 типов каналов, что позволяет оптимизировать количество пластин, тем самым снизив стоимость теплообменника без потери его эффективности.</p>
             </div>
           </li>
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="<%=require('./images/details2_klips.png')%>">
+            <img alt="Клиповые уплотнения пластинчатого теплообменника" class="plastdetail__iimage" src="<%=require('./images/details2_klips.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Форма клипа</h3>
               <p class="plastdetail__idesc">Препятсятвует разрыву и клип не слетает.</p>
             </div>
           </li>
           <li class="plastdetail__detailslist-item">
-            <img class="plastdetail__iimage" src="<%=require('./images/details3_burts.png')%>">
+            <img alt="Два бурта на уплотнении между пластинами" class="plastdetail__iimage" src="<%=require('./images/details3_burts.png')%>">
             <div>
               <h3 class="plastdetail__ititle">Два бурта</h3>
               <p class="plastdetail__idesc">Два бурта уплотнения противостоят давлению внутри теплообменника.</p>
@@ -699,7 +697,7 @@
       <div style="overflow: hidden;">  <!--Костыль для overflow картинки программы расчёта-->
         <section class="princip">
           <div class="princip__image wow animate__zoomIn" data-wow-offset="100">
-            <img class="princip__image-svg"  src="<%=require('./images/princip_demo.svg')%>">
+            <img class="princip__image-svg" alt="Принцип работы пластинчатого теплообменника - противоток"  src="<%=require('./images/princip_demo.svg')%>">
           </div>
           <div class="princip__description">
             <h2 class="princip__heading wow animate__fadeInUp" data-wow-offset="100">Принцип работы пластинчатых теплообменников</h2>
@@ -713,40 +711,37 @@
             <p class="po__text wow animate__fadeInUp" data-wow-offset="100">Разработанная нами программа предназначена для расчета пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности.</p>
             <a href="#" class=" wow animate__fadeInUp po__link" data-wow-offset="200">Запросить программу расчёта</a>
           </div>
-          <img src="<%=require('./images/program_mini.png')%>" class="po__image">
+          <img alt="Интерфейс программы расчёта пластинчатых теплообменников Теплохит" src="<%=require('./images/program_mini.png')%>" class="po__image">
         </section>
       </div>
 
     <section class="map">
-        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <div class="map__list-container">
         <ul class="map__list">
-          <!--Сюда встанут карточки партнеров-->
-          <div class="map__popup">
-            <span class="map__popup-close">&lt;-- Назад</span>
-            <ul class="map__popup-container"></ul>
-          </div>
         </ul>
-        <div class="map__partner"></div>
-
+        <!--Сюда встанут карточки партнеров-->
+        <div class="map__popup">
+          <span class="map__popup-close">&lt;-- Назад</span>
+          <ul class="map__popup-container"></ul>
+        </div>
+      </div>
+      <div class="map__partner"></div>
     </section>
 
-    <section class="up-footer">
+    <div class="up-footer">
       <ul class="up-footer__list">
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
         <li class="up-footer__list-item up-footer__call  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
       </ul>
-    </section>
+    </div>
+
     </main>
 
-
     <%= require('html-loader!./inner-footer.html').default %>
-
   </div>
 
-<script>
-
-</script>
   <!--Шаблон элемента партнера на карте-->
   <template id="partner-item-template">
     <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
@@ -754,7 +749,7 @@
   <!--Шаблон карточки проекта-->
   <template id="project-template">
     <div class="projects__item wow animate__fadeInUp" data-wow-delay="1s">
-      <img  class="projects__image"  src="images/timashevsk_condit.png">
+      <img  class="projects__image" alt="Здесь будет фото проекта с теплообменником"  src="<%=require('./images/svg-elems/preloader.gif')%>">
       <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
     </div>
   </template>
@@ -763,7 +758,7 @@
     <div class="popup__container">
         <button class="popup__button-close link-beauty" type="button"></button>
         <div class="popup__image-view">
-            <img class="popup__image" alt="картинка под загрузку" src="">
+            <img class="popup__image" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
             <p class="popup__image-description"></p>
         </div>
     </div>
@@ -777,9 +772,9 @@
             <p class="popup__image-description"></p>
         </div>-->
         <div class="popup__to-info heatex" style="max-width: 100%;">
-          <div style="position: absolute; top:0; left: 0;"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <img class="popup__to-img" src="">
+          <img style="position: absolute; top:0; left: 0; width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
+          <img style="position: absolute; top:0; right: 0; transform: scaleX(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
+          <img class="popup__to-img" src="<%=require('./images/svg-elems/preloader.gif')%>" alt="Здесь будет модель теплообменника">
           <div class="popup__desc-container">
             <span class="span span_comment">Теплообменник</span>
             <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
@@ -789,8 +784,8 @@
             <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти --></a>
           </div>
         </div>
-        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+        <img style="position: absolute; bottom:0; left: 0; transform: scaleY(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
+        <img style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
 
     </div>
   </div>

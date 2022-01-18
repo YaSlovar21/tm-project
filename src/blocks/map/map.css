@@ -23,14 +23,17 @@
     }
 }
 
-.map__list {
-    position: relative;
+.map__list-container {
+  position: relative;
+  background-image: url(../../images/map_up_footer.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
 
-    background-image: url(../../images/map_up_footer.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.map__list {
+
     list-style-type: none;
-    background-size: contain;
 
     display: flex;
     flex-direction: column;

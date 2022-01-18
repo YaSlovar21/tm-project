@@ -20,7 +20,11 @@
 
 
 .product-types__image {
-    max-height: 90vw;
+    max-height: 80vw;
+    max-width: 80vw;
+    object-fit: contain;
+    object-position: center;
+    /*width="100%" height="450px"*/
 }
 
 .product-types__category-info {
@@ -57,17 +61,17 @@
     color: #f2f2f2;
     font-size: 18px;
     line-height: 1.3;
-    margin: 0;
+    margin: 0 0 10px;
 
     font-weight: 300;
 
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .product-types__p {
         font-size: 14px;
         max-width: 80%;
-        margin: 0 auto 30px;
+        margin: 0 auto 10px;
     }
 }
 
@@ -78,7 +82,7 @@
 }
 
 .product-types__link{
-    margin-top: 5px;
+    margin-top: 10px;
     z-index: 22;
     text-decoration: none;
     font-size: 18px;
@@ -103,6 +107,7 @@
     .product-types__link {
         font-size: 16px;
         text-align: center;
+        margin-left: 10%;
     }
 }
 

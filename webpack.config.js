@@ -3,34 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
-const now = require("date-now")
+const {paths} = require('./sitemap');
 
-const dateNow = (new Date()).toString();
-
-const faviconPath = 'src/images/favicon.svg';
+//const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.profi-heat.ru'
 
-const paths = [
-  {
-    path: '/plastinchatye-teploobmenniki.html',
-    lastmod: dateNow,
-    priority: 0.8,
-    changefreq: 'monthly'
-  },
-  {
-    path: '/pishchevye-teploobmenniki.html',
-    lastmod: dateNow,
-    priority: 0.8,
-    changefreq: 'monthly'
-  },
-  {
-    path: '/blochnye-teplovye-punkty.html',
-    lastmod: '2015-01-04',
-    priority: 0.8,
-    changefreq: 'monthly'
-  },
+//import {initialHeatEx} from './src/js/utils/constants.js';
+//console.log(initialHeatEx);
 
-];
 
 
 module.exports = {
@@ -60,8 +40,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, './dist'), // путь, куда "смотрит" режим разработчика
     compress: true, // это ускорит загрузку в режиме разработки
-    port: 8081, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
-
+    port: 8080, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
     open: true // сайт будет открываться сам при запуске npm run dev
   },
   module: {

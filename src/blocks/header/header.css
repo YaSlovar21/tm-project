@@ -120,3 +120,8 @@
     color: #FF5E3A;
     font-weight: bold;
 }
+
+
+.header__logo-img {
+  width: 100%;
+}

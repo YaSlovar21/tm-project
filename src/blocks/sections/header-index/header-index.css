@@ -162,7 +162,7 @@
   position: relative;
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-direction: column;
 
 }
