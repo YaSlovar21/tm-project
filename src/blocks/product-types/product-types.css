@@ -87,6 +87,7 @@
     text-decoration: none;
     font-size: 18px;
     color: #FF5E3A;
+    align-self: flex-start;
 }
 
 .product-types .swiper-button-next {

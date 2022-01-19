@@ -191,6 +191,17 @@ const backButton = document.querySelector('.form-back-button');
       })
 
 
+const turnModelsButton = document.querySelector('.mainmodels__turnbutton');
+turnModelsButton.addEventListener('mousedown', (evt) => {
+  const wrapper = evt.target.closest('.mainmodels__wrapper');
+  if (wrapper.classList.contains('mainmodels__wrapper_food')) {
+    turnModelsButton.textContent = 'Смотреть в пищевом исполнении';
+  } else {
+    turnModelsButton.textContent = 'Смотреть в типовом исполнении';
+  }
+  wrapper.classList.toggle('mainmodels__wrapper_food');
+})
+
 /* Слайдер в хидере на главной */
 
 const mainHeaderSlider = new Swiper(".mainHeaderSlider", {

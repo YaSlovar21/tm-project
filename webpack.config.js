@@ -435,6 +435,124 @@ module.exports = {
         'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
       },
       chunks: ['ti', 'all'],
+    }),                                    /*ПИЩЕВЫЕ */
+                                          /*-1-------П025-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П025 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-025.html',
+      templateParameters: {
+        'tialias': 'p025.png',
+        'heading': 'П025',
+        'description' : `Теплообменник П025 пищевого назначения. Отличием от типового исполнения (ТИ 025) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-2-------П077-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П077 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-077.html',
+      templateParameters: {
+        'tialias': 'p077.png',
+        'heading': 'П077',
+        'description' : `Теплообменник П077 пищевого назначения. Отличием от типового исполнения (ТИ 077) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-3-------П13-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П13 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-13.html',
+      templateParameters: {
+        'tialias': 'p13.png',
+        'heading': 'П13',
+        'description' : `Теплообменник П13 пищевого назначения. Отличием от типового исполнения (ТИ 13) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-3-------П18-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П18 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-18.html',
+      templateParameters: {
+        'tialias': 'p18.png',
+        'heading': 'П18',
+        'description' : `Теплообменник П18 пищевого назначения. Отличием от типового исполнения (ТИ 18) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-4-------П16,5-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П16,5 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-16-5.html',
+      templateParameters: {
+        'tialias': 'p18.png',    ///ЖДЕМ ФОТО
+        'heading': 'П16,5',
+        'description' : `Теплообменник П16,5 пищевого назначения. Отличием от типового исполнения (ТИ 16,5) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-5-------П28-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П28 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-28.html',
+      templateParameters: {
+        'tialias': 'p28.png',
+        'heading': 'П28',
+        'description' : `Теплообменник П28 пищевого назначения. Отличием от типового исполнения (ТИ 28) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-6-------П45-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П45 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-45.html',
+      templateParameters: {
+        'tialias': 'p45.png',
+        'heading': 'П45',
+        'description' : `Теплообменник П45 пищевого назначения. Отличием от типового исполнения (ТИ 45) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-7-------П52-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П52 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-52.html',
+      templateParameters: {
+        'tialias': 'p52.png',
+        'heading': 'П52',
+        'description' : `Теплообменник П52 пищевого назначения. Отличием от типового исполнения (ТИ 52) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
+    }),                                     /*-8-------П65-----------*/
+    new HtmlWebpackPlugin({
+      title: 'Теплообменник П65 пищевой пластинчатый разборный',
+      template: './src/ti-xx-xx.html', // шаблон
+      filename: 'catalog/p-65.html',
+      templateParameters: {
+        'tialias': 'p65.png',
+        'heading': 'П65',
+        'description' : `Теплообменник П65 пищевого назначения. Отличием от типового исполнения (ТИ 65) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
+      },
+      chunks: ['ti', 'all'],
     }),
     
     new CleanWebpackPlugin(),

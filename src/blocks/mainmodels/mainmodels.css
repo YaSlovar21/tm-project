@@ -21,6 +21,18 @@
     "button models turnbutton";
 }
 
+.mainmodels__wrapper .models-food {
+  display: none;
+}
+
+.mainmodels__wrapper_food .models-ti  {
+  display: none;
+}
+
+.mainmodels__wrapper_food .models-food  {
+  display: grid;
+}
+
 .mainmodels__title {
   font-style: normal;
   font-weight: 800;

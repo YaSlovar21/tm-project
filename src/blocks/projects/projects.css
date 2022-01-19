@@ -34,10 +34,10 @@
 
 
 .projects__title {
-    font-size: 48px;
+    font-size: 36px;
     width: 397px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 600;
     flex-wrap: wrap;
     color: #c4c4c4;
 }
@@ -45,7 +45,7 @@
 @media screen and (max-width:870px) {
     .projects__title {
         width: 300px;
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 
