@@ -1,3 +1,4 @@
+import 'core-js/actual';
 import Swiper from 'swiper/bundle';
 
 import WOW from 'wow.js';
