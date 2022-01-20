@@ -1,34 +1,36 @@
+
 const isEmpty = (formElement, inputElement) => {
-  console.log(inputElement.value);
   !inputElement.value.length >= 1 ? unfreezePlaceholder(formElement, inputElement) :
     freezePlaceholder(formElement, inputElement);
 };
 
 const freezePlaceholder = (formElement, inputElement) => {
   const placeholderElement = formElement.querySelector(`.${inputElement.id}-placeholder`);
-  placeholderElement.classList.add('form__placeholder_is-fixed');
+  placeholderElement.classList.add('raschet-bem__label-title_fluid_is-fixed');
 };
 
 const unfreezePlaceholder = (formElement, inputElement) => {
   const placeholderElement = formElement.querySelector(`.${inputElement.id}-placeholder`);
-  placeholderElement.classList.remove('form__placeholder_is-fixed');
+  placeholderElement.classList.remove('raschet-bem__label-title_fluid_is-fixed');
 };
 
 const setCustomPlaceholders = (formElement) => {
-  const getInputList = Array.from(formElement.querySelectorAll(`.form__input`));
+  const getInputList = Array.from(formElement.querySelectorAll('.raschet-bem__input'));
   getInputList
     .forEach((inputElement) => inputElement
       .addEventListener('input', () => isEmpty(formElement, inputElement)))
 };
 
-const activateForm = () => {
-  const getFormList = Array.from(document.querySelectorAll(`.form`));
-  getFormList.forEach((formElement) => {
-    setCustomPlaceholders(formElement);
-  });
-};
+// const activateForm = () => {
+//  const getFormList = Array.from(document.querySelectorAll(`.form`));
+//  getFormList.forEach((formElement) => {
+//    setCustomPlaceholders(formElement);
+//  });
+// };
+setCustomPlaceholders(raschetForm);
+//activateForm();
 
-activateForm();
+
 /*
 const showInputError = (formElement, inputElement, errorMessage) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);

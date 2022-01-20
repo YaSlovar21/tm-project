@@ -61,9 +61,10 @@
 
 
 .types__heading {
-    margin: 0 0 50px;
+    margin: 0 0 25px;
     font-size: 36px;
     color: #c4c4c4;
+    max-width: 300px;
 }
 
 @media screen and (max-width:450px) {
@@ -74,9 +75,12 @@
 }
 
 .types__subtitle {
-    font-size: 18px;
-    color:  #c4c4c4;
-    line-height: 1.4;
+  color: #201f21;;
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 330px;
+  font-weight: 500;
+  margin: 0;
 }
 
 @media screen and (max-width:450px) {

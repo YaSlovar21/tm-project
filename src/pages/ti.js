@@ -1,6 +1,27 @@
 import '../pages/ti.css';
 import 'animate.css';
 
+import PopupWithImage from '../js/components/PopupWithImage.js';
+
+import {
+  popupImageSelector,
+  popupImageSelectorsCongig
+} from '../js/utils/constants.js';
+
+
+
+const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
+
+const drawing = document.querySelector('.khan__book-pic_page_heatex');
+const openDrawingButton = document.querySelector('.khan__buy-link');
+
+openDrawingButton.addEventListener("mousedown", ()=> {
+  popupImage.open({
+    link: drawing.src,
+    name: drawing.alt,
+  })
+})
+
 const questions = Array.from(
   document
     .querySelectorAll('.frequently__question')
@@ -17,3 +38,7 @@ questions.forEach(element => {
     answerElem.classList.toggle('animate__fadeIn');animate__slow
   })
 });
+
+const tiAlias = window.location.pathname;
+
+console.log(tiAlias);

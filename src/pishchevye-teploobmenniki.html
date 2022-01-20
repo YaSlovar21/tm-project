@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
 </head>
 
 <body>
@@ -24,9 +24,9 @@
           <div class="flexburton flexburton_test">
             <div class="flexburton__left-side">
               <div class="flexburton__breadcrumbs">
-                <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
-                <a class="flexburton__breadcrumbs-link" href="production.html">Продукция</a>
-                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here">Пищевые теплообменники</a>
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link" href="/production.html">Продукция</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Пищевые теплообменники</a>
               </div>
                 <!--<img class="logo logo_place_header" src="images/logo-to-2_place_header.svg" alt="Профи">-->
               <h1 class="flexburton__title animate__animated animate__slow animate__bounceInLeft">Пищевые теплообменники</h1>
@@ -189,11 +189,6 @@
 
 
         </section>
-
-
-        <script>
-
-        </script>
 
         <script>
           let arra = document.querySelectorAll('.food-grid__description');

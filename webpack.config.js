@@ -20,6 +20,7 @@ module.exports = {
     map: './src/pages/map.js',
     pto: './src/pages/pto.js',
     ti: './src/pages/ti.js',
+    catalog: './src/pages/catalog.js',
     btp: './src/pages/btp.js',
     ptoFood: './src/pages/pto-food.js',
     production: './src/pages/production.js',
@@ -28,6 +29,7 @@ module.exports = {
     contacts: './src/pages/contacts.js',
     blogSection: './src/pages/blog-section.js',
     blogPage: './src/pages/blog-page.js',
+    equipment: './src/pages/equipment.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -188,7 +190,20 @@ module.exports = {
       template: './src/blochnye-teplovye-punkty.html', 
       filename: 'blochnye-teplovye-punkty.html',
       chunks: ['btp',  'all', 'map'],
-    }),                                   /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
+    }),                                   /*---------ПАСТЕРИЗАЦИОННЫЕ УСТАНОВКИ----------- */
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
+      title: 'Изготовливаем пастеризационные охладительные установки | На базе теплообменников собственного производства',
+      meta: {
+        keywords: 'пастеризационные охладительные установки, установки поу', 
+        description: 'Все о термоблоке'
+      },
+      template: './src/pou.html', 
+      filename: 'pasterizatsionno-okhladitelnye-ustanovki.html',
+      chunks: ['btp',  'all', 'map'],
+    }),                                    /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
@@ -227,6 +242,19 @@ module.exports = {
       template: './src/contacts.html', 
       filename: 'contacts.html',
       chunks: ['contacts',  'all', 'map'],
+    }),                                  /*---------ПОДБОР И РАСЧЁТ----------- */
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
+      title: 'Подбор и расчет пластинчатых теплообменников онлайн',
+      meta: {
+        keywords: 'пластинчатый теплообменник подбор, расчет пластинчатого теплообменника онлайн', 
+        description: 'Большой выбор пластинчатых теплообменников. Калькулятор с подбором пластинчатого теплообменника, полный расчет пластинчатого теплообменника онлайн'
+      },
+      template: './src/equipment-selection.html', 
+      filename: 'equipment-selection/index.html',
+      chunks: ['equipment',  'all', 'map'],
     }),                                   /*---------СЕКЦИЯ БЛОГА----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -255,13 +283,28 @@ module.exports = {
       chunks: ['blogPage',  'all', 'map'],
     }),
     
+                                       /*---------КАТАЛОГ----------- */
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
+      title: 'Каталог пластинчатых теплообменников | Каталог Теплохит',
+      meta: {
+        keywords: 'каталог пластинчатых теплообменников, теплохит каталог', 
+        description: 'Все о термоблоке'
+      },
+      template: './src/catalog.html', 
+      filename: 'catalog/index.html',
+      chunks: ['catalog',  'all', 'map'],
+    }),
     /*---------------------ТЕПЛООБМЕННИКИ------------------------------------------*/
     new HtmlWebpackPlugin({
       title: 'Теплообменник ТИ025 пластинчатый разборный',
       template: './src/ti-xx-xx.html', // шаблон
       filename: 'catalog/ti-025.html',
       templateParameters: {
-        'tialias': 'ti077.png',
+        'tialias': 'ti025.png',
+        'drawalias': 'draw025.jpg',
         'heading': 'ТИ 025',
         'description' : `ТИ025 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -277,6 +320,7 @@ module.exports = {
       filename: 'catalog/ti-077.html',
       templateParameters: {
         'tialias': 'ti077.png',
+        'drawalias': 'draw077.jpg',
         'heading': 'ТИ 077',
         'description' : `ТИ077 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -292,6 +336,7 @@ module.exports = {
       filename: 'catalog/ti-13.html',
       templateParameters: {
         'tialias': 'ti13.png',
+        'drawalias': 'draw13.jpg',
         'heading': 'ТИ 13',
         'description' : `ТИ13 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -307,6 +352,7 @@ module.exports = {
       filename: 'catalog/ti-18.html',
       templateParameters: {
         'tialias': 'ti18.png',
+        'drawalias': 'draw18.jpg',
         'heading': 'ТИ 18',
         'description' : `ТИ18 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -322,6 +368,7 @@ module.exports = {
       filename: 'catalog/ti-16-5.html',
       templateParameters: {
         'tialias': 'ti18.png',
+        'drawalias': 'draw16-5.jpg',
         'heading': 'ТИ 16,5',
         'description' : `ТИ18 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -337,6 +384,7 @@ module.exports = {
       filename: 'catalog/ti-28.html',
       templateParameters: {
         'tialias': 'ti28.png',
+        'drawalias': 'draw28.jpg',
         'heading': 'ТИ 28',
         'description' : `ТИ18 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -352,6 +400,7 @@ module.exports = {
       filename: 'catalog/ti-45.html',
       templateParameters: {
         'tialias': 'ti45.png',
+        'drawalias': 'draw45.jpg',
         'heading': 'ТИ 45',
         'description' : `ТИ45 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -367,6 +416,7 @@ module.exports = {
       filename: 'catalog/ti-52.html',
       templateParameters: {
         'tialias': 'ti52.png',
+        'drawalias': 'draw52.jpg',
         'heading': 'ТИ 52',
         'description' : `ТИ52 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -382,6 +432,7 @@ module.exports = {
       filename: 'catalog/ti-65.html',
       templateParameters: {
         'tialias': 'ti65.png',
+        'drawalias': 'draw52.jpg',
         'heading': 'ТИ 65',
         'description' : `ТИ45 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -397,6 +448,7 @@ module.exports = {
       filename: 'catalog/ti-82.html',
       templateParameters: {
         'tialias': 'ti82.png',
+        'drawalias': 'draw82.jpg',
         'heading': 'ТИ 82',
         'description' : `ТИ82 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -412,6 +464,7 @@ module.exports = {
       filename: 'catalog/ti-95.html',
       templateParameters: {
         'tialias': 'ti95.png',
+        'drawalias': 'draw95.jpg',
         'heading': 'ТИ 95',
         'description' : `ТИ95 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -427,6 +480,7 @@ module.exports = {
       filename: 'catalog/ti-116.html',
       templateParameters: {
         'tialias': 'ti95.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'ТИ 116',
         'description' : `ТИ116 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12
         разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу,
@@ -443,6 +497,7 @@ module.exports = {
       filename: 'catalog/p-025.html',
       templateParameters: {
         'tialias': 'p025.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П025',
         'description' : `Теплообменник П025 пищевого назначения. Отличием от типового исполнения (ТИ 025) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -456,6 +511,7 @@ module.exports = {
       filename: 'catalog/p-077.html',
       templateParameters: {
         'tialias': 'p077.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П077',
         'description' : `Теплообменник П077 пищевого назначения. Отличием от типового исполнения (ТИ 077) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -469,6 +525,7 @@ module.exports = {
       filename: 'catalog/p-13.html',
       templateParameters: {
         'tialias': 'p13.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П13',
         'description' : `Теплообменник П13 пищевого назначения. Отличием от типового исполнения (ТИ 13) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -482,6 +539,7 @@ module.exports = {
       filename: 'catalog/p-18.html',
       templateParameters: {
         'tialias': 'p18.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П18',
         'description' : `Теплообменник П18 пищевого назначения. Отличием от типового исполнения (ТИ 18) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -495,6 +553,7 @@ module.exports = {
       filename: 'catalog/p-16-5.html',
       templateParameters: {
         'tialias': 'p18.png',    ///ЖДЕМ ФОТО
+        'drawalias': 'draw116.jpg',
         'heading': 'П16,5',
         'description' : `Теплообменник П16,5 пищевого назначения. Отличием от типового исполнения (ТИ 16,5) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -508,6 +567,7 @@ module.exports = {
       filename: 'catalog/p-28.html',
       templateParameters: {
         'tialias': 'p28.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П28',
         'description' : `Теплообменник П28 пищевого назначения. Отличием от типового исполнения (ТИ 28) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -521,6 +581,7 @@ module.exports = {
       filename: 'catalog/p-45.html',
       templateParameters: {
         'tialias': 'p45.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П45',
         'description' : `Теплообменник П45 пищевого назначения. Отличием от типового исполнения (ТИ 45) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
@@ -535,6 +596,7 @@ module.exports = {
       templateParameters: {
         'tialias': 'p52.png',
         'heading': 'П52',
+        'drawalias': 'draw116.jpg',
         'description' : `Теплообменник П52 пищевого назначения. Отличием от типового исполнения (ТИ 52) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
         'link3d': 'https://disk.yandex.ru/d/3lo5g4MpzvYFcA',
@@ -547,6 +609,7 @@ module.exports = {
       filename: 'catalog/p-65.html',
       templateParameters: {
         'tialias': 'p65.png',
+        'drawalias': 'draw116.jpg',
         'heading': 'П65',
         'description' : `Теплообменник П65 пищевого назначения. Отличием от типового исполнения (ТИ 65) на данный теплообменник устанавливаются пищевые штуцера и,
         по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,

@@ -7,6 +7,11 @@
   transition: max-height .8s cubic-bezier(0,1,0,1),margin .4s linear;
 }
 
+.inforaschet_page_equipment {
+  max-height:min-content;
+  
+}
+
 .inforaschet_active {
   max-height: 1000px;
   margin-top: 30px;

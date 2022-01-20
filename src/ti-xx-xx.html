@@ -62,7 +62,7 @@
             <div style="display: flex">
               <div class="khan__book-container khan__book-container_page_heatex">
                 <img
-                  src="images/descTO/drawingTest.png"
+                  src="<%=require('./images/drawings/'+ drawalias)%>"
                   class="khan__book-pic khan__book-pic_page_heatex"
                   alt="Чертеж пластинчатого теплообменника <%= heading%>"
                 />
@@ -82,12 +82,12 @@
             <h2 class="frequently__heading">Часто задаваемые вопросы</h2>
             <ul class="frequently__questions">
                 <li class="frequently__item">
-                    <h3 class="frequently__question">Какая площадь теплообмена у данного теплообменника?</h3>
+                    <h3 class="frequently__question">Какая площадь теплообмена у теплообменника <%=heading%>?</h3>
                     <p class="frequently__answer">По площади теплобмена некорректно высчитывать теплообменник. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna odio accumsan tortor aliquam cras vestibulum, interdum.</p>
                 </li>
                 <li class="frequently__item">
                     <h3 class="frequently__question">Рассчитать теплообменник?</h3>
-                    <p class="frequently__answer">Magna odio accumsan tortor aliquam cras vestibulum, interdum.</p>
+                    <p class="frequently__answer">Для расчёта пластинчатого теплообменника при стандартных потерях давления необходимо 5 значений: температурные графики (температуры греющей и нагреваемой сред на входе и выходе из теплообменника). А также мощность (тепловая нагрузка) или расход по нагреваемой среде. Форма заявки онлайн для расчёта доступна по ссылке <a href="/equipment-selection/">подбор теплообменника онлайн</a></p>
                 </li>
                 <li class="frequently__item">
                     <h3 class="frequently__question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
@@ -97,6 +97,7 @@
         </section>
       </main>
       <%= require('html-loader!./inner-footer.html').default %>
+      <%= require('html-loader!./inner-popup-img.html').default %>
     </div>
 
   </body>

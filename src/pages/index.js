@@ -35,7 +35,6 @@ import {
 
   popupImageSelector,     //попап с картинкой (селектор)
   callBackPopupSelector,  //попап с формой обратного звонка (селектор)
-
   popupWithToSelector,    //попап с теплообменником
 
   //кнопки открытия модальных окон
@@ -56,7 +55,7 @@ import {
 
 const formCallBack= document.forms.formCallBack;
 const raschetForm = document.forms.formRaschetPopup;
-const callbackSubmitButton = formCallBack.querySelector('.popup__button-save');
+const callbackSubmitButton = formCallBack.querySelector('.button-bem_submit');
 const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-button')
 
 console.log(raschetForm);
@@ -102,10 +101,12 @@ const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);
 
 const popupCallBack = new PopupWithForm({
   formSubmitHandler: (formCallbackData) => {
-    const name = formCallbackData.name;
-    const tel = formCallbackData.tel;
+    //const name = formCallbackData.name;
+    //const tel = formCallbackData.tel;
+    const tel = formCallbackData;
     renderLoading(true, callbackSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
-    formApi.sendCallForm(name, tel)
+   // formApi.sendCallForm(name, tel)
+    formApi.sendCallForm(formCallbackData)
       .then((response) => {
         console.log(response)
         popupCallBack.close();
@@ -120,7 +121,7 @@ const popupCallBack = new PopupWithForm({
   formCleanError: () => {
     formValidatorCallBack.cleanAllErrors();
   },
-}, callBackPopupSelector, '.popup__form', '.popup__input');
+}, callBackPopupSelector, '.popup__form', formValidatorConfig.inputSelector);
 
 
 const popupRaschet = new PopupWithBigForm({

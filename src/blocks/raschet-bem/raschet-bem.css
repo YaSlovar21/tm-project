@@ -1,5 +1,5 @@
 @import url(./__title/raschet-bem__title.css);
-
+@import url(./__title/_subtitle/raschet-bem__title_subtitle.css); /*  Когда форма вся открыта */
 /*   <!--Среды вход/выход-->  */
 
 @import url(./__substantions/raschet-bem__substantions.css);
@@ -20,6 +20,8 @@
 
 /* блоки формы */
 @import url(./__field/raschet-bem__field.css);
+@import url(./__field/_type_textarea/raschet-bem__field_type_textarea.css);
+
 @import url(./__label-title/raschet-bem__label-title.css);
 @import url(./__input/raschet-bem__input.css);
 @import url(./__input-error/raschet-bem__input-error.css);

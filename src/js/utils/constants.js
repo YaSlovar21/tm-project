@@ -341,8 +341,8 @@ export const popupToConfig = {
 }
 
 export const formValidatorConfig = {
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__button-save',
+  inputSelector: '.raschet-bem__input',
+  submitButtonSelector: '.button-bem_submit',
   inactiveButtonClass: 'popup__button-save_disabled',
   inputErrorClass: 'popup__input_type_error',
   errorClass: 'popup__input-error_visible'

@@ -15,6 +15,9 @@
 
   transition: 0.3s;
   /*position: relative;*/
+  padding: 0 0 7px;
+  transition: .3s;
+  margin-top: 7px;
 }
 
 .raschet-bem__input_type_flex {
