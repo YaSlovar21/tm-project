@@ -28,7 +28,7 @@ import '../userfiles/Опросный_лист_для_подбора_тепло�
 import '../userfiles/Референс_бук_Термоблок.pdf';
 import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
-
+import '../userfiles/btp-certificate.pdf'
 
 import {
   initialHeatEx,
@@ -121,7 +121,7 @@ const popupCallBack = new PopupWithForm({
   formCleanError: () => {
     formValidatorCallBack.cleanAllErrors();
   },
-}, callBackPopupSelector, '.popup__form', formValidatorConfig.inputSelector);
+}, callBackPopupSelector, '.popup__form','.raschet-bem__input');
 
 
 const popupRaschet = new PopupWithBigForm({

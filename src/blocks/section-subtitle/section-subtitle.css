@@ -11,6 +11,12 @@
   @media screen and (max-width: 767px) {
     .section-subtitle {
       font-size: 18px;
+      font-size: 12px;
+      /*letter-spacing: .05em;*/
+      line-height: 1.4;
+      width: 95%;
+      font-weight: 600;
+      text-align: left;
     }
   }
 

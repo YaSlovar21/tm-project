@@ -40,6 +40,10 @@
   border-radius: 2px;
 }
 
+.raschet-bem_bg_none {
+  background-color: transparent;
+}
+
 .raschet-bem option {
   color: black;
 }

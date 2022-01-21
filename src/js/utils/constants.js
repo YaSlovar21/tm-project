@@ -30,14 +30,17 @@ export const initialProjects = [
     {
       name: "Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»",
       link: zatonUfa,
+      animateClass: 'animate__fadeIn',
     },
     {
       name: "Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край",
       link: timashevskCondit,
+      animateClass: 'animate__fadeIn',
     },
     {
       name: "БИТП Новый умный дом в г. Уфа, ул. Злобина, 31",
       link: ufaUmnDom,
+      animateClass: 'animate__fadeIn',
     },
 ];
 

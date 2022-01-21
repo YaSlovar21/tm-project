@@ -21,14 +21,11 @@ export default class Api {
         })
     }
 */
-    sendCallForm(name, number) {
+    sendCallForm(formDataJson) {
         return fetch(`${this._baseUrl}`, {
             method : 'POST',
             headers: this._headers,
-            body: JSON.stringify({
-                name: name,
-                number: number,
-            }),
+            body: JSON.stringify(formDataJson),
             isBase64Encoded: false
         })
         .then((response) => {

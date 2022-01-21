@@ -14,5 +14,12 @@
 @media screen and (max-width: 1024px) {
     .khan__title_page_heatex {
         font-size: 28px;
+
+        /*переопределить
+              width: 100%;
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+        */
     }
 }

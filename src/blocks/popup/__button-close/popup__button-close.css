@@ -39,10 +39,15 @@
   right: 22px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .popup__button-close_menu {
-      top: 13px;
-      right: 13px;
+    top:30px;
+    left: 10px;
+  }
+  .popup__button-close_type_form {
+    z-index: 22;
+    top:30px;
+    left: 10px;
   }
 }
 

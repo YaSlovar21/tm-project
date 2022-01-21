@@ -5,11 +5,11 @@
 .header-index {
   display: grid;
   position: relative;
-  min-height: 80vh;
+  min-height: 75vh;
  /* max-width: calc(100% - 40px);*/
   grid-template-columns: 790px calc(100% - 790px);
 
-  grid-template-rows: max-content auto max-content;
+  grid-template-rows: min-content min-content max-content;
 }
 
 @media screen and (max-width: 1440px) {
@@ -36,7 +36,7 @@
 
 .header-index__logo-container {
   background-color: #7272723a;
-  padding: 20px;
+  padding: 20px 0 80px 20px;
   display: flex;
   flex-direction: column;
 
@@ -55,10 +55,11 @@
   flex-direction: column;
   flex-basis: 600px;
   justify-content: space-evenly;
+
 }
 
 .header-index__right {
-  padding: 20px 0;
+  padding: 20px 0 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

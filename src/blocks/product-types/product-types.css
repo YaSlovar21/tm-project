@@ -50,10 +50,10 @@
 @media screen and (max-width:768px) {
     .product-types__heading {
 
-        font-size: 24px;
+        font-size: 18px;
         width: 100%;
-        max-width: 80%;
-        margin: 0 auto 30px;
+        max-width: 95%;
+        margin: 0 auto 15px;
     }
 }
 
@@ -69,15 +69,17 @@
 
 @media screen and (max-width:768px) {
     .product-types__p {
-        font-size: 14px;
-        max-width: 80%;
+        font-size: 18px;
+        max-width: 95%;
         margin: 0 auto 10px;
+        line-height: 1.5;
+        font-weight: 400;
     }
 }
 
 @media screen and (max-width:768px) {
   .product-types__p {
-      font-size: 12px;
+      font-size: 14px;
   }
 }
 
@@ -108,7 +110,9 @@
     .product-types__link {
         font-size: 16px;
         text-align: center;
-        margin-left: 10%;
+        margin-left: 2.5%;
+        font-size: 12px;
+        font-weight: 600;
     }
 }
 

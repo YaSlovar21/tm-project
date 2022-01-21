@@ -39,6 +39,7 @@ function createCard(item) {
   const card = new Card({
     name: item.name,
     link: item.link,
+    animateClass: item.animateClass,
     handleImageClick: (desc, link) => {
       //(desc, link) передаем во внутреннем методе карточки
       popupImage.open({
@@ -57,9 +58,10 @@ const projectList = new Section({
     //в этой точке знаем все данные карточки
     //item - объект карточки со всеми свойствами
     const card = createCard(item);
-    projectList.setItem(card);
+    projectList.appendItem(card);
 
-  }
+  },
+
 }, projectsContainerSelector);
 
 projectList.renderItems();

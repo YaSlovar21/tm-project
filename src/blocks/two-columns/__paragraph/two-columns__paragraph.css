@@ -20,11 +20,13 @@
 
   @media screen and (max-width: 768px) {
     .two-columns__paragraph {
-      font-size: 12px;
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
     }
   }
   @media screen and (max-width: 450px) {
     .two-columns__paragraph {
-      font-size: 12px;
+      font-size: 14px;
     }
   }

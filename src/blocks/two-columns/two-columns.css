@@ -1,5 +1,13 @@
+@import url(./__brief/two-columns__brief.css);
+@import url(./__main-text/two-columns__main-text.css);
+@import url(./__paragraph/two-columns__paragraph.css);
+@import url(./__span-accent/two-columns__span-accent.css);
+@import url(./__image/two-columns__image.css);
+
+@import url(./__brief/_page_service/two-columns__brief_page_service.css);
+
 .two-columns {
-    width: 80%;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -35,6 +43,7 @@
 @media screen and (max-width: 769px) {
   .two-columns {
     flex-direction: column;
+    width: 95%;
   }
 }
 

@@ -6,18 +6,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
-  <style>
-    .techniques__title {
-      max-width: 230px;
-      text-align: left;
-      color: #f2f2f2;
-      line-height: 1.4;
-      font-size: 18px;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin: 0;
-    }
-  </style>
+
 </head>
 <body class="page">
   <%= require('html-loader!./inner-metrika.html').default %>
@@ -378,9 +367,9 @@
 
 <section class="description">
   <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
-    <h2 class="two-columns__brief two-columns__brief_wide">Гарантии качества пластинчатых теплообменников</h2>
+    <h2 class="two-columns__brief two-columns__brief_wide">Производство теплообменников</h2>
     <div class="two-columns__main-text">
-      <p class="two-columns__paragraph">На базе пластин собственного производства изготавливаются теплообменники торговой марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 26px;position: relative;top: 8px;" alt="Теплохит"> для различных отраслей: жилично-коммунальное хозяйство, пищевая промышленность и прочие технологические процессы теплообмена.  Производство теплообменников 100% локализовано на территории предприятия.</p>
+      <p class="two-columns__paragraph">На базе пластин собственного производства изготавливаются теплообменники торговой марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> для различных отраслей: жилично-коммунальное хозяйство, пищевая промышленность и прочие технологические процессы теплообмена.  Производство теплообменников 100% локализовано на территории предприятия.</p>
       <p class="two-columns__paragraph">Обеспечивается полный контроль качества на каждом участке производства: сталь на входе проходил лабораторную проверку на соответствие заявленной марке, проводится индивидуальная проверка пластин, собранный теплообменник испытывается гидравлическим давлением.</p>
     </div>
   </div>
@@ -721,7 +710,7 @@
 </template>
 <!--Шаблон карточки проекта-->
 <template id="project-template">
-  <div class="projects__item wow animate__fadeInUp" data-wow-delay="1s">
+  <div class="projects__item" >
     <img  class="projects__image" alt="Здесь будет фото проекта с теплообменником"  src="<%=require('./images/svg-elems/preloader.gif')%>">
     <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
   </div>

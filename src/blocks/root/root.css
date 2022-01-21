@@ -14,12 +14,12 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
   }
-
+/*
 @media screen and (max-width: 1440px) {
     .page {
         max-width: 98%;
     }
-}
+}*/
 
 html, body, main {
     /*position: relative;
@@ -161,7 +161,7 @@ input {
 
   /**/
 .content {
-   
+
 }
 
 .content__title {
