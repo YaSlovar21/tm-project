@@ -49,3 +49,6 @@
 
 
 @import url(../blocks/message/message.css);
+
+@import url(../blocks/button-bem/button-bem.css);
+@import url(../blocks/bem-list/bem-list.css);

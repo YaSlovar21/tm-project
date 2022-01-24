@@ -31,6 +31,10 @@ export default class FormStatic {
             this._formValues[input.name] = input.value;
           }
         });
+        if (localStorage.getItem('clientId')) {
+          this._formValues['clientId'] = localStorage.getItem('clientId');
+        }
+        this._formValues['page'] = window.location.pathname;
         console.log(this._formValues);
         // возвращаем объект значений
         return this._formValues;

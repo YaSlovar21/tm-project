@@ -10,6 +10,7 @@ export default class Message {
       .querySelector('.message')
       .cloneNode(true);
 
+    messageElement.classList.add('animate__fadeInUp', 'animate__animated');
     return messageElement;
   }
 

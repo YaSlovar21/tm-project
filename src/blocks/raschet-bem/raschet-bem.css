@@ -21,6 +21,7 @@
 /* блоки формы */
 @import url(./__field/raschet-bem__field.css);
 @import url(./__field/_type_textarea/raschet-bem__field_type_textarea.css);
+@import url(./__field/_type_block/raschet-bem__field_type_block.css);
 
 @import url(./__label-title/raschet-bem__label-title.css);
 @import url(./__input/raschet-bem__input.css);

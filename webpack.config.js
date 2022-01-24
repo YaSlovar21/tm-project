@@ -29,7 +29,7 @@ module.exports = {
     contacts: './src/pages/contacts.js',
     blogSection: './src/pages/blog-section.js',
     blogPage: './src/pages/blog-page.js',
-    equipment: './src/pages/equipment.js',
+    equipment: './src/pages/equipment1.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -254,7 +254,7 @@ module.exports = {
       },
       template: './src/equipment-selection.html', 
       filename: 'equipment-selection/index.html',
-      chunks: ['equipment',  'all', 'map'],
+      chunks: ['equipment', 'map'],
     }),                                   /*---------СЕКЦИЯ БЛОГА----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

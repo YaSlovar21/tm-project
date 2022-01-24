@@ -16,4 +16,12 @@ export default class DefaultMessage extends Message {
 
   	return this._element;
   }
+
+  generateHTML() {
+    this._element = super._getElement();
+    super._setEventListeners();
+    this._element.querySelector('.message__avatar').src = this._image;
+    this._element.querySelector('.message__paragraph').append(this._text);
+    return this._element;
+  }
 }

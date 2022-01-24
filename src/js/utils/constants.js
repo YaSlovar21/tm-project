@@ -345,14 +345,14 @@ export const popupToConfig = {
 
 export const formValidatorConfig = {
   inputSelector: '.raschet-bem__input',
-  submitButtonSelector: '.button-bem_submit',
+  submitButtonSelector: '.button-bem',
   inactiveButtonClass: 'popup__button-save_disabled',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__input-error_visible'
+  inputErrorClass: 'raschet-bem__input_type_error',
+  errorClass: 'raschet-bem__input-error_visible'
 }
 
 export const raschetValidatorConfig = {
-  inputSelector: '.raschet-bem__input ',
+  inputSelector: '.raschet-bem__input',
   submitButtonSelector: '.raschet-bem__submit-button',
   inactiveButtonClass: 'raschet-bem__submit-button_disabled',
   inputErrorClass: 'raschet-bem__input_type_error',

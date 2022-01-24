@@ -1,4 +1,5 @@
 import './equipment.css'
+import 'animate.css';
 
 import FormValidator from '../js/components/FormValidator.js';
 import FormStatic from '../js/components/FormStatic.js';
@@ -37,6 +38,13 @@ import {
   renderLoading
 } from'../js/utils/utils.js';
 
+try {
+ym(70729528, 'getClientID', function(clientID) {
+  localStorage.setItem('clientId', clientID)
+});
+} catch(err) {
+  console.log(err);
+}
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
   baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
@@ -52,6 +60,10 @@ const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-butt
 const raschetValidatorForm = new FormValidator(raschetValidatorConfig, raschetForm);
 raschetValidatorForm.enableValidation();
 
+const formChoice = document.forms.formChoice;
+formChoice.addEventListener ("change" , ()=>{
+  console.log('678');
+});
 
 const cardsList = new Section({
   data: messageList,
@@ -71,11 +83,17 @@ const cardsList = new Section({
 cardsList.renderItems();
 
 function generateResponseMessage(response) {
-  let generatedMessage = 'Мы получили от Вас запрос! ';
+  const raschetMessage = document.createElement('p');
+  raschetMessage.append('Мы получили от Вас запрос! ');
+  const listParameters = document.createElement('ul');
+
   Object.keys(response).forEach((item)=> {
-    generatedMessage += item + ':' + response[item];
+    const listItem = document.createElement('li');
+    listItem.append(item + ':' + response[item])
+    listParameters.append(listItem);
   });
-  return generatedMessage;
+  raschetMessage.append(listParameters);
+  return raschetMessage;
 }
 
 console.log(generateResponseMessage({"23":"252"}));
@@ -87,7 +105,7 @@ const formRaschetStatic = new FormStatic({
       .then((response) => {
         console.log(response);
         const message = new DefaultMessage({image:logo_dialog, text: generateResponseMessage(response)}, '.message-template_type_default');
-        const messageElement = message.generate();
+        const messageElement = message.generateHTML();
         cardsList.appendItem(messageElement);
         formRaschetStatic.cleanAll();
 

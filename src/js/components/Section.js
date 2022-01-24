@@ -15,6 +15,10 @@ export default class Section {
         this._container.append(element);
     }
 
+    clear() {
+      this._container.innerHTML = '';
+    }
+
     renderItems() {
         this._renderedItems.forEach(item => {
           setTimeout(()=> {

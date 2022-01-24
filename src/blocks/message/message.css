@@ -19,7 +19,7 @@
 }
 
 .message__text_is-active {
-  background: #0085D1;
+  background: #ff5e3a;
   color: white;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .message__text_is-active::before {
-  background: #0085D1;
+  background: #ff5e3a;
 }
 
 .message_type_user .message__text::after {
