@@ -6,6 +6,52 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/blog-proizvodstva"  rel="canonical" />
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: minmax(min-content, 370px)  1fr;
+      grid-template-rows: min-content min-content 1fr;
+      margin: 80px 0 0;
+    }
+    .blog-grid__title {
+      grid-column: 1/2;
+      margin: 0 0 0 20px!important;
+      font-size: 28px!important;
+    }
+    .blog-grid__breadcrums {
+      grid-column: 1/2;
+      margin-left: 20px!important;
+    }
+    .blog-grid__filter {
+      width: calc(100% - 40px);
+      margin: 40px auto;
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .blog-grid__filter-span {
+      color: #ff5e3a;
+      margin: 0;
+      padding: 10px;
+      border: 1px solid #ff5e3a83;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .filter-form__input {
+      position: absolute;
+        opacity: 0;
+    }
+    .filter-form__input:checked + .blog-grid__filter-span {
+      background-color: #ff5e3a8e;
+      color: #202020;
+      font-weight: 700;
+    }
+    .cards-js-rendered {
+      grid-column: 2/3;
+      grid-row: 1/4;
+    }
+  </style>
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
@@ -19,19 +65,46 @@
         <%= require('html-loader!./inner-header.html').default %>
       </div>
   </header>
-  <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
-    <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
-    <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
-  </div>
 
-  <main class="content">
-    <h1 class="content__title">Статьи и информация</h1>
 
-    <section class="infocards">
+  <main class="content blog-grid">
+    <div class="flexburton__breadcrumbs blog-grid__breadcrums">
+      <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
+      <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
+    </div>
+    <h1 class="content__title blog-grid__title">Статьи и информация</h1>
+    <form class="filter-form blog-grid__filter" name="filterForm" id="filterForm">
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="project">
+        <h3 class="blog-grid__filter-span">Проект</h3>
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="gkh">
+        <h3 class="blog-grid__filter-span">ЖКХ</h3>
+
+      </label>
+      <label>
+        <input class="filter-form__input"  type="checkbox" name="filterbox" value="food">
+        <h3 class="blog-grid__filter-span">Пищевые</h3>
+
+      </label>
+      <label>
+        <input class="filter-form__input"  type="checkbox" name="filterbox" value="btp">
+        <h3 class="blog-grid__filter-span">БТП</h3>
+
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="example">
+        <h3 class="blog-grid__filter-span">Пример расчёта</h3>
+
+      </label>
+    </form>
+    <section class="infocards cards-js-rendered">
           <ul class="infoitems">
             <li class="infoitem">
               <div class="infoitem__header">
                 <span class="infoitem__span-button">Проект</span>
+                <span class="infoitem__span-button">Отопление</span>
               </div>
               <a class="infoitem__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
@@ -41,6 +114,8 @@
             <li class="infoitem">
               <div class="infoitem__header">
                 <span class="infoitem__span-button">Проект</span>
+                <span class="infoitem__span-button">ГВС</span>
+                <span class="infoitem__span-button">ТИ82</span>
               </div>
               <a class="infoitem__link" href="info.html">
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
@@ -49,7 +124,7 @@
             </li>
             <li class="infoitem">
               <div class="infoitem__header">
-                <span class="infoitem__span-button">Проект</span>
+                <span class="infoitem__span-button">БТП</span>
               </div>
               <a class="infoitem__link" href="info.html">
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
@@ -58,7 +133,7 @@
             </li>
             <li class="infoitem">
               <div class="infoitem__header">
-                <span class="infoitem__span-button">Проект</span>
+                <span class="infoitem__span-button">Пример расчёта</span>
               </div>
               <a class="infoitem__link" href="info.html">
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
@@ -67,17 +142,18 @@
             </li>
           </ul>
 
-          <button class="infocards__more-button">Показать еще</button>
+          <button class="infocards__more-button button-bem">Показать еще</button>
         </section>
 
-        <section class="up-footer">
-            <ul class="up-footer__list">
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
-              <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
-            </ul>
-        </section>
+
         </main>
+        <!--<section class="up-footer">
+          <ul class="up-footer__list">
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
+          </ul>
+      </section>-->
         <%= require('html-loader!./inner-footer.html').default %>
         </div>
 

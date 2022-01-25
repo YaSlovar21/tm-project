@@ -16,8 +16,8 @@
 }
 
 .tmproduction__heading {
-    text-transform: uppercase;
-    text-transform: uppercase;
+    /*text-transform: uppercase;
+    text-transform: uppercase;*/
     color: #f2f2f2;
     margin: 0 0 88px 0;
     line-height: 1.45;
@@ -26,9 +26,9 @@
 
 .tmproduction__description {
     margin: 0;
-    font-weight: 300;
-    max-width: 383px;
-    font-size: 16px;
+    font-weight: 400;
+    /*max-width: 383px;*/
+    font-size: 18px;
     line-height: 140.02%;
     /* or 22px */
 

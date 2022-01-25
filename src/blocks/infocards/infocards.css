@@ -1,7 +1,7 @@
 /* секция для грида + кнопка "еще" */
 .infocards {
   display: block;
-  padding:70px 0;
+  /*padding:70px 0;*/
 }
 
 @media screen and (min-width: 1440px) {
@@ -16,16 +16,17 @@
   background: transparent;
   cursor: pointer;
 
-  width: 320px;
-  height: 36px;
+  /*width: 320px;
+  height: 36px;*/
+  width: 100%;
   color: #ffffff;
   font-size: 12px;
   font-weight: 500;
 
-  border: 1px solid #424242;
-  border-radius: 5px;
+  /*border: 1px solid #424242;*/
+  border-radius: 4px;
 
-  margin: 50px auto 0;
+  margin: 50px auto 30px;
   display: block;
 }
 
@@ -73,8 +74,8 @@
   flex-direction: column;
   align-items: stretch;
 
-  border-radius: 6px;
-  background-color: rgba(82, 82, 82, 0.23);
+  border-radius: 4px;
+  background-color: rgba(167, 166, 166, 0.082);
 
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
 
@@ -84,8 +85,8 @@
 
 .infoitem__header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   flex-basis: 54px;
   flex-shrink: 0;
@@ -102,14 +103,15 @@
 .infoitem__name {
   margin: 50px 0 20px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   /* identical to box height, or 24px */
 
-  letter-spacing: -0.035em;
+  letter-spacing: 0.015em;
 
   color: #CDCDCD;
+  color: #ededed;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -122,14 +124,14 @@
   margin: 0;
   padding: 0 30px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 140%;
   /* or 20px */
 
-  letter-spacing: -0.035em;
 
-  color: #CDCDCD;
+
+  color: #ededed;
   transition: color .3s ease-in;
 }
 
@@ -157,13 +159,16 @@
 .infoitem__span-button {
   border: none;
   outline: none;
-  border-radius: 30px;
-
+  border-radius: 0 0 4px 4px;
+  margin-right: 8px;
   padding: 10px 15px;
   background-color: #313131;
+  background-color: #ff5e3a80;
+  font-weight: 700;
   color: #ffffff;
 
   font-size: 12px;
+  letter-spacing: 0.015em;
   cursor: pointer;
 
   transition: all 0.2s ease-in;

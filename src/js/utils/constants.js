@@ -44,6 +44,46 @@ export const initialProjects = [
     },
 ];
 
+const blogPath = 'blog-proizvodstva'
+
+export const tags = {
+  'gkh' : 'ЖКХ',
+  'project': 'Проект',
+  'btp': 'БТП',
+}
+
+export const initialArticles = [
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Пластинчатые теплообменники отопления',
+    description: 'Производство теплообменников для отопления',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Пластинчатые пастеризаторы',
+    description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Пластинчатые охладители',
+    description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Пластинчатые теплообменники для гвс',
+    description: 'Производство теплобменников горячего водоснабжения',
+  },
+  {
+    tags: ['gkh', 'btp'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Проектирование блочных тепловых пунктов',
+    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
+  },
+];
 
 
 export const initialHeatEx = {

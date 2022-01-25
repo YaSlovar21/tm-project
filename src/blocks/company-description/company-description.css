@@ -12,11 +12,12 @@
   grid-column: 1/1;
   margin: 0;
   max-width: 100%;
-  background-color: #13131383;
+  background-color: #24242483;
   padding: 0 0 30px 20px;
 }
 .company-description__breadcrubs {
-  background-color: #13131383;
+  background-color: #24242483;
+
   padding-left: 20px;
 }
 
