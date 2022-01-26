@@ -26,6 +26,17 @@ export const projectsContainerSelector = '.projects__items';
 //template карточки проекта
 export const projectTemplateSelector = "#project-template";
 
+export const cardArticleConfig = {
+  cardArticleTemplateSelector: '#article-template',
+  articleCardSelector: '.infoitem',
+  articleTagsSectionSelector: '.infoitem__header',
+  articleTagClass: 'infoitem__span-button',
+  articleHeadSelector: '.infoitem__name',
+  articleDescSelector: '.infoitem__description',
+  articleLinkSelector: '.infoitem__link',
+  cardListSection: '.cards-js-rendered',
+}
+
 export const initialProjects = [
     {
       name: "Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»",
@@ -46,41 +57,74 @@ export const initialProjects = [
 
 const blogPath = 'blog-proizvodstva'
 
-export const tags = {
+export const tagsAliases = {
   'gkh' : 'ЖКХ',
   'project': 'Проект',
   'btp': 'БТП',
+  'food': 'Пищевые',
+  'example': 'Пример расчёта',
+  'prod': 'Продукция',
 }
 
 export const initialArticles = [
   {
-    tags: ['gkh', 'project'],
+    tags: ['gkh', 'prod'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Пластинчатые теплообменники отопления',
+    heading: '1Пластинчатые теплообменники отопления',
     description: 'Производство теплообменников для отопления',
   },
   {
-    tags: ['gkh', 'project'],
+    tags: ['prod', 'food'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Пластинчатые пастеризаторы',
+    heading: '2Пластинчатые пастеризаторы',
     description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
   },
   {
-    tags: ['gkh', 'project'],
+    tags: ['prod', 'food'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Пластинчатые охладители',
+    heading: '3Пластинчатые охладители',
     description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
   },
   {
-    tags: ['gkh', 'project'],
+    tags: ['gkh', 'project', 'example'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Пластинчатые теплообменники для гвс',
+    heading: '4Пластинчатые теплообменники для гвс',
     description: 'Производство теплобменников горячего водоснабжения',
   },
   {
     tags: ['gkh', 'btp'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Проектирование блочных тепловых пунктов',
+    heading: '5Проектирование блочных тепловых пунктов',
+    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
+  },
+  {
+    tags: ['prod', 'food'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: '6Пластинчатые пастеризаторы',
+    description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
+  },
+  {
+    tags: ['prod', 'food'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: '7Пластинчатые охладители',
+    description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
+  },
+  {
+    tags: ['gkh', 'project', 'example'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: '8Пластинчатые теплообменники для гвс',
+    description: 'Производство теплобменников горячего водоснабжения',
+  },
+  {
+    tags: ['gkh', 'btp'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: '9Проектирование блочных тепловых пунктов',
+    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
+  },
+  {
+    tags: ['gkh', 'btp'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: '10Проектирование блочных тепловых пунктов',
     description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
   },
 ];

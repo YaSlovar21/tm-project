@@ -9,7 +9,7 @@
   <style>
     .blog-grid {
       display: grid;
-      grid-template-columns: minmax(min-content, 370px)  1fr;
+      grid-template-columns: max-content  1fr;
       grid-template-rows: min-content min-content 1fr;
       margin: 80px 0 0;
     }
@@ -21,6 +21,10 @@
     .blog-grid__breadcrums {
       grid-column: 1/2;
       margin-left: 20px!important;
+    }
+    .blog-grid__articles {
+      grid-column: 2/3;
+      grid-row: 1/4;
     }
     .blog-grid__filter {
       width: calc(100% - 40px);
@@ -47,10 +51,7 @@
       color: #202020;
       font-weight: 700;
     }
-    .cards-js-rendered {
-      grid-column: 2/3;
-      grid-row: 1/4;
-    }
+
   </style>
 </head>
 <body>
@@ -96,12 +97,15 @@
       <label>
         <input class="filter-form__input" type="checkbox" name="filterbox" value="example">
         <h3 class="blog-grid__filter-span">Пример расчёта</h3>
-
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="prod">
+        <h3 class="blog-grid__filter-span">Продукция</h3>
       </label>
     </form>
-    <section class="infocards cards-js-rendered">
-          <ul class="infoitems">
-            <li class="infoitem">
+    <section class="infocards blog-grid__articles">
+          <ul class="infoitems cards-js-rendered">
+            <!--<li class="infoitem">
               <div class="infoitem__header">
                 <span class="infoitem__span-button">Проект</span>
                 <span class="infoitem__span-button">Отопление</span>
@@ -139,7 +143,7 @@
                 <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
                 <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
               </a>
-            </li>
+            </li>-->
           </ul>
 
           <button class="infocards__more-button button-bem">Показать еще</button>
@@ -155,6 +159,19 @@
           </ul>
       </section>-->
         <%= require('html-loader!./inner-footer.html').default %>
+        <template id="article-template">
+          <li class="infoitem">
+            <div class="infoitem__header">
+              <!--<span class="infoitem__span-button">Проект</span>
+              <span class="infoitem__span-button">ГВС</span>
+              <span class="infoitem__span-button">ТИ82</span>-->
+            </div>
+            <a class="infoitem__link" href="info.html">
+              <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
+              <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
+            </a>
+          </li>
+        </template>
         </div>
 
 </body>

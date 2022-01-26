@@ -30,6 +30,10 @@
   display: block;
 }
 
+.infocards__more-button_hidden {
+  visibility: hidden;
+}
+
 .infocards__notfound {
   text-align: center;
   padding:40px 0;
@@ -54,8 +58,9 @@
 
 @media screen and (max-width: 1180px) {
   .infoitems {
-      grid-template-columns: repeat(auto-fit, 342px);
-      grid-template-rows: repeat(auto-fit, 309px);
+      grid-template-columns: repeat(auto-fit, minmax(342px,1fr));
+      /*grid-template-rows: repeat(auto-fit, 309px);*/
+      grid-auto-rows: 309px;
       gap: 35px 24px;
   }
 }

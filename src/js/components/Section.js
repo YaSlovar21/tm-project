@@ -19,12 +19,28 @@ export default class Section {
       this._container.innerHTML = '';
     }
 
+    renderFiltered(filteredData) {
+     // this._container.classList.add('section-loading');
+     // setTimeout(()=> {
+
+        this.clear();
+        this._renderedItems = filteredData;
+        this._renderedItems.forEach(item => {
+           this._renderer(item);
+        });
+        if (filteredData.length === 0) {
+          this._container.textContent = 'По Вашему условию поиска статей пока нет.'
+        }
+      //  this._container.classList.remove('section-loading');
+     // }, 800)
+    }
+
     renderItems() {
         this._renderedItems.forEach(item => {
           setTimeout(()=> {
            this._renderer(item);
           },this._delay);
-          this._delay += 1500;
+          this._delay += 200;
         });
     }
 }

@@ -9,7 +9,8 @@
 }
 
 .mainmodels__wrapper {
-  width: 1600px;
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 50px;
@@ -25,6 +26,14 @@
     "button models turnbutton";
 }
 
+.mainmodels__wrapper_page_catalog {
+  grid-template-columns: minmax(min-content, 400px) 1fr;
+  max-width: calc(100% - 80px);
+  grid-template-areas:
+    "title models"
+    ". models"
+    "button models";
+}
 .mainmodels__wrapper .models-food {
   display: none;
 }

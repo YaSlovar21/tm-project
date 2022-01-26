@@ -1,33 +1,47 @@
 import './blog-section.css';
 
 import {
-  tags,
-  initialArticles
+  initialArticles,
+  cardArticleConfig,
+  tagsAliases
 } from '../js/utils/constants.js';
 
-import Section from '../js/components/Section.js';
+import { isFullInclude ,articlesMapper} from '../js/utils/utils.js';
 
-const formFilter = document.forms.filterForm;
+import CardArticle from '../js/components/CardArticle.js'
+import SectionPaginator from '../js/components/SectionPaginator';
 
-let checked = [];
+const moreButton = document.querySelector('.infocards__more-button');
 
 
-const cardListSection = '.cards-js-rendered';
+function createArticleCard(item) {
+  const card = new CardArticle({
+    tags: item.tags,
+    linkPath:item.linkPath,
+    title: item.heading,
+    description: item.description,
+    // для супер класса
+    cardTemplateSelector: cardArticleConfig.cardArticleTemplateSelector,
+    cardSelector: cardArticleConfig.articleCardSelector,
+    //animateClass: item.animateClass,
+  }, cardArticleConfig, tagsAliases);
+  const cardToAdd = card.generateCard()
+  return cardToAdd;
+}
 
-const cardsList = new Section({
+const cardsList = new SectionPaginator({
   data: initialArticles,
   renderer: (item) => {
-    const message = item.isOwner
-      ? new UserMessage(item, '.message-template_type_user')
-      : new DefaultMessage(item, '.message-template_type_default');
-
-    const messageElement = message.generate();
-
-    cardsList.setItem(messageElement);
+    const card = createArticleCard(item);
+    cardsList.appendItem(card);
     },
   },
-  cardListSection
+  cardArticleConfig.cardListSection,
+  moreButton,
 );
+
+const formFilter = document.forms.filterForm;
+cardsList.renderItems();
 
 formFilter.addEventListener("change", () => {
   const checkedFromForm = Array.from(formFilter.elements.filterbox).filter((item)=>{
@@ -35,17 +49,13 @@ formFilter.addEventListener("change", () => {
   }).map((item)=> {
     return item.value;
   });
-  checked = checkedFromForm;
-  console.log(checked);
-})
+  console.log(checkedFromForm);
+  if (checkedFromForm.length > 0) {
+    cardsList.renderFiltered(articlesMapper(checkedFromForm, initialArticles));
+  } else {
+    cardsList.renderFiltered(initialArticles);
+  };
+});
 
-function isIntersection(arrA, arrB) {
-  return arrA.some(item => arrB.includes(item));
-}
-
-function articlesMapper(tags, articles) {
-  return articles.filter(item => isIntersection(item.tags, tags));
-}
-
-const articlesToRender = articlesMapper(['btp', 'project'], initialArticles);
-console.log(articlesToRender);
+//const articlesToRender = articlesMapper(['btp', 'project'], initialArticles);
+//console.log(articlesToRender);

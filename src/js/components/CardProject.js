@@ -1,23 +1,16 @@
-export default class Card {
-    constructor({cardTemplateSelector, cardSelector, animateClass} ) {
+import Card from "./Card.js";
 
-        this._cardSelector =cardSelector;
-        this._cardTemplateSelector = cardTemplateSelector;
-        this._animateClass= animateClass;
-
-    }
-
-    _getTemplate() {
-        const cardElement = document
-          .querySelector(this._cardTemplateSelector)
-          .content
-          .querySelector(this._cardSelector)
-          .cloneNode(true);
-        return cardElement;
+export default class CardProject extends Card {
+    constructor({name, link, handleImageClick, ...props}) {
+        super(props);
+        console.log(props);
+        this._name = name;
+        this._link = link;
+        this._handleImageClick = handleImageClick; //функция коллбэк открытия попапа проекта
     }
 
     generateCard() {
-        /*this._element = this._getTemplate();
+        this._element = super._getTemplate();
 
         this._cardImage = this._element.querySelector('.projects__image');
         this._cardHeading = this._element.querySelector(".projects__item-description");
@@ -26,11 +19,13 @@ export default class Card {
         this._cardImage.alt = this._name;
         this._cardHeading.textContent = this._name;
 
+        // если от родителя передался animateClass
         if( this._animateClass) {
-          cardElement.classList.add(this._animateClass, 'wow');
+          this._element.classList.add(this._animateClass, 'wow');
         }
+
         this._setEventListeners();
-        return this._element;*/
+        return this._element;
     }
 
 

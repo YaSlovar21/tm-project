@@ -27,7 +27,7 @@ const messageList = [
 		image: logo_dialog,
 		text: 'Ждём!'
 	},
-  {
+  /*{
 		image: logo_dialog,
 		text: 'Добрый день! Заполнив основные поля формы, наш инженер рассчитает пластинчатый теплобменник за 30 минут! (тест полосы)'
 	},
@@ -50,7 +50,7 @@ const messageList = [
 	{
 		image: logo_dialog,
 		text: 'Ждём! (тест полосы)'
-	},
+	},*/
 ];
 const cardListSection = '.card-list';
 

@@ -32,14 +32,13 @@ import {
 } from '../js/utils/constants.js';
 
 import Section from '../js/components/Section.js';
-import Card from '../js/components/Card.js';
+import CardProject from '../js/components/CardProject.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 
 function createCard(item) {
-  const card = new Card({
+  const card = new CardProject({
     name: item.name,
     link: item.link,
-    animateClass: item.animateClass,
     handleImageClick: (desc, link) => {
       //(desc, link) передаем во внутреннем методе карточки
       popupImage.open({
@@ -47,7 +46,11 @@ function createCard(item) {
         name: desc,
       });
     },
-  }, projectTemplateSelector);
+    
+    cardTemplateSelector: projectTemplateSelector,
+    cardSelector: '.projects__item',
+    animateClass: item.animateClass,
+  });
   const cardToAdd = card.generateCard()
   return cardToAdd;
 }

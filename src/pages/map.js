@@ -42,7 +42,7 @@ const partnerList = new Section({
   data: initialPartners,
   renderer: (itemData) => {
     const partner = createPartner(itemData);
-    partnerList.setItem(partner);
+    partnerList.appendItem(partner);
   }
 }, partnersSectionConfig.containerSelector);
 
