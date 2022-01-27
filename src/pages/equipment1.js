@@ -86,8 +86,8 @@ const formApi = new Api({
 
 const formRaschet = new FormStaticJsRendered({
   templateSelector: '.form-big-template',
-  formSubmitHandler: (formCallbackData) => {
-    //renderLoading(true, raschetSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
+  formSubmitHandler: (formCallbackData, submitButton) => {
+    renderLoading(true, submitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
     formApi.sendBigForm(formCallbackData)
       .then((response) => {
         console.log(response);
@@ -95,12 +95,11 @@ const formRaschet = new FormStaticJsRendered({
         const messageElement = message.generateHTML();
         cardsList.appendItem(messageElement);
         formRaschet.cleanAll();
-        //сделать сообщение об успешной отправке
       })
       .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
       .finally(() => {
           //raschetValidatorForm.disableSaveButton();
-          //renderLoading(false, raschetSubmitButton, 'Отправить', 'Отправка...');
+          renderLoading(false, submitButton, 'Отправить', 'Отправка...');
       });
     console.log(formCallbackData);
     },
@@ -108,13 +107,14 @@ const formRaschet = new FormStaticJsRendered({
     //raschetValidatorForm.cleanAllErrors();
   },
   formInputSelector: '.raschet-bem__input',
+  formSubmitSelector: '.raschet-bem__submit-button',
   validationConfig: raschetValidatorConfig,
 });
 
 const formFree = new FormStaticJsRendered({
   templateSelector: '.form-free-template',
-  formSubmitHandler: (formCallbackData) => {
-    //renderLoading(true, raschetSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
+  formSubmitHandler: (formCallbackData, submitButton) => {
+    renderLoading(true, submitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
     formApi.sendBigForm(formCallbackData)
       .then((response) => {
         console.log(response);
@@ -127,7 +127,7 @@ const formFree = new FormStaticJsRendered({
       .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
       .finally(() => {
           //raschetValidatorForm.disableSaveButton();
-          //renderLoading(false, raschetSubmitButton, 'Отправить', 'Отправка...');
+          renderLoading(false, submitButton, 'Отправить', 'Отправка...');
       });
     console.log(formCallbackData);
     },
@@ -135,6 +135,7 @@ const formFree = new FormStaticJsRendered({
     //raschetValidatorForm.cleanAllErrors();
   },
   formInputSelector: '.raschet-bem__input',
+  formSubmitSelector: '.raschet-bem__submit-button',
   validationConfig: formValidatorConfig,
 });
 

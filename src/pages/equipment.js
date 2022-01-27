@@ -39,12 +39,13 @@ import {
 } from'../js/utils/utils.js';
 
 try {
-ym(70729528, 'getClientID', function(clientID) {
-  localStorage.setItem('clientId', clientID)
-});
+  ym(70729528, 'getClientID', function(clientID) {
+    localStorage.setItem('clientId', clientID)
+  });
 } catch(err) {
   console.log(err);
 }
+
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
   baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
@@ -119,7 +120,7 @@ const formRaschetStatic = new FormStatic({
     console.log(formCallbackData);
     },
   formCleanError: () => {
-    raschetValidatorForm.cleanAllErrors();
+    //raschetValidatorForm.cleanAllErrors();
   }}, raschetForm, '.raschet-bem__input');
 
   formRaschetStatic.setEventListeners();

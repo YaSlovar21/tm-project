@@ -46,7 +46,7 @@ function createCard(item) {
         name: desc,
       });
     },
-    
+
     cardTemplateSelector: projectTemplateSelector,
     cardSelector: '.projects__item',
     animateClass: item.animateClass,
@@ -161,8 +161,12 @@ var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
     speed: 1500,
     mousewheel: true,
     autoplay: false,
-    spacebetween: 350,
-    direction: 'horizontal',
+    effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+    //spacebetween: 350,
+    //direction: 'horizontal',
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

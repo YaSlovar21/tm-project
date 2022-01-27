@@ -7,7 +7,7 @@
 @import url(./__brief/_page_service/two-columns__brief_page_service.css);
 
 .two-columns {
-    max-width: 1600px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;

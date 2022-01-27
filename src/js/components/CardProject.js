@@ -21,7 +21,7 @@ export default class CardProject extends Card {
 
         // если от родителя передался animateClass
         if( this._animateClass) {
-          this._element.classList.add(this._animateClass, 'wow');
+          this._element.classList.add(this._animateClass, 'wow', 'animate__slow');
         }
 
         this._setEventListeners();

@@ -6,12 +6,11 @@
 
     position: relative;
     /*border-bottom: 2px solid rgba(0, 0, 0, 0.527);*/
-    max-width: 1600px;
     margin: 0 auto;
   }
 
   .techniques__title {
-    width: 390px;
+    /*width: 390px;*/
     text-align: left;
     color: #f2f2f2;
     line-height: 1.2;
@@ -21,7 +20,7 @@
     margin: 0;
     max-width: 250px;
   }
-  
+
 .techniques::after {
   position: absolute;
   content: '';

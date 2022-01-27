@@ -3,7 +3,7 @@ import FormValidator from "./FormValidator.js";
 
 
 export default class FormStaticJsRendered {
-    constructor({templateSelector, formInputSelector, formSubmitHandler, formCleanError, validationConfig } ) {
+    constructor({templateSelector, formInputSelector, formSubmitHandler, formCleanError, validationConfig, formSubmitSelector } ) {
         this._formSubmitHandler = formSubmitHandler;
         this._formCleanError = formCleanError;
         //this._formElement = formElement; //.popup__form
@@ -11,6 +11,8 @@ export default class FormStaticJsRendered {
         this._inputSelector = formInputSelector;
         //this._absolutePopup = this._formElement.querySelector('.popup-absolute');
         this._validationConfig = validationConfig;
+
+        this._formSubmitButtonSelector = formSubmitSelector;
     }
 
     _getElement() {
@@ -61,13 +63,15 @@ export default class FormStaticJsRendered {
     _setEventListeners() {
         this._element.addEventListener('submit', (evt) => {
             evt.preventDefault();
-            this._formSubmitHandler(this._getInputValues());
+            this._formSubmitHandler(this._getInputValues(), this._submitButton);
             this._element.reset();
         });
     }
 
     generate() {
       this._element = this._getElement();
+      this._submitButton = this._element.querySelector(this._formSubmitButtonSelector);
+      console.log(this._submitButton);
       this._validator = new FormValidator(this._validationConfig, this._element);
       console.log(this._validator);
       this._validator.enableValidation();

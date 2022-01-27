@@ -77,6 +77,11 @@
     margin: auto 0;
     text-decoration: none;
 }
+
+.turnkey__solution:hover .turnkey__solution-description {
+  color: #FF5E3A;
+}
+
 @media screen and (max-width: 768px) {
   .turnkey__solution {
     flex-direction: row;
@@ -125,6 +130,7 @@
 
 .turnkey__solution-description {
   text-align: center;
+  transition: color .4s ease-in;
 }
 
 

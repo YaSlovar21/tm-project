@@ -116,6 +116,7 @@
 
 .info__sale {
     line-height: 1.6;
+    font-size: 18px;
 }
 
 
@@ -218,6 +219,7 @@
 /*СТАНДАРТНЫЙ ПАРАГРАФ*/
 .info__paragraph {
     line-height: 1.6;
+    font-size: 18px;
 }
 
 
