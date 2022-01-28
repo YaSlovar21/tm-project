@@ -29,6 +29,7 @@
             path {
               opacity: 0.9;
               stroke-width: 1;
+              transition: all 1s ease-in;
             }
             </style>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M289.641 1095.45C293.779 1091.31 297.917 1087.17 302.056 1083.03C303.038 1082.05 304.644 1082.05 305.625 1083.03C309.763 1087.17 313.901 1091.31 318.039 1095.45C319.021 1096.43 319.021 1098.03 318.039 1099.01C317.377 1099.68 316.715 1100.34 316.054 1101C307.911 1101 299.769 1101 291.626 1101C290.965 1100.34 290.303 1099.68 289.641 1099.01C288.66 1098.03 288.66 1096.43 289.641 1095.45V1095.45Z" stroke="#EBEBEB" stroke-opacity="0.1" stroke-width="2" style="fill: rgb(50, 50, 52);"></path>
@@ -394,10 +395,10 @@
               <div class="swiper-slide slider-text-sborka__feat">
                   <h3 class="slider-text-sborka__head">Пакет пластин</h3>
                   <p class="text-colot-white slider-text-sborka__text">
-                      <ul class="list">
-                        <li class="list__item text-colot-white">Теплообменные пластины и уплотнения собственного производства</li>
-                        <li class="list__item text-colot-white">Низкие цены за счет 100% локализации производства</li>
-                        <li class="list__item text-colot-white">Высокая эффективность и надежность</li>
+                      <ul>
+                        <li class=" text-colot-white">Теплообменные пластины и уплотнения собственного производства</li>
+                        <li class=" text-colot-white">Низкие цены за счет 100% локализации производства</li>
+                        <li class=" text-colot-white">Высокая эффективность и надежность</li>
                       </ul>
                     </p>
               </div>
@@ -408,11 +409,11 @@
               <div class="swiper-slide slider-text-sborka__feat">
                   <h3 class="slider-text-sborka__head">Конструкция</h3>
                   <p class="info__sale text-colot-white slider-text-sborka__text">
-                    <ul class="list">
-                      <li class="list__item text-colot-white">Стальные шпильки из стали 40Х с накатной резьбой</li>
-                      <li class="list__item text-colot-white">Удлиненная гайка из стали 40Х с повышенным запасом прочности</li>
-                      <li class="list__item text-colot-white">Направляющие балки из нержавеющей стали</li>
-                      <li class="list__item text-colot-white">Надежная конструкция рамы</li>
+                    <ul class="">
+                      <li class=" text-colot-white">Стальные шпильки из стали 40Х с накатной резьбой</li>
+                      <li class=" text-colot-white">Удлиненная гайка из стали 40Х с повышенным запасом прочности</li>
+                      <li class=" text-colot-white">Направляющие балки из нержавеющей стали</li>
+                      <li class=" text-colot-white">Надежная конструкция рамы</li>
                     </ul>
                   </p>
               </div>
@@ -447,7 +448,7 @@
             </div>
         </div>
         <svg class="slider-sborka__svg" width="404" height="404" viewBox="0 0 404 404" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index: -1;">
-            <circle class="circle_wow" cx="202" cy="202" r="201" stroke="#E7441C" stroke-width="3"/>
+            <circle class="circle_wow" cx="202" cy="202" r="201" stroke-dasharray="1262" stroke="#E7441C" stroke-width="3" />
         </svg>
         <div class="slider-sborka_pagination"></div>
     </div>
@@ -626,8 +627,14 @@
 
 <!--SEO секция ( применение пластинчатых теплообменников )-->
 <section class="kaufman kaufman_bg_fixed">
-    <h2 class="section-title section-title_theme_dark">Применение пластинчатых теплообменников</h2>
-    <p class="section-subtitle section-subtitle_theme_dark">Сферы и теплообменные процессы</p>
+    <!--<div style="display: flex; flex-direction: row-reverse; width: 100%; justify-items: flex-start;">
+      <h2 class="" style="font-size: 48px; color: white; max-width: 800px; margin: 0;     background-color: #1f1f1f70;">Применение пластинчатых теплообменников</h2>
+      <p class="" style="    color: #ff5e3a;
+      font-size: 18px;
+      font-weight: 400;">Сферы и теплообменные процессы</p></div>
+    </div>-->
+    <h2 class="section-title section-title_theme_dark" style="font-size: 48px;">Применение пластинчатых теплообменников</h2>
+    <p class="section-subtitle section-subtitle_theme_dark">Сферы и теплообменные процессы</p></div>
     <div class="table table_theme_dark">
         <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">Горячее водоснабжение</h3>
@@ -717,7 +724,7 @@
 </template>
 <!--Форма модального окна с картинкой-->
 <div class="popup popup_darked popup-viewport">
-  <div class="popup__container">
+  <div class="popup__container popup__container_type_image">
       <button class="popup__button-close link-beauty" type="button"></button>
       <div class="popup__image-view">
           <img class="popup__image" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">

@@ -115,6 +115,69 @@
             <div class="swiper-scrollbar"></div>
         </div>
         </section>
+
+        <style>
+          .form__select {
+            border-radius: 0px;
+            border: none;
+            color: #fff;
+            font-weight: 300;
+            font-size: 16px;
+            margin-left: 10px;
+            border-bottom: 1px solid #c2c2c2;
+            background: transparent;
+            /*height: 36px;*/
+            /*padding: 0 5px;*/
+            padding: 7px 0;
+            box-sizing: border-box;
+            outline: none;
+            position: relative;
+            transition: all .6s linear;
+          }
+          .formbig__subst-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 1.2;
+            letter-spacing: -0.035em;
+          }
+          .formbig__subst-title_hot {
+            color: #D92921;
+          }
+          .formbig__subst-title_cold {
+            color: #0093DD;
+          }
+
+          .form__popup {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            padding: 30px;
+            box-sizing: border-box;
+            left: 0;
+            height: 100%;
+            background-color: #2f2f2f;
+          }
+          .form__popup_opened {
+            display: flex;
+          }
+          .form__close-popup {
+            font-size: 16px;
+            color: #FF5E3A;
+            font-weight: 500;
+            display: flex;
+            background: none;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            align-self: flex-start;
+          }
+        </style>
+
         <section class="inforaschet">
           <div class="inforaschet__desc">
             <h2 class="inforaschet__title">Расчёт пластинчатого теплообменника</h2>
@@ -126,144 +189,139 @@
             <p class="inforaschet__action">Вы также можете оставить заявку на обратный звонок, инженер перезвонит Вам в течение 30 секунд</p>
             <button class="inforaschet__button-action">Заказать звонок</button>-->
           </div>
-          <div class="section-submit" style="max-width: 768px; margin: 0 auto;">
-
-          </div>
+          <form class="form form-big"  novalidate>
+            <div style="display: flex;justify-content: space-between; margin-bottom: 100px;">
+              <div style="display: flex; align-items: center;">
+                <h3 class="formbig__subst-title formbig__subst-title_hot">Греющая сторона</h3>
+                <select class="form__select" name="t_typesr">
+                  <option class="raschet__option" value="Вода">вода</option>
+                  <option  class="raschet__option" value="Пар">пар</option>
+                  <option  class="raschet__option" value="Масло">масло</option>
+                </select>
+              </div>
+              <div style="text-align: right; display: flex; align-items: center;">
+                <h3 class="formbig__subst-title formbig__subst-title_cold">Нагреваемая сторона</h3>
+                <select class="form__select" name="t_typesr">
+                  <option class="raschet__option" value="Вода">вода</option>
+                  <option  class="raschet__option" value="Пар">пар</option>
+                  <option  class="raschet__option" value="Масло">масло</option>
+                </select>
+              </div>
+            </div>
+            <div style="display:flex; justify-content: space-between; flex-direction: row;">
+              <fieldset class="" style="border: none;
+                                padding: 0;
+                                margin: 0;
+                                flex-basis: 267px;
+                                min-width: 0;">
+                <label class="form__field">
+                  <input name="t_gre_mass" id="temp-grin-input" class="form__input" novalidate required min="1">
+                  <span class="form__placeholder temp-grin-input-placeholder">
+                    <span class="big-form-desc">Температура среды</span><span class="big-form-mob">t</span>  на входе
+                  </span>
+                  <span class="form__input-error temp-grin-input-error"></span>
+                </label>
+                <label class="form__field" style="margin-top: 115px;">
+                  <input type=""  id="temp-grout-input" class="form__input" novalidate required minlength="7">
+                  <span class="form__placeholder temp-grout-input-placeholder">
+                    <span  class="big-form-desc">Температура среды</span><span class="big-form-mob">t</span> на выходе
+                  </span>
+                  <span class="form__input-error temp-grout-input-error"></span>
+                </label>
+              </fieldset>
+              <img src="./images/to_online.png" style="flex-basis: 172px; object-fit: contain;">
+              <fieldset class="" style="border: none;
+                            padding: 0;
+                            margin: 0;
+                            flex-basis: 287px;
+                            min-width: 0;">
+                <label class="form__field">
+                  <input type="" name="t_gre_mass" id="temp-nagrout-input" class="form__input" required minlength="1">
+                  <span class="form__placeholder temp-nagrout-input-placeholder">
+                    <span class="big-form-desc">Температура среды</span><span  class="big-form-mob">t</span> на выходе
+                  </span>
+                  <span class="form__input-error temp-nagrout-input-error"></span>
+                </label>
+                <label class="form__field" style="margin-top: 115px;">
+                  <input type=""  id="temp-nagrin-input" class="form__input"  required minlength="7">
+                  <span class="form__placeholder temp-nagrin-input-placeholder">
+                    Температура среды на входе
+                  </span>
+                  <span class="form__input-error temp-nagrin-input-error"></span>
+                </label>
+              </fieldset>
+            </div>
+            <div style="display:flex;align-self:flex-end; align-items: center; max-width: 287px; margin-top: 77px;">
+              <label class="form__field" style="min-width: 0;">
+                <input type=""  id="rash-input" class="form__input"  required minlength="7">
+                <span class="form__placeholder rash-input-placeholder">
+                  Расход нагреваемой среды
+                </span>
+                <span class="form__input-error rash-input-error"></span>
+              </label>
+              <select class="form__select" name="t_typesr">
+                <option class="raschet__option" value="Вода">м3/ч</option>
+                <option class="raschet__option" value="Пар">т/ч</option>
+              </select>
+            </div>
+            <div style="display:flex;align-self:flex-end; align-items: center; max-width: 287px;">
+              <label class="form__field" style="min-width: 0;">
+                <input type=""  id="q-input" class="form__input"  required minlength="7">
+                <span class="form__placeholder q-input-placeholder">
+                  Мощность теплообменника
+                </span>
+                <span class="form__input-error q-input-error"></span>
+              </label>
+              <select class="form__select" name="t_typesr">
+                <option class="raschet__option" value="Вода">квт</option>
+                <option class="raschet__option" value="Пар">мвт</option>
+              </select>
+            </div>
+            <button type="button" class="form-popup-open-button" style="margin-top:32px;background-color:#FF5E3A; align-self: stretch; border: none; font-weight: 800; font-size: 18px; color: white; padding: 16px 0;">Рассчитать теплообменник</button>
+            <div class="form__popup form__popup_opened">
+              <label class="form__field" style="min-width: 0;">
+                <input type=""  id="q-input" class="form__input"  required minlength="7">
+                <span class="form__placeholder q-input-placeholder">
+                  Как к Вам обращаться?
+                </span>
+                <span class="form__input-error q-input-error"></span>
+              </label>
+              <label class="form__field" style="min-width: 0;">
+                <input type=""  id="q-input" class="form__input"  required minlength="7">
+                <span class="form__placeholder q-input-placeholder">
+                  Куда мы можем отправить расчёт (номер телефона, email?)
+                </span>
+                <span class="form__input-error q-input-error"></span>
+              </label>
+              <button type="submit" class="popup__button-save popup__button-save_type_callback">Отправить</button>
+              <button type="button" class="form__close-popup">⟵Назад</button>
+            </div>
+          </form>
         </section>
 
         <section class="map">
           <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-          <div class="map__list-container">
-            <ul class="map__list">
-
-            </ul>
+          <ul class="map__list">
             <!--Сюда встанут карточки партнеров-->
             <div class="map__popup">
               <span class="map__popup-close">&lt;-- Назад</span>
               <ul class="map__popup-container"></ul>
             </div>
-          </div>
+          </ul>
           <div class="map__partner"></div>
 
         </section>
-          <div class="up-footer">
+          <section class="up-footer">
             <ul class="up-footer__list">
               <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
               <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
               <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
             </ul>
-          </div>
+          </section>
           </main>
           <%= require('html-loader!./inner-footer.html').default %>
         </div>
 
-
-        <template class="form-big-template">
-          <form  class="popup__form raschet-bem raschet-bem_bg_none" style="padding-top: 20px;" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
-            <!--Среды вход/выход-->
-            <div class="raschet-bem__substantions">
-              <div class="raschet-bem__subst-selection-block">
-                <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
-                <select data-alias="Греющая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_gr" name="t_typesr">
-                  <option selected value="Вода">вода</option>
-                  <option value="Пар">пар</option>
-                  <option value="Масло">масло</option>
-                </select>
-                <span class="raschet-bem__input-error sreda_gr-error"></span>
-              </div>
-              <div class="raschet-bem__subst-selection-block">
-                <h3 class="raschet-bem__subst-title raschet-bem__subst-title_cold">Нагреваемая сторона</h3>
-                <select data-alias="Нагреваемая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_nagr" name="t_typesr">
-                  <option selected value="Вода">вода</option>
-                  <option value="Пар">пар</option>
-                  <option value="Масло">масло</option>
-                </select>
-                <span class="raschet-bem__input-error sreda_nagr-error"></span>
-              </div>
-            </div>
-            <!--Температурные графики (темп - изображения - темп)-->
-            <div class="raschet-bem__temperatures">
-              <div class="raschet-bem__temperature-set">
-                <label class="raschet-bem__field">
-                  <span class="raschet-bem__label-title ">Температура среды на входе</span>
-                  <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
-
-                  <span class="raschet-bem__input-error temp-grin-input-error"></span>
-                </label>
-                <label class="raschet-bem__field">
-                  <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                  <input data-alias="Температура греющей среды на выходе" type="text" name="temperature_of_the_heating_out" id="temp-grout-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
-                  <span class="raschet-bem__input-error temp-grout-input-error"></span>
-                </label>
-              </div>
-              <img class="raschet-bem__temperature-img" src="<%=require('./images/to_online.png')%>" alt="Рассчитываемый теплообменник">
-              <div class="raschet-bem__temperature-set">
-                <label class="raschet-bem__field">
-                  <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                  <input data-alias="Температура нагреваемой среды на выходе" type="text" name="temperature_of_the_heated_out"  id="temp-nagrout-input" class="raschet-bem__input raschet-bem__input_type_flex" required  minlength="1">
-                  <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
-                </label>
-                <label class="raschet-bem__field">
-                  <span class="raschet-bem__label-title">Температура среды на входе</span>
-                  <input data-alias="Температура нагреваемой среды на входе" type="text"  name="temperature_of_the_heated_in" id="temp-nagrin-input" class="raschet-bem__input raschet-bem__input_type_flex" minlength="1" required>
-                  <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
-                </label>
-              </div>
-            </div>
-            <!--Дополнительные параметры (мощность, расход по нагреваемой среде)-->
-            <div class="raschet-bem__parameters">
-              <p class="raschet-bem__comment">Для расчёта необходима мощность теплообменника <span class="span_color_orange">или</span> расход по нагреваемой среде</p>
-              <div class="raschet-bem__subst-selection-block" style="flex-basis: 187px; align-items: stretch; margin-right: 30px;">
-                  <div class="raschet-bem__field">
-                    <label for="q-input">
-                      <span class="raschet-bem__label-title">Мощность теплообменника</span>
-                    </label>
-                    <div style="display: flex; margin: 0; padding: 0; border: none;">
-                      <input data-alias="Мощность" type="text" name="moshnost"  id="q-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                      <select class="raschet-bem__select" name="t_typesr1" >
-                        <option selected value="квт">квт</option>
-                        <option value="мвт">мвт</option>
-                      </select>
-                      <span class="raschet-bem__input-error q-input-error"></span>
-                    </div>
-                </div>
-              </div>
-
-              <div class="raschet-bem__subst-selection-block" style="flex-basis: 199px;align-items: stretch;">
-                <div class="raschet-bem__field">
-                  <label for="rash-input">
-                    <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
-                  </label>
-                  <div style="display: flex; margin: 0; padding: 0; border: none;">
-                    <input data-alias="Расход нагреваемой среды" name="rashod" type="text"  id="rash-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                    <select class="raschet-bem__select" name="t_typesr2" >
-                      <option selected value="м3/ч">м3/ч</option>
-                      <option value="т/ч">т/ч</option>
-                    </select>
-                    <span class="raschet-bem__input-error rash-input-error"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <h3 class="raschet-bem__title raschet-bem__title_subtitle">Куда мы можем отправить расчёт?</h3>
-                <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
-                <label class="raschet-bem__field raschet-bem__field_type_block">
-                  <span class="raschet-bem__label-title">Как к Вам обращаться?</span>
-                  <input name="name" data-alias="Имя" type="text"  id="fio-input" class="raschet-bem__input"  required minlength="1">
-                  <span class="raschet-bem__input-error fio-input-error"></span>
-                </label>
-                <label class="raschet-bem__field raschet-bem__field_type_block">
-                  <span class="raschet-bem__label-title">Почта или телефон, куда удобнее принять расчёт</span>
-                  <input name="contact" data-alias="Контакт" type="email"  id="contact-input" class="raschet-bem__input"  required>
-                  <span class="raschet-bem__input-error contact-input-error"></span>
-                </label>
-              </fieldset>
-              <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">
-
-                <button type="submit" class="raschet-bem__submit-button button-bem" style="flex-basis: 100%;">Отправить</button>
-              </div>
-          </form>
-        </template>
       <!--Шаблон элемента партнера на карте-->
       <template id="partner-item-template">
         <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>

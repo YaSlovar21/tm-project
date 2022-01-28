@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import WOW from 'wow.js';
-import anime from 'animejs/lib/anime.es.js';
+//import anime from 'animejs/lib/anime.es.js';
 import './pto.css';
 
 const wowAnimation = new WOW({
@@ -34,6 +34,7 @@ import {
 import Section from '../js/components/Section.js';
 import CardProject from '../js/components/CardProject.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
+import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 
 function createCard(item) {
   const card = new CardProject({
@@ -61,10 +62,9 @@ const projectList = new Section({
     //в этой точке знаем все данные карточки
     //item - объект карточки со всеми свойствами
     const card = createCard(item);
+    card.setAttribute('data-wow-delay', item['data-wow-delay']);
     projectList.appendItem(card);
-
   },
-
 }, projectsContainerSelector);
 
 projectList.renderItems();
@@ -74,7 +74,7 @@ popupImage.setEventListeners();
 
 
 //интеактивные пластины
-import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
+
 const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);
 
 popupHeatEx.setEventListeners();
@@ -82,7 +82,6 @@ const platesSvg = document.querySelector('.plates__svg');
 
 platesSvg.addEventListener("click", (evt) => {
   popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
-
   console.log(initialHeatEx[evt.target.dataset.to]);
 });
 
@@ -138,14 +137,6 @@ var mySwiper1 = new Swiper('.khan__book-container', {
   },
 });
 
-
-try {
-  var path = document.querySelector('.circle_wow');
-  var len_dash = path.getTotalLength();
-}
-catch (err) {
-
-}
 //console.log(len_dash);
 
 const advantages = {
@@ -184,6 +175,13 @@ var swiper_text_on_sborka = new Swiper('.slider-text-sborka', {
 
 });
 
+try {
+  var pathCircle = document.querySelector('.circle_wow');
+  var len_dash = pathCircle.getTotalLength();
+}
+catch (err) {
+}
+
 var slider_sborka = new Swiper('.slider-sborka', {
   // Optional parameters
   direction: 'horizontal',
@@ -208,16 +206,15 @@ var slider_sborka = new Swiper('.slider-sborka', {
         const dash_current = (1- current/total)*len_dash;
         //console.log(dash_current);
         //console.log()
-        anime({
+        pathCircle.style.strokeDashoffset = `${dash_current}px`;
+        /*anime({
             targets: '.circle_wow',
             strokeDashoffset: [anime.setDashoffset, dash_current],
             duration: 100,
-        });
+        });*/
         return a;
     }
   },
-
-
 });
 
 slider_sborka.controller.control = swiper_text_on_sborka;
@@ -244,10 +241,54 @@ slider_sborka.on('slideChange', function () {
 });
 
 
-let pageY= 0;
-let isPlaying = 1;
+/**/
 
-const el = document.querySelectorAll(".honeycomb path");
+const honeys = Array.from(document.querySelectorAll('.honeycomb path'));
+const partLength = honeys.length/4;
+
+function generatePart() {
+  return Array.from({length: partLength}, function(value, index) {
+    return honeys[Math.floor(Math.random() * honeys.length)];
+  });
+}
+
+function generateParts(num) {
+  return Array.from({length: num}, function() {
+    return generatePart();
+  })
+}
+
+function highLightPart(someElementsArray) {
+  someElementsArray.forEach((item) => {
+    item.setAttribute('style', 'fill:rgb(255, 94, 58)')
+  })
+}
+
+function turnOffHighLightPart(someElementsArray) {
+  someElementsArray.forEach((item) => {
+    item.setAttribute('style', 'fill:rgb(50, 50, 52)');
+  })
+}
+
+const numberOfParts = 5;
+const generatedParts = generateParts(numberOfParts);
+let i = 0;
+setInterval(()=> {
+  highLightPart(generatedParts[i]);
+  setTimeout(()=> {
+    turnOffHighLightPart(generatedParts[i]);
+    if (i===numberOfParts-1) {
+      i=0;
+    } else {
+      i+=1;
+    }
+  }, 2600);
+},3000)
+
+//let pageY= 0;
+//let isPlaying = 1;
+//const el = document.querySelectorAll(".honeycomb path");
+/*
 function randomValues() {
   if (pageY < 300) {
     anime({
@@ -278,3 +319,4 @@ window.addEventListener("scroll", function () {
     isPlaying = 1;
   }
 });
+*/

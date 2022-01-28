@@ -28,7 +28,11 @@ export default class SectionPaginator extends Section {
         this._countBase = 3;
         this.clear();
         if (filteredData.length === 0) {
-          this._container.textContent = 'По Вашему условию поиска статей пока нет.'
+          const findedNo = document.createElement('p');
+          findedNo.setAttribute('style', 'color:#f2f2f2; font-size:24px; margin-left: 10px');
+          findedNo.textContent = 'По Вашему условию поиска статей пока нет.';
+          this._container.append(findedNo);
+          //this._container.textContent = 'По Вашему условию поиска статей пока нет.'
         }
         this.renderItems();
         this._container.classList.remove('section-loading');

@@ -6,6 +6,9 @@ export function renderLoading(boolOnLoading, buttonElement, textDefault, textOnL
     }
 }
 
+/* Фильтры статей в блоге */
+
+// нигде не используется
 export function isIntersection(arrA, arrB) {
   return arrA.some(item => arrB.includes(item));
 }

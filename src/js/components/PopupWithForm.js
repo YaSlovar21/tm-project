@@ -1,12 +1,14 @@
 import Popup from './Popup.js';
 
 export default class PopupWithForm extends Popup {
-    constructor({formSubmitHandler, formCleanError}, popupSelector, formSelector, formInputSelector) {
+    constructor({formSubmitHandler, formCleanError, checherValidation}, popupSelector, formSelector, formInputSelector) {
         super(popupSelector);
         this._formSubmitHandler = formSubmitHandler;
         this._formCleanError = formCleanError;
         this._formElement = this._modal.querySelector(formSelector); //.popup__form
         this._inputSelector = formInputSelector;
+
+        this._checker = checherValidation;
     }
 
     //собираем поля формы
@@ -37,8 +39,9 @@ export default class PopupWithForm extends Popup {
         super.setEventListeners();
         this._formElement.addEventListener('submit', (evt) => {
             evt.preventDefault();
-
-            this._formSubmitHandler(this._getInputValues());
+            if (this._checker()) {
+              this._formSubmitHandler(this._getInputValues());
+            }
         });
     }
 }

@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1440px) {
   .infocards {
-    max-width: calc(100% - 40px);
+    width: calc(100% - 40px);
     margin: 0 auto;
   }
 }
@@ -117,7 +117,7 @@
 
   color: #CDCDCD;
   color: #ededed;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 30px;

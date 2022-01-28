@@ -760,7 +760,10 @@
       <button class="popup__button-close popup__button-close_menu"></button>
       <nav class="popup__menu">
         <a class="popup__navlink" href="/">Главная</a>
-        <a class="popup__navlink" href="production.html">Продукция</a>
+        <label class="choice-form__label">
+          <input type="radio" value="free" class="choice-form__input" name="radio">
+          <a class="popup__navlink" href="production.html">Продукция</a>
+        </label>
         <a class="popup__navlink" href="/saved-movies">Сервис</a>
         <a class="popup__navlink" href="info_main.html">Блог производителя</a>
         <a class="popup__navlink" href="about.html">О компании</a>
@@ -888,7 +891,7 @@
 
   <!--Форма модального окна с картинкой-->
   <div class="popup popup_darked popup-viewport">
-    <div class="popup__container">
+    <div class="popup__container popup__container_type_image">
         <button class="popup__button-close link-beauty" type="button"></button>
         <div class="popup__image-view">
             <img class="popup__image" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">

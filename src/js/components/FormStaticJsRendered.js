@@ -1,4 +1,4 @@
-import FormValidator from "./FormValidator.js";
+import FormValidatorNew from "./FormValidatorNew.js";
 
 
 
@@ -63,8 +63,12 @@ export default class FormStaticJsRendered {
     _setEventListeners() {
         this._element.addEventListener('submit', (evt) => {
             evt.preventDefault();
-            this._formSubmitHandler(this._getInputValues(), this._submitButton);
-            this._element.reset();
+            if (!this._validator.hasInvalidInput()) {
+              this._formSubmitHandler(this._getInputValues(), this._submitButton);
+              this._element.reset();
+            } else {
+              this._validator.showErrors();
+            }
         });
     }
 
@@ -72,7 +76,7 @@ export default class FormStaticJsRendered {
       this._element = this._getElement();
       this._submitButton = this._element.querySelector(this._formSubmitButtonSelector);
       console.log(this._submitButton);
-      this._validator = new FormValidator(this._validationConfig, this._element);
+      this._validator = new FormValidatorNew(this._validationConfig, this._element);
       console.log(this._validator);
       this._validator.enableValidation();
       this._setEventListeners();

@@ -69,6 +69,10 @@ try {
     ym(70729528, 'getClientID', function(clientID) {
       localStorage.setItem('clientId', clientID)
     });
+
+    ym(70729528, 'userParams', {
+      UserID: localStorage.getItem('clientId'),
+  });
   }
 } catch(err) {
   console.log(err);

@@ -37,3 +37,7 @@
   margin: 0;
 }
 
+.popup__container_type_image {
+  width: auto;
+}
+

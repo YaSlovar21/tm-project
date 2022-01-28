@@ -38,9 +38,11 @@ export default class Section {
     renderItems() {
         this._renderedItems.forEach(item => {
           setTimeout(()=> {
-           this._renderer(item);
+            item['data-wow-delay'] = `${this._delay/1000}s`;
+            this._renderer(item);
+            this._delay += 300;
           },this._delay);
-          this._delay += 200;
+
         });
     }
 }

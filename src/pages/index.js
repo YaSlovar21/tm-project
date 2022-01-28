@@ -7,7 +7,7 @@ import anime from 'animejs/lib/anime.es.js';
 import Card from '../js/components/Card.js';
 
 
-import FormValidator from '../js/components/FormValidator.js';
+import FormValidatorNew from '../js/components/FormValidatorNew.js';
 import PopupWithForm from '../js/components/PopupWithForm.js';
 import PopupWithBigForm from '../js/components/PopupWithBigForm.js';
 
@@ -69,9 +69,9 @@ const platesSvg = document.querySelector('.plates__svg');
 
 
 
-const formValidatorCallBack = new FormValidator(formValidatorConfig, formCallBack);
+const formValidatorCallBack = new FormValidatorNew(formValidatorConfig, formCallBack);
 formValidatorCallBack.enableValidation();
-const raschetValidatorForm = new FormValidator(raschetValidatorConfig, raschetForm);
+const raschetValidatorForm = new FormValidatorNew(raschetValidatorConfig, raschetForm);
 raschetValidatorForm.enableValidation();
 
 const formApi = new Api({
@@ -121,6 +121,16 @@ const popupCallBack = new PopupWithForm({
   formCleanError: () => {
     formValidatorCallBack.cleanAllErrors();
   },
+  checherValidation: (formElement) => {
+    if (!formValidatorCallBack.hasInvalidInput()) {
+
+      return true;
+    } else {
+      formValidatorCallBack.showErrors();
+      return false;
+    }
+  }
+
 }, callBackPopupSelector, '.popup__form','.raschet-bem__input');
 
 
