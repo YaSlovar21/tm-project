@@ -39,8 +39,8 @@ export default class FormValidatorNew {
   };
 
   //проверяем все поля на ошибку, если хоть одно есть, возвращаем true
-  hasInvalidInput() {
-    return this._inputList.some((inputElement) => {
+  _hasInvalidInput(inputList) {
+    return inputList.some((inputElement) => {
       return !inputElement.validity.valid;
     });
   }
@@ -57,6 +57,10 @@ export default class FormValidatorNew {
 
   toggleButtonState() {
     this._toggleButtonState(this._inputList, this._buttonElement);
+  }
+
+  hasInvalidInput() {
+    return this._hasInvalidInput(this._inputList);
   }
 
   disableSaveButton() {

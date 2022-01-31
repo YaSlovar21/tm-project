@@ -21,3 +21,21 @@ export function isFullInclude(arrA, arrB) {
 export function articlesMapper(tags, articles) {
   return articles.filter(item => isFullInclude(tags, item.tags));
 }
+
+export function useWindowSize() {
+  let windowSize = window.innerWidth;
+
+  function handleWindowResize() {
+    setTimeout(setWindowWidth(window.innerWidth), 1500);
+
+  }
+
+  function setWindowWidth(updatedWidth) {
+    windowSize = updatedWidth;
+    //console.log(windowSize);
+  }
+
+  window.addEventListener('resize', handleWindowResize)
+
+  return windowSize;
+}

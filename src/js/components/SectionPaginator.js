@@ -3,29 +3,52 @@ import Section from "./Section";
 // setItem(element)
 // appendItem(element)
 // clear()
+import { useWindowSize } from "../utils/utils.js";
 
 export default class SectionPaginator extends Section {
-    constructor(props,cardsContainerSelector, moreButtonElement) {
+    constructor(props, cardsContainerSelector, moreButtonElement) {
         super(props, cardsContainerSelector);
 
         this._countBase = 3;
         this._buttonMore = moreButtonElement;
-        console.log(this._buttonMore);
+
+        // проверяем необходимость MoreButton
+        this._checkMoreButtonState();
+
+        this._windowSize = useWindowSize();
+
+        this._additionalCount = this.additionalCount();
+        console.log(this._additionalCount);
         this._buttonMore.addEventListener("mousedown", ()=>{
-          this._countBase +=2;
-          /*if (this._countBase > this._renderedItems.length) {
-            this._buttonMore.classList.add('infocards__more-button_hidden');
-          }*/
+
+          this._countBase += this._additionalCount;
+          console.log(this._windowSize);
+          // проверяем необходимость MoreButton
+          this._checkMoreButtonState();
           this.clear();
           this.renderItems();
       });
     }
 
+
+
+    additionalCount() {
+      if (this._windowSize > 1500) {
+        return 3;
+      }
+      if (this._windowSize <= 1500) {
+        return 1;
+      }
+
+    }
     renderFiltered(filteredData) {
       this._container.classList.add('section-loading');
       setTimeout(()=> {
         this._renderedItems = filteredData;
         this._countBase = 3;
+
+        this._checkMoreButtonState();
+
         this.clear();
         if (filteredData.length === 0) {
           const findedNo = document.createElement('p');
@@ -37,6 +60,27 @@ export default class SectionPaginator extends Section {
         this.renderItems();
         this._container.classList.remove('section-loading');
       }, 800)
+    }
+
+
+
+
+    _showMoreButtonState() {
+      if (this._buttonMore.classList.contains('infocards__more-button_hidden')) {
+        this._buttonMore.classList.remove('infocards__more-button_hidden');
+      }
+    }
+
+    _hideMoreButtonState() {
+      this._buttonMore.classList.add('infocards__more-button_hidden');
+    }
+
+    _checkMoreButtonState() {
+      if (this._countBase < this._renderedItems.length) {
+            this._showMoreButtonState();
+      } else {
+        this._hideMoreButtonState();
+      }
     }
 
     renderItems() {
