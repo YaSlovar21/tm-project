@@ -15,14 +15,9 @@ export default class SectionPaginator extends Section {
         // проверяем необходимость MoreButton
         this._checkMoreButtonState();
 
-        this._windowSize = useWindowSize();
-
-        this._additionalCount = this.additionalCount();
-        console.log(this._additionalCount);
         this._buttonMore.addEventListener("mousedown", ()=>{
+          this._countBase += this.additionalCount();
 
-          this._countBase += this._additionalCount;
-          console.log(this._windowSize);
           // проверяем необходимость MoreButton
           this._checkMoreButtonState();
           this.clear();
@@ -30,13 +25,12 @@ export default class SectionPaginator extends Section {
       });
     }
 
-
-
     additionalCount() {
-      if (this._windowSize > 1500) {
+      const widthScreen = useWindowSize();
+      if (widthScreen > 1500) {
         return 3;
       }
-      if (this._windowSize <= 1500) {
+      if (widthScreen <= 1500) {
         return 1;
       }
 

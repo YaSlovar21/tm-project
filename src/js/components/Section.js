@@ -4,7 +4,7 @@ export default class Section {
         this._renderedItems = data;
         this._container = document.querySelector(cardlistSelector);
         this._renderer = renderer;
-        this._delay=0;
+        this._delay = 0;
     }
 
     setItem(element) {
@@ -37,12 +37,13 @@ export default class Section {
 
     renderItems() {
         this._renderedItems.forEach(item => {
+          item['data-wow-delay'] = `${this._delay/1000}s`;
           setTimeout(()=> {
-            item['data-wow-delay'] = `${this._delay/1000}s`;
-            this._renderer(item);
-            this._delay += 300;
-          },this._delay);
 
+            this._renderer(item);
+          }, this._delay);
+
+          this._delay += 200;
         });
     }
 }

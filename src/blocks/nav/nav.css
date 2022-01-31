@@ -56,10 +56,35 @@
 }
 
 .nav__ul-item {
-    padding: 10px 15px;
+    padding: 10px 0px 5px;
     margin: 0;
     text-align: center;
     position: relative;
+}
+
+.nav__ul-item::after {
+  position: absolute;
+  content: '';
+    height: 4px;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #FF5E3A;
+    transition: visibility .3s ease-in, opacity .3s linear, height .3s linear, bottom .3s linear;
+    visibility: hidden;
+
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.nav__ul-item:hover::after {
+  visibility: visible;
+  opacity: 0.5  ;
+  /*transition: visibility .0s ease-in;
+  transition-delay: 0;*//*Дает резкий отскок, в это состояние элемент не анимируется*/
+  height: 9px;
+  left: 0;
+  bottom: 3px;
 }
 
 .nav__ul-item:nth-of-type(1) {
@@ -81,32 +106,34 @@
     transition: .5s linear;
     position: relative;
     margin: 0 auto;
+    padding: 10px 0;
     color:rgb(214, 214, 214);
+    z-index: 1;
   }
 
-
-.nav__link_theme_white {
-  color:rgb(8, 8, 8)
-  }
-
+/*
 .nav__link::after {
     position: absolute;
     content: '';
-    height: 4px;
+    height: 3px;
     bottom: 1px;
     left: 0;
     width: 100%;
-    background-color: #FF5E3A;;
-    opacity: 0;
-  }
-.nav__link:hover::after {
-    opacity: 0.8;
-    transition: all .4s ease-in;
-    transform: translateY(7px);
+    background-color: #FF5E3A;
+    transition: visibility .4s ease-in, opacity .4s linear, height .0s linear, bottom .4s linear;
+    visibility: hidden;
+    opacity: 0.7;
   }
 
+  .nav__link:hover::after {
+    visibility: visible;
+    opacity: 0.4;
 
+    height: 8px;
+    bottom:-3px;
+  }
 
+*/
 .nav__submenu {
     display: flex;
     flex-direction: column;

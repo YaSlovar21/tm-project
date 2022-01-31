@@ -31,7 +31,7 @@
 .listimage__list::before {
   content: '';
   position: absolute;
-  width: 70%;
+  width: 51%;
   height: 12px;
   top: -87px;
   left: 0;
@@ -63,4 +63,6 @@
   max-height: 338.67px;
   object-fit: cover;
   object-position: center;
+
+  transition: all 1.6s linear;
 }

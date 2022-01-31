@@ -15,7 +15,7 @@
   padding: 10px 15px;
   position: relative;
   margin-bottom: 10px;
-  transition: .3s;
+  /*transition: .3s;*/
 }
 
 .message__text_is-active {
