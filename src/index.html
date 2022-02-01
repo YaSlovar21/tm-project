@@ -780,6 +780,7 @@
           <form class="popup__form raschet-bem" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
               <h2 class="raschet-bem__title">Заявка на расчёт</h2>
               <!--Среды вход/выход-->
+              <fieldset class="first-step">
               <div class="raschet-bem__substantions">
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
@@ -864,8 +865,9 @@
                 </div>
               </div>
               <!--<button class="popup__button-save popup__button-save_type_callback form-next-step" type="submit">Отправить</button>-->
-              <button class="form-next-step button-bem" type="button">Далее</button>
-              <div class="popup__form-fio popup-absolute">
+              <button class="form-next-step button-bem first-step-button"  type="button">Далее</button>
+              </fieldset>
+              <div class="popup__form-fio popup-absolute second-step">
                 <h3 class="raschet-bem__title">Куда мы можем отправить расчёт?</h3>
                   <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
                   <label class="raschet-bem__field">
@@ -881,7 +883,7 @@
                 </fieldset>
                 <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">
                   <button type="button"  class="button-bem button-bem_back form-back-button" style="flex-basis: 200px">Назад</button>
-                  <button type="submit" class="raschet-bem__submit-button button-bem" style="flex-basis: 100%;">Отправить</button>
+                  <button type="submit" class="raschet-bem__submit-button button-bem second-step-button" style="flex-basis: 100%;">Отправить</button>
                 </div>
               </div>
           </form>

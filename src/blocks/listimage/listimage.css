@@ -64,5 +64,5 @@
   object-fit: cover;
   object-position: center;
 
-  transition: all 1.6s linear;
+  transition: all .6s linear;
 }

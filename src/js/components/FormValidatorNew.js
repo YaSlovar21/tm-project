@@ -55,6 +55,14 @@ export default class FormValidatorNew {
     }
   };
 
+
+  _showErrors(inputList, buttonElement) {
+    inputList.forEach((inputElement) => {
+      this._checkInputValidity(inputElement);
+      this._toggleButtonState(inputList, buttonElement);
+  });
+  }
+
   toggleButtonState() {
     this._toggleButtonState(this._inputList, this._buttonElement);
   }
@@ -96,6 +104,17 @@ export default class FormValidatorNew {
     });
   };
 
+ _setStepEventListeners(someInputLists) {
+  someInputLists.forEach((inputList) => {
+    inputList.forEach((inputElement) => {
+      inputElement.addEventListener('input', () => {
+        this._checkInputValidity(inputElement);
+        this.toggleButtonState();
+      });
+    })
+  })
+ }
+
 enableValidation() {
     this._formElement.addEventListener('submit', (evt) => {
         evt.preventDefault();
@@ -104,4 +123,18 @@ enableValidation() {
     this._setEventListeners();
   };
 
+enableStepValidation() {
+  const firstStepFieldset = this._formElement.querySelector('.first-step');
+  const firstStepButton = firstStepFieldset.querySelector('first-step-button');
+  const firstStepInputList = Array.from(firstStepFieldset.querySelectorAll(this._inputSelector));
+
+  const secondStepFieldset = this._formElement.querySelector('.second-step');
+  const secondStepButton = secondStepFieldset.querySelector('.second-step-button');
+  const secondtepInputList = Array.from(secondStepFieldset.querySelectorAll(this._inputSelector));
+
+
 }
+
+}
+
+

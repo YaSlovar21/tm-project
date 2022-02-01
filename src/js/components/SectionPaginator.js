@@ -17,7 +17,7 @@ export default class SectionPaginator extends Section {
 
         this._buttonMore.addEventListener("mousedown", ()=>{
           this._countBase += this.additionalCount();
-
+          console.log(this.additionalCount)
           // проверяем необходимость MoreButton
           this._checkMoreButtonState();
           this.clear();
