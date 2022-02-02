@@ -16,5 +16,7 @@
 @media screen and (max-width:833px) {
   .tablemod {
     max-width: calc(100% - 20px);
+    justify-content: space-evenly;
+    overflow: hidden;
   }
 }

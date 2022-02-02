@@ -47,7 +47,10 @@
   .popup__button-close_type_form {
     z-index: 22;
     top:30px;
-    left: 10px;
+    right: 10px;
+    height: 18px;
+    width: 18px;
+    background-color: coral;
   }
 }
 

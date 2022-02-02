@@ -151,7 +151,22 @@ module.exports = {
       filename: 'production.html',
       chunks: ['production', 'all'],
       inject: true,
-    }),                                   /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
+    }),                                             /*---------ПРИМЕР РАСЧЁТА----------- */
+      new HtmlWebpackPlugin({   
+      templateParameters: {
+        canonicalURL,
+      },
+      title: 'Пример расчёта',
+      meta: {
+        keywords: 'производство теплообменного оборудования', 
+        description: 'Все о термоблоке'
+      },
+      template: './src/example.html', 
+      filename: 'example.html',
+      chunks: ['production',  'all'],
+      inject: true,
+    }),  
+                                       /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL,

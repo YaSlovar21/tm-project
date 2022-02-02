@@ -13,3 +13,12 @@
 .raschet-bem__subst-title_cold {
   color: #0093DD;
 }
+
+@media screen and (max-width: 768px) {
+  .raschet-bem__subst-title {
+    font-size: 16px;
+  }
+  .raschet-bem__subst-title_cold {
+    text-align: right;
+  }
+}

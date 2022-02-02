@@ -46,7 +46,7 @@ export default class FormValidatorNew {
   }
 
   _toggleButtonState(inputList, buttonElement) {
-    if (this.hasInvalidInput(inputList)) {
+    if (this._hasInvalidInput(inputList)) {
       buttonElement.classList.add(this._inactiveButtonClass);
       buttonElement.setAttribute('disabled', true);
     } else {
@@ -104,12 +104,16 @@ export default class FormValidatorNew {
     });
   };
 
- _setStepEventListeners(someInputLists) {
-  someInputLists.forEach((inputList) => {
-    inputList.forEach((inputElement) => {
+ _setStepEventListeners(someFormSets) {
+  someFormSets.forEach((inputListAndButton) => {
+    const inputStepList = inputListAndButton.inputs;
+    const buttonForList = inputListAndButton.button;
+    console.log(inputListAndButton);
+    this._toggleButtonState(inputStepList, buttonForList);
+    inputStepList.forEach((inputElement) => {
       inputElement.addEventListener('input', () => {
         this._checkInputValidity(inputElement);
-        this.toggleButtonState();
+        this._toggleButtonState(inputStepList, buttonForList);
       });
     })
   })
@@ -124,15 +128,19 @@ enableValidation() {
   };
 
 enableStepValidation() {
+  const sets = [];
+  
   const firstStepFieldset = this._formElement.querySelector('.first-step');
-  const firstStepButton = firstStepFieldset.querySelector('first-step-button');
+  const firstStepButton = firstStepFieldset.querySelector('.first-step-button');
   const firstStepInputList = Array.from(firstStepFieldset.querySelectorAll(this._inputSelector));
+  sets.push({inputs: firstStepInputList, button: firstStepButton});
 
   const secondStepFieldset = this._formElement.querySelector('.second-step');
   const secondStepButton = secondStepFieldset.querySelector('.second-step-button');
   const secondtepInputList = Array.from(secondStepFieldset.querySelectorAll(this._inputSelector));
+  sets.push({inputs: secondtepInputList, button: secondStepButton});
 
-
+  this._setStepEventListeners(sets);
 }
 
 }

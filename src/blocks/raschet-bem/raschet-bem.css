@@ -17,6 +17,7 @@
 /* <!--Дополнительные параметры (мощность, расход по нагреваемой среде)--> */
 @import url(./__parameters/raschet-bem__parameters.css);
 @import url(./__comment/raschet-bem__comment.css);
+@import url(./__addition-selection-block/raschet-bem__addition-selection-block.css);
 
 /* блоки формы */
 @import url(./__field/raschet-bem__field.css);

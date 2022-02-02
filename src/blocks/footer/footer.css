@@ -45,15 +45,23 @@
   font-size: 13px;
   line-height: 1.2;
   color: #676767;
+  margin-left: 20px;
 }
 
 .footer__tm-desc {
-  margin: 16px 0 32px;
+
   font-weight: 300;
-  font-size: 15px;
-  line-height: 1.41;
+  font-size: 18px;
+  line-height: 1.11;
   color: #EDEDED;
-  max-width: 335px;
+  max-width: 395px;
+  margin: 16px 0 32px 20px;
+}
+
+.footer__tm-desc_bsz {
+  font-size: 13px;
+  max-width: 300px;
+  line-height: 1.4;
 }
 
 .footer__contacts-list {

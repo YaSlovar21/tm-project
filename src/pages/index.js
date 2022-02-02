@@ -72,7 +72,7 @@ const platesSvg = document.querySelector('.plates__svg');
 const formValidatorCallBack = new FormValidatorNew(formValidatorConfig, formCallBack);
 formValidatorCallBack.enableValidation();
 const raschetValidatorForm = new FormValidatorNew(raschetValidatorConfig, raschetForm);
-raschetValidatorForm.enableValidation();
+raschetValidatorForm.enableStepValidation();
 
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
@@ -199,6 +199,9 @@ const backButton = document.querySelector('.form-back-button');
         popupAbsolute.classList.remove('popup__form-fio_opened');
       })
       nextButton.addEventListener('mousedown', ()=> {
+        /*
+          Проверить блок на валидность, показать ошибки если есть, заблокировать кнопку
+        */
         popupAbsolute.classList.add('popup__form-fio_opened');
       })
 

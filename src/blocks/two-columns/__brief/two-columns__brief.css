@@ -36,6 +36,12 @@
  /* min-width: 390px;*/
 }
 
+@media screen and (max-width: 768px) {
+  .two-columns__brief_wide {
+    font-size: 18px;
+  }
+}
+
 .two-columns__brief_page_main {
   width: auto;
 }

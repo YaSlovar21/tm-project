@@ -637,7 +637,7 @@
         </div>
         <div class="tablemod__cell tablemod__cell_theme_dark wow animate__fadeInRight" data-wow-delay=".5s"
           data-wow-offset="50">
-          <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие производственные возможности</h3>
+          <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие возможности производства</h3>
           <p class="tablemod__text tablemod__text_theme_dark">Производственные мощности и научно-технический потенциал
             завода позволяет изготавливать как новые изделия, так и совершенствовать производственную базу для
             теплообменников.</p>
@@ -780,7 +780,7 @@
           <form class="popup__form raschet-bem" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
               <h2 class="raschet-bem__title">Заявка на расчёт</h2>
               <!--Среды вход/выход-->
-              <fieldset class="first-step">
+              <fieldset class="first-step" style="display: flex;flex-direction: column; max-width: 100%; padding: 0; border: none;">
               <div class="raschet-bem__substantions">
                 <div class="raschet-bem__subst-selection-block">
                   <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
@@ -832,7 +832,7 @@
               <!--Дополнительные параметры (мощность, расход по нагреваемой среде)-->
               <div class="raschet-bem__parameters">
                 <p class="raschet-bem__comment">Для расчёта необходима мощность теплообменника <span class="span_color_orange">или</span> расход по нагреваемой среде</p>
-                <div class="raschet-bem__subst-selection-block" style="flex-basis: 187px; align-items: stretch; margin-right: 30px;">
+                <div class="raschet-bem__addition-selection-block"> <!--style="flex-basis: 187px; align-items: stretch; margin-right: 30px;">-->
                     <div class="raschet-bem__field">
                       <label>
                         <span class="raschet-bem__label-title">Мощность теплообменника</span>
@@ -848,7 +848,7 @@
                   </div>
                 </div>
 
-                <div class="raschet-bem__subst-selection-block" style="flex-basis: 199px;align-items: stretch;">
+                <div class="raschet-bem__addition-selection-block"><!-- style="flex-basis: 199px;align-items: stretch;">-->
                   <div class="raschet-bem__field">
                     <label>
                       <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
