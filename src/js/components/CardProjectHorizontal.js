@@ -1,11 +1,16 @@
 import Card from "./Card.js";
 
-export default class CardProject extends Card {
-    constructor({name, link, handleImageClick, ...props}) {
+export default class CardProjectHorizontal extends Card {
+    constructor({name, link, to, naznach, q, handleImageClick, ...props}) {
         super(props);
         console.log(props);
         this._name = name;
         this._link = link;
+
+        this._to = to;
+        this._naznach = naznach;
+        this._q = q;
+
         this._handleImageClick = handleImageClick; //функция коллбэк открытия попапа проекта
     }
 
@@ -15,9 +20,17 @@ export default class CardProject extends Card {
         this._cardImage = this._element.querySelector('.projects__image');
         this._cardHeading = this._element.querySelector(".projects__item-description");
 
+        this._toModelDesc = this._element.querySelector(".projects__to-model");
+        this._toQDesc = this._element.querySelector(".projects__to-q");
+        this._naznachDesc = this._element.querySelector(".projects__to-naznach");
+
         this._cardImage.src = this._link;
         this._cardImage.alt = this._name;
         this._cardHeading.textContent = this._name;
+
+        this._toModelDesc.textContent = this._to;
+        this._toQDesc.textContent = this._q;
+        this._naznachDesc.textContent = this._naznach;
 
         // если от родителя передался animateClass
         if( this._animateClass) {

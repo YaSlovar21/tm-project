@@ -25,6 +25,7 @@ export const projectsContainerSelector = '.projects__items';
 
 //template карточки проекта
 export const projectTemplateSelector = "#project-template";
+export const projectHorizontalTemplateSelector = "#project-horizontal-template";
 
 export const cardArticleConfig = {
   cardArticleTemplateSelector: '#article-template',
@@ -37,20 +38,36 @@ export const cardArticleConfig = {
   cardListSection: '.cards-js-rendered',
 }
 
+/*
+      name: item.name,
+      link: item.link,
+      to: item.model,
+      naznach: item.naznach,
+      q: item.q,
+*/
 export const initialProjects = [
     {
       name: "Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»",
       link: zatonUfa,
+      to: "ТИ82-201",
+      naznach: "Отопление, ГВС",
+      q: "17500 кВт",
       animateClass: 'animate__fadeIn',
     },
     {
       name: "Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край",
       link: timashevskCondit,
+      to: "ТИ52-77",
+      naznach: "ГВС",
+      q: "3,5 Гкал/ч",
       animateClass: 'animate__fadeIn',
     },
     {
       name: "БИТП Новый умный дом в г. Уфа, ул. Злобина, 31",
       link: ufaUmnDom,
+      to: "ТИ13 (31-53 пластин)",
+      naznach: "Отопление, ГВС",
+      q: "от 0.3 до 0.5 Гкал/ч",
       animateClass: 'animate__fadeIn',
     },
 ];

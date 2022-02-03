@@ -39,7 +39,11 @@
   margin-bottom: 40px;
   width: 100%;
 }
-
+@media screen and (max-width: 1440px) {
+  .two-columns {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 769px) {
   .two-columns {
     flex-direction: column;

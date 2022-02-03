@@ -13,6 +13,9 @@
     color: #E7441C;
 }
 
+.span-bold {
+  font-weight: 800;
+}
 .span_uppercase {
     text-transform: uppercase;
 }

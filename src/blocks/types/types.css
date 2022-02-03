@@ -21,6 +21,11 @@
          top: 40px;
 }
 
+@media screen and (max-width: 1440px) {
+  .types {
+    max-width: 95%;
+  }
+}
 @media screen and (max-width:1024px) {
     .types {
         grid-template-columns: 400px 1fr;

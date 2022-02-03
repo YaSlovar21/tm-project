@@ -35,6 +35,12 @@
     width: 80%;
 }
 
+@media screen and (max-width: 1440px) {
+  .tech-interactive {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width:768px) {
     .tech-interactive {
         flex-direction: column-reverse;

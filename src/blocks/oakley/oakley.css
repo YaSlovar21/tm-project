@@ -12,7 +12,7 @@
       top:0;
       left: 0;
 }
-    
+
 .oakley_gradient::before {
       position: absolute;
       content: '';
@@ -24,6 +24,11 @@
       right: 0;
     }
 
+@media screen and (max-width: 1440px) {
+  .oakley_gradient::after, .oakley_gradient::before {
+    width: calc(2.5% + 20px);
+  }
+}
 
 @media screen and (max-width:768px) {
   .oakley_gradient::before {

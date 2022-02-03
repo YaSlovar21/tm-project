@@ -17,6 +17,7 @@ export default class Section {
 
     clear() {
       this._container.innerHTML = '';
+      this._delay = 0;
     }
 
     renderFiltered(filteredData) {

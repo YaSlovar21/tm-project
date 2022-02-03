@@ -24,6 +24,7 @@ import {
   initialHeatEx,
   projectsContainerSelector, //селектор секции куда грузятся карточки
   projectTemplateSelector,   //шаблон карточки
+  projectHorizontalTemplateSelector, //шаблон горизонтальной карточки проекта
 
   popupImageSelector,
   popupImageSelectorsCongig,
@@ -33,50 +34,79 @@ import {
 
 import Section from '../js/components/Section.js';
 import CardProject from '../js/components/CardProject.js';
+import CardProjectHorizontal from '../js/components/CardProjectHorizontal.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 
-function createCard(item) {
-  const card = new CardProject({
-    name: item.name,
-    link: item.link,
-    handleImageClick: (desc, link) => {
-      //(desc, link) передаем во внутреннем методе карточки
-      popupImage.open({
-        link: link,
-        name: desc,
-      });
-    },
-
-    cardTemplateSelector: projectTemplateSelector,
-    cardSelector: '.projects__item',
-    animateClass: item.animateClass,
-  });
-  const cardToAdd = card.generateCard()
-  return cardToAdd;
-}
 
 const projectList = new Section({
   data: initialProjects,
   renderer: (item) => {
-    //в этой точке знаем все данные карточки
-    //item - объект карточки со всеми свойствами
-    const card = createCard(item);
-    card.setAttribute('data-wow-delay', item['data-wow-delay']);
-    projectList.appendItem(card);
+    const card = new CardProject({
+      name: item.name,
+      link: item.link,
+      handleImageClick: (desc, link) => {
+        //(desc, link) передаем во внутреннем методе карточки
+        popupImage.open({
+          link: link,
+          name: desc,
+        });
+      },
+      cardTemplateSelector: projectTemplateSelector,
+      cardSelector: '.projects__item',
+      animateClass: item.animateClass,
+    });
+    const cardElement = card.generateCard()
+    //cardElement.setAttribute('data-wow-delay', item['data-wow-delay']);
+    projectList.appendItem(cardElement);
+  },
+}, projectsContainerSelector);
+
+const projectHorizontalList = new Section({
+  data: initialProjects,
+  renderer: (item) => {
+    const card = new CardProjectHorizontal({
+      name: item.name,
+      link: item.link,
+      to: item.to,
+      naznach: item.naznach,
+      q: item.q,
+      handleImageClick: (desc, link) => {
+        //(desc, link) передаем во внутреннем методе карточки
+        popupImage.open({
+          link: link,
+          name: desc,
+        });
+      },
+      cardTemplateSelector: projectHorizontalTemplateSelector,
+      cardSelector: '.projects__item',
+      animateClass: item.animateClass,
+    });
+    const cardElement = card.generateCard()
+    //cardElement.setAttribute('data-wow-delay', item['data-wow-delay']);
+    projectList.appendItem(cardElement);
   },
 }, projectsContainerSelector);
 
 projectList.renderItems();
 
+const formProjectViewChange = document.forms.formProjectsViewChange;
+formProjectViewChange.addEventListener('change', (evt)=>{
+  if (evt.target.checked) {
+    projectList.clear();
+    projectHorizontalList.renderItems();
+  } else {
+    projectHorizontalList.clear();
+    projectList.renderItems();
+  }
+})
+
+
 const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
 popupImage.setEventListeners();
 
-
 //интеактивные пластины
-
 const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);
-
 popupHeatEx.setEventListeners();
 const platesSvg = document.querySelector('.plates__svg');
 
@@ -87,9 +117,7 @@ platesSvg.addEventListener("click", (evt) => {
 
 
 var mySwiper1 = new Swiper('.khan__book-container', {
-  // Optional parameters
   direction: 'horizontal',
-  //loop: true,
   effect: 'coverflow',
   speed: 700,
   keyboard: {
@@ -102,7 +130,7 @@ var mySwiper1 = new Swiper('.khan__book-container', {
   zoom: true,
   cssMode: false,
   mousewheel: false,
-  // If we need pagination
+
   pagination: {
     type: 'bullets',
     el: '.khan__list',
@@ -121,7 +149,6 @@ var mySwiper1 = new Swiper('.khan__book-container', {
           a = 'Тех. данные'
         }
         return '<li class=' + className + '>' + a + '</li>';
-        //<li id="khan_1" class="khan__list-item khan__list-item_active">Коммерческое предложение</li>
     }
   },
 
@@ -183,11 +210,8 @@ catch (err) {
 }
 
 var slider_sborka = new Swiper('.slider-sborka', {
-  // Optional parameters
   direction: 'horizontal',
-  //loop: true,
   effect: 'fade',
-  //parallax: true,
   speed: 1500,
   keyboard: {
     enabled: true,
@@ -196,22 +220,14 @@ var slider_sborka = new Swiper('.slider-sborka', {
   cssMode: false,
   mousewheel: true,
   autoplay: true,
-  // If we need pagination
   pagination: {
     type: 'custom',
     el: '.slider-sborka_pagination',
     renderCustom: function (slider_sborka, current, total) {
         let a = current + ' of ' + total;
-        //console.log(a);
         const dash_current = (1- current/total)*len_dash;
-        //console.log(dash_current);
-        //console.log()
         pathCircle.style.strokeDashoffset = `${dash_current}px`;
-        /*anime({
-            targets: '.circle_wow',
-            strokeDashoffset: [anime.setDashoffset, dash_current],
-            duration: 100,
-        });*/
+        /*anime({targets: '.circle_wow', strokeDashoffset: [anime.setDashoffset, dash_current], duration: 100,});*/
         return a;
     }
   },
@@ -277,38 +293,14 @@ setInterval(()=> {
   highLightPart(generatedParts[i]);
   setTimeout(()=> {
     turnOffHighLightPart(generatedParts[i]);
-    if (i===numberOfParts-1) {
-      i=0;
-    } else {
-      i+=1;
-    }
+    i = (i===numberOfParts-1) ?  0 : i+1;
   }, 2600);
 },3000)
 
 //let pageY= 0;
 //let isPlaying = 1;
-//const el = document.querySelectorAll(".honeycomb path");
-/*
-function randomValues() {
-  if (pageY < 300) {
-    anime({
-      targets: [el],
-      fill: function () {
-        let a = anime.random(0, 4);
-        if (a == 0) {
-          return "#ff5e3a";
-        } else {
-          return "rgb(50, 50, 52);";
-        }
-      },
-      easing: "steps(1)",
-      duration: 5400,
-      complete: randomValues,
-    });
-  }
-}
-randomValues();
 
+/*
 window.addEventListener("scroll", function () {
   pageY = pageYOffset;
   if (pageY > 300 && isPlaying) {
