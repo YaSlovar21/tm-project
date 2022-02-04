@@ -16,6 +16,10 @@
 .span-bold {
   font-weight: 800;
 }
+
+.span-bold_spacing {
+  letter-spacing: 0.05em;
+}
 .span_uppercase {
     text-transform: uppercase;
 }

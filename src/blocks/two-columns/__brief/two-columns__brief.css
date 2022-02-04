@@ -1,11 +1,8 @@
 
-
 .two-columns__brief {
     width: 175px;
-    /*color: #2F80ED;*/
     color: #FF5E3A;
 
-    /*модификаторы*/
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -28,12 +25,8 @@
 
 
 .two-columns__brief_wide {
-  /*width: 230px;
-  line-height: 1.2;*/
   font-size: 24px;
   font-weight: 600;
-  /*text-transform: uppercase;*/
- /* min-width: 390px;*/
 }
 
 @media screen and (max-width: 768px) {

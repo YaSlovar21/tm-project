@@ -115,6 +115,13 @@
     transition: all .5s ease-in-out;
     box-sizing: border-box;
 }
+@media screen and (max-width:1440px) {
+  .types__item {
+
+      font-size: 22px;
+
+  }
+}
 
 @media screen and (max-width:768px) {
     .types__item {

@@ -2,11 +2,11 @@
     grid-column: 1/13;
     grid-row: 13/14;
 
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.3;
-    color: white;
-    
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #e7451c9d;
+
     margin: 0;
 }
 

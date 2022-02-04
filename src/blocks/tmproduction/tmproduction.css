@@ -24,6 +24,12 @@
     font-size: 32px;
 }
 
+@media screen and (max-width: 1440px) {
+  .tmproduction__heading {
+    font-size: 24px;
+  }
+}
+
 .tmproduction__description {
     margin: 0;
     font-weight: 400;

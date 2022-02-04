@@ -26,6 +26,9 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
 
+@import url(../blocks/two-columns/__brief/_flexed/two-columns__brief_flexed.css);
+@import url(../blocks/two-columns/__main-text/_flexed/two-columns__main-text_flexed.css);
+
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 
@@ -53,6 +56,12 @@
 @import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
 
+
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
+@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
+@import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/oakley/oakley.css);
 /*ГридГибрид*/
 @import url(../blocks/introgrid/introgrid.css);
