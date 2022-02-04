@@ -39,3 +39,32 @@ export function useWindowSize() {
 
   return windowSize;
 }
+
+
+export function useWindowSizeTest() {
+  let windowSize = window.innerWidth;
+
+  function handleWindowResize() {
+    //setTimeout(setWindowWidth(window.innerWidth), 2500);
+    setWindowWidth(window.innerWidth)
+    //console.log(windowSize);
+  }
+
+  function setWindowWidth(updatedWidth) {
+    windowSize = updatedWidth;
+  }
+
+  function getWindowWidth() {
+    return windowSize;
+  }
+
+  function init() {
+    window.addEventListener('resize', handleWindowResize)
+  }
+
+  return {
+    windowSize,
+    getWindowWidth,
+    init,
+  }
+}

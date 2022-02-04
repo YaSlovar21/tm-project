@@ -47,10 +47,12 @@ import {
   //идентификатор Formspree формы обратного звонка
   //callbackFormId,
 
+
 } from '../js/utils/constants.js';
 
 import {
-  renderLoading
+  renderLoading,
+  useWindowSize,
 } from'../js/utils/utils.js';
 
 const formCallBack= document.forms.formCallBack;
@@ -247,6 +249,25 @@ const swiperInfo = new Swiper('.scroll-slider', {
   mousewheel: true,
 });
 swiperInfo.update();
+
+const windowWidth= useWindowSize();
+  if(windowWidth < 768) {
+    console.log(windowWidth);
+    swiperInfo.destroy(false,false);
+  } else {
+    swiperInfo.update();
+}
+
+window.addEventListener('resize', ()=> {
+  const windowWidth= useWindowSize();
+  if(windowWidth < 768) {
+    console.log(windowWidth);
+    swiperInfo.destroy(false,false);
+  } else {
+    swiperInfo.init();
+  }
+})
+
 
 const types_swiper = new Swiper('.product-types', {
   // Optional parameters

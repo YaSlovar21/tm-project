@@ -26,15 +26,7 @@
 }
 @media screen and (max-width:480px) {
   .projects__items {
-      grid-template-columns:1fr ;
+      grid-template-columns: 1fr ;
       grid-template-rows: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (max-width:380px) {
-  .projects__items {
-      grid-template-columns: 282px ;
-      grid-template-rows: 1fr 1fr 1fr;
-      column-gap: 0px;
   }
 }

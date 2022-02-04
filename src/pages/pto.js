@@ -312,3 +312,26 @@ window.addEventListener("scroll", function () {
   }
 });
 */
+
+import {
+  useWindowSizeTest
+} from '../js/utils/utils.js';
+
+const windowWidth = useWindowSizeTest();
+windowWidth.init();
+
+const comments = Array.from(document.querySelectorAll('.table__text'));
+
+if (windowWidth.windowSize < 768) {
+  comments.forEach((comment) => {
+    comment.style.display = 'none'
+  })
+} else {
+  comments.forEach((comment) => {
+    comment.style.display = 'block'
+  })
+}
+
+window.addEventListener('resize', ()=> {
+  console.log(windowWidth.getWindowWidth());
+})
