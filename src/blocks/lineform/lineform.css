@@ -6,3 +6,14 @@
 .lineform {
     padding-bottom: 80px;
 }
+
+.lineform_page_btp {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1440px) {
+  .lineform_page_btp {
+    max-width: 95%;
+  }
+}

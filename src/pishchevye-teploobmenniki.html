@@ -21,7 +21,7 @@
     </header>
 
       <main class="content">
-          <div class="flexburton flexburton_test">
+          <div class="flexburton flexburton_test flexburton_static-bg">
             <div class="flexburton__left-side">
               <div class="flexburton__breadcrumbs">
                 <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
@@ -36,10 +36,11 @@
             <div class="flexburton__right-side">
               <img class="flexburton__main-image" src="<%=require('./images/many-section-grid.png')%>" alt="Пластинчатый теплообменник">
 
-              <svg class="flexburton__svg flexburton__svg_page_pizh rotation" width="781" height="781" viewBox="0 0 781 781" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!--<svg class="flexburton__svg flexburton__svg_page_pizh rotation" width="781" height="781" viewBox="0 0 781 781" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.3812 338.68L338.68 30.3812C367.188 1.87294 413.409 1.87293 441.917 30.3812L572.112 160.576L578.476 154.212L448.281 24.0172C416.258 -8.00574 364.339 -8.00575 332.316 24.0172L24.0172 332.316C-8.00574 364.339 -8.00575 416.258 24.0172 448.281L154.212 578.476L160.576 572.112L30.3812 441.917C1.87293 413.409 1.87293 367.188 30.3812 338.68Z" fill="#E7441C"/>
                 <path d="M188.311 599.848L181.947 606.211L332.316 756.58C364.339 788.603 416.258 788.603 448.281 756.58L756.58 448.281C788.603 416.258 788.603 364.339 756.58 332.316L606.211 181.947L599.848 188.311L750.216 338.68C778.724 367.188 778.724 413.409 750.216 441.917L441.917 750.216C413.409 778.724 367.188 778.724 338.68 750.216L188.311 599.848Z" fill="#E7441C"/>
-              </svg>
+              </svg>-->
+
             </div>
           </div>
 
@@ -58,29 +59,29 @@
           <h2 class="introgrid__header">Области применения</h2>
           <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
           <div class="introgrid__button">
-            <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
+            <a href="#" class="link-beauty button-bem" style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
           </div>
           <div class="introgrid__feat">
-            <div class="table table_theme_dark" style="display: grid; grid-template-columns: 1fr 1fr; width: 100%;">
-              <div class="table__cell table__cell_theme_dark table__cell_type_grid">
+            <ul class="table table_theme_dark" style="display: grid; grid-template-columns: 1fr 1fr; gap:60px; width: 100%; margin: 30px 0; padding: 0; list-style-type: none;">
+              <li class="table__cell table__cell_theme_dark table__cell_type_grid">
                   <h3 class="table__heading table__heading_theme_dark">Пластинчатые пастеризаторы</h3>
                   <p class="table__text table__text_theme_dark">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
-              </div>
-              <div class="table__cell table__cell_theme_dark table__cell_type_grid">
+              </li>
+              <li class="table__cell table__cell_theme_dark table__cell_type_grid">
                   <h3 class="table__heading table__heading_theme_dark">Пластинчатые охладители (ООЛ)</h3>
                   <p class="table__text table__text_theme_dark">Теплообменники для охлаждения молока и прочих пищевых жидкостей</p>
-              </div>
-              <div class="table__cell table__cell_theme_dark table__cell_type_grid">
+              </li>
+              <li class="table__cell table__cell_theme_dark table__cell_type_grid">
                   <h3 class="table__heading table__heading_theme_dark">Теплообменники в масложировой отрасли</h3>
                   <p class="table__text table__text_theme_dark">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
-              </div>
-              <div class="table__cell table__cell_theme_dark table__cell_type_grid">
+              </li>
+              <li class="table__cell table__cell_theme_dark table__cell_type_grid">
                   <h3 class="table__heading table__heading_theme_dark">Технические процессы теплообмена при производстве спиртов, сусла</h3>
                   <p class="table__text table__text_theme_dark">Пастеризация и охлаждения сусла (возможно изготовления многоступенчатого теплообменника)</p>
-              </div>
+              </li>
 
-              <div class="table__cell table__cell_theme_dark table__cell_size_large" style="grid-column: span 2;">
-                  <h3 class="table__heading table__heading_theme_dark ">Исполнение теплообменника</h3>
+              <li class="table__cell table__cell_theme_dark table__cell_size_large table__cell_type_grid" style="grid-column: span 2;">
+                  <h3 class="table__heading table__heading_theme_dark">Исполнение теплообменника</h3>
                   <p class="table__text table__text_theme_dark">
                     <ul class="list">
                       <li class="list__item list__item_font_18">Односекционные</li>
@@ -88,8 +89,8 @@
                       <li  class="list__item list__item_font_18">Готовое решение на базе теплообменников</li>
                     </ul>
                   </p>
-              </div>
-          </div>
+              </li>
+            </ul>
         </div>
       </div>
     </section>
@@ -99,7 +100,8 @@
       <div class="food-types-container">
         <div class="swiper-wrapper">
           <div class="food-type swiper-slide">
-              <img src="<%=require('./images/3dSlider/food.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="1400">
+              <img src="<%=require('./images/3dSlider/food.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+              <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
               <div class="food-type__description" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
                 <h2 class="food-type__title">Односекционные теплообменники</h2>
                 <div class="food-type__main-text">
@@ -109,7 +111,8 @@
               </div>
           </div>
           <div class="food-type swiper-slide">
-            <img src="<%=require('./images/food-many-sect.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="1400">
+            <img src="<%=require('./images/food-many-sect.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+            <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
             <div class="food-type__description" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
               <h2 class="food-type__title">Многосекционные теплообменники</h2>
               <div class="food-type__main-text">
@@ -119,7 +122,8 @@
             </div>
           </div>
           <div class="food-type swiper-slide">
-            <img src="<%=require('./images/teplojit-pou.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="1400">
+            <img src="<%=require('./images/teplojit-pou.png')%>" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+            <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
             <div class="food-type__description" data-swiper-parallax="-300" data-swiper-parallax-duration="1200">
               <h2 class="food-type__title">Пастеризационно-охладительные установки</h2>
               <div class="food-type__main-text">
@@ -143,7 +147,7 @@
     </div>
 
 
-    <section class="oakley oakley_gradient" style="bottom: 18px;">
+    <section class="oakley oakley_gradient" style="bottom: 24px; padding-top: 90px;">
       <div class="two-columns">
         <div class="two-columns__brief two-columns__brief_flexed">
           <h2 class="two-columns__brief-title">Эффективность теплообменников пластинчаого типа</h2>

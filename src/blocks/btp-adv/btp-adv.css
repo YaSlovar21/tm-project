@@ -6,6 +6,12 @@
     margin: 80px auto;
 }
 
+@media screen and (max-width: 1440px) {
+  .btp-adv {
+    width: 95%;
+  }
+}
+
 .btp-adv__link {
     text-decoration: none;
     color: #e7451c;
@@ -24,6 +30,13 @@
     position: relative;
     flex: 0 1 840px;
 }
+
+@media screen and (max-width: 1440px) {
+  .btp-adv__feats {
+    flex: 0 1 680px;
+  }
+}
+
 
 .btp-adv__image {
     max-width: 100%;

@@ -51,6 +51,11 @@
   color: #E7461A;
   margin-bottom: 10px;
   cursor: pointer;
+  transition: opacity .4s linear;
+}
+
+.listimage__list-item_active{
+  opacity: 0.4;
 }
 
 .listimage__list-item:last-of-type {

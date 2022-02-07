@@ -5,7 +5,6 @@ const imgToChange = document.querySelector('.listimage__image');
 const bullets = Array.from(document.querySelectorAll('.listimage__list-item'))
 
 
-
 function changeSrc(imageElement, newSrc) {
   unsetListeners(bullets);
   imageElement.style.opacity = '0';
@@ -18,31 +17,30 @@ function changeSrc(imageElement, newSrc) {
   }, 600);
   setTimeout(()=> {
     setEventListeners(bullets)
-  }, 3000)
+  }, 700)
 }
 
-function handleMousOvered(imgToChange, newSrc) {
-  changeSrc(imgToChange, newSrc);
+let newSrc = '';
+
+function handleMousOvered(evt) {
+  if (!evt.target.classList.contains('listimage__list-item_active')) {
+    changeSrc(imgToChange, evt.target.dataset.img);
+    evt.target.classList.add('listimage__list-item_active');
+  }
 }
 
 function setEventListeners(bullets) {
   bullets.forEach((item)=> {
-    item.addEventListener('mouseover', handleMousOvered(imgToChange, item.dataset.img) );
+    item.addEventListener('mouseover',  handleMousOvered);
   })
 }
 function unsetListeners(bullets) {
   bullets.forEach((item)=> {
-    item.removeEventListener('mouseover')//, handleMousOvered(imgToChange, item.dataset.img));
+    if (item.classList.contains('listimage__list-item_active')) {
+      item.classList.remove('listimage__list-item_active');
+    }
+    item.removeEventListener('mouseover', handleMousOvered);
   })
 }
-/*
-function unsetListeners(bullets) {
-  bullets.forEach((item)=> {
-    item.removeEventListener('mouseover', () => {
-      changeSrc(imgToChange, item.dataset.img);
-      //imgToChange.src = item.dataset.img;
-    });
-  })
-}
-*/
+
 setEventListeners(bullets);

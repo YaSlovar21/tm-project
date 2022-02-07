@@ -5,6 +5,8 @@
 
 .table__cell_type_grid {
   width: 90%;
+  margin-top: 0;
+  
 }
 
 @media screen and (max-width: 768px) {

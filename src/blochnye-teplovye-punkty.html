@@ -65,7 +65,7 @@
     </header>
 
     <main class="content">
-      <section class="flexburton flexburton_test">
+      <section class="flexburton flexburton_test flexburton_static-bg">
         <div class="flexburton__left-side">
             <div class="flexburton__breadcrumbs">
               <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
@@ -77,16 +77,16 @@
         </div>
         <div class="flexburton__right-side">
           <img class="flexburton__main-image" src="<%=require('./images/btp_test.png')%>" alt="Модель теплового пункта">
-          <svg class="flexburton__svg flexburton__svg_page_btp rotation" width="860" height="860" viewBox="0 0 860 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!--<svg class="flexburton__svg flexburton__svg_page_btp rotation" width="860" height="860" viewBox="0 0 860 860" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M424.715 8.58299L430 0L435.285 8.58299L610.874 293.768L600.388 293.904L430 17.166L256.865 298.365L246.211 298.504L424.715 8.58299ZM223.875 334.78L5.54132 689.39L0 698.39H10.5691H408.795L404.218 689.39H16.1104L228.656 344.181L223.875 334.78ZM459.27 689.39L454.898 698.39H849.431H860L854.459 689.39L633.569 330.629L628.908 340.224L843.89 689.39H459.27Z" fill="#E7441C"/>
-          </svg>
+          </svg>-->
         </div>
       </section>
 
       <section class="description">
         <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
-          <h2 class="two-columns__brief">Производство блочных тепловых пунктов</h2>
-          <div class="two-columns__main-text">
+          <h2 class="two-columns__brief two-columns__brief_flexed"">Производство блочных тепловых пунктов</h2>
+          <div class="two-columns__main-text  two-columns__main-text_flexed">
               <p class="two-columns__paragraph">БТП - блочные тепловые пункты - готовое решение от производителя теплообменного оборудования. Другими словами, это блочные ИТП, которые изготавливаются и испытываются на территории предприятия.</p>
               <p class="two-columns__paragraph">На БТП, в отличие от ИТП, выдается гарантия целиком на изделие. Изготавливаем блоки ГВС и блоки отопления по принципиальным схемам, которые представлены ниже, также вы можете заказать автоматизированный тепловой пункт, заполнив опросный лист. Мы предлагаем купить блочные тепловые пункты по выгодной цене, которую оперативно рассчитают инженеры предприятия ООО "Термоблок" и проконсультируют по вопросам монтажа, доставки и сервису оборудования.</p>
           </div>
@@ -94,34 +94,36 @@
       </section>
 
       <section class="introgrid">
-        <h2 class="introgrid__header">Преимущества работы с производителем</h2>
-        <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
-        <div class="introgrid__button">
-          <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Рассчитать тепловой пункт</a>
-        </div>
-        <div class="introgrid__feat" style="flex: 0 0 570px; position: relative;">
-          <div style="position: absolute; top:0; left: 0px;"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0px; transform: scaleX(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-            <div class="table table_page_btp" style="display: grid; grid-template-columns: 1fr 1fr;">
-              <div class="table__cell">
-                  <h3 class="table__heading table__heading_page_btp">Расчёт и подбор</h3>
-                  <p class="table__text table__text_page_btp">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
+        <div class="introgrid__wrapper">
+          <h2 class="introgrid__header">Преимущества работы с производителем</h2>
+          <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
+          <div class="introgrid__button">
+            <a href="#" class="link-beauty " style="text-decoration: none; font-size: 18px; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Рассчитать тепловой пункт</a>
+          </div>
+          <div class="introgrid__feat" style="flex: 0 0 570px; position: relative;">
+            <!--<div style="position: absolute; top:0; left: 0px;"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+            <div style="position: absolute; top:0; right: 0px; transform: scaleX(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>-->
+              <div class="table table_page_btp" style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div class="table__cell">
+                    <h3 class="table__heading table__heading_page_btp">Расчёт и подбор</h3>
+                    <p class="table__text table__text_page_btp">Пластинчатые теплообменники для ГВС ставятся в закрытых системах водоснабжения жилых домов, в котельных..</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading table__heading_page_btp table__heading_align_right">Собственное производство теплообменников</h3>
+                    <p class="table__text table__text_page_btp table__text_align_right">Теплообменники для отопления </p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading table__heading_page_btp">Сотрудничество напрямую с заводом</h3>
+                    <p class="table__text table__text_page_btp ">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading table__heading_page_btp table__heading_align_right">Доставка и гарантия</h3>
+                    <p class="table__text table__text_page_btp table__text_align_right">Разбейте навык на элементы.</p>
+                </div>
               </div>
-              <div class="table__cell">
-                  <h3 class="table__heading table__heading_page_btp table__heading_align_right">Собственное производство теплообменников</h3>
-                  <p class="table__text table__text_page_btp table__text_align_right">Теплообменники для отопления </p>
-              </div>
-              <div class="table__cell">
-                  <h3 class="table__heading table__heading_page_btp">Сотрудничество напрямую с заводом</h3>
-                  <p class="table__text table__text_page_btp ">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
-              </div>
-              <div class="table__cell">
-                  <h3 class="table__heading table__heading_page_btp table__heading_align_right">Доставка и гарантия</h3>
-                  <p class="table__text table__text_page_btp table__text_align_right">Разбейте навык на элементы.</p>
-              </div>
-            </div>
-          <div style="position: absolute; bottom:-60px; left: 0px; transform: scaleY(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; bottom:-60px; right: 0px; transform: scale(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+            <!--<div style="position: absolute; bottom:-60px; left: 0px; transform: scaleY(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
+            <div style="position: absolute; bottom:-60px; right: 0px; transform: scale(-1);"><img alt="Декоративный элемент" src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>-->
+          </div>
         </div>
       </section>
 
@@ -194,19 +196,20 @@
           </div>
           <a href="#" class="btp-adv__link link-beauty">Рассчитать <span class="span-no-wrap">стоимость  &#8594;</span></a>
         </section>
-        <div class="btp-presentation__callback" style="max-width: 80%; margin: 30px auto 0;">
-          <form class="lineform" method="post" action="#" id="formCallBack" name="formCallBack" novalidate>
-            <h2 class="lineform__heading">Проконсультироваться с инженером</h2>
-            <p class="lineform__description">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
-            <div style="border: 0; padding: 0;">
-              <input class="lineform__input lineform__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
-              <span class="lineform__input-error name-input-error"></span>
-              <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
-              <span class="lineform__input-error tel-input-error"></span>
-              <button class="lineform__button-save lineform__button-save_type_callback" type="submit">Оставить заявку</button>
-            </div>
-          </form>
-        </div>
+        <form class="lineform lineform_page_btp" method="post" action="#" id="formCallBack" name="formCallBack" novalidate>
+          <h2 class="lineform__heading">Проконсультироваться с инженером</h2>
+          <p class="lineform__description">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
+          <div style="border: 0; padding: 0;">
+            <input class="lineform__input lineform__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
+            <span class="lineform__input-error name-input-error"></span>
+            <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+            <span class="lineform__input-error tel-input-error"></span>
+            <button class="lineform__button-save lineform__button-save_type_callback" type="submit">Оставить заявку</button>
+          </div>
+        </form>
+        <!--<div class="btp-presentation__callback" style="max-width: 80%; margin: 30px auto 0;">
+
+        </div>-->
       </section>
 
 

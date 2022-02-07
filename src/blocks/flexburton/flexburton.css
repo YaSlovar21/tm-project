@@ -13,6 +13,11 @@
   padding: 30px;
   margin-top: 30px;
 }
+
+.flexburton_static-bg {
+  background: #2f2f2f67 url(../../images/svg-elems/FlexBurtonSVG.svg) no-repeat top right;
+}
+
   @media screen and (max-width: 1025px) {
     .flexburton {
       height: 400px;
