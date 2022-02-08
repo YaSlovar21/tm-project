@@ -13,3 +13,10 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .raschet-bem__parameters {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}

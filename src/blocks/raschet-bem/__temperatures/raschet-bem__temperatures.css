@@ -12,3 +12,10 @@
     max-width: calc(100% - 20px);
   }
 }
+
+@media screen and (max-height: 708px) {
+  .raschet-bem__temperatures {
+    flex-basis: 199px;
+    min-height: 0;
+  }
+}

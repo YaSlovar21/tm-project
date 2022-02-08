@@ -14,3 +14,10 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .raschet-bem__comment {
+    flex-basis: 250px;
+    margin-bottom: 0;
+  }
+}

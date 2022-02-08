@@ -30,8 +30,14 @@
  }
 }
 
-.bsz-new__img {
+.bsz-new__img-container {
   flex-basis: 40%;
+  background-image: url(../../images/place_new.png);
+  width: 100%;
+}
+
+.bsz-new__img {
+
   min-width: 0;
   min-height: 0;
   position: relative;
@@ -57,7 +63,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .bsz-new__img {
+  .bsz-new__img-container {
     flex-basis: 150px;
     bottom: 0;
     max-width: 95%;
