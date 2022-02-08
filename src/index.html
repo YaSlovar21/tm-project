@@ -16,9 +16,19 @@
       width: 5px;
       height: 90%;
     }
+    .swiper-scrollbar-main {
+      width: 2px!important;
+      /*background-color: rgba(255, 68, 0, 0.568)!important;*/
+      background: linear-gradient(180deg,hsla(0,0%,97%,0),#f7f7f7 49.49%,hsla(0,0%,97%,0) 92.71%);
+      height: 100%!important;
+    }
 
     .swiper-scrollbar-main .swiper-scrollbar-drag {
-      background: #999897;
+      background: #1b1b1b;
+      width: 10px!important;
+      border-radius: 0;
+      left: -5px;
+      top: 0;
 
     }
 
@@ -258,8 +268,10 @@
       </div>
 
       <div class="ds-second">
-        <div style="position: absolute; top:0; left: 0; width: 50%;"><img src="<%=require('./images/rect_sect.svg')%>" style="width: 70%;" alt="Декор" ></div>
-        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img src="<%=require('././images/rect_sect.svg')%>" style="width: 70%;" alt="Декор"></div>
+        <!--<div style="position: absolute; top:0; left: 0; width: 50%;"><img src="<%=require('./images/rect_sect.svg')%>" style="width: 70%;" alt="Декор" ></div>
+        <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 50%;"><img src="<%=require('././images/rect_sect.svg')%>" style="width: 70%;" alt="Декор"></div>-->
+        <figure class="highliter highliter_large highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+        <figure class="highliter highliter_large highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
         <div class="scroll-slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 5%;">
@@ -628,6 +640,8 @@
           </div>
           <div class="bsz-new__img-container">
             <!--<img class="bsz-new__img" src="<%=require('./images/place_new.png')%>" alt="Вид на станкостроительный завод сверху">-->
+            <img src="<%=require('./images/logo_BSZ_svg.svg')%>" class="bsz-new__logo" alt="Барнаульский станкостроительный завод">
+            <a class="bsz-new__link-blank" href="https://bszholding.ru" target="_blank">Перейти /-></a>
           </div>
         </div>
       </div>

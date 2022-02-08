@@ -189,8 +189,9 @@
 @import url(../blocks/sections/header-index/header-index.css);
 /*ПРОДУКЦИЯ 3D Slider*/
 @import url(../blocks/product-types/product-types.css);
-@import url(../blocks/ds/ds.css);
 
+@import url(../blocks/ds/ds.css);
+@import url(../blocks/highliter/highliter.css);
 
 
 @import url(../blocks/mainmodels/mainmodels.css);
@@ -209,6 +210,10 @@
 
 
 @import url(../blocks/oakley/oakley.css);
+
+
+
+
 
 
 @import url(../blocks/info/info.css);

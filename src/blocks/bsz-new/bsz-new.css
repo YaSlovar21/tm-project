@@ -8,7 +8,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 
 }
 
@@ -34,6 +34,16 @@
   flex-basis: 40%;
   background-image: url(../../images/place_new.png);
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 50px;
+  background-size: contain;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .bsz-new__img {
@@ -45,6 +55,17 @@
   width: 100%;
 }
 
+.bsz-new__logo {
+  height: 60%;
+  
+}
+
+.bsz-new__link-blank {
+  text-decoration: none;
+  color: rgb(0, 147, 221);
+  font-weight: 400;
+  font-size: 24px;
+}
 
 .bsz-new__text {
   margin: 30px 0;

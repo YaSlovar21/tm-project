@@ -1,0 +1,76 @@
+.highliter {
+  position: absolute;
+  width: 15%;
+  padding: 0;
+  margin: 0;
+}
+
+.highliter_large {
+  width: 30%;
+}
+
+.highliter_top-left {
+  top: 0;
+  left: 0;
+}
+
+.highliter_bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.highliter__element {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.highliter__element_stretched {
+  padding-bottom: 50%;
+}
+
+/*горизонтальная плашка*/
+.highliter_top-left .highliter__element::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: tomato;
+}
+
+/*вертикальная плашка*/
+.highliter_top-left .highliter__element::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: tomato;
+}
+
+/*горизонтальная плашка*/
+.highliter_bottom-right .highliter__element::after {
+  content: '';
+  position: absolute;
+  bottom:0;
+  right: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: tomato;
+}
+
+/*вертикальная плашка*/
+.highliter_bottom-right .highliter__element::before {
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: tomato;
+}
