@@ -133,10 +133,10 @@ var mySwiper1 = new Swiper('.khan__book-container', {
 
   pagination: {
     type: 'bullets',
-    el: '.khan__list',
+    el: '.khan__pagination-list',
     clickable: true,
-    bulletClass: 'khan__list-item',
-    bulletActiveClass: 'khan__list-item_active',
+    bulletClass: 'khan__pagination-list-item',
+    bulletActiveClass: 'khan__pagination-list-item_active',
     renderBullet: function (index, className) {
         let a = '';
         if (index==0) {

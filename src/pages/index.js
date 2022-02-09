@@ -301,7 +301,7 @@ const types_swiper = new Swiper('.product-types', {
   },
   breakpoints: {
     // when window width is >= 320px
-    320: {
+   /* 320: {
       slidesPerView: 1,
       spaceBetween: 0,
     },
@@ -309,10 +309,10 @@ const types_swiper = new Swiper('.product-types', {
     480: {
       slidesPerView: 1,
       spaceBetween: 0,
-    },
+    },*/
     // when window width is >= 640px
     640: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 0,
     },
     780: {

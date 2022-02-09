@@ -6,6 +6,8 @@
 /*Спаны*/
 @import url(../blocks/span/span.css);
 
+@import url(../blocks/link-beauty/link-beauty.css);
+
 @import url(../blocks/nav/nav.css);
 @import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
@@ -28,6 +30,7 @@
 @import url(../blocks/khan/_page_heatex/khan_page_heatex.css);
 
 
+@import url(../blocks/highliter/highliter.css);
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);

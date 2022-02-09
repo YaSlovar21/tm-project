@@ -1,3 +1,7 @@
+:root {
+  --highliter-theme-color: #ff5e3a;
+}
+
 .highliter {
   position: absolute;
   width: 15%;
@@ -14,9 +18,19 @@
   left: 0;
 }
 
+.highliter_top-right {
+  top: 0;
+  right: 0;
+}
+
 .highliter_bottom-right {
   bottom: 0;
   right: 0;
+}
+
+.highliter_bottom-left {
+  bottom: 0;
+  left: 0;
 }
 
 .highliter__element {
@@ -29,6 +43,7 @@
   padding-bottom: 50%;
 }
 
+/*TOP - LEFT*/
 /*горизонтальная плашка*/
 .highliter_top-left .highliter__element::after {
   content: '';
@@ -38,20 +53,45 @@
 
   width: 100%;
   height: 2px;
-  background-color: tomato;
+  background-color: var(--highliter-theme-color);
 }
 
 /*вертикальная плашка*/
 .highliter_top-left .highliter__element::before {
   content: '';
   position: absolute;
-  top:0;
+  top:2px;
   left: 0;
   width: 2px;
   height: 100%;
-  background-color: tomato;
+  background-color: var(--highliter-theme-color);
 }
 
+/*TOP - RIGHT*/
+/*горизонтальная плашка*/
+.highliter_top-right .highliter__element::after {
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: var(--highliter-theme-color);
+}
+
+/*вертикальная плашка*/
+.highliter_top-right .highliter__element::before {
+  content: '';
+  position: absolute;
+  top:2px;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--highliter-theme-color);
+}
+
+/*BOTTOM - RIGHT*/
 /*горизонтальная плашка*/
 .highliter_bottom-right .highliter__element::after {
   content: '';
@@ -61,16 +101,40 @@
 
   width: 100%;
   height: 2px;
-  background-color: tomato;
+  background-color: var(--highliter-theme-color);
 }
 
 /*вертикальная плашка*/
 .highliter_bottom-right .highliter__element::before {
   content: '';
   position: absolute;
-  top:0;
+  bottom: 2px;
   right: 0;
   width: 2px;
   height: 100%;
-  background-color: tomato;
+  background-color: var(--highliter-theme-color);
+}
+
+/*BOTTOM - LEFT*/
+/*горизонтальная плашка*/
+.highliter_bottom-left .highliter__element::after {
+  content: '';
+  position: absolute;
+  bottom:0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: var(--highliter-theme-color);
+}
+
+/*вертикальная плашка*/
+.highliter_bottom-left .highliter__element::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--highliter-theme-color);
 }

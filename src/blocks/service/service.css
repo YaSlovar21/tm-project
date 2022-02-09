@@ -1,6 +1,5 @@
 @media screen and (min-width: 1440px) {
   .service {
-    max-width: calc(100% - 40px);
     margin: 0 auto;
   }
 }

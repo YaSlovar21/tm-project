@@ -1,7 +1,7 @@
 
 @import url(./__title/khan__title.css);
 @import url(./__quote/khan__quote.css);
-
+@import url(./__list/khan__list.css);
 
 
 @import url(./__quote-author/khan__quote-author.css);
@@ -27,18 +27,18 @@
 
 
 
-.khan__list {
+.khan__pagination-list {
     display: flex;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
 }
 @media screen and (max-width:420px) {
-    .khan__list {
+    .khan__pagination-list {
         flex-direction: column;
     }
 }
-.khan__list-item {
+.khan__pagination-list-item {
     margin: 15px 5px 15px 0;
     list-style-type: none;
     background-color: #f2f2f22d;
@@ -62,12 +62,12 @@
 
 
 @media screen and (max-width:420px) {
-    .khan__list-item {
+    .khan__pagination-list-item {
         margin: 5px 0;
     }
 }
 
-.khan__list-item_active {
+.khan__pagination-list-item_active {
     /*background-color: #ee6f07b8;*/
     border-left: 5px solid #FF5E3A;
     color: #FF5E3A;
@@ -76,15 +76,15 @@
 
 
 
-.khan__list-item:hover {
+.khan__pagination-list-item:hover {
     cursor: pointer;
     color: white;
 }
-.khan__list-item_active:hover {
+.khan__pagination-list-item_active:hover {
     cursor: pointer;
     color: #FF5E3A;
 }
-.khan__list-item:focus {
+.khan__pagination-list-item:focus {
     outline: 0px;
   }
 

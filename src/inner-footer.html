@@ -61,13 +61,22 @@
       <button class="popup__button-close popup__button-close_menu"></button>
       <nav class="popup__menu">
         <a class="popup__navlink" href="/">Главная</a>
-        <a class="popup__navlink" href="/production.html">Продукция</a>
+        <div class="dropdown popup__navlink">
+          <input type="checkbox" class="dropdown__checkbox" id="menu-checkbox">
+          <label class="dropdown__label" for="menu-checkbox">Продукция</label>
+          <ul class="dropdown__list">
+            <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/production.html">Продукция</a></li>
+            <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники</a></li>
+            <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/pishchevye-teploobmenniki.html">Пищевые теплообменники</a></li>
+            <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/blochnye-teplovye-punkty.html">Блочные тепловые пункты</a></li>
+          </ul>
+        </div>
         <a class="popup__navlink" href="/service.html">Сервис</a>
         <a class="popup__navlink" href="/blog-proizvodstva">Блог производителя</a>
         <a class="popup__navlink" href="/about.html">О компании</a>
         <a class="popup__navlink" href="/contacts.html">Контакты</a>
       </nav>
-      <a class="auth" href="/profile">Рассчитать теплообменник</a>
+      <!--<a class="auth" href="/profile">Рассчитать теплообменник</a>-->
     </div>
   </div>
 

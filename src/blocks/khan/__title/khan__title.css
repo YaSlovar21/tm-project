@@ -7,6 +7,12 @@
     color: #d8d8d8;
   }
 
+  @media screen and (max-width:1440px) {
+    .khan__title {
+      font-size: 42px;
+    }
+  }
+
   @media screen and (max-width:1024px) {
     .khan__title {
       width: 100%;

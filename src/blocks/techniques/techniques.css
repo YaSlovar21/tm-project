@@ -49,6 +49,15 @@
   right: 0;
 }
 
+
+@media screen and (max-width: 1440px) {
+  .techniques::after {
+    width: 2%;
+  }
+  .techniques::before {
+    width: 28%;
+  }
+}
 /*линия, по которой бежит ползунок*/
 .techniques__after {
   position: relative;
