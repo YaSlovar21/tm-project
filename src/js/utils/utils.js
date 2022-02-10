@@ -45,7 +45,6 @@ export function useWindowSizeTest() {
   let windowSize = window.innerWidth;
 
   function handleWindowResize() {
-    //setTimeout(setWindowWidth(window.innerWidth), 2500);
     setWindowWidth(window.innerWidth)
     //console.log(windowSize);
   }
@@ -54,17 +53,7 @@ export function useWindowSizeTest() {
     windowSize = updatedWidth;
   }
 
-  function getWindowWidth() {
-    return windowSize;
-  }
+  window.addEventListener('resize', handleWindowResize)
 
-  function init() {
-    window.addEventListener('resize', handleWindowResize)
-  }
-
-  return {
-    windowSize,
-    getWindowWidth,
-    init,
-  }
+  return windowSize;
 }
