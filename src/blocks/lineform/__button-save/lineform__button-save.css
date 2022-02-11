@@ -12,3 +12,10 @@
     padding: 15px;
     transition: opacity linear 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+  .lineform__button-save {
+    margin: 0;
+    width: 100%;
+  }
+}

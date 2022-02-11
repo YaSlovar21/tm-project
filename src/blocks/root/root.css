@@ -7,7 +7,7 @@
 
     margin: 0 auto;
     /* выше для экранов больше 1600px отцентрировали весь контент */
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Circe','Inter', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -93,6 +93,13 @@ input {
     background-size: cover;
     z-index: -1;
 }
+
+@media screen and (max-width: 500px) {
+  .bg {
+    background-image: url(../../images/bg_my_mobile.png);
+  }
+}
+
 .bg_abs {
     position: absolute;
     left: 0;
