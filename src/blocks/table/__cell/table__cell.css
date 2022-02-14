@@ -6,11 +6,13 @@
 .table__cell_type_grid {
   width: 90%;
   margin-top: 0;
-  
 }
+
 
 @media screen and (max-width: 768px) {
   .table__cell {
-    width: 140px;
+    /*width: 140px;*/
+    margin-top: 20px;
+    width: 100%;
   }
 }

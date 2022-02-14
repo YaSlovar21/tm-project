@@ -8,3 +8,7 @@
   .table__text_align_right {
     text-align: right;
   }
+
+  .table__text_hidden {
+    display: none;
+  }

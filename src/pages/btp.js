@@ -74,3 +74,19 @@ var mySwiper1 = new Swiper('.btp-schemes', {
     //el: '.swiper-scrollbar',
   },
 })
+
+
+import FreqDynamic from '../js/components/FreqDynamic.js';
+
+/*let windowWidth = useWindowSizeTest();*/
+
+const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
+  new FreqDynamic({
+    headingSelector: 'table__heading',
+    descSelector: 'table__text',
+  }, element)
+);
+
+freqElements.forEach((element) => {
+  element.setEventListeners();
+})

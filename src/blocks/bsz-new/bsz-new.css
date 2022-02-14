@@ -40,7 +40,7 @@
   position: relative;
   bottom: 50px;
   background-size: contain;
-
+  max-height: 220px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -56,15 +56,15 @@
 }
 
 .bsz-new__logo {
-  height: 60%;
-  
+  height: 40%;
+
 }
 
 .bsz-new__link-blank {
   text-decoration: none;
   color: rgb(0, 147, 221);
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .bsz-new__text {

@@ -21,7 +21,7 @@
     .khan__buy-link {
       font-size: 16px;
       margin-left: 12px;
-
+      margin-top: 30px;
       flex-shrink: 1;
     }
   }

@@ -1,16 +1,6 @@
-/*
-        <section class="bpou">
-          <div class="bpou__info">
-            <span class="bpou__intro">Смотрите также</span>
-            <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
-            <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
-            <div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
-          </div>
-          <div class="bpou__image-container">
-            <img src="images/teplojit-pou.png" class="bpou__image">
-          </div>
-        </section>
-*/
+@import url(./__intro/bpou__intro.css);
+@import url(./__heading/bpou__heading.css);
+@import url(./__description/bpou__description.css);
 
 .bpou {
     display: flex;
@@ -24,6 +14,8 @@
     margin-top: 140px;
     padding-bottom: 20px; /*временно*/
 }
+
+
 
 .bpou::before {
     content: '';
@@ -44,90 +36,40 @@
     height: 2px;
     background-color: rgba(255, 108, 50, 0.42);
 }
+@media screen and (max-width: 1640px) {
+  .bpou {
+    max-width: calc(100% - 40px);
+  }
+  .bpou::after {
+    left: -20px;
+  }
+  .bpou::before {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bpou {
+    flex-direction: column-reverse;
+    max-height: 600px;
+  }
+}
 
 .bpou__image-container {
     flex: 0 1 670px;
+    display: flex;
+    min-height: 400px;
 }
 
 .bpou__info {
     flex: 0 1 560px;
 }
 
-
-.bpou__intro {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 119.52%;
-
-    color: rgba(255, 255, 255, 0.42);
-}
-
-@media screen and (max-width:1024px) {
-    .bpou__intro {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .bpou__intro {
-        font-size: 14px;
-    }
-}
-
-.bpou__heading {
-    max-width: 340px;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 119.52%;
-
-    color: #F2F2F2;
-    margin: 5px 0 30px;
-}
-
-@media screen and (max-width:1024px) {
-    .bpou__heading {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .bpou__heading {
-        font-size: 24px;
-    }
-}
-
-.bpou__description {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 155.02%;
-    /* or 37px */
-
-    letter-spacing: 0.01em;
-    margin: 0 0 30px;
-
-    color: #EDEDED;
-}
-
-@media screen and (max-width:1024px) {
-    .bpou__description {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .bpou__description {
-        font-size: 16px;
-    }
-}
-
 .bpou__image {
     max-width: 100%;
     height: auto;
-
     position: relative;
     bottom: 10%;
+    object-fit: contain;
+    object-position: right;
 }

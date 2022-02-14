@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 1440px) {
     .flexburton__title {
- 
+
       font-size: 62px;
       margin-left: 10px;
     }
@@ -20,7 +20,7 @@
 
   @media screen and (max-width: 1023px) {
     .flexburton__title {
- 
+
       font-size: 48px;
       margin-left: 10px;
     }
@@ -35,7 +35,7 @@
   @media screen and (max-width: 550px) {
     .flexburton__title {
       font-size: 20px;
-      margin-left: 10px;
+      margin-left: 0px;
     }
   }
 

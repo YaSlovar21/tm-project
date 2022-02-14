@@ -10,6 +10,12 @@
   border-top: 2px solid #f2f2f22d;
 }
 
+@media screen and (max-width: 758px) {
+  .secondgridbtp__title {
+    font-size: 18px;
+  }
+}
+
 .secondgridbtp__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -20,9 +26,23 @@
   list-style-type: none;
 }
 
+@media screen and (max-width: 1640px) {
+  .secondgridbtp__list {
+    max-width: calc(100% - 40px);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .secondgridbtp__list {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .secondgridbtp__list {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
   }
 }
 

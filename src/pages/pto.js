@@ -317,10 +317,22 @@ import {
   useWindowSizeTest
 } from '../js/utils/utils.js';
 
-let windowWidth = useWindowSizeTest();
+import FreqDynamic from '../js/components/FreqDynamic.js';
 
-const comments = Array.from(document.querySelectorAll('.table__text'));
+/*let windowWidth = useWindowSizeTest();*/
 
+const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
+  new FreqDynamic({
+    headingSelector: 'table__heading',
+    descSelector: 'table__text',
+  }, element)
+);
+
+freqElements.forEach((element) => {
+  element.setEventListeners();
+})
+
+/*
 function updateComments() {
   if (windowWidth < 768) {
     comments.forEach((comment) => {
@@ -337,6 +349,6 @@ window.addEventListener('resize', ()=> {
   windowWidth = useWindowSizeTest();
   updateComments();
 })
-
+*/
 
 
