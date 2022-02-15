@@ -40,9 +40,13 @@ input {
 
 :root {
     --swiper-theme-color: #e7451c;
+    --swiper-preloader-color: #e7451c;
+    --swiper-pagination-color: #e7451c;
+    --swiper-navigation-color: #e7451c;
     --sticky-around-color: #ff5e3a49;
     --cell-heading-font: 24px;
     --cell-description-font: 18px;
+
 }
 
 @media screen and (max-width: 1024px){
