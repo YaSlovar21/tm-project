@@ -57,3 +57,27 @@ export function useWindowSizeTest() {
 
   return windowSize;
 }
+
+
+// колбэк, который нужно выполнить после того
+// как изображение загрузится
+export function imageLoadCallback(evt) {
+  // после загрузки добавим элемент изображения в DOM
+  document.body.append(evt.target);
+}
+
+// Функция для создания изображения
+function loadImage(imageUrl, loadCallback) {
+  const img = document.createElement('img');
+  img.src = imageUrl;
+
+  // Функция, которая записана в onload
+  // будет вызвана после загрузки изображения
+  img.onload = loadCallback;
+}
+
+// Теперь картинка появится в разметке только после загрузки
+loadImage(
+  'https://yastatic.net/q/logoaas/v1/Практикум.svg',
+  imageLoadCallback
+);

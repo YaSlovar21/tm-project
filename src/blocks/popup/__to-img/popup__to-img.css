@@ -3,4 +3,9 @@
     max-height: 75vh;
     flex: 0 1 400px;
     min-width: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    
 }

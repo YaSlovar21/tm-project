@@ -46,6 +46,7 @@
     font-weight: normal;
     line-height: 20px;
     padding: 15px 25px;
+    box-sizing: border-box;
 
     /*border-radius: 25px;*/
     cursor: pointer;
@@ -65,6 +66,16 @@
     .khan__pagination-list-item {
         margin: 5px 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+  .khan__pagination-list-item {
+    font-size: 12px;
+    flex-basis: calc(50% - 5px);
+    padding: 10px;
+    flex-shrink: 2;
+    margin-bottom: 0;
+  }
 }
 
 .khan__pagination-list-item_active {

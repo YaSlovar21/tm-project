@@ -25,12 +25,12 @@
 
 /*Грид 1большая + 4 блока*/
 @import url(../blocks/tmproduction/tmproduction.css);
+
 /*Грид полный цикл*/
+@import url(../blocks/wholecycle-section/wholecycle-section.css);
 @import url(../blocks/wholecycle-grid/wholecycle-grid.css);
 
-@import url(../blocks/plastdetail/plastdetail.css);
-
-
+@import url(../blocks/sections/oblasti/oblasti.css);
 
 @import url(../blocks/footer/footer.css);
 

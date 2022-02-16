@@ -46,11 +46,17 @@
   }
   .popup__button-close_type_form {
     z-index: 22;
-    top:30px;
+    top: 30px;
     right: 10px;
     height: 18px;
     width: 18px;
     background-color: coral;
+  }
+  .popup__button-close_type_heatex {
+    width: 18px;
+    height: 18px;
+    top: 14px;
+    right: 14px;
   }
 }
 

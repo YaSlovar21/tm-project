@@ -53,7 +53,7 @@
 @import url(../blocks/projects/projects.css);
 @import url(../blocks/plates/plates.css);
 @import url(../blocks/plastdetail/plastdetail.css);
-
+@import url(../blocks/highliter/highliter.css);
 
 
 @import url(../blocks/khan/khan.css);
@@ -74,3 +74,12 @@
 
 @import url(../blocks/list-bem/list-bem.css);
 @import url(../blocks/column-description/column-description.css);
+
+
+@import url(../blocks/popup/__to-info/popup__to-info.css); /*контейнер для ТО + описание со ссылками справа*/
+@import url(../blocks/popup/__to-img/popup__to-img.css);
+@import url(../blocks/popup/__desc-container/popup__desc-container.css);
+@import url(../blocks/popup/__to-name/popup__to-name.css);
+@import url(../blocks/popup/__to-desc/popup__to-desc.css);
+@import url(../blocks/popup/__to-3dlink/popup__to-3dlink.css);
+@import url(../blocks/popup/__to-baseurl/popup__to-baseurl.css);

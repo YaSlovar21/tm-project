@@ -72,7 +72,7 @@
   max-height: 338.67px;
   object-fit: cover;
   object-position: center;
-
+  max-width: 100%;
   transition: all .6s linear;
 }
 

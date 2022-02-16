@@ -55,13 +55,12 @@
                 <img class="productcard__image"  src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Пастеризационная охладительная установка">
             </a>
         </section>
-        <section style="padding: 50px 0; background-color: #2f2f2f34; margin-top: 40px; background: linear-gradient(180deg, #2f2f2f36 0%, #2f2f2f34 10%, #2f2f2f69 50%, #2f2f2f34 90%, #2f2f2f0e 100%); display: flex;">
-        <div style="flex-basis: 510px;">
-          <h2 class="content__title content__title_type_h2product" style="font-size: 24px; line-height: 1.4; text-transform: none; font-weight: 800; max-width: 1600px; flex-basis: 510px;">Полный цикл производства пластинчатых теплообменников</h2>
-
+        <section class="wholecycle-section">
+        <div class="wholecycle-section__intro">
+          <h2 class="content__title wholecycle-section__title">Полный цикл производства пластинчатых теплообменников</h2>
         </div>
-        <div class="wholecycle-grid" style="flex-basis: 1200px;">
-            <div class="pictitletext ">
+        <div class="wholecycle-grid wholecycle-section__grid">
+            <div class="pictitletext">
               <div class="pictitletext__img-container wow animate__fadeInUp">
                 <img src="<%=require('./images/wholecycle/1plast.png')%>" class="pictitletext__image">
               </div>
@@ -100,9 +99,12 @@
             </div>
           </div>
         </section>
-        <section style="display: flex; max-width: 1600px; margin: 0 auto;">
-        <h2 class="content__title content__title_type_h2product"> Области применения пластинчатых теплообменников</h2>
-        <ul class="list list_text_medium list_page_product"  style="margin-bottom: 40px;">
+        <section class="oblasti">
+        <div class="oblasti__intro">
+          <h2 class="content__title oblasti__title"> Области применения пластинчатых теплообменников</h2>
+          <button class="button-bem oblasti__button">Проконсультироваться с инженером</button>
+        </div>
+        <ul class="list list_text_medium oblasti__list">
           <li class="list__item">нагрев теплоносителя в котлах системах отопления, горячего водоснабжения вентиляции и других технологических теплообменных процессах</li>
           <li class="list__item">охлаждение трансформаторного, гидравлического и моторного масел</li>
           <li class="list__item">теплоснабжение домов коттеджного типа</li>

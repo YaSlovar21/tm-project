@@ -73,6 +73,10 @@
     color: #f2f2f2;
 }
 
+.contacts__link {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1440px) {
   .contacts {
     max-width: calc(100% - 40px);

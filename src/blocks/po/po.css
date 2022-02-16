@@ -51,7 +51,7 @@
         width: 100%;
         font-size: 18px;
         font-weight: 700;
-        text-align: left;
+
     }
 }
 
@@ -139,8 +139,8 @@
   .po__text {
     font-size: 14px;
     letter-spacing: .05em;
-    text-align: right;
-    text-indent: -2.5em;
+
+   
   }
   .po__description {
     max-width: calc(100% - 20px);

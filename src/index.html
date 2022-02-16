@@ -919,25 +919,23 @@
   </div>
 
   <div class="popup popup_darked popup-to">
-    <div class="popup__container">
-        <button class="popup__button-close link-beauty" type="button"></button>
-        <!--<div class="popup__image-view">
-            <img class="popup__image" alt="картинка под загрузку" src="">
-            <p class="popup__image-description"></p>
-        </div>-->
-        <div class="heatex popup__to-info" style="max-width: 100%;">
-          <div style="position: absolute; top:0; left: 0;width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
-          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1); width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
-          <img class="popup__to-img" alt="Фотореалистика пластинчатый теплообменник" src="<%=require('./images/svg-elems/preloader.gif')%>">
-          <div class="popup__desc-container">
-            <span class="span span_comment">Теплообменник</span>
-            <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
-            <p class="popup__to-desc popup__to-desc_theme_dark heatex__to-desc heatex__to-desc_theme_dark">rehgoreqwghorqeghh</p>
-            <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
+    <div class="popup__container popup__container_type_heatex">
+        <button class="popup__button-close popup__button-close_type_heatex link-beauty" type="button"></button>
+        <figure class="highliter highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+        <figure class="highliter highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+        <figure class="highliter highliter_top-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+        <figure class="highliter highliter_bottom-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+        <!--div class="heatex popup__to-info" style="max-width: 100%;">-->
+        <img class="popup__to-img" alt="Фотореалистика пластинчатый теплообменник" src="<%=require('./images/svg-elems/preloader.gif')%>">
+        <div class="popup__desc-container">
+          <div>
+            <span class="span span_comment popup__span">Теплообменник</span>
+            <h3 class="popup__to-name">ТИ 077</h3>
           </div>
+          <p class="popup__to-desc popup__to-desc_theme_dark">rehgoreqwghorqeghh</p>
+          <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
         </div>
-        <div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);width: 30%;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
-          <div style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 30%; height: auto;"><img alt="Контур" src="<%=require('./images/rect_sect.svg')%>" style="width: 100%; object-fit: contain; object-position: center;"></div>
+        <!--</div>-->
     </div>
   </div>
 

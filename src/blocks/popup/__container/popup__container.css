@@ -41,3 +41,9 @@
   width: auto;
 }
 
+.popup__container_type_heatex {
+  max-width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+

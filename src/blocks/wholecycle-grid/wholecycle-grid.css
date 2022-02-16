@@ -8,12 +8,12 @@
 
     box-sizing: border-box;
 }
-
+/*
 @media screen and (min-width: 1440px) {
   .wholecycle-grid {
     max-width: calc(100% - 40px);
   }
-}
+}*/
 
 @media screen and (max-width: 1280px) {
     .wholecycle-grid {

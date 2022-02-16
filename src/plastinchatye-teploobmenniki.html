@@ -803,14 +803,10 @@
       </div>
   </div>
 </div>
-<!--Модальное окно с теплообменником-->
+<!--Модальное окно с теплообменником
 <div class="popup popup_darked popup-to">
   <div class="popup__container">
       <button class="popup__button-close link-beauty" type="button"></button>
-      <!--<div class="popup__image-view">
-          <img class="popup__image" alt="картинка под загрузку" src="">
-          <p class="popup__image-description"></p>
-      </div>-->
       <div class="popup__to-info heatex" style="max-width: 100%;">
         <img style="position: absolute; top:0; left: 0; width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
         <img style="position: absolute; top:0; right: 0; transform: scaleX(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
@@ -819,15 +815,39 @@
           <span class="span span_comment">Теплообменник</span>
           <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
           <p class="popup__to-desc popup__to-desc_theme_dark heatex__to-desc heatex__to-desc_theme_dark">rehgoreqwghorqeghh</p>
-          <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
+          <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник -></a>
           <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-          <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти --></a>
+          <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>
         </div>
       </div>
       <img style="position: absolute; bottom:0; left: 0; transform: scaleY(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
       <img style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
   </div>
+</div>-->
+
+<div class="popup popup_darked popup-to">
+  <div class="popup__container popup__container_type_heatex">
+      <button class="popup__button-close popup__button-close_type_heatex link-beauty" type="button"></button>
+      <figure class="highliter highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_top-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_bottom-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <!--div class="heatex popup__to-info" style="max-width: 100%;">-->
+      <img class="popup__to-img" alt="Фотореалистика пластинчатый теплообменник" src="<%=require('./images/svg-elems/preloader.gif')%>">
+      <div class="popup__desc-container">
+        <div>
+          <span class="span span_comment popup__span">Теплообменник</span>
+          <h3 class="popup__to-name">ТИ 077</h3>
+        </div>
+        <p class="popup__to-desc popup__to-desc_theme_dark">rehgoreqwghorqeghh</p>
+        <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
+        <!--<h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
+        <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>-->
+      </div>
+      <!--</div>-->
+  </div>
 </div>
+
 
 <!--Форма расчёта теплообменника  -->
 <%= require('html-loader!./inner-raschet-form.html').default %>

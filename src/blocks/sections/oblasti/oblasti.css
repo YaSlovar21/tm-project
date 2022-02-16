@@ -1,0 +1,25 @@
+.oblasti {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.oblasti__intro {
+  flex-basis: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.oblasti__title {
+  font-size: 24px;
+  color: #f2f2f2;
+  margin: 0;
+}
+
+.oblasti__button {
+  width: 100%;
+}
+
