@@ -793,7 +793,7 @@
     <div class="popup popup-raschet">
       <div class="popup__container popup__container_type_big popup__container_type_form">
           <button class="popup__button-close link-beauty popup__button-close_type_form" type="button"></button>
-          <form class="popup__form raschet-bem" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
+          <form class="popup__form raschet-bem raschet-bem_flexed" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
               <h2 class="raschet-bem__title">Заявка на расчёт</h2>
               <!--Среды вход/выход-->
               <fieldset class="first-step" style="display: flex;flex-direction: column; max-width: 100%; padding: 0; border: none; max-height: 90vh;">
@@ -926,7 +926,9 @@
         <figure class="highliter highliter_top-right"><div class="highliter__element highliter__element_stretched"></div></figure>
         <figure class="highliter highliter_bottom-left"><div class="highliter__element highliter__element_stretched"></div></figure>
         <!--div class="heatex popup__to-info" style="max-width: 100%;">-->
-        <img class="popup__to-img" alt="Фотореалистика пластинчатый теплообменник" src="<%=require('./images/svg-elems/preloader.gif')%>">
+        <div class="popup__to-img-container">
+
+        </div>
         <div class="popup__desc-container">
           <div>
             <span class="span span_comment popup__span">Теплообменник</span>
@@ -934,6 +936,8 @@
           </div>
           <p class="popup__to-desc popup__to-desc_theme_dark">rehgoreqwghorqeghh</p>
           <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
+          <!--<h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
+          <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>-->
         </div>
         <!--</div>-->
     </div>

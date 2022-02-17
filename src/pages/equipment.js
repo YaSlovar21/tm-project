@@ -50,8 +50,9 @@ const formApi = new Api({
   //baseUrl: 'https://formspree.io',
   baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
   headers: {
-    'Accept': '*/*',
-    'Content-Type': 'text/plain'
+    'Accept': 'application/json',
+    //'Content-Type': 'text/plain'
+    'Content-Type': 'application/json;charset=utf-8',
   },
 });
 

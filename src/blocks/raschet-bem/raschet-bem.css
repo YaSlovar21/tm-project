@@ -37,11 +37,14 @@
   padding: 0px;
   background-color: #2f2f2f;
   width: 100%;
-  max-height: 100vh;
+
   box-sizing: border-box;
   border-radius: 2px;
 }
 
+.raschet-bem_flexed {
+  max-height: 100vh;
+}
 
 
 .raschet-bem_bg_none {

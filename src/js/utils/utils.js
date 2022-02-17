@@ -57,7 +57,7 @@ export function useWindowSizeTest() {
 
   return windowSize;
 }
-
+/*
 
 // колбэк, который нужно выполнить после того
 // как изображение загрузится
@@ -80,4 +80,4 @@ function loadImage(imageUrl, loadCallback) {
 loadImage(
   'https://yastatic.net/q/logoaas/v1/Практикум.svg',
   imageLoadCallback
-);
+);*/

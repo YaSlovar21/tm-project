@@ -37,14 +37,15 @@ export default class Api {
     sendBigForm(formDataJson) {
       return fetch(`${this._baseUrl}`, {
         method : 'POST',
-        headers: this._headers,
+        headers: {
+
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify(formDataJson),
-        isBase64Encoded: false
+        //isBase64Encoded: false
     })
     .then((response) => {
-        console.log(response);
         return this._isResponseOk(response);
     })
-    }
-
+  }
 }
