@@ -1,0 +1,10 @@
+.nav__link {
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  color:rgb(214, 214, 214);
+  z-index: 1;
+}
