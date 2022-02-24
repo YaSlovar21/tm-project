@@ -129,7 +129,7 @@ enableValidation() {
 
 enableStepValidation() {
   const sets = [];
-  
+
   const firstStepFieldset = this._formElement.querySelector('.first-step');
   const firstStepButton = firstStepFieldset.querySelector('.first-step-button');
   const firstStepInputList = Array.from(firstStepFieldset.querySelectorAll(this._inputSelector));

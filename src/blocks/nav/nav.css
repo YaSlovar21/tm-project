@@ -1,3 +1,6 @@
+@import url(./__link/nav__link.css);
+@import url(./__mobile-icon/nav__mobile-icon.css);
+
 .nav-mobile-logo {
   display:  none;
   width: 50px;
