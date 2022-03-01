@@ -9,7 +9,10 @@ export default class PopupWithForm extends Popup {
         this._inputSelector = formInputSelector;
 
         this._checker = checherValidation;
+        
     }
+
+
 
     //собираем поля формы
     _getInputValues() {

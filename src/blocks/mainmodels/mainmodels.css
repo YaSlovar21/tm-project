@@ -24,6 +24,8 @@
     "title models turnbutton"
     ". models turnbutton"
     "button models turnbutton";
+
+  column-gap: 20px;
 }
 
 .mainmodels__wrapper_page_catalog {
@@ -44,6 +46,20 @@
 
 .mainmodels__wrapper_food .models-food  {
   display: grid;
+}
+
+@media screen and (max-width: 1640px) {
+  .mainmodels__wrapper {
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainmodels__wrapper {
+    max-width: calc(100% - 20px);
+  }
 }
 
 .mainmodels__title {

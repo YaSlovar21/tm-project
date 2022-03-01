@@ -158,6 +158,15 @@ const popupRaschet = new PopupWithBigForm({
   formCleanError: () => {
     raschetValidatorForm.cleanAllErrors();
   },
+  checherValidation: (formStepSet) => {
+    if (!raschetValidatorForm.hasInvalidInput(formStepSet)) {
+
+      return true;
+    } else {
+      formValidatorCallBack.showErrors(formStepSet);
+      return false;
+    }
+  }
 }, '.popup-raschet', '.raschet-bem', '.raschet-bem__input')
 
 popupImage.setEventListeners();
@@ -199,12 +208,17 @@ const backButton = document.querySelector('.form-back-button');
       const popupAbsolute = document.querySelector('.popup-absolute');
       backButton.addEventListener('mousedown', (evt)=> {
         popupAbsolute.classList.remove('popup__form-fio_opened');
-      })
+        popupRaschet.decreaseStep();
+        console.log(popupRaschet._step);
+      });
+
       nextButton.addEventListener('mousedown', ()=> {
         /*
           Проверить блок на валидность, показать ошибки если есть, заблокировать кнопку
         */
         popupAbsolute.classList.add('popup__form-fio_opened');
+        popupRaschet.increaseStep();
+        console.log(popupRaschet._step);
       })
 
 

@@ -8,8 +8,16 @@ export default class PopupWithBigForm extends Popup {
         this._formElement = this._modal.querySelector(formSelector); //.popup__form
         this._inputSelector = formInputSelector;
         this._absolutePopup = this._modal.querySelector('.popup-absolute');
+
+        this._step = 0;
     }
 
+    increaseStep() {
+      this._step = 1;
+    }
+    decreaseStep() {
+      this._step = 0;
+    }
     //собираем поля формы
     _getInputValues() {
         // достаём все элементы полей

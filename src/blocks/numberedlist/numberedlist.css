@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 768px) {
   .numberedlist {
-    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .numberedlist__title {

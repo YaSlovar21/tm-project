@@ -25,6 +25,7 @@
   .wholecycle-grid {
     grid-template-columns: 1fr;
     gap: 80px;
+    max-width: calc(100% - 10px);
   }
 }
 

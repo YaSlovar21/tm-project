@@ -15,3 +15,15 @@
   line-height: 1.4;
   margin-right: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .frombsz {
+    max-width: 100%;
+  }
+  .frombsz__title {
+    font-size: 24px;
+  }
+  .frombsz__paragraph {
+    font-size: 14px;
+  }
+}

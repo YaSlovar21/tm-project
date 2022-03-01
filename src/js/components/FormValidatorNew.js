@@ -90,10 +90,13 @@ export default class FormValidatorNew {
     });
   }
 
+  showErrorsForStep(inputsWithButton) {
+    
+  }
+
   _setEventListeners() {
     //const inputList = Array.from(this._formElement.querySelectorAll(this._inputSelector));
     //const buttonElement = this._formElement.querySelector(this._submitButtonSelector);
-
     //this.toggleButtonState(this._inputList, this._buttonElement);
 
     this._inputList.forEach((inputElement) => {
@@ -108,21 +111,41 @@ export default class FormValidatorNew {
   someFormSets.forEach((inputListAndButton) => {
     const inputStepList = inputListAndButton.inputs;
     const buttonForList = inputListAndButton.button;
-    console.log(inputListAndButton);
-    this._toggleButtonState(inputStepList, buttonForList);
+    console.log(`123 ${buttonForList}`);
+    //this._toggleButtonState(inputStepList, buttonForList);
     inputStepList.forEach((inputElement) => {
       inputElement.addEventListener('input', () => {
         this._checkInputValidity(inputElement);
         this._toggleButtonState(inputStepList, buttonForList);
       });
+    });
+
+    buttonForList.addEventListener("click", (evt)=> {
+        evt.preventDefault();
+
+        console.log(`123 ${this._hasInvalidInput(inputStepList)}`);
+        if (this._hasInvalidInput(inputStepList)) {
+
+          this._showErrors(inputStepList, buttonForList);
+          this._toggleButtonState(inputStepList, buttonForList);
+        }
     })
+    this._formElement.addEventListener("submit", (evt)=> {
+      evt.preventDefault();
+
+      console.log(`123 ${this._hasInvalidInput(inputStepList)}`);
+      if (this._hasInvalidInput(inputStepList)) {
+
+        this._showErrors(inputStepList, buttonForList);
+        this._toggleButtonState(inputStepList, buttonForList);
+      }
   })
- }
+ })
+}
 
 enableValidation() {
     this._formElement.addEventListener('submit', (evt) => {
         evt.preventDefault();
-
     });
     this._setEventListeners();
   };

@@ -3,6 +3,21 @@
   margin: 75px auto 0;
   max-width: 1600px;
 }
+
+@media screen and (max-width: 1640px) {
+  .turnkey {
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .turnkey {
+    max-width: calc(100% - 20px);
+  }
+}
+
 .turnkey__heading {
     position: relative;
 }
