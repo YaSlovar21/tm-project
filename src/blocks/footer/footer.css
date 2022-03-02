@@ -151,8 +151,9 @@
   transition: all .2s linear;
   margin-right: 5px;
   background-color: #1d1d1d77;
-  padding: 20px 50px;
-  flex-basis: 25%;
+  padding: 20px 5px;
+  flex-basis: 33%;
+  text-align: center;
 }
 
 .up-footer__list-item:hover {

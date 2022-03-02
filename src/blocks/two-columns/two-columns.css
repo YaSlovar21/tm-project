@@ -15,12 +15,17 @@
     padding-bottom: 80px;
     /*background-color: white;*/
     position: relative;
-    
+
 
     /*animation: min40 .4s linear;*/
   }
 
-
+@media screen and (max-width: 768px) {
+  .two-columns {
+    padding-bottom: 60px;
+    padding-top: 40px;
+  }
+}
 
 .two-columns_wide {
   width: 90%;

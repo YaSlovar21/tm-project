@@ -81,3 +81,12 @@
     --listimage-font-size: 18px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .listimage__list {
+    padding: 0;
+    max-width: calc(100% - 10px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

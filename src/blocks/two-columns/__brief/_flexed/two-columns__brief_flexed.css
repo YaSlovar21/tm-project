@@ -13,12 +13,32 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .two-columns__brief_flexed {
+    font-size: 14px;
+  }
+}
+
+/*в том случае, если в брифе и заголовок и ссылка*/
 .two-columns__brief-title {
   font-weight: 600;
   font-size: 22px;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief-title {
+    font-size: 14px;
+  }
+}
+
 .two-columns__brief-link{
   color: #f2f2f2;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief-link {
+    display: none;
+  }
 }

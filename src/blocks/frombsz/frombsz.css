@@ -18,12 +18,14 @@
 
 @media screen and (max-width: 768px) {
   .frombsz {
-    max-width: 100%;
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
   }
   .frombsz__title {
-    font-size: 24px;
+    font-size: 18px;
   }
   .frombsz__paragraph {
     font-size: 14px;
+    margin-right: 0;
   }
 }

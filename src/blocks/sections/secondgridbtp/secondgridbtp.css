@@ -10,9 +10,10 @@
   border-top: 2px solid #f2f2f22d;
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 768px) {
   .secondgridbtp__title {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 

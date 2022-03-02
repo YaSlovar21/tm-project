@@ -2,6 +2,18 @@
     position: relative;
   }
 
+.oakley_food {
+  bottom: 24px;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .oakley_food {
+    padding: 0;
+    bottom: 0;
+  }
+}
+
 .oakley_gradient::after {
       position: absolute;
       content: '';
@@ -31,7 +43,7 @@
 }
 
 @media screen and (max-width:768px) {
-  .oakley_gradient::before {
-    width: calc(10%);
+  .oakley_gradient::before, .oakley_gradient::after {
+    width: 2.5%;
   }
 }

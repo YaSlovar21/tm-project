@@ -40,6 +40,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+  .food-grid {
+    margin: 0 auto;
+  }
+}
+
 
 
 

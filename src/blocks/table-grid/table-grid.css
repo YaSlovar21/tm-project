@@ -1,5 +1,6 @@
 @import url(./__last-food/table-grid__last-food.css);
 
+
 .table-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10,6 +11,10 @@
   list-style-type: none;
 
   color: #f2f2f2;
+}
+
+.table-grid_food {
+  margin-bottom: 0;
 }
 
 .table-grid__heading {

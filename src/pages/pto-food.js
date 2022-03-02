@@ -53,3 +53,4 @@ mySwiper.on('orientationchange', function () {
   swiper_on_video.update();
   console.log('UPDATED_ORIENT');
 });
+

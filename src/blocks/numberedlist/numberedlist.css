@@ -41,8 +41,10 @@
 @media screen and (max-width: 768px) {
   .numberedlist__list {
     flex-direction: column;
+    width: auto;
   }
 }
+
 .numberedlist__list-item {
   font-size: 18px;
   position: relative;
@@ -56,8 +58,6 @@
 }
 
 .numberedlist__list-item:nth-of-type(3) {
-  /*align-items: flex-end;
-  padding-left: 0;*/
   width: 259px;
 }
 
@@ -77,4 +77,18 @@
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .numberedlist__list-item {
+    font-size: 14px;
+    width: 156px;
+    margin-bottom: 15px;
+  }
+  .numberedlist__list-item:nth-of-type(3) {
+    width: 156px;
+  }
+  .numberedlist__list-item:nth-of-type(2) {
+   width: 126px;
+  }
 }

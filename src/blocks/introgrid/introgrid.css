@@ -117,4 +117,10 @@
   .introgrid__header {
     font-size: 24px;
   }
+  .introgrid__desc {
+    font-size: 12px;
+  }
+  .introgrid__button {
+    font-size: 16px;
+  }
 }
