@@ -25,7 +25,22 @@
     padding-bottom: 60px;
     padding-top: 40px;
   }
+  .two-columns_food {
+    padding: 0;
+    bottom: 8px;
+  }
+  .two-columns_plastdetail {
+    padding-top: 60px;
+  }
 }
+
+@media screen and (max-width:400px) {
+  .two-columns_food {
+    bottom: 16px;
+  }
+}
+
+
 
 .two-columns_wide {
   width: 90%;

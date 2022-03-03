@@ -38,6 +38,7 @@
   .blog-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content) 1fr;
+    margin-top: 20px;
   }
   .blog-grid__articles {
     grid-column: 1/2;

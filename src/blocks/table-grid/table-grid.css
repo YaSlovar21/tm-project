@@ -13,8 +13,21 @@
   color: #f2f2f2;
 }
 
+@media screen and (max-width: 768px) {
+  .table-grid {
+    column-gap: 20px
+  }
+}
 .table-grid_food {
   margin-bottom: 0;
+}
+
+.table-grid__list-item {
+
+}
+
+.table-grid__list-item:hover {
+  background-color: #2f2f2f;
 }
 
 .table-grid__heading {

@@ -43,7 +43,10 @@
 }
 
 @media screen and (max-width:768px) {
-  .oakley_gradient::before, .oakley_gradient::after {
-    width: 2.5%;
+  .oakley_gradient::before {
+    width: 25%;
+  }
+  .oakley_gradient::after {
+    width: 2%;
   }
 }

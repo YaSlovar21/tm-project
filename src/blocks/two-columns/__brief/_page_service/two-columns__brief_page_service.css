@@ -1,5 +1,6 @@
 .two-columns__brief_page_service {
-  width: 393px;
+  max-width: 393px;
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -7,8 +8,8 @@
   margin-right: 60px;
   /* or 32px */
 
-  letter-spacing: -0.035em;
-  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  /*text-transform: uppercase;*/
 }
 @media screen and (max-width: 1280px) {
   .two-columns__brief_page_service {

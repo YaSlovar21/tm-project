@@ -153,6 +153,11 @@
     bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .food-type__pagination-container {
+    margin-bottom: 30px;
+  }
+}
 
 .food-type__bullet {
     font-size: 18px;
@@ -214,12 +219,12 @@
 
 @media screen and (max-width:768px) {
     .food-types-container .swiper-button-next {
-        top: 40vw;
+        top: 50vw;
         right: 0;
         height: 18px;
     }
     .food-types-container .swiper-button-prev {
-      top: 40vw;
+      top: 50vw;
       left: 0;
       height: 18px;
     }

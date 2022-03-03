@@ -20,9 +20,12 @@
   }
 }
 
+/*наши фирменные соты*/
 .flexburton_static-bg {
   background: #2f2f2f67 url(../../images/svg-elems/FlexBurtonSVG.svg) no-repeat top right;
 }
+
+
 
   @media screen and (max-width: 1025px) {
     .flexburton {
@@ -63,35 +66,16 @@
   }
 
 .flexburton__main-image {
-    /*max-width: 100%;*/
     max-height: 88%;
     object-fit: contain;
-
-
-    /*margin: auto 0;*/
   }
-
-
-/*
-.flexburton__breadcrumbs::after {
-    top:0;
-    left: -100%;
-    right: -5%;
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 210%;
-    border-radius: 2px;
-    background-color: rgba(242, 242, 242, 0.123);
-}
-*/
 
 
 .flexburton__svg {
   position: absolute;
   bottom: 5px;
   bottom: 5%;
-  left:5%;
+  left: 5%;
   height: 80%;
   width: auto;
   z-index: -1;
@@ -107,5 +91,12 @@
     left: 0%;
     bottom: 5%;
     height: 61%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /*минибёртон*/
+  .flexburton_size_m {
+    height: 400px;
   }
 }

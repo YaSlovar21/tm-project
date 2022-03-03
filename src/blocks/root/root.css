@@ -46,7 +46,8 @@ input {
     --sticky-around-color: #ff5e3a49;
     --cell-heading-font: 24px;
     --cell-description-font: 18px;
-
+    --main-color: #e7451c;
+    --main-equivalent-color: #ff5e3a;
 }
 
 @media screen and (max-width: 1024px){
@@ -126,9 +127,7 @@ input {
   z-index: 1;
 }
 
-.contact-padding-in-grid {
-  padding-left: 40px;
-}
+
 @media screen and (max-width: 1024px) {
   .big-form-mob {
     display:inline;

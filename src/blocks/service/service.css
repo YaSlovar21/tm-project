@@ -1,12 +1,14 @@
-@media screen and (min-width: 1440px) {
+
   .service {
-    margin: 0 auto;
+
   }
-}
+
 .service__list {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 1600px;
+    margin: 0 auto;
 }
 
 .service__subtitle {
@@ -14,4 +16,11 @@
   font-size: 24px;
   font-weight: 800;
   color: #f2f2f2;
+}
+
+@media screen and (max-width: 1640px) {
+  .service__list {
+    max-width: calc(100% - 5%);
+    margin: 0 auto;
+  }
 }

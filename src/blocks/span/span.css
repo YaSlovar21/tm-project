@@ -27,3 +27,8 @@
 .span-no-wrap {
   white-space: nowrap;
 }
+@media screen and (max-width: 768px) {
+  .span-bsz {
+    font-size: 10px;
+  }
+}

@@ -20,3 +20,44 @@
     line-height: 1.5;
   }
 }
+
+.bem__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+@media screen and (min-width:1440px) {
+  .bem__list_page_service {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+}
+
+
+.bem__list-heading {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.bem__list-heading_page-service {
+  font-weight: 200;
+  color: #757575;
+}
+
+@media screen and (max-width: 768px) {
+  .bem__list-heading {
+    font-size: 12px;
+  }
+}
+
+.bem__list-item {
+  margin-bottom: 8px;
+}
+
+.bem__list-item::before {
+  content: '↳';
+  color: var(--main-equivalent-color);
+  margin-right: 5px;
+}
