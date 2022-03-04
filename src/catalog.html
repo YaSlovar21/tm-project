@@ -8,24 +8,12 @@
     <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
     <style>
       .catalog-grid {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-template-rows: min-content min-content 1fr;
+        display: flex; align-items: flex-end;
       }
-      .catalog-grid__breadcrumbs {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background-color: rgba(47,47,47,.5);
-        padding-left: 20px!important;
-      }
-      .catalog-grid__title {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        max-width: 100%!important;
-        margin: 0!important;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        background-color: rgba(47,47,47,.5);
+      @media screen and (max-width: 1024px) {
+        .catalog-grid {
+          flex-direction: column;
+        }
       }
       .catalog-grid__ti {
         grid-column: 2/3;
@@ -37,22 +25,30 @@
       }
 
       .catalog-grid__pdf-preview {
-        grid-column: 1/2;
-        grid-row: 3/5;
         display: flex;
         flex-direction: column;
-
         max-width: 400px;
-        margin: 30px auto;
-
-        margin: 30px auto;
-        align-self: center;
+        /*margin: 30px auto;
+        margin: 30px auto;*/
+        margin: 30px 30px;
+        flex-basis: 400px;
+        flex-shrink: 1;
+        align-self: flex-start;
         background-color: #f2f2f21a
       }
-
+      @media screen and (max-width: 1024px) {
+        .catalog-grid__pdf-preview{
+          max-width: 300px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .catalog-grid__pdf-preview{
+          margin: 10px;
+        }
+      }
       .catalog-grid__preview-img {
-
         margin: 20px;
+        max-width: 90%;
       }
       .catalog-grid__preview-link {
         color: #E7441C;
@@ -62,6 +58,11 @@
         text-align: center;
         font-size: 22px;
         font-weight: 700;
+      }
+      @media screen and (max-width: 768px) {
+        .catalog-grid__preview-link {
+          font-size: 18px;
+        }
       }
     </style>
   </head>
@@ -77,19 +78,30 @@
         </div>
       </header>
 
-      <main class="content catalog-grid">
-        <div class="flexburton__breadcrumbs catalog-grid__breadcrumbs">
-          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
-          <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Каталог пластинчатых теплообменников</a>
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Каталог пластинчатых теплообменников</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Каталог пластинчатых теплообменников</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida facilisis enim neque, faucibus nibh scelerisque risus turpis.</p>
+          </div>
+
+            <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+
         </div>
 
-        <h1 class="content__title catalog-grid__title">Каталог пластинчатых теплообменников</h1>
-        <div class="catalog-grid__pdf-preview">
-          <img class="catalog-grid__preview-img" alt="Каталог пластинчатых теплообменников" src="<%= require('./images/termoblok_catalog.png')%>">
-          <a class="catalog-grid__preview-link">Скачать каталог</a>
-        </div>
+
+        <div class="catalog-grid">
+          <div class="catalog-grid__pdf-preview">
+            <img class="catalog-grid__preview-img" alt="Каталог пластинчатых теплообменников" src="<%= require('./images/termoblok_catalog.png')%>">
+            <a class="catalog-grid__preview-link">Скачать каталог</a>
+          </div>
         <!--<section style="max-width: 767px; margin: 0 auto; position: relative;">-->
-        <section class="mainmodels mainmodels_page_catalog catalog-grid__ti" >
+          <div style="width: 100%; flex-basis: 1490px; flex-shrink: 3;">
+          <section class="mainmodels mainmodels_page_catalog catalog-grid__ti" >
           <div class="mainmodels__wrapper mainmodels__wrapper_page_catalog">
             <h2 class="mainmodels__title mainmodels__title_page_catalog ">Теплообменники в классическом исполнении</h2>
             <ul class="mainmodels__models models-ti timodels">
@@ -239,8 +251,8 @@
             <button class="mainmodels__raschet button-bem">Рассчитать теплообменник</button>
           </div>
         </section>
-
-
+        </div>
+      </div>
       </main>
       <section class="map">
         <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>

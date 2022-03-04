@@ -6,9 +6,18 @@
 @import url(../blocks/span/span.css);
 
 @import url(../blocks/nav/nav.css);
+
+
+@import url(../blocks/flexburton/flexburton.css);
+
 @import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
 
+@import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__title/_size_m/flexburton__title_size_m.css);
+
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__subtitle/_size_m/flexburton__subtitle_size_m.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);

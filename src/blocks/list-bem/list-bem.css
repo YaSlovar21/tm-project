@@ -31,7 +31,7 @@
   .bem__list_page_service {
     font-size: 24px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
   }
 }
 
@@ -54,6 +54,10 @@
 
 .bem__list-item {
   margin-bottom: 8px;
+}
+
+.bem__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .bem__list-item::before {

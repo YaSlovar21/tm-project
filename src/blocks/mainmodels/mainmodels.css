@@ -5,7 +5,10 @@
 }
 
 .mainmodels_page_catalog {
-  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.mainmodels_page_catalog:last-of-type {
+  margin-bottom: 30px;
 }
 
 .mainmodels__wrapper {

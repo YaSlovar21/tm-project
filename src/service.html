@@ -36,14 +36,20 @@
         </div>
         <ul class="service__list">
             <li class="two-columns two-columns_page_service">
-              <h2 class="two-columns__brief two-columns__brief_page_service">Промывка теплообменника</h2>
+              <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
+                <h2 class="two-columns__brief-title two-columns__brief-title_page_service">Промывка теплообменника</h2>
+                <button class="button-bem">Проконсультироваться</button>
+              </div>
               <div class="two-columns__main-text two-columns__main-text_page_service">
                 <p class="two-columns__paragraph">При эксплуатации пластинчатых теплообменников, между пластинами может появиться накипь или засоры. Таки образом может нарушиться нормальная работа теплообменного оборудования. Чтобы обеспечить таким аппаратам нормальную работу, нужна промывка теплообменников. Сервисная служба компании «Термоблок» специализируется на разборной промывке теплообменников. Это гарантирует качество и надёжность дальнейшей эксплуатации теплообменного аппарата и не наносит вреда уплотнениям, чего нельзя сказать о безразборной промывке теплообменников.</p>
                 <p class="two-columns__paragraph">При всей трудоемкости разборного метода промывки теплообменников, по сравнению с безразборным методом очистки теплообменников, он дает ряд важных преимуществ и позволяет полностью справиться с самыми сложными загрязнениями.</p>
               </div>
             </li>
-            <li class="two-columns two-columns_page_service">
-              <h2 class="two-columns__brief two-columns__brief_page_service">Замена уплотнений и пластин</h2>
+            <li class="two-columns two-columns_page_service" style="padding-bottom: 25px;">
+              <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
+                <h2 class="two-columns__brief-title two-columns__brief-title_page_service">Замена уплотнений и пластин</h2>
+                <button class="button-bem">Запросить комплектующие</button>
+              </div>
               <div class="two-columns__main-text two-columns__paragraph two-columns__main-text_page_service service__list">
                   <h3 class="bem__list-heading bem__list-heading_page-service">Поставка необходимых материалов</h3>
                   <ul class="bem__list bem__list_page_service">
@@ -53,12 +59,32 @@
                     <li class="bem__list-item">комплектующих и деталей теплообменников</li>
                     <li class="bem__list-item">сопутствующего оборудования</li>
                   </ul>
+              </div>
+              </li>
+              <li class="two-columns two-columns_page_service" style="padding: 0;">
+                <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
+
+                </div>
+                <div class="two-columns__main-text two-columns__paragraph two-columns__main-text_page_service service__list">
                   <h3 class="bem__list-heading bem__list-heading_page-service">Номенклатура</h3>
-                  <div style="overflow-y: hidden; max-width: 100%;">
+                  <form class="choice-form" id="formChoice" name="formChoice" novalidate>
+                    <label class="choice-form__label">
+                      <input type="radio" value="plast" class="choice-form__input" name="radio" checked="checked">
+                      <h3 class="choice-form__heading choice-form__heading_page_service">Пластины</h3>
+                    </label>
+                    <span class="choice-form__splitter">/</span>
+                    <label class="choice-form__label">
+                      <input type="radio" value="seals" class="choice-form__input" name="radio">
+                      <h3 class="choice-form__heading choice-form__heading_page_service">Уплотнения</h3>
+                    </label>
+                  </form>
+                  <div class="service-grid__plast-table" style="overflow-y: hidden; max-width: 100%;">
                     <%= require('html-loader!./inner-plast-table.html').default %>
                   </div>
+                  <div class="service-grid__seals-table" style="display: none; overflow-y: hidden; max-width: 100%;">
+                    <%= require('html-loader!./inner-seals-table.html').default %>
+                  </div>
               </div>
-
             </li>
             <li class="two-columns two-columns_page_service">
               <h2 class="two-columns__brief two-columns__brief_page_service">Консультации по работе теплооменного аппарата, монтажу и обслуживанию</h2>

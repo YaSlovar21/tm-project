@@ -5,6 +5,7 @@
 @import url(./__image/two-columns__image.css);
 
 @import url(./__brief/_page_service/two-columns__brief_page_service.css);
+@import url(./__brief/_flexed/two-columns__brief_flexed.css);
 
 .two-columns {
     width: 80%;

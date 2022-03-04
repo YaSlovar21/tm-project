@@ -27,6 +27,8 @@
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/servicetable/servicetable.css);
 @import url(../blocks/list-bem/list-bem.css);
+@import url(../blocks/choice-form/choice-form.css);
+
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
