@@ -235,6 +235,7 @@
     min-width: 90px;
   }
   .header-index__video-container {
+    display: none;
     padding: 0;
     grid-row: 2/4;
     position: relative;

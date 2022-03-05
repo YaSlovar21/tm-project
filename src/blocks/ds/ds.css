@@ -198,9 +198,8 @@
     text-align: center;
   }
   .ds-intro__logo {
-    margin: 10px 0 30px;
-    max-width: 120px;
-
+    margin: 20px 0 30px;
+    max-width: 220px;
   }
   .ds-intro {
     grid-template-columns: 1fr 130px;
@@ -212,18 +211,21 @@
 }
 
 @media screen and (max-width: 500px) {
+  .ds {
+    overflow: auto;
+  }
   .ds-intro {
-
     grid-template-columns: 1fr;
+    position: sticky;
+    top: 0px;
   }
-  .ds-intro__title {
-    font-size: 15px;
-  }
+
   .ds-intro__list {
     text-align: center;
   }
   .ds-intro__list-item {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: .03em;
   }
   .ds-intro__img-container {
     position: absolute;

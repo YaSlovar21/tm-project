@@ -101,7 +101,9 @@ input {
 
 @media screen and (max-width: 500px) {
   .bg {
-    background-image: url(../../images/bg_my_mobile.png);
+    background-image: none;
+    background: radial-gradient(63.43% 23.01% at 49.87% 45.13%, rgba(34, 34, 34, 0.81) 0%, #222222 100%);;
+    /*background-image: url(../../images/bg_my_mobile.png);*/
   }
 }
 
