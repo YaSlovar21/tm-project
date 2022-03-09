@@ -19,6 +19,14 @@
   }
 }
 
+
+@media screen and (max-width: 768px) {
+  .header-index {
+    grid-template-columns: 100%;
+  }
+}
+
+
 .header-index__main-heading {
   font-size: 14px;
   font-weight: 400;
@@ -41,6 +49,13 @@
   }
 }
 
+
+@media screen and (max-width: 768px) {
+  .header-index__main-heading {
+    grid-row: 2/3;
+  grid-column: 1/2;
+  }
+}
 
 .header-index__logo-container {
   background-color: #7272723a;
@@ -148,10 +163,9 @@
 }
 @media screen and (max-width: 768px) {
   .header-index__slider-container {
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/2;
-    max-width: 90vw;
-    padding: 10px;
+
     margin: 0 ;
   }
 }
@@ -256,15 +270,13 @@
 @media screen and (max-width: 768px) {
   .header-index__right {
     flex-direction: row-reverse;
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/2;
     position: relative;
     z-index: 4;
     padding: 0 20px;
   }
-  .header-index {
-    grid-template-columns: 1fr;
-  }
+
 
   .header-index__slide {
     padding: 0;
