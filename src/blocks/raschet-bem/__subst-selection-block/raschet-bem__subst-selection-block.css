@@ -18,6 +18,7 @@
   }
   .raschet-bem__subst-selection-block:nth-of-type(2) {
     align-items: flex-end;
+    flex-direction: column;
   }
   .raschet-bem__subst-selection-block .raschet-bem__select {
     margin-left: 0;

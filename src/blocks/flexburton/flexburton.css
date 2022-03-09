@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
   /*минибёртон*/
   .flexburton_size_m {
     height: 400px;

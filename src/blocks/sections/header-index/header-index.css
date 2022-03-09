@@ -32,6 +32,14 @@
   align-self: end;
 }
 
+@media screen and (max-width: 1440px) {
+  .header-index__main-heading {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .025em;
+    margin: 20px auto;
+  }
+}
 
 
 .header-index__logo-container {
@@ -43,10 +51,27 @@
   border-bottom: 1px solid var(--color-header);
 }
 
+@media screen and (max-width: 1024px) {
+  .header-index__logo-container {
+    padding-bottom: 20px;
+  }
+}
+
 .header-index__logo-img {
-  flex-basis: 250px;
+  width: 250px;
   position: relative;
   z-index: 22;
+}
+@media screen and (max-width: 1440px) {
+  .header-index__logo-img {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-index__logo-img {
+    width: 125px;
+  }
 }
 
 .header-index__left {
@@ -71,6 +96,13 @@
   margin: 0 auto;
 
 
+}
+
+@media screen and (max-width: 1024px) {
+  .header-index__right {
+    flex-direction: row-reverse;
+    padding: 0;
+  }
 }
 
 .header-index__undernav {
@@ -106,6 +138,22 @@
   display: flex;
   align-items: center;
   border-top: 1px solid var(--color-header);
+}
+
+@media screen and (max-width: 1440px) {
+  .header-index__slider-container {
+    /*max-width: 55vw;*/
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-index__slider-container {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    max-width: 90vw;
+    padding: 10px;
+    margin: 0 ;
+  }
 }
 
 .mainHeaderSlider {
@@ -146,6 +194,15 @@
   max-width: 70%;
 }
 
+
+@media screen and (max-width: 1440px) {
+  .header-index__title {
+    font-size: 28px;
+    max-width: 100%;
+  }
+}
+
+
 .header-index__desc {
   font-size: 24px;
   line-height: 1.4;
@@ -177,15 +234,8 @@
   margin: 0;
 }
 
+
 @media screen and (max-width: 1440px) {
-  .header-index__slider-container {
-    max-width: 55vw;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header-index__title {
-    font-size: 36px;
-  }
   .header-index__desc {
     font-size: 20px;
   }
@@ -215,13 +265,7 @@
   .header-index {
     grid-template-columns: 1fr;
   }
-  .header-index__slider-container {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    max-width: 90vw;
-    padding: 10px;
-    margin: 0 ;
-  }
+
   .header-index__slide {
     padding: 0;
   }

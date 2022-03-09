@@ -45,12 +45,15 @@
     right: 10px;
   }
   .popup__button-close_type_form {
-    z-index: 22;
-    top: 30px;
-    right: 10px;
-    height: 18px;
-    width: 18px;
     background-color: coral;
+    height: 18px;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 18px;
+    z-index: 22;
+    background-size: 50%;
+    background-position: center;
   }
   .popup__button-close_type_heatex {
     width: 18px;

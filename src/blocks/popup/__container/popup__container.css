@@ -18,7 +18,9 @@
     .popup__container_type_form {
       width: 100%;
       height: 100%;
-
+    }
+    .popup__container_type_free {
+      width: 100%;
     }
 }
 
