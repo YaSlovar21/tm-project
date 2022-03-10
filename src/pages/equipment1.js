@@ -249,4 +249,8 @@ function generateResponseMessage(response) {
 console.log(generateResponseMessage({"23":"252"}));
 
 
-
+const mobileRaschetButton = document.querySelector('.equipment__mobile-raschet');
+const raschetSection = document.querySelector('.equipment__form-container ');
+mobileRaschetButton.addEventListener('click', ()=>{
+  raschetSection.setAttribute('style','background-color: #202020; transform: translateX(-100%)');
+});

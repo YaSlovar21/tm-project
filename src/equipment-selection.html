@@ -19,6 +19,12 @@
           grid-template-columns: min-content 1fr;
         }
       }
+      @media screen and (max-width: 768px) {
+        .content_page_equip {
+          grid-template-columns: 100% 100%;
+          overflow: hidden;
+        }
+      }
       .equipment__breadcrumbs {
         padding-left: 30px!important;
         background-color: #13131383;
@@ -65,6 +71,8 @@
         border-left: 2px solid coral;
         grid-row: 1/4;
         grid-column: 2/2;
+
+        transition: transform .5s linear;
       }
       .equipment__form-container form {
         max-width: 768px;
@@ -75,10 +83,10 @@
         margin: 0 auto;
       }
 
-      
+
 
       .card-list {
-        height: 100%;
+            /* height: 100%;*/
         overflow-x: hidden;
         max-height: 80vh;
         padding-right: 30px;
@@ -124,6 +132,7 @@
         <div class="equipment__desc">
               <p class="inforaschet__details">Расчёт выполняется под контролем квалифицированных инженеров.</p>
               <section class="card-list"></section>
+              <button class="button-bem equipment__mobile-raschet">Рассчитать --></button>
         </div>
         <div class="equipment__form-container">
           <div class="equipment__choices">

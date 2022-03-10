@@ -12,6 +12,13 @@
   text-align: center;
 }
 
+
+@media screen and (max-width: 768px) {
+  .button-bem {
+    font-size: 14px;
+  }
+}
+
 .button-bem_back {
   color: #ff5e3a;
   background-color: #252525;

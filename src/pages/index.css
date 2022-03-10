@@ -132,7 +132,7 @@
 @import url(../blocks/list/list.css);
 
 
-
+@import url(../blocks/list-bem/list-bem.css);
 
 
 
@@ -202,7 +202,6 @@
 
 /*ГОТОВЫЕ РЕШЕНИЯ*/
 @import url(../blocks/turnkey/turnkey.css);
-
 @import url(../blocks/bsz-new/bsz-new.css);
 
 @import url(../blocks/photo-grid/photo-grid.css);
