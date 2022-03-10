@@ -38,7 +38,7 @@
       }
       @media screen and (max-width: 1024px) {
         .catalog-grid__pdf-preview{
-          max-width: 300px;
+          max-height: 300px;
         }
       }
       @media screen and (max-width: 768px) {
@@ -49,6 +49,15 @@
       .catalog-grid__preview-img {
         margin: 20px;
         max-width: 90%;
+      }
+      @media screen and (max-width: 1024px)  {
+        .catalog-grid__preview-img {
+          margin: 20px;
+        max-width: 90%;
+        /* max-height: 90%; */
+        object-fit: contain;
+        min-height: 0;
+        }
       }
       .catalog-grid__preview-link {
         color: #E7441C;
