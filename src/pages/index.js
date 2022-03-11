@@ -343,3 +343,12 @@ const types_swiper = new Swiper('.product-types', {
 })
 types_swiper.update();
 
+/*
+import { useWindowSize } from '../js/utils/utils.js';
+
+const widthScreen = useWindowSize();
+      if (widthScreen > 768) {
+        const videoEl = document.createElement('video');
+
+      }
+*/
