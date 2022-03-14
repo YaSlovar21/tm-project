@@ -9,7 +9,7 @@
 }
 
 .servicetable tr:first-child td:first-child {
-  background: #f04545;
+  background: #ff5e3a;
   font-size: 12px;
   letter-spacing: .05em;
   font-weight: 600;
@@ -22,7 +22,8 @@
 }
 
 .servicetable tr:first-child {
-  background: #f04545;
+  /*background: #f04545;*/
+  background: #ff5e3a;
   font-size: 12px;
   font-weight: 600;
   padding: 10px;

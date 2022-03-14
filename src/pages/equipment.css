@@ -48,6 +48,10 @@
 @import url(../blocks/sections/inforaschet/inforaschet.css);
 
 @import url(../blocks/choice-form/choice-form.css);
+@import url(../blocks/free-form/free-form.css);
+@import url(../blocks/free-form/__data-fields/free-form__data-fields.css);
+@import url(../blocks/free-form/__desc-field/free-form__desc-field.css);
+
 
 @import url(../blocks/footer/footer.css);
 

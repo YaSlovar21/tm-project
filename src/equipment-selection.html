@@ -289,8 +289,8 @@
       <template class="form-free-template">
         <form class="popup__form raschet-bem raschet-bem_bg_none" style="padding-top: 20px;" method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
           <!--R-->
-          <div style="display: flex; width: calc(100% - 40px); margin: 0 auto; flex-basis: 223px; margin-bottom: 50px;">
-            <div style="flex-basis: 384px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="free-form">
+            <div class="free-form__data-fields">
               <label class="raschet-bem__field">
                 <span class="raschet-bem__label-title">Как к Вам можно обращаться?</span>
                 <input data-alias="Имя или название компании" type="text" name="name-free" id="name-free-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
@@ -307,7 +307,7 @@
                 <span class="raschet-bem__input-error email-free-input-error"></span>
               </label>
             </div>
-            <div style="flex-basis: 384px; display: flex; flex-direction: column; justify-content: space-between;  margin-left: 30px; ">
+            <div class="free-form__desc-field">
               <label class="raschet-bem__field raschet-bem__field_type_textarea">
                 <span class="raschet-bem__label-title">Опишите Вашу задачу</span>
                 <textarea data-alias="Текст заявки" type="text" name="comment-free" id="comment-free-input" style="height: 100%;" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1"></textarea>

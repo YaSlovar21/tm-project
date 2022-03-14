@@ -345,10 +345,39 @@ types_swiper.update();
 
 /*
 import { useWindowSize } from '../js/utils/utils.js';
+        <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
+          <source src="videos/tm_test_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+*/
+
+const videoContainer = document.querySelector('.header-index__video-container');
 
 const widthScreen = useWindowSize();
       if (widthScreen > 768) {
         const videoEl = document.createElement('video');
+        /// ... some setup like poster image, size, position etc. goes here...
+        videoEl.preload = 'false';
+        videoEl.autoplay= true;
+        videoEl.muted = true;
+        videoEl.src = 'videos/tm_test_video.mp4';
+        videoEl.setAttribute('playsinline', 'playsinline')
+        videoEl.onloadeddata = function() {
+          //myVideo.play();
+        };
+        videoEl.classList.add('myvideo');
+
+        /*const sourceMp4 = document.createElement('source');
+        sourceMp4.type = 'video/mp4';
+        sourceMp4.src = ;
+        videoEl.append(sourceMp4);*/
+
+        videoContainer.append(videoEl);
 
       }
-*/
+/*
+const myVideo = document.querySelector('.myvideo');
+myVideo.oncanplaythrough = function() {
+          myVideo.play();
+      };*/

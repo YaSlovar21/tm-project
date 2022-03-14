@@ -19,6 +19,11 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .header-index {
+    grid-template-columns: 400px calc(100% - 400px);
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header-index {
@@ -298,7 +303,7 @@
     grid-column: 1/2;
     position: relative;
     z-index: 4;
-   
+
     width: 95%;
   }
 
