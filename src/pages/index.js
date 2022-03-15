@@ -261,6 +261,18 @@ const swiperInfo = new Swiper('.scroll-slider', {
     snapOnRelease: false,
   },
   mousewheel: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      scrollbar: false,
+    },
+    780: {
+
+    },
+    1024: {
+
+    }
+  },
 });
 swiperInfo.update();
 
@@ -271,7 +283,7 @@ const windowWidth= useWindowSize();
   } else {
     swiperInfo.update();
 }
-
+/*
 window.addEventListener('resize', ()=> {
   const windowWidth= useWindowSize();
   if(windowWidth < 768) {
@@ -281,7 +293,7 @@ window.addEventListener('resize', ()=> {
     swiperInfo.init();
   }
 })
-
+*/
 
 const types_swiper = new Swiper('.product-types', {
   // Optional parameters

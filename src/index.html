@@ -29,9 +29,13 @@
       border-radius: 0;
       left: -5px;
       top: 0;
-
     }
 
+    @media screen and (max-width: 768px) {
+      .swiper-scrollbar-main {
+        display: none;
+      }
+    }
     .swiper-scrollbar-main .swiper-scrollbar-drag:hover {
       cursor: pointer;
     }
@@ -233,32 +237,16 @@
     <section class="ds">
       <div class="ds-intro">
         <div class="ds-intro__brand">
-          <h2  class="ds-intro__title">
-            Пластинчатые теплообменники российского производства</h2>
-          <img src="<%=require('./images/logo_teplohit_with_tepl.svg')%>" alt="Логотип пластинчатых теплообменников Теплохит" class="ds-intro__logo wow animate__fadeInLeft" data-wow-offset="200" data-wow-duration="1.6s">
-          <p style="color: #c4c4c4;
-          font-weight: 200;
-          font-size: 14px;
-          max-width: 180px;
-          font-style: italic;
-          line-height: 1.4;
-          display: none;
-          margin: 10px 0 0 25px;" class="wow animate__fadeIn" data-wow-offset="200" data-wow-delay="1.6s">Торговая
-            марка предприятия Термоблок</p>
+          <h2  class="ds-intro__title">Пластинчатые теплообменники российского производства</h2>
+          <img class="ds-intro__logo wow animate__fadeInLeft" src="<%=require('./images/logo_teplohit_with_tepl.svg')%>" alt="Логотип пластинчатых теплообменников Теплохит" data-wow-offset="200" data-wow-duration="1.6s">
+          <!--<p class="ds-intro__logo-desc wow animate__fadeIn" data-wow-offset="200" data-wow-delay="1.6s">Торговая марка предприятия Термоблок</p>-->
+          <a class="ds-intro__link-to ds-intro__link-to_place_brand" href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники &#8594;</a>
         </div>
         <div class="ds-intro__img-container">
           <img src="<%=require('./images/main_mini/ti45_new.png')%>" class="ds-intro__image" alt="Пластинчатый теплообменник">
         </div>
 
         <div class="ds-intro__details">
-          <!--<ul class="list ds-intro__list  wow animate__fadeInUp" style="z-index: 22; max-width: 420px; margin-left: 3%;"
-            data-animation-dur="1.5s">
-            <li class="list__item ds-intro__list-item  list__item_block_localprod">Пластины собственного производства</li>
-            <li class="list__item ds-intro__list-item  list__item_block_localprod">Выгодные цены за счет 100% локализации
-            </li>
-            <li class="list__item ds-intro__list-item list__item_block_localprod">Оперативный расчёт и сопровождение
-              квалифицированными инженерами</li>
-          </ul>-->
           <ul class="bem__list bem__list_page_main">
             <li class="bem__list-item">Пластины собственного производства</li>
             <li class="bem__list-item">Выгодные цены за счет 100% локализации
@@ -628,11 +616,9 @@
 
     <section class="bsz">
       <div class="bsz__wrapper">
-        <div class="turnkey__heading" style="margin-top: 120px;">
           <h2 class="turnkey__title">О производстве</h2>
           <p class="turnkey__intro" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
             полным циклом производства пластинчатых теплообменников</p>
-        </div>
       </div>
       <div class="bsz-new">
         <div class="bsz-new__content bsz__wrapper">
@@ -647,7 +633,7 @@
           <div class="bsz-new__img-container">
             <!--<img class="bsz-new__img" src="<%=require('./images/place_new.png')%>" alt="Вид на станкостроительный завод сверху">-->
             <img src="<%=require('./images/logo_BSZ_svg.svg')%>" class="bsz-new__logo" alt="Барнаульский станкостроительный завод">
-            <a class="bsz-new__link-blank" href="https://bszholding.ru" target="_blank">Перейти --></a>
+            <a class="bsz-new__link-blank" href="https://bszholding.ru" target="_blank">Подробнее --></a>
           </div>
         </div>
       </div>

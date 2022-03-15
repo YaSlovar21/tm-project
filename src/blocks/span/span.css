@@ -31,4 +31,7 @@
   .span-bsz {
     font-size: 10px;
   }
+  .span-mobile-hidden {
+    display: none;
+  }
 }

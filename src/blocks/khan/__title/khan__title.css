@@ -24,6 +24,7 @@
 @media screen and (max-width:768px) {
     .khan__title {
       width: 100%;
+      max-width: 400px;
       font-size: 18px;
       line-height: 1.4;
       letter-spacing: 0.05em;

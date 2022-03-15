@@ -163,6 +163,7 @@
           </div>
         </div>
       </main>
+
       <template class="message-template message-template_type_user">
         <div class="message message_type_user">
           <div class="message__text">
@@ -356,19 +357,21 @@
           </div>
         </div>
       -->
-        <section class="map">
-          <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
           <ul class="map__list">
-            <!--Сюда встанут карточки партнеров-->
-            <div class="map__popup">
-              <span class="map__popup-close">&lt;-- Назад</span>
-              <ul class="map__popup-container"></ul>
-            </div>
           </ul>
-          <div class="map__partner"></div>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
 
-        </section>
-
+        <%= require('html-loader!./inner-footer.html').default %>
 
     </div>
 

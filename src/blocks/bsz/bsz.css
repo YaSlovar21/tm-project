@@ -1,6 +1,11 @@
 .bsz {
+  margin-top: 180px;
+}
 
-
+@media screen and (max-width: 768px) {
+  .bsz {
+   margin-top: 30px;
+  }
 }
 
 .bsz__wrapper {

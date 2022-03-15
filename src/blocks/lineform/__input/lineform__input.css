@@ -10,6 +10,7 @@
 
     outline: none;
 }
+
 .lineform__input:nth-of-type(n + 2) {
     margin-left: 20px;
 }
@@ -20,8 +21,7 @@
 
 @media screen and (max-width: 768px) {
   .lineform__input {
-    margin: 0 0 30px;
-    width: 100%;
+
   }
   .lineform__input:nth-of-type(n + 2) {
     margin-left: 0px;

@@ -6,12 +6,12 @@
 }
 
 .info p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /*Левый блок*/
 .info__main {
-    width: 400px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -124,6 +124,7 @@ const formFree = new FormStaticJsRendered({
         console.log(response);
         const message = new DefaultMessage({image:logo_dialog, text: generateResponseMessage(response)}, '.message-template_type_default');
         const messageElement = message.generateHTML();
+        messageElement.setAttribute('style', 'max-width: 600px'); /* не работает */
         cardsList.appendItem(messageElement);
         formRaschet.cleanAll();
         //сделать сообщение об успешной отправке
@@ -236,11 +237,13 @@ function generateResponseMessage(response) {
   raschetMessage.append('Мы получили от Вас запрос! ');
   const listParameters = document.createElement('ul');
   listParameters.classList.add('bem-list');
-
-  Object.keys(response).forEach((item)=> {
-    const listItem = document.createElement('li');
-    listItem.append(item + ':' + response[item])
-    listParameters.append(listItem);
+  listParameters.setAttribute('style', 'font-size:12px');
+  Object.keys(response).forEach((key)=> {
+    if (key!='clientId' && key!='location') {
+      const listItem = document.createElement('li');
+      listItem.append(key + ':' + response[key])
+      listParameters.append(listItem);
+    }
   });
   raschetMessage.append(listParameters);
   return raschetMessage;
