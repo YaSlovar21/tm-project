@@ -20,6 +20,9 @@
 .span-bold_spacing {
   letter-spacing: 0.05em;
 }
+.span-decoration-none {
+  text-decoration: none;
+}
 .span_uppercase {
     text-transform: uppercase;
 }
