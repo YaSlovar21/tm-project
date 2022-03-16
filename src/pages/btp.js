@@ -73,6 +73,18 @@ var mySwiper1 = new Swiper('.btp-schemes', {
   scrollbar: {
     //el: '.swiper-scrollbar',
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      allowTouchMove: false,
+    },
+    780: {
+
+    },
+    1024: {
+      allowTouchMove: true,
+    }
+  },
 })
 
 

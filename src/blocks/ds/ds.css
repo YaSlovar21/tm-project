@@ -28,6 +28,7 @@
     grid-template-columns: 100%;
     grid-template-rows: min-content auto;
     margin-top: 0;
+    max-width: 100%;
   }
 }
 
@@ -213,9 +214,11 @@
     display: none;
   }
   .ds-intro__link-to_place_brand {
+    background-color: #1f1f1f;
     display: block;
     flex-basis: 33%;
-    background-color: #f2f2f267;
+    text-align: center;
+    padding: 5px;
 
   }
   .ds-intro__link-to::before {
