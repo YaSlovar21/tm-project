@@ -68,9 +68,9 @@
 @media screen and (max-width: 768px) {
   .infoitems {
       grid-template-columns: repeat(auto-fit, 300px);
-      grid-template-rows: repeat(auto-fit, 271px);
+      grid-template-rows: repeat(auto-fit, 241px);
       gap: 35px 24px;
-
+      grid-auto-rows: 241px;
   }
 }
 
@@ -126,6 +126,15 @@
   transition: color .3s ease-in;
 }
 
+@media screen and (max-width: 768px) {
+  .infoitem__name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .035em;
+    margin-top: 30px;
+  }
+}
+
 .infoitem__description {
   margin: 0;
   padding: 0 30px;
@@ -136,6 +145,14 @@
   color: #a3a3a3;
   /* or 20px */
   transition: color .3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .infoitem__description {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .035em;
+  }
 }
 
 .infoitem__link:hover .infoitem__name, .infoitem__link:hover .infoitem__description {

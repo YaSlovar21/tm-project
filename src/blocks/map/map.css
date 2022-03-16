@@ -12,14 +12,14 @@
     text-align: center;
     color: white;
     font-size: 36px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
     .map__heading {
-    font-size: 18px;
-    text-transform: uppercase;
-    width: 100%;
+      font-size: 14px;
+      text-transform: uppercase;
+      width: 230px;
     }
 }
 
@@ -170,9 +170,10 @@
 
 @media screen and (max-width: 450px) {
     .map__list-item {
-        width: 135px;
-        font-size: 14px;
-        padding: 6px;
+      font-size: 12px;
+      padding: 8px;
+      width: 45%;
+      letter-spacing: .035em;
 
     }
 }

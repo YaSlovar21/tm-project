@@ -24,6 +24,9 @@
       margin-top: 30px;
       flex-shrink: 1;
     }
+    .khan__buy-link_page_heatex {
+      margin-top: 70px;
+    }
   }
 
   @media screen and (max-width: 768px) {

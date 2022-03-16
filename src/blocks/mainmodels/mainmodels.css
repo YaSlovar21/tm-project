@@ -170,7 +170,7 @@
   }
   .mainmodels__wrapper {
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
     "turnbutton"

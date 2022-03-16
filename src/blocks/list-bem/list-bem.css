@@ -27,10 +27,7 @@
   list-style-type: none;
 }
 
-.bem__list_page_main {
-  font-size: 20px;
-  color: #f2f2f2;
-}
+
 
 @media screen and (min-width:1440px) {
   .bem__list_page_service {
@@ -38,8 +35,21 @@
     line-height: 1.5;
     /*margin-bottom: 30px;*/
   }
+}
 
-
+.bem__list_page_main {
+  font-size: 20px;
+  color: #f2f2f2;
+}
+@media screen and (max-width: 1640px) {
+  .bem__list_page_main {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .bem__list_page_main {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -47,10 +57,7 @@
     font-size: 14px;
     line-height: 1.5;
     max-width: 400px;
-    
   }
-
-
 }
 
 .bem__list-heading {

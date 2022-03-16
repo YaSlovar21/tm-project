@@ -19,6 +19,18 @@
     max-width: 1600px;
 }
 
+@media screen and (max-width: 1640px) {
+  .heatex {
+    max-width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .heatex {
+    max-width: calc(100% - 20px);
+  }
+}
+
+
 .heatex__content {
   max-width: 1200px;
   display: flex;

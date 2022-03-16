@@ -5,3 +5,9 @@
     margin: 0 auto 100px;
     position: relative;
 }
+
+@media screen and (max-width: 1300px) {
+  .khan_page_heatex {
+    max-width: calc(100% - 20px);
+  }
+}

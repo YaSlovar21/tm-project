@@ -9,9 +9,16 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1300px) {
+  .frequently__heading {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .frequently__heading {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 700;
   }
 }
 
@@ -39,6 +46,11 @@
     transition: background-color 0.5s linear;
 }
 
+@media screen and (max-width: 1300px) {
+  .frequently__question {
+    padding: 20px 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .frequently__question {
     font-size: 18px;
