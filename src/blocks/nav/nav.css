@@ -35,6 +35,11 @@
     letter-spacing: 0.015em;
 }
 
+@media screen and (max-width: 1440px) {
+  .nav {
+    font-size: 17px;
+  }
+}
 
 .nav__menu-links {
     display: flex;
@@ -217,7 +222,11 @@
   }
 
 
-
+  @media screen and (max-width: 1440px) {
+    .nav__sub-link  {
+      font-size: 17px;
+    }
+  }
 
   .nav__ul-item_sub:hover::after {
     opacity: 0.4;

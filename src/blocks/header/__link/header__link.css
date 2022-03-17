@@ -2,7 +2,7 @@
     text-decoration: none;
     color: #a8a8a8;
     font-weight: 400;
-    
+
     font-size: 18px;
   }
 
@@ -10,6 +10,11 @@
   color: #FF5E3A;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__link {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header__link {
     font-weight: 600;

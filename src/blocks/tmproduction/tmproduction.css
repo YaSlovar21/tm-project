@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 1440px) {
   .tmproduction {
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 20px);
     margin: 80px auto 0;
 }
 }
@@ -101,9 +101,10 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .tmproduction__description {
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: .035em;
   }
 }
 

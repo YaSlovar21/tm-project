@@ -95,6 +95,12 @@
     font-weight: 300;
 }
 
+@media screen and (max-width: 1440px) {
+  .header_download-link {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width:1024px) {
     .header_download-link {
         display: none;
