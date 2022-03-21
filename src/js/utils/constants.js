@@ -461,3 +461,11 @@ export const raschetValidatorConfig = {
   errorClass: 'raschet-bem__input-error_visible'
 }
 
+export const lineformConfig = {
+  inputSelector: '.lineform__input',
+  submitButtonSelector: '.lineform__button-save',
+  inactiveButtonClass: 'raschet-bem__submit-button_disabled',
+  inputErrorClass: 'raschet-bem__input_type_error',
+  errorClass: 'raschet-bem__input-error_visible'
+}
+

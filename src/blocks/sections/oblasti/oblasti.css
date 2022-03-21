@@ -12,6 +12,19 @@
   column-gap: 20px;
 }
 
+@media screen and (max-width: 1640px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .oblasti {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-auto-flow: row;
+    padding-top: 0;
+  }
+}
+
 .oblasti__intro {
   flex-basis: 500px;
   display: flex;
@@ -37,12 +50,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .oblasti {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content min-content;
-    grid-auto-flow: row;
-    padding-top: 0;
-  }
   .oblasti__list {
     margin: 30px 0;
     grid-row: 2/3;

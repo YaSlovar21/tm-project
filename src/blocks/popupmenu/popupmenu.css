@@ -22,6 +22,12 @@
   border: none;
   letter-spacing: 0.005em;
 }
+.popup__navlink_dop {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: .035em;
+}
 /*---DROPDOWN---*/
 .dropdown {
   position: relative;

@@ -75,6 +75,12 @@
 
         transition: transform .5s linear;
       }
+
+      @media screen and (max-width: 768px) {
+        .equipment__form-container {
+          border-left: none;
+        }
+      }
       .equipment__form-container form {
         max-width: 768px;
         margin: 0 auto;
@@ -92,6 +98,12 @@
         color: coral!important;
         width: 50%;
         margin-left: auto;
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        .equipment__mobile-raschet {
+          display: block;
+        }
       }
 
 

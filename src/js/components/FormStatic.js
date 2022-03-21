@@ -13,7 +13,7 @@ export default class FormStatic {
     _getInputValues() {
         // достаём все элементы полей
         this._inputList = this._formElement.querySelectorAll(this._inputSelector); //'.popup__input'
-        console.log(this._formElement.t_typesr2.value);
+
         // создаём пустой объект
         this._formValues = {};
 
