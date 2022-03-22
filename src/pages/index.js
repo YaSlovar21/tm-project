@@ -233,6 +233,23 @@ turnModelsButton.addEventListener('mousedown', (evt) => {
   wrapper.classList.toggle('mainmodels__wrapper_food');
 })
 
+
+const dsSecond = document.querySelector('.ds-second');
+const dsIntroImg = document.querySelector('.ds-intro__img-container');
+const dsList = document.querySelector('.bem__list_page_main');
+let dsSecondBox = dsSecond.getBoundingClientRect();
+window.addEventListener('scroll', function() {
+  dsSecondBox = dsSecond.getBoundingClientRect();
+ // if (dsSecondOffsetY) {
+    dsIntroImg.setAttribute('style', `display:${dsSecondBox.top > 250 ? 'block' : 'none'}`)
+    if (dsSecondBox.top < 250) {
+      dsList.classList.add('bem__list_minified');
+    } else {
+      dsList.classList.remove('bem__list_minified');
+    }
+  //}
+});
+
 /* Слайдер в хидере на главной */
 
 const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
