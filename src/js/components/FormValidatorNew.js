@@ -91,7 +91,7 @@ export default class FormValidatorNew {
   }
 
   showErrorsForStep(inputsWithButton) {
-    
+
   }
 
   _setEventListeners() {
@@ -112,14 +112,13 @@ export default class FormValidatorNew {
     const inputStepList = inputListAndButton.inputs;
     const buttonForList = inputListAndButton.button;
     console.log(`123 ${buttonForList}`);
-    //this._toggleButtonState(inputStepList, buttonForList);
     inputStepList.forEach((inputElement) => {
       inputElement.addEventListener('input', () => {
         this._checkInputValidity(inputElement);
         this._toggleButtonState(inputStepList, buttonForList);
       });
     });
-
+/*
     buttonForList.addEventListener("click", (evt)=> {
         evt.preventDefault();
 
@@ -139,7 +138,7 @@ export default class FormValidatorNew {
         this._showErrors(inputStepList, buttonForList);
         this._toggleButtonState(inputStepList, buttonForList);
       }
-  })
+  })*/
  })
 }
 
@@ -150,20 +149,31 @@ enableValidation() {
     this._setEventListeners();
   };
 
+checkStep(number) {
+  const inputStepList = this._sets[number].inputs;
+  const buttonForList = this._sets[number].button;
+  if (this._hasInvalidInput(inputStepList)) {
+
+      this._showErrors(inputStepList, buttonForList);
+      this._toggleButtonState(inputStepList, buttonForList);
+      return false;
+  }
+  return true;
+}
 enableStepValidation() {
-  const sets = [];
+  this._sets = [];
 
   const firstStepFieldset = this._formElement.querySelector('.first-step');
   const firstStepButton = firstStepFieldset.querySelector('.first-step-button');
   const firstStepInputList = Array.from(firstStepFieldset.querySelectorAll(this._inputSelector));
-  sets.push({inputs: firstStepInputList, button: firstStepButton});
+  this._sets.push({inputs: firstStepInputList, button: firstStepButton});
 
   const secondStepFieldset = this._formElement.querySelector('.second-step');
   const secondStepButton = secondStepFieldset.querySelector('.second-step-button');
   const secondtepInputList = Array.from(secondStepFieldset.querySelectorAll(this._inputSelector));
-  sets.push({inputs: secondtepInputList, button: secondStepButton});
+  this._sets.push({inputs: secondtepInputList, button: secondStepButton});
 
-  this._setStepEventListeners(sets);
+  this._setStepEventListeners(this._sets);
 }
 
 }

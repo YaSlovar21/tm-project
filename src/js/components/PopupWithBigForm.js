@@ -1,7 +1,7 @@
 import Popup from './Popup.js';
 
 export default class PopupWithBigForm extends Popup {
-    constructor({formSubmitHandler, formCleanError}, popupSelector, formSelector, formInputSelector) {
+    constructor({formSubmitHandler, formCleanError, checherValidation}, popupSelector, formSelector, formInputSelector) {
         super(popupSelector);
         this._formSubmitHandler = formSubmitHandler;
         this._formCleanError = formCleanError;
@@ -10,6 +10,7 @@ export default class PopupWithBigForm extends Popup {
         this._absolutePopup = this._modal.querySelector('.popup-absolute');
 
         this._step = 0;
+        this._checker = checherValidation;
     }
 
     increaseStep() {
@@ -59,7 +60,9 @@ export default class PopupWithBigForm extends Popup {
         super.setEventListeners();
         this._formElement.addEventListener('submit', (evt) => {
             evt.preventDefault();
-            this._formSubmitHandler(this._getInputValues());
+            if (this._checker()) {
+              this._formSubmitHandler(this._getInputValues());
+            }
         });
     }
 }
