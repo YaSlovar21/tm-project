@@ -9,7 +9,7 @@ export default class SectionPaginator extends Section {
     constructor(props, cardsContainerSelector, moreButtonElement) {
         super(props, cardsContainerSelector);
 
-        this._countBase = 3;
+        this._countBase = 6;
         this._buttonMore = moreButtonElement;
 
         // проверяем необходимость MoreButton
@@ -39,7 +39,7 @@ export default class SectionPaginator extends Section {
       this._container.classList.add('section-loading');
       setTimeout(()=> {
         this._renderedItems = filteredData;
-        this._countBase = 3;
+        this._countBase = 6;
 
         this._checkMoreButtonState();
 

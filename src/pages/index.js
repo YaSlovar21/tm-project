@@ -2,10 +2,7 @@ import 'core-js/actual';
 import Swiper from 'swiper/bundle';
 
 import WOW from 'wow.js';
-import anime from 'animejs/lib/anime.es.js';
-
-import Card from '../js/components/Card.js';
-
+//import anime from 'animejs/lib/anime.es.js';
 
 import FormValidatorNew from '../js/components/FormValidatorNew.js';
 import PopupWithForm from '../js/components/PopupWithForm.js';
@@ -58,7 +55,7 @@ import {
 const formCallBack= document.forms.formCallBack;
 const raschetForm = document.forms.formRaschetPopup;
 const callbackSubmitButton = formCallBack.querySelector('.button-bem_submit');
-const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-button')
+const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-button');
 
 console.log(raschetForm);
 
@@ -78,7 +75,6 @@ raschetValidatorForm.enableStepValidation();
 
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
-
   baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
   headers: {
     'Accept': '*/*',
@@ -125,14 +121,12 @@ const popupCallBack = new PopupWithForm({
   },
   checherValidation: (formElement) => {
     if (!formValidatorCallBack.hasInvalidInput()) {
-
       return true;
     } else {
       formValidatorCallBack.showErrors();
       return false;
     }
   }
-
 }, callBackPopupSelector, '.popup__form','.raschet-bem__input');
 
 
@@ -203,25 +197,23 @@ document.querySelectorAll('.photo-grid__item').forEach((item) => {
 });
 
 
-const backButton = document.querySelector('.form-back-button');
-      const nextButton = document.querySelector('.form-next-step');
-      const popupAbsolute = document.querySelector('.popup-absolute');
-      backButton.addEventListener('mousedown', (evt)=> {
-        popupAbsolute.classList.remove('popup__form-fio_opened');
-        popupRaschet.decreaseStep();
-        console.log(popupRaschet._step);
-      });
+const backButton = document.querySelector(".form-back-button");
+const nextButton = document.querySelector(".form-next-step");
+const popupAbsolute = document.querySelector(".popup-absolute");
+backButton.addEventListener("mousedown", (evt) => {
+  popupAbsolute.classList.remove("popup__form-fio_opened");
+  popupRaschet.decreaseStep();
+  console.log(popupRaschet._step);
+});
 
-      nextButton.addEventListener('mousedown', ()=> {
-        /*
-          Проверить блок на валидность, показать ошибки если есть, заблокировать кнопку
-        */
-        if (raschetValidatorForm.checkStep(0)) {
-          popupAbsolute.classList.add('popup__form-fio_opened');
-          popupRaschet.increaseStep();
-          console.log(popupRaschet._step);
-        }
-      })
+nextButton.addEventListener("mousedown", () => {
+  //Проверяем шаг на валидность, показать ошибки если есть, заблокировать кнопку
+  if (raschetValidatorForm.checkStep(0)) {
+    popupAbsolute.classList.add("popup__form-fio_opened");
+    popupRaschet.increaseStep();
+    console.log(popupRaschet._step);
+  }
+});
 
 
 const turnModelsButton = document.querySelector('.mainmodels__turnbutton');
@@ -253,7 +245,6 @@ window.addEventListener('scroll', function() {
 });
 
 /* Слайдер в хидере на главной */
-
 const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -302,17 +293,7 @@ const windowWidth= useWindowSize();
   } else {
     swiperInfo.update();
 }
-/*
-window.addEventListener('resize', ()=> {
-  const windowWidth= useWindowSize();
-  if(windowWidth < 768) {
-    console.log(windowWidth);
-    swiperInfo.destroy(false,false);
-  } else {
-    swiperInfo.init();
-  }
-})
-*/
+
 
 const types_swiper = new Swiper('.product-types', {
   // Optional parameters
@@ -374,41 +355,23 @@ const types_swiper = new Swiper('.product-types', {
 })
 types_swiper.update();
 
-/*
-import { useWindowSize } from '../js/utils/utils.js';
-        <video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
-          <source src="videos/tm_test_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-*/
-
 const videoContainer = document.querySelector('.header-index__video-container');
-
 const widthScreen = useWindowSize();
-      if (widthScreen > 768) {
-        const videoEl = document.createElement('video');
-        /// ... some setup like poster image, size, position etc. goes here...
-        videoEl.preload = 'false';
-        videoEl.autoplay= true;
-        videoEl.muted = true;
-        videoEl.src = 'videos/tm_test_video.mp4';
-        videoEl.setAttribute('playsinline', 'playsinline')
-        videoEl.onloadeddata = function() {
-          //myVideo.play();
-        };
-        videoEl.classList.add('myvideo');
-
-        /*const sourceMp4 = document.createElement('source');
-        sourceMp4.type = 'video/mp4';
-        sourceMp4.src = ;
-        videoEl.append(sourceMp4);*/
-
-        videoContainer.append(videoEl);
-
-      }
-/*
-const myVideo = document.querySelector('.myvideo');
-myVideo.oncanplaythrough = function() {
-          myVideo.play();
-      };*/
+if (widthScreen > 768) {
+  const videoEl = document.createElement("video");
+  /// ... some setup like poster image, size, position etc. goes here...
+  videoEl.preload = "false";
+  videoEl.autoplay = true;
+  videoEl.muted = true;
+  videoEl.src = "videos/tm_test_video.mp4";
+  videoEl.setAttribute("playsinline", "playsinline");
+  videoEl.onloadeddata = function () {
+    //myVideo.play();
+  };
+  videoEl.classList.add("myvideo");
+  /*const sourceMp4 = document.createElement('source');
+  sourceMp4.type = 'video/mp4';
+  sourceMp4.src = ;
+  videoEl.append(sourceMp4);*/
+  videoContainer.append(videoEl);
+}

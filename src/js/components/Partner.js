@@ -18,10 +18,7 @@ export default class Partner {
         } else {
           this._site = '';
         }
-
-        console.log(this);
-
-
+        //console.log(this);
         //коллбэк
         this._handleItemClick = handleItemClick;
         this._activeClass = classActive;
@@ -39,11 +36,9 @@ export default class Partner {
 
     generatePartner() {
         this._element = this._getItemTemplate();
-
         /*Задать название и атрибут data-html*/
         //this._element.setAttribute('data-html', this._htmlData);
         this._element.textContent = this._name;
-
         this._setEventListeners();
         return this._element;
     }

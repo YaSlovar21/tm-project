@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import WOW from 'wow.js';
-//import anime from 'animejs/lib/anime.es.js';
+
 import './pto.css';
 
 const wowAnimation = new WOW({
@@ -32,12 +32,14 @@ import {
   popupWithToSelector,
 } from '../js/utils/constants.js';
 
+import FreqDynamic from '../js/components/FreqDynamic.js';
 import Section from '../js/components/Section.js';
 import CardProject from '../js/components/CardProject.js';
 import CardProjectHorizontal from '../js/components/CardProjectHorizontal.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 
+const formProjectViewChange = document.forms.formProjectsViewChange;
 
 const projectList = new Section({
   data: initialProjects,
@@ -90,7 +92,7 @@ const projectHorizontalList = new Section({
 
 projectList.renderItems();
 
-const formProjectViewChange = document.forms.formProjectsViewChange;
+
 formProjectViewChange.addEventListener('change', (evt)=>{
   if (evt.target.checked) {
     projectList.clear();
@@ -257,7 +259,7 @@ slider_sborka.on('slideChange', function () {
 });
 
 
-/**/
+/* HONEYS */
 
 const honeys = Array.from(document.querySelectorAll('.honeycomb path'));
 const partLength = honeys.length/4;
@@ -295,7 +297,7 @@ setInterval(()=> {
     turnOffHighLightPart(generatedParts[i]);
     i = (i===numberOfParts-1) ?  0 : i+1;
   }, 2600);
-},3000)
+}, 3000);
 
 //let pageY= 0;
 //let isPlaying = 1;
@@ -313,14 +315,6 @@ window.addEventListener("scroll", function () {
 });
 */
 
-import {
-  useWindowSizeTest
-} from '../js/utils/utils.js';
-
-import FreqDynamic from '../js/components/FreqDynamic.js';
-
-/*let windowWidth = useWindowSizeTest();*/
-
 const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
   new FreqDynamic({
     headingSelector: 'table__heading',
@@ -328,27 +322,7 @@ const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((
   }, element)
 );
 
+// freqElements - массив объектов FreqDynamic
 freqElements.forEach((element) => {
   element.setEventListeners();
-})
-
-/*
-function updateComments() {
-  if (windowWidth < 768) {
-    comments.forEach((comment) => {
-      comment.style.display = 'none'
-    })
-  } else {
-    comments.forEach((comment) => {
-      comment.style.display = 'block'
-    })
-  }
-}
-
-window.addEventListener('resize', ()=> {
-  windowWidth = useWindowSizeTest();
-  updateComments();
-})
-*/
-
-
+});

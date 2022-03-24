@@ -5,7 +5,7 @@ module.exports.paths = [
     {
       path: '/',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
@@ -74,10 +74,93 @@ module.exports.paths = [
       priority: 0.8,
       changefreq: 'monthly'
     },
+
+    /*теплообменники*/
     {
       path: '/catalog/ti-025.html',
       lastmod: dateNow,
       priority: 0.8,
       changefreq: 'monthly'
     },
+    {
+      path: '/catalog/ti-025.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-025.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-025.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-077.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-13.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-18.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-16-5.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-45.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-65.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-52.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-82.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-95.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-116.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+
+    /* Статьи */
+    
   ];
