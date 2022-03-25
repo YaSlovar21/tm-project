@@ -1,3 +1,7 @@
+:root {
+  --info-text-size: 22px;
+}
+
 .info {
     height: 70vh;
     /*max-width: 91%;*/
@@ -81,6 +85,7 @@
 
 /* Ниже стили статьи в блоке  info__container*/
 .info__container {
+    background-color: #1f1f1f66;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -109,7 +114,7 @@
     margin: 0;
 }
 .info__image {
-    margin: 5px 20px 10px 10px;
+    margin: 20px 20px 10px 0px;
     width: 30%;
 }
 
@@ -170,6 +175,7 @@
     padding-left: 30px;
     border-left: 2px solid #FF5E3A;
     line-height: 1.2;
+    font-size: var(--info-text-size);
 }
 
 .info__link-in-text {
@@ -222,7 +228,20 @@
     font-size: 18px;
 }
 
+.info__paragraph-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #6b6b6b;
+  margin-bottom: 5px;
+}
 
+
+@media screen and (max-width: 1024px) {
+  .info__paragraph-title {
+    font-size: 12px;
+  }
+}
 /*.*/
 @media screen and (max-width: 1024px) {
   .info__main {
@@ -291,6 +310,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0px 30px 30px 20px;
+    margin: 0 auto;
+    max-width: 998px;
   }
 
 .info__container .swiper-scrollbar-drag {

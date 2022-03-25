@@ -293,11 +293,36 @@ module.exports = {
         keywords: 'теплообменники отопления, пластинчатые теплообменники отопления', 
         description: 'Все о термоблоке'
       },
-      template: './src/blog-page.html', 
+      template: './src/blog-pto-otop.html', 
       filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       chunks: ['blogPage',  'all', 'map'],
     }),
-    
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
+      title: 'Пластинчатые теплообменники горячего водоснабжения ГВС',
+      meta: {
+        keywords: 'теплообменники гвс, пластинчатые теплообменники гвс', 
+        description: 'Все о термоблоке'
+      },
+      template: './src/blog-pto-gvs.html', 
+      filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
+      chunks: ['blogPage',  'all', 'map'],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+      },
+      title: 'Пластинчатые пастеризаторы',
+      meta: {
+        keywords: 'пастеризатор, пластинчатый пастеризатор', 
+        description: 'Все о термоблоке'
+      },
+      template: './src/blog-pasteriz.html', 
+      filename: 'blog-proizvodstva/plastinchatyy-pasterizator.html',
+      chunks: ['blogPage',  'all', 'map'],
+    }),
                                        /*---------КАТАЛОГ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

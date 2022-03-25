@@ -63,19 +63,21 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/blog-proizvodstva/',
-      lastmod: dateNow,
-      priority: 0.8,
-      changefreq: 'monthly'
-    },
-    {
       path: '/catalog/',
       lastmod: dateNow,
       priority: 0.8,
       changefreq: 'monthly'
     },
+    /* блог */
+    {
+      path: '/blog-proizvodstva/',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    
 
-    /*теплообменники*/
+    /* теплообменники */
     {
       path: '/catalog/ti-025.html',
       lastmod: dateNow,

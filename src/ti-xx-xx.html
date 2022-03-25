@@ -17,7 +17,7 @@
           <%= require('html-loader!./inner-header.html').default %>
         </div>
       </header>
-      <p style="color: #f2f2f2";><%= compilation.assets.source %></p>
+      <p style="color: #f2f2f2;"><%= compilation.assets.source %></p>
       <main class="content">
         <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
@@ -27,15 +27,14 @@
         </div>
 
         <section class="heatex">
-          <!--<div style="position: absolute; top:0; left: 0;"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; top:0; right: 0; transform: scaleX(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>-->
           <figure class="highliter highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
           <figure class="highliter highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
           <figure class="highliter highliter_top-right"><div class="highliter__element highliter__element_stretched"></div></figure>
           <figure class="highliter highliter_bottom-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+
           <div class="heatex__content">
             <div class="heatex__img-container">
-              <img class="heatex__to-img" src="<%=require('./images/descTO/'+ tialias)%>" />
+              <img class="heatex__to-img" src="<%=require('./images/descTO/'+ tialias)%>" alt="Пластинчатый теплообменник <%= heading%>"/>
             </div>
             <div class="heatex__desc-container">
               <span class="span span_comment">Теплообменник</span>
@@ -47,8 +46,6 @@
               <a class="heatex__to-3dlink link-beauty" href="<%=link3d%>" target="_blank">3D модели (IGES, DWG) для <%=heading%></a>
             </div>
           </div>
-          <!--<div style="position: absolute; bottom:0; left: 0; transform: scaleY(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>
-          <div style="position: absolute; bottom:0; right: 0; transform: scale(-1);"><img src="<%=require('./images/rect_sect.svg')%>" width="30%"></div>-->
         </section>
 
         <section class="khan khan_page_heatex">

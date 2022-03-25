@@ -92,7 +92,7 @@ export const initialArticles = [
   },
   {
     tags: ['prod', 'food'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    linkPath: `/${blogPath}/plastinchatyy-pasterizator.html`,
     heading: '2Пластинчатые пастеризаторы',
     description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
   },
@@ -104,7 +104,7 @@ export const initialArticles = [
   },
   {
     tags: ['gkh', 'project', 'example'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
     heading: '4Пластинчатые теплообменники для гвс',
     description: 'Производство теплобменников горячего водоснабжения',
   },
