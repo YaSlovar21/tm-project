@@ -31,14 +31,14 @@
               <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Сервис и обслуживание теплообменников</a>
             </div>
             <h1 class="flexburton__title flexburton__title_size_m">Сервис и обслуживание теплообменников</h1>
-            <p class="flexburton__subtitle flexburton__subtitle_size_m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida facilisis enim neque, faucibus nibh scelerisque risus turpis.</p>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">ООО "Термоблок" предлагает широкий спектр услуг по сервисному обслуживанию и ремонту теплообменников собственного производства как на территории завода, так и с помощью партнеров на территории Российской Федерации. </p>
           </div>
         </div>
         <ul class="service__list">
             <li class="two-columns two-columns_page_service">
               <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
                 <h2 class="two-columns__brief-title two-columns__brief-title_page_service">Промывка теплообменника</h2>
-                <button class="button-bem">Проконсультироваться</button>
+                <button class="button-bem promivka-popup-callback">Проконсультироваться</button>
               </div>
               <div class="two-columns__main-text two-columns__main-text_page_service">
                 <p class="two-columns__paragraph">При эксплуатации пластинчатых теплообменников, между пластинами может появиться накипь или засоры. Таки образом может нарушиться нормальная работа теплообменного оборудования. Чтобы обеспечить таким аппаратам нормальную работу, нужна промывка теплообменников. Сервисная служба компании «Термоблок» специализируется на разборной промывке теплообменников. Это гарантирует качество и надёжность дальнейшей эксплуатации теплообменного аппарата и не наносит вреда уплотнениям, чего нельзя сказать о безразборной промывке теплообменников.</p>
@@ -48,7 +48,7 @@
             <li class="two-columns two-columns_page_service" style="padding-bottom: 25px;">
               <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
                 <h2 class="two-columns__brief-title two-columns__brief-title_page_service">Замена уплотнений и пластин</h2>
-                <button class="button-bem">Запросить комплектующие</button>
+                <button class="button-bem shareparts-popup-callback">Запросить комплектующие</button>
               </div>
               <div class="two-columns__main-text two-columns__paragraph two-columns__main-text_page_service service__list">
                   <h3 class="bem__list-heading bem__list-heading_page-service">Поставка необходимых материалов</h3>
@@ -109,6 +109,7 @@
         <div class="map__partner"></div>
       </section>
       <%= require('html-loader!./inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
     </div>
 
     <!--Шаблон элемента партнера на карте-->

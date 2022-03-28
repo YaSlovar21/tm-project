@@ -19,6 +19,8 @@
 
          z-index: 1;
          top: 40px;
+
+         overflow: hidden;
 }
 
 @media screen and (max-width: 1440px) {
@@ -132,7 +134,7 @@
         align-self: stretch;
         font-size: 16px;
         padding: 15px;
-       
+
         right: 0;
     width: calc(100% - 40px);
     margin: 0 auto 20px;

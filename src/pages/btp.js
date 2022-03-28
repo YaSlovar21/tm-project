@@ -15,6 +15,10 @@ import {
   renderLoading
 } from'../js/utils/utils.js';
 
+import {
+  popupCallBack
+} from './popup-callback.js'
+
 const lineformBtp = document.forms.lineformBtp;
 const lineformSubmitButton = lineformBtp.querySelector(lineformConfig.submitButtonSelector);
 const lineformValidator = new FormValidator(lineformConfig, lineformBtp);
@@ -152,4 +156,12 @@ const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((
 
 freqElements.forEach((element) => {
   element.setEventListeners();
-})
+});
+
+
+document.querySelector('.introgrid__button').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});
+document.querySelector('.popup-mini').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});

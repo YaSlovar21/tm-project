@@ -14,3 +14,10 @@ const wowAnimation = new WOW({
 });
 wowAnimation.init();
 
+import {
+  popupCallBack
+} from './popup-callback.js'
+
+document.querySelector('.oblasti__button').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});

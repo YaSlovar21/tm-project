@@ -32,12 +32,39 @@ import {
   popupWithToSelector,
 } from '../js/utils/constants.js';
 
+
+import {
+  popupCallBack
+} from './popup-callback.js'
+document.querySelector('.up-footer__call').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});
+
+import {
+  popupRaschet
+} from './popup-raschet.js'
+
+document.querySelector('.khan__buy-link').addEventListener('mousedown', ()=> {
+  popupRaschet.open();
+});
+
+document.querySelector('.up-footer__raschet').addEventListener('mousedown', ()=> {
+  popupRaschet.open();
+});
+
+document.querySelector('.po__link').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+})
+
 import FreqDynamic from '../js/components/FreqDynamic.js';
 import Section from '../js/components/Section.js';
 import CardProject from '../js/components/CardProject.js';
 import CardProjectHorizontal from '../js/components/CardProjectHorizontal.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
+
+
+
 
 const formProjectViewChange = document.forms.formProjectsViewChange;
 

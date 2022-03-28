@@ -1,13 +1,22 @@
 import './service.css'
 
-const formChoice = document.forms.formChoice;
+import {
+  popupCallBack
+} from './popup-callback.js'
 
+document.querySelector('.promivka-popup-callback').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});
+
+document.querySelector('.shareparts-popup-callback').addEventListener('mousedown', ()=> {
+  popupCallBack.open();
+});
+
+
+
+const formChoice = document.forms.formChoice;
 const plastTable = document.querySelector('.service-grid__plast-table');
 const sealsTable = document.querySelector('.service-grid__seals-table');
-
-function changeView(type) {
-
-}
 
 formChoice.addEventListener("change" , ()=>{
   if (formChoice.elements.radio.value === 'plast') {

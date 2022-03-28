@@ -4,6 +4,7 @@
   margin: 0;
   font-size: 24px;
   transition: color .5s ease-in;
+  font-weight: 600;
 }
 
 .choice-form__heading_page_service {
