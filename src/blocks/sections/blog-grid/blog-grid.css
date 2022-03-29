@@ -28,6 +28,7 @@
   margin: 0;
   padding: 12px;
   border: 1px solid #ff5e3a83;
+  display: block;
   border-radius: 4px;
   margin-bottom: 20px;
   font-weight: 500;

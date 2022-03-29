@@ -68,6 +68,7 @@ module.exports.paths = [
       priority: 0.8,
       changefreq: 'monthly'
     },
+
     /* блог */
     {
       path: '/blog-proizvodstva/',
@@ -75,27 +76,34 @@ module.exports.paths = [
       priority: 0.8,
       changefreq: 'monthly'
     },
-    
+    /* статьи */
+    {
+      path: '/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/plastinchatyy-pasterizator.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/plastinchatyy-ohladitel.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+ 
 
-    /* теплообменники */
-    {
-      path: '/catalog/ti-025.html',
-      lastmod: dateNow,
-      priority: 0.8,
-      changefreq: 'monthly'
-    },
-    {
-      path: '/catalog/ti-025.html',
-      lastmod: dateNow,
-      priority: 0.8,
-      changefreq: 'monthly'
-    },
-    {
-      path: '/catalog/ti-025.html',
-      lastmod: dateNow,
-      priority: 0.7,
-      changefreq: 'monthly'
-    },
+    /* --- теплообменники --- */
     {
       path: '/catalog/ti-025.html',
       lastmod: dateNow,
@@ -122,6 +130,12 @@ module.exports.paths = [
     },
     {
       path: '/catalog/ti-16-5.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-28.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'monthly'
@@ -163,6 +177,74 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
 
-    /* Статьи */
+    /* теплообменники пищевые */
+    {
+      path: '/catalog/p-025.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-077.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-13.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-18.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-16-5.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-28.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-45.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-65.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-52.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/p-82.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+
+    /* документы */
+    {
+      path: '/docu/termoblok_catalog.pdf',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
     
-  ];
+];

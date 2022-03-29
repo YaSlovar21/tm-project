@@ -39,13 +39,14 @@
   right: 22px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px),
+      screen and (max-height: 780px) {
   .popup__button-close_menu {
     top:30px;
     right: 10px;
   }
   .popup__button-close_type_form {
-    background-color: coral;
+    background-color: var(--main-equivalent-color);
     height: 18px;
     right: 0;
     top: 0;

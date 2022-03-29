@@ -385,13 +385,8 @@
           <h1 class="flexburton__title animate__animated animate__slow animate__bounceInLeft">Пластинчатые теплообменники</h1>
           <p class="flexburton__subtitle">Отечественные пластинчатые теплообменники и пластины от производителя ООО "Термоблок"<br> с доставкой по России <a class="flexburton__link link-beauty" href="#">Подробнее &#8594;</a></p>
         </div>
-
         <div class="flexburton__right-side">
           <img class="flexburton__main-image" src="<%=require('./images/ti45_new.png')%>" alt="Пластинчатый теплообменник">
-
-          <!--<svg class="flexburton__svg rotation" width="674" height="674" viewBox="0 0 674 674" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M272.606 6.1454C117.288 36.1981 0 172.902 0 337C0 501.098 117.288 637.802      272.606 667.855V661.74C120.623 631.773 6 497.772 6 337C6 176.228 120.623 42.2269 272.606 12.2599V6.1454ZM323.216      667.718C327.787 667.905 332.383 668 337 668C519.806 668 668 519.806 668 337C668 154.194 519.806 6 337 6C332.383 6 327.787 6.09455 323.216 6.28181V0.27677C327.788 0.0928449 332.383 0 337 0C523.12 0 674 150.88 674 337C674 523.12 523.12 674 337 674C332.383 674 327.788 673.907 323.216 673.723V667.718Z" fill="#FF5E3A"/>
-          </svg>  -->
         </div>
       </div>
 
@@ -451,7 +446,6 @@
                   <h3 class="slider-text-sborka__head">Бренд</h3>
                   <p class="info__sale text-colot-white slider-text-sborka__text">
                     <ul class="list-bem">
-
                       <li class="text-colot-white">Контроль качества на каждом этапе производства, теплообменные аппараты соответствуют требованиям безопасности установленным на единой территории Таможенного союза</li>
                     </ul>
                   </p>
@@ -599,12 +593,6 @@
         <div class="illustration__tmb wow"></div>
    </div>
   </div>
-  <!--<section class="feynman" style="background-color: #2f2f2f34;">
-        <h2 class="feynman__title">Пластины для пластинчатых теплообменников</h2>
-        <p class="feynman__subtitle">Всегда в наличии · Гарантия 3 года</p>
-        <a class="feynman__link link-beauty wow animate__fadeInRight" data-wow-offset="300" href="#">Подробнее о производстве &#8594;</a>
-        <div class="feynman__after wow animate__fadeInLeft"></div>
-      </section> -->
 <section class="plastdetail" style="background-color: #2f2f2f34;">
   <div class="plastdetail__content">
     <h2 class="plastdetail__title">Пластина пластинчатого теплообменника</h2>
@@ -657,13 +645,13 @@
           </div>
           <div class="swiper-slide">
             <div class="swiper-zoom-container">
-              <img data-src="<%=require('./images/raschet-sp.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+              <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-sp.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
             </div>
             <div class="swiper-lazy-preloader"></div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-zoom-container">
-              <img data-src="<%=require('./images/raschet-teh-dann.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+              <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-teh-dann.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
             </div>
             <div class="swiper-lazy-preloader"></div>
           </div>
@@ -763,122 +751,10 @@
 
 <!--FOOTER-->
 <%= require('html-loader!./inner-footer.html').default %>
- <!--Форма расчёта теплообменника  -->
- <div class="popup popup-raschet">
-  <div class="popup__container popup__container_type_big popup__container_type_form">
-      <button class="popup__button-close link-beauty popup__button-close_type_form" type="button"></button>
-      <form class="popup__form raschet-bem raschet-bem_flexed" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
-          <h2 class="raschet-bem__title">Заявка на расчёт</h2>
-          <!--Среды вход/выход-->
-          <fieldset class="first-step" style="display: flex;flex-direction: column; max-width: 100%; padding: 0; border: none; max-height: 90vh;">
-          <div class="raschet-bem__substantions">
-            <div class="raschet-bem__subst-selection-block">
-              <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
-              <select data-alias="Греющая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_gr" name="t_typesr">
-                <option selected value="Вода">вода</option>
-                <option value="Пар">пар</option>
-                <option value="Масло">масло</option>
-              </select>
-              <span class="raschet-bem__input-error sreda_gr-error"></span>
-            </div>
-            <div class="raschet-bem__subst-selection-block">
-              <h3 class="raschet-bem__subst-title raschet-bem__subst-title_cold">Нагреваемая сторона</h3>
-              <select data-alias="Нагреваемая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_nagr" name="t_typesr">
-                <option selected value="Вода">вода</option>
-                <option value="Пар">пар</option>
-                <option value="Масло">масло</option>
-              </select>
-              <span class="raschet-bem__input-error sreda_nagr-error"></span>
-            </div>
-          </div>
-          <!--Температурные графики (темп - изображения - темп)-->
-          <div class="raschet-bem__temperatures">
-            <div class="raschet-bem__temperature-set">
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Температура среды на входе</span>
-                <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
-                <span class="raschet-bem__input-error temp-grin-input-error"></span>
-              </label>
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                <input data-alias="Температура греющей среды на выходе" type="text" name="temperature_of_the_heating_out" id="temp-grout-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
-                <span class="raschet-bem__input-error temp-grout-input-error"></span>
-              </label>
-            </div>
-            <img class="raschet-bem__temperature-img" src="<%=require('./images/to_online.png')%>" alt="Рассчитываемый теплообменник">
-            <div class="raschet-bem__temperature-set">
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Температура среды на выходе</span>
-                <input data-alias="Температура нагреваемой среды на выходе" type="text" name="temperature_of_the_heated_out"  id="temp-nagrout-input" class="raschet-bem__input raschet-bem__input_type_flex" required  minlength="1">
-                <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
-              </label>
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Температура среды на входе</span>
-                <input data-alias="Температура нагреваемой среды на входе" type="text"  name="temperature_of_the_heated_in" id="temp-nagrin-input" class="raschet-bem__input raschet-bem__input_type_flex" minlength="1" required>
-                <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
-              </label>
-            </div>
-          </div>
-          <!--Дополнительные параметры (мощность, расход по нагреваемой среде)-->
-          <div class="raschet-bem__parameters">
-            <p class="raschet-bem__comment">Для расчёта необходима мощность теплообменника <span class="span_color_orange">или</span> расход по нагреваемой среде</p>
-            <div class="raschet-bem__addition-selection-block"> <!--style="flex-basis: 187px; align-items: stretch; margin-right: 30px;">-->
-                <div class="raschet-bem__field">
-                  <label>
-                    <span class="raschet-bem__label-title">Мощность теплообменника</span>
-                  </label>
-                  <div style="display: flex; margin: 0; padding: 0; border: none;">
-                    <input data-alias="Мощность" type="text" name="moshnost"  id="q-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                    <select class="raschet-bem__select" name="t_typesr1" >
-                      <option selected value="квт">квт</option>
-                      <option value="мвт">мвт</option>
-                    </select>
-                    <span class="raschet-bem__input-error q-input-error"></span>
-                  </div>
-              </div>
-            </div>
+<!--Форма расчёта теплообменника  -->
+<!--Удалено-->
+<%= require('html-loader!./insets/popup-big-form.html').default %>
 
-            <div class="raschet-bem__addition-selection-block"><!-- style="flex-basis: 199px;align-items: stretch;">-->
-              <div class="raschet-bem__field">
-                <label>
-                  <span class="raschet-bem__label-title">Расход нагреваемой среды</span>
-                </label>
-                <div style="display: flex; margin: 0; padding: 0; border: none;">
-                  <input data-alias="Расход нагреваемой среды" name="rashod" type="text"  id="rash-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                  <select class="raschet-bem__select" name="t_typesr2" >
-                    <option selected value="м3/ч">м3/ч</option>
-                    <option value="т/ч">т/ч</option>
-                  </select>
-                  <span class="raschet-bem__input-error rash-input-error"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--<button class="popup__button-save popup__button-save_type_callback form-next-step" type="submit">Отправить</button>-->
-          <button class="form-next-step button-bem first-step-button"  type="button">Далее</button>
-          </fieldset>
-          <div class="popup__form-fio popup-absolute second-step">
-            <h3 class="raschet-bem__title">Куда мы можем отправить расчёт?</h3>
-              <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Как к Вам обращаться?</span>
-                <input name="name" data-alias="Имя" type="text"  id="fio-input" class="raschet-bem__input"  required minlength="1">
-                <span class="raschet-bem__input-error fio-input-error"></span>
-              </label>
-              <label class="raschet-bem__field">
-                <span class="raschet-bem__label-title">Почта или телефон, куда удобнее принять расчёт</span>
-                <input name="contact" data-alias="Контакт" type="email"  id="contact-input" class="raschet-bem__input"  required>
-                <span class="raschet-bem__input-error contact-input-error"></span>
-              </label>
-            </fieldset>
-            <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">
-              <button type="button"  class="button-bem button-bem_back form-back-button" style="flex-basis: 200px">Назад</button>
-              <button type="submit" class="raschet-bem__submit-button button-bem second-step-button" style="flex-basis: 100%;">Отправить</button>
-            </div>
-          </div>
-      </form>
-  </div>
-</div>
 <!--Шаблон элемента партнера на карте-->
 <template id="partner-item-template">
   <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
@@ -890,6 +766,7 @@
     <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
   </div>
 </template>
+<!--Шаблон карточки проекта в горизонтальном виде-->
 <template id="project-horizontal-template">
   <div class="projects__item projects__item_horizontal">
     <img class="projects__image projects__image_horizontal" src="<%=require('./images/ufa_zaton.png')%>">
@@ -904,6 +781,7 @@
     </div>
   </div>
 </template>
+
 <!--Форма модального окна с картинкой-->
 <div class="popup popup_darked popup-viewport">
   <div class="popup__container popup__container_type_image">
@@ -914,28 +792,8 @@
       </div>
   </div>
 </div>
-<!--Модальное окно с теплообменником
-<div class="popup popup_darked popup-to">
-  <div class="popup__container">
-      <button class="popup__button-close link-beauty" type="button"></button>
-      <div class="popup__to-info heatex" style="max-width: 100%;">
-        <img style="position: absolute; top:0; left: 0; width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
-        <img style="position: absolute; top:0; right: 0; transform: scaleX(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
-        <img class="popup__to-img" src="<%=require('./images/svg-elems/preloader.gif')%>" alt="Здесь будет модель теплообменника">
-        <div class="popup__desc-container">
-          <span class="span span_comment">Теплообменник</span>
-          <h3 class="popup__to-name heatex__to-name">ТИ 077</h3>
-          <p class="popup__to-desc popup__to-desc_theme_dark heatex__to-desc heatex__to-desc_theme_dark">rehgoreqwghorqeghh</p>
-          <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник -></a>
-          <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-          <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>
-        </div>
-      </div>
-      <img style="position: absolute; bottom:0; left: 0; transform: scaleY(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
-      <img style="position: absolute; bottom:0; right: 0; transform: scale(-1); width: 30%;" src="<%=require('./images/rect_sect.svg')%>" alt="Декоративный элемент">
-  </div>
-</div>-->
 
+<!--Модальное окно с теплообменником-->
 <div class="popup popup_darked popup-to">
   <div class="popup__container popup__container_type_heatex">
       <button class="popup__button-close popup__button-close_type_heatex link-beauty" type="button"></button>
@@ -960,10 +818,6 @@
       <!--</div>-->
   </div>
 </div>
-
-
-<!--Форма расчёта теплообменника  -->
-<%= require('html-loader!./inner-raschet-form.html').default %>
 
 </body>
 </html>

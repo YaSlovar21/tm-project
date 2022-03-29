@@ -19,11 +19,6 @@
       </header>
 
       <main class="content">
-        <!--<div class="flexburton__breadcrumbs service-grid__breadcrumbs">
-          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
-          <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Сервис и обслуживание теплообменников</a>
-        </div>
-        <h1 class="content__title service-grid__title">Сервис и обслуживание теплообменников</h1>-->
         <div class="flexburton flexburton_size_m flexburton_test">
           <div class="flexburton__left-side">
             <div class="flexburton__breadcrumbs service-grid__breadcrumbs">
@@ -63,7 +58,7 @@
               </li>
               <li class="two-columns two-columns_page_service" style="padding: 0;">
                 <div class="two-columns__brief two-columns__brief_page_service two-columns__brief_column">
-
+                  <!--пустой brief для номенклатуры справа-->
                 </div>
                 <div class="two-columns__main-text two-columns__paragraph two-columns__main-text_page_service service__list">
                   <h3 class="bem__list-heading bem__list-heading_page-service">Номенклатура</h3>
@@ -91,11 +86,10 @@
               <div class="two-columns__main-text two-columns__main-text_page_service">
                 <p class="two-columns__paragraph">Мы предоставляем техническое консультирование по вопросам эксплуатации теплообменного оборудования. Наши сотрудники прошли необходимое обучение и имеют сертификаты.</p>
               </div>
-
             </li>
       </ul>
-      </main>
-      <section class="map">
+    </main>
+    <section class="map">
         <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
         <div class="map__list-container">
           <ul class="map__list">
@@ -107,15 +101,14 @@
           </div>
         </div>
         <div class="map__partner"></div>
-      </section>
-      <%= require('html-loader!./inner-footer.html').default %>
-      <%= require('html-loader!./insets/popup-mini-form.html').default %>
-    </div>
+    </section>
+    <%= require('html-loader!./inner-footer.html').default %>
+  </div><!--page-->
 
-    <!--Шаблон элемента партнера на карте-->
-    <template id="partner-item-template">
-      <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
-    </template>
+  <!--Шаблон элемента партнера на карте-->
+  <template id="partner-item-template">
+    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+  </template>
 
   </body>
 </html>
