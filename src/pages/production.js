@@ -19,5 +19,5 @@ import {
 } from './popup-callback.js'
 
 document.querySelector('.oblasti__button').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Проконсультироваться с инженером');
 });

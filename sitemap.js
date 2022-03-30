@@ -246,5 +246,34 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
-    
+    {
+      path: '/docu/Katalozhnii_list_BTP_Termoblok.pdf',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/docu/btp-certificate.pdf',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/docu/Oprosnii_list_podbora_teplovogo_punkta.doc',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/docu/Oprosnii_list_podbora_teplovogo_punkta.doc',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/docu/Termoblok_reference_teploobmenniki.pdf',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
 ];

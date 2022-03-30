@@ -53,7 +53,7 @@ document.querySelector('.up-footer__raschet').addEventListener('mousedown', ()=>
 });
 
 document.querySelector('.po__link').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Запрос программы расчёта', 'Здравствуйте, просьба разъяснить условия использование Вашей программы расчёта.');
 })
 
 import FreqDynamic from '../js/components/FreqDynamic.js';

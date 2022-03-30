@@ -20,9 +20,9 @@ import '../pages/index.css';
 //import '../pages/CNAME';
 import '../videos/tm_test_video.mp4';
 
-import '../userfiles/Опросный_лист_Термоблок_для_подбора_БТП.doc';
-import '../userfiles/Опросный_лист_для_подбора_теплообменника.doc';
-import '../userfiles/Референс_бук_Термоблок.pdf';
+import '../userfiles/Oprosnii_list_podbora_teplovogo_punkta.doc';
+import '../userfiles/Oprosnii_list_podbora_teploobmennika.doc';
+import '../userfiles/Termoblok_reference_teploobmenniki.pdf';
 import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
 import '../userfiles/btp-certificate.pdf'

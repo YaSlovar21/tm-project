@@ -86,15 +86,20 @@
   </div>
     <h3 class="raschet-bem__title raschet-bem__title_subtitle">Куда мы можем отправить расчёт?</h3>
       <fieldset style="min-width: calc(100% - 40px); margin: 0 auto; border: 0; padding: 0;">
-      <label class="raschet-bem__field raschet-bem__field_type_block">
+      <label class="raschet-bem__field raschet-bem__contact-field">
         <span class="raschet-bem__label-title">Как к Вам обращаться?</span>
         <input name="name" data-alias="Имя" type="text"  id="fio-input" class="raschet-bem__input"  required minlength="1">
         <span class="raschet-bem__input-error fio-input-error"></span>
       </label>
-      <label class="raschet-bem__field raschet-bem__field_type_block">
-        <span class="raschet-bem__label-title">Почта или телефон, куда удобнее принять расчёт</span>
+      <label class="raschet-bem__field  raschet-bem__contact-field">
+        <span class="raschet-bem__label-title">Почта, куда удобнее принять расчёт</span>
         <input name="contact" data-alias="Контакт" type="email"  id="contact-input" class="raschet-bem__input"  required>
         <span class="raschet-bem__input-error contact-input-error"></span>
+      </label>
+      <label class="raschet-bem__field raschet-bem__contact-field">
+        <span class="raschet-bem__label-title">Телефон</span>
+        <input name="tel-raschet" data-alias="Телефон" type="text"  id="tel-raschet-input" class="raschet-bem__input"  required>
+        <span class="raschet-bem__input-error tel-raschet-input-error"></span>
       </label>
     </fieldset>
     <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">

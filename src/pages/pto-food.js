@@ -1,7 +1,16 @@
 import './pto-food.css';
 import Swiper from 'swiper/bundle';
-
 import 'swiper/swiper-bundle.css';
+
+import {
+  popupCallBack
+} from './popup-callback.js';
+
+document.querySelector('.introgrid__button').addEventListener('mousedown', (evt)=> {
+  evt.preventDefault();
+  popupCallBack.open('Проконсультироваться с инженером');
+});
+
 var mySwiper = new Swiper('.food-types-container', {
   // Optional parameters
   direction: 'horizontal',

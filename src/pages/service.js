@@ -5,11 +5,11 @@ import {
 } from './popup-callback.js'
 
 document.querySelector('.promivka-popup-callback').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Заявка на сервис');
 });
 
 document.querySelector('.shareparts-popup-callback').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Заявка на комплектующие', 'Здравствуйте, просьба отправить прайс на комплектующие.');
 });
 
 

@@ -37,10 +37,26 @@
     z-index: -1;
 }
 
+.info__theme-span {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin: 8px;
+  padding: 7px 15px;
+  background-color: #313131;
+  background-color: #ff5e3a94;
+  font-weight: 400;
+  color: #ffffff;
+  color: #2b2b2d;
+  font-size: 12px;
+  letter-spacing: 0.015em;
+  cursor: pointer;
+}
+
 .info__sale-link {
-    padding: 10px;
+    padding: 10px 0;
     background-color: #2f2f2f;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
     color: #FF5E3A;
     line-height: 1.4;
@@ -70,7 +86,7 @@
     font-size: 24px;
     color: white;
     /*text-align: center;*/
-    max-width: 80%;
+    max-width: calc(100% - 40px);
     margin: 20px auto;
 
 }
