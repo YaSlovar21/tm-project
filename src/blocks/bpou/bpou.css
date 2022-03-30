@@ -8,17 +8,15 @@
   margin: 0 auto;
   justify-content: space-between;
 
-    position: relative;
-    margin-bottom: 100px; /*временно*/
-    margin-top: 140px;
-    /*padding-bottom: 20px; временно*/
+  position: relative;
+  margin-bottom: 100px; /*временно*/
+  margin-top: 140px;
+  /*padding-bottom: 20px; временно*/
 }
 
 .bpou__wrapper {
 
 }
-
-
 
 .bpou::before {
     content: '';
