@@ -2,9 +2,18 @@ import './pto-food.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
+import PopupWithImage from '../js/components/PopupWithImage.js';
+
 import {
   popupCallBack
 } from './popup-callback.js';
+
+import {
+  popupImageSelector,     //попап с картинкой (селектор)
+  //конфиги
+  popupImageSelectorsCongig,
+} from '../js/utils/constants.js';
+
 
 document.querySelector('.introgrid__button').addEventListener('mousedown', (evt)=> {
   evt.preventDefault();
@@ -63,3 +72,15 @@ mySwiper.on('orientationchange', function () {
   console.log('UPDATED_ORIENT');
 });
 
+const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
+popupImage.setEventListeners();
+
+document.querySelectorAll('.food-grid__image').forEach((item) => {
+  item.addEventListener("mousedown", (evt) => {
+    console.log(evt.target);
+    popupImage.open({
+      link: evt.target.src,
+      name: evt.target.alt,
+    });
+  });
+});

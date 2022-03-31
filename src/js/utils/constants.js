@@ -453,6 +453,7 @@ export const popupImageSelectorsCongig = {
     popupImageDescSelector: '.popup__image-description'
 }
 
+
 export const popupToConfig = {
   popupImageToSelector: '.popup__to-img',
   popupImageContainerSelector: '.popup__to-img-container',
