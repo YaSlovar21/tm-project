@@ -353,3 +353,9 @@ const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((
 freqElements.forEach((element) => {
   element.setEventListeners();
 });
+
+/*
+const poButton = document.querySelector('.po__link');
+poButton.addEventListener('mousedown', ()=> {
+  poButton.classList.add('po__link_hovered');
+})*/

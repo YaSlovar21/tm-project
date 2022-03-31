@@ -14,7 +14,8 @@ import PopupWithImage from '../js/components/PopupWithImage.js';
 import Api from '../js/components/Api.js';
 
 import 'swiper/swiper-bundle.css';
-import 'animate.css';
+//import 'animate.css';
+//import '../pages/animation.css';
 import '../pages/index.css';
 
 //import '../pages/CNAME';
@@ -84,7 +85,7 @@ const formApi = new Api({
 
 const wowAnimation = new WOW({
   boxClass:     'wow',      // animated element css class (default is wow)
-  animateClass: 'animate__animated', // animation css class (default is animated)
+  animateClass: 'animated', // animation css class (default is animated)
   offset:       0,          // distance to the element when triggering the animation (default is 0)
   mobile:       true,       // trigger animations on mobile devices (default is true)
   live:         true,       // act on asynchronously loaded content (default is true)
@@ -234,14 +235,14 @@ const dsList = document.querySelector('.bem__list_page_main');
 let dsSecondBox = dsSecond.getBoundingClientRect();
 window.addEventListener('scroll', function() {
   dsSecondBox = dsSecond.getBoundingClientRect();
- // if (dsSecondOffsetY) {
+  if (window.innerWidth < 768) {
     dsIntroImg.setAttribute('style', `display:${dsSecondBox.top > 250 ? 'block' : 'none'}`)
-    if (dsSecondBox.top < 250) {
+    if (dsSecondBox.top < 250 ) {
       dsList.classList.add('bem__list_minified');
     } else {
       dsList.classList.remove('bem__list_minified');
     }
-  //}
+  }
 });
 
 /* Слайдер в хидере на главной */

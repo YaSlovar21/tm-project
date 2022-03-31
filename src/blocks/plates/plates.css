@@ -39,6 +39,10 @@
   transform: skewY(-15deg);
 }
 
+.plates__svg_page_main {
+  transform: none;
+}
+
 @media screen and (max-width:1024px) {
     .plates__interactive {
         /*max-width: 768px;

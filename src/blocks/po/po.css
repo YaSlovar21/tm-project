@@ -78,6 +78,10 @@
     transition: all .8s ease-in-out;
 }
 
+.po__link_hovered {
+  color: #f2f2f2;
+}
+
 .po__link_page_main {
   margin-top: 0;
 }
@@ -107,6 +111,10 @@
     right: 0;
 
     transition: all .6s ease-in-out;
+}
+
+.po__link_hovered::after , .po__link_hovered::before {
+  width: 100%;
 }
 
 .po__link:hover::after,  .po__link:hover::before{
@@ -140,7 +148,7 @@
     font-size: 14px;
     letter-spacing: .05em;
 
-   
+
   }
   .po__description {
     max-width: calc(100% - 20px);

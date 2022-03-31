@@ -344,6 +344,22 @@ export const initialPartners = [
     },
   },
   {
+    name: 'Новокузнецк',
+    htmlData: {
+      nameOfPartner: 'ООО \"Амито\"',
+      telephoneNumbers: ['8 (3822) 978-933'],
+      site: 'https://amito-t.ru/',
+    },
+  },
+  {
+    name: 'Кемерово',
+    htmlData: {
+      nameOfPartner: 'ООО \"Амито\"',
+      telephoneNumbers: ['8 (3822) 978-933'],
+      site: 'https://amito-t.ru/',
+    },
+  },
+  {
     name: 'Уфа',
     htmlData: {
       nameOfPartner: 'ООО \"Партнер\"',
