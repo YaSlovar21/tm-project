@@ -13,6 +13,16 @@
     font-size: 22px;
 }
 
+.info__parallax-bg {
+  position: absolute;
+  background-image: url('../../images/Subtract.svg');
+  background-size: contain;
+  top: 200px;
+  right: 300px;
+  width: 200px;
+  height: 200px;
+}
+
 /*Левый блок*/
 .info__main {
     width: 600px;

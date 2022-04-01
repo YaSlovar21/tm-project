@@ -7,6 +7,12 @@
 
 @import url(../blocks/list/list.css);
 
+@import url(../blocks/animatecss/_base.css);
+@import url(../blocks/animatecss/_vars.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/attention_seekers/pulse.css);
+
 @import url(../blocks/flexburton/flexburton.css);
 @import url(../blocks/flexburton/__link/flexburton__link.css);
 @import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);

@@ -14,7 +14,7 @@
       <header class="header">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
-          <%= require('html-loader!./inner-header.html').default %>
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
         </div>
       </header>
       <p style="color: #f2f2f2;"><%= compilation.assets.source %></p>
@@ -95,9 +95,9 @@
             </ul>
         </section>
       </main>
-      <%= require('html-loader!./inner-footer.html').default %>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
       <%= require('html-loader!./insets/popup-mini-form.html').default %>
-      <%= require('html-loader!./inner-popup-img.html').default %>
+      <%= require('html-loader!./insets/popup-with-img.html').default %>
     </div>
 
   </body>

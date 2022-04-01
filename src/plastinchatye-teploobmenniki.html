@@ -46,7 +46,7 @@
       <img class="header__logo-img"  src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок" >
     </a>
     <div class="header__right">
-      <%= require('html-loader!./inner-header.html').default %>
+      <%= require('html-loader!./insets/asides/inner-header.html').default %>
     </div>
   </header>
 
@@ -391,9 +391,9 @@
       </div>
 
 <section class="description">
-  <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
+  <div class="two-columns">
     <h2 class="two-columns__brief two-columns__brief_wide">Производство теплообменников</h2>
-    <div class="two-columns__main-text">
+    <div class="two-columns__main-text wow fadeInUp" data-animaton-duration="1.5s">
       <p class="two-columns__paragraph">На базе пластин собственного производства изготавливаются теплообменники торговой марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> для различных отраслей: жилично-коммунальное хозяйство, пищевая промышленность и прочие технологические процессы теплообмена.  Производство теплообменников 100% локализовано на территории предприятия.</p>
       <p class="two-columns__paragraph">Обеспечивается полный контроль качества на каждом участке производства: сталь на входе проходит лабораторную проверку на соответствие заявленной марке, проводится индивидуальная проверка пластин, собранный теплообменник испытывается гидравлическим давлением.</p>
     </div>
@@ -488,7 +488,7 @@
     <p class="projects__description">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
   </div>
   <form class="projects__change-form" name="formProjectsViewChange" id="formProjectsViewChange">
-    <label>
+    <label class="wow pulse">
       <input type="checkbox" class="projects__checkbox">
       <span class="projects__details-button">Смотреть подробнее</span>
     </label>
@@ -554,9 +554,9 @@
     <h2 class="types__heading">Виды теплообменников</h2>
     <p class="types__subtitle">Основное направления компании - производство теплообменников для систем горячего водоснабжения и отопления.</p>
   </div>
-  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html" class="types__item wow animate__fadeInRight" data-wow-delay="1.5s" data-wow-offset="200">Пластинчатые теплообменники для ГВС (горячее водоснабжение) <!--Перейти &#8594;--></a>
-  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html"  class="types__item wow animate__fadeInRight" data-wow-delay="2s" data-wow-offset="200">Пластинчатые теплообменники для отопления<!-- Перейти &#8594;--></a>
-  <a href="/equipment-selection"  class="types__item wow animate__fadeInRight" data-wow-delay="2.5s" data-wow-offset="100">Рассчитать теплооменник индивидуально</a>
+  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html" class="types__item wow fadeInRight">Пластинчатые теплообменники для ГВС (горячее водоснабжение) <!--Перейти &#8594;--></a>
+  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html"  class="types__item wow fadeInRight" data-wow-delay=".5s">Пластинчатые теплообменники для отопления<!-- Перейти &#8594;--></a>
+  <a href="/equipment-selection"  class="types__item wow fadeInRight" data-wow-delay="1s" >Рассчитать теплооменник индивидуально</a>
 </section>
 
 <!--Широкоформатная секция ( изготовление пластин, svg-типоразмер, конструктивные особенности)-->
@@ -742,15 +742,15 @@
 
 <div class="up-footer">
   <ul class="up-footer__list">
-    <li class="up-footer__list-item up-footer__raschet wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-    <li class="up-footer__list-item up-footer__call  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
-    <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
+    <li class="up-footer__list-item up-footer__raschet wow fadeInUp" data-wow-duration="1s">Рассчитать теплообменник</li>
+    <li class="up-footer__list-item up-footer__call  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Заявка на обратный звонок</li>
+    <li class="up-footer__list-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">Скачать опросный лист</li>
   </ul>
 </div>
 
 
 <!--FOOTER-->
-<%= require('html-loader!./inner-footer.html').default %>
+<%= require('html-loader!./insets/asides/inner-footer.html').default %>
 <!--Форма расчёта теплообменника  -->
 <!--Удалено-->
 <%= require('html-loader!./insets/popup-big-form.html').default %>

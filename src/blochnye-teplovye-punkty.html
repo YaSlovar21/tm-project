@@ -60,7 +60,7 @@
     <header class="header">
       <a href="/" class="header__logo"><img class="header__logo-img" alt="Лого Термоблок" src="<%=require('./images/header-logo-1.svg')%>"/></a>
       <div class="header__right">
-        <%= require('html-loader!./inner-header.html').default %>
+        <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
     </header>
 
@@ -72,7 +72,7 @@
               <a class="flexburton__breadcrumbs-link" href="/production.html">Продукция</a>
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блочные тепловые пункты</a>
             </div>
-            <h1 class="flexburton__title animate__animated animate__slow animate__bounceInLeft">Блочные тепловые пункты</h1>
+            <h1 class="flexburton__title bounceInLeft">Блочные тепловые пункты</h1>
             <p class="flexburton__subtitle">Изготовление блочных тепловых пунктов на базе пластинчатых теплообменников собственного производства<a class="flexburton__link link-beauty" href="#"> Подробнее &#8594;</a></p>
         </div>
         <div class="flexburton__right-side">
@@ -81,9 +81,9 @@
       </section>
 
       <section class="description">
-        <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
+        <div class="two-columns " data-wow-offset="450" data-wow-mobile="false">
           <h2 class="two-columns__brief two-columns__brief_flexed"">Производство блочных тепловых пунктов</h2>
-          <div class="two-columns__main-text  two-columns__main-text_flexed">
+          <div class="two-columns__main-text  two-columns__main-text_flexed wow fadeInUp">
               <p class="two-columns__paragraph">БТП - блочные тепловые пункты - готовое решение от производителя теплообменного оборудования. Другими словами, это блочные ИТП, которые изготавливаются и испытываются на территории предприятия.</p>
               <p class="two-columns__paragraph">На БТП, в отличие от ИТП, выдается гарантия целиком на изделие. Изготавливаем блоки ГВС и блоки отопления по принципиальным схемам, которые представлены ниже, также вы можете заказать автоматизированный тепловой пункт, заполнив опросный лист. Мы предлагаем купить блочные тепловые пункты по выгодной цене, которую оперативно рассчитают инженеры предприятия ООО "Термоблок" и проконсультируют по вопросам монтажа, доставки и сервису оборудования.</p>
           </div>
@@ -191,7 +191,7 @@
         </section>
         <form class="lineform lineform_page_btp" method="post" action="#" id="lineformBtp" name="lineformBtp" novalidate>
           <h2 class="lineform__heading">Проконсультироваться с инженером</h2>
-          <p class="lineform__description">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
+          <p class="lineform__description wow fadeInRight">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
           <div class="lineform__line">
             <div class="lineform__field">
               <input class="lineform__input lineform__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
@@ -262,7 +262,7 @@
         <div class="bpou__image-container">
           <img src="<%=require('./images/pou_page_btp.png')%>" alt="Блочное решение для пищевой промышленности на базе пластинчатых теплообменников" class="bpou__image">
         </div>
-     
+
     </section>
     <div class="up-footer up-footer_bg_none ">
       <ul class="up-footer__list">
@@ -272,7 +272,7 @@
       </ul>
     </div>
   </main>
-  <%= require('html-loader!./inner-footer.html').default %>
+  <%= require('html-loader!./insets/asides/inner-footer.html').default %>
   <%= require('html-loader!./insets/popup-mini-form.html').default %>
   </div> <!--page-->
 </body>

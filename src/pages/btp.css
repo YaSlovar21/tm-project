@@ -11,6 +11,11 @@
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
+@import url(../blocks/animatecss/_base.css);
+@import url(../blocks/animatecss/_vars.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/bouncing_entrances/bounceInLeft.css);
 
 @import url(../blocks/nav/nav.css);
 

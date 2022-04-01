@@ -14,7 +14,7 @@
       <header class="header">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
-          <%= require('html-loader!./inner-header.html').default %>
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
         </div>
       </header>
 
@@ -74,10 +74,10 @@
                     </label>
                   </form>
                   <div class="service-grid__plast-table" style="overflow-y: hidden; max-width: 100%;">
-                    <%= require('html-loader!./inner-plast-table.html').default %>
+                    <%= require('html-loader!./insets/tables/inner-plast-table.html').default %>
                   </div>
                   <div class="service-grid__seals-table" style="display: none; overflow-y: hidden; max-width: 100%;">
-                    <%= require('html-loader!./inner-seals-table.html').default %>
+                    <%= require('html-loader!./insets/tables/inner-seals-table.html').default %>
                   </div>
               </div>
             </li>
@@ -102,7 +102,7 @@
         </div>
         <div class="map__partner"></div>
     </section>
-    <%= require('html-loader!./inner-footer.html').default %>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
     <%= require('html-loader!./insets/popup-mini-form.html').default %>
   </div><!--page-->
 

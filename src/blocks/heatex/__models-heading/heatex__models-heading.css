@@ -7,3 +7,10 @@
 
     margin: 90px 0 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .heatex__models-heading {
+    font-weight: 600;
+    font-size: 12px;
+  }
+}

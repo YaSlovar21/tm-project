@@ -16,7 +16,7 @@
     <header class="header">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
       <div class="header__right">
-          <%= require('html-loader!./inner-header.html').default %>
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
     </header>
 
@@ -45,9 +45,9 @@
       </div>
 
       <section class="description">
-        <div class="two-columns wow animate__animated animate__fadeInDown" data-wow-offset="450" data-wow-mobile="false">
+        <div class="two-columns" data-wow-offset="450" data-wow-mobile="false">
           <h2 class="two-columns__brief two-columns__brief_flexed">Гарантии качества пластинчатых теплообменников</h2>
-          <div class="two-columns__main-text two-columns__main-text_flexed">
+          <div class="two-columns__main-text two-columns__main-text_flexed wow fadeInUp">
             <p class="two-columns__paragraph">Отличительной особенностью пищевых пластинчатых теплообменников является рама в специальном исполнении: она изготовлена из нержавеющей стали, либо облицована нержавеющей сталью. Специальные присоединения по <span class="span-bold span_color_orange">DIN 11850</span> обеспечивают высокие гигиенические показатели пищевых теплообменников.</p>
             <p class="two-columns__paragraph">Большой опыт работы в данном направлении позволяет нам предлагать инновационные решения по использованию теплообменников в различных технологических процессах пищевой промышленности. Теплообменное оборудование отвечает высоким требованиям пищевой отрасли. Наша компания предлагает выгодно купить пищевые теплообменники для пищевой промышленности.</p>
           </div>
@@ -59,23 +59,23 @@
           <h2 class="introgrid__header">Области применения</h2>
           <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
           <div class="introgrid__button">
-            <a href="#" class="link-beauty button-bem" style="text-decoration: none; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
+            <a href="#" class="link-beauty button-bem wow pulse" data-wow-delay="1s" style="text-decoration: none; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
           </div>
           <div class="introgrid__feat">
             <ul class="table-grid table-grid_food">
-              <li>
+              <li class="wow fadeInUp" >
                   <h3 class="table-grid__heading">Пластинчатые пастеризаторы</h3>
                   <p  class="table-grid__description">Пастеризация пищевых жидкостей, теплообменники любой мощности</p>
               </li>
-              <li>
+              <li class="wow fadeInUp" data-wow-delay=".3s">
                   <h3  class="table-grid__heading">Пластинчатые охладители (ООЛ)</h3>
                   <p class="table-grid__description">Охлаждение молока, сливок и других жидкостей в потоке, конденсация соковых паров</p>
               </li>
-              <li>
+              <li class="wow fadeInUp" data-wow-delay=".6s">
                   <h3  class="table-grid__heading">Теплообменники в масложировой отрасли</h3>
                   <p class="table-grid__description">Охлаждение (кристаллизация) или нагрев масла/смеси масел</p>
               </li>
-              <li>
+              <li class="wow fadeInUp" data-wow-delay="0.9s">
                   <h3  class="table-grid__heading">Технические процессы теплообмена при производстве спиртов, сусла</h3>
                   <p class="table-grid__description">Пастеризация и охлаждения сусла (возможно изготовление многоступенчатого теплообменника)</p>
               </li>
@@ -220,7 +220,7 @@
       </div>
     </div>
     <!--FOOTER-->
-    <%= require('html-loader!./inner-footer.html').default %>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
     <%= require('html-loader!./insets/popup-mini-form.html').default %>
   </div><!--page-->
   </body>

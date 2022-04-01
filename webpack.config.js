@@ -8,10 +8,13 @@ const {paths} = require('./sitemap');
 //const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.profi-heat.ru'
 
+const fs = require('fs');
+
 //import {initialHeatEx} from './src/js/utils/constants.js';
 //console.log(initialHeatEx);
-
-
+const ptoOtop = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pto-otop.html');
+const ptoGvs = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pto-gvs.html');
+const ptoPasteriz = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pasteriz.html');
 
 module.exports = {
   entry: { 
@@ -293,7 +296,8 @@ module.exports = {
         keywords: 'теплообменники отопления, пластинчатые теплообменники отопления', 
         description: 'Все о термоблоке'
       },
-      template: './src/blog-pto-otop.html', 
+      article: ptoOtop,
+      template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       chunks: ['blogPage',  'all', 'map'],
     }),
@@ -306,7 +310,8 @@ module.exports = {
         keywords: 'теплообменники гвс, пластинчатые теплообменники гвс', 
         description: 'Все о термоблоке'
       },
-      template: './src/blog-pto-gvs.html', 
+      article: ptoGvs,
+      template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
       chunks: ['blogPage',  'all', 'map'],
     }),
@@ -319,7 +324,8 @@ module.exports = {
         keywords: 'пастеризатор, пластинчатый пастеризатор', 
         description: 'Все о термоблоке'
       },
-      template: './src/blog-pasteriz.html', 
+      article: ptoPasteriz,
+      template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatyy-pasterizator.html',
       chunks: ['blogPage',  'all', 'map'],
     }),
