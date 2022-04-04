@@ -16,6 +16,7 @@ const ptoOtop = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pt
 const ptoGvs = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pto-gvs.html');
 const ptoPasteriz = fs.readFileSync(path.resolve(__dirname, './src/articles') + '/pasteriz.html');
 
+
 module.exports = {
   entry: { 
     index: './src/pages/index.js',
@@ -45,7 +46,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, './dist'), // путь, куда "смотрит" режим разработчика
     compress: true, // это ускорит загрузку в режиме разработки
-    port: 8080, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
+    port: 8081, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
     open: true // сайт будет открываться сам при запуске npm run dev
   },
   module: {
@@ -82,13 +83,37 @@ module.exports = {
               }
           }
       ]
-  },
+      },
+      /*{
+       test: /\.html$/,
+       include: [
+         path.resolve(__dirname, './src/articles/')
+       ],
+       loader: "html-loader"
+      },*/
       {
         // регулярное выражение, которое ищет все файлы с такими расширениями
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
         exclude: [
-          path.resolve(__dirname, './src/images/favicon.svg')
+          path.resolve(__dirname, './src/images/favicon.svg'),
+          path.resolve(__dirname, './src/blog-images/'),
+        ]
+      },
+      {
+        // регулярное выражение, которое ищет все файлы с такими расширениями
+        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        use: [
+          {
+              loader: "file-loader",
+              options: {
+                  name: "[name].[ext]",
+                  outputPath: "blog-images"
+              }
+          }
+        ],
+        include: [
+          path.resolve(__dirname, './src/blog-images/'),
         ]
       },
       {
@@ -290,13 +315,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: 'pto-otop.html',
       },
       title: 'Пластинчатые теплообменники отопления',
       meta: {
         keywords: 'теплообменники отопления, пластинчатые теплообменники отопления', 
         description: 'Все о термоблоке'
       },
-      article: ptoOtop,
+      //article: ptoOtop,
       template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       chunks: ['blogPage',  'all', 'map'],
@@ -304,13 +331,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: 'pto-gvs.html',
       },
       title: 'Пластинчатые теплообменники горячего водоснабжения ГВС',
       meta: {
         keywords: 'теплообменники гвс, пластинчатые теплообменники гвс', 
         description: 'Все о термоблоке'
       },
-      article: ptoGvs,
+      //article: ptoGvs,
+      
       template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
       chunks: ['blogPage',  'all', 'map'],
@@ -318,13 +348,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        isGkh: false,
+        articleFile: 'pasteriz.html',
       },
       title: 'Пластинчатые пастеризаторы',
       meta: {
         keywords: 'пастеризатор, пластинчатый пастеризатор', 
         description: 'Все о термоблоке'
       },
-      article: ptoPasteriz,
+      //article: ptoPasteriz,
+      
       template: './src/blog-page-abstract.html', 
       filename: 'blog-proizvodstva/plastinchatyy-pasterizator.html',
       chunks: ['blogPage',  'all', 'map'],

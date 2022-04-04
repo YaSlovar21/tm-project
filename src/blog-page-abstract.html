@@ -26,15 +26,17 @@
       <section class="info">
         <div class="info__main">
           <h1 class="info__heading"><%= htmlWebpackPlugin.options.title %></h1>
-          <img class="info__main-img" alt="Теплообменник ТИ45 для отопления" src="<%=require('./images/main_mini/ti45_new.png')%>"">
+          <img class="info__main-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
           <a class="info__sale-link link-beauty info__sale-link_custom">Рассчитать теплообменник</a>
         </div>
         <article class="info__container">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <!--Сюда прорендерится статья-->
-              <%= htmlWebpackPlugin.options.article %>
+              <!--Сюда прорендерится статья
+              <%= htmlWebpackPlugin.options.article %>-->
+              <%= compilation.assets['favicon.svg'].source() %>
+              <%= require('html-loader!./articles/' + articleFile).default %>
             </div>
           </div>
           <div class="swiper-scrollbar"></div>
@@ -58,8 +60,8 @@
       <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
       <div class="map__list-container">
         <ul class="map__list">
-          <!--Сюда встанут карточки партнеров-->
         </ul>
+        <!--Сюда встанут карточки партнеров-->
         <div class="map__popup">
           <span class="map__popup-close">&lt;-- Назад</span>
           <ul class="map__popup-container"></ul>

@@ -50,9 +50,7 @@
 
         <section class="khan khan_page_heatex">
           <div class="khan__container khan__container_page_heatex">
-            <h2 class="khan__title khan__title_page_heatex">
-              Чертеж и Размеры
-            </h2>
+            <h2 class="khan__title khan__title_page_heatex">Чертеж и Размеры</h2>
             <p class="khan__quote khan__quote_page_heatex">
               Чертеж пластинчатого теплообменника <%= heading%> поможет разобраться в типоразмерах нашего модельного ряда, который отличается от других производителей.
               При необходимости в 3D моделях определенного формата, Вы всегда можете обратиться к нашим инженерам.
@@ -60,19 +58,9 @@
             </p>
             <div style="display: flex">
               <div class="khan__book-container khan__book-container_page_heatex">
-                <img
-                  src="<%=require('./images/drawings/'+ drawalias)%>"
-                  class="khan__book-pic khan__book-pic_page_heatex"
-                  alt="Чертеж пластинчатого теплообменника <%= heading%>"
-                />
+                <img src="<%=require('./images/drawings/'+ drawalias)%>" class="khan__book-pic khan__book-pic_page_heatex" alt="Чертеж пластинчатого теплообменника <%= heading%>"/>
               </div>
-              <a
-                class="khan__buy-link khan__buy-link_page_heatex link-beauty wow animate__fadeInRight"
-                data-wow-duration="1s"
-                data-wow-offset="200"
-                href="#"
-                >Открыть &#8594;</a
-              >
+              <a class="khan__buy-link khan__buy-link_page_heatex link-beauty wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="200" href="#">Открыть &#8594;</a>
             </div>
           </div>
         </section>
@@ -99,6 +87,5 @@
       <%= require('html-loader!./insets/popup-mini-form.html').default %>
       <%= require('html-loader!./insets/popup-with-img.html').default %>
     </div>
-
   </body>
 </html>

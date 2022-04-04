@@ -7,6 +7,10 @@ import FormStaticJsRendered from '../js/components/FormStaticJsRendered.js';
 import Section from '../js/components/Section.js';
 import Api from '../js/components/Api.js';
 
+//import ptoOtop from "../articles/pto-otop.html";
+
+import '../blog-images/pto-otop-proizv.png';
+
 import {
   raschetValidatorConfig,
 } from '../js/utils/constants.js';
