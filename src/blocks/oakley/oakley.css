@@ -35,16 +35,24 @@
       top:0;
       right: 0;
     }
-
+.oakley_food::before {
+  width: 10%;
+}
 @media screen and (max-width: 1440px) {
   .oakley_gradient::after, .oakley_gradient::before {
     width: calc(2.5% + 20px);
+  }
+  .oakley_food::before, .oakley_food::after {
+    width: 2.5%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .oakley_gradient::after, .oakley_gradient::before {
     width: 2.5%;
+  }
+  .oakley_gradient_types::before {
+    width: calc(2.5% + 20px);
   }
 }
 
@@ -53,6 +61,9 @@
     width: 25%;
   }
   .oakley_gradient::after {
+    width: 2%;
+  }
+  .oakley_gradient_types::before {
     width: 2%;
   }
 }

@@ -14,12 +14,6 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
   }
-/*
-@media screen and (max-width: 1440px) {
-    .page {
-        max-width: 98%;
-    }
-}*/
 
 html, body, main {
     /*position: relative;
@@ -32,10 +26,8 @@ html, body, main {
     height: 100%;
 }
 
-
 input {
     font-family: inherit;
-
    }
 
 :root {

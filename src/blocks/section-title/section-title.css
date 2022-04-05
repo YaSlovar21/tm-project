@@ -9,6 +9,8 @@
     color: #c4c4c4;
   }
 
+
+
   .section-title_size_m {
     text-align: center;
     margin: 0px auto -40px auto;
@@ -34,4 +36,9 @@
       line-height: 1.4;
       text-align: left;
     }
+  }
+
+
+  .section-title_schemes {
+    max-width: 570px;
   }
