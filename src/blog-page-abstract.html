@@ -24,18 +24,18 @@
         <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.title %></a>
       </div>
       <section class="info">
-        <div class="info__main">
+        <div class="info__aside">
           <h1 class="info__heading"><%= htmlWebpackPlugin.options.title %></h1>
-          <img class="info__main-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
-          <a class="info__sale-link link-beauty info__sale-link_custom">Рассчитать теплообменник</a>
+          <img class="info__aside-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
+          <a class="info__aside-button link-beauty info__aside-button_custom">Рассчитать теплообменник</a>
         </div>
-        <article class="info__container">
+        <article class="info__article-container">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!--Сюда прорендерится статья
-              <%= htmlWebpackPlugin.options.article %>-->
-              <%= compilation.assets['favicon.svg'].source() %>
+              <%= htmlWebpackPlugin.options.article %>
+              <%= compilation.assets['favicon.svg'].source() %>-->
               <%= require('html-loader!./articles/' + articleFile).default %>
             </div>
           </div>

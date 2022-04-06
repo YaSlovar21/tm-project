@@ -10,7 +10,7 @@ const popupMenu = new Popup(popupWithMenuSelector);
 popupMenu.setEventListeners();
 
 const popupPreloader = new PopupWithPreloader('.popup-preloader');
-popupPreloader.setEventListeners();
+
 
 const navMobileButton = document.querySelector('.nav__mobile-icon');
 navMobileButton.addEventListener('click', () => popupMenu.open());

@@ -13,6 +13,18 @@
     color: #E7441C;
 }
 
+.span-color-theme {
+  color: var(--main-color);
+}
+
+.span-alt-color-theme {
+  color: var(--main-equivalent-color);
+}
+
+.span-bolder {
+  font-weight: 700;
+}
+
 .span-bold {
   font-weight: 800;
 }

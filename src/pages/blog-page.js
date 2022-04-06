@@ -9,7 +9,7 @@ import Api from '../js/components/Api.js';
 
 //import ptoOtop from "../articles/pto-otop.html";
 
-import '../blog-images/pto-otop-proizv.png';
+//import '../blog-images/pto-otop-proizv.png';
 
 import {
   raschetValidatorConfig,
@@ -27,7 +27,7 @@ const formApi = new Api({
   },
 });
 
-const openRaschetButton = document.querySelector('.info__sale-link');
+const openRaschetButton = document.querySelector('.info__aside-button');
 const raschetSection = document.querySelector('.inforaschet');
 
 openRaschetButton.addEventListener('click', ()=>{
@@ -42,7 +42,7 @@ openRaschetButton.addEventListener('click', ()=>{
   raschetSection.classList.toggle('animate__fadeIn');
 });
 
-const swiperInfo = new Swiper('.info__container', {
+const swiperInfo = new Swiper('.info__article-container', {
   direction: 'vertical',
   slidesPerView: 'auto',
   freeMode: true,
@@ -52,7 +52,7 @@ const swiperInfo = new Swiper('.info__container', {
   },
   parallax: true,
   mousewheel: {
-    eventsTarget: '.info__container',
+    eventsTarget: '.info__article-container',
   },
   nested: true,
 

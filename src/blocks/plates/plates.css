@@ -41,16 +41,16 @@
 
 .plates__svg_page_main {
   transform: none;
+  width: 90%;
+  margin-top:30px;
+  margin-bottom:50px;
 }
 
 @media screen and (max-width:1024px) {
-    .plates__interactive {
-        /*max-width: 768px;
-        padding-left: 7%;
-        padding-right: 7%;
-        padding-top: 5%;
-        padding-bottom: 10%;*/
-    }
+  .plates__svg_page_main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 

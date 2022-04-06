@@ -1,141 +1,38 @@
 :root {
   --info-text-size: 22px;
+  --info-mainpage-text-size: 18px;
+  --info-text-color: #f2f2f2;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --info-text-size: 16px;
+    --info-mainpage-text-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --info-text-size: 16px;
+    --info-mainpage-text-size: 14px;
+  }
 }
 
 .info {
     height: 70vh;
-    /*max-width: 91%;*/
     margin: 40px auto 80px;
     display: flex;
 }
 
-.info p {
-    font-size: 22px;
-}
 
-.info__parallax-bg {
-  position: absolute;
-  background-image: url('../../images/Subtract.svg');
-  background-size: contain;
-  top: 200px;
-  right: 300px;
-  width: 200px;
-  height: 200px;
-}
-
-/*Левый блок*/
-.info__main {
-    width: 600px;
-    display: flex;
+@media screen and (max-width: 768px) {
+  .info {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
+    height: 90vh;
+  }
 }
-
-.info__main::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #f2f2f2;
-    opacity: 0.05;
-    z-index: -1;
-}
-
-.info__theme-span {
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  margin: 8px;
-  padding: 7px 15px;
-  background-color: #313131;
-  background-color: #ff5e3a94;
-  font-weight: 400;
-  color: #ffffff;
-  color: #2b2b2d;
-  font-size: 12px;
-  letter-spacing: 0.015em;
-  cursor: pointer;
-}
-
-.info__sale-link {
-    padding: 10px 0;
-    background-color: #2f2f2f;
-    width: 100%;
-    text-decoration: none;
-    color: #FF5E3A;
-    line-height: 1.4;
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    cursor: pointer;
-    transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1) ;
-}
-
-.info__sale-link_custom::after {
-    content: '\2192';
-}
-
-.info__sale-link_active::after {
-    content: '  \2717';
-    font-weight: 600;
-    color: rgba(242, 242, 242, .5);
-}
-
-.info__sale-link:hover {
-    transform: translateY(-3px);
-}
-
-
-.info__heading {
-    font-size: 24px;
-    color: white;
-    /*text-align: center;*/
-    max-width: calc(100% - 40px);
-    margin: 20px auto;
-
-}
-
-.info__main-img {
-    max-width: 80%;
-    max-height: 55vh;
-    min-height: 0;
-    flex-basis: 400px;
-}
-
-
-/* Ниже стили статьи в блоке  info__container*/
-.info__container {
-    background-color: #1f1f1f66;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    width: calc(100% - 300px);
-    height: 100%;
-
-    line-height: 1.4;
-    color: rgb(226, 226, 226);
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
 
 /*блок картинка + текст*/
-.info__img-and-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 .info__paragraph-img {
     margin: 0;
 }
@@ -145,205 +42,4 @@
 }
 
 
-.info__sale {
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-
-/*АКЦЕНТЫ*/
-
-.info__span-accent {
-    color: #FF5E3A;
-    font-weight: bold;
-}
-.info__span-italic {
-    font-style: italic;
-}
-.info__span-bsz-accent {
-    color: #2F80ED;
-    position: relative;
-    padding-left: 30px;
-}
-.info__span-bsz-accent::before {
-    position: absolute;
-    left: 0px;
-    content: '';
-    width: 25px;
-    height: 25px;
-    background-image: url('../../images/logo_BSZ_svg.svg');
-    background-position: center;
-    background-size: contain;
-}
-
-.info__span-termoblok-accent {
-    color: #a3a3a3;
-    position: relative;
-    padding-left: 30px;
-    font-weight: bold;
-}
-
-.info__span-termoblok-accent::before {
-    position: absolute;
-    left: 0px;
-    content: '';
-    width: 25px;
-    height: 25px;
-    background-image: url('../../images/mini_tm_logo_w-o-text.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-/*ЦИТАТА*/
-.info__quote {
-    padding-left: 30px;
-    border-left: 2px solid #FF5E3A;
-    line-height: 1.2;
-    font-size: var(--info-text-size);
-}
-
-.info__link-in-text {
-    text-decoration: underline;
-    color: rgba(242, 242, 242);
-    opacity: 0.7;
-    transition: all .4s linear;
-}
-
-.info__link-in-text:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-}
-
-
-
-
-
-/*СПИСОК*/
-.info__list-heading {
-    font-size: 24px;
-    font-weight: normal;
-    margin: 20px 0;
-}
-.info__list {
-    margin: 0;
-    list-style-type: none;
-    padding-left: 30px;
-}
-
-.info__list-item {
-    position: relative;
-}
-.info__list-item::before {
-    position: absolute;
-    content: '';
-    width: 18px;
-    height: 2px;
-    background-color: #FF5E3A;
-    top: calc(50% - 1px);
-    left: -25px;
-}
-
-
-
-
-/*СТАНДАРТНЫЙ ПАРАГРАФ*/
-.info__paragraph {
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-.info__paragraph-title {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: #6b6b6b;
-  margin-bottom: 5px;
-}
-
-
-@media screen and (max-width: 1024px) {
-  .info__paragraph-title {
-    font-size: 12px;
-  }
-}
-/*.*/
-@media screen and (max-width: 1024px) {
-  .info__main {
-    width: 300px;
-  }
-  .info p {
-    font-size: 16px;
-  }
-  .info__paragraph {
-    font-size: 14px;
-  }
-  .info__sale {
-    font-size: 14px;
-  }
-  .info__paragraph-img {
-    font-size: 14px;
-  }
-  .info__h3 {
-    font-size: 18px;
-  }
-  .plates__svg {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .info {
-    flex-direction: column;
-    height: 90vh;
-  }
-  .info__main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 140px;
-    padding: 10px;
-  }
-  .info__heading {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .info__main-img {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  .info__sale-link {
-    font-size: 16px;
-    text-align: left;
-  }
-  .info p {
-    font-size: 14px;
-  }
-  .info__container {
-    width: 100%;
-  }
-}
-
-
-/*Стили swiper*/
-.info__container .swiper-slide {
-    font-size: 18px;
-    height: auto;  /*Без этого пропадает скролл!!!!!*/
-
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0px 30px 30px 20px;
-    margin: 0 auto;
-    max-width: 998px;
-  }
-
-.info__container .swiper-scrollbar-drag {
-    background: #FF5E3A;
-
-}
-.info__container .swiper-scrollbar-drag:hover {
-    cursor: pointer;
-}
+/*Стили swiper Перенесено */

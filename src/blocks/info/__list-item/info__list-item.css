@@ -1,0 +1,13 @@
+.info__list-item {
+  position: relative;
+}
+
+.info__list-item::before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 2px;
+  background-color: #FF5E3A;
+  top: calc(50% - 1px);
+  left: -25px;
+}

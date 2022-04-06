@@ -21,9 +21,8 @@
 @import url(../blocks/rotation/rotation.css);
 
 
-@import url(../blocks/stickaround/stickaround.css);
-
 @import url(../blocks/nav/nav.css);
+@import url(../blocks/up-footer/up-footer.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -86,7 +85,7 @@
 @import url(../blocks/circle/__list/circle__list.css);*/
 
 @import url(../blocks/plates/plates.css);
-@import url(../blocks/about/about.css);
+@import url(../blocks/about/about.css); /*Что за стили?????*/
 @import url(../blocks/animate/animate.css);
 
 
@@ -169,9 +168,6 @@
 
 
 
-
-
-
 @import url(../blocks/raschet-bem/raschet-bem.css);
 @import url(../blocks/free-form/free-form.css);
 @import url(../blocks/free-form/__data-fields/free-form__data-fields.css);
@@ -180,6 +176,8 @@
 /*Блоки секций главной страницы*/
 
 @import url(../blocks/sections/header-index/header-index.css);
+
+@import url(../blocks/sections/demonstration/demonstration.css);
 /*ПРОДУКЦИЯ 3D Slider*/
 @import url(../blocks/product-types/product-types.css);
 
@@ -200,6 +198,15 @@
 @import url(../blocks/photo-grid/__image/photo-grid__image.css);
 
 
-
+@import url(../blocks/image-and-text/image-and-text.css);
 @import url(../blocks/info/info.css);
+@import url(../blocks/info/__span-bsz-accent/info__span-bsz-accent.css);
+@import url(../blocks/info/__span-termoblok-accent/info__span-termoblok-accent.css);
+@import url(../blocks/info/__link-in-text/info__link-in-text.css);
+@import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
+@import url(../blocks/info/__paragraph-title/_page_main/info__paragraph-title_page_main.css);
+@import url(../blocks/info/__paragraph/info__paragraph.css);
+@import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
+@import url(../blocks/info/__paragraph/_page_main/info__paragraph_page_main.css);
+
 @import url(../blocks/footer/footer.css);

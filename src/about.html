@@ -102,8 +102,8 @@
                     </div>
                 </div>
                 <div class="annotation__images">
-                    <img src="<%=require('./images/feed_test.png')%>">
-                    <img src="<%=require('./images/feed_test.png')%>">
+                    <img class="annotation__popup-image" src="<%=require('./images/cert/certificate-p.png')%>">
+                    <img class="annotation__popup-image" src="<%=require('./images/cert/certificate-ti.png')%>">
                 </div>
             </div>
         <!--</section>-->
@@ -123,6 +123,17 @@
       </section>
 
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      
+      <!--Форма модального окна с картинкой-->
+      <div class="popup popup_darked popup-viewport">
+        <div class="popup__container">
+            <button class="popup__button-close link-beauty" type="button"></button>
+            <div class="popup__image-view popup__image-view_food">
+                <img class="popup__image popup__image_food" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
+                <p class="popup__image-description popup__image-description_food"></p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!--Шаблон элемента партнера на карте-->

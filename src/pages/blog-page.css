@@ -24,14 +24,30 @@
 
 
 
-
-
 @import url(../blocks/sections/inforaschet/inforaschet.css);
-@import url(../blocks/newformbig/newformbig.css);
+/*@import url(../blocks/newformbig/newformbig.css);*/
 @import url(../blocks/raschet-bem/raschet-bem.css);
+
 /*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
+@import url(../blocks/image-and-text/image-and-text.css);
 @import url(../blocks/info/info.css);
 
+@import url(../blocks/info/__heading/info__heading.css);
+@import url(../blocks/info/__hashtag/info__hashtag.css);
+@import url(../blocks/info/__aside/info__aside.css);
+@import url(../blocks/info/__aside-image/info__aside-image.css);
+@import url(../blocks/info/__aside-button/info__aside-button.css);
 
+@import url(../blocks/info/__article-container/info__article-container.css);
+@import url(../blocks/info/__parallax-bg/info__parallax-bg.css);
+
+
+
+@import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
+@import url(../blocks/info/__link-in-text/info__link-in-text.css);
+@import url(../blocks/info/__paragraph/info__paragraph.css);
+@import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
+
+@import url(../blocks/info/__quote/info__quote.css);
 
 @import url(../blocks/footer/footer.css);
