@@ -49,6 +49,7 @@
 }
 
 .annotation__images {
+  flex-basis: 200px;
   display: flex;
   align-items: flex-start;
 }
