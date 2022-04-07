@@ -30,9 +30,9 @@
               </div>
               <h1 class="contacts__heading">Контакты ООО “Термоблок”</h1>
               <div class="actions contacts__actions">
-                <button class="actions__button">Перезвоните мне</button>
-                <button class="actions__button">Рассчитать теплообменник</button>
-                <button class="actions__button">Вопрос о сотрудничестве</button>
+                <button class="actions__button callback-button">Перезвоните мне</button>
+                <button class="actions__button raschet-button">Рассчитать теплообменник</button>
+                <button class="actions__button callback-partner-button">Вопрос о сотрудничестве</button>
 
 
               </div>
@@ -107,6 +107,8 @@
         <div class="map__partner"></div>
       </section>
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
+      <%= require('html-loader!./insets/popup-big-form.html').default %>
     </div>
 
     <!--Шаблон элемента партнера на карте-->
