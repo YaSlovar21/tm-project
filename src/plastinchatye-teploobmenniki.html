@@ -6,36 +6,6 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
-  <style>
-    .plast:hover {
-        transform: translate(10px, 10px);
-        fill:rgba(39, 39, 39, 0.8);
-        fill: #ff5e3aee;
-        stroke: #e4e4e4b6;
-        cursor: pointer;
-    }
-    .plast {
-      transition: all .2s linear;
-      stroke: #d3d3d3;
-      stroke: #1b1b1b;
-      stroke-width: 1px;
-      fill:rgba(247, 247, 247, 0.811);
-    }
-    .podp {
-      fill: rgba(255, 255, 255);
-    }
-    #pl1 {
-        position: relative;
-        width: 200px;
-        height: 300px;
-    }
-    .pl1__text {
-        font-size: 20px;
-        color:white;
-        width: 50px;
-        height: 20px;
-    }
-  </style>
 </head>
 <body class="page">
   <%= require('html-loader!./inner-metrika.html').default %>
