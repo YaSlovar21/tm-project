@@ -24,11 +24,18 @@
 
         <section class="contacts">
             <div class="contacts__intro contact-padding-in-grid">
-              <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
+              <div class="flexburton__breadcrumbs contacts__breadcrumbs">
                 <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
                 <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Контакты</a>
               </div>
-                <h1 class="contacts__heading">Контакты ООО “Термоблок”</h1>
+              <h1 class="contacts__heading">Контакты ООО “Термоблок”</h1>
+              <div class="actions contacts__actions">
+                <button class="actions__button">Перезвоните мне</button>
+                <button class="actions__button">Рассчитать теплообменник</button>
+                <button class="actions__button">Вопрос о сотрудничестве</button>
+
+
+              </div>
             </div>
             <div class="contacts__main">
                 <!--<div style="position: absolute; top:0; left: 0; z-index: 0;"><img src="<%=require('./images/rect_sect.svg')%>" style="width: 30%;"></div>-->
@@ -74,7 +81,7 @@
                 <p>Приёмная: <a  class="contacts__tel contacts__link span-no-wrap" href="tel:+73852775592"> +7 (3852) 77-55-92</a></p>
                 <p>Отдел металлообработки: <a  class="contacts__tel contacts__link span-no-wrap" href="tel:+73852532843">+7 (3852) 53-28-43</a></p>
             </div>
-            <div style="min-height: 200px;">
+            <div class="contacts__ya-map">
                 <script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A397d4c8a0bcca922b57633d6c446b7c965f2df02e0e40f00addca2ad1b45d0da&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
             <div class="contacts__msk contact-padding-in-grid">

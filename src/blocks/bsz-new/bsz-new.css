@@ -46,6 +46,22 @@
   justify-content: space-evenly;
 }
 
+.bsz-new__img-container::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  opacity: .5;
+  transition: opacity .4s ease-in;
+}
+
+.bsz-new__img-container:hover::after {
+  opacity: .8;
+}
+
 @media screen and (max-width: 768px) {
   .bsz-new__img-container {
     flex-basis: 150px;
@@ -67,6 +83,8 @@
 
 .bsz-new__logo {
   width: 88px;
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -81,6 +99,8 @@
   color: rgb(0, 147, 221);
   font-weight: 700;
   font-size: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {

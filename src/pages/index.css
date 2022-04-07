@@ -118,13 +118,17 @@
 
 
 
-/*ОБЩИЙ ДЛЯ ВСЕХ СПИСОК*/
+/*ОБЩИЙ ДЛЯ ВСЕХ СПИСОК
 @import url(../blocks/list/list.css);
 
 
-@import url(../blocks/list-bem/list-bem.css);
+@import url(../blocks/list-bem/list-bem.css);*/
 
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-heading/bem__list-heading.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
 
+@import url(../blocks/bem/__list/_page_main/bem__list_page_main.css);
 
 /*ФОРМА ОБРАТНОЙ СВЯЗИ - БОЛЬШАЯ
 @import url(../blocks/raschet/raschet.css);*/

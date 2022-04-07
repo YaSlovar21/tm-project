@@ -1,0 +1,13 @@
+.bem__list-item {
+  margin-bottom: 8px;
+}
+
+.bem__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.bem__list-item::before {
+  content: '↳';
+  color: var(--main-equivalent-color);
+  margin-right: 5px;
+}

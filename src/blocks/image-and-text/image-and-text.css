@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.image-and-text__img_small  {
+  flex-basis: 15%;
+}
+
 .image-and-text__txt {
   flex-basis: 70%;
   display: flex;

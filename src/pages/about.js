@@ -1,9 +1,14 @@
 import './about.css';
 
+import PopupWithImage from '../js/components/PopupWithImage.js';
+
+import {
+  popupImageSelector,     //попап с картинкой (селектор)
+  popupImageSelectorsCongig
+} from '../js/utils/constants.js'
+
 const imgToChange = document.querySelector('.listimage__image');
-
 const bullets = Array.from(document.querySelectorAll('.listimage__list-item'))
-
 
 function changeSrc(imageElement, newSrc) {
   unsetListeners(bullets);
@@ -44,3 +49,20 @@ function unsetListeners(bullets) {
 }
 
 setEventListeners(bullets);
+
+
+
+/* */
+
+const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
+popupImage.setEventListeners();
+
+document.querySelectorAll('.annotation__image').forEach((item) => {
+  item.addEventListener("mousedown", (evt) => {
+    popupImage.open({
+      link: evt.target.src,
+      name: evt.target.alt,
+    });
+  });
+});
+

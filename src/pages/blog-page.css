@@ -28,6 +28,13 @@
 /*@import url(../blocks/newformbig/newformbig.css);*/
 @import url(../blocks/raschet-bem/raschet-bem.css);
 
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-heading/bem__list-heading.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
+
+@import url(../blocks/bem/__list/_page_main/bem__list_page_main.css);
+
+
 /*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
 @import url(../blocks/image-and-text/image-and-text.css);
 @import url(../blocks/info/info.css);
@@ -45,8 +52,10 @@
 
 @import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
 @import url(../blocks/info/__link-in-text/info__link-in-text.css);
+@import url(../blocks/info/__link-in-text/_button/info__link-in-text_button.css);
 @import url(../blocks/info/__paragraph/info__paragraph.css);
 @import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
+@import url(../blocks/info/__paragraph/_intro/info__paragraph_intro.css);
 
 @import url(../blocks/info/__quote/info__quote.css);
 

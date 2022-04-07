@@ -30,6 +30,16 @@
 /*Аннотации и описание на странице О компании*/
 @import url(../blocks/company-description/company-description.css);
 @import url(../blocks/annotation/annotation.css);
+@import url(../blocks/annotation/__text-content/annotation__text-content.css);
+@import url(../blocks/annotation/__title/annotation__title.css);
+@import url(../blocks/annotation/__intro/annotation__intro.css);
+@import url(../blocks/annotation/__links/annotation__links.css);
+@import url(../blocks/annotation/__link/annotation__link.css);
+@import url(../blocks/annotation/__link/_download/annotation__link_download.css);
+@import url(../blocks/annotation/__link/_tiny/annotation__link_tiny.css);
+@import url(../blocks/annotation/__images/annotation__images.css);
+@import url(../blocks/annotation/__image/annotation__image.css);
+
 
 @import url(../blocks/frombsz/frombsz.css);
 
