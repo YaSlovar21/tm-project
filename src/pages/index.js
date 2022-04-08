@@ -51,6 +51,7 @@ import {
 import {
   renderLoading,
   useWindowSize,
+  throttle,
 } from'../js/utils/utils.js';
 
 const formCallBack= document.forms.formCallBack;
@@ -232,6 +233,32 @@ turnModelsButton.addEventListener('mousedown', (evt) => {
 const dsSecond = document.querySelector('.ds-second');
 const dsIntroImg = document.querySelector('.ds-intro__img-container');
 const dsList = document.querySelector('.bem__list_page_main');
+
+
+const dsSecondBox = dsSecond.getBoundingClientRect().y + window.pageYOffset;
+function recalculateParallax() {
+  const limitDs = dsSecondBox - window.scrollY;
+  console.log(limitDs);
+  if (window.innerWidth < 768) {
+    if (limitDs < 348 && !dsIntroImg.classList.contains('ds-intro__img-container_hidden')) {
+      dsIntroImg.classList.add('ds-intro__img-container_hidden');
+      dsList.classList.add('bem__list_minified');
+    }
+    if (limitDs > 780 && dsIntroImg.classList.contains('ds-intro__img-container_hidden')) {
+      dsIntroImg.classList.remove('ds-intro__img-container_hidden');
+      dsList.classList.remove('bem__list_minified');
+    }
+  //dsIntroImg.setAttribute('style', `display:${limitDs > 254 ? 'block' : 'none'}`)
+
+  }
+};
+
+const optimizedHandler = throttle(recalculateParallax, 850);
+// Передаём новую throttled-функцию в addEventListener:
+window.addEventListener("scroll", optimizedHandler);
+
+
+/*
 let dsSecondBox = dsSecond.getBoundingClientRect();
 window.addEventListener('scroll', function() {
   dsSecondBox = dsSecond.getBoundingClientRect();
@@ -244,7 +271,7 @@ window.addEventListener('scroll', function() {
     }
   }
 });
-
+*/
 /* Слайдер в хидере на главной */
 const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   navigation: {

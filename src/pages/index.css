@@ -77,12 +77,7 @@
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-
-
-
-@import url(../blocks/circle/circle.css);
-@import url(../blocks/circle/__feat/circle__feat.css);
-@import url(../blocks/circle/__list/circle__list.css);*/
+*/
 
 @import url(../blocks/plates/plates.css);
 @import url(../blocks/about/about.css); /*Что за стили?????*/
@@ -186,6 +181,11 @@
 @import url(../blocks/product-types/product-types.css);
 
 @import url(../blocks/ds/ds.css);
+@import url(../blocks/ds/__link-to/ds-intro__link-to.css);
+@import url(../blocks/ds/__link-to/_place_brand/ds-intro__link-to_place_brand.css);
+
+@import url(../blocks/ds-intro/ds-intro.css);
+
 @import url(../blocks/highliter/highliter.css);
 
 
@@ -212,5 +212,9 @@
 @import url(../blocks/info/__paragraph/info__paragraph.css);
 @import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
 @import url(../blocks/info/__paragraph/_page_main/info__paragraph_page_main.css);
+@import url(../blocks/info/__quote/info__quote.css);
+@import url(../blocks/info/__quote/_page_main/info__quote_page_main.css);
+
+@import url(../blocks/info/__list/info__list.css);
 
 @import url(../blocks/footer/footer.css);

@@ -21,11 +21,11 @@
       <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
         <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
         <a class="flexburton__breadcrumbs-link" href="/blog-proizvodstva">Блог производителя</a>
-        <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.title %></a>
+        <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
       <section class="info">
         <div class="info__aside">
-          <h1 class="info__heading"><%= htmlWebpackPlugin.options.title %></h1>
+          <h1 class="info__heading"><%= htmlWebpackPlugin.options.heading %></h1>
           <img class="info__aside-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
           <a class="info__aside-button link-beauty info__aside-button_custom">Рассчитать теплообменник</a>
         </div>

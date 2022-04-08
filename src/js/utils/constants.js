@@ -409,12 +409,6 @@ export const initialPartners = [
       telephoneNumbers: ['+7 (812) 703-42-30'],
     },
   },
-  {
-    name: 'Москва',
-    htmlData: {
-      nameOfPartner: 'ООО \"Водокомфорт\"',
-    },
-  },
 ];
 
 export const ESC_CODE = 'Escape';

@@ -80,6 +80,7 @@
 @import url(../blocks/heatex/__to-3dlink/heatex__to-3dlink.css);
 
 @import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list/_page_pto/bem__list_page_pto.css);
 @import url(../blocks/bem/__list-heading/bem__list-heading.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
 

@@ -1,5 +1,6 @@
 .info__list {
   margin: 0;
   list-style-type: none;
-  padding-left: 30px;
+  
+  font-size: var(--info-mainpage-text-size);
 }

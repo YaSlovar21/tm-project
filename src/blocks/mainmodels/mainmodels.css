@@ -113,6 +113,15 @@
   transition: color 0.4s linear;
 }
 
+@media screen and (max-width: 1440px) {
+  .mainmodels__turnbutton {
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 500;
+    letter-spacing: .035em;
+  }
+}
+
 .mainmodels__turnbutton:hover {
   color: #ff5e3a;
 }
