@@ -124,11 +124,17 @@
 
 .card-list {
   /* height: 100%;*/
-overflow-x: hidden;
+
 max-height: 80vh;
 padding-right: 30px;
 box-sizing:border-box;
 }
+@media screen and (max-width: 768px) {
+  .card-list {
+    overflow-x: hidden;
+  }
+}
+
 .card-list::-webkit-scrollbar {
 height: 12px;
 width: 12px;

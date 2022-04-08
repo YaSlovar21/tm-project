@@ -226,7 +226,8 @@ const cardsList = new Section({
     cardsList.appendItem(messageElement);
     },
   },
-  cardListSection
+  cardListSection,
+  800,
 );
 
 // отрисовка карточек

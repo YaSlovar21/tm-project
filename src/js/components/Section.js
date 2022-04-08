@@ -1,10 +1,11 @@
 export default class Section {
 
-    constructor({data, renderer}, cardlistSelector) {
+    constructor({data, renderer}, cardlistSelector, delayTime=200) {
         this._renderedItems = data;
         this._container = document.querySelector(cardlistSelector);
         this._renderer = renderer;
         this._delay = 0;
+        this._delayTime = delayTime;
     }
 
     setItem(element) {
@@ -44,7 +45,7 @@ export default class Section {
             this._renderer(item);
           }, this._delay);
 
-          this._delay += 200;
+          this._delay += this._delayTime;
         });
     }
 }
