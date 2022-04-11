@@ -370,6 +370,102 @@ module.exports = {
       filename: "blog-proizvodstva/plastinchatyy-pasterizator.html",
       chunks: ["blogPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "utermo-timashevsk.html",
+      },
+      title: "Два пластинчатых теплообменника мощностью 3,5 гкал для ГВС",
+      heading: "Два пластинчатых теплообменника мощностью 3,5 гкал для ГВС",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "partner-zaton-vostok.html",
+      },
+      title: "Два пластинчатых теплообменника мощностью 3,5 гкал для ГВС",
+      heading: "Два пластинчатых теплообменника мощностью 3,5 гкал для ГВС",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "partner-umn-dom.html",
+      },
+      title: "Теплообменники в ИТП для умного дома в г. Уфа",
+      heading: "Теплообменники в ИТП для умного дома в г. Уфа",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: false,
+        articleFile: "mnogosektsionnye.html",
+      },
+      title: "Многосекционные теплообменники от производителя",
+      heading: "Многосекционные пластинчатые теплообменники",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/mnogosektsionnye-teploobmenniki.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: false,
+        articleFile: "mnogosektsionnye.html",
+      },
+      title: "Многосекционные теплообменники от производителя",
+      heading: "Многосекционные пластинчатые теплообменники",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/mnogosektsionnye-teploobmenniki.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "advantage-plates.html",
+      },
+      title: "Преимущества пластинчатых теплообменников",
+      heading: "Преимущества теплообменников пластинчатого типа",
+      meta: {
+        keywords: "пастеризатор, пластинчатый пастеризатор",
+        description: "Два теплообменника пластинчатых в кондитерском комбинате Кубань (город Тимашевск). Теплообменники в системе горячего водоснабжения.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
     /*---------КАТАЛОГ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

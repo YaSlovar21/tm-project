@@ -3,7 +3,7 @@
 //import ufaUmnDom from '../../images/projects/ufa_umn_dom.png';
 
 const zatonUfa = new URL('../../images/projects/ufa_zaton.png', import.meta.url);
-const timashevskCondit = new URL('../../images/timashevsk_condit.png', import.meta.url);
+const timashevskCondit = new URL('../../images/projects/timashevsk_condit.png', import.meta.url);
 const ufaUmnDom = new URL('../../images/projects/ufa_umn_dom.png', import.meta.url);
 
 const ti025Img = new URL('../../images/descTO/ti025.png', import.meta.url);
@@ -87,7 +87,7 @@ export const initialArticles = [
   {
     tags: ['gkh', 'prod'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '1Пластинчатые теплообменники отопления',
+    heading: 'Пластинчатые теплообменники отопления',
     description: 'Производство теплообменников для отопления',
   },
   {
@@ -103,40 +103,40 @@ export const initialArticles = [
     description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
   },
   {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-u-timashevsk.html`,
+    heading: 'Объект: Кондитерский комбинат Кубань (г. Тимашевск)',
+    description: 'Теплообменник ТИ мощностью 3,5 гкал',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-p-zaton-vostok.html`,
+    heading: 'Объект: Котельная в г. Уфа, жилой район «Затон-Восточный»',
+    description: 'Теплообменник ТИ82-201, мощность 17500 кВт',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-p-umnii-dom.html`,
+    heading: 'Объект: Умный дом в г. Уфа (теплообменники для ИТП)',
+    description: 'Теплообменник ТИ82-201, мощность 17500 кВт',
+  },
+  {
+    tags: ['prod', 'food'],
+    linkPath: `/${blogPath}/mnogosektsionnye-teploobmenniki.html`,
+    heading: 'Многосекционные теплообменники',
+    description: 'Многосекционное исполнение теплообменников',
+  },
+  {
     tags: ['gkh', 'project', 'example'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
-    heading: '4Пластинчатые теплообменники для гвс',
+    heading: 'Пластинчатые теплообменники для гвс',
     description: 'Производство теплобменников горячего водоснабжения',
   },
   {
-    tags: ['gkh', 'btp'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '5Проектирование блочных тепловых пунктов',
-    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
-  },
-  {
-    tags: ['prod', 'food'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '6Пластинчатые пастеризаторы',
-    description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
-  },
-  {
-    tags: ['prod', 'food'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '7Пластинчатые охладители',
-    description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
-  },
-  {
-    tags: ['gkh', 'project', 'example'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '8Пластинчатые теплообменники для гвс',
-    description: 'Производство теплобменников горячего водоснабжения',
-  },
-  {
-    tags: ['gkh', 'btp'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '9Проектирование блочных тепловых пунктов',
-    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
+    heading: 'Преимущества пластинчатых теплообменников',
+    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
   },
   {
     tags: ['gkh', 'btp'],

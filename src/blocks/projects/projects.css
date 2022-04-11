@@ -137,11 +137,14 @@
     cursor: pointer;
     transition: all .2s ease-in;
     z-index: 4;
+    object-fit: cover;
+    object-position: center;
 }
+
 .projects__image_horizontal {
   height: 100%;
-  object-fit: contain;
-  object-position: left;
+  object-fit: cover;
+  object-position: center;
   flex-basis: calc(33.3% - 20px);
 }
 

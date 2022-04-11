@@ -121,14 +121,13 @@
     display: block;
   }
 }
-
 .card-list {
   /* height: 100%;*/
-
-max-height: 80vh;
-padding-right: 30px;
-box-sizing:border-box;
+  max-height: 80vh;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
+
 @media screen and (max-width: 768px) {
   .card-list {
     overflow-x: hidden;
@@ -136,15 +135,17 @@ box-sizing:border-box;
 }
 
 .card-list::-webkit-scrollbar {
-height: 12px;
-width: 12px;
+  height: 12px;
+  width: 12px;
 }
-.card-list::-webkit-scrollbar-track{
-background: rgba(82, 82, 82, 0.281);
-border-radius: 6px;
+
+.card-list::-webkit-scrollbar-track {
+  background: rgba(82, 82, 82, 0.281);
+  border-radius: 6px;
 }
+
 .card-list::-webkit-scrollbar-thumb {
-background-color: rgb(255, 99, 71);
-border-radius: 6px;
-border: 2px solid rgba(255, 99, 71, 0);
+  background-color: rgb(255, 99, 71);
+  border-radius: 6px;
+  border: 2px solid rgba(255, 99, 71, 0);
 }

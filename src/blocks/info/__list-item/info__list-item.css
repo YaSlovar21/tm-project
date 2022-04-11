@@ -1,13 +1,10 @@
 .info__list-item {
   position: relative;
+  padding-left: 35px;
 }
 
 .info__list-item::before {
   position: absolute;
-  content: '';
-  width: 18px;
-  height: 2px;
-  background-color: #FF5E3A;
-  top: calc(50% - 1px);
-  left: -25px;
+  top: 0;
+  left: 0;
 }

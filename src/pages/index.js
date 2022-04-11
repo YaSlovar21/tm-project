@@ -26,7 +26,8 @@ import '../userfiles/Oprosnii_list_podbora_teploobmennika.doc';
 import '../userfiles/Termoblok_reference_teploobmenniki.pdf';
 import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
-import '../userfiles/btp-certificate.pdf'
+import '../userfiles/btp-certificate.pdf';
+import '../userfiles/Rekviziti OOO Termoblok.doc';
 
 import {
   initialHeatEx,

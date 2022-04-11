@@ -27,6 +27,6 @@
 @media screen and (max-width:480px) {
   .projects__items {
       grid-template-columns: 1fr ;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, min-content);
   }
 }

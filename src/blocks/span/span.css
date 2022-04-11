@@ -21,6 +21,12 @@
   color: var(--main-equivalent-color);
 }
 
+.span-info-some {
+  color: var(--main-equivalent-color);
+  font-weight: 500;
+  letter-spacing: .005em;
+}
+
 .span-bolder {
   font-weight: 700;
 }
@@ -42,11 +48,19 @@
 .span-no-wrap {
   white-space: nowrap;
 }
+
+.span-mobile-show {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .span-bsz {
     font-size: 10px;
   }
   .span-mobile-hidden {
     display: none;
+  }
+  .span-mobile-show {
+    display: block;
+    font-weight: 600;
   }
 }
