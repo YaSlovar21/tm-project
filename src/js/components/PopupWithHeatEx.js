@@ -25,9 +25,9 @@ export default class PopupWithHeatEx extends Popup {
 
         const imgTo = document.createElement('img');
         imgTo.src = data.img;
-        imgTo.classList.add('animate__animated', 'animate__zoomIn', 'popup__to-img');
+        imgTo.classList.add('animated', 'zoomIn', 'popup__to-img');
         imgTo.onload = this._handleOnloadImage;
-        
+
         /*this._popupImage.src = data.img;
         this._popupImage.alt = data.name;*/
 

@@ -5,10 +5,12 @@
 @import url(../vendor/fonts/fonts.css);
 /*Спаны*/
 @import url(../blocks/span/span.css);
+@import url(../blocks/highliter/highliter.css);
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeIn.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
 

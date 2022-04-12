@@ -2,11 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px 50px;
-    padding: 40px;
+    /*padding: 40px;*/
 
     margin: 40px auto;
 
     box-sizing: border-box;
+    align-items: start;
 }
 
 @media screen and (max-width: 1440px) {
@@ -32,13 +33,14 @@
 .pictitletext {
     display: flex;
     position: relative;
+    padding: 30px;
 }
 
 .pictitletext:nth-child(2n) {
     margin-top: 70px;
 }
 
-
+/*
 .pictitletext:nth-child(2n)::after {
     position: absolute;
     content: '';
@@ -98,7 +100,7 @@
         top: -29px;
     }
 }
-
+*/
 .pictitletext__img-container {
     flex-basis: 200px;
     flex-grow: 0;

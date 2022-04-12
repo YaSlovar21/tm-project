@@ -28,6 +28,7 @@ import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
 import '../userfiles/btp-certificate.pdf';
 import '../userfiles/Rekviziti OOO Termoblok.doc';
+import '../robots.txt';
 
 import {
   initialHeatEx,
@@ -284,6 +285,7 @@ const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   fadeEffect: {
     crossFade: true
   },
+  speed: 800,
   autoplay: true,
 });
 

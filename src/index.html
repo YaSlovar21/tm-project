@@ -38,38 +38,7 @@
     .swiper-scrollbar-main .swiper-scrollbar-drag:hover {
       cursor: pointer;
     }
-/*
-    .video-main__slider .swiper-button-prev {
-      right: 80px;
-      left: auto;
-      top: 100%;
-    }
 
-    .video-main__slider .swiper-button-next {
-      top: 100%;
-    }
-
-    .video-container {
-      position: relative;
-    }
-    .video-container::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #f2f2f23a;
-      z-index: 2;
-    }*/
-
-    /*ВАЖНО
-    .scroll-slider {
-        width: 100%;
-        height: 100%;
-        color: rgb(248, 248, 248);
-        overflow: hidden;
-      }*/
   </style>
 
 
@@ -90,50 +59,50 @@
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
       <div style="position: relative; "><figure class="header-index__darked"></figure></div>
-      <h1 class="header-index__main-heading">Производитель пластин, пластинчатых теплообменников блочных тепловых пунктов</h1>
+      <h1 class="header-index__main-heading">Производитель пластин, пластинчатых теплообменников, блочных тепловых пунктов</h1>
       <div class="header-index__video-container">
         <figure class="header-index__darked"></figure>
         <!--Здесь рендерится видео в зависимости от разрешения экрана-->
         <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
           <source src="videos/tm_test_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>-->
+        </video>data-swiper-parallax-scale="0.8"-->
       </div>
 
       <div class="header-index__slider-container">
         <div class="swiper mainHeaderSlider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide header-index__slide">
-              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Разработка и производство пластин и
+            <div class="swiper-slide header-index__slide " data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+              <h2 class="header-index__title"
+                data-swiper-parallax-x="-200" data-swiper-parallax-duration="800">Разработка и производство пластин и
                 уплотнений</h2>
-              <p class="header-index__desc">Предприятие выпускает <span class="video-main__span-accent">самый широкий
+              <p class="header-index__desc" data-swiper-parallax="-200" data-swiper-parallax-duration="1200">Предприятие выпускает <span class="video-main__span-accent">самый широкий
                 типоразмерный ряд пластин в России</span>. Инженеры компании разрабатывают и осваивают новые виды
               пластин. В настоящее время запущена в производство пластина ДУ 250 мм.
               </p>
             </div>
-            <div class="swiper-slide header-index__slide">
-              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для горячего
+            <div class="swiper-slide header-index__slide" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+              <h2 class="header-index__title"
+                data-swiper-parallax-x="-290" data-swiper-parallax-duration="800">Теплообменники для горячего
                 водоснабжения и отопления</h2>
-              <p class="header-index__desc">Основное направление компании - производство теплообменников<span
+              <p class="header-index__desc" data-swiper-parallax="-200" data-swiper-parallax-duration="1200">Основное направление компании - производство теплообменников<span
                 class="video-main__span-accent"> для жилично-коммунального хозяйства</span> мощностью от 5 кВт до 20
               мВт, от небольших котельных до микрорайонов.
               </p>
             </div>
-            <div class="swiper-slide header-index__slide">
-              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Теплообменники для пищевой
+            <div class="swiper-slide header-index__slide" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+              <h2 class="header-index__title"
+                data-swiper-parallax-x="-290" data-swiper-parallax-duration="800">Теплообменники для пищевой
                 промышленности</h2>
-              <p class="header-index__desc">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
+              <p class="header-index__desc"  data-swiper-parallax="-200" data-swiper-parallax-duration="1200">Мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
                 теплообменник в <span class="video-main__span-accent">пищевых технологических процессах</span> любой
                 сложности.
               </p>
             </div>
-            <div class="swiper-slide header-index__slide">
-              <h2 class="header-index__title" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0.7"
-                data-swiper-parallax-x="-100" data-swiper-parallax-duration="600">Блочные тепловые пункты</h2>
-              <p class="header-index__desc">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
+            <div class="swiper-slide header-index__slide" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+              <h2 class="header-index__title"
+                data-swiper-parallax-x="-290" data-swiper-parallax-duration="800">Блочные тепловые пункты</h2>
+              <p class="header-index__desc" data-swiper-parallax="-280" data-swiper-parallax-duration="1200">Готовые решения на базе пластинчатых теплообменников. Это блочные итп, которые
                 <span class="video-main__span-accent">изготавливаются и испытываются под гидравлическим давлением на
                   территории предприятия</span>, гарантия целиком на изделие.
               </p>
@@ -147,9 +116,8 @@
       <div class="two-columns" data-wow-offset="450" data-wow-mobile="false">
         <h2 class="two-columns__brief two-columns__brief_page_main">Продукция предприятия</h2>
         <div class="two-columns__main-text">
-          <p class="two-columns__paragraph two-columns__paragraph_page_main">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Пластинчатые теплообменники Теплохит собираются на комплектующих изготовленных на те</p>
-          <p class="two-columns__paragraph two-columns__paragraph_page_main">Важнейшим звеном в подобных системах является
-            теплообменное оборудование</p>
+          <p class="two-columns__paragraph ">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Компания серийно выпускает пластинчатые теплообменники <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™</span>, производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
+          <p class="two-columns__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
         </div>
       </div>
       <div class="product-types" style="margin-top: 20px;">
@@ -161,9 +129,7 @@
               <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Пластинчатые теплообменники</h3>
               <!--<div class="product-types__description">-->
               <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
-                пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
-                прочих отраслей, требующих пищевого исполнения теплообменника</p>
+                data-swiper-parallax-duration="1500">Пластинчатые теплообменники для отопления, горячего водоснабжения, процессов теплообмена не требующих пищевого исполнения.</p>
               <a href="/plastinchatye-teploobmenniki.html" class="link-beauty product-types__link" data-swiper-parallax-x="-22%"
                 data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               <!--</div>-->
@@ -177,7 +143,7 @@
               <!--<div class="product-types__description">-->
               <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
                 data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
-                пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
+                пастеризаторы, охладители, многосекционные теплообменники для молочного производства, пивоварения и
                 прочих отраслей, требующих пищевого исполнения теплообменника</p>
               <a href="/pishchevye-teploobmenniki.html" class="link-beauty product-types__link" data-swiper-parallax-x="-22%"
                 data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
@@ -192,9 +158,7 @@
               <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Блочные тепловые пункты</h3>
               <!--<div class="product-types__description">-->
               <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
-                пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
-                прочих отраслей, требующих пищевого исполнения теплообменника</p>
+                data-swiper-parallax-duration="1500">Готовые блочные тепловые узлы на базе теплообменников собственного производства.</p>
               <a href="/blochnye-teplovye-punkty.html" class="link-beauty product-types__link" data-swiper-parallax-x="-42%"
                 data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               <!--</div>-->
@@ -207,9 +171,7 @@
               <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Установки ПОУ</h3>
               <!--<div class="product-types__description">-->
               <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
-                пастеризаторы, холадители, многосекуионные теплообменники для молочного производства, пивоварения и
-                прочих отраслей, требующих пищевого исполнения теплообменника</p>
+                data-swiper-parallax-duration="1500">Установки блочного типа на базе пищевых пластинчатых теплообменников, соответствующие требованиям пищевого производства.</p>
               <a href="#" class="link-beauty product-types__link" data-swiper-parallax-x="-42%"
                 data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
               <!--</div>-->
@@ -365,7 +327,7 @@
               </h3>
               <p class="info__quote info__quote_page_main">Области применения обширны, опыт инженеров по расчётам позволяет точно рассчитать и
                 изготовить эффективный пластинчатый теплообменник в том числе под сложные технологические процессы</p>
-              <ul class="bem__list info__list">
+              <ul class="bem__list info__list info__list_page_main">
                 <li class="bem__list-item">жилично-коммунальное хозяйство (тепловые пункты для отопления, гвс, вентиляции)
                 </li>
                 <li class="bem__list-item">котельные (частные, промышленные)</li>
@@ -382,20 +344,12 @@
                 </div>
               </div>
               <h3 class="info__paragraph-title info__paragraph-title_page_main">Выгоды при сотрудничестве с производителем полного цикла</h3>
-              <ul class="bem__list info__list">
+              <ul class="bem__list info__list info__list_page_main">
                 <li class="bem__list-item">независимость от иностранных комплектующих гарантирует стабильность качества изделий: качество комплектующих мы контролируем сами</li>
                 <li class="bem__list-item">серийное производство пластин и уплотнений: комплектующие всегда в наличии у нас на складе и складах наших партнеров</li>
                 <li class="bem__list-item">мы закупаем металл и резину большим оптом, что позволяет предлогать выгодные условия сотрудничества</li>
               </ul>
-              <p class="info__paragraph info__paragraph_page_main">Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas
-                faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis
-                vitae <a href="#" class="info__link-in-text">arcu rhoncus</a>, faucibus magna ut, tempus metus. Cras in
-                nibh sed ipsum consequat rhoncus. Proin
-                fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare
-                libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui in metus tincidunt euismod
-                eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero
-                ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis
-                sollicitudin ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+
             </div>
           </div>
           <!-- Add Scroll Bar -->

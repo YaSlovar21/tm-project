@@ -16,7 +16,7 @@
 
 .wholecycle-section__intro {
   /*flex-basis: 510px;*/
-  min-width: 31%;
+  width: 100%;
   padding: 40px 0 20px;
   background-color: #2f2f2f;
   margin: 0 auto 40px;

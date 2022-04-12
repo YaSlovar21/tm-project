@@ -35,7 +35,7 @@ module.exports.paths = [
     {
       path: '/pasterizatsionno-okhladitelnye-ustanovki.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
@@ -81,25 +81,57 @@ module.exports.paths = [
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'monthly'
+      changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'monthly'
+      changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatyy-pasterizator.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'monthly'
+      changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatyy-ohladitel.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'monthly'
+      changefreq: 'weekly'
+    },
+    {
+      path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
+    {
+      path: '/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
+
+    /* статьи - объекты */
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
     },
  
 

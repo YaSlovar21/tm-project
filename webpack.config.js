@@ -126,10 +126,10 @@ module.exports = {
         ],
       },
       {
-        test: /CNAME/,
+        test: /robots\.txt/,
         loader: "file-loader",
         options: {
-          name: "[name]",
+          name: "[name].[ext]",
         },
       },
 

@@ -9,6 +9,7 @@
 @import url(../blocks/animatecss/_vars.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/zooming_entrances/zoomIn.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
 
 @import url(../blocks/section-title/section-title.css);
@@ -216,5 +217,6 @@
 @import url(../blocks/info/__quote/_page_main/info__quote_page_main.css);
 
 @import url(../blocks/info/__list/info__list.css);
+@import url(../blocks/info/__list/_page_main/info__list_page_main.css);
 
 @import url(../blocks/footer/footer.css);

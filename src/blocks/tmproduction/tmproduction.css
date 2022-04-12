@@ -43,6 +43,10 @@
     color: #c9c9c9fa;
 }
 
+.tmproduction__description:last-of-type {
+  margin-top:10px
+}
+
 .productcard {
     text-decoration: none;
     text-transform: uppercase;
