@@ -1,7 +1,7 @@
 .tablemod__cell {
     width: 282px;
     position: relative;
-    
+
   }
 
 .tablemod__cell:nth-of-type(1)::before {
@@ -36,11 +36,16 @@
     color: rgba(0, 147, 221, 0.22);
     /*color: #ff5e3a25;*/
   }
-
+  @media screen and (max-width:1024px) {
+    .tablemod__cell {
+      margin-top: 20px;
+    }
+  }
   @media screen and (max-width:500px) {
     .tablemod__cell {
       width: 141px;
       margin-bottom: 8px;
+      margin-top: 30px;
     }
     .tablemod__cell::before {
       font-size: 60px;

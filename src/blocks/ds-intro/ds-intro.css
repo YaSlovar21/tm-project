@@ -74,6 +74,16 @@
   line-height: 1.4;
 }
 
+@media screen and (max-width: 1600px) {
+  .ds-intro__title {
+    font-size: 14px;
+    min-width: 400px;
+    max-width: 400px;
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
 /*@media screen and (max-width: 768px) {*/
   @media screen and (max-width: 1024px) {
   .ds-intro__title {
