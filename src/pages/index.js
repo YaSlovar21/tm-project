@@ -27,7 +27,7 @@ import '../userfiles/Termoblok_reference_teploobmenniki.pdf';
 import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
 import '../userfiles/btp-certificate.pdf';
-import '../userfiles/Rekviziti OOO Termoblok.doc';
+import '../userfiles/Rekviziti_OOO_Termoblok.doc';
 import '../robots.txt';
 
 import {

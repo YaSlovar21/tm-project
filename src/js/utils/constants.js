@@ -93,15 +93,15 @@ export const initialArticles = [
   {
     tags: ['prod', 'food'],
     linkPath: `/${blogPath}/plastinchatyy-pasterizator.html`,
-    heading: '2Пластинчатые пастеризаторы',
+    heading: 'Пластинчатые пастеризаторы',
     description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
   },
-  {
+ /* {
     tags: ['prod', 'food'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '3Пластинчатые охладители',
+    heading: 'Пластинчатые охладители',
     description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
-  },
+  },*/
   {
     tags: ['gkh', 'project'],
     linkPath: `/${blogPath}/teploobmenniki-gvs-object-u-timashevsk.html`,
@@ -138,12 +138,12 @@ export const initialArticles = [
     heading: 'Преимущества пластинчатых теплообменников',
     description: 'Преимущества теплообменных аппаратов пластинчатого типа',
   },
-  {
+  /*{
     tags: ['gkh', 'btp'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
     heading: '10Проектирование блочных тепловых пунктов',
     description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
-  },
+  },*/
 ];
 
 
