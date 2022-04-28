@@ -24,7 +24,9 @@ export default class Api {
     sendCallForm(formDataJson) {
         return fetch(`${this._baseUrl}`, {
             method : 'POST',
-            headers: this._headers,
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify(formDataJson),
             isBase64Encoded: false
         })
