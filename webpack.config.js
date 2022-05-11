@@ -571,7 +571,7 @@ module.exports = {
       chunks: ["ti", "all"],
     }) /*--6-------ТИ28-----------*/,
     new HtmlWebpackPlugin({
-      title: "Теплообменник ТИ18 пластинчатый разборный",
+      title: "Теплообменник ТИ28 пластинчатый разборный",
       template: "./src/ti-xx-xx.html", // шаблон
       filename: "catalog/ti-28.html",
       templateParameters: {
