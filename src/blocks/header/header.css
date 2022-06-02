@@ -69,8 +69,10 @@
 }
 
 .header__breadcrumbs {
-    padding: 15px 0;
-    position: relative;
+  padding: 15px 0;
+  display: flex;
+  position: relative;
+  max-width: 60%;
 }
 /*.header__breadcrumbs::after {
     top:0;
