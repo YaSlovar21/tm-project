@@ -41,7 +41,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 1.22;
-    text-align: center;
+    text-align: left;
     color: #C0C0C0;
     margin: 50px 0 50px;
 }
@@ -56,10 +56,10 @@
 }
 
 .po__text {
-    max-width: 500px;
+    max-width: 550px;
     font-size: 18px;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
 
     color: #E7E7E7;
 }
@@ -73,9 +73,15 @@
     padding: 15px 25px;
     background-color: #f2f2f22d;
     text-decoration: none;
+
     border-right: 1px solid #E7441C;
     border-left: 1px solid #E7441C;
     transition: all .8s ease-in-out;
+
+
+    width: 550px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .po__link_hovered {
@@ -149,6 +155,9 @@
     letter-spacing: .05em;
 
 
+  }
+  .po__link {
+    width: calc(100% - 20px);
   }
   .po__description {
     max-width: calc(100% - 20px);

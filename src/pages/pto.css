@@ -5,7 +5,12 @@
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
 @import url(../blocks/link-beauty/link-beauty.css);
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
+
 @import url(../blocks/rotation/rotation.css);
+
+
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);
@@ -83,7 +88,6 @@
 @import url(../blocks/bem/__list/_page_pto/bem__list_page_pto.css);
 @import url(../blocks/bem/__list-heading/bem__list-heading.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
-
 
 
 @import url(../blocks/column-description/column-description.css);

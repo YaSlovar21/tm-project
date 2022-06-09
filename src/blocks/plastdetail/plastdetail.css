@@ -28,6 +28,11 @@
   color: #BEBEBE;
 }
 
+.plastdetail__title_bottom {
+  bottom: 60px;
+  top: auto;
+}
+
 .plastdetail__detailslist {
   padding: 0;
   list-style-type: none;
