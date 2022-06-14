@@ -363,7 +363,7 @@
 <section class="description">
   <div class="two-columns">
     <h2 class="two-columns__brief two-columns__brief_wide">Производство теплообменников</h2>
-    <div class="two-columns__main-text wow fadeInUp" data-animaton-duration="1.5s">
+    <div class="two-columns__main-text" data-animaton-duration="1.5s">
       <p class="two-columns__paragraph">Пластинчатые теплообменники теплообменники торговой марки <img
           src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит">
         изготавливаются на базе пластин собственного производства для различных отраслей: жилично-коммунальное
@@ -425,10 +425,10 @@
               </div>
           </div>
     </div>
-    <div class="slider-sborka wow animate__fadeIn">
+    <div class="slider-sborka">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img alt="Станина теплообменника" class="slider-sborka__img wow animate__fadeInRight" src="<%=require('./images/nord/zpanel.png')%>">
+                <img alt="Станина теплообменника" class="slider-sborka__img" src="<%=require('./images/nord/zpanel.png')%>">
             </div>
             <div class="swiper-slide">
                 <img alt="Пластины и уплотнения теплообменника" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInRight" data-animaton-duration="1s" src="<%=require('./images/nord/plastina.png')%>">
@@ -461,7 +461,7 @@
     <p class="projects__description">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов, в которых были использованы наши пластинчатые теплообменники.</p>
   </div>
   <form class="projects__change-form" name="formProjectsViewChange" id="formProjectsViewChange">
-    <label class="wow pulse">
+    <label>
       <input type="checkbox" class="projects__checkbox">
       <span class="projects__details-button">Смотреть подробнее</span>
     </label>
@@ -527,9 +527,9 @@
     <h2 class="types__heading">Виды теплообменников</h2>
     <p class="types__subtitle">Основное направления компании - производство пластинчатых теплообменников для систем горячего водоснабжения и отопления.</p>
   </div>
-  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html" class="types__item wow fadeInRight" data-wow-offset="50">Пластинчатые теплообменники для ГВС (горячее водоснабжение) <!--Перейти &#8594;--></a>
-  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html"  class="types__item wow fadeInRight" data-wow-offset="50" data-wow-delay=".2s">Пластинчатые теплообменники для отопления<!-- Перейти &#8594;--></a>
-  <a href="/equipment-selection"  class="types__item wow fadeInRight" data-wow-offset="50" data-wow-delay=".4s">Рассчитать теплооменник индивидуально</a>
+  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html" class="types__item" >Пластинчатые теплообменники для ГВС (горячее водоснабжение) <!--Перейти &#8594;--></a>
+  <a href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html"  class="types__item">Пластинчатые теплообменники для отопления<!-- Перейти &#8594;--></a>
+  <a href="/equipment-selection"  class="types__item">Рассчитать теплооменник индивидуально</a>
 </section>
 
 <!--Широкоформатная секция ( изготовление пластин, svg-типоразмер, конструктивные особенности)-->
@@ -657,7 +657,6 @@
         <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark table__heading_clickable">Системы отопления</h3>
             <p class="table__text table__text_theme_dark"><a href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html" class="bem__link link-beauty">Пластинчатые теплообменники для отопления. <span class="span-hover">Подробнее↗</span></a></p>
-
         </div>
         <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">Пищевая промышленность</h3>
@@ -683,21 +682,21 @@
 <!--Два блока (принцип работы пто, программа расчёта)-->
 <div style="overflow: hidden;">  <!--Костыль для overflow картинки программы расчёта-->
   <section class="princip">
-    <div class="princip__image wow animate__zoomIn" data-wow-offset="100">
+    <div class="princip__image">
       <img class="princip__image-svg" alt="Принцип работы пластинчатого теплообменника - противоток"  src="<%=require('./images/princip_demo.svg')%>">
     </div>
     <div class="princip__description">
-      <h2 class="princip__heading wow animate__fadeInUp" data-wow-offset="100" style="align-self: flex-end;">Принцип работы пластинчатых теплообменников</h2>
-      <p class="princip__text wow animate__fadeInRight" data-wow-offset="100">Теплообмен происходит между тонкостенными гофрированными пластинами, которые уплотняются специальными резиновыми прокладками. Поток жидкости или пара, проходя через пластины теплообменника, испытывает многочисленные изменения направления и скорости, что обеспечивает турбулентное движение и высокую эффективность процесса передачи тепла. Разборные пластинчатые теплообменники нашего производства обеспечивают высокую надежность и устойчивость не только при работе в нормальных условиях, но и при работе с загрязненными средами.</p>
-      <p class="princip__text wow animate__fadeInRight" data-wow-offset="100" style="align-self: flex-end;"><a href="/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html" class="bem__link princip__link link-beauty">Преимущества пластинчатых теплоомбенников↗</a></p>
+      <h2 class="princip__heading" style="align-self: flex-end;">Принцип работы пластинчатых теплообменников</h2>
+      <p class="princip__text">Теплообмен происходит между тонкостенными гофрированными пластинами, которые уплотняются специальными резиновыми прокладками. Поток жидкости или пара, проходя через пластины теплообменника, испытывает многочисленные изменения направления и скорости, что обеспечивает турбулентное движение и высокую эффективность процесса передачи тепла. Разборные пластинчатые теплообменники нашего производства обеспечивают высокую надежность и устойчивость не только при работе в нормальных условиях, но и при работе с загрязненными средами.</p>
+      <p class="princip__text" style="align-self: flex-end;"><a href="/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html" class="bem__link princip__link link-beauty">Преимущества пластинчатых теплоомбенников↗</a></p>
     </div>
   </section>
 
   <section class="po">
     <div class="po__description">
-      <h2 class="po__heading wow animate__fadeInUp" data-wow-offset="100">Программа расчёта пластинчатых теплообменников</h2>
-      <p class="po__text wow animate__fadeInUp" data-wow-offset="100">Разработанная нами программа предназначена для расчета пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности.</p>
-      <a href="#" class=" wow animate__fadeInUp po__link" data-wow-offset="200">Запросить программу расчёта</a>
+      <h2 class="po__heading">Программа расчёта пластинчатых теплообменников</h2>
+      <p class="po__text">Разработанная нами программа предназначена для расчета пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности.</p>
+      <button class="po__link">Запросить программу расчёта</button>
     </div>
     <img alt="Интерфейс программы расчёта пластинчатых теплообменников Теплохит" src="<%=require('./images/program_mini.png')%>" class="po__image">
   </section>
@@ -719,9 +718,9 @@
 
 <div class="up-footer">
   <ul class="up-footer__list">
-    <li class="up-footer__list-item up-footer__raschet wow fadeInUp" data-wow-duration="1s">Рассчитать теплообменник</li>
-    <li class="up-footer__list-item up-footer__call  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Заявка на обратный звонок</li>
-    <li class="up-footer__list-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teploobmennika.doc" download>Скачать опросный лист</a></li>
+    <li class="up-footer__list-item up-footer__raschet">Рассчитать теплообменник</li>
+    <li class="up-footer__list-item up-footer__call">Заявка на обратный звонок</li>
+    <li class="up-footer__list-item"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teploobmennika.doc" download>Скачать опросный лист</a></li>
   </ul>
 </div>
 

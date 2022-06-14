@@ -82,6 +82,10 @@
     width: 550px;
     text-align: center;
     box-sizing: border-box;
+
+    border-top: none;
+    border-bottom: none;
+    outline: none;
 }
 
 .po__link_hovered {
