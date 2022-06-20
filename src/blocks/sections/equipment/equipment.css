@@ -71,6 +71,9 @@
   min-height: 80vh;    box-shadow: 0 4px 4px rgb(0 0 0 / 22%);
   border: 2px solid #333333;
   border-left: none;
+
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {

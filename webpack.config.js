@@ -159,7 +159,7 @@ module.exports = {
       title:
         "Российский производитель пластин и пластинчатых теплообменников Термоблок",
       meta: {
-        keywords: "пластинчатые теплообменники российского производства",
+        keywords: "российское производство теплообменников",
         description: `ООО Термоблок - производитель пластинчатых теплообменников со 100% локализацией 
           изготовление пластин, уплотнений и ряда комплектующих для теплообменников торговой марки Теплохит`,
       },
@@ -474,6 +474,24 @@ module.exports = {
       template: "./src/blog-page-abstract.html",
       filename:
         "blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "btp-start.html",
+      },
+      title: "Проектирование блочных тепловых пунктов | Особенности изготовления",
+      heading: "Проектирование тепловых пунктов",
+      meta: {
+        keywords: "проект блочного теплового пункта",
+        description:
+          "Запуск в производство готового решения для жилично-коммунального хозяйства - блочного теплового пункта, особенности проектирования. Важность грамнотного проекта.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename:
+        "blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html",
       chunks: ["blogPage", "all", "map"],
     }),
     /*---------КАТАЛОГ----------- */

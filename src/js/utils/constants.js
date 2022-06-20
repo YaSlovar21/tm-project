@@ -138,12 +138,12 @@ export const initialArticles = [
     heading: 'Преимущества пластинчатых теплообменников',
     description: 'Преимущества теплообменных аппаратов пластинчатого типа',
   },
-  /*{
+  {
     tags: ['gkh', 'btp'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: '10Проектирование блочных тепловых пунктов',
-    description: 'Квалифицированные инженеры завода по производству теплообменников спроектируют БТП',
-  },*/
+    linkPath: `/${blogPath}/proektirovanie-blochnykh-teplovykh-punktov.html`,
+    heading: 'Проектирование блочных тепловых пунктов',
+    description: 'Запуск в производство готового решения для жилично-коммунального хозяйства.',
+  }
 ];
 
 

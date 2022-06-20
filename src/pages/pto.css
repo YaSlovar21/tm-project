@@ -40,6 +40,7 @@
 @import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);
 @import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
 @import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__subtitle/_size_m/flexburton__subtitle_size_m.css);
 @import url(../blocks/flexburton/__title/flexburton__title.css);
 @import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);

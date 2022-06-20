@@ -4,6 +4,9 @@
 @import url(../vendor/fonts/fonts.css);
 
 @import url(../blocks/link-beauty/link-beauty.css);
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
+
 /*Спаны*/
 @import url(../blocks/span/span.css);
 

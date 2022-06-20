@@ -133,7 +133,12 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'weekly'
     },
- 
+    {
+      path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
 
     /* --- теплообменники --- */
     {
