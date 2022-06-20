@@ -100,17 +100,31 @@
 
 .product-types .swiper-button-next {
     color: #FF5E3A;
+    /*top: 40%;
+    right: 8%;*/
 
-    top: 40%;
-    right: 8%;
+    left: calc(10% + 55px);
+    right: auto;
+    bottom: 0;
+    top: auto;
+    padding: 5px;
+    background-color: #f2f2f236;
 }
 
 .product-types .swiper-button-prev {
     color: #FF5E3A;
+   /* top: 40%;
+    left: 8%;*/
 
-    top: 40%;
-    left: 8%;
+    left: 10%;
+    right: auto;
+    bottom: 0;
+    top: auto;
+    padding: 5px;
+    background-color: #f2f2f236;
 }
+
+
 
 @media screen and (max-width:768px) {
     .product-types__link {

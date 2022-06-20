@@ -11,6 +11,12 @@
 
   grid-template-rows: min-content min-content max-content;
 }
+@media screen and (max-width: 1620px) {
+  .header-index {
+    grid-template-columns: 640px calc(100% - 640px);
+    min-height: auto;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .header-index {
@@ -222,6 +228,12 @@
   max-width: 70%;
 }
 
+@media screen and (max-width: 1620px) {
+  .header-index__title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .header-index__title {
