@@ -348,8 +348,8 @@ const types_swiper = new Swiper('.product-types', {
   // If we need pagination
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.product-types__button-next',
+    prevEl: '.product-types__button-prev',
   },
   on: {
     init: function () {

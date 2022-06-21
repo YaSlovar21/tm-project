@@ -33,18 +33,12 @@
 @import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
 @import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
 @import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__title/_size_m/flexburton__title_size_m.css);
+
 @import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
 
 
-
-@import url(../blocks/description/description.css);
-@import url(../blocks/two-columns/two-columns.css);
-@import url(../blocks/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
-@import url(../blocks/two-columns/__image/two-columns__image.css);
-
+@import url(../blocks/introgrid/introgrid.css);
 
 @import url(../blocks/footer/footer.css);

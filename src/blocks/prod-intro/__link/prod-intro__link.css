@@ -1,0 +1,15 @@
+.prod-intro__link {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+
+
+.prod-intro__link::after {
+  content: ' ↗';
+}
+
+.prod-intro__link:hover .prod-intro__link::after {
+  color: blueviolet;
+  opacity: .3;
+}

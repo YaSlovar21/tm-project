@@ -95,12 +95,12 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'weekly'
     },
-    {
+    /*{
       path: '/blog-proizvodstva/plastinchatyy-ohladitel.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'weekly'
-    },
+    },*/
     {
       path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
       lastmod: dateNow,

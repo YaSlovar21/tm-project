@@ -126,7 +126,7 @@ var mySwiper1 = new Swiper('.btp-schemes', {
         if (index==5) {
           a = 'Двухступенчатое ГВС с двумя теплообменниками'
         }
-        return '<span class= ' + className + '>' + a + '</span>';
+        return '<li class= ' + className + '>' + a + '</li>';
     }
   },
 

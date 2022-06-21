@@ -120,13 +120,21 @@
           <p class="two-columns__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
         </div>
       </div>-->
-      <div style="width: 80%; margin: 70px auto;  background-color: #2f2f2f; padding: 20px; border-radius: 6px; color: #f2f2f2; box-sizing: border-box;">
-        <h2 style="margin: 0; padding: 20px; font-size: 20px;background-color: var(--main-equivalent-color); display: flex;width: 350px;position: relative;bottom: 30px;border-radius: 6px;color: #2f2f2f;">Продукция предприятия</h2>
-        <p class="two-columns__paragraph ">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Компания серийно выпускает пластинчатые теплообменники <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™</span>, производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
-        <p class="two-columns__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
-        <a class="bem__link" href="#">4234</a>
+      <div class="prod-intro">
+        <h2 class="prod-intro__title">Продукция предприятия</h2>
+        <div class="prod-intro__columns">
+          <div class="prod-intro__links">
+            <a class="bem__link prod-intro__link" href="#">Пластинчатые теплообменники</a>
+            <a class="bem__link prod-intro__link" href="#">Пластинчатые теплообменники отопления</a>
+            <a class="bem__link prod-intro__link" href="#">Пластинчатые теплообменники пищевые</a>
+          </div>
+          <div class="prod-intro__content">
+            <p class="prod-intro__paragraph ">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Компания серийно выпускает пластинчатые теплообменники <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™</span>, производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
+            <p class="prod-intro__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
+          </div>
+        </div>
       </div>
-      </div>
+
       <div class="product-types">
         <div class="swiper-wrapper">
           <div class="product-types__type swiper-slide">
@@ -185,8 +193,12 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!--<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>-->
+        <div class="product-types__panel">
+          <button class="product-types__button-prev"><--</button>
+          <button class="product-types__button-next">--></button>
+        </div>
       </div>
     </section>
 

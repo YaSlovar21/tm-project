@@ -13,8 +13,10 @@
 }
 
 .lineform_page_btp {
-  margin: 0 auto;
-  max-width: 80%;
+
+  padding: 35px 135px 35px 10%;
+  padding-left: 10%;
+  background-color: #2f2f2f;
 }
 
 @media screen and (max-width: 1440px) {

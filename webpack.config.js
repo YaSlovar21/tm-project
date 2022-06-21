@@ -34,6 +34,7 @@ module.exports = {
     blogSection: "./src/pages/blog-section.js",
     blogPage: "./src/pages/blog-page.js",
     equipment: "./src/pages/equipment1.js",
+    pou: "./src/pages/pou.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -256,7 +257,7 @@ module.exports = {
       },
       template: "./src/pou.html",
       filename: "pasterizatsionno-okhladitelnye-ustanovki.html",
-      chunks: ["btp", "all", "map"],
+      chunks: ["pou", "all", "map"],
     }) /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */,
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -759,7 +760,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Теплообменник П16,5 пищевой пластинчатый разборный",
       template: "./src/ti-xx-xx.html", // шаблон
-      filename: "catalog/p-1-6-5.html",
+      filename: "catalog/p-16-5.html",
       templateParameters: {
         tialias: "p18.png", ///ЖДЕМ ФОТО
         drawalias: "draw116.jpg",
@@ -831,7 +832,21 @@ module.exports = {
       },
       chunks: ["ti", "all"],
     }),
-
+    new HtmlWebpackPlugin({
+      title: "Теплообменник П65 пищевой пластинчатый разборный",
+      template: "./src/ti-xx-xx.html", // шаблон
+      filename: "catalog/p-82.html",
+      templateParameters: {
+        tialias: "p65.png",
+        drawalias: "draw116.jpg",
+        heading: "П82",
+        headingAlias: "П 82",
+        description: `Теплообменник П82 пищевого назначения. Отличием от типового исполнения (ТИ 82) на данный теплообменник устанавливаются пищевые штуцера и,
+        по желанию заказчика, теплообменный аппарат облицовывается нержавеющей сталью.`,
+        link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+      },
+      chunks: ["ti", "all"],
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",
