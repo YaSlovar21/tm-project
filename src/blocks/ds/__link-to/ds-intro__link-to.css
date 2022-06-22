@@ -6,12 +6,15 @@
   text-decoration: none;
   color: #f77b42;
   line-height: 1.4;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
-  max-width: 260px;
+  max-width: 220px;
   justify-self: flex-end;
-  /* align-self: flex-end; */
+  /* align-self: flex-end;
   background-color: #2f2f2f4f;
+  */
+  border: 1px solid var(--main-color-contr);
+  border-radius: 4px;
 }
 
 .ds-intro__link-to::before {

@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import 'animate.css';
 import WOW from 'wow.js';
+import simpleParallax from 'simple-parallax-js';
 
 import './pto.css';
 
@@ -359,3 +360,62 @@ const poButton = document.querySelector('.po__link');
 poButton.addEventListener('mousedown', ()=> {
   poButton.classList.add('po__link_hovered');
 })*/
+
+
+let imageMain = document.querySelector('.flexburton__main-image');
+new simpleParallax(imageMain, {
+	delay: .4,
+  overflow: true,
+  scale: 1.6,
+	transition: 'ease-out',
+  customWrapper: '.flexburton__right-side',
+});
+
+let plastPresent = document.querySelector('.plastdetail__image');
+new simpleParallax(plastPresent, {
+	delay: .3,
+  overflow: true,
+  scale: 1.3,
+	transition: 'cubic-bezier(0,0,0,1)',
+  /*customWrapper: '.flexburton__right-side',*/
+});
+
+let itemPics = document.querySelectorAll('.plastdetail__iimage');
+new simpleParallax(itemPics, {
+	delay: .3,
+  overflow: true,
+  scale: 1.2,
+  orientation: 'down',
+	transition: 'cubic-bezier(0,0,0,1)',
+  /*customWrapper: '.flexburton__right-side',*/
+});
+
+let principImage = document.querySelector('.princip__image-svg');
+new simpleParallax(principImage, {
+	delay: 0.2,
+  overflow: true,
+  scale: 1.5,
+  orientation: 'left',
+	transition: 'cubic-bezier(0,0,0,1)',
+  customWrapper: '.princip__image',
+});
+
+let poImage = document.querySelector('.po__image');
+new simpleParallax(poImage, {
+	delay: 0.2,
+  overflow: true,
+  scale: 1.5,
+  orientation: 'up',
+	transition: 'cubic-bezier(0,0,0,1)',
+  /*customWrapper: '.flexburton__right-side',*/
+});
+
+let pictic = document.querySelector('.techniques__after_before');
+new simpleParallax(pictic, {
+	delay: 0.2,
+  overflow: true,
+  scale: 600,
+  orientation: 'right',
+	transition: 'ease-out',
+  customWrapper: '.techniques__after',
+});

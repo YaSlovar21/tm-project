@@ -15,7 +15,9 @@
   margin-top: 0;
 }
 */
-@media screen and (max-width: 1440px) {
+
+
+@media screen and (max-width: 1620px) {
   .prod-intro__paragraph {
     font-size: 22px;
   }

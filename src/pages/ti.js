@@ -1,6 +1,9 @@
 import '../pages/ti.css';
 import 'animate.css';
 
+import simpleParallax from 'simple-parallax-js';
+
+
 import PopupWithImage from '../js/components/PopupWithImage.js';
 
 import {
@@ -26,6 +29,12 @@ const questions = Array.from(
   document
     .querySelectorAll('.frequently__question')
 );
+
+
+new simpleParallax(drawing, {
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
 
 questions.forEach(element => {
   element.addEventListener('click', function(evt) {

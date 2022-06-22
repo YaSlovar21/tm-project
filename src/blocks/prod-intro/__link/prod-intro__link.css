@@ -1,12 +1,12 @@
 .prod-intro__link {
- 
-  color: #888;
+
+  color: var(--main-color-contr);
 }
 
 
 
 .prod-intro__link::after {
-  content: ' ↗';
+  content: ' \2197';
 }
 
 .prod-intro__link:hover .prod-intro__link::after {

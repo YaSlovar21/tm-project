@@ -54,7 +54,7 @@
   .techniques::after {
     width: 2%;
   }
-  
+
   .techniques::before {
     width: 28%;
   }
@@ -78,15 +78,15 @@
 /*ползунок*/
 .techniques__after_before {
   position: absolute;
-  width: 70px;
+  width: 5%;
   height: 100%;
   background-color: #ff5e3ab0;
-  left: 90%;
-  opacity: 0;
+  left: 50%;
+  opacity: 1;
   transform: skewX(-60deg);
   z-index: 10;
 
-  animation: fadeInOutMy1 1.1s linear;
+  /*animation: fadeInOutMy1 1.1s linear;*/
 }
 
 @media screen and (max-width:768px) {
