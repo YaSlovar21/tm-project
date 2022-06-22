@@ -1,6 +1,7 @@
 import './pto-food.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+import simpleParallax from 'simple-parallax-js';
 
 import PopupWithImage from '../js/components/PopupWithImage.js';
 
@@ -95,4 +96,15 @@ document.querySelectorAll('.food-grid__image').forEach((item) => {
       name: evt.target.alt,
     });
   });
+});
+
+
+let itemPics = document.querySelectorAll('.food-grid__image');
+new simpleParallax(itemPics, {
+	delay: .1,
+  overflow: true,
+  scale: 1.2,
+  /*orientation: 'down',*/
+	transition: 'ease-in',
+  /*customWrapper: '.flexburton__right-side',*/
 });
