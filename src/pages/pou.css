@@ -11,6 +11,8 @@
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
 
 @import url(../blocks/nav/nav.css);
 

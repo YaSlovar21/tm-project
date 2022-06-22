@@ -172,8 +172,12 @@ freqElements.forEach((element) => {
 
 
 document.querySelector('.introgrid__button').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Проконсультироваться по расчёту теплового пункта', 'Здравствуйте! Необходимо рассчитать стоимость теплового пункта.');
 });
 document.querySelector('.popup-mini').addEventListener('mousedown', ()=> {
   popupCallBack.open();
+});
+
+document.querySelector('.btp-adv__link').addEventListener('mousedown', ()=> {
+  popupCallBack.open('Проконсультироваться по расчёту теплового пункта', 'Здравствуйте! Необходимо рассчитать стоимость теплового пункта.');
 });

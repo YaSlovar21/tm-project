@@ -131,6 +131,6 @@
 
 @import url(../blocks/bpou/bpou.css);
 @import url(../blocks/lineform/lineform.css);
-
+@import url(../blocks/lineform/__input/_type_margo/lineform__input_type_margo.css);
 /*Спаны*/
 @import url(../blocks/span/span.css);

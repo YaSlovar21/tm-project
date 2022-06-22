@@ -9,9 +9,9 @@
   justify-content: space-between;
 
   position: relative;
-  margin-bottom: 100px; /*временно*/
-  margin-top: 140px;
-  /*padding-bottom: 20px; временно*/
+  margin-bottom: 50px; /*временно*/
+  /*margin-top: 140px;
+  padding-bottom: 20px; временно*/
 }
 
 .bpou__wrapper {
@@ -64,6 +64,7 @@
 
 .bpou__info {
     flex: 0 1 560px;
+    margin: 30px 0;
 }
 
 .bpou__image {

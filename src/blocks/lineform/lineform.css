@@ -17,6 +17,8 @@
   padding: 35px 135px 35px 10%;
   padding-left: 10%;
   background-color: #2f2f2f;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 @media screen and (max-width: 1440px) {

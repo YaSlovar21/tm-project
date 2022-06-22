@@ -128,7 +128,7 @@
                 </ul>
               </div>
           </div>
-          
+
         </div>
       </section>
 
@@ -168,7 +168,7 @@
           </div>
       </div>
     </section>
-      <section class="btp-presentation" style="background-color: #f2f2f210; margin-top: 50px;display: flex;flex-direction: column;align-items: flex-start;">
+      <section class="btp-presentation" style="background-color: #f2f2f210; margin-top: 50px;display: flex;flex-direction: column;align-items: flex-start; padding-bottom: 70px;">
 
         <!--<div class="oakley" >-->
           <div class="two-columns">
@@ -199,11 +199,11 @@
           <p class="lineform__description wow fadeInRight">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
           <div class="lineform__line">
             <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_name" id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
+              <input class="lineform__input lineform__input_type_margo lineform__input_type_name " id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
               <span class="lineform__input-error name-input-error"></span>
             </div>
             <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <input class="lineform__input lineform__input_type_margo lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
               <span class="lineform__input-error tel-input-error"></span>
             </div>
             <button class="lineform__button-save button-bem lineform__button-save_type_callback" type="submit">Оставить заявку</button>
@@ -211,6 +211,10 @@
         </form>
       </section>
 
+
+
+    <section class="secondgridbtp">
+      <h2 class="secondgridbtp__title">Блочные тепловые пункты от производителя</h2>
       <div class="btp-big-swiper">
         <div class="swiper-container btpBigSwiper">
           <div class="swiper-wrapper">
@@ -229,9 +233,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
-    <section class="secondgridbtp">
-      <h2 class="secondgridbtp__title">Блочные тепловые пункты от производителя</h2>
+      <div style="background-color: #f2f2f210; padding: 50px 0;">
       <ul class="secondgridbtp__list">
         <li class="table__cell table__cell_type_grid">
           <h3 class="table__heading table__heading_page_btp">Оперативный расчёт</h3>
@@ -254,6 +256,7 @@
           <p class="table__text table__text_page_btp">Мы предлагаем гибкие ценовые условия на БТП за счет оптимальной стоимости теплообменника собственного производства со скидкой в совокупности с опотовыми поставками доп. оборудованиия.</p>
         </li>
       </ul>
+    </div>
     </section>
     <section class="bpou highliterz">
 
@@ -261,8 +264,9 @@
           <span class="bpou__intro">Смотрите также</span>
           <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
           <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
-          <!--<div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>-->
-          <a href="#" style="display: block; text-decoration: none;" class="button-bem">Перейти &#8594;</a>
+          <!--<div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
+          <a href="/pasterizatsionno-okhladitelnye-ustanovki.html" style="display: block; text-decoration: none;" class="button-bem">Перейти &#8594;</a>-->
+          <a href="/pasterizatsionno-okhladitelnye-ustanovki.html" style="display: block; text-decoration: none; color: var(--main-equivalent-color);">Пастеризационные охладительные установки ↗</a>
         </div>
         <div class="bpou__image-container">
           <img src="<%=require('./images/pou_page_btp.png')%>" alt="Блочное решение для пищевой промышленности на базе пластинчатых теплообменников" class="bpou__image">
