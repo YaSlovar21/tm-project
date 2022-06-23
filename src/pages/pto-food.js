@@ -101,10 +101,10 @@ document.querySelectorAll('.food-grid__image').forEach((item) => {
 
 let itemPics = document.querySelectorAll('.food-grid__image');
 new simpleParallax(itemPics, {
-	delay: .1,
+	delay: .4,
   overflow: true,
   scale: 1.2,
   /*orientation: 'down',*/
-	transition: 'ease-in',
+	transition: 'ease-out',
   /*customWrapper: '.flexburton__right-side',*/
 });

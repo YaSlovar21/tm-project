@@ -112,7 +112,7 @@
   cursor: pointer;
   transition: color 0.4s linear;
 
-  border-radius: var(--border-radius-xl);
+  border-radius: var(--border-radius-l);
 }
 
 @media screen and (max-width: 1440px) {
@@ -121,7 +121,7 @@
     padding: 10px 20px;
     font-weight: 500;
     letter-spacing: .035em;
-    border-radius: var(--border-radius-l);
+    border-radius: var(--border-radius-m);
   }
 }
 

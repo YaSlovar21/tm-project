@@ -1,0 +1,13 @@
+.bem__link_arrowup {
+  transition: all .3s linear;
+}
+
+.bem__link_arrowup::after {
+  content: ' \2197';
+  transition: all .5s linear;
+}
+
+.bem__link_arrowup:hover::after {
+  color: var(--main-color-contr);
+  opacity: .9;
+}
