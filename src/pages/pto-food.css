@@ -14,6 +14,12 @@
 @import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
 @import url(../blocks/animatecss/attention_seekers/pulse.css);
 
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
+@import url(../blocks/bem/__link/_more/bem__link_more.css);
+@import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
+@import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
+
 @import url(../blocks/flexburton/flexburton.css);
 @import url(../blocks/flexburton/__link/flexburton__link.css);
 @import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);

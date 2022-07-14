@@ -56,7 +56,13 @@
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(179.8deg, rgba(194, 194, 194, 0.017) -2.38%, rgba(0, 0, 0, 0.22) 73.74%, rgba(132, 132, 132, 0.17) 99.83%);
+    transition: all .4s linear;
 }
+
+.productcard:hover {
+  background: linear-gradient(179.8deg, rgba(194, 194, 194, 0.017) -2.38%, rgba(0, 0, 0, 0.22) 33.74%, rgba(132, 132, 132, 0.17) 99.83%);
+}
+
 .productcard:hover .productcard__heading {
   color: #E7441C;
 }
