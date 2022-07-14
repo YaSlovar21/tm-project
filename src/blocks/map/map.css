@@ -2,6 +2,11 @@
     max-width: 100%;
     background-color: #2f2f2f75;
     padding-top: 100px;
+
+
+    /**/
+    background-color: #3636369e;
+    border-bottom: 3px solid #04040447;
 }
 
 
@@ -47,6 +52,7 @@
     padding: 0;
 
     width: 80%;
+    max-width: 1177px;
 }
 
 
@@ -160,12 +166,33 @@
     width: 192px;
     cursor: pointer;
     transition: opacity .2s ease-in;
+/*пробная новая тема*/
+    text-align: center;
+    background-color: #444444c2;
+    box-sizing: border-box;
+    color: #fff;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 14px;
+    position: relative;
+    transition: opacity .2s ease-in;
+    width: 192px;
+    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
 }
 
 .map__list-item_active {
     background-color: #f2f2f217;
     color: #e7451c;
     border-left: 3px solid #e7451c;
+}
+
+.map__list-item_active {
+  background-color: #f2f2f217;
+  color: #e7451c;
+  border: 1px solid #e7451c;
 }
 
 @media screen and (max-width: 450px) {

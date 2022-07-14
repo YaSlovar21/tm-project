@@ -495,6 +495,24 @@ module.exports = {
         "blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html",
       chunks: ["blogPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: false,
+        articleFile: "ool-3-5.html",
+      },
+      title: "Пластинчатые охладители ООЛ-3 | ООЛ-5",
+      heading: "Пластинчатые охладители ООЛ",
+      meta: {
+        keywords: "пластинчатые охладители оол, пластинчатые охладители молока",
+        description:
+          "Примеры расчётов, принцип действия пластинчатых охладителей молока для молочных ферм и заводов. Охлаждение молока в потоке.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename:
+        "blog-proizvodstva/plastinchatye-ohladiteli-ool.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
     /*---------КАТАЛОГ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

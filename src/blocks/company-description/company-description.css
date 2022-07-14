@@ -50,7 +50,7 @@
 @media screen and (min-width: 1440px) {
   .company-description {
     /*max-width: calc(100% - 40px);*/
-    margin: 70px auto 50px;
+    margin: 70px auto 2px;
   }
 }
 @media screen and (max-width: 1180px) {

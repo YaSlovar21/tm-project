@@ -142,7 +142,13 @@ export const initialArticles = [
     tags: ['gkh', 'btp'],
     linkPath: `/${blogPath}/proektirovanie-blochnykh-teplovykh-punktov.html`,
     heading: 'Проектирование блочных тепловых пунктов',
-    description: 'Запуск в производство готового решения для жилично-коммунального хозяйства.',
+    description: 'Запуск в производство готового решения для жилично-коммунального хозяйства',
+  },
+  {
+    tags: ['prod', 'food', 'example'],
+    linkPath: `/${blogPath}/plastinchatye-ohladiteli-ool.html`,
+    heading: 'Пластинчатые охладители ООЛ-3, ООЛ-5',
+    description: 'Примеры расчётов, принцип действия пластинчатых охладителей молока',
   }
 ];
 

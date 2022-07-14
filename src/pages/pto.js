@@ -421,13 +421,3 @@ new simpleParallax(pictic, {
 });
 
 
-let textTwoCol = document.querySelector('.two-columns__main-text');
-new simpleParallax(textTwoCol, {
-	delay: 0.2,
-  overflow: true,
-  scale: 1.3,
-  orientation: 'up',
-	transition: 'cubic-bezier(0,0,0,1)',
-  /*customWrapper: '.flexburton__right-side',*/
-  maxTransition: 40,
-});

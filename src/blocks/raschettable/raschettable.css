@@ -1,0 +1,52 @@
+.raschettable {
+  font-size: 14px;
+  text-align: center;
+  width: 767px;
+
+  margin: 40px 0;
+}
+
+.raschettable caption {
+  font-weight: 200;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.raschettable__accent {
+  background: #5c5c5c;
+  font-size: 12px;
+}
+
+.raschettable td {
+  padding: 8px 8px;
+}
+/*
+.raschettable tr:first-child td:first-child {
+  background: #ff5e3a;
+  font-size: 12px;
+  letter-spacing: .05em;
+  font-weight: 600;
+  padding: 10px;
+}
+*/
+.raschettable th {
+  background: #ff5e3a;
+  font-size: 12px;
+  letter-spacing: .05em;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.raschettable tr td:first-child {
+  background: #353535;
+  font-size: 12px;
+}
+
+.raschettable tr:first-child {
+  /*background: #f04545;*/
+  background: #ff5e3a;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+}
+

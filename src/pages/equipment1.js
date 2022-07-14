@@ -27,30 +27,6 @@ const messageList = [
 		image: logo_dialog,
 		text: 'Ждём!'
 	},
-  /*{
-		image: logo_dialog,
-		text: 'Добрый день! Заполнив основные поля формы, наш инженер рассчитает пластинчатый теплобменник за 30 минут! (тест полосы)'
-	},
-	{
-		text: 'Сейчас попробуем! (тест полосы)',
-    isOwner: true
-	},
-	{
-		image: logo_dialog,
-		text: 'Ждём! (тест полосы)'
-	},
-  {
-		image: logo_dialog,
-		text: 'Добрый день! Заполнив основные поля формы, наш инженер рассчитает пластинчатый теплобменник за 30 минут! (тест полосы)'
-	},
-	{
-		text: 'Сейчас попробуем! (тест полосы)',
-    isOwner: true
-	},
-	{
-		image: logo_dialog,
-		text: 'Ждём! (тест полосы)'
-	},*/
 ];
 const cardListSection = '.card-list';
 
@@ -66,11 +42,11 @@ import {
 
 try {
   if (!localStorage.getItem('clientId')) {
-    ym(70729528, 'getClientID', function(clientID) {
+    ym(56583337, 'getClientID', function(clientID) {
       localStorage.setItem('clientId', clientID)
     });
 
-    ym(70729528, 'userParams', {
+    ym(56583337, 'userParams', {
       UserID: localStorage.getItem('clientId'),
   });
   }
