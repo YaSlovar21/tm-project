@@ -28,6 +28,8 @@ import '../userfiles/Katalozhnii_list_BTP_Termoblok.pdf';
 import '../userfiles/termoblok_catalog.pdf';
 import '../userfiles/btp-certificate.pdf';
 import '../userfiles/Rekviziti_OOO_Termoblok.doc';
+import '../userfiles/Plastinchatye_ohladiteli_ool_sssr.pdf';
+
 import '../robots.txt';
 
 import {
