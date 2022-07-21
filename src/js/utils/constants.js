@@ -85,7 +85,7 @@ export const tagsAliases = {
 
 export const initialArticles = [
   {
-    tags: ['gkh', 'prod'],
+    tags: ['gkh', 'prod', 'example'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
     heading: 'Пластинчатые теплообменники отопления',
     description: 'Производство теплообменников для отопления',
@@ -127,7 +127,7 @@ export const initialArticles = [
     description: 'Многосекционное исполнение теплообменников',
   },
   {
-    tags: ['gkh', 'project', 'example'],
+    tags: ['gkh', 'project'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
     heading: 'Пластинчатые теплообменники для гвс',
     description: 'Производство теплобменников горячего водоснабжения',
@@ -149,7 +149,14 @@ export const initialArticles = [
     linkPath: `/${blogPath}/plastinchatye-ohladiteli-ool.html`,
     heading: 'Пластинчатые охладители ООЛ-3, ООЛ-5',
     description: 'Примеры расчётов, принцип действия пластинчатых охладителей молока',
+  },
+  {
+    tags: ['project', 'gkh', 'example'],
+    linkPath: `/${blogPath}/teploobmennik-5-mvt-object-spb.html`,
+    heading: 'Теплообменник 5 мВт для отопления г. Санкт-Петербург',
+    description: 'Производство теплообменника отопления в бизнес-центр Морская Сталица города Санкт-Петербург',
   }
+
 ];
 
 

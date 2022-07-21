@@ -13,6 +13,8 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
+
+    /*background-color: #161616;*/
   }
 
 html, body, main {
@@ -86,6 +88,10 @@ input {
     color: #f2f2f2;
 }
 
+
+/*----------------------------------------*/
+
+
 .bg {
     position: fixed;
     left: 0;
@@ -103,7 +109,7 @@ input {
   .bg {
     background-image: none;
     background: radial-gradient(63.43% 23.01% at 49.87% 45.13%, rgba(34, 34, 34, 0.81) 0%, #222222 100%);;
-    /*background-image: url(../../images/bg_my_mobile.png);*/
+
   }
 }
 
@@ -120,6 +126,10 @@ input {
     z-index: -1;
     opacity: 0.8;
 }
+
+/*----------------------------------------*/
+
+
 
 .contact-list {
   margin: 0;

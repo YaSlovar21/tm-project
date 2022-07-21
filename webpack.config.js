@@ -513,6 +513,24 @@ module.exports = {
         "blog-proizvodstva/plastinchatye-ohladiteli-ool.html",
       chunks: ["blogPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "hortek-tc-sea.html",
+      },
+      title: "Теплообменник 5 мВт для отопления | Для крышной котельной | г. Санкт-Петербург",
+      heading: "Теплообменник пластинчатый для крышной котельной",
+      meta: {
+        keywords: "теплообменник пластинчатый санкт петербург",
+        description:
+          "Пример расчёта теплообменника котельной мощностью 5 мВт поставленного в бизнес-центр Морская Сталица города Санкт-Петербург",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename:
+        "blog-proizvodstva/teploobmennik-5-mvt-object-spb.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
     /*---------КАТАЛОГ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

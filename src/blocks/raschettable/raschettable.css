@@ -1,9 +1,9 @@
 .raschettable {
   font-size: 14px;
   text-align: center;
-  width: 767px;
+  max-width: 767px;
 
-  margin: 40px 0;
+  margin: 10px 0;
 }
 
 .raschettable caption {
@@ -50,3 +50,8 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 1280px) {
+  .raschettable {
+    font-size: 12px;
+  }
+}
