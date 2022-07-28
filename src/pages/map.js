@@ -4,11 +4,11 @@ import Section from '../js/components/Section.js';
 import './map.css'
 
 import {
-  initialPartners,
+  initialPartnersTowns,
   partnersSectionConfig,
 } from '../js/utils/constants.js';
 
-initialPartners.sort(function(a,b) {
+initialPartnersTowns.sort(function(a,b) {
   const aSecondName = a.name.toLowerCase();
   const bSecondName = b.name.toLowerCase();
   if (aSecondName > bSecondName) return 1;
@@ -29,9 +29,14 @@ function createPartner(dataJson) {
     name: dataJson.name,
     htmlData: dataJson.htmlData,
     classActive: partnersSectionConfig.activeClass,
-    handleItemClick: (nameOfPartner, telephoneNumbers, site) => {
+    handleItemClick: (arrayOfPartnersInTown) => {
       //(desc, link) передаем во внутреннем методе карточки
-      popupInfoOpen(nameOfPartner, telephoneNumbers, site);
+      popupInfoOpen(arrayOfPartnersInTown);
+      try {
+        ym(56583337,'reachGoal','partner-town', {clickedTown: dataJson.name});
+      } catch (err) {
+        console.log(err);
+      }
     },
   }, partnersSectionConfig.itemTemplateSelelector);
   const partnerToAdd = partner.generatePartner()
@@ -39,7 +44,7 @@ function createPartner(dataJson) {
 }
 
 const partnerList = new Section({
-  data: initialPartners,
+  data: initialPartnersTowns,
   renderer: (itemData) => {
     const partner = createPartner(itemData);
     partnerList.appendItem(partner);
@@ -48,36 +53,44 @@ const partnerList = new Section({
 
 partnerList.renderItems();
 
-function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
-  if (nameOfPartner !== '') {
-    const listItem = document.createElement('li');
-    listItem.classList.add('map__container-li');
-    listItem.textContent = nameOfPartner;
-    listItem.setAttribute('style','font-weight:bold; margin-bottom:15px;');
-    dinamicInfoPopupContainer.append(listItem);
-  }
-  if (telephoneNumbers !== '') {
-    const partnerEl = telephoneNumbers.map(el => {
+/*------------------------------- */
+
+//function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
+function popupInfoOpen(arrayOfPartnersInTown) {
+  arrayOfPartnersInTown.forEach((item, i, arr) =>{
+    if (item.nameOfPartner !== '') {
       const listItem = document.createElement('li');
       listItem.classList.add('map__container-li');
-      listItem.textContent = el;
-      listItem.setAttribute('style','font-weight:300; margin-bottom:5px;');
-      return listItem;
-    });
-    //partnerEl[-1].setAttribute('style','font-weight:bold; margin-bottom:10px;');
-    //dinamicInfoPopupContainer.innerHTML= '<div class="animate__animated animate__fadeInUp">'+dataHtml+'</div>';
-    dinamicInfoPopupContainer.append(...partnerEl);
-  }
-  if (site !== '') {
-    const listItem1 = document.createElement('li');
-    listItem1.classList.add('map__container-li');
-    const link = document.createElement('a');
-    link.textContent = site;
-    link.href = site;
-    listItem1.append(link);
-    listItem1.setAttribute('style','margin-top:10px;');
-    dinamicInfoPopupContainer.append(listItem1);
-  }
+      listItem.textContent = item.nameOfPartner;
+      listItem.setAttribute('style','font-weight:bold; margin-bottom:15px;');
+      dinamicInfoPopupContainer.append(listItem);
+    }
+    if (arr[i].telephoneNumbers !== '') {
+      const partnerEl = arr[i].telephoneNumbers.map(el => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('map__container-li');
+        listItem.textContent = el;
+        listItem.setAttribute('style','font-weight:300; margin-bottom:5px;');
+        return listItem;
+      });
+      //partnerEl[-1].setAttribute('style','font-weight:bold; margin-bottom:10px;');
+      //dinamicInfoPopupContainer.innerHTML= '<div class="animate__animated animate__fadeInUp">'+dataHtml+'</div>';
+      dinamicInfoPopupContainer.append(...partnerEl);
+    }
+    if (arr[i].site !== '') {
+      const listItem1 = document.createElement('li');
+      listItem1.classList.add('map__container-li');
+      const link = document.createElement('a');
+      link.textContent = arr[i].site;
+      link.href = arr[i].site;
+      listItem1.append(link);
+      listItem1.setAttribute('style','margin-top:10px;');
+      dinamicInfoPopupContainer.append(listItem1);
+    }
+    const brEl = document.createElement('br');
+    dinamicInfoPopupContainer.append(brEl);
+  //};
+  });
   dinamicInfoPopup.classList.add('map__popup_opened');
 }
 

@@ -1,27 +1,18 @@
 export default class Partner {
     constructor({name, htmlData, classActive, handleItemClick}, projectItemSelector) {
-        this._name = name;
-        this._itemTemplateSelelector = projectItemSelector;
-        this._htmlData = htmlData;
-        if (htmlData.nameOfPartner) {
-          this._nameOfPartner = htmlData.nameOfPartner;
-        } else {
-          this._nameOfPartner = '';
-        }
-        if (htmlData.telephoneNumbers) {
-          this._telephoneNumbers = htmlData.telephoneNumbers;
-        } else {
-          this._telephoneNumbers = '';
-        }
-        if (htmlData.site) {
-          this._site = htmlData.site;
-        } else {
-          this._site = '';
-        }
-        //console.log(this);
-        //коллбэк
-        this._handleItemClick = handleItemClick;
-        this._activeClass = classActive;
+
+      this._itemTemplateSelelector = projectItemSelector;
+      this._name = name;
+
+      this._htmlData = htmlData;
+
+      //this._nameOfPartner = htmlData.nameOfPartner ? htmlData.nameOfPartner : '';
+      //this._telephoneNumbers = htmlData.telephoneNumbers ? this._telephoneNumbers: '';
+      //this._site = htmlData.site ? htmlData.site: '';
+
+      //коллбэк
+      this._handleItemClick = handleItemClick;
+      this._activeClass = classActive;
     }
 
     _getItemTemplate() {
@@ -30,14 +21,11 @@ export default class Partner {
             .content
             .querySelector('.map__list-item')
             .cloneNode(true);
-
         return itemElement;
     }
 
     generatePartner() {
         this._element = this._getItemTemplate();
-        /*Задать название и атрибут data-html*/
-        //this._element.setAttribute('data-html', this._htmlData);
         this._element.textContent = this._name;
         this._setEventListeners();
         return this._element;
@@ -49,7 +37,8 @@ export default class Partner {
 
     _setEventListeners() {
         this._element.addEventListener('mousedown', ()=> {
-            this._handleItemClick(this._nameOfPartner, this._telephoneNumbers, this._site);
+            //this._handleItemClick(this._nameOfPartner, this._telephoneNumbers, this._site);
+            this._handleItemClick(this._htmlData);
             this._toogleActive();
         });
     }

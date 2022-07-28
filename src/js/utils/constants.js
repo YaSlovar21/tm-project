@@ -262,179 +262,184 @@ export const initialHeatEx = {
     baseUrl: "/catalog/ti-116.html",
   },
 };
-export const initialPartners = [
+
+export const initialPartnersTowns = [
   {
     name: 'Чита',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Интерсервис\"',
       telephoneNumbers: ['8-914-130-30-30'],
-    }
+    }],
   },
   {
     name: 'Архангельск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Теплогазстрой\"',
       telephoneNumbers: ['8(8182)-639-739'],
       site: 'http://tgs29.ru/',
-    },
+    }],
   },
   {
     name: 'Краснодар',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Астрахань',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Ростов-на-Дону',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Севастополь',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Ставрополь',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    },],
   },
   {
     name: 'Махачкала',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Волгоград',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Ютермо\"',
       telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
       site: 'https://utermo.ru/',
-    },
+    }],
   },
   {
     name: 'Новосибирск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Инженерные системы\"',
       telephoneNumbers: ['+7-903-900-36-63'],
-    },
+    }],
   },
   {
     name: 'Искитим',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Инженерные системы\"',
       telephoneNumbers: ['+7-903-900-36-63'],
-    },
+    }],
   },
   {
     name: 'Омск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Термополис+\"',
       telephoneNumbers: ['+7(3812) 660-137'],
-    },
+    }],
   },
   {
     name: 'Оренбург',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Отопление качество\"',
       telephoneNumbers: ['8-922-555-75-17'],
-    },
+    }],
   },
   {
     name: 'Томск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Амито\"',
       telephoneNumbers: ['8 (3822) 978-933'],
       site: 'https://amito-t.ru/',
-    },
+    }],
   },
   {
     name: 'Новокузнецк',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Амито\"',
       telephoneNumbers: ['8 (3822) 978-933'],
       site: 'https://amito-t.ru/',
-    },
+    }],
   },
   {
     name: 'Кемерово',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Амито\"',
       telephoneNumbers: ['8 (3822) 978-933'],
       site: 'https://amito-t.ru/',
-    },
+    }],
   },
   {
     name: 'Уфа',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Партнер\"',
       telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
       site: 'http://www.partnerufa.ru',
-    },
+    }],
   },
   {
     name: 'Стерлитамак',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Партнер\"',
       telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
       site: 'http://www.partnerufa.ru',
-    },
+    }],
   },
   {
     name: 'Владивосток',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Солид ДВ\"',
       telephoneNumbers: ['+7-902-482-7837', '+7-902-480-5454'],
-    },
+    }],
   },
   {
     name: 'Иркутск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Константа\"',
       telephoneNumbers: ['+7 (3952) 42-87-03 '],
-    },
+    }],
   },
   {
     name: 'Ижевск',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Отопление качество\"',
       telephoneNumbers: ['+7 (3412) 27-18-78'],
-    },
+    }],
   },
   {
     name: 'Вологда',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Протемол\"',
-    },
+    }],
   },
   {
     name: 'Санкт-Петербург',
-    htmlData: {
+    htmlData: [{
       nameOfPartner: 'ООО \"Хортэк-ОПТ\"',
       telephoneNumbers: ['+7 (812) 703-42-30'],
     },
+    {
+      nameOfPartner: 'ООО \"Спарта\"',
+      telephoneNumbers: ['+7 (812) 643-55-28']
+    }],
   },
 ];
 

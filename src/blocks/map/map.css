@@ -8,7 +8,7 @@
     background-color: #3636369e;
     border-bottom: 3px solid #04040447;
 
-    
+
 }
 
 
@@ -91,6 +91,7 @@
 .map__container-li {
     list-style: none;
     animation: fadeInUp 0.4s linear;
+    font-size: 18px;
 }
 
 
