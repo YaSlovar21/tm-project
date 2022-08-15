@@ -151,6 +151,12 @@ export const initialArticles = [
     description: 'Примеры расчётов, принцип действия пластинчатых охладителей молока',
   },
   {
+    tags: ['prod', 'food', 'example'],
+    linkPath: `/${blogPath}/plastinchatii-ohladitel-ool-10.html`,
+    heading: 'Пластинчатый охладитель ООЛ-10',
+    description: 'Пример расчёта теплообменника охладителя на 10000 литров молока в час',
+  },
+  {
     tags: ['project', 'gkh', 'example'],
     linkPath: `/${blogPath}/teploobmennik-5-mvt-object-spb.html`,
     heading: 'Теплообменник 5 мВт для отопления г. Санкт-Петербург',

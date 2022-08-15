@@ -516,6 +516,24 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        isGkh: false,
+        articleFile: "ool-10.html",
+      },
+      title: "Пластинчатый охладитель молока ООЛ-10",
+      heading: "Пластинчатый теплообменник охладитель ООЛ-10",
+      meta: {
+        keywords: "пластинчатый охладитель оол, пластинчатые охладители молока",
+        description:
+          "Пластинчатый теплообменник охлаждения 10000 литров в час молока. Пример расчёта, принцип действия теплообменника охладителя молока для молочных ферм и заводов.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename:
+        "blog-proizvodstva/plastinchatii-ohladitel-ool-10.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "hortek-tc-sea.html",
       },
