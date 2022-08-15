@@ -27,6 +27,15 @@
         <div class="info__aside">
           <h1 class="info__heading"><%= htmlWebpackPlugin.options.heading %></h1>
           <img class="info__aside-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
+
+          <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
+            <h2 class="info__relevance-title">Смотрите похожие материалы</h2>
+            <ul class="bem__list">
+            <% relevanceArticles.forEach(function(article) { %>
+            <li class=""><a class="bem__link" href="<%-article.link%>"><%-article.name%></a></li>
+          <% }); %>
+            </ul>
+        <% } %>
           <a class="info__aside-button link-beauty info__aside-button_custom">Рассчитать теплообменник</a>
         </div>
         <article class="info__article-container">

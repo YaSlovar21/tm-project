@@ -51,6 +51,8 @@
 @import url(../blocks/info/__aside-image/info__aside-image.css);
 @import url(../blocks/info/__aside-button/info__aside-button.css);
 
+@import url(../blocks/info/__relevance-title/info__relevance-title.css);
+
 @import url(../blocks/info/__article-container/info__article-container.css);
 @import url(../blocks/info/__parallax-bg/info__parallax-bg.css);
 
