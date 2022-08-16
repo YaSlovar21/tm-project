@@ -337,6 +337,20 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "pto-otop.html",
+        relevanceArticles: [
+          {
+            name: "Теплообменник отопления 5 мвт для котельной",
+            link: "/blog-proizvodstva/teploobmennik-5-mvt-object-spb.html",
+          },
+          {
+            name: "Теплообменник отопления 17500 кВт",
+            link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html",
+          },
+          {
+            name: "Теплообменник отопления в итп многоквартирного дома",
+            link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html",
+          },
+        ],
       },
       title:
         "Пластинчатые теплообменники отопления | Принцип работы | Как подобрать теплообменник для отопления",
