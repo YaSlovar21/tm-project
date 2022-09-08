@@ -15,6 +15,11 @@
 
   flex-basis: 33%;
   transition: all .4s ease-out;
+
+
+  border-radius: 10px;
+  box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+  overflow: hidden;
 }
 
 .actions__button:hover {

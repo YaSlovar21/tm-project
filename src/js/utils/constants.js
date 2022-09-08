@@ -47,7 +47,7 @@ export const cardArticleConfig = {
 */
 export const initialProjects = [
     {
-      name: "Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»",
+      name: "Теплообменник пластинчатый в котельной квартала 34, г. Уфа, жилой район «Затон-Восточный»",
       link: zatonUfa,
       to: "ТИ82-201",
       naznach: "Отопление, ГВС",
@@ -55,7 +55,7 @@ export const initialProjects = [
       animateClass: 'animate__fadeIn',
     },
     {
-      name: "Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край",
+      name: "Теплообменники пластинчатые в кондитерском комбинате «Кубань», г. Тимашевск, Краснодарский край",
       link: timashevskCondit,
       to: "ТИ52-77",
       naznach: "ГВС",
@@ -63,7 +63,7 @@ export const initialProjects = [
       animateClass: 'animate__fadeIn',
     },
     {
-      name: "БИТП Новый умный дом в г. Уфа, ул. Злобина, 31",
+      name: "Теплообменники в тепловом пункте. Новый умный дом в г. Уфа, ул. Злобина, 31",
       link: ufaUmnDom,
       to: "ТИ13 (31-53 пластин)",
       naznach: "Отопление, ГВС",
@@ -96,12 +96,18 @@ export const initialArticles = [
     heading: 'Пластинчатые пастеризаторы',
     description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
   },
- /* {
-    tags: ['prod', 'food'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
-    heading: 'Пластинчатые охладители',
-    description: 'Охлаждение жидкости в потоке, возможно пищевое исполнение',
-  },*/
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
+    heading: 'Пластинчатые теплообменники для гвс',
+    description: 'Производство теплобменников горячего водоснабжения',
+  },
+  {
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
+    heading: 'Преимущества пластинчатых теплообменников',
+    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
+  },
   {
     tags: ['gkh', 'project'],
     linkPath: `/${blogPath}/teploobmenniki-gvs-object-u-timashevsk.html`,
@@ -126,18 +132,7 @@ export const initialArticles = [
     heading: 'Многосекционные теплообменники',
     description: 'Многосекционное исполнение теплообменников',
   },
-  {
-    tags: ['gkh', 'project'],
-    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
-    heading: 'Пластинчатые теплообменники для гвс',
-    description: 'Производство теплобменников горячего водоснабжения',
-  },
-  {
-    tags: ['gkh'],
-    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
-    heading: 'Преимущества пластинчатых теплообменников',
-    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
-  },
+
   {
     tags: ['gkh', 'btp'],
     linkPath: `/${blogPath}/proektirovanie-blochnykh-teplovykh-punktov.html`,

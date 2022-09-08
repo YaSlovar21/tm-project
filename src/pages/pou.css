@@ -13,12 +13,17 @@
 
 @import url(../blocks/bem/__list/bem__list.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
+@import url(../blocks/bem/__section-wrapper/bem__section-wrapper.css);
+@import url(../blocks/bem/__section-wrapper/_fixed/bem__section-wrapper_fixed.css);
+@import url(../blocks/bem/__paragraph/bem__paragraph.css);
+@import url(../blocks/bem/__section-title/bem__section-title.css);
+@import url(../blocks/bem/__section/bem__section.css);
 
 @import url(../blocks/nav/nav.css);
 
 @import url(../blocks/stickaround/stickaround.css);
 
-
+@import url(../blocks/btp-adv/btp-adv.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__link/header__link.css);
@@ -42,5 +47,6 @@
 
 
 @import url(../blocks/introgrid/introgrid.css);
+@import url(../blocks/table-grid/table-grid.css);
 
 @import url(../blocks/footer/footer.css);

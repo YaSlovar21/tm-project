@@ -91,6 +91,11 @@
     align-items: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.103);
+
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+    overflow: hidden;
 }
 
 .projects__item_horizontal {

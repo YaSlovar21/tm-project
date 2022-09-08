@@ -185,6 +185,9 @@
       font-size: 14px;
       letter-spacing: 00.015em;
       font-weight: 800;
+      border: 1px solid #2f2f2f;
+      border-radius: 10px;
+      box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
     }
 
 

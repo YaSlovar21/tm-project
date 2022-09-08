@@ -140,7 +140,13 @@ module.exports.paths = [
       changefreq: 'weekly'
     },
     {
-      path: '/blog-proizvodstva/blog-proizvodstva/plastinchatye-ohladiteli-ool.html',
+      path: '/blog-proizvodstva/plastinchatye-ohladiteli-ool.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'weekly'
+    },
+    {
+      path: '/blog-proizvodstva/plastinchatii-ohladitel-ool-10.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'weekly'
