@@ -54,6 +54,9 @@
   }
 }
 
+.btp-adv__feats_page_pou {
+  flex: 0 1 450px;
+}
 
 .btp-adv__image {
     max-width: 100%;

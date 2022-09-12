@@ -131,6 +131,17 @@
 
 @import url(../blocks/bpou/bpou.css);
 @import url(../blocks/lineform/lineform.css);
+@import url(../blocks/lineform/__heading/lineform__heading.css);
+@import url(../blocks/lineform/__line/lineform__line.css);
+@import url(../blocks/lineform/__field/lineform__field.css);
+
+@import url(../blocks/lineform/__input/lineform__input.css);
 @import url(../blocks/lineform/__input/_type_margo/lineform__input_type_margo.css);
+@import url(../blocks/lineform/__input-error/lineform__input-error.css);
+
+@import url(../blocks/lineform/__button-save/lineform__button-save.css);
+@import url(../blocks/lineform/__description/lineform__description.css);
+
+
 /*Спаны*/
 @import url(../blocks/span/span.css);

@@ -42,13 +42,16 @@
     margin: 15px 5px 15px 0;
     list-style-type: none;
     background-color: #f2f2f22d;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 20px;
     padding: 15px 25px;
     box-sizing: border-box;
 
-    /*border-radius: 25px;*/
+    border-radius: 10px;
+    border: 1px solid #202020;
+    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+
     cursor: pointer;
 
     will-change: color,background-color;
@@ -79,10 +82,12 @@
 }
 
 .khan__pagination-list-item_active {
-    /*background-color: #ee6f07b8;*/
-    border-left: 5px solid #FF5E3A;
+    /*background-color: #ee6f07b8;
+    border-left: 5px solid #FF5E3A;*/
     color: #FF5E3A;
     background-color: #f2f2f211;
+
+
 }
 
 

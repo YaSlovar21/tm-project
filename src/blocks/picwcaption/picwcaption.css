@@ -1,0 +1,21 @@
+.picwcaption {
+  position: relative;
+}
+
+.picwcaption__caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+  background-color: #2f2f2f5e;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.picwcaption__image {
+  max-width: 100%;
+}

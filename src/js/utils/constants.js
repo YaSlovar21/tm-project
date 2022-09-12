@@ -109,6 +109,12 @@ export const initialArticles = [
     description: 'Преимущества теплообменных аппаратов пластинчатого типа',
   },
   {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/plastinchatii-teploobmennik-du-250.html`,
+    heading: 'Пластинчатый теплообменник ДУ250',
+    description: 'О процессе разработки пластин и уплотнений, запуске в производство нового теплобоменника',
+  },
+  {
     tags: ['gkh', 'project'],
     linkPath: `/${blogPath}/teploobmenniki-gvs-object-u-timashevsk.html`,
     heading: 'Объект: Кондитерский комбинат Кубань (г. Тимашевск)',

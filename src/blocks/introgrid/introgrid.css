@@ -38,6 +38,11 @@
   box-sizing: border-box;
   border-right: 2px solid var(--border-color-intro);
 }
+
+.introgrid__header_page_pou {
+  font-size: 32px;
+}
+
 /*
 .introgrid__header::after {
   content: '';

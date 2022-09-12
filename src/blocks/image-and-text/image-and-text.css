@@ -4,6 +4,16 @@
   align-items: stretch;
 }
 
+.image-and-text_page_pou {
+  position: relative;
+  max-width: 80%;
+  margin: 50px auto 10px;
+  padding: 2%;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #d4d4d405;
+}
+
 .image-and-text__img {
   flex-basis: 30%;
   min-width: 0;
