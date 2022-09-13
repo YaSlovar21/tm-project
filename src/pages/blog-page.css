@@ -23,6 +23,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
 @import url(../blocks/header/__lang-link/header__lang-link.css);
 @import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
 @import url(../blocks/header/__lang-column/header__lang-column.css);

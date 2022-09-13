@@ -105,52 +105,65 @@ module.exports.paths = [
       path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
-    },
-
-    /* статьи - объекты */
-    {
-      path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
-      lastmod: dateNow,
-      priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
     {
-      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html',
+      path: '/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
     {
-      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html',
+      path: '/blog-proizvodstva/teploobmennik-5-mvt-object-spb.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
-    },
-    {
-      path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
-      lastmod: dateNow,
-      priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatye-ohladiteli-ool.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatii-ohladitel-ool-10.html',
       lastmod: dateNow,
       priority: 0.7,
-      changefreq: 'weekly'
+      changefreq: 'monthly'
     },
+    {
+      path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    
+    /* статьи - объекты */
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+
 
     /* --- теплообменники --- */
     {
