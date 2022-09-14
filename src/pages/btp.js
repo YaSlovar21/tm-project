@@ -2,6 +2,7 @@ import './btp.css';
 
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+import simpleParallax from 'simple-parallax-js';
 
 import FormValidator from '../js/components/FormValidator.js';
 import FormStatic from '../js/components/FormStatic.js';
@@ -106,13 +107,13 @@ var mySwiper1 = new Swiper('.btp-schemes', {
     clickable: true,
     bulletClass: 'btp-schemes__bullet',
     bulletActiveClass: 'btp-schemes__bullet_active',
-    renderBullet: function (index, className) {
+    /*renderBullet: function (index, className) {
         let a = '';
         if (index==0) {
-          a = 'Узел ввода'
+          a = 'Блочный тепловой пункт УУТЭ (узел ввода и учета тепловой энергии)'
         }
         if (index==1) {
-          a = 'Зависимое отоппление'
+          a = 'Блочный тепловой пункт на отопление зависимое'
         }
         if (index==2) {
           a = 'Независимое отопление'
@@ -127,7 +128,7 @@ var mySwiper1 = new Swiper('.btp-schemes', {
           a = 'Двухступенчатое ГВС с двумя теплообменниками'
         }
         return '<li class= ' + className + '>' + a + '</li>';
-    }
+    }*/
   },
 
   // Navigation arrows
@@ -180,4 +181,14 @@ document.querySelector('.popup-mini').addEventListener('mousedown', ()=> {
 
 document.querySelector('.btp-adv__link').addEventListener('mousedown', ()=> {
   popupCallBack.open('Проконсультироваться по расчёту теплового пункта', 'Здравствуйте! Необходимо рассчитать стоимость теплового пункта.');
+});
+
+let pictic = document.querySelector('.techniques__after_before');
+new simpleParallax(pictic, {
+	delay: 0.2,
+  overflow: true,
+  scale: 600,
+  orientation: 'right',
+	transition: 'ease-out',
+  customWrapper: '.techniques__after',
 });

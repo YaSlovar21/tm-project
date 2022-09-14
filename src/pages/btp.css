@@ -23,6 +23,11 @@
 @import url(../blocks/up-footer/up-footer.css);
 @import url(../blocks/stickaround/stickaround.css);
 
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
+@import url(../blocks/bem/__link/_more/bem__link_more.css);
+@import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
+@import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
