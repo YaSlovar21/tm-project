@@ -30,6 +30,28 @@ import '../userfiles/btp-certificate.pdf';
 import '../userfiles/Rekviziti_OOO_Termoblok.doc';
 import '../userfiles/Plastinchatye_ohladiteli_ool_sssr.pdf';
 
+import '../btp-examples/БТП-102,36-В-Р-Ж (вентиляция).pdf';
+import '../btp-examples/БТП-122,5-В-Р-Ж.pdf';
+import '../btp-examples/БТП-1289,77-О-Р-Ж.pdf';
+import '../btp-examples/БТП-130,0-О-Р-Ж.pdf';
+import '../btp-examples/БТП-137,00-О-Р-Ж.pdf';
+import '../btp-examples/БТП-1695,00-О-Р-Ж.pdf';
+import '../btp-examples/БТП-1695,00-УВ-Р-Ж.pdf';
+import '../btp-examples/БТП-1752,57-УВ-Р-Ж.pdf';
+import '../btp-examples/БТП-20,0-О-Р-Ж.pdf';
+import '../btp-examples/БТП-207,00-В-Р-Ж.pdf';
+import '../btp-examples/БТП-2352,75-О-Р-Ж.pdf';
+import '../btp-examples/БТП-2352,75-УВ-Р-Ж.pdf';
+import '../btp-examples/БТП-275,82-О-Р-Ж.pdf';
+import '../btp-examples/БТП-275,82-УВ-Р-Ж.pdf';
+import '../btp-examples/БТП-337,00-О-Р-Ж (отопление).pdf';
+import '../btp-examples/БТП-436,80-УВ-Р-Ж.pdf';
+import '../btp-examples/БТП-462,8-Г-Р-Ж.pdf';
+import '../btp-examples/БТП-520,00-Г-Р-Ж.pdf';
+import '../btp-examples/БТП-61,00-О-Р-Ж.pdf';
+import '../btp-examples/БТП-788,00-УВ-Р-Ж.pdf';
+
+
 import '../robots.txt';
 
 import {

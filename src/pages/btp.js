@@ -103,9 +103,9 @@ var mySwiper1 = new Swiper('.btp-schemes', {
   // If we need pagination
   pagination: {
     type: 'bullets',
-    el: '.btp-schemes__pagination-container',
+    /*el: '.btp-schemes__pagination-container',*/
     clickable: true,
-    bulletClass: 'btp-schemes__bullet',
+    /*bulletClass: 'btp-schemes__bullet',
     bulletActiveClass: 'btp-schemes__bullet_active',
     /*renderBullet: function (index, className) {
         let a = '';

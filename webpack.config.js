@@ -125,7 +125,25 @@ module.exports = {
             },
           },
         ],
+        exclude: [
+          path.resolve(__dirname, "./src/btp-examples/"),
+        ],
       },
+      { test: /\.(doc|pdf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "blochnye-teplovye-punkty",
+            },
+          },
+        ],
+        include: [
+          path.resolve(__dirname, "./src/btp-examples/"),
+        ],
+      },
+
       {
         test: /robots\.txt/,
         loader: "file-loader",
@@ -241,7 +259,7 @@ module.exports = {
           "Изготовление блочных тепловых пунктов (блочных итп) на базе теплообменников собственного производства. Заводские гарантии на тепловые узлы.",
       },
       template: "./src/blochnye-teplovye-punkty.html",
-      filename: "blochnye-teplovye-punkty.html",
+      filename: "blochnye-teplovye-punkty/index.html",
       chunks: ["btp", "all", "map"],
     }) /*---------ПАСТЕРИЗАЦИОННЫЕ УСТАНОВКИ----------- */,
     new HtmlWebpackPlugin({
