@@ -8,6 +8,8 @@ const {paths} = require('./sitemap');
 //const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.termoblok.ru'
 
+const {btpexamples} = require('./btpexamples');
+
 const fs = require('fs');
 
 //import {initialHeatEx} from './src/js/utils/constants.js';
@@ -250,6 +252,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        btps: btpexamples,
       },
       title:
         "Блочные тепловые пункты | Производство тепловых узлов, модулей итп заводской готовности",

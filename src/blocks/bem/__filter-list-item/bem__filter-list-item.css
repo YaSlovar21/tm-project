@@ -1,0 +1,19 @@
+.bem__filter-list-item {
+  padding: 20px;
+  background-color: #f2f2f214;
+  border: 1px solid #2f2f2f;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  color: #f2f2f2;
+  font-size: var(--cell-description-font);
+  cursor: pointer;
+}
+
+.bem__filter-list-item:last-of-type {
+  margin-right: 0;
+}
+
+.bem__filter-list-item_active {
+  color: var(--main-equivalent-color);
+}

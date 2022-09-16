@@ -23,6 +23,15 @@
 @import url(../blocks/up-footer/up-footer.css);
 @import url(../blocks/stickaround/stickaround.css);
 
+@import url(../blocks/bem/__section/bem__section.css);
+@import url(../blocks/bem/__section-wrapper/bem__section-wrapper.css);
+@import url(../blocks/bem/__section-wrapper/_fixed/bem__section-wrapper_fixed.css);
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
+
+@import url(../blocks/bem/__filter-list/bem__filter-list.css);
+@import url(../blocks/bem/__filter-list-item/bem__filter-list-item.css);
+
 @import url(../blocks/bem/__link/bem__link.css);
 @import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
 @import url(../blocks/bem/__link/_more/bem__link_more.css);

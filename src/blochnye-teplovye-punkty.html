@@ -46,6 +46,12 @@
       width: 100%;
       overflow: hidden;
       position: relative;
+      max-width: 1600px;
+      margin: 0px auto 20px;
+      border: 1px solid #1f1f1f;
+      background-color: #f2f2f221;
+      border-radius: 20px;
+      box-shadow: 1px 2px 1px rgb(0 0 0 / 22%);
     }
     .btp-big-swiper .swiper-wrapper {
       align-items: flex-end;
@@ -76,7 +82,7 @@
             <p class="flexburton__subtitle">Изготовление блочных тепловых пунктов на базе пластинчатых теплообменников собственного производства<a class="flexburton__link link-beauty" href="/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html"> Подробнее &#8594;</a></p>
         </div>
         <div class="flexburton__right-side">
-          <img class="flexburton__main-image" src="<%=require('./images/btp_test.png')%>" alt="Модель теплового пункта">
+          <img class="flexburton__main-image" src="<%=require('./images/btp-new-img.png')%>" alt="Модель блочного теплового пункта">
         </div>
       </section>
 
@@ -100,9 +106,7 @@
               <p class="introgrid__desc" style="padding-bottom: 3em;">Тепловые пункты изготавливаются на базе теплообменников собственной разработки и
                 производства.</p>
               <div class="introgrid__button">
-                <button class="link-beauty "
-                  style="text-decoration: none; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Рассчитать
-                  тепловой пункт</button>
+                <button class="link-beauty">Рассчитать тепловой пункт</button>
               </div>
               <div class="introgrid__feat" style="flex: 0 0 570px; position: relative;">
                 <ul class="table-grid">
@@ -140,19 +144,37 @@
       <section>
         <div  class="btp-shemes-section">
           <h2 class="bem__section-title section-title_schemes" style="margin-top: 80px;">Схемы комплектации тепловых пунктов</h2>
-          <p class="bem__paragraph bem__paragraph_readable" style="font-size: 16px;">
+          <p class="bem__paragraph bem__paragraph_readable" style="font-size: var(--cell-description-font);">
             Мы предлагаем блочные тепловые пункты, изготавливаемые в соответствии с типовыми схемами
             комплектации. В
             зависимости от используемого оборудования, а также от конкретных условий эксплуатации, возможно добавление в тепловой
-            пункт дополнительных элементов. Внесение изменений в схему БТП под требования заказчика допускается.  К примеру, может быть добавлен резервный насос или резервный теплообменник.
+            пункт дополнительных элементов. Внесение изменений в схему теплового узла под требования заказчика допускается.  К примеру, может быть добавлен резервный насос или резервный теплообменник.
           </p>
           <ul class="btp-schemes__pagination-container bem__list">
-            <li class="btp-schemes__bullet btp-schemes__bullet_active">Узел ввода</li>
-            <li class="btp-schemes__bullet">Зависимое отоппление</li>
-            <li class="btp-schemes__bullet">Зависимое отоппление</li>
-            <li class="btp-schemes__bullet">Зависимое отоппление</li>
-            <li class="btp-schemes__bullet">Зависимое отоппление</li>
-            <li class="btp-schemes__bullet">Зависимое отоппление</li>
+            <li class="btp-schemes__bullet btp-schemes__bullet_active" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Узел ввода и учета тепловой энергии</h3>
+              <p class="btp-schemes__bullet-desc">Узел ввода</p>
+            </li>
+            <li class="btp-schemes__bullet" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Узел на отопление зависимое</h3>
+              <p class="btp-schemes__bullet-desc">Зависимая схема подключения отопления</p>
+            </li>
+            <li class="btp-schemes__bullet" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Узел отопления с независимой схемой подключения</h3>
+              <p class="btp-schemes__bullet-desc">Независимое отопление</p>
+            </li>
+            <li class="btp-schemes__bullet" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Тепловой узел горячего водоснабжения с одноступенчатым теплообменником гвс</h3>
+              <p class="btp-schemes__bullet-desc">Одноступенчатое ГВС</p>
+            </li>
+            <li class="btp-schemes__bullet" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Узел ГВС с моноблоком</h3>
+              <p class="btp-schemes__bullet-desc">Двухступенчатое ГВС моноблок</p>
+            </li>
+            <li class="btp-schemes__bullet" tabindex="0">
+              <h3 class="btp-schemes__bullet-title">Узел ГВС с двухступенчатой схемой подключения</h3>
+              <p class="btp-schemes__bullet-desc">Двухступенчатое ГВС с двумя теплообменниками</p>
+            </li>
           </ul>
           <div class="btp-schemes">
             <div class="swiper-wrapper">
@@ -178,58 +200,73 @@
           </div>
       </div>
     </section>
-    <section>
-      <h2 class="bem__section-title">Типы блочных тепловые пункты</h2>
-          <p class="bem__paragraph">Блочные тепловые пункты можно разделить по назначению</p>
-          <ul class="bem__list">
-            <li>для отопления</li>
-            <li>для гвс</li>
-            <li>для вентиляции</li>
-            <li>узлы ввода и учета (уутэ)</li>
-          </ul>
-    </section>
-      <section class="btp-presentation" style="background-color: #f2f2f210; margin-top: 50px;display: flex;flex-direction: column;align-items: flex-start; padding-bottom: 70px;">
+    <div class="techniques__after" style="height: 3px; margin: 60px 0;">
 
-        <!--<div class="oakley" >-->
-          <div class="two-columns">
-            <h2 class="two-columns__brief two-columns__brief_uppercase">БТП "Термоблок"</h2>
-            <div class="two-columns__main-text">
-              <p class="two-columns__paragraph">Блочные тепловые пункты изготавливаются на базе производственных мощностей компании <span class="span-no-wrap">ООО "Термоблок"</span>. Являясь непосредственным производителем пластинчатых теплообменников <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™ </span> , мы обладаем большим опытом производства теплообменного оборудования и установок.</p>
-              <p class="two-columns__paragraph">Блоки теплового пункта смонтированы на раме и укомплектованы всеми необходимыми комплектующими. Производство БТП - одно из приоритетных направлений деятельности завода.</p>
-            </div>
+    </div>
+    <section class="bem__section">
+      <div class="bem__section-wrapper">
+      <h2 class="bem__section-title section-title_schemes">Примеры блочных тепловых пунктов</h2>
+        <p class="bem__paragraph">Блочные тепловые пункты можно разделить по назначению</p>
+        <ul class="bem__list bem__filter-list" style="margin-bottom: 20px;">
+          <li class="bem__filter-list-item">для отопления</li>
+          <li class="bem__filter-list-item">для гвс</li>
+          <li class="bem__filter-list-item">для вентиляции</li>
+          <li class="bem__filter-list-item">узлы ввода и учета (уутэ)</li>
+        </ul>
+
+        <ul class="bem__list" style="font-size: var(--cell-description-font);">
+          <% btps.forEach(function(item) { %>
+            <li class="bem__list-item"><a class="bem__link link-beauty" href="<%-item.link%>"><%-item.name%></a></li>
+          <% }); %>
+        </ul>
+      </div>
+    </section>
+    <section class="btp-presentation" style="background-color: #f2f2f210; margin-top: 50px;display: flex;flex-direction: column;align-items: flex-start; padding-bottom: 70px;border-bottom: 2px solid #2f2f2f; border-top: 2px solid #2f2f2f">
+      <!--<div class="oakley" >-->
+        <div class="two-columns">
+          <h2 class="two-columns__brief two-columns__brief_uppercase">БТП "Термоблок"</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">Блочные тепловые пункты изготавливаются на базе производственных мощностей компании
+              <span class="span-no-wrap">ООО "Термоблок"</span>. Являясь непосредственным производителем пластинчатых
+              теплообменников <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>"
+                  style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™ </span> , мы обладаем большим опытом
+              производства теплообменного оборудования и установок.</p>
+            <p class="two-columns__paragraph">Блоки теплового пункта смонтированы на раме и укомплектованы всеми необходимыми
+              комплектующими. Все узлы и соединения тепловых пунктов выполнены в заводских условиях с использованием высококачественных материалов, обеспечивающих максимальную надежность работы оборудования. Производство БТП - одно из приоритетных направлений деятельности завода.</p>
           </div>
-        <!--</div>-->
-        <div class="btp-adv">
-          <div class="btp-adv__feats">
-            <img src="<%=require('./images/btp_page_btp.png')%>" alt="Преимущества блочных тепловых пунктов заводского производства" class="btp-adv__image">
-            <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay=".5s" data-wow-duration="3s">
-              <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay=".5s" data-wow-duration="3s">Теплообменник собственного производства</p>
-            </div>
-            <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay="1.5s" data-wow-duration="3s">
-              <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay="1.5s"  data-wow-duration="3s">Квалифицированный подбор оборудования на обвязку</p>
-            </div>
-            <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay="2s" data-wow-duration="3s"">
-              <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay="2s"  data-wow-duration="3s">Заводские испытания теплового пункта</p>
-            </div>
-          </div>
-          <button class="btp-adv__link link-beauty">Рассчитать <span class="span-no-wrap">стоимость  &#8594;</span></button>
         </div>
-        <form class="lineform lineform_page_btp" method="post" action="#" id="lineformBtp" name="lineformBtp" novalidate>
-          <h2 class="lineform__heading">Проконсультироваться с инженером</h2>
-          <p class="lineform__description wow fadeInRight">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
-          <div class="lineform__line">
-            <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_margo lineform__input_type_name " id="name-input" name="name" placeholder="Имя" minlength="2" maxlength="30" type="text" required  />
-              <span class="lineform__input-error name-input-error"></span>
-            </div>
-            <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_margo lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
-              <span class="lineform__input-error tel-input-error"></span>
-            </div>
-            <button class="lineform__button-save button-bem lineform__button-save_type_callback" type="submit">Оставить заявку</button>
+      <!--</div>-->
+      <div class="btp-adv">
+        <div class="btp-adv__feats">
+          <img src="<%=require('./images/btp_page_btp.png')%>" alt="Преимущества блочных тепловых пунктов заводского производства" class="btp-adv__image">
+          <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay=".5s" data-wow-duration="3s">
+            <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay=".5s" data-wow-duration="3s">Теплообменник собственного производства</p>
           </div>
-        </form>
-      </section>
+          <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay="1.5s" data-wow-duration="3s">
+            <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay="1.5s"  data-wow-duration="3s">Квалифицированный подбор оборудования на обвязку</p>
+          </div>
+          <div class="btp-adv__plus wow" data-wow-offset="200" data-wow-delay="2s" data-wow-duration="3s"">
+            <p class="btp-adv__feat wow" data-wow-offset="200" data-wow-delay="2s"  data-wow-duration="3s">Заводские испытания теплового пункта</p>
+          </div>
+        </div>
+        <button class="btp-adv__link link-beauty">Рассчитать <span class="span-no-wrap">стоимость  &#8594;</span></button>
+      </div>
+      <form class="lineform lineform_page_btp" method="post" action="#" id="lineformBtp" name="lineformBtp" novalidate>
+        <h3 class="lineform__heading">Проконсультироваться с инженером</h3>
+        <p class="lineform__description wow fadeInRight">Инженер завода по подбору блочных индивидуальных тепловых свяжется с Вами в кратчайшее время</p>
+        <div class="lineform__line">
+          <div class="lineform__field">
+            <input class="lineform__input lineform__input_type_margo lineform__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
+            <span class="lineform__input-error name-input-error"></span>
+          </div>
+          <div class="lineform__field">
+            <input class="lineform__input lineform__input_type_margo lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+            <span class="lineform__input-error tel-input-error"></span>
+          </div>
+          <button class="lineform__button-save button-bem lineform__button-save_type_callback" type="submit">Оставить заявку</button>
+        </div>
+      </form>
+    </section>
 
 
 
@@ -253,7 +290,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div style="background-color: #f2f2f210; padding: 50px 0;">
+      <div style=" padding: 20px 0;">
       <ul class="secondgridbtp__list">
         <li class="table__cell table__cell_type_grid">
           <h3 class="table__heading table__heading_page_btp">Оперативный расчёт</h3>
@@ -275,6 +312,14 @@
           <h3 class="table__heading table__heading_page_btp">Разработка персонализированной панели управления БТП</h3>
           <p class="table__text table__text_page_btp">Мы предлагаем гибкие ценовые условия на БТП за счет оптимальной стоимости теплообменника собственного производства со скидкой в совокупности с опотовыми поставками доп. оборудованиия.</p>
         </li>
+        <li>
+          <h3 class="table__heading table__heading_page_btp">Для подбора блочного теплового пункта Вы можете</h3>
+          <ul class="bem__list" style="font-size: var(--cell-description-font); margin-top: 1em;">
+            <li class="bem__list-item popup-mini wow animate__slideInUp link-beauty" data-wow-duration="1s" data-wow-delay=".4s" style="color: #f2f2f2; cursor:pointer;">Проконсультироваться с инженером</li>
+            <li class="bem__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s"><a class="bem__link link-beauty" href="/docu/Oprosnii_list_podbora_teplovogo_punkta.doc" download>Скачать опросный лист <span class="span-mobile-hidden">на тепловой пункт</span></a></li>
+            <li class="bem__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s"><a class="bem__link link-beauty" href="/equipment-selection">Подобрать <span class="span-no-wrap">теплообменник ↗</span></a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     </section>
@@ -293,13 +338,13 @@
         </div>
 
     </section>
-    <div class="up-footer up-footer_bg_none ">
+    <!--<div class="up-footer up-footer_bg_none ">
       <ul class="up-footer__list">
         <li class="up-footer__list-item popup-mini wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Проконсультироваться с инженером</li>
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teplovogo_punkta.doc" download>Скачать опросный лист <span class="span-mobile-hidden">на тепловой пункт</span></a></li>
         <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s"><a class="up-footer__link" href="/equipment-selection">Подобрать <span class="span-no-wrap">теплообменник ↗</span></a></li>
       </ul>
-    </div>
+    </div>-->
   </main>
   <%= require('html-loader!./insets/asides/inner-footer.html').default %>
   <%= require('html-loader!./insets/popup-mini-form.html').default %>

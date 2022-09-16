@@ -5,13 +5,19 @@
 .bpou {
   display: flex;
   max-width: 1600px;
-  margin: 0 auto;
+
   justify-content: space-between;
 
   position: relative;
-  margin-bottom: 50px; /*временно*/
+  margin: 40px auto 20px;
   /*margin-top: 140px;
   padding-bottom: 20px; временно*/
+  padding: 0px calc((1600px - 80%) / 2);
+  box-sizing: border-box;
+  background-color: #f2f2f214;
+  border-radius: 20px;
+  border: 1px solid #1f1f1f;
+  box-shadow: 1px 2px 1px rgb(0 0 0 / 22%);
 }
 
 .bpou__wrapper {
@@ -22,21 +28,21 @@
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     width: 55%;
     height: 2px;
     background-color: rgba(255, 108, 50, 0.774);
 }
-/*
+
 .bpou::after {
     content: '';
     position: absolute;
     bottom: 0%;
-    left: 0;
+    left: 10px;
     width: 60%;
     height: 2px;
     background-color: rgba(255, 108, 50, 0.42);
-}*/
+}
 @media screen and (max-width: 1640px) {
   .bpou {
     max-width: calc(100% - 40px);

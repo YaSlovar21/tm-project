@@ -2,12 +2,12 @@
 }
 
 .secondgridbtp__title {
-  margin: 0;
+  margin: 50px auto 10px;
   padding: 20px 0;
-  text-align: center;
+  max-width: 80%;
   color: #f2f2f2;
-  background-color: #f2f2f210;
-  border-top: 2px solid #f2f2f22d;
+  /*background-color: #f2f2f210;
+  border-top: 2px solid #f2f2f22d;*/
 }
 
 @media screen and (max-width: 768px) {
@@ -21,8 +21,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
-  max-width: 1600px;
-  margin: 40px auto;
+  max-width: 80%;
+  margin: 0px auto 40px;
   padding: 0;
   list-style-type: none;
 }

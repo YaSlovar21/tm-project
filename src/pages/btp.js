@@ -103,32 +103,39 @@ var mySwiper1 = new Swiper('.btp-schemes', {
   // If we need pagination
   pagination: {
     type: 'bullets',
-    /*el: '.btp-schemes__pagination-container',*/
+    el: '.btp-schemes__pagination-container',
     clickable: true,
-    /*bulletClass: 'btp-schemes__bullet',
+    bulletClass: 'btp-schemes__bullet',
     bulletActiveClass: 'btp-schemes__bullet_active',
-    /*renderBullet: function (index, className) {
+    renderBullet: function (index, className) {
         let a = '';
+        let b = '';
         if (index==0) {
-          a = 'Блочный тепловой пункт УУТЭ (узел ввода и учета тепловой энергии)'
+          a = 'Узел ввода и учета тепловой энергии';
+          b = 'Узел ввода';
         }
         if (index==1) {
-          a = 'Блочный тепловой пункт на отопление зависимое'
+          a = 'Узел на отопление зависимое';
+          b = 'Зависимая схема подключения отопления';
         }
         if (index==2) {
-          a = 'Независимое отопление'
+          a = 'Узел отопления с независимой схемой подключения';
+          b = 'Независимое отопление';
         }
         if (index==3) {
-          a = 'Одноступенчатое ГВС'
+          a = 'Тепловой узел горячего водоснабжения с одноступенчатым теплообменником гвс';
+          b = 'Одноступенчатое ГВС';
         }
         if (index==4) {
-          a = 'Двухступенчатое ГВС моноблок'
+          a = 'Узел ГВС с моноблоком';
+          b = 'Двухступенчатое ГВС моноблок';
         }
         if (index==5) {
-          a = 'Двухступенчатое ГВС с двумя теплообменниками'
+          a = 'Узел ГВС с двухступенчатой схемой подключения';
+          b = 'Двухступенчатое ГВС с двумя теплообменниками';
         }
-        return '<li class= ' + className + '>' + a + '</li>';
-    }*/
+        return '<li class= ' + className + '><h3 class="btp-schemes__bullet-title">' + a + '</h3><p class="btp-schemes__bullet-desc">'+ b+ '</p></li>';
+    }
   },
 
   // Navigation arrows
@@ -160,7 +167,7 @@ import FreqDynamic from '../js/components/FreqDynamic.js';
 
 /*let windowWidth = useWindowSizeTest();*/
 
-const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
+const freqElements = Array.from(document.querySelectorAll('.table__cell_type_grid')).map((element) =>
   new FreqDynamic({
     headingSelector: 'table__heading',
     descSelector: 'table__text',
