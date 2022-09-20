@@ -1,0 +1,13 @@
+.bem__section-wrapper_schemes {
+  max-width: 1600px;
+  padding-left: 30px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .bem__section-wrapper_schemes {
+    padding: 0;
+    max-width: 95%;
+  }
+}

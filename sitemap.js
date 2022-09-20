@@ -27,7 +27,7 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/blochnye-teplovye-punkty.html',
+      path: '/blochnye-teplovye-punkty/',
       lastmod: dateNow,
       priority: 1,
       changefreq: 'monthly'
@@ -338,4 +338,126 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
+    /* ГЕНЕРАЦИЯ MACE */
+    {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-102-кВт-вентиляция.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-122-кВт-вентиляция.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-1289-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-130-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-137-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-1695-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-1695-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-1752-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-20-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-207-кВт-вентиляция.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-2352-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-2352-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-275-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-276-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-337-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-436-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-462-кВт-гвс-горячее-водоснабжение.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-520-кВт-гвс-горячее-водоснабжение.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-61-кВт-на-отопление.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     {
+      path: '/blochnye-teplovye-punkty/Блочный-тепловой-пункт-788-кВт-узел-ввода.pdf',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+      },
+     
 ];

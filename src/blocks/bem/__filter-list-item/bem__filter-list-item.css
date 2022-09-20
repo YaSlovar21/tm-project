@@ -10,9 +10,9 @@
   cursor: pointer;
 }
 
-.bem__filter-list-item:last-of-type {
+/*.bem__filter-list-item:last-of-type {
   margin-right: 0;
-}
+}*/
 
 .bem__filter-list-item_active {
   color: var(--main-equivalent-color);

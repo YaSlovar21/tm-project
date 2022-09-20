@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+  <link href="<%= canonicalURL %>/blochnye-teplovye-punkty/"  rel="canonical" />
   <style>
     .swiper-container {
       width: 100%;
@@ -55,6 +55,11 @@
     }
     .btp-big-swiper .swiper-wrapper {
       align-items: flex-end;
+    }
+    @media screen and (max-width: 1640px) {
+      .btp-big-swiper {
+          max-width: calc(100% - 40px);
+      }
     }
   </style>
 </head>
@@ -142,7 +147,7 @@
         <div class="techniques__after_before wow" data-wow-offset="100"></div>
       </div>
       <section>
-        <div  class="btp-shemes-section">
+        <div class="bem__section-wrapper bem__section-wrapper_schemes">
           <h2 class="bem__section-title section-title_schemes" style="margin-top: 80px;">Схемы комплектации тепловых пунктов</h2>
           <p class="bem__paragraph bem__paragraph_readable" style="font-size: var(--cell-description-font);">
             Мы предлагаем блочные тепловые пункты, изготавливаемые в соответствии с типовыми схемами
@@ -150,6 +155,8 @@
             зависимости от используемого оборудования, а также от конкретных условий эксплуатации, возможно добавление в тепловой
             пункт дополнительных элементов. Внесение изменений в схему теплового узла под требования заказчика допускается.  К примеру, может быть добавлен резервный насос или резервный теплообменник.
           </p>
+        </div>
+          <div  class="btp-shemes-section">
           <ul class="btp-schemes__pagination-container bem__list">
             <li class="btp-schemes__bullet btp-schemes__bullet_active" tabindex="0">
               <h3 class="btp-schemes__bullet-title">Узел ввода и учета тепловой энергии</h3>
@@ -206,7 +213,7 @@
     <section class="bem__section">
       <div class="bem__section-wrapper">
       <h2 class="bem__section-title section-title_schemes">Примеры блочных тепловых пунктов</h2>
-        <p class="bem__paragraph">Блочные тепловые пункты можно разделить по назначению</p>
+        <p class="bem__paragraph" style="font-size: var(--cell-description-font);">Блочные тепловые пункты можно разделить по назначению</p>
         <ul class="bem__list bem__filter-list" style="margin-bottom: 20px;">
           <li class="bem__filter-list-item">для отопления</li>
           <li class="bem__filter-list-item">для гвс</li>
@@ -216,7 +223,7 @@
 
         <ul class="bem__list" style="font-size: var(--cell-description-font);">
           <% btps.forEach(function(item) { %>
-            <li class="bem__list-item"><a class="bem__link link-beauty" href="<%-item.link%>"><%-item.name%></a></li>
+            <li class="bem__list-item"><a class="bem__link link-beauty" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
           <% }); %>
         </ul>
       </div>
@@ -298,7 +305,8 @@
         </li>
         <li class="table__cell table__cell_type_grid">
             <h3 class="table__heading table__heading_page_btp">Выгодная цена</h3>
-            <p class="table__text table__text_page_btp">Мы предлагаем гибкие ценовые условия на БТП за счет оптимальной стоимости теплообменника собственного производства со скидкой в совокупности с опотовыми поставками доп. оборудованиия.</p>
+            <p class="table__text table__text_page_btp">Мы предлагаем гибкие ценовые условия на БТП за счет оптимальной стоимости
+              теплообменника собственного производства со скидкой в совокупности с опотовыми поставками доп. оборудованиия.</p>
         </li>
         <li class="table__cell table__cell_type_grid">
             <h3 class="table__heading table__heading_page_btp">Срок изготовления</h3>
@@ -310,7 +318,7 @@
         </li>
         <li class="table__cell table__cell_type_grid">
           <h3 class="table__heading table__heading_page_btp">Разработка персонализированной панели управления БТП</h3>
-          <p class="table__text table__text_page_btp">Мы предлагаем гибкие ценовые условия на БТП за счет оптимальной стоимости теплообменника собственного производства со скидкой в совокупности с опотовыми поставками доп. оборудованиия.</p>
+          <p class="table__text table__text_page_btp">По желанию заказчика возможна разработка интерфейса панели управления, выведенной на шкаф управления теплового пункта.</p>
         </li>
         <li>
           <h3 class="table__heading table__heading_page_btp">Для подбора блочного теплового пункта Вы можете</h3>

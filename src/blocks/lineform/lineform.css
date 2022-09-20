@@ -12,6 +12,7 @@
   background-color: #b5b5b50f;
   border: 1px solid #2f2f2f;
   box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+  box-sizing: border-box;
 }
 
 .lineform_page_pou {
@@ -21,5 +22,6 @@
 @media screen and (max-width: 1440px) {
   .lineform_page_btp {
     max-width: 95%;
+    padding: 30px;
   }
 }

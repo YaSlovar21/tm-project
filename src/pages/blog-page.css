@@ -62,6 +62,7 @@
 
 @import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
 @import url(../blocks/info/__paragraph-title/_sub/info__paragraph-title_sub.css);
+@import url(../blocks/info/__paragraph-title/_alt-color/info__paragraph-title_alt-color.css);
 
 @import url(../blocks/info/__link-in-text/info__link-in-text.css);
 @import url(../blocks/info/__link-in-text/_button/info__link-in-text_button.css);

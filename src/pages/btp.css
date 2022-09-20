@@ -26,6 +26,8 @@
 @import url(../blocks/bem/__section/bem__section.css);
 @import url(../blocks/bem/__section-wrapper/bem__section-wrapper.css);
 @import url(../blocks/bem/__section-wrapper/_fixed/bem__section-wrapper_fixed.css);
+@import url(../blocks/bem/__section-wrapper/_schemes/bem__section-wrapper_schemes.css);
+
 @import url(../blocks/bem/__list/bem__list.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
 
@@ -39,6 +41,8 @@
 @import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
 @import url(../blocks/bem/__paragraph/bem__paragraph.css);
 @import url(../blocks/bem/__section-title/bem__section-title.css);
+
+
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);

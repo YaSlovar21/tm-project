@@ -10,6 +10,11 @@
   border-top: 2px solid #f2f2f22d;*/
 }
 
+@media screen and (max-width: 1640px) {
+  .secondgridbtp__title {
+    max-width: calc(100% - 120px);
+  }
+}
 @media screen and (max-width: 768px) {
   .secondgridbtp__title {
     font-size: 16px;
@@ -29,7 +34,7 @@
 
 @media screen and (max-width: 1640px) {
   .secondgridbtp__list {
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 120px);
   }
 }
 

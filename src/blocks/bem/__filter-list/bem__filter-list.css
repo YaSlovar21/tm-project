@@ -1,3 +1,9 @@
 .bem__filter-list {
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .bem__filter-list {
+    flex-direction: column;
+  }
+}

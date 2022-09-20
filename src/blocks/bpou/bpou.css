@@ -46,6 +46,7 @@
 @media screen and (max-width: 1640px) {
   .bpou {
     max-width: calc(100% - 40px);
+    padding: 0 40px;
   }/*
   .bpou::after {
     left: -20px;
@@ -58,7 +59,7 @@
 @media screen and (max-width: 768px) {
   .bpou {
     flex-direction: column-reverse;
-    max-height: 600px;
+    max-height: auto;
   }
 }
 
@@ -80,4 +81,14 @@
     bottom: 10%;
     object-fit: contain;
     object-position: right;
+}
+
+@media screen and (max-width: 768px) {
+  .bpou__image-container {
+    min-height: auto;
+    flex-basis: auto;
+  }
+  .bpou__info {
+    flex-basis: auto;
+  }
 }

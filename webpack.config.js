@@ -360,7 +360,7 @@ module.exports = {
         articleFile: "pto-otop.html",
         relevanceArticles: [
           {
-            name: "Теплообменник для отопления 5 мвт для котельной",
+            name: "Пластинчатый теплообменник для отопления 5 мвт для котельной",
             link: "/blog-proizvodstva/teploobmennik-5-mvt-object-spb.html",
           },
           {
@@ -368,7 +368,7 @@ module.exports = {
             link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html",
           },
           {
-            name: "Теплообменник системы отопления в итп многоквартирного дома",
+            name: "Пластинчатые теплообменники в системе отопления итп многоквартирного дома",
             link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html",
           },
         ],
@@ -393,6 +393,16 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "pto-gvs.html",
+        relevanceArticles: [
+          {
+            name: "Теплобоменник для ГВС 3,5 гкал/ч (г. Тимашевск)",
+            link: "/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html"
+          },
+          {
+            name: "Теплобоменник ГВС (моноблок) в итп умного дома (г. Уфа)",
+            link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html"
+          }
+        ]
       },
       title:
         "Пластинчатые теплообменники горячего водоснабжения ГВС | Принцип работы разборного теплообменника | Моноблоки ГВС",
@@ -949,7 +959,7 @@ module.exports = {
       chunks: ["ti", "all"],
     }),
     new HtmlWebpackPlugin({
-      title: "Теплообменник П65 пищевой пластинчатый разборный",
+      title: "Теплообменник П82 пищевой пластинчатый разборный",
       template: "./src/ti-xx-xx.html", // шаблон
       filename: "catalog/p-82.html",
       templateParameters: {
