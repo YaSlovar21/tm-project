@@ -322,6 +322,10 @@ module.exports = {
         articleFile: "pto-otop.html",
         relevanceArticles: [
           {
+            name: "Теплобоменник для отопления частного дома",
+            link: "/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html"
+          },
+          {
             name: "Пластинчатый теплообменник для отопления 5 мвт для котельной",
             link: "/blog-proizvodstva/teploobmennik-5-mvt-object-spb.html",
           },
@@ -363,7 +367,7 @@ module.exports = {
           {
             name: "Теплобоменник ГВС (моноблок) в итп умного дома (г. Уфа)",
             link: "/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html"
-          }
+          },
         ]
       },
       title:
@@ -583,6 +587,48 @@ module.exports = {
       filename: "blog-proizvodstva/plastinchatii-teploobmennik-du-250.html",
       chunks: ["blogPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "du-250-gazeta.html",
+        relevanceArticles: [
+          {
+            name: "Теплобоменник пластинчатый ДУ250",
+            link: "/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html"
+          },
+        ],
+      },
+      title:
+        "О самых больших пластинчатых теплообменниках в газете Красная Звезда",
+      heading: "Статья в газете Красная звезда",
+      meta: {
+        keywords: "статья про пластинчатые теплообменники",
+        description:
+          "Статья про импортозамещение пластинчатых теплообменников на территории России. Теплообменники ДУ 250 на базе пластины собственного производства для предприятия Липецкой экономической зоны.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmennik-du-250-v-gazete.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "pto-otop-private-house.html",
+      },
+      title:
+        "Теплообменники для отопления частого дома | Как выбрать",
+      heading: "Теплообменник отопления частного дома",
+      meta: {
+        keywords: "теплообменник для частного дома",
+        description:
+          "Теплообменник системы отопления частного дома: как устроен, конструкция, особенности выбора. Расчёт теплообменника коттеджа или частного дома.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
     /*---------КАТАЛОГ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -703,7 +749,7 @@ module.exports = {
         headingAlias: "ТИ45",
         description: `ТИ45 – имеет подключения подтрубков: ДУ100, ДУ125. 
           `,
-        link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+        link3d: "https://disk.yandex.ru/d/xl08RXlp73-Bzw",
       },
       chunks: ["ti", "all"],
     }) /*--8-------ТИ52-----------*/,
@@ -719,7 +765,7 @@ module.exports = {
         description: `ТИ52 – имеет подключение ДУ150.
         Применение: промышленные заводы, центральные тепловые пункты (ЦТП), центральные котельные. 
         Масштаб обогрева - микрорайоны, большие торговые и бизнес центры (крупной квадратуры от 15 000 квадратных метров и более)`,
-        link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+        link3d: "https://disk.yandex.ru/d/PV1ctuxUcru8nA",
       },
       chunks: ["ti", "all"],
     }) /*--9-------ТИ65-----------*/,
@@ -734,7 +780,7 @@ module.exports = {
         headingAlias: "ТИ65",
         description: `ТИ65 – имеет подключения подтрубков: ДУ100, ДУ125. 
           `,
-        link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+        link3d: "https://disk.yandex.ru/d/1c62zYE1I9yvyA",
       },
       chunks: ["ti", "all"],
     }) /*-10-------ТИ82-----------*/,
@@ -750,7 +796,7 @@ module.exports = {
         description: `ТИ82 – имеет подключение ДУ150. В отличие от ТИ52 имеет более удлиненную пластину, что позволяет удерживать больший перепад температур.
           Применение аналогичное ТИ52: промышленные заводы, центральные тепловые пункты (ЦТП), котельные микрорайонов. 
           Зачастую применяется также в больших торговых и бизнес центрах (крупной квадратуры от 15 000 квадратных метров и более).`,
-        link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
+        link3d: "https://disk.yandex.ru/d/p4EH75u--S1Dzg",
       },
       chunks: ["ti", "all"],
     }) /*-11-------ТИ95-----------*/,

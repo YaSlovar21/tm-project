@@ -104,15 +104,27 @@ export const initialArticles = [
   },
   {
     tags: ['gkh'],
-    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
-    heading: 'Преимущества пластинчатых теплообменников',
-    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
+    linkPath: `/${blogPath}/teploobmenniki-otopleniya-chastnogo-doma.html`,
+    heading: 'Теплообменник для отопления частного дома',
+    description: 'Особенности пластинчатых теплообменников при использовании в частных домах',
   },
   {
     tags: ['gkh', 'prod'],
     linkPath: `/${blogPath}/plastinchatii-teploobmennik-du-250.html`,
     heading: 'Пластинчатый теплообменник ДУ250',
     description: 'О процессе разработки пластин и уплотнений, запуске в производство нового теплобоменника',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-du-250-v-gazete.html`,
+    heading: 'Новые теплообменники упомянули в газете',
+    description: 'Статья в газете об отгрузке теплообменников ДУ250 в особую энономическую зону Липецк',
+  },
+  {
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
+    heading: 'Преимущества пластинчатых теплообменников',
+    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
   },
   {
     tags: ['gkh', 'project'],

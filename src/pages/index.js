@@ -29,6 +29,8 @@ import '../userfiles/termoblok_catalog.pdf';
 import '../userfiles/btp-certificate.pdf';
 import '../userfiles/Rekviziti_OOO_Termoblok.doc';
 import '../userfiles/Plastinchatye_ohladiteli_ool_sssr.pdf';
+import '../userfiles/Termoblok_Sout.pdf';
+
 
 import '../btp-examples/Блочный-тепловой-пункт-102-кВт-вентиляция.pdf';
 import '../btp-examples/Блочный-тепловой-пункт-122-кВт-вентиляция.pdf';
