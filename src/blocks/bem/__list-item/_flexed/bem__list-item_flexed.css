@@ -1,0 +1,12 @@
+.bem__list-item_flexed {
+  position: relative;
+  padding-left: 2em;
+}
+
+.bem__list-item_flexed::before {
+  content: '↳';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--main-equivalent-color);
+}

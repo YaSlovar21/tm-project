@@ -576,7 +576,7 @@ module.exports = {
         articleFile: "du-250-tech.html",
       },
       title:
-        "Пластинчатый теплообменник ДУ250 | Разработка и внедрение в производство нового теплообменника",
+        "Пластинчатый теплообменник ДУ250 | Внедрение в производство нового теплообменника",
       heading: "Пластинчатый теплообменник ДУ250",
       meta: {
         keywords: "теплообменник пластинчатый ду250",
@@ -627,6 +627,24 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "pto-oprosnii.html",
+      },
+      title:
+        "Опросный лист для теплообменника пластинчатого | Скачать",
+      heading: "Опросный лист для подбора",
+      meta: {
+        keywords: "опросный лист на пластинчатый теплообменник",
+        description:
+          "Скачать опросный лист для подбора пластинчатого теплообменника. Какие данные необходимо указать в опросном листе?",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html",
       chunks: ["blogPage", "all", "map"],
     }),
     /*---------КАТАЛОГ----------- */

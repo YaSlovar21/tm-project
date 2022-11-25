@@ -38,6 +38,7 @@
 @import url(../blocks/bem/__list/bem__list.css);
 @import url(../blocks/bem/__list-heading/bem__list-heading.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
+@import url(../blocks/bem/__list-item/_flexed/bem__list-item_flexed.css);
 
 @import url(../blocks/bem/__list/_page_main/bem__list_page_main.css);
 
