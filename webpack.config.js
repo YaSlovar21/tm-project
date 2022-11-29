@@ -186,7 +186,7 @@ module.exports = {
     }) /*---------ПРОДУКЦИЯ----------- */,
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL, },
-      title: "Производство теплообменого оборудования, пластинчатых теплообменников, тепловых пунктов",
+      title: "Производство теплообменого оборудования и установок. Продукция завода.",
       meta: {
         keywords: "производство теплообменного оборудования",
         description: "Отечественный производитель теплообменного оборудования. Изготовление пластинчатых теплообменников, тепловых пунктов.",
@@ -195,22 +195,8 @@ module.exports = {
       filename: "production.html",
       chunks: ["production", "all"],
       inject: true,
-    }) /*---------ПРИМЕР РАСЧЁТА----------- */,
-    new HtmlWebpackPlugin({
-      templateParameters: {
-        canonicalURL,
-      },
-      title: "Пример расчёта",
-      meta: {
-        keywords: "производство теплообменного оборудования",
-        description:
-          "Произовдство теплообменного оборудования: пластинчатые теплообменники, готовые решения на базе теплообменников собственного производства. Изготовим оборудование под Ваши требования",
-      },
-      template: "./src/example.html",
-      filename: "example.html",
-      chunks: ["production", "all"],
-      inject: true,
     }),
+    
     /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL, },
@@ -227,7 +213,7 @@ module.exports = {
       templateParameters: {
         canonicalURL: canonicalURL,
       },
-      title: "Пищевые теплообменники | Теплообменники для пищевой промышленности | В пищевом исполнении",
+      title: "Пищевые теплообменники | Теплообменники для пищевой промышленности",
       meta: {
         keywords: "пищевые теплообменники, пластинчатые пищевые теплообменники",
         description: "Полная локализация производства пищевых пластичнатых теплообменников для различных сфер пищевой промышленности под самые сложные технологические процессы.",
@@ -340,7 +326,7 @@ module.exports = {
         ],
       },
       title:
-        "Пластинчатые теплообменники отопления | Принцип работы | Как подобрать теплообменник для отопления",
+        "Пластинчатые теплообменники отопления | Подобрать теплообменник для отопления",
       heading: "Теплообменники для отопления",
       meta: {
         keywords:
@@ -371,7 +357,7 @@ module.exports = {
         ]
       },
       title:
-        "Пластинчатые теплообменники горячего водоснабжения ГВС | Принцип работы разборного теплообменника | Моноблоки ГВС",
+        "Пластинчатые теплообменники горячего водоснабжения ГВС | Моноблоки ГВС",
       heading: "Пластинчатые теплообменники горячего водоснабжения",
       meta: {
         keywords: "теплообменники гвс, пластинчатые теплообменники гвс",
@@ -618,7 +604,7 @@ module.exports = {
         articleFile: "pto-otop-private-house.html",
       },
       title:
-        "Теплообменники для отопления частого дома | Как выбрать",
+        "Теплообменники для отопления частного дома | Как выбрать",
       heading: "Теплообменник отопления частного дома",
       meta: {
         keywords: "теплообменник для частного дома",
@@ -633,7 +619,7 @@ module.exports = {
       templateParameters: {
         canonicalURL: canonicalURL,
         isGkh: true,
-        articleFile: "pto-oprosnii.html",
+        articleFile: "_pto-oprosnii.html",
       },
       title:
         "Опросный лист для теплообменника пластинчатого | Скачать",
@@ -645,6 +631,42 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "_plastina.html",
+      },
+      title:
+        "Пластина пластинчатого теплообменника",
+      heading: "Пластина пластинчатого теплообменника",
+      meta: {
+        keywords: "пластина пластинчатого теплообменника",
+        description:
+          "Конструктивные особенности пластины пластинчатого теплообменника. Эффективность пластины. Теплообмен.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/plastina-plastinchatogo-teploobmennika.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "_pool.html",
+      },
+      title:
+        "Теплообменник на бассейн",
+      heading: "Пластинчатый теплообменник подогрева бассейна",
+      meta: {
+        keywords: "теплообменник бассейн, пластинчатый теплообменник бассейн",
+        description:
+          "Пример расчёта и особенности использования теплообменника на бассейне.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmennik-dlya-bassejna.html",
       chunks: ["blogPage", "all", "map"],
     }),
     /*---------КАТАЛОГ----------- */

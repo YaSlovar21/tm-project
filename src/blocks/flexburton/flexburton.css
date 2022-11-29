@@ -10,6 +10,7 @@
 
 .flexburton_test {
   background-color: #2f2f2f67;
+  background-color: #1817178a;
   padding: 30px;
   margin-top: 30px;
 }
@@ -23,6 +24,7 @@
 /*наши фирменные соты*/
 .flexburton_static-bg {
   background: #2f2f2f67 url(../../images/svg-elems/FlexBurtonSVG.svg) no-repeat top right;
+  background: #1817178a url(../../images/svg-elems/FlexBurtonSVG.svg) no-repeat top right;
 }
 
 

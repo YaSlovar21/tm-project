@@ -137,13 +137,19 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
+
     {
       path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'monthly'
     },
-    
+    {
+      path: '/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
     /* статьи - объекты */
     {
       path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
@@ -306,6 +312,12 @@ module.exports.paths = [
       path: '/docu/termoblok_catalog.pdf',
       lastmod: dateNow,
       priority: 0.6,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/docu/Termoblok_Sout.pdf',
+      lastmod: dateNow,
+      priority: 0.5,
       changefreq: 'monthly'
     },
     {
