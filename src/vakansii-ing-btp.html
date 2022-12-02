@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link" href="/about/">О компании</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/about/vakansii/>">Вакансии</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Вакансия инженера конструктора</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">Вакансии на производство, в инженерно-технические отделы завода по проивзодству пластинчатых теплообменников ООО "Термоблок".</p>
+          </div>
+          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+        </div>
+        <div style="max-width: 1170px; margin:40px auto;">
+          <ul class="bem__list info__paragraph info__paragraph_type_list">
+            <li class="bem__list-item">Разработка отдельных проектов для блочных индивидуальных тепловых пунктов, производство расчетов и подбор необходимых для сборки комплектующих</li>
+            <li class="bem__list-item">Создание 3D-моделей, разработка рабочих чертежей, подготовка технической документации и паспорта готового изделия</li>
+            <li class="bem__list-item">Обеспечение соответствия разрабатываемых проектов и технической документации стандартам, техническим условиям и другим нормативным документам по проектированию, а также заданию на их разработку</li>
+            <li class="bem__list-item">Установление порядка выполнения работ и пооперационный маршрут обработки деталей и сборки готовых изделий</li>
+            <li class="bem__list-item">Согласование разработанной документации с подразделениями предприятия</li>
+            <li class="bem__list-item">Авторский надзор за изготовлением разработанных узлов и изделий</li>
+            <li class="bem__list-item">Участие в монтаже и курирование монтажной бригады при монтаже, наладке, испытаниях и сдаче в эксплуатацию опытных образцов, модернизации конструируемых изделий и их элементов</li>
+          </ul>
+          <h2>Требования</h2>
+          <ul class="bem__list">
+            <li class="bem__list-item">Высшее образование (техническое)</li>
+            <li class="bem__list-item">Владение программами AutoCAD, SolidWorks, Компас.</li>
+          </ul>
+          <h2>Мы предлагаем</h2>
+          <ul class="bem__list">
+            <li class="bem__list-item">Официальное трудоустройство‚ полный соц. пакет‚ пятидневная рабочая неделя‚ 8 часовой рабочий день</li>
+            <li class="bem__list-item">З/п 50 000 рублей, выплачивается 2 раза в месяц в строго установленные дни</li>
+            <li class="bem__list-item">Выплачивается компенсация на питание в столовой организации</li>
+            <li class="bem__list-item">Выплачиваются премии и льготы в рамках коллективного договора‚ действующего на предприятии</li>
+          </ul>
+          <p style="padding: 50px 10px; background-color: var(--bg-darker-color); margin: 20px 0;">ООО "Термоблок" - структурное предприятие Барнаульского станкостроительного завода. Быстрорастущее предприятие.</p>
+          <form style="display: flex; flex-direction:column;">
+            <div class="lineform__field">
+              <input class="lineform__input lineform__input_type_margo lineform__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
+              <span class="lineform__input-error name-input-error"></span>
+            </div>
+            <div class="lineform__field">
+              <input class="lineform__input lineform__input_type_margo lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <span class="lineform__input-error tel-input-error"></span>
+            </div>
+            <label class="raschet-bem__field raschet-bem__field_type_textarea">
+              <span class="raschet-bem__label-title">Опишите Вашу задачу</span>
+              <textarea data-alias="Текст заявки" type="text" name="comment-free" id="comment-free-input" style="height: 100%;" class="raschet-bem__input raschet-bem__input_type_flex" required="" minlength="1"></textarea>
+              <span class="raschet-bem__input-error comment-free-input-error"></span>
+            </label>
+            <button class="lineform__button-save button-bem lineform__button-save_type_callback" type="submit">Откликнуться</button>
+          </form>
+        </div>
+      </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
+          <ul class="map__list">
+          </ul>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-big-form.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>

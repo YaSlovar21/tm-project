@@ -4,6 +4,10 @@
   background-color: rgba(47,47,47,.5);
 }
 
+.mainmodels_page_main {
+  background-color: var(--bg-darker-color);
+}
+
 .mainmodels_page_catalog {
   margin-top: 30px;
 }

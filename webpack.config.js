@@ -35,8 +35,10 @@ module.exports = {
     contacts: "./src/pages/contacts.js",
     blogSection: "./src/pages/blog-section.js",
     blogPage: "./src/pages/blog-page.js",
+    blogSpecPage: "./src/pages/blog-spec-page.js",
     equipment: "./src/pages/equipment1.js",
     pou: "./src/pages/pou.js",
+    vakansii: "./src/pages/vakansii.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -200,15 +202,68 @@ module.exports = {
     /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL, },
-      title: "Пластинчатые теплообменники | Производство и продажа | Гарантия на пластичнатый теплообменник | Сферы применения",
+      title: "Пластинчатые теплообменники | Аппараты теплообменные разборные",
       meta: {
         keywords: "пластинчатые теплообменники, пластинчатый теплообменник",
         description: "Пластинчатые теплообменники для различных сфер применения с полной локализацией производства. Пароводяные пластинчатые теплообменники, теплообменники вода-вода, гилколь-вода. Теплообменник пластинчатый изготавливается под требования заказчика. Подберем теплообменник для отопления, гвс и специфических условий.",
       },
       template: "./src/plastinchatye-teploobmenniki.html",
-      filename: "plastinchatye-teploobmenniki.html",
+      filename: "plastinchatye-teploobmenniki/index.html",
       chunks: ["pto", "all", "map"],
-    }) /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */,
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "teploizol.html",
+        relevanceArticles: [],
+      },
+      title: "Теплоизоляция теплообменников, изоляция пластинчатых теплообменников",
+      heading: "Теплоизоляция теплообменников",
+      meta: {
+        keywords: "теплоизоляция теплообменников, изоляция теплообменников",
+        description: "Как подобрать пластинчатый теплообменник для отопления, особенности производства и применения. Онлайн форма для подбора теплообменника системы отопления.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/teploizolyaciya.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "plastina.html",
+        relevanceArticles: [],
+      },
+      title: "Пластины пластинатого теплообменника",
+      heading: "Пластина пластинатого теплообменника",
+      meta: {
+        keywords: "пластина пластинатого теплообменника",
+        description: "Конструктивные особенности пластины пластинчатого теплообменника. Эффективность пластины. Теплообмен.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/plastina-plastinchatogo-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+  new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "uplotnenie.html",
+        relevanceArticles: [],
+      },
+      title: "Уплотнения для теплообменника",
+      heading: "Уплотнение пластинатого теплообменника",
+      meta: {
+        keywords: "уплотнение пластинатого теплообменника",
+        description: "Конструктивные особенности уплотнения пластинчатого теплообменника. Эффективность. Теплообмен.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/uplotnenie-plastinchatogo-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    
+    /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
@@ -265,9 +320,33 @@ module.exports = {
         description: "Производство пластинчатых теплообменников полного цикла. Разработка и производство пластин и уплотнений для пластинчатого теплообменника",
       },
       template: "./src/about.html",
-      filename: "about.html",
+      filename: "about/index.html",
       chunks: ["about", "all", "map"],
-    }) /*---------КОНТАКТЫ----------- */,
+    }),
+    /* ВАКАНСИИ */
+    new HtmlWebpackPlugin({
+      templateParameters: { canonicalURL: canonicalURL, },
+      title: "Вакансии на производство",
+      meta: {
+        keywords: "вакансии барнаул, вакансии инженер",
+        description: "Вакансии завода по производству пластинчатых теплобменных аппаратов",
+      },
+      template: "./src/vakansii.html",
+      filename: "about/vakansii/index.html",
+      chunks: ["vakansii", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: { canonicalURL: canonicalURL, },
+      title: "Вакансия инженера-конструктора Барнаул | Завод",
+      meta: {
+        keywords: "вакансии барнаул, вакансии инженер",
+        description: "Быстрорастущему предприятию по производству теплообменного оборудования требуется инженер-конструктор. Подробнее о вакасии.",
+      },
+      template: "./src/vakansii-ing-btp.html",
+      filename: "about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html",
+      chunks: ["vakansii", "all", "map"],
+    }),
+     /*---------КОНТАКТЫ----------- */
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL, },
       title: "Контакты ООО Термоблок",
@@ -300,7 +379,8 @@ module.exports = {
       template: "./src/blog-section.html",
       filename: "blog-proizvodstva/index.html",
       chunks: ["blogSection", "all", "map"],
-    }) /*---------СТРАНИЦЫ БЛОГА----------- */,
+    }),
+    /*---------СТРАНИЦЫ БЛОГА----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,

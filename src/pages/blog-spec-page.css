@@ -1,0 +1,81 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+@import url(../blocks/nav/nav.css);
+
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
+
+@import url(../blocks/flexburton/flexburton.css);
+
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+@import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__title/_size_m/flexburton__title_size_m.css);
+
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__subtitle/_size_m/flexburton__subtitle_size_m.css);
+@import url(../blocks/flexburton/__link/flexburton__link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+@import url(../blocks/sections/catalog-grid/catalog-grid.css);
+
+@import url(../blocks/mainmodels/mainmodels.css);
+@import url(../blocks/timodels/timodels.css);
+
+@import url(../blocks/raschet-bem/raschet-bem.css);
+
+/*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
+@import url(../blocks/image-and-text/image-and-text.css);
+@import url(../blocks/info/info.css);
+
+@import url(../blocks/info/__heading/info__heading.css);
+@import url(../blocks/info/__hashtag/info__hashtag.css);
+@import url(../blocks/info/__aside/info__aside.css);
+@import url(../blocks/info/__aside-image/info__aside-image.css);
+@import url(../blocks/info/__aside-button/info__aside-button.css);
+
+@import url(../blocks/info/__relevance-title/info__relevance-title.css);
+
+@import url(../blocks/info/__article-container/info__article-container.css);
+@import url(../blocks/info/__parallax-bg/info__parallax-bg.css);
+
+@import url(../blocks/info/__list/info__list.css);
+@import url(../blocks/info/__list-item/info__list-item.css);
+
+@import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
+@import url(../blocks/info/__paragraph-title/_sub/info__paragraph-title_sub.css);
+@import url(../blocks/info/__paragraph-title/_alt-color/info__paragraph-title_alt-color.css);
+
+@import url(../blocks/info/__link-in-text/info__link-in-text.css);
+@import url(../blocks/info/__link-in-text/_button/info__link-in-text_button.css);
+@import url(../blocks/info/__paragraph/info__paragraph.css);
+@import url(../blocks/info/__paragraph/_type_list/info__paragraph_type_list.css);
+@import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
+@import url(../blocks/info/__paragraph/_intro/info__paragraph_intro.css);
+@import url(../blocks/info/__tech-inline/info__tech-inline.css);
+
+
+@import url(../blocks/info/__quote/info__quote.css);
+
+@import url(../blocks/picwcaption/picwcaption.css);
+
+
+@import url(../blocks/infocards/infocards.css);
+
+@import url(../blocks/footer/footer.css);
+
+@import url(../blocks/link-beauty/link-beauty.css);

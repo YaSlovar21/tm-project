@@ -1,0 +1,1 @@
+import './vakansii.css';

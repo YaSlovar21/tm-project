@@ -50,6 +50,8 @@ input {
     --border-radius-m: 6px;
     --border-radius-s: 4px;
     --border-radius-xs: 2px;
+
+    --bg-darker-color: #1817178a;
 }
 
 @media screen and (max-width: 1024px){

@@ -1,6 +1,6 @@
 .bsz-new {
   background-color: #2f2f2f49;
-
+  background-color: var(--bg-darker-color);
   margin-top: 50px;
 
 }

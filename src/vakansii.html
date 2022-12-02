@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/about/vakansii/"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link" href="/about/">О компании</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/about/vakansii/>">Вакансии</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Вакансии</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">Вакансии на производство, в инженерно-технические отделы завода по проивзодству пластинчатых теплообменников ООО "Термоблок".</p>
+          </div>
+          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+        </div>
+
+        <a class="bem__link" href="/about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html">Вакансия инженера-конструктора</a>
+      </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
+          <ul class="map__list">
+          </ul>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-big-form.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>
