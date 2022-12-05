@@ -52,6 +52,7 @@ input {
     --border-radius-xs: 2px;
 
     --bg-darker-color: #1817178a;
+    --text-color: #f2f2f2;
 }
 
 @media screen and (max-width: 1024px){
@@ -92,7 +93,6 @@ input {
 
 
 /*----------------------------------------*/
-
 
 .bg {
     position: fixed;

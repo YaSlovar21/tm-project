@@ -262,7 +262,40 @@ module.exports = {
       filename: "plastinchatye-teploobmenniki/uplotnenie-plastinchatogo-teploobmennika.html",
       chunks: ["blogSpecPage", "all", "map"],
     }),
-    
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "harakteristiki.html",
+        relevanceArticles: [],
+      },
+      title: "Характеристики пластинчатого теплообменника",
+      heading: "Характеристики пластинчатых теплобменников Теплохит",
+      meta: {
+        keywords: "характеристики пластинчатого теплообменника",
+        description: "Технические характеристики пластинчатых теплообменников: максимальное рабочее давление, площадь теплообмена, толщина пластины, условный проход (ду) и прочее.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/harakteristiki-plastinchatogo-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "promyvka.html",
+        relevanceArticles: [],
+      },
+      title: "Промывка пластинчатого теплообменника",
+      heading: "Промывка теплообменника",
+      meta: {
+        keywords: "промывка пластинчатого теплообменника",
+        description: "Рекомендации по промывке пластинчатого теплообменника от производителя: ",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/promyvka-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
     /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -711,24 +744,6 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html",
-      chunks: ["blogPage", "all", "map"],
-    }),
-    new HtmlWebpackPlugin({
-      templateParameters: {
-        canonicalURL: canonicalURL,
-        isGkh: true,
-        articleFile: "_plastina.html",
-      },
-      title:
-        "Пластина пластинчатого теплообменника",
-      heading: "Пластина пластинчатого теплообменника",
-      meta: {
-        keywords: "пластина пластинчатого теплообменника",
-        description:
-          "Конструктивные особенности пластины пластинчатого теплообменника. Эффективность пластины. Теплообмен.",
-      },
-      template: "./src/blog-page-abstract.html",
-      filename: "blog-proizvodstva/plastina-plastinchatogo-teploobmennika.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({

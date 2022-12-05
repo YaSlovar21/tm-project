@@ -9,6 +9,7 @@
 
 @import url(../blocks/bem/__list/bem__list.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
+@import url(../blocks/bem/__list-item/_flexed/bem__list-item_flexed.css);
 
 @import url(../blocks/flexburton/flexburton.css);
 
@@ -76,6 +77,7 @@
 
 @import url(../blocks/picwcaption/picwcaption.css);
 
+@import url(../blocks/infocards/infocards.css);
 
 @import url(../blocks/footer/footer.css);
 

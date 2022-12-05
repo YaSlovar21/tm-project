@@ -33,6 +33,7 @@
           <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
         </div>
         <div style="max-width: 1170px; margin:40px auto;">
+          <h2 class="info__paragraph-title">В каких задачах предстоит учавствовать?</h2>
           <ul class="bem__list info__paragraph info__paragraph_type_list">
             <li class="bem__list-item">Разработка отдельных проектов для блочных индивидуальных тепловых пунктов, производство расчетов и подбор необходимых для сборки комплектующих</li>
             <li class="bem__list-item">Создание 3D-моделей, разработка рабочих чертежей, подготовка технической документации и паспорта готового изделия</li>
@@ -42,26 +43,33 @@
             <li class="bem__list-item">Авторский надзор за изготовлением разработанных узлов и изделий</li>
             <li class="bem__list-item">Участие в монтаже и курирование монтажной бригады при монтаже, наладке, испытаниях и сдаче в эксплуатацию опытных образцов, модернизации конструируемых изделий и их элементов</li>
           </ul>
-          <h2>Требования</h2>
-          <ul class="bem__list">
+          <h2 class="info__paragraph-title">Требования</h2>
+          <ul class="bem__list info__paragraph">
             <li class="bem__list-item">Высшее образование (техническое)</li>
-            <li class="bem__list-item">Владение программами AutoCAD, SolidWorks, Компас.</li>
+            <li class="bem__list-item">Навыки работы с программами AutoCAD, Компас</li>
+            <li class="bem__list-item">Большим плюсом будет владение программой SolidWorks</li>
           </ul>
-          <h2>Мы предлагаем</h2>
+          <h2 class="info__paragraph-title">Мы предлагаем</h2>
           <ul class="bem__list">
-            <li class="bem__list-item">Официальное трудоустройство‚ полный соц. пакет‚ пятидневная рабочая неделя‚ 8 часовой рабочий день</li>
-            <li class="bem__list-item">З/п 50 000 рублей, выплачивается 2 раза в месяц в строго установленные дни</li>
+            <li class="bem__list-item bem__list-item_flexed">
+              <h3 class="">Официальное трудоустройство</h3>
+              <p>полный соц. пакет‚ пятидневная рабочая неделя‚ 8 часовой рабочий день</p>
+            </li>
+            <li class="bem__list-item bem__list-item_flexed">
+              <h3 class="">Высокая заработная плата</h3>
+              <p>Определяется по результатам собеседования (от 50.000 руб/месяц) выплачивается 2 раза в месяц в строго установленные дни</p>
+            </li>
             <li class="bem__list-item">Выплачивается компенсация на питание в столовой организации</li>
             <li class="bem__list-item">Выплачиваются премии и льготы в рамках коллективного договора‚ действующего на предприятии</li>
           </ul>
           <p style="padding: 50px 10px; background-color: var(--bg-darker-color); margin: 20px 0;">ООО "Термоблок" - структурное предприятие Барнаульского станкостроительного завода. Быстрорастущее предприятие.</p>
           <form style="display: flex; flex-direction:column;">
             <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_margo lineform__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
+              <input class="lineform__input lineform__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
               <span class="lineform__input-error name-input-error"></span>
             </div>
             <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_margo lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
               <span class="lineform__input-error tel-input-error"></span>
             </div>
             <label class="raschet-bem__field raschet-bem__field_type_textarea">
