@@ -20,6 +20,7 @@
 @import url(../blocks/animatecss/_vars.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/zooming_entrances/zoomIn.css);
 @import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
 @import url(../blocks/animatecss/attention_seekers/pulse.css);
 
