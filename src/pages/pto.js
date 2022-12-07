@@ -394,7 +394,7 @@ let principImage = document.querySelector('.princip__image-svg');
 new simpleParallax(principImage, {
 	delay: 0.2,
   overflow: true,
-  scale: 1.5,
+  scale: 1.05,
   orientation: 'left',
 	transition: 'cubic-bezier(0,0,0,1)',
   customWrapper: '.princip__image',
@@ -404,7 +404,7 @@ let poImage = document.querySelector('.po__image');
 new simpleParallax(poImage, {
 	delay: 0.2,
   overflow: true,
-  scale: 1.5,
+  scale: 1.05,
   orientation: 'up',
 	transition: 'cubic-bezier(0,0,0,1)',
   /*customWrapper: '.flexburton__right-side',*/

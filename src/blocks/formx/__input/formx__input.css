@@ -1,0 +1,33 @@
+.formx__input {
+    border: 1px solid var(--bg-darker-color);
+
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    /*min-height: 27px;*/
+    padding: 20px;
+
+    background: none;
+    background-color: var(--bg-darker-color);
+    outline: none;
+
+}
+
+.formx__input:nth-of-type(n + 2) {
+    margin-left: 20px;
+}
+
+.formx__input:focus {
+  border: 1px solid #181717;
+  background-color: #181717;
+}
+
+@media screen and (max-width: 768px) {
+  .formx__input {
+
+  }
+  .formx__input:nth-of-type(n + 2) {
+    margin-left: 0px;
+}
+}

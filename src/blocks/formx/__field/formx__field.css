@@ -1,0 +1,15 @@
+.formx__field {
+  display: flex;
+  flex-direction: column;
+  /*max-width: 20%;*/
+  margin-bottom: 18px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .formx__field {
+    max-width: 100%;
+    margin-bottom: 28px;
+    margin-right: 0;
+  }
+}

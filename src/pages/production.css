@@ -4,8 +4,18 @@
 
 @import url(../vendor/fonts/fonts.css);
 /*Спаны*/
-@import url(../blocks/span/span.css);
+
 @import url(../blocks/highliter/highliter.css);
+@import url(../blocks/link-beauty/link-beauty.css);
+
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
+@import url(../blocks/bem/__link/_more/bem__link_more.css);
+@import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
+@import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
+@import url(../blocks/bem/__link/_spec_du250/bem__link_spec_du250.css);
+
+@import url(../blocks/span/span.css);
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);

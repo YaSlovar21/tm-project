@@ -63,19 +63,20 @@
             <li class="bem__list-item">Выплачиваются премии и льготы в рамках коллективного договора‚ действующего на предприятии</li>
           </ul>
           <p style="padding: 50px 10px; background-color: var(--bg-darker-color); margin: 20px 0;">ООО "Термоблок" - структурное предприятие Барнаульского станкостроительного завода. Быстрорастущее предприятие.</p>
-          <form style="display: flex; flex-direction:column;">
-            <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
-              <span class="lineform__input-error name-input-error"></span>
+          <h2 class="info__paragraph-title">Вы можете оставить свой номер, мы назначим собеседование</h2>
+          <form class="formx">
+            <div class="formx__field">
+              <input class="formx__input formx__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
+              <span class="formx__input-error name-input-error"></span>
             </div>
-            <div class="lineform__field">
-              <input class="lineform__input lineform__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
-              <span class="lineform__input-error tel-input-error"></span>
+            <div class="formx__field">
+              <input class="formx__input formx__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <span class="formx__input-error tel-input-error"></span>
             </div>
-            <label class="raschet-bem__field raschet-bem__field_type_textarea">
-              <span class="raschet-bem__label-title">Опишите Вашу задачу</span>
-              <textarea data-alias="Текст заявки" type="text" name="comment-free" id="comment-free-input" style="height: 100%;" class="raschet-bem__input raschet-bem__input_type_flex" required="" minlength="1"></textarea>
-              <span class="raschet-bem__input-error comment-free-input-error"></span>
+            <label class="formx__field formx__field_type_textarea">
+              <span class="formx__label-title">Опишите Вашу задачу</span>
+              <textarea class="formx__field formx__field_type" data-alias="Текст заявки" type="text" name="comment-free" id="comment-free-input" style="height: 100%;" required minlength="1"></textarea>
+              <span class="formx__input-error comment-free-input-error"></span>
             </label>
             <button class="lineform__button-save button-bem lineform__button-save_type_callback" type="submit">Откликнуться</button>
           </form>

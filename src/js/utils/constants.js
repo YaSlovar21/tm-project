@@ -121,6 +121,18 @@ export const initialArticles = [
     description: 'Статья в газете об отгрузке теплообменников ДУ250 в особую энономическую зону Липецк',
   },
   {
+    tags: ['example', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-dlya-bassejna.html`,
+    heading: 'Теплообменник для бассейна',
+    description: 'Пример расчёта теплообменника пластинчатого бассейна, особенности подбора.',
+  },
+  {
+    tags: ['example', 'prod'],
+    linkPath: `/${blogPath}/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html`,
+    heading: 'Опросный лист теплообменника пластинчатого',
+    description: 'Что из себя представляет опросный лист? Какие данные нужно заполить для подбора теплообменника, а какие можно не заполнять?',
+  },
+  {
     tags: ['gkh'],
     linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
     heading: 'Преимущества пластинчатых теплообменников',

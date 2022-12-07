@@ -14,17 +14,22 @@
   }
 
 .kaufman_page_pto {
-  display: grid;
+  /*display: grid;
   grid-template-columns: minmax(min-content, 250px) minmax( min-content, 1100px);
   grid-template-rows: 120px min-content;
-  column-gap: 30px;
+  column-gap: 30px;*/
+  padding: 80px 0;
+  background-color: #1817178a;
+  border-radius: 5px;
   width: 80%;
   margin: 0 auto;
+  border: 1px solid #161616dc;
+
 }
 
 @media screen and (max-width: 1024px) {
   .kaufman_page_pto {
-    grid-template-columns: 1fr;
+
     padding-top: 0px;
     margin-top: 30px;
     background-size: contain;
@@ -38,13 +43,16 @@
 }
 
 .kaufman__title-grid {
-  grid-column: 2/3;
+  /*grid-column: 2/3;
   grid-row: 1/2;
+  margin: 20px 0 0;*/
   width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
   font-size: 36px;
-  max-width: 500px;
-  margin: 20px 0 0;
+
+
   /*margin-left: calc(50% - 550px);*/
 }
 
@@ -63,12 +71,13 @@
   }
 }
 .kaufman__subtitle-grid {
-  grid-row: 1/2;
-  grid-column: 1/2;
+  /*grid-row: 1/2;
+  grid-column: 1/2;*/
   color: #ec3c2f;
-
+  max-width: 1100px;
+  width: 100%;
   text-align: left;
-  margin: 20px 0 0 20px;
+  margin: 20px auto;
   font-size: 14px;
   font-weight: 800;
 }

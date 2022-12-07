@@ -9,7 +9,7 @@ export default class SectionPaginator extends Section {
     constructor(props, cardsContainerSelector, moreButtonElement) {
         super(props, cardsContainerSelector);
 
-        this._countBase = 6;
+        this._countBase = 9;
         this._buttonMore = moreButtonElement;
 
         // проверяем необходимость MoreButton
