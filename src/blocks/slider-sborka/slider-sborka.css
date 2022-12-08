@@ -177,7 +177,7 @@
 }
     .slider-text-sborka__bullet {
       color: #f2f2f2;
-      background-color: #f2f2f210;
+      /*background-color: #f2f2f210;*/
       margin-right: 5px;
       border-radius: 2px;
       padding: 20px 14px;
@@ -186,8 +186,8 @@
       letter-spacing: 00.015em;
       font-weight: 800;
       border: 1px solid #2f2f2f;
-      border-radius: 10px;
-      box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+      border-radius: 4px;
+      /*box-shadow: 0 4px 1px rgb(0 0 0 / 22%);*/
     }
 
 

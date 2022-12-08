@@ -1,0 +1,38 @@
+.linkblock {
+  border: 1px solid #1f1f1f;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: hsla(0, 1%, 65%, .045);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 22%);
+
+  color: var(--text-color);
+
+  position: relative;
+}
+
+.linkblock::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 100%;
+
+  background: #212020 url(../../images/svg-elems/arrow2.png) 50% 50%  no-repeat;
+
+  opacity: 0;
+  transition: opacity .2s ease-in;
+}
+
+.linkblock__span {
+  transition: opacity .2s ease-in;
+}
+
+.linkblock:hover .linkblock__span {
+  opacity: .4;
+}
+
+.linkblock:hover::after {
+  opacity: 1;
+}

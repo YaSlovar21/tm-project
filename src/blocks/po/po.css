@@ -13,7 +13,7 @@
 .po__description {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 55%;
     align-items: center;
 
     border-top: 2px solid #e7451c7c;
@@ -39,11 +39,11 @@
     width: 550px;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.22;
     text-align: left;
     color: #C0C0C0;
-    margin: 50px 0 50px;
+    margin: 50px 0 20px;
 }
 
 @media screen and (max-width:768px) {

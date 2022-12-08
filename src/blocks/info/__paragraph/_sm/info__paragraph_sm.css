@@ -1,0 +1,4 @@
+.info__paragraph_sm {
+  font-size: var(--info-smalltext-size);
+  max-width: 60%;
+}

@@ -23,6 +23,10 @@
   background-color: #181717;
 }
 
+.formx__input_type_textarea{
+  
+}
+
 @media screen and (max-width: 768px) {
   .formx__input {
 

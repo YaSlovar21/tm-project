@@ -37,7 +37,8 @@
 @import url(../blocks/mainmodels/mainmodels.css);
 @import url(../blocks/timodels/timodels.css);
 
-@import url(../blocks/raschet-bem/raschet-bem.css);
+@import url(../blocks/sections/specsec/specsec.css);
+
 
 /*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
 @import url(../blocks/image-and-text/image-and-text.css);
@@ -67,6 +68,7 @@
 @import url(../blocks/info/__paragraph/_type_list/info__paragraph_type_list.css);
 @import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
 @import url(../blocks/info/__paragraph/_intro/info__paragraph_intro.css);
+@import url(../blocks/info/__paragraph/_sm/info__paragraph_sm.css);
 @import url(../blocks/info/__tech-inline/info__tech-inline.css);
 
 

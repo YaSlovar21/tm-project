@@ -1,5 +1,6 @@
 :root {
   --info-text-size: 22px;
+  --info-smalltext-size: 18px;
   --info-mainpage-text-size: 18px;
   --info-text-color: #f2f2f2;
 }
@@ -7,6 +8,7 @@
 @media screen and (max-width: 1024px) {
   :root {
     --info-text-size: 16px;
+    --info-smalltext-size: 14px;
     --info-mainpage-text-size: 16px;
   }
 }
@@ -14,6 +16,7 @@
 @media screen and (max-width: 768px) {
   :root {
     --info-text-size: 16px;
+    --info-smalltext-size: 12px;
     --info-mainpage-text-size: 14px;
   }
 }

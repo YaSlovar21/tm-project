@@ -13,3 +13,7 @@
     margin-right: 0;
   }
 }
+
+.formx__field_type_textarea {
+  flex-basis: 300px;
+}

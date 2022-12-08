@@ -1,0 +1,27 @@
+.specsec {
+  max-width: 1170px;
+  margin:40px auto;
+  color: #f2f2f2;
+}
+
+.specsec__mrel {
+  margin-right: 14px;
+}
+
+.specsec__mbel {
+  margin-bottom: 14px;
+}
+
+.specsec__fl {
+  display: flex;
+}
+
+.specsec__img {
+  min-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .specsec {
+    max-width: calc(100% - 20px);
+  }
+}
