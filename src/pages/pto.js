@@ -38,7 +38,7 @@ import {
   popupCallBack
 } from './popup-callback.js'
 document.querySelector('.up-footer__call').addEventListener('mousedown', ()=> {
-  popupCallBack.open();
+  popupCallBack.open('Заявка на обратный звонок', 'Здравствуйте, перезвоните мне.');
 });
 
 import {

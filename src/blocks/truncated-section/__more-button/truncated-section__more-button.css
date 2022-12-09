@@ -1,0 +1,30 @@
+.truncated-section__more-button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    background-color: #ff5e3acb;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(41, 40, 40);
+    padding: 20px;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1441px) {
+  .truncated-section__more-button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .truncated-section__more-button {
+    font-size: 14px;
+  }
+}

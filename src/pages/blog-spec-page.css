@@ -10,6 +10,8 @@
 @import url(../blocks/bem/__list/bem__list.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
 @import url(../blocks/bem/__list-item/_flexed/bem__list-item_flexed.css);
+@import url(../blocks/bem/__link/bem__link.css);
+@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
 
 @import url(../blocks/flexburton/flexburton.css);
 
@@ -80,6 +82,8 @@
 @import url(../blocks/infocards/infocards.css);
 @import url(../blocks/rtable/rtable.css);
 @import url(../blocks/plastdetail/plastdetail.css);
+@import url(../blocks/truncated-section/truncated-section.css);
+@import url(../blocks/truncated-section/__more-button/truncated-section__more-button.css);
 
 @import url(../blocks/footer/footer.css);
 

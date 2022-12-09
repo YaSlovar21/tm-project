@@ -19,6 +19,11 @@
 .specsec__img {
   min-width: 0;
 }
+.specsec__inset {
+  background-color: #1817178a;
+  border-top: 2px solid #161616;
+  border-bottom: 2px solid #161616;
+}
 
 @media screen and (max-width: 768px) {
   .specsec {

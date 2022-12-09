@@ -1,0 +1,10 @@
+.truncated-section{
+  max-height: 70vh;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.truncated-section_opened {
+  max-height: 100%;
+}

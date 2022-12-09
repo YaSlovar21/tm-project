@@ -1,11 +1,20 @@
 .up-footer {
   box-sizing: border-box;
 
-  background-color: #f2f2f234;
+  /*background-color: #f2f2f234;*/
   min-height: 50px;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .05em;
   color: #dfdfdf;
+
+  position: fixed;
+  top: 30vh;
+  right: 0;
+  z-index: 21;
+  max-width: 120px;
 }
+
 
 
 .up-footer_bg_none {
@@ -15,10 +24,12 @@
 
 .up-footer__list {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 1600px;
   margin: 18px auto 10px;
   padding: 0;
+
 }
 
 .up-footer__list-item {
@@ -34,12 +45,24 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1281px) {
+  .up-footer {
+    position: relative;
+    top: 0;
+  }
+
+  .up-footer__list {
+    flex-direction: row;
+  }
+}
 
 .up-footer__link {
   text-decoration: none;
   padding: 20px 5px;
   color: #dfdfdf;
+  font-size: 12px;
 }
+
 .up-footer__list-item:hover {
   transform: translate(0px , -7px);
   opacity: 0.7;

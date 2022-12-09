@@ -23,7 +23,7 @@
     font-weight: 600;
     /*text-transform: uppercase;*/
     margin: 0;
-    
+
   }
   @media screen and (max-width: 768px) {
     .techniques__title {
@@ -37,6 +37,7 @@
   width: 9%;
   background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686591 71.01%,  #74686591 99.5%);
   top:150px;
+  top:0;
   left: 0;
 }
 
@@ -44,9 +45,10 @@
   position: absolute;
   content: '';
   height: 2px;
-  width: 40%;
+  width: 9%;
   background: linear-gradient(90.05deg,  #74686591 0.03%, #74686556 71.01%, rgba(196, 196, 196, 0) 99.51%);
   top:150px;
+  top:0;
   right: 0;
 }
 

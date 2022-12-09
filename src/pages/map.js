@@ -49,7 +49,7 @@ const partnerList = new Section({
     const partner = createPartner(itemData);
     partnerList.appendItem(partner);
   }
-}, partnersSectionConfig.containerSelector);
+}, partnersSectionConfig.containerSelector, 0);
 
 partnerList.renderItems();
 

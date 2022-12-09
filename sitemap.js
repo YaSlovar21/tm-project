@@ -15,9 +15,39 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/plastinchatye-teploobmenniki.html',
+      path: '/plastinchatye-teploobmenniki/',
       lastmod: dateNow,
       priority: 1,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/harakteristiki-plastinchatogo-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/promyvka-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/teploizolyaciya.htmll',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/plastina-plastinchatogo-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/uplotnenie-plastinchatogo-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
@@ -45,9 +75,21 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/about.html',
+      path: '/about/',
       lastmod: dateNow,
       priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/about/vakansii/',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html',
+      lastmod: dateNow,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
@@ -95,12 +137,6 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'weekly'
     },
-    /*{
-      path: '/blog-proizvodstva/plastinchatyy-ohladitel.html',
-      lastmod: dateNow,
-      priority: 0.7,
-      changefreq: 'weekly'
-    },*/
     {
       path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
       lastmod: dateNow,
@@ -137,7 +173,6 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
-
     {
       path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
       lastmod: dateNow,
@@ -146,6 +181,18 @@ module.exports.paths = [
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmennik-dlya-bassejna.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'monthly'
