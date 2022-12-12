@@ -72,12 +72,15 @@
     position: relative;
     padding: 15px 25px;
     background-color: #f2f2f22d;
+    background-color: #1817178a;
     text-decoration: none;
 
     border-right: 1px solid #E7441C;
     border-left: 1px solid #E7441C;
+    border-right: 1px solid #474747;
+    border-left: 1px solid #474747;
     transition: all .8s ease-in-out;
-
+    border-radius: 10px;
 
     width: 550px;
     text-align: center;
@@ -86,6 +89,8 @@
     border-top: none;
     border-bottom: none;
     outline: none;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 22%);
+    cursor: pointer;
 }
 
 .po__link_hovered {
@@ -104,10 +109,10 @@
     position: absolute;
     height: 1px;
     width: 30%;
-    background-color: #E7441C;
-    top:0;
-    left: 0;
-
+    background-color: #3a3a3a;
+    top:0px;
+    left: 4px;
+    border-radius: 0.5px;
     transition: all .6s ease-in-out;
 }
 
@@ -116,19 +121,19 @@
     position: absolute;
     height: 1px;
     width: 30%;
-    background-color: #E7441C;
-    bottom:0;
-    right: 0;
-
+    background-color: #3a3a3a;
+    bottom:0px;
+    right: 4px;
+    border-radius: 0.5px;
     transition: all .6s ease-in-out;
 }
 
 .po__link_hovered::after , .po__link_hovered::before {
-  width: 100%;
+  width: calc(100% - 8px);
 }
 
 .po__link:hover::after,  .po__link:hover::before{
-    width: 100%;
+    width: calc(100% - 8px);
 }
 
 @media screen and (max-width: 1024px) {

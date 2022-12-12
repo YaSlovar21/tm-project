@@ -98,7 +98,7 @@
 @import url(../blocks/bem/__list/_page_pto/bem__list_page_pto.css);
 @import url(../blocks/bem/__list-heading/bem__list-heading.css);
 @import url(../blocks/bem/__list-item/bem__list-item.css);
-
+@import url(../blocks/bem/__list-item/_newpage/bem__list-item_newpage.css);
 
 @import url(../blocks/column-description/column-description.css);
 

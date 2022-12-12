@@ -1,0 +1,5 @@
+.bem__list-item_newpage::before {
+    content: '\002197';
+    color: var(--main-equivalent-color);
+    margin-right: 5px;
+}

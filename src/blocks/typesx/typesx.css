@@ -11,6 +11,12 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+.typesx {
+    max-width: 95%;
+}
+}
+
 .typesx__wrapper {
   max-width: 1170px;
   margin: 0 auto;

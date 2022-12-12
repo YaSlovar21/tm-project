@@ -10,6 +10,8 @@
   grid-template-columns: 790px calc(100% - 790px);
 
   grid-template-rows: min-content min-content max-content;
+
+  background-color: #202020;
 }
 @media screen and (max-width: 1620px) {
   .header-index {
