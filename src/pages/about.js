@@ -36,7 +36,7 @@ function handleMousOvered(evt) {
 
 function setEventListeners(bullets) {
   bullets.forEach((item)=> {
-    item.addEventListener('mouseover',  handleMousOvered);
+    item.addEventListener('click',  handleMousOvered);
   })
 }
 function unsetListeners(bullets) {
