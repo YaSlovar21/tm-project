@@ -60,6 +60,9 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
 
+@import url(../blocks/relev/relev.css);
+
+
 @import url(../blocks/techniques/techniques.css);
 
 /*ПРЕИМУЩЕСТВА В ВИДЕ СЛАЙДЕРА СБОРКИ*/

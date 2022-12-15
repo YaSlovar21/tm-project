@@ -1,9 +1,10 @@
 .annotation__images {
-  max-width: 200px;
+  max-width: 290px;
   display: flex;
   align-items: flex-start;
+
 }
 
-.annotation__images img:first-child {
-  margin-right: 5px;
+.annotation__images img:last-child {
+  margin-right: 0px;
 }
