@@ -14,7 +14,7 @@
 
 @import url(../blocks/rotation/rotation.css);
 
-
+@import url(../blocks/column-description/column-description.css);
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);
@@ -103,7 +103,7 @@
 @import url(../blocks/bem/__list-item/bem__list-item.css);
 @import url(../blocks/bem/__list-item/_newpage/bem__list-item_newpage.css);
 
-@import url(../blocks/column-description/column-description.css);
+
 
 
 @import url(../blocks/popup/__to-info/popup__to-info.css); /*контейнер для ТО + описание со ссылками справа*/

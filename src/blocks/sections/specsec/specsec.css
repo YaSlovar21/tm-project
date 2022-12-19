@@ -29,7 +29,9 @@
   .specsec {
     max-width: calc(100% - 20px);
   }
-
+  .specsec__no-mob {
+    display: none;
+  }
   .specsec__mbel {
     margin-bottom: 6px;
   }

@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.linkblock__title {
+  font-size: 20px;
+}
+
 .linkblock::after {
   content: '';
   position: absolute;
@@ -22,11 +26,11 @@
   background: #212020 url(../../images/svg-elems/arrow2.png) 50% 50%  no-repeat;
 
   opacity: 0;
-  transition: opacity .2s ease-in;
+  transition: opacity .5s linear;
 }
 
 .linkblock__span {
-  transition: opacity .2s ease-in;
+  transition: opacity .5s linear;
 }
 
 .linkblock:hover .linkblock__span {
