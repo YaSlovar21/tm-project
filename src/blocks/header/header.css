@@ -98,7 +98,11 @@
     transition: opacity .5s ease-in-out;;
 
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
+}
+
+.header_download-link_ann {
+  font-weight: 300;
 }
 
 .header_download-link_raschet{

@@ -38,6 +38,12 @@
   margin: 20px 0;
 }
 
+@media screen and (max-width: 1441px) {
+  .frombsz__paragraph {
+    max-width: 95%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .frombsz {
     max-width: calc(100% - 10px);

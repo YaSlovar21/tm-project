@@ -353,7 +353,7 @@
 </section>
 
 <section class="techniques" style="padding-top: 0; ">
-  <div style="background-color: #212121; width: 80%; position:relative;  margin: 0 auto;padding:20px; z-index:3; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="">
+  <div class="techniques__panel">
     <h2 class="" style="margin-bottom: 20px; font-size: 14px; font-weight: 500; color: var(--text-color);">Основные премиущества</h2>
     <div class="swiper-pagination-1"></div>
   </div>
@@ -413,7 +413,7 @@
                 <img alt="Прижимная плита теплообменника" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInLeft" data-animaton-duration="1s" src="<%=require('./images/nord/ppanel.png')%>">
             </div>
             <div class="swiper-slide">
-                <img alt="Пластинчатый теплообменник в сборе" class="slider-sborka__img wow1" src="<%=require('./images/nord/bezshildika.png')%>"">
+                <img alt="Пластинчатый теплообменник в сборе" class="slider-sborka__img wow1" src="<%=require('./images/nord/bezshildika.png')%>">
             </div>
             <div class="swiper-slide">
                 <img alt="Пластинчатый теплообменник ТИ марки Теплохит" class="slider-sborka__img wow1" data-class-animaton="animate__fadeInBottomLeft" data-animaton-duration="1s"  src="<%=require('./images/nord/shild.png')%>">
@@ -444,6 +444,18 @@
   </form>
   <div class="projects__items">
     <!--Сюда рендерятся проекты-->
+     <div class="projects__item" data-wow-delay=".5s">
+      <img class="projects__image" src="<%=require('./images/ufa_zaton.png')%>">
+      <p class="projects__item-description">Теплообменник пластинчатый в котельной квартала 34, г. Уфа, жилой район «Затон-Восточный»</p>
+    </div>
+    <div class="projects__item" data-wow-delay="1s">
+      <img  class="projects__image"  src="<%=require('./images/timashevsk_condit.png')%>">
+      <p class="projects__item-description">Теплообменники пластинчатые в кондитерском комбинате «Кубань», г. Тимашевск, Краснодарский край</p>
+    </div>
+    <div class="projects__item" data-wow-delay="1.5s">
+      <img  class="projects__image" src="<%=require('./images/ufa_umn_dom.png')%>">
+      <p class="projects__item-description">Теплообменники в тепловом пункте. Новый умный дом в г. Уфа, ул. Злобина, 31</p>
+    </div>
   </div>
 </section>
 <section class="typesx">
@@ -497,7 +509,7 @@
     </div>
     <div style="max-width: 1170px; margin: 0 auto; padding: 120px 0;">
     <a class="linkblock" href="/catalog/">
-      <img style="max-width: 100%; flex-basis:200px; min-width: 0; object-position: center; object-fit: contain;" class=""
+      <img style="width: 100%; flex-basis:200px; min-width: 0; object-position: center; object-fit: contain;" class=""
         src="<%=require('./images/catalog.png')%>" alt="Пластинчатый теплообменник в сборе">
       <div class="column-description">
         <h3 class="column-description__title linkblock__title">Каталог пластинатых теплообменников</h3>
@@ -661,9 +673,9 @@
   <div class="projects__item projects__item_horizontal">
     <img class="projects__image projects__image_horizontal" src="<%=require('./images/ufa_zaton.png')%>">
     <div class="column-description">
-      <h3 class="projects__item-description column-description__title">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
+      <h3 class="projects__item-description projects__item-description_horizontal column-description__title">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
       <ul class="bem__list column-description__list">
-        <li>Темлообменник: <span class="span_color_orange span-bold projects__to-model">ТИ52-87</span></li>
+        <li>Теплообменник: <span class="span_color_orange span-bold projects__to-model">ТИ52-87</span></li>
         <li>Мощность: <span class="span-bold projects__to-q">5,6 Гкал/час</span></li>
         <li>Назначение: <span class="span-bold projects__to-naznach">ГВС</span></li>
       </ul>

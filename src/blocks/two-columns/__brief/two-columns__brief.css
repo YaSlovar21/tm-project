@@ -32,6 +32,12 @@
   font-weight: 600;
 }
 
+@media screen and (max-width: 1441px) {
+  .two-columns__brief_wide {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .two-columns__brief_wide {
     font-size: 18px;

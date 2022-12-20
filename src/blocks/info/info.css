@@ -5,6 +5,14 @@
   --info-text-color: #f2f2f2;
 }
 
+@media screen and (max-width: 1441px) {
+  :root {
+    --info-text-size: 20px;
+    --info-smalltext-size: 16px;
+    
+  }
+}
+
 @media screen and (max-width: 1024px) {
   :root {
     --info-text-size: 16px;
@@ -27,6 +35,7 @@
     display: flex;
     background-color: #1f1f1f66;
     padding: 0 0 20px;
+
 }
 
 

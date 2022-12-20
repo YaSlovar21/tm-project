@@ -45,7 +45,7 @@
 
 .listimage__list-item {
   font-weight: bold;
-  font-size: var(--listimage-font-size);;
+  font-size: var(--listimage-font-size);
   line-height: 140%;
   /* identical to box height, or 34px */
 
@@ -74,6 +74,16 @@
   object-position: center;
   max-width: 100%;
   transition: all .6s linear;
+}
+
+
+@media screen and (max-width: 1441px) {
+  :root {
+    --listimage-font-size: 22px;
+  }
+  .listimage__title {
+    margin: 110px 0 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {

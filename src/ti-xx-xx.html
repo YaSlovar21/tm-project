@@ -43,9 +43,12 @@
                   Особая конструкция клипа надежно закрепляет уплотнение на
                   пластину, это исключает обрыв при монтаже пластины и обеспечивает надежность эксплуатации.
               </p>
-              <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
-              <a class="heatex__to-3dlink link-beauty" href="<%=link3d%>" target="_blank">3D модели (IGES, DWG) для <%=heading%></a>
+              <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('link3d')) { %>
+                <h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
+                <a class="heatex__to-3dlink link-beauty" href="<%=link3d%>" target="_blank">3D модели (IGES, DWG) для <%=heading%></a>
+              <% } %>
             </div>
+
           </div>
         </section>
 
@@ -86,7 +89,16 @@
       </main>
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
       <%= require('html-loader!./insets/popup-mini-form.html').default %>
-      <%= require('html-loader!./insets/popup-with-img.html').default %>
+        <!--Форма модального окна с картинкой-->
+      <div class="popup popup_darked popup-viewport">
+        <div class="popup__container popup__container_type_image">
+            <button class="popup__button-close popup__button-close_page_ti link-beauty" type="button"></button>
+            <div class="popup__image-view">
+                <img class="popup__image" alt="картинка под загрузку" src="../images/svg-elems/preloader.gif">
+                <p class="popup__image-description"></p>
+            </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

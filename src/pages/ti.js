@@ -24,7 +24,7 @@ openDrawingButton.addEventListener("mousedown", ()=> {
     name: drawing.alt,
   })
 })
-
+popupImage.setEventListeners();
 const questions = Array.from(
   document
     .querySelectorAll('.frequently__question')

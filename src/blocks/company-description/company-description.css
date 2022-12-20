@@ -47,12 +47,27 @@
   grid-column: 2/3;
   grid-row: 4/6;
 }
-@media screen and (min-width: 1440px) {
+
+
+@media screen and (min-width: 1441px) {
   .company-description {
-    /*max-width: calc(100% - 40px);*/
     margin: 70px auto 2px;
   }
 }
+
+@media screen and (max-width: 1441px) {
+  .company-description {
+
+    margin: 70px auto 2px;
+    grid-template-columns: 50% 50%;
+  }
+  .company-description__paragraph {
+    max-width: 95%;
+  }
+
+}
+
+
 @media screen and (max-width: 1180px) {
   .company-description__paragraph {
     font-size: 16px;

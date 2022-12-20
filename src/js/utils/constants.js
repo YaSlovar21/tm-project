@@ -53,6 +53,7 @@ export const initialProjects = [
       naznach: "Отопление, ГВС",
       q: "17500 кВт",
       animateClass: 'animate__fadeIn',
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html'
     },
     {
       name: "Теплообменники пластинчатые в кондитерском комбинате «Кубань», г. Тимашевск, Краснодарский край",
@@ -61,6 +62,7 @@ export const initialProjects = [
       naznach: "ГВС",
       q: "3,5 Гкал/ч",
       animateClass: 'animate__fadeIn',
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
     },
     {
       name: "Теплообменники в тепловом пункте. Новый умный дом в г. Уфа, ул. Злобина, 31",
@@ -69,6 +71,7 @@ export const initialProjects = [
       naznach: "Отопление, ГВС",
       q: "от 0.3 до 0.5 Гкал/ч",
       animateClass: 'animate__fadeIn',
+      path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html',
     },
 ];
 

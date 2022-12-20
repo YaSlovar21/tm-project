@@ -225,18 +225,18 @@
     font-weight: 500;
     height: 100%;
     line-height: 1.3;
-    padding: 12px 0;
+    padding: 12px 10px;
     text-align: left;
     text-decoration: none;
     transition: all .2s linear;
     width: 100%;
-    padding-left: 10px;
+    
   }
 
 
   @media screen and (max-width: 1440px) {
     .nav__sub-link  {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 

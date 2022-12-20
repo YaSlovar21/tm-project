@@ -6,6 +6,7 @@ export default class CardProject extends Card {
         console.log(props);
         this._name = name;
         this._link = link;
+
         this._handleImageClick = handleImageClick; //функция коллбэк открытия попапа проекта
     }
 
@@ -14,6 +15,8 @@ export default class CardProject extends Card {
 
         this._cardImage = this._element.querySelector('.projects__image');
         this._cardHeading = this._element.querySelector(".projects__item-description");
+
+       
 
         this._cardImage.src = this._link;
         this._cardImage.alt = this._name;

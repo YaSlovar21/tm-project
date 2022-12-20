@@ -18,6 +18,14 @@
   color: var(--text-color);
 }
 
+
+@media screen and (max-width: 1440px){
+  .relev {
+      width: 95%;
+      box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .relev {
     grid-template-columns: 1fr;

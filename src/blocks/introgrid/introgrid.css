@@ -101,6 +101,16 @@
 
 }
 
+@media screen and (max-width: 1441px) {
+  .introgrid__wrapper {
+    grid-template-columns: minmax(min-content, 450px) 1fr;
+  }
+  .introgrid__header {
+    font-size: 32px;
+
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .introgrid__wrapper {
     display: grid;

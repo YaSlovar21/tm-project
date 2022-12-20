@@ -33,7 +33,7 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/plastinchatye-teploobmenniki/teploizolyaciya.htmll',
+      path: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
       lastmod: dateNow,
       priority: 0.8,
       changefreq: 'monthly'

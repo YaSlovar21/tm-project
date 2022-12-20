@@ -50,6 +50,15 @@
   right: 22px;
 }
 
+.popup__button-close_page_ti {
+  background-color: #1f1f1f;
+}
+
+.popup__button-close_food {
+  background-color: var(--main-equivalent-color);
+  border-bottom-left-radius: 10px;
+}
+
 @media screen and (max-width: 768px),
       screen and (max-height: 780px) {
   .popup__button-close_menu {

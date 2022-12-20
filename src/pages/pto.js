@@ -101,6 +101,7 @@ const projectHorizontalList = new Section({
       to: item.to,
       naznach: item.naznach,
       q: item.q,
+      path: item.path,
       handleImageClick: (desc, link) => {
         //(desc, link) передаем во внутреннем методе карточки
         popupImage.open({
@@ -118,6 +119,7 @@ const projectHorizontalList = new Section({
   },
 }, projectsContainerSelector);
 
+projectList.clear();
 projectList.renderItems();
 
 

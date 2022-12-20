@@ -55,6 +55,14 @@ input {
     --text-color: #f2f2f2;
 }
 
+@media screen and (max-width: 1441px){
+  :root {
+      /*table*/
+      --cell-heading-font: 20px;
+      --cell-description-font: 15px;
+  }
+}
+
 @media screen and (max-width: 1024px){
     :root {
         /*table*/
