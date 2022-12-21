@@ -44,7 +44,7 @@ const vacancyForm = new FormStatic({
       .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
       .finally(() => {
         vacancyFormValidator.disableSaveButton();
-        vacancyForm.reset();
+        vacancyFormEl.reset();
           renderLoading(false, vacancyFormSubmitButtonEl, 'Откликнуться', 'Отправляем...');
       });
     console.log(formCallbackData);
