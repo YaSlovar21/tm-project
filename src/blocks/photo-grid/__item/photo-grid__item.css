@@ -63,14 +63,14 @@
     grid-column: 3;
     grid-row: 4;
 
-    z-index: 7;
+    /*z-index: 7;
     color: tomato;
     font-size: 14px;
     font-weight: 800;
     text-align: center;
     align-self: center;
     text-decoration: none;
-    justify-self: stretch;
+    justify-self: stretch;*/
   }
 
   .photo-grid__item:nth-child(6)::after {
