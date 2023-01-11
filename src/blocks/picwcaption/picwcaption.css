@@ -1,5 +1,7 @@
 .picwcaption {
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .picwcaption__caption {
@@ -7,6 +9,7 @@
   left: 0;
   bottom: 0;
   padding: 20px;
+  box-sizing: border-box;
   margin: 0;
   background-color: #2f2f2f5e;
   width: 100%;
@@ -17,5 +20,5 @@
 }
 
 .picwcaption__image {
-  max-width: 100%;
+  width: 100%;
 }
