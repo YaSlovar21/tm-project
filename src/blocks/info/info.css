@@ -1,5 +1,6 @@
 :root {
   --info-text-size: 22px;
+  --info-p-span-size: 16px;
   --info-smalltext-size: 18px;
   --info-mainpage-text-size: 18px;
   --info-text-color: #f2f2f2;
@@ -9,7 +10,7 @@
   :root {
     --info-text-size: 20px;
     --info-smalltext-size: 16px;
-    
+
   }
 }
 
@@ -18,6 +19,7 @@
     --info-text-size: 16px;
     --info-smalltext-size: 14px;
     --info-mainpage-text-size: 16px;
+    --info-p-span-size: 12px;
   }
 }
 

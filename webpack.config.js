@@ -296,6 +296,23 @@ module.exports = {
       filename: "plastinchatye-teploobmenniki/promyvka-teploobmennika.html",
       chunks: ["blogSpecPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "princip.html",
+      },
+      title: "Пластинчатый теплообменник: принцип работы и устройство",
+      heading: "Принцип работы пластинчатого теплообменника",
+      intro: "Работа и устройство пластинчатого теплообменника. Как устроен пластинчатый теплообменник? Основной принцип работы пластинчатого теплообменника.",
+      meta: {
+        keywords: "принцип работы пластинчатого теплообменника, устройство пластинчатого теплообменника",
+        description: "Основной принцип работы пластинчатого теплообменника, схемы и особенности устройства. Пластинчатый теплообменник устроен таким образом, что смешения сред не происходит.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
     /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -479,6 +496,24 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "pto-mkd.html",
+        relevanceArticles: [
+        ]
+      },
+      title: "Теплообменники в многоквартирном доме мкд, итп жилого дома",
+      heading: "Теплообменники для многоквартирного дома",
+      meta: {
+        keywords: "",
+        description: "",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({

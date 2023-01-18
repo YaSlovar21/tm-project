@@ -4,3 +4,12 @@
   color: var(--info-text-color);
   line-height: 1.5;
 }
+
+.info__paragraph-span {
+  font-size: var(--info-p-span-size);
+  text-transform: uppercase;
+  letter-spacing: .055em;
+  font-weight: 700;
+
+  color: #c4c4c4;
+}

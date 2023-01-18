@@ -1,0 +1,33 @@
+.figure {
+  padding: 0;
+  margin: 0;
+}
+
+.figure_block {
+  margin: 40px 0;
+}
+
+.figure__caption {
+  text-transform: uppercase;
+  letter-spacing: .035em;
+
+}
+
+.figure__caption_center {
+  text-align: center;
+  margin-right: 120px;
+}
+
+.span-figure {
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+@media screen and (max-width: 1441px) {
+  .figure__caption {
+    font-size: 12px;
+  }
+  .figure__caption_center{
+    margin: 0;
+  }
+}

@@ -137,6 +137,12 @@ export const initialArticles = [
   },
   {
     tags: ['gkh'],
+    linkPath: `/${blogPath}/teploobmenniki-mnogokvartirnogo-doma.html`,
+    heading: 'Теплообменник в многоквартирном доме',
+    description: 'Теплообменные аппараты в жилых многоквартирных домах (мкд). Как расчитываются? Как работают?',
+  },
+  {
+    tags: ['gkh'],
     linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
     heading: 'Преимущества пластинчатых теплообменников',
     description: 'Преимущества теплообменных аппаратов пластинчатого типа',
