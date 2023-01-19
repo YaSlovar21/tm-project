@@ -313,6 +313,23 @@ module.exports = {
       filename: "plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html",
       chunks: ["blogSpecPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "montazh.html",
+      },
+      title: "Монтаж пластинчатого теплообменника",
+      heading: "Монтаж пластинчатого теплообменника",
+      intro: "Работа и устройство пластинчатого теплообменника. Как устроен пластинчатый теплообменник? Основной принцип работы пластинчатого теплообменника.",
+      meta: {
+        keywords: "монтаж пластинчатого теплообменника, монтаж теплобменника",
+        description: "Какие этапы монтажа теплообменника пластинчатого? Важные моменты, которые нужно учесть при монтаже теплообменного аппарата.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/montazh-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
     /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {

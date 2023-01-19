@@ -39,7 +39,7 @@
 
 @import url(../blocks/raschet-bem/raschet-bem.css);
 
-
+@import url(../blocks/sections/specsec/specsec.css);
 
 /*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
 @import url(../blocks/image-and-text/image-and-text.css);
