@@ -5,10 +5,20 @@
   border-collapse: collapse;
 }
 
+.rtable_montazh {
+  max-width: 350px;
+  margin-right: 10px;
+}
+
 .rtable caption {
   font-weight: 200;
   text-align: right;
   padding: 10px 0;
+}
+
+.rtable_montazh caption {
+  text-align: left;
+
 }
 
 .rtable__accent {
@@ -20,15 +30,7 @@
   padding: 8px 8px;
   border: 2px solid #3b3b3b;
 }
-/*
-.rtable tr:first-child td:first-child {
-  background: #ff5e3a;
-  font-size: 12px;
-  letter-spacing: .05em;
-  font-weight: 600;
-  padding: 10px;
-}
-*/
+
 .rtable th {
   background: #b0b0b0;
   border: 2px solid var(--bg-darker-color);
@@ -40,22 +42,12 @@
   padding: 10px 20px;
 }
 
-
-/*
-.rtable tr td:first-child {
-  background: #353535;
-  font-size: 12px;
+.rtable_montazh th {
+  background: #cb3a19;
+  font-size: 14px;
+  font-weight: 500;
 }
-*/
-/*
-.rtable tr:first-child {
 
-  background: #ff5e3a;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 10px;
-}
-*/
 
 .rtable tr:nth-child(n+2n+1) {
   background: #353535;

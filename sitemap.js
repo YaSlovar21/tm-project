@@ -23,37 +23,43 @@ module.exports.paths = [
     {
       path: '/plastinchatye-teploobmenniki/harakteristiki-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/promyvka-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/plastina-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/uplotnenie-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 1,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/montazh-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
@@ -83,7 +89,7 @@ module.exports.paths = [
     {
       path: '/about/',
       lastmod: dateNow,
-      priority: 0.9,
+      priority: 1,
       changefreq: 'monthly'
     },
     {
@@ -187,6 +193,12 @@ module.exports.paths = [
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html"',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'monthly'
