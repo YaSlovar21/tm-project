@@ -423,3 +423,11 @@ new simpleParallax(pictic, {
 });
 
 
+Array.from(document.querySelectorAll('.smooth-scroll-link')).map((item, index) =>{
+  item.addEventListener('click', (evt)=> {
+    evt.preventDefault();
+    document.querySelector(evt.target.dataset.scroll).scrollIntoView({
+      behavior: 'smooth'
+    });
+  })
+});

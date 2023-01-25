@@ -38,7 +38,9 @@
               </ul>
             </div>
           <% } %>
-          <a class="info__aside-button link-beauty info__aside-button_custom">Рассчитать теплообменник</a>
+          <a class="info__aside-button link-beauty info__aside-button_custom">
+           <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
+          </a>
         </div>
         <article class="info__article-container">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>

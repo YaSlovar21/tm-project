@@ -17,61 +17,61 @@ module.exports.paths = [
     {
       path: '/plastinchatye-teploobmenniki/',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/harakteristiki-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/promyvka-teploobmennika.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/plastina-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/uplotnenie-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/plastinchatye-teploobmenniki/montazh-teploobmennika.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
       path: '/pishchevye-teploobmenniki.html',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blochnye-teplovye-punkty/',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
@@ -89,7 +89,7 @@ module.exports.paths = [
     {
       path: '/about/',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
@@ -113,7 +113,7 @@ module.exports.paths = [
     {
       path: '/equipment-selection/',
       lastmod: dateNow,
-      priority: 1,
+      priority: 0.9,
       changefreq: 'monthly'
     },
     {
@@ -134,37 +134,37 @@ module.exports.paths = [
     {
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatyy-pasterizator.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
@@ -176,43 +176,43 @@ module.exports.paths = [
     {
       path: '/blog-proizvodstva/plastinchatye-ohladiteli-ool.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatii-ohladitel-ool-10.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html"',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmennik-dlya-bassejna.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.7,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     /* статьи - объекты */

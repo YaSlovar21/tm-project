@@ -287,7 +287,7 @@ module.exports = {
       },
       title: "Промывка пластинчатого теплообменника",
       heading: "Промывка теплообменника",
-      intro: "Как правильно осуществлять промывку разборного теплообменника, какими средствами. Нюансы.",
+      intro: "Как правильно осуществлять промывку разборного пластинчатого теплообменника, какими средствами. Нюансы.",
       meta: {
         keywords: "промывка пластинчатого теплообменника",
         description: "Рекомендации по промывке пластинчатого теплообменника от производителя: виды загрязнений, способы промывки, средства промывки.",
@@ -389,6 +389,18 @@ module.exports = {
       template: "./src/about.html",
       filename: "about/index.html",
       chunks: ["about", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: { canonicalURL: canonicalURL, },
+      title: "Для фирм, производителей теплоообменного оборудования",
+      intro: "Для фирм, занимающихся обслуживанием и монтажем теплообменного оборудования. Производителям теплобменного оборудования на базе теплообменников или пластин теплообменников.",
+      meta: {
+        keywords: "",
+        description: "",
+      },
+      template: "./src/about-partners.html",
+      filename: "about/partners/index.html",
+      chunks: ["vakansii", "all", "map"],
     }),
     /* ВАКАНСИИ */
     new HtmlWebpackPlugin({
@@ -524,6 +536,7 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "pto-mkd.html",
+        buttonText: 'Подобрать теплообменник для многоквартирного дома',
         relevanceArticles: [
           {
             name: "Теплобоменник для отопления частного дома",

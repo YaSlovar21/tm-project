@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/about/vakansii/"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link" href="/about/">О компании</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/about/partners/">Партнёрам</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Партнёрам</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">Что мы предоставляем партнёрам? Условия сотрудничества.</p>
+          </div>
+          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+        </div>
+        <div class="specsec">
+          <p class="info__paragraph">ООО "Термоблок" - торгово-промышленная компания по производству теплообменного оборудования.
+            Полностью локализованное производство пластинчатых теплобоменников, дает нашим партнерам уверенность в стабильном
+            качестве продукции.</p>
+          <h2 class="info__paragraph-title info__paragraph-title_alt-color" style="margin-bottom: 20px;">Что мы предоставляем партнёрам?</h2>
+
+          <ul class="bem__list">
+            <li>
+              <h2 class="info__paragraph-title info__paragraph-title_sub">Защита проекта</h2>
+              <p class="info__paragraph">(общий для всех реестр расчётов, каждому расчёту присваивается уникальный идентификатор )</p>
+            </li>
+            <li>
+              - Обучение программе расчёта
+              А также помощь квалифицированных инженеров в подборе пластинчатых теплообменников под сложные задачи (такие как, пищевые процессы в несколько этапов, нефтепереработка, фармацевтика и т.д.)
+            </li>
+            <li>
+             - Гарантированные сроки изготовления и высокое качество продукции за счёт 100% локализации производства.
+            </li>
+          </ul>
+
+          <ul class="infoitems infoitems_page_spec" style="grid-template-columns: repeat(auto-fill,minmax(342px,1fr));">
+            <li class="infoitem">
+              <div class="infoitem__header">
+                <span class="infoitem__span-button">Вакансия</span>
+              </div>
+              <a class="infoitem__link" href="/about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html">
+                <h2 class="infoitem__name">Вакансия инженера конструктора</h2>
+                <p class="infoitem__description">Инженер по блочным индивидуальным тепловым пунктам</p>
+              </a>
+            </li>
+          </ul>
+
+          Что мы предлагаем партнерам?
+
+
+
+
+        </div>
+        <a class="bem__link" href=""></a>
+      </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
+          <ul class="map__list">
+          </ul>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>
