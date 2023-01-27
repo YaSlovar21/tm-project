@@ -330,6 +330,23 @@ module.exports = {
       filename: "plastinchatye-teploobmenniki/montazh-teploobmennika.html",
       chunks: ["blogSpecPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "programma.html",
+      },
+      title: "Программа расчёта пластинчатого теплообменника",
+      heading: "Программа расчёта пластинчатого теплообменника",
+      intro: "Программа подбора и расчёта теплообменников на базе теплообменных пластин ТИ",
+      meta: {
+        keywords: "монтаж пластинчатого теплообменника, монтаж теплобменника, монтаж теплообменного аппарата",
+        description: "Вы можете скачать программу расчёта теплообменников.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/programma-rascheta.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
     /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -390,7 +407,8 @@ module.exports = {
       filename: "about/index.html",
       chunks: ["about", "all", "map"],
     }),
-    new HtmlWebpackPlugin({
+    
+    /*new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL, },
       title: "Для фирм, производителей теплоообменного оборудования",
       intro: "Для фирм, занимающихся обслуживанием и монтажем теплообменного оборудования. Производителям теплобменного оборудования на базе теплообменников или пластин теплообменников.",
@@ -668,7 +686,9 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "btp-start.html",
+        buttonText: "Подобрать теплообменник к тепловому пункту",
       },
+      
       title:
         "Проектирование блочных тепловых пунктов и подбор теплового пункта ",
       heading: "Проектирование тепловых пунктов",
@@ -820,6 +840,7 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "pool.html",
+        buttonText: "Рассчитать теплообменник для бассейна",
       },
       title:
         "Теплообменник для бассейна - пример расчёта и особенности",
@@ -1015,7 +1036,7 @@ module.exports = {
         headingAlias: "ТИ95",
         description: `ТИ95 – имеет подключения подтрубков: ДУ200, ДУ250.
         Применение: ТЭЦ. (Обогревается совокупность микрорайонов)`,
-        
+        link3d: "https://disk.yandex.ru/d/rqyEmjeBzRgdZg",
       },
       chunks: ["ti", "all"],
     }) /*-12-------ТИ116-----------*/,

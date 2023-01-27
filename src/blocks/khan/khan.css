@@ -25,7 +25,11 @@
     padding-bottom: 30px;
   }
 
-
+@media screen and (max-width:1441px) {
+  .khan {
+    padding-top: 30px;
+  }
+}
 
 .khan__pagination-list {
     display: flex;
