@@ -204,7 +204,7 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
-      path: '/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html"',
+      path: '/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html',
       lastmod: dateNow,
       priority: 0.8,
       changefreq: 'monthly'

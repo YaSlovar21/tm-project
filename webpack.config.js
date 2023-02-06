@@ -407,8 +407,8 @@ module.exports = {
       filename: "about/index.html",
       chunks: ["about", "all", "map"],
     }),
-    
-    /*new HtmlWebpackPlugin({
+    /*
+    new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL, },
       title: "Для фирм, производителей теплоообменного оборудования",
       intro: "Для фирм, занимающихся обслуживанием и монтажем теплообменного оборудования. Производителям теплобменного оборудования на базе теплообменников или пластин теплообменников.",
