@@ -50,7 +50,7 @@ input {
     --border-radius-m: 6px;
     --border-radius-s: 4px;
     --border-radius-xs: 2px;
-
+    --h2-size: 28px;
     --bg-darker-color: #1817178a;
     --text-color: #f2f2f2;
 }
@@ -60,7 +60,8 @@ input {
       /*table*/
       --cell-heading-font: 20px;
       --cell-description-font: 15px;
-  }
+      --h2-size: 28px;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -68,6 +69,7 @@ input {
         /*table*/
         --cell-heading-font: 22px;
         --cell-description-font: 16px;
+        --h2-size: 22px;
     }
 }
 @media screen and (max-width: 768px){

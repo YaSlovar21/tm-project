@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <%= require('html-loader!./inner-google.html').default %>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link" href="/about/">О компании</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/about/vakansii/">Вакансии</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Вакансия экономист</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">ООО "Термоблок" - ведущее предприятие про производству пластинчатых теплообменных аппаратов в России приглашает на работу ведущего экономиста.</p>
+          </div>
+          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+        </div>
+        <div class="specsec" style="margin:40px auto;">
+          <h2 class="info__paragraph-title">В каких задачах предстоит учавствовать?</h2>
+          <ul class="bem__list info__paragraph info__paragraph_type_list">
+            <li class="bem__list-item">Ведение производственного плана</li>
+            <li class="bem__list-item">Составление калькуляций</li>
+            <li class="bem__list-item">Проведение анализа фактической себестоимости</li>
+          </ul>
+          <h2 class="info__paragraph-title">Требования</h2>
+          <ul class="bem__list info__paragraph">
+            <li class="bem__list-item">Высшее образование (экономическое)</li>
+          </ul>
+          <h2 class="info__paragraph-title">Мы предлагаем</h2>
+          <ul class="bem__list">
+            <li class="bem__list-item bem__list-item_flexed">
+              <h3 class="info__paragraph-title info__paragraph-title_sub">Официальное трудоустройство</h3>
+              <p class="info__paragraph info__paragraph_sm">полный соц. пакет‚ пятидневная рабочая неделя‚ 8 часовой рабочий день</p>
+            </li>
+            <li class="bem__list-item bem__list-item_flexed">
+              <h3 class="info__paragraph-title info__paragraph-title_sub">Высокая заработная плата</h3>
+              <p class="info__paragraph info__paragraph_sm">Определяется по результатам собеседования (от 35.000 руб/месяц) выплачивается 2 раза в месяц в строго установленные дни</p>
+            </li>
+            <li class="bem__list-item bem__list-item_flexed">
+              <h3 class="info__paragraph-title info__paragraph-title_sub">А также</h3>
+              <p class="info__paragraph info__paragraph_sm">Выплачивается компенсация на питание в столовой организации.
+                Выплачиваются премии и льготы в рамках коллективного договора‚ действующего на предприятии.</p>
+            </li>
+          </ul>
+          <p class="info__paragraph info__paragraph_sm"></p>
+          </div>
+
+          <div style="background-color: #1f1f1f; padding: 60px 0">
+            <div class="specsec">
+              <p class="bem__paragraph" style="font-size: var(--h2-size);">Звоните по номеру <a class="bem__link" href="tel:+73852775592" style="text-decoration: none; font-weight: 600; color: var(--main-color);">+7(3852) 77-55-92</a> <br> c 7:30 по 15:30 и назначьте собеседование с руководителем.</p>
+            </div>
+          </div>
+          <div class="specsec" style="margin:40px auto;">
+          <!--<p style="padding: 50px 10px; background-color: var(--bg-darker-color); margin: 20px 0;">ООО "Термоблок" - структурное предприятие Барнаульского станкостроительного завода. Быстрорастущее предприятие.</p>-->
+          <h2 class="info__paragraph-title info__paragraph-title_sub info__paragraph-title_alt-color">Вы можете оставить свой номер, мы назначим собеседование</h2>
+          <form class="formx" name="vacancyForm" id="vacancyForm" method="post" action="#" novalidate>
+            <div class="formx__field">
+              <input class="formx__input formx__input_type_name " id="name-input" name="name" placeholder="Как к Вам обращаться?" minlength="2" maxlength="30" type="text" required  />
+              <span class="formx__input-error name-input-error"></span>
+            </div>
+            <div class="formx__field">
+              <input class="formx__input formx__input_type_tel" id="tel-input" name="tel" placeholder="Телефон для связи" type="tel" minlength="2" maxlength="200" required  />
+              <span class="formx__input-error tel-input-error"></span>
+            </div>
+            <label class="formx__field formx__field_type_textarea">
+              <span class="info__paragraph-title info__paragraph-title_sub info__paragraph-title_alt-color" style="margin-top: 5px; color: var(--text-color);">Что Вас заинтересовало?</span>
+              <textarea class="formx__input formx__input_type_textarea" data-alias="Текст заявки" placeholder="Это поле вовсе не обязательное" name="comment-free" id="comment-free-input" style="height: 100%;" minlength="1"></textarea>
+              <span class="formx__input-error comment-free-input-error"></span>
+            </label>
+            <button class="button-bem formx__submit-button" style="background-color: var(--main-equivalent-color); border-radius: 4px;" type="submit">Откликнуться</button>
+          </form>
+        </div>
+      </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
+          <ul class="map__list">
+          </ul>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-big-form.html').default %>
+
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>

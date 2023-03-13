@@ -1,5 +1,6 @@
 :root {
   --info-text-size: 22px;
+  --info-text-exp-size: 20px;
   --info-p-span-size: 16px;
   --info-smalltext-size: 18px;
   --info-mainpage-text-size: 18px;
@@ -9,6 +10,7 @@
 @media screen and (max-width: 1441px) {
   :root {
     --info-text-size: 20px;
+    --info-text-exp-size: 18px;
     --info-smalltext-size: 16px;
 
   }
@@ -17,6 +19,7 @@
 @media screen and (max-width: 1024px) {
   :root {
     --info-text-size: 16px;
+    --info-text-exp-size: 16px;
     --info-smalltext-size: 14px;
     --info-mainpage-text-size: 16px;
     --info-p-span-size: 12px;
@@ -57,5 +60,20 @@
     width: 30%;
 }
 
+.info__raschet {
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
 
+.info__raschet-img {
+  flex-basis: 50%;
+  width: 100%;
+  min-width: 0;
+  margin-right: 10px;
+}
+
+.info__raschet-img:nth-last-child(1) {
+  margin-right: 0;
+}
 /*Стили swiper Перенесено */

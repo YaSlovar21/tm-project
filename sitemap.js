@@ -240,7 +240,12 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
-
+    {
+      path: '/blog-proizvodstva/teploobmennik-par-voda-plastinchatyy.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
 
     /* --- теплообменники --- */
     {

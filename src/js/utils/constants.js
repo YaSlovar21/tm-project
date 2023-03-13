@@ -119,9 +119,9 @@ export const initialArticles = [
   },
   {
     tags: ['gkh', 'prod'],
-    linkPath: `/${blogPath}/teploobmennik-du-250-v-gazete.html`,
-    heading: 'Новые теплообменники упомянули в газете',
-    description: 'Статья в газете об отгрузке теплообменников ДУ250 в особую энономическую зону Липецк',
+    linkPath: `/${blogPath}/teploobmennik-par-voda-plastinchatyy.html`,
+    heading: 'Теплообменники пар-вода',
+    description: 'Пластинчатые пароводяные теплообменники для нагрева воды паром и прочих сред',
   },
   {
     tags: ['example', 'prod'],
@@ -140,6 +140,12 @@ export const initialArticles = [
     linkPath: `/${blogPath}/teploobmenniki-mnogokvartirnogo-doma.html`,
     heading: 'Теплообменник в многоквартирном доме',
     description: 'Теплообменные аппараты в жилых многоквартирных домах (мкд). Как расчитываются? Как работают?',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-du-250-v-gazete.html`,
+    heading: 'Новые теплообменники упомянули в газете',
+    description: 'Статья в газете об отгрузке теплообменников ДУ250 в особую энономическую зону Липецк',
   },
   {
     tags: ['gkh'],
@@ -432,7 +438,7 @@ export const initialPartnersTowns = [
     htmlData: [{
       nameOfPartner: 'ООО \"Партнер\"',
       telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
-      site: 'http://www.partnerufa.ru',
+      site: 'https://www.termoblokufa.ru/',
     }],
   },
   {
@@ -440,7 +446,7 @@ export const initialPartnersTowns = [
     htmlData: [{
       nameOfPartner: 'ООО \"Партнер\"',
       telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
-      site: 'http://www.partnerufa.ru',
+      site: 'https://www.termoblokufa.ru/',
     }],
   },
   {

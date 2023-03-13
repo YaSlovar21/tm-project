@@ -443,6 +443,17 @@ module.exports = {
       filename: "about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html",
       chunks: ["vakansii", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: { canonicalURL: canonicalURL, },
+      title: "Вакансия экономиста Барнаул",
+      meta: {
+        keywords: "вакансии барнаул, вакансии экономист",
+        description: "Быстрорастущему предприятию по производству теплообменного оборудования требуется ведущий экономист. Подробнее о вакасии.",
+      },
+      template: "./src/vakansii-economist.html",
+      filename: "about/vakansii/vakansiya-economista-barnaul.html",
+      chunks: ["vakansii", "all", "map"],
+    }),
      /*---------КОНТАКТЫ----------- */
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL, },
@@ -547,6 +558,29 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "par-voda.html",
+        relevanceArticles: [
+          {
+            name: "Пароводяные теплообменники в системах отопления",
+            link: "/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html"
+          },
+        ],
+        buttonText: 'Подобрать пароводяной теплообменник',
+      },
+      title: "Теплообменник пар вода пластинчатый | Пароводяной теплообменник",
+      heading: "Теплообменник нагрева воды паром",
+      meta: {
+        keywords: "теплообменник пар вода, теплообменник пароводяной, теплообменник паровой",
+        description: "Как происходит нагрев воды паром через теплообменник?",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmennik-par-voda-plastinchatyy.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({

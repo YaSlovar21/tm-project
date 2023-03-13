@@ -13,3 +13,7 @@
 
   color: #c4c4c4;
 }
+
+.info__paragraph_exp {
+  font-size: var(--info-text-exp-size);
+}
