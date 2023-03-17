@@ -124,6 +124,12 @@ export const initialArticles = [
     description: 'Пластинчатые пароводяные теплообменники для нагрева воды паром и прочих сред',
   },
   {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-glikol-voda.html`,
+    heading: 'Теплообменники гликоль-вода',
+    description: 'Пластинчатые теплообменники для гликоля: пропиленгликоля, этиленгликоля.',
+  },
+  {
     tags: ['example', 'prod'],
     linkPath: `/${blogPath}/teploobmennik-dlya-bassejna.html`,
     heading: 'Теплообменник для бассейна',
