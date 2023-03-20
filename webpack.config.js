@@ -627,6 +627,12 @@ module.exports = {
         isGkh: true,
         articleFile: "glikol-voda.html",
         buttonText: "Подобрать теплообменник для гликоля",
+        relevanceArticles: [
+          {
+            name: "Теплообменники для снеготаяния",
+            link: "/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html"
+          }
+        ],
       },
       title: "Теплообменник гликоль вода | Пароводяной теплообменник",
       heading: "Теплообменники для гликоля",
@@ -634,7 +640,7 @@ module.exports = {
         keywords:
           "теплообменник гликоль вода, теплообменник пропиленгликоль, теплообменник этиленгликоль",
         description:
-          "Особенности применения теплообменников гликоль-вода, примеры расчётов под пропиленгликоль и этиленгликоль. Где применяется теплообменник гликоль-вода, сферы и области.",
+          "Особенности применения теплообменников гликоль-вода, примеры расчётов теплообменных аппаратов под пропиленгликоль и этиленгликоль. Где применяется теплообменник гликоль-вода, сферы и области.",
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/teploobmennik-glikol-voda.html",
@@ -645,6 +651,12 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "pto-snegotayanie.html",
+        relevanceArticles: [
+          {
+            name: "Теплообменники гликоль-вода",
+            link: "/blog-proizvodstva/teploobmennik-glikol-voda.html"
+          }
+        ],
       },
       title: "Теплообменник для системы снеготаяния пластинчатый",
       heading: "Теплообменники для системы снеготаяния",

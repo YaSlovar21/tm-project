@@ -246,7 +246,19 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
-
+    {
+      path: '/blog-proizvodstva/teploobmennik-glikol-voda.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+{
+      path: '/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    
     /* --- теплообменники --- */
     {
       path: '/catalog/ti-025.html',

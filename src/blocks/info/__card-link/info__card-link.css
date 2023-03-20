@@ -1,0 +1,31 @@
+.info__card-link {
+  background-color: #ff5e3a;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-basis: 70px;
+
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+
+  transition: all .2s ease-in;
+}
+
+
+
+.info__card-link:hover {
+  background-color: #ff5e3aab;
+}
+
+
+.info__card-link::after {
+  content: '→';
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1441px) {
+  .info__card-link {
+    font-size: var(--cell-description-font);
+  }
+}

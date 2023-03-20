@@ -74,6 +74,9 @@
 @import url(../blocks/info/__paragraph/_sm/info__paragraph_sm.css);
 @import url(../blocks/info/__tech-inline/info__tech-inline.css);
 
+@import url(../blocks/info/__card/info__card.css);
+@import url(../blocks/info/__card-link/info__card-link.css);
+
 
 @import url(../blocks/info/__quote/info__quote.css);
 
