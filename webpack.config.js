@@ -586,7 +586,7 @@ module.exports = {
         ],
       },
       title:
-        "Теплообменники горячего водоснабжения ГВС пластинчатые | Моноблок ГВС",
+        "Теплообменники для горячего водоснабжения ГВС пластинчатые | Моноблок ГВС",
       heading: "Теплообменники горячего водоснабжения",
       meta: {
         keywords:
@@ -634,7 +634,7 @@ module.exports = {
           }
         ],
       },
-      title: "Теплообменник гликоль вода | Пароводяной теплообменник",
+      title: "Теплообменник гликоль вода пластинчатый",
       heading: "Теплообменники для гликоля",
       meta: {
         keywords:
@@ -668,6 +668,32 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "pto-teplii-pol.html",
+        relevanceArticles: [
+          {
+            name: "Теплообменники гликоль-вода",
+            link: "/blog-proizvodstva/teploobmennik-glikol-voda.html"
+          },
+          {
+            name: "Теплообменник для системы снеготаяния",
+            link: "/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html"
+          }
+        ],
+      },
+      title: "Теплообменник для теплого пола пластинчатый",
+      heading: "Теплообменники для теплого пола",
+      meta: {
+        keywords: "теплообменник для теплого пола",
+        description: "Подробно о применении теплообменника для теплого пола. Как рассчитать теплообменник под водяной теплый пол? Пример расчёта.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/teploobmennik-dlya-teplovogo-pola.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({
