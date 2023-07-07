@@ -63,6 +63,12 @@ module.exports.paths = [
       changefreq: 'monthly'
     },
     {
+      path: '/plastinchatye-teploobmenniki/remont-plastinchatogo-teploobmennika.html',
+      lastmod: dateNow,
+      priority: 0.9,
+      changefreq: 'monthly'
+    },
+    {
       path: '/plastinchatye-teploobmenniki/programma-rascheta.html',
       lastmod: dateNow,
       priority: 0.9,

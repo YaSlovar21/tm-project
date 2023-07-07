@@ -371,6 +371,25 @@ module.exports = {
       filename: "plastinchatye-teploobmenniki/programma-rascheta.html",
       chunks: ["blogSpecPage", "all", "map"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "remont.html",
+      },
+      title: "Как осуществить ремонт пластинчатого теплообменника правильно",
+      heading: "Ремонт пластинчатого теплообменника",
+      intro:
+        "Советы по ремонту пластинчатых теплообменников от завода производителя.",
+      meta: {
+        keywords:
+          "ремонт пластинчатого теплообменника, ремонт теплобменника, ремонт теплообменного аппарата",
+        description: "На каждый возможный вид неисправности мы предлагаем алгоритм действий по ремонту пластинчатого теплообменника. Советы от завода по производству пластинчатых теплообменников.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename: "plastinchatye-teploobmenniki/remont-plastinchatogo-teploobmennika.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
     /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -475,7 +494,7 @@ module.exports = {
       template: "./src/vakansii-ing-btp.html",
       filename: "about/vakansii/vakansiya-inzhenera-konstruktora-barnaul.html",
       chunks: ["vakansii", "all", "map"],
-    }),
+    }),/*
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL },
       title: "Вакансия экономиста Барнаул",
@@ -487,7 +506,7 @@ module.exports = {
       template: "./src/vakansii-economist.html",
       filename: "about/vakansii/vakansiya-economista-barnaul.html",
       chunks: ["vakansii", "all", "map"],
-    }),
+    }),*/
     /*---------КОНТАКТЫ----------- */
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL },
@@ -1028,7 +1047,7 @@ module.exports = {
         drawalias: "draw025.jpg",
         heading: "ТИ 025",
         headingAlias: "ТИ025",
-        description: `ТИ025 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Применение: небольшие промышленные помещения, коттеджи, здания детских садов, подогрев бассейнов, обогрев гаражных помещений.`,
+        description: `ТИ025 – имеет широкую гамму подключения патрубки: Ду20, Ду25, Ду32, Ду40. Применение: небольшие промышленные помещения, коттеджи, здания детских садов, подогрев бассейнов, обогрев гаражных помещений.`,
         link3d: "https://disk.yandex.ru/d/Lo1bdjAoi7LVyQ",
       },
       chunks: ["ti", "all"],
@@ -1042,7 +1061,7 @@ module.exports = {
         drawalias: "draw077.jpg",
         heading: "ТИ 077",
         headingAlias: "ТИ077",
-        description: `ТИ077 – имеет широкую гамму подключения подтрубков: Ду25, Ду32, Ду40. 
+        description: `ТИ077 – имеет широкую гамму подключения патрубки: Ду25, Ду32, Ду40. 
           Подходит для задач ЖКХ на типовые 5ти этажные дома.
           Типоразмер также часто применяется в пищевой отрасли. (в т.ч. в многоступенчатом исполнении)`,
         link3d: "https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg",
@@ -1058,7 +1077,7 @@ module.exports = {
         drawalias: "draw13.jpg",
         heading: "ТИ 13",
         headingAlias: "ТИ13",
-        description: `ТИ13 – имеет подключения подтрубков: Ду50, Ду65. 
+        description: `ТИ13 – имеет подключения патрубки: Ду50, Ду65. 
         Применение: если ориентироваться на жилые дома, данный теплообменник подходит на типовой 4-6 подъездный 9-ти этажный жилой дом.`,
         link3d: "https://disk.yandex.ru/d/7C26Ov2CVbgl6w",
       },
@@ -1073,7 +1092,7 @@ module.exports = {
         drawalias: "draw18.jpg",
         heading: "ТИ 18",
         headingAlias: "ТИ18",
-        description: `ТИ18 – имеет гамму подключения подтрубков: Ду50, Ду65.
+        description: `ТИ18 – имеет гамму подключения патрубки: Ду50, Ду65.
           Применение: если ориентироваться на жилые дома, данный теплообменник зачастую используются в многоквартирных высотных домах.
           Теплообменный аппарат похож на ТИ13, но в отличие от него лучше справляется с более жесткими температурными режимами`,
         link3d: "https://disk.yandex.ru/d/O2lzhXAOWaA4ug",
@@ -1089,7 +1108,7 @@ module.exports = {
         drawalias: "draw16-5.jpg",
         heading: "ТИ 16,5",
         headingAlias: "ТИ16,5",
-        description: `ТИ16,5 – имеет подключение подтрубков ДУ50, ДУ65, ДУ80.
+        description: `ТИ16,5 – имеет подключение патрубки ДУ50, ДУ65, ДУ80.
         Если температурные графики не типовые (не отопление и гвс), с небольшим перепадом температур, 
         специфические среды, программа расчёта вероятно подберет данный теплообменник. 
         Зачастую он подбирается, когда требуется охладить жидкость на 1-3 градуса при небольших тепловых нагрузках`,
@@ -1105,7 +1124,7 @@ module.exports = {
         drawalias: "draw28.jpg",
         heading: "ТИ 28",
         headingAlias: "ТИ28",
-        description: `ТИ28 – имеет подключения подтрубков: ДУ100, ДУ125.
+        description: `ТИ28 – имеет подключения патрубки: ДУ100, ДУ125.
           `,
         link3d: "https://disk.yandex.ru/d/3lo5g4MpzvYFcA",
       },
@@ -1120,7 +1139,7 @@ module.exports = {
         drawalias: "draw45.jpg",
         heading: "ТИ 45",
         headingAlias: "ТИ45",
-        description: `ТИ45 – имеет подключения подтрубков: ДУ100, ДУ125. 
+        description: `ТИ45 – имеет подключения патрубки: ДУ100, ДУ125. 
           `,
         link3d: "https://disk.yandex.ru/d/xl08RXlp73-Bzw",
       },
@@ -1151,7 +1170,7 @@ module.exports = {
         drawalias: "draw52.jpg",
         heading: "ТИ 65",
         headingAlias: "ТИ65",
-        description: `ТИ65 – имеет подключения подтрубков: ДУ100, ДУ125. 
+        description: `ТИ65 – имеет подключения патрубки: ДУ100, ДУ125. 
           `,
         link3d: "https://disk.yandex.ru/d/1c62zYE1I9yvyA",
       },
@@ -1182,7 +1201,7 @@ module.exports = {
         drawalias: "draw95.jpg",
         heading: "ТИ 95",
         headingAlias: "ТИ95",
-        description: `ТИ95 – имеет подключения подтрубков: ДУ200, ДУ250.
+        description: `ТИ95 – имеет подключения патрубки: ДУ200, ДУ250.
         Применение: ТЭЦ. (Обогревается совокупность микрорайонов)`,
         link3d: "https://disk.yandex.ru/d/rqyEmjeBzRgdZg",
       },
@@ -1197,7 +1216,7 @@ module.exports = {
         drawalias: "draw116.jpg",
         heading: "ТИ 116",
         headingAlias: "ТИ116",
-        description: `ТИ116 – имеет подключения подтрубков: ДУ200, ДУ250.
+        description: `ТИ116 – имеет подключения патрубки: ДУ200, ДУ250.
           Применение: ТЭЦ. (Обогревается совокупность микрорайонов)`,
       },
       chunks: ["ti", "all"],
