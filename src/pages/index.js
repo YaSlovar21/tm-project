@@ -16,6 +16,7 @@ import Api from '../js/components/Api.js';
 import 'swiper/swiper-bundle.css';
 //import 'animate.css';
 //import '../pages/animation.css';
+import './tw.css';
 import '../pages/index.css';
 
 //import '../pages/CNAME';
@@ -301,7 +302,7 @@ window.addEventListener('scroll', function() {
   }
 });
 */
-/* Слайдер в хидере на главной */
+/* Слайдер в хидере на главной
 const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -314,7 +315,7 @@ const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   },
   speed: 800,
   autoplay: true,
-});
+}); */
 
 const swiperInfo = new Swiper('.scroll-slider', {
   direction: 'vertical',

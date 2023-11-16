@@ -8,15 +8,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>"  rel="canonical" />
-  <style>/*
-    #swipermain.swiper-container .swiper-scrollbar {
-      position: absolute;
-      right: 5%;
-      top: 10%;
-      z-index: 50;
-      width: 5px;
-      height: 90%;
-    }*/
+  <style>
     .swiper-scrollbar-main {
       width: 2px!important;
       background: linear-gradient(180deg,hsla(0,0%,97%,0),#f7f7f7 49.49%,hsla(0,0%,97%,0) 92.71%);
@@ -41,15 +33,45 @@
     }
 
   </style>
-
-
 </head>
 
 <body class="page">
   <%= require('html-loader!./inner-metrika.html').default %>
   <div class="bg"></div>
+  <header class="header header_type_wrapper">
+    <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" class="header__logo-img" alt="Лого Термоблок"/></a>
+    <div class="header__right">
+      <%= require('html-loader!./insets/asides/inner-header.html').default %>
+    </div>
+  </header>
   <main>
-    <section class="header-index">
+    <div class="my-12">
+      <div class="max-w-[--head-wrap] rounded-r-xl bg-[#1a1a1a] py-6 box-border">
+        <div class="flex max-w-[1600px] ml-auto">
+          <div class="basis-4/12 flex flex-col justify-between">
+            <h1 class="font-semibold uppercase text-2xl text-gray-100">100% локализация производства пластинчатых теплообменников</h1>
+            <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием. Производство пластин и уплотнений 100% локализовано на территории предприятия. На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
+
+            <button class="p-4 bg-[--main-color] rounded-md max-w-[95%]">Отправить запрос</button>
+          </div>
+          <div class="header-index__video-container rounded-lg overflow-hidden basis-7/12">
+            <figure class="header-index__darked"></figure>
+            <!--Здесь рендерится видео в зависимости от разрешения экрана-->
+            <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
+              <source src="videos/tm_test_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>data-swiper-parallax-scale="0.8"-->
+          </div>
+          <div class="basis-1/12">
+            <p class="span-color-theme uppercase text-xs font-semibold ml-2 sticky top-6">Подробнее о производстве</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      <section class="header-index">
       <div class="header-index__logo-container">
       <a class="" href="/">
         <img class="header-index__logo-img animate__animated animate__slow animate__fadeInLeft" src="<%=require('./images/tmlogo-1.svg')%>" alt="Лого Термоблок">
@@ -57,17 +79,12 @@
 
       </div>
       <div class="header-index__right">
-        <%= require('html-loader!./insets/asides/inner-header.html').default %>
+
       </div>
       <div style="position: relative; "><figure class="header-index__darked"></figure></div>
       <h1 class="header-index__main-heading">Производитель пластин, пластинчатых теплообменников, блочных тепловых пунктов</h1>
       <div class="header-index__video-container">
         <figure class="header-index__darked"></figure>
-        <!--Здесь рендерится видео в зависимости от разрешения экрана-->
-        <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
-          <source src="videos/tm_test_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>data-swiper-parallax-scale="0.8"-->
       </div>
 
       <div class="header-index__slider-container">
@@ -112,15 +129,25 @@
         </div>
       </div>
     </section>
-    <!--Слайд с продукцией-->
-    <section class="demonstration">
+  -->
+
+  <!--Слайд с продукцией-->
+    <section class="demonstration max-w-[1600px] mx-auto">
+      <h2 class="text-2xl font-bold uppercase text-gray-100">Продукция предприятия</h2>
+      <!--<p class="text-lg text-gray-100 max-w-[58%] my-10 py-4">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием. Производство пластин и уплотнений 100% локализовано на территории предприятия. На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>-->
+      <p class="header-index__desc max-w-[58%] my-10 py-4">Основное направление компании - производство теплообменников<span
+        class="video-main__span-accent"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
+      МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
+      теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
+      сложности.
+      </p>
       <!--<div class="two-columns">
         <h2 class="two-columns__brief two-columns__brief_page_main">Продукция предприятия</h2>
         <div class="two-columns__main-text">
           <p class="two-columns__paragraph ">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Компания серийно выпускает пластинчатые теплообменники <span class="span-no-wrap"><img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™</span>, производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
           <p class="two-columns__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
         </div>
-      </div>-->
+      </div>
       <div class="prod-intro">
         <h2 class="prod-intro__title">Продукция предприятия</h2>
         <div class="prod-intro__columns">
@@ -134,7 +161,7 @@
             <p class="prod-intro__paragraph">На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <div class="product-types">
         <div class="swiper-wrapper">
@@ -582,7 +609,7 @@
           <p class="bsz-new__text" style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
             партнерам преимущества в плане качества продуции и выгодной цены за счёт оптовой закупки металла и серийного производства.</p>
           </div>
-          <div class="bsz-new__img-container">
+          <div class="bsz-new__img-container overflow-hidden rounded-md">
             <img src="<%=require('./images/logo_BSZ_svg.svg')%>" class="bsz-new__logo" alt="Барнаульский станкостроительный завод">
             <a class="bsz-new__link-blank" href="https://bszholding.ru" target="_blank">Подробнее --></a>
           </div>

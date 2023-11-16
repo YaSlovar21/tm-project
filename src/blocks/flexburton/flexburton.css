@@ -15,6 +15,14 @@
   margin-top: 30px;
 }
 
+.flexburton__content {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
   .flexburton_test {
     padding: 2.5%;
@@ -60,7 +68,7 @@
 
   .flexburton__right-side {
     position: relative;
-    flex: 1 1 450px;
+    /*flex: 1 1 450px;*/
 
     display: flex;
     align-items: flex-end;

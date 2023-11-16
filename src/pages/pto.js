@@ -271,8 +271,8 @@ swiper_text_on_sborka.controller.control = slider_sborka;
 const animateCSS1 = (element, animation, prefix = 'animate__') =>
     new Promise((resolve, reject) => {
       const imgToAnime = element.querySelector('.wow1');
-      const animationName = imgToAnime.getAttribute("data-class-animaton");
-      imgToAnime.classList.add(`${prefix}animated`, animationName);
+      const animationName = imgToAnime?.getAttribute("data-class-animaton");
+      imgToAnime?.classList.add(`${prefix}animated`, animationName);
 
       function handleAnimationEnd(event) {
         event.stopPropagation();
@@ -280,7 +280,7 @@ const animateCSS1 = (element, animation, prefix = 'animate__') =>
         resolve('Animation ended');
       }
 
-      imgToAnime.addEventListener('animationend', handleAnimationEnd, {once: true});
+      imgToAnime?.addEventListener('animationend', handleAnimationEnd, {once: true});
     });
 
 slider_sborka.on('slideChange', function () {

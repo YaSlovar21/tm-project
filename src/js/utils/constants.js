@@ -480,7 +480,8 @@ export const initialPartnersTowns = [
     name: 'Вологда',
     htmlData: [{
       nameOfPartner: 'ООО \"Протемол\"',
-      telephoneNumbers: ['']
+      telephoneNumbers: [''],
+      site: ''
     }],
   },
   {
