@@ -16,7 +16,7 @@ import Api from '../js/components/Api.js';
 import 'swiper/swiper-bundle.css';
 //import 'animate.css';
 //import '../pages/animation.css';
-import './tw.css';
+//import './tw.css';
 import '../pages/index.css';
 
 //import '../pages/CNAME';

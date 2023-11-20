@@ -1,3 +1,5 @@
+import './tw.css';
+
 import './all.css';
 import '../images/favicon.svg';
 
