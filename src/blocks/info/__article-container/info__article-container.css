@@ -27,14 +27,14 @@
 
 /*Стили swiper*/
 .info__article-container .swiper-slide {
-  font-size: 18px;
+  /*font-size: 18px;*/
   height: auto;  /*Без этого пропадает скролл!!!!!*/
 
-  -webkit-box-sizing: border-box;
+  /*-webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0px 30px 30px 20px;
+  padding: 0px 30px 30px 20px;*/
   margin: 0 auto;
-  max-width: 998px;
+  /*max-width: 998px;*/
 }
 
 .info__article-container .swiper-scrollbar-drag {

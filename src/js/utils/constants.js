@@ -406,6 +406,9 @@ export const initialPartnersTowns = [
     htmlData: [{
       nameOfPartner: 'ООО \"Термополис+\"',
       telephoneNumbers: ['+7(3812) 660-137'],
+    }, {
+      nameOfPartner: 'ООО \"Компромисс\"',
+      telephoneNumbers: ['+7(999)470-09-61'],
     }],
   },
   {

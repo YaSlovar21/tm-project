@@ -7,6 +7,7 @@
 
 .plates__interactive {
     /*display: flex;*/
+    box-sizing: initial;
     position: relative;
     justify-content: flex-end;
     align-items:center;
@@ -87,6 +88,7 @@
 }
 
 .illustration__stripe-green {
+  box-sizing: initial;
     z-index: 4;
     position: absolute;
       left: 15%;
@@ -102,6 +104,7 @@
   }
 
   .illustration__stripe-blue {
+    box-sizing: initial;
     position: absolute;
       bottom: 0%;
       left: 15%;

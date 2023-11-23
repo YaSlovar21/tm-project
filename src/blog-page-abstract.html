@@ -29,16 +29,7 @@
           <h1 class="info__heading"><%= htmlWebpackPlugin.options.heading %></h1>
           <img class="info__aside-img" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
 
-          <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
-            <div style="margin: 20px auto; width: calc(100% - 40px);">
-              <h2 class="info__relevance-title">Смотрите похожие материалы</h2>
-              <ul class="bem__list">
-                <% relevanceArticles.forEach(function(article) { %>
-                <li class="bem__list-item"><a class="bem__link link-beauty" href="<%-article.link%>"><%-article.name%></a></li>
-                <% }); %>
-              </ul>
-            </div>
-          <% } %>
+
           <a class="info__aside-button link-beauty info__aside-button_custom">
            <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
           </a>
@@ -46,11 +37,32 @@
         <article class="info__article-container">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide prose prose-termoblok prose-lg">
+              <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
+                <div class="not-prose">
+                  <h2 class="info__relevance-title">Смотрите похожие материалы</h2>
+                  <ul class="grid grid-cols-3 gap-2">
+                    <% relevanceArticles.forEach(function(article) { %>
+                    <li>
+                      <a class="group relative w-full h-full flex bg-zinc-600 bg-opacity-50 text-base p-3 rounded-md overflow-hidden" href="<%-article.link%>">
+                        <span class="absolute inset-0"></span>
+                        <%-article.name%>
+                        <figure class="absolute w-8 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 invisible opacity-0  transition  group-hover:visible group-hover:opacity-100">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                          </svg>
+                        </figure>
+                      </a>
+                    </li>
+                    <% }); %>
+                  </ul>
+                </div>
+              <% } %>
               <!--Сюда прорендерится статья
               <%= htmlWebpackPlugin.options.article %>
               <%= compilation.assets['favicon.svg'].source() %>-->
               <%= require('html-loader!./articles/' + articleFile).default %>
+
             </div>
           </div>
           <div class="swiper-scrollbar"></div>
