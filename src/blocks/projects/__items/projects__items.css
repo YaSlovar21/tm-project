@@ -1,7 +1,7 @@
 
 .projects__items {
 
-  margin-top: 30px; /*временно*/
+  /*margin-top: 30px; временно*/
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 365px;
