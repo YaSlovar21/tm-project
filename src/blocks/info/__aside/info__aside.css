@@ -1,6 +1,6 @@
 /*Левый блок*/
 .info__aside {
-  width: 600px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

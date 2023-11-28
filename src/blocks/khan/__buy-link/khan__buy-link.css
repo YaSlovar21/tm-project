@@ -12,6 +12,11 @@
     margin-top: 70px;
   }
 
+  .khan__buy-link_pto {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
   @media screen and (max-width: 1440px) {
     .khan__buy-link {
       font-size: 24px;

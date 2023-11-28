@@ -10,6 +10,11 @@
     margin-right: 5px;
   }
 
+
+.flexburton__breadcrumbs-link_spec {
+  font-size: 14px;
+}
+
   @media screen and (max-width: 1024px) {
     .flexburton__breadcrumbs-link{
       /*margin-left: 10px;*/

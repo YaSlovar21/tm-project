@@ -34,10 +34,10 @@
            <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
           </a>
         </div>
-        <article class="info__article-container">
+        <article class="info__article-container overflow-y-auto">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide prose prose-termoblok prose-lg">
+          <!--<div class="swiper-wrapper">-->
+            <div class=" prose prose-termoblok prose-lg mx-auto">
               <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
                 <div class="not-prose">
                   <h2 class="info__relevance-title">Смотрите похожие материалы</h2>
@@ -64,7 +64,7 @@
               <%= require('html-loader!./articles/' + articleFile).default %>
 
             </div>
-          </div>
+          <!--</div>-->
           <div class="swiper-scrollbar"></div>
         </article>
       </section>

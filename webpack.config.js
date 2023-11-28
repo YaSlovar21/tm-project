@@ -5,12 +5,32 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const {paths} = require('./sitemap');
 
+const {rawData, razbegPoMoshnosti} = require('./raschets');
+
 //const faviconPath = 'src/images/favicon.svg';
 const canonicalURL = 'https://www.termoblok.ru'
 
 const {btpexamples} = require('./btpexamples');
 
 const fs = require('fs');
+
+console.log(rawData);
+
+function generateRaschetHtmlPlugins() {
+  return rawData.map(ptoData => {
+    return new HtmlWebpackPlugin({
+      title: ptoData.title ? ptoData.title:  `Какой то расчёт`,
+      template: "./src/abstract-raschet-page.html", // шаблон
+      filename: `plastinchatye-teploobmenniki/raschets/${ptoData.path}.html`,
+      templateParameters: ptoData,
+      razbegPoMoshnosti,
+      chunks: ["blogSpecPage", "all", "map"],
+    })
+  })
+};
+
+const htmlRaschetPlugins = generateRaschetHtmlPlugins();
+
 
 //import {initialHeatEx} from './src/js/utils/constants.js';
 //console.log(initialHeatEx);
@@ -1426,5 +1446,5 @@ module.exports = {
       filename: "[name].css",
     }),
     new SitemapPlugin({ base: canonicalURL, paths }),
-  ],
+  ].concat(htmlRaschetPlugins),
 };

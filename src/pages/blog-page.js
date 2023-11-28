@@ -42,6 +42,7 @@ openRaschetButton.addEventListener('click', ()=>{
   raschetSection.classList.toggle('animate__fadeIn');
 });
 
+/*
 const swiperInfo = new Swiper('.info__article-container', {
   direction: 'vertical',
   slidesPerView: 'auto',
@@ -56,7 +57,7 @@ const swiperInfo = new Swiper('.info__article-container', {
   },
   nested: true,
 
-});
+});*/
 
 
 const formRaschet = new FormStaticJsRendered({

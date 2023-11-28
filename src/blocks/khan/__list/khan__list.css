@@ -1,10 +1,10 @@
 .khan__list{
-  font-size: 24px;
+
 }
 
 @media screen and (max-width: 1440px) {
   .khan__list {
-    font-size: 22px;
+    /*font-size: 22px;*/
     max-width: 720px;
   }
 }

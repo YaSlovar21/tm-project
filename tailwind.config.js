@@ -25,6 +25,15 @@ module.exports = {
           },
         },
       }),
+      colors: {
+        orange: {
+          lighter: '#FF9275',
+          light: '#F36D4A',
+          DEFAULT: '#E7461C',
+          dark: '#B72F0B',
+          darker: '#901E00',
+        },
+      }
     },
     screens: {
       '2xl': {'max': '1535px'},

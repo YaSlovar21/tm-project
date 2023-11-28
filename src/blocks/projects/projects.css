@@ -155,7 +155,7 @@
     transition: transform 0.9s ease-in-out;
     overflow: hidden;
     width: 100%;
-    
+
     cursor: pointer;
     transition: all .2s ease-in;
     z-index: 4;
@@ -197,13 +197,13 @@
 .projects__item_horizontal:nth-of-type(2n)::after {
   transform: skew(30deg);
 }
-*/
+
 .projects__image:hover {
     transform: translateY(-10px);
 }
 .projects__image_horizontal:hover {
   transform: scale(1.03);
-}
+}*/
 
 .projects__item:hover::after {
     transform: skew(-20deg) translateX(-40px);

@@ -8,6 +8,9 @@
   flex-wrap: wrap;
 }
 
+.flexburton__breadcrumbs_spec {
+  font-size: 16px;
+}
 
 @media screen and (min-width: 1440px) {
   .flexburton__breadcrumbs_outside{
