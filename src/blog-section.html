@@ -22,13 +22,13 @@
   </header>
 
 
-  <main class="content blog-grid">
+  <main class="content max-w-[1600px] mx-auto">
     <div class="flexburton__breadcrumbs blog-grid__breadcrums">
       <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
       <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
     </div>
     <h1 class="content__title blog-grid__title">Статьи и информация</h1>
-    <form class="filter-form blog-grid__filter" name="filterForm" id="filterForm">
+    <form class="filter-form flex gap-2 my-6" name="filterForm" id="filterForm">
       <label>
         <input class="filter-form__input" type="checkbox" name="filterbox" value="project">
         <span class="blog-grid__filter-span">Проект</span>

@@ -1,3 +1,22 @@
+.scroll-factory::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  background: #666666;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+
+.scroll-factory::-webkit-scrollbar-thumb {
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  width: 8px;
+  height: 4px;
+  position: relative;
+  right: 40px;
+  cursor: pointer;
+}
+
 .typesx {
   position: relative;
   margin: 0px auto;
