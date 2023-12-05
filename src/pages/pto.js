@@ -439,7 +439,7 @@ const isScrollingFact = (evt) => {
   console.log(newScrollLeft)
   let deltaRight = scrollFactoryContainer.querySelector('.scroll-factory__inner').scrollWidth -scrollFactoryContainer.scrollLeft - scrollFactoryContainer.clientWidth  ;
   console.log(deltaRight);
-  if ( newScrollLeft < -80 || (deltaRight < 20 && deltaRight > -1 && evt.deltaY >0) ) {
+  if ( newScrollLeft < -80 || (deltaRight < 46 && deltaRight > -1 && evt.deltaY >0) ) {
     console.log(deltaRight );
     return;
   }

@@ -116,7 +116,7 @@
     position: absolute;
     align-items: stretch;
     top: calc(100% + 10px);
-    left: 0px;
+    left: -16px;
     width: 210%;
     z-index: 10;
     transition: opacity 0.5s ease-in-out, color .2s ease-in;

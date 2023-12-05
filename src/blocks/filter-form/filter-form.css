@@ -3,15 +3,27 @@
     opacity: 0;
 }
 .filter-form__input:checked + .blog-grid__filter-span {
-  background-color: #ff5e3a8e;
+  background-color: #ff5e3a;
   color: #202020;
   font-weight: 700;
+}
+
+.filter-form__input:checked + .blog-grid__filter-span::after {
+  content: "x";
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.filter-form__input:active + .blog-grid__filter-span {
+  transform: rotateZ(10deg);
 }
 
 @media screen and (max-width: 768px) {
   .filter-form {
     display: flex;
     flex-wrap: wrap;
-    
+
   }
 }

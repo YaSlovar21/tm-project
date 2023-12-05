@@ -6,7 +6,7 @@
 }
 .blog-grid__title {
   grid-column: 1/2;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 0px;
   font-size: 28px;
 }
 .blog-grid__breadcrums {
@@ -24,11 +24,13 @@
   grid-row: 3/4;
 }
 .blog-grid__filter-span {
+
   color: #ff5e3a;
   margin: 0;
   padding: 12px;
   border: 1px solid #ff5e3a83;
-  display: block;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 20px;
   font-weight: 500;
