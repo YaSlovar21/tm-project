@@ -317,6 +317,8 @@ const mainHeaderSlider = new Swiper(".mainHeaderSlider", {
   autoplay: true,
 }); */
 
+/*
+
 const swiperInfo = new Swiper('.scroll-slider', {
   direction: 'vertical',
   slidesPerView: 'auto',
@@ -351,7 +353,7 @@ const windowWidth= useWindowSize();
     swiperInfo.destroy(false,false);
   } else {
     swiperInfo.update();
-}
+}*/
 
 
 const types_swiper = new Swiper('.product-types', {

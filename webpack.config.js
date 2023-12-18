@@ -237,6 +237,7 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "teploizol.html",
+        bannerImg: 'ti13front-with-izol.png',
       },
       title:
         "Теплоизоляция теплообменников, изоляция пластинчатых теплообменников",

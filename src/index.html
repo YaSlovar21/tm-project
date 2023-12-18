@@ -258,9 +258,9 @@
       <div class="ds-second">
         <figure class="highliter highliter_large highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
         <figure class="highliter highliter_large highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
-        <div class="scroll-slider swiper ds-second__scroll-slider">
+        <div class=" ds-second__scroll-slider overflow-y-auto p-5"> <!--scroll-slider swiper
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 25px 5%;">
+            <div class="swiper-slide" style="height: auto; box-sizing: border-box; padding: 25px 5%;">-->
               <h3 class="info__paragraph-title info__paragraph-title_page_main" style="margin-top: 0;">История производства теплообменников</h3>
               <p class="info__paragraph info__paragraph_page_main">В конце 80-х годов <span class="info__span-bsz-accent">Барнаульский
                   станкостроительный завод</span> постепенно стал переходить на выпуск гражданской продукции.
@@ -370,34 +370,37 @@
               <h3 class="info__paragraph-title info__paragraph-title_page_main">Сферы применения теплообменного оборудования на базе пластинчатых теплообменников
               </h3>
               <p class="info__quote info__quote_page_main">Области применения обширны, опыт инженеров по расчётам позволяет точно рассчитать и
-                изготовить эффективный пластинчатый теплообменник в том числе под сложные технологические процессы</p>
-              <ul class="bem__list info__list info__list_page_main">
-                <li class="bem__list-item">жилищно-коммунальное хозяйство (тепловые пункты для отопления, гвс, вентиляции)
+                изготовить эффективный пластинчатый теплообменник в том числе под сложные технологические процессы. Теплообменники использутся в таких отраслях как:</p>
+              <ul class="list-disc divide-transparent divide-y-4 list-inside marker:text-orange mt-2 mb-6">
+                <li>жилищно-коммунальное хозяйство (тепловые пункты для отопления, гвс, вентиляции)
                 </li>
-                <li class="bem__list-item">котельные (частные, промышленные)</li>
-                <li class="bem__list-item">пищевая отрасль (пастеризаторы, охладители, подогреватели)</li>
-                <li class="bem__list-item">фармацевтика</li>
-                <li class="bem__list-item">нефтепереработка</li>
+                <li>котельные (частные, промышленные)</li>
+                <li>пищевая отрасль (пастеризаторы, охладители, подогреватели)</li>
+                <li>фармацевтика</li>
+                <li>нефтепереработка</li>
               </ul>
               </p>
-              <div class="image-and-text">
-                <img src="<%=require('./images/ufa_zaton.png')%>" alt="Реализованный проект котельной с пластинчатым теплообменником Теплохит" class="image-and-text__img">
-                <div class="image-and-text__txt">
-                  <p class="info__paragraph info__paragraph_page_main">С примерами проектов и статьями вы можете ознакомиться в информационномразделе сайта.</p>
-                  <a class="info__link-in-text" href="/blog-proizvodstva">Перейти </a>
+              <div class="image-and-text relative bg-orange-light group p-2 hover:bg-orange-lighter">
+                <img src="<%=require('./images/ufa_zaton.png')%>" alt="Реализованный проект котельной с пластинчатым теплообменником Теплохит" class="image-and-text__img mr-3">
+                <div>
+                  <h3 class="info__paragraph info__paragraph_page_main">С примерами проектов и статьями вы можете ознакомиться в информационномразделе сайта.</h3>
+                  <a class="info__link-in-text" href="/blog-proizvodstva">
+                    <span class="absolute inset-0"></span>
+                    Перейти
+                  </a>
                 </div>
               </div>
               <h3 class="info__paragraph-title info__paragraph-title_page_main">Выгоды при сотрудничестве с производителем полного цикла</h3>
-              <ul class="bem__list info__list info__list_page_main">
-                <li class="bem__list-item">независимость от иностранных комплектующих гарантирует стабильность качества изделий: качество комплектующих мы контролируем сами</li>
-                <li class="bem__list-item">серийное производство пластин и уплотнений: комплектующие всегда в наличии у нас на складе и складах наших партнеров</li>
-                <li class="bem__list-item">мы закупаем металл и резину большим оптом, что позволяет предлогать выгодные условия сотрудничества</li>
+              <ul class="list-disc list-inside">
+                <li>независимость от иностранных комплектующих гарантирует стабильность качества изделий: качество комплектующих мы контролируем сами</li>
+                <li>серийное производство пластин и уплотнений: комплектующие всегда в наличии у нас на складе и складах наших партнеров</li>
+                <li>мы закупаем металл и резину большим оптом, что позволяет предлогать выгодные условия сотрудничества</li>
               </ul>
 
-            </div>
-          </div>
-          <!-- Add Scroll Bar -->
-          <div class="swiper-scrollbar swiper-scrollbar-main"></div>
+              <!--</div>
+         </div>
+          Add Scroll Bar
+          <div class="swiper-scrollbar swiper-scrollbar-main"></div>-->
         </div>
 
       </div>
@@ -663,9 +666,9 @@
     </div>
     <div class="up-footer up-footer_bg_none">
       <ul class="up-footer__list">
-        <li class="up-footer__list-item popup-raschet-button" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
-        <li class="up-footer__list-item popup-callback-button" data-wow-duration="1s" data-wow-delay="1.2s">Заявка в свободной форме</li>
-        <li class="up-footer__list-item " data-wow-duration="1s" data-wow-delay="2.0s"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teploobmennika.doc" download>Скачать опросный лист</a></li>
+        <li class="up-footer__list-item animated fadeInRight popup-raschet-button delay-1s" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+        <li class="up-footer__list-item animated fadeInRight popup-callback-button delay-2s" data-wow-duration="1s" data-wow-delay="1.2s">Заявка в свободной форме</li>
+        <li class="up-footer__list-item animated fadeInRight  delay-3s" data-wow-duration="1s" data-wow-delay="2.0s"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teploobmennika.doc" download>Скачать опросный лист</a></li>
       </ul>
     </div>
     </main>

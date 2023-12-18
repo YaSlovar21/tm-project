@@ -12,7 +12,7 @@
   <%= require('html-loader!./inner-metrika.html').default %>
   <div class="bg"></div>
   <div class="page">
-    <header class="header">
+    <header class="header" style="padding-left: 24px; padding-right: 24px;">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
@@ -29,7 +29,9 @@
           <h1 class="text-5xl font-bold text-gray-200  max-w-3xl"><%= htmlWebpackPlugin.options.heading %></h1>
           <p class="text-sm text-gray-300 max-w-3xl"><%= htmlWebpackPlugin.options.intro %></p>
         </div>
-
+        <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('bannerImg')) { %>
+          <img src="<%= require(`./images/${bannerImg}`)%>">
+        <% } %>
       </div>
 
       <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
