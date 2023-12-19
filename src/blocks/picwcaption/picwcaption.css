@@ -2,23 +2,29 @@
   position: relative;
   padding: 0;
   margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .picwcaption__caption {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 20px;
   box-sizing: border-box;
   margin: 0;
   background-color: #2f2f2f5e;
   width: 100%;
-
-  font-size: 16px;
-  font-weight: 700;
+  padding: 20px;
+  font-weight: 600;
   letter-spacing: .02em;
 }
 
+
+@media screen and (max-width: 768px) {
+  .picwcaption__caption {
+    padding: 10px;
+  }
+}
 .picwcaption__image {
   width: 100%;
 }

@@ -32,6 +32,18 @@ input {
     font-family: inherit;
    }
 
+.rtable tr td:first-child {
+  font-weight: 600;
+}
+
+.rtable tr td:nth-child(2) {
+  color: #e7451c;
+}
+
+.rtable tr td:nth-child(n + 3) {
+  color: #c4c4c4;
+}
+
 :root {
     --swiper-theme-color: #e7451c;
     --swiper-preloader-color: #e7451c;

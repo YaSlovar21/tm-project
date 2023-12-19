@@ -936,6 +936,12 @@ module.exports = {
         canonicalURL: canonicalURL,
         isGkh: false,
         articleFile: "ool-10.html",
+        relevanceArticles: [
+          {
+            name: "Пластинчатые охладители ООЛ-3 и ООЛ-5",
+            link: "/blog-proizvodstva/plastinchatye-ohladiteli-ool.html",
+          },
+        ],
       },
       title: "Пластинчатый охладитель молока ООЛ-10",
       heading: "Пластинчатый теплообменник охладитель ООЛ-10",

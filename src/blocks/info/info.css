@@ -49,6 +49,7 @@
     flex-direction: column;
     height: 90vh;
     height: auto;
+    padding: 0;
   }
 }
 
