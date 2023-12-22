@@ -52,3 +52,20 @@
 }
 
 
+.ds-second__scroll-slider::-webkit-scrollbar {
+  width: 2px;
+  background: #666666;
+  position: relative;
+  right: 10px;
+  overflow: auto;
+}
+
+.ds-second__scroll-slider::-webkit-scrollbar-thumb {
+  border: 3px solid var(--main-color);
+  background: var(--main-color);
+  width: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 40px
+}
