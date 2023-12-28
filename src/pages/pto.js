@@ -75,6 +75,7 @@ const projectList = new Section({
     const card = new CardProject({
       name: item.name,
       link: item.link,
+      naznach: item.naznach,
       handleImageClick: (desc, link) => {
         //(desc, link) передаем во внутреннем методе карточки
         popupImage.open({
@@ -120,7 +121,7 @@ const projectHorizontalList = new Section({
 }, projectsContainerSelector);
 
 projectList.clear();
-projectList.renderItems();
+projectHorizontalList.renderItems();
 
 
 formProjectViewChange.addEventListener('change', (evt)=>{

@@ -467,9 +467,22 @@ export const initialPartnersTowns = [
   },
   {
     name: 'Иркутск',
-    htmlData: [{
+    htmlData: [
+    {
+        nameOfPartner: 'ООО \"Спарта\"',
+        telephoneNumbers: ['+7(3952)956-712', '+7(914)895-67-12', 'sk@spartaspb.ru']
+    },
+    {
       nameOfPartner: 'ООО \"Константа\"',
       telephoneNumbers: ['+7 (3952) 42-87-03 '],
+    }],
+  },
+  {
+    name: 'Екатеринбург',
+    htmlData: [
+    {
+        nameOfPartner: 'ООО \"Спарта\"',
+        telephoneNumbers: ['+7(912)625-73-00', 'ekb@spartaspb.ru']
     }],
   },
   {

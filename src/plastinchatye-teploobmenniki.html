@@ -376,6 +376,42 @@
         </a>
       </li>
     </ul>
+    <h2 class="text-2xl text-[--main-color] font-semibold mb-2 mt-8">Подбор и расчёт теплообменника</h2>
+    <ul class="grid grid-cols-12 gap-x-3 content-stretch text-gray-50">
+      <li class="col-span-4">
+        <a class="flex h-full group" href="/catalog/">
+          <div class="basis-1/3 overflow-hidden rounded">
+            <img class="object-cover object-left-top w-full h-full min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/catalog-page-pto.png')%>" alt="Пластина пластинчатого теплообменника">
+          </div>
+          <div class="basis-2/3 ml-4">
+            <h3 class="text-xl font-semibold my-1 group-hover:opacity-70 transition-all">3D модели теплообменников</h3>
+            <p class="text-sm group-hover:opacity-70 transition-all">Теплоизоляция пластинчатого теплообменника точно в размер</p>
+          </div>
+        </a>
+      </li>
+      <li class="col-span-4">
+        <a class="flex h-full group" href="/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html">
+          <div class="basis-1/3 overflow-hidden rounded">
+            <img class="object-cover object-left-top w-full h-full  min-w-[100px]  transition-all group-hover:scale-110" src="<%=require('./images/pagepto/princip-page-pto.png')%>" alt="Пластина пластинчатого теплообменника">
+          </div>
+          <div class="basis-2/3 ml-4">
+            <h3 class="text-xl font-semibold my-1 group-hover:opacity-70 transition-all">Принцип работы и характеристики</h3>
+            <p class="text-sm group-hover:opacity-70 transition-all">Подробнее про устройство пластинчатого теплообменника и его характеристики</p>
+          </div>
+        </a>
+      </li>
+      <li class="col-span-4">
+        <a class="flex h-full group" href="/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html">
+          <div class="basis-1/3 overflow-hidden rounded">
+            <img class="object-cover object-left-top w-full h-full  min-w-[100px]  transition-all group-hover:scale-110" src="<%=require('./images/pagepto/princip-page-pto.png')%>" alt="Пластина пластинчатого теплообменника">
+          </div>
+          <div class="basis-2/3 ml-4">
+            <h3 class="text-xl font-semibold my-1 group-hover:opacity-70 transition-all">Принцип работы и характеристики</h3>
+            <p class="text-sm group-hover:opacity-70 transition-all">Подробнее про устройство пластинчатого теплообменника и его характеристики</p>
+          </div>
+        </a>
+      </li>
+    </ul>
     <!--<li>
       <h3 class="relev__title">Конструкция разборного теплообменника</h3>
       <ul class="bem__list">
@@ -521,21 +557,45 @@
   <h2 class="text-3xl font-bold text-[--main-color] mb-0 max-w-lg">Производственные процессы</h2>
   <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
     <ul class="scroll-factory__inner flex w-full  gap-6">
-      <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-72 top-10 rounded-xl overflow-hidden">
+      <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-72 top-10 rounded-xl overflow-hidden border border-zinc-900">
         <a class=" transition-all flex h-full" href="#">
           <img class="w-full basis-2/3 min-h-0 min-w-0 "  src="<%=require('./images/about-osnastka.png')%>">
-          <div class="w-full basis-1/3 bg-gray-700 flex flex-col justify-between">
-            <h3 class="text-lg font-semibold">Производство штампов и остнастки</h3>
-            <p class="text-lg text-gray-200">Для производства пластин</p>
-              <span class="inset-0 absolute z-20"></span>
-              <span class="inline-block transition-all translate-x-11 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">Подробнее</span><span class="inline-block transition-all group-hover:translate-x-10">></span>
+          <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+            <h3 class="text-lg font-bold mt-10 relative right-4 text-zinc-300 ">Производство штампов и остнастки</h3>
+            <p class="text-base text-orange relative right-4">Для производства пластин и уплотнений</p>
+            <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
           </div>
         </a>
       </li>
-      <li class="shrink-0 max-w-2xl w-full bg-gray-800 h-72 relative top-10 rounded-xl">
-        <img class="w-full h-full" src="<%=require('./images/press-plast-zag.png')%>">
-        <h3 class=""></h3>
-        <p class="text-sm text-gray-200"></p>
+      <li class="shrink-0 max-w-sm w-full bg-gray-800 h-72 relative top-10 rounded-xl">
+        <a class=" transition-all flex h-full relative" href="#">
+          <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/press-plast-zag.png')%>">
+          <div class="relative w-full bg-zinc-800 bg-opacity-50 flex flex-col justify-between ">
+            <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300 ">Изготовление пластин</h3>
+            <p class="text-sm text-gray-200  ml-4">Все 14 типоразмеров штампуются и формуются на нашем предприятии</p>
+            <span></span>
+          </div>
+        </a>
+      </li>
+      <li class="shrink-0 max-w-sm flex w-full bg-gray-800 h-72 relative top-10 rounded-xl">
+
+          <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/about-seal.jpg')%>">
+          <div class="relative w-full bg-zinc-800 bg-opacity-50 flex flex-col justify-between ">
+            <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300 ">Изготовление резиновых уплотнений</h3>
+            <p class="text-sm text-gray-200  ml-4">Все 14 типоразмеров штампуются и формуются на нашем предприятии</p>
+            <span></span>
+          </div>
+
+      </li>
+      <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-72 top-10 rounded-xl overflow-hidden border border-zinc-900">
+        <a class=" transition-all flex h-full" href="/plastinchatye-teploobmenniki/programma-rascheta.html">
+          <img class="w-full basis-2/3 min-h-0 min-w-0 opacity-70"  src="<%=require('./images/program_mini.png')%>">
+          <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+            <h3 class="text-lg font-bold mt-10 relative right-4 text-zinc-300 ">Разработка программы расчёта</h3>
+            <p class="text-base text-orange relative right-4">Для эффективного подбора теплообменников</p>
+            <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+          </div>
+        </a>
       </li>
       <li class="shrink-0 max-w-2xl w-full bg-gray-800 h-72 relative top-10 rounded-xl">
         <h3 class=""></h3>
@@ -812,9 +872,9 @@
 <template id="project-horizontal-template">
   <div class="projects__item projects__item_horizontal">
     <img class="projects__image projects__image_horizontal" src="<%=require('./images/ufa_zaton.png')%>">
-    <div class="column-description">
-      <h3 class="projects__item-description projects__item-description_horizontal column-description__title">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
-      <ul class="bem__list column-description__list">
+    <div>
+      <h3 class="projects__item-description projects__item-description_horizontal">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
+      <ul>
         <li>Теплообменник: <span class="span_color_orange span-bold projects__to-model">ТИ52-87</span></li>
         <li>Мощность: <span class="span-bold projects__to-q">5,6 Гкал/час</span></li>
         <li>Назначение: <span class="span-bold projects__to-naznach">ГВС</span></li>
