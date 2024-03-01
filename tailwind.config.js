@@ -25,6 +25,19 @@ module.exports = {
           },
         },
       }),
+      screens: {
+        'pc': {'max': '1535px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'mvpc': {'max': '1441px'},
+        // => @media (max-width: 1441px) { ... }
+  
+        'laptop': {'max': '1024px'},
+        // => @media (max-width: 1024px) { ... }
+  
+        'mobile': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+      },
       colors: {
         orange: {
           lighter: '#FF9275',

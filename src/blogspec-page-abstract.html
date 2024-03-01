@@ -26,11 +26,11 @@
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
           </div>
-          <h1 class="text-5xl font-bold text-gray-200  max-w-3xl"><%= htmlWebpackPlugin.options.heading %></h1>
+          <h1 class="text-5xl font-bold text-gray-200  max-w-3xl laptop:text-3xl laptop:max-w-xl"><%= htmlWebpackPlugin.options.heading %></h1>
           <p class="text-sm text-gray-300 max-w-3xl"><%= htmlWebpackPlugin.options.intro %></p>
         </div>
         <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('bannerImg')) { %>
-          <img src="<%= require(`./images/${bannerImg}`)%>">
+          <img class="min-w-[150px] rounded-2xl self-center max-w-[382px]" src="<%= require(`./images/${bannerImg}`)%>">
         <% } %>
       </div>
 

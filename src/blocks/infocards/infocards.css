@@ -90,7 +90,6 @@
 
   box-shadow: 0 4px 4px rgb(0 0 0 / 22%);
 
-
 }
 
 .infoitem__header {
@@ -221,3 +220,16 @@
       flex-basis: 190px;
   }
 }
+
+.specpagerecs-grid {
+  @apply list-none mt-6 grid grid-cols-3 gap-6 mvpc:grid-cols-2 laptop:grid-cols-1 laptop:gap-2;
+}
+
+.specpagerec {
+  @apply flex font-['Golos'] border border-[#191919] shadow drop-shadow-lg text-lg transition duration-700 relative w-full h-full  bg-[#1a1a1a] bg-opacity-50 p-3 rounded-md overflow-hidden hover:text-orange hover:shadow-md laptop:text-base;
+}
+
+.specpagerec__fig {
+  @apply absolute w-14 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 opacity-0 transition-opacity duration-700 group-hover:opacity-100 mobile:w-8;
+}
+
