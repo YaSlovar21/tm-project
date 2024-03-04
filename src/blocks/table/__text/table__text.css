@@ -5,10 +5,19 @@
     margin: 20px 0 0;
   }
 
-  .table__text_align_right {
-    text-align: right;
-  }
+.table__text_align_right {
+  text-align: right;
+}
 
-  .table__text_hidden {
-    display: none;
+.table__text_hidden {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  .table__text-and-list {
+    padding-left: 12px;
   }
+}
+
+.table__text-and-list_hidden {
+  display: none;
+}

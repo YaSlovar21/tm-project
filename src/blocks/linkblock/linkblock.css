@@ -42,3 +42,13 @@
 .linkblock:hover::after {
   opacity: 1;
 }
+
+
+@media screen and (max-width: 639px) {
+  .linkblock {
+    flex-direction: row;
+  }
+  .linkblock_rev {
+    flex-direction: row-reverse;
+  }
+}

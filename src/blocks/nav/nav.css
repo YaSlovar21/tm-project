@@ -31,13 +31,14 @@
     width: 100%;
     font-size: 18px;
     display: flex;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 0.015em;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1441px) {
   .nav {
     font-size: 17px;
+    font-weight: 700;
   }
 }
 

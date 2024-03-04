@@ -121,7 +121,7 @@ const projectHorizontalList = new Section({
 }, projectsContainerSelector);
 
 projectList.clear();
-projectHorizontalList.renderItems();
+projectList.renderItems();
 
 
 formProjectViewChange.addEventListener('change', (evt)=>{
@@ -349,7 +349,7 @@ window.addEventListener("scroll", function () {
 const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
   new FreqDynamic({
     headingSelector: 'table__heading',
-    descSelector: 'table__text',
+    descSelector: 'table__text-and-list',
   }, element)
 );
 

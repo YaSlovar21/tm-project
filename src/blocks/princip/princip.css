@@ -88,9 +88,10 @@
 
 @media screen and (max-width: 768px) {
   .princip__heading {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     text-align: right;
+    width: auto;
   }
 }
 

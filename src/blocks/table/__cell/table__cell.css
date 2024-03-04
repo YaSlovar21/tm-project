@@ -8,6 +8,11 @@
   margin-top: 0;
 }
 
+.table__cell_wide {
+  width: calc(50% + 181px);
+  box-sizing: content-box;
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 768px) {
   .table__cell {

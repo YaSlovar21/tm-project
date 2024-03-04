@@ -18,7 +18,7 @@
   grid-template-columns: minmax(min-content, 250px) minmax( min-content, 1100px);
   grid-template-rows: 120px min-content;
   column-gap: 30px;*/
-  padding: 80px 0;
+  padding: 80px 2.5%;
   background-color: #1817178a;
   border-radius: 5px;
   width: 80%;
@@ -30,7 +30,7 @@
 @media screen and (max-width: 1024px) {
   .kaufman_page_pto {
 
-    padding-top: 0px;
+    padding-top: 40px;
     margin-top: 30px;
     background-size: contain;
   }
@@ -38,7 +38,12 @@
 
 @media screen and (max-width: 1440px) {
   .kaufman_page_pto {
-    width: 95%;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .kaufman_page_pto .table__cell:last-child, .kaufman_page_pto .table__cell:nth-child(1), .kaufman_page_pto .table__cell:nth-child(2) {
+    margin-top: 20px;
   }
 }
 
@@ -64,12 +69,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .kaufman__title-grid {
     font-size: 18px;
 
   }
-}
+}*/
 .kaufman__subtitle-grid {
   /*grid-row: 1/2;
   grid-column: 1/2;*/
