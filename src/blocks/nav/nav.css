@@ -221,7 +221,10 @@
     color: #FF5E3A;
     color: #6d6d6d;
     /*font-weight: 500;*/
+  }
 
+  .nav__sub-ul-item_cat:hover {
+    background-color: #ff5e3af7;
   }
 
   .nav__sub-link {

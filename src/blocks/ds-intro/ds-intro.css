@@ -77,11 +77,11 @@
 
 @media screen and (max-width: 1600px) {
   .ds-intro__title {
-    font-size: 14px;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 420px;
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
+    margin: 0;
+    max-width: 427px;
   }
 }
 
@@ -115,7 +115,11 @@
   transition: opacity .4s ease-out, flex-basis .2s linear .4s, margin .2s ease-in .3s;
 }
 
-
+@media screen and (max-width: 1441px) {
+  .ds-intro__img-container {
+    margin: 65px 0;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .ds-intro__img-container {

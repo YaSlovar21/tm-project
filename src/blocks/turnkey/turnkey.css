@@ -53,6 +53,13 @@
   margin: 25px 0 75px;
 }
 
+@media screen and (max-width: 1441px) {
+  .turnkey__intro {
+    font-size: 18px;
+
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .turnkey__intro {
     font-size: var(--cell-heading-font);
@@ -63,7 +70,7 @@
   .turnkey__intro {
     font-size: 14px;
     text-align: left;
-    
+
     max-width: 300px;
   }
 }
@@ -172,6 +179,12 @@
     color: rgba(242, 242, 242, 1);
 }
 
+@media screen and (max-width: 1441px) {
+  .turnkey__solution-description {
+      font-size: 20px;
+      line-height: 1.3;
+  }
+}
 
 @media screen and (max-width:1024px) {
   .turnkey__solution-description {
