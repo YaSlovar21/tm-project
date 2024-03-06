@@ -73,9 +73,13 @@
         <section class="frequently">
             <h2 class="frequently__heading mb-8">Часто задаваемые вопросы</h2>
             <ul class="frequently__questions">
-                <li class="frequently__item">
-                    <h3 class="frequently__question">Какая площадь теплообмена у теплообменника <%=heading%>?</h3>
+                <li class="group quest frequently__item">
+                    <h3 class="frequently__question ">Какая площадь теплообмена у теплообменника <%=heading%>?</h3>
                     <p class="frequently__answer">Площадь теплообмена может служить параметром расчёта по некоторым методикам. Однако для того, чтобы подобрать оптимальный теплообменный аппарат, мы не используем данную характеристику и опираемся на температурные графики, мощность и потери давления. Тем самым алгоритм подбора выдает компоновку каналов опираясь на математическую модель нашей пластины.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden w-6 h-6 group-[.frequently\_\_item\_active]:block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
                 </li>
                 <li class="frequently__item">
                     <h3 class="frequently__question">Рассчитать теплообменник?</h3>

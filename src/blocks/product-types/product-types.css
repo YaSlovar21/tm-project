@@ -183,7 +183,6 @@
 .product-types__button-next {
   position:absolute;
   bottom: 100px; right: 220px; z-index: 10;
-
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -194,7 +193,23 @@
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
   /*border-radius: 50%;*/
+}
 
+@media screen and (max-width: 1024px) {
 
+  .product-types__button-next, .product-types__button-prev {
+    font-size: 20px;
+    width: 60px;
+    height: 40px;
+    border-width: 1px;
+  }
 
+  .product-types__button-next {
+    top: 40px;
+    right: 22px;
+  }
+
+  .product-types__button-prev {
+    top: 40px; left: 0;
+  }
 }

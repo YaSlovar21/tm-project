@@ -47,18 +47,18 @@
   <main>
     <div class="my-12">
       <div class="max-w-[--head-wrap] rounded-r-xl bg-[#1a1a1a] py-6 box-border mvpc:max-w-[calc(100%-10px)]">
-        <div class="max-w-[1600px] ml-auto grid grid-cols-12 grid-flow-col mvpc:max-w-[calc(100%-10px)]">
+        <div class="max-w-[1600px] ml-auto grid grid-cols-12 grid-flow-col mvpc:max-w-[calc(100%-10px)] laptop:grid-cols-6 laptop:gap-2 ">
           <!--<div class="basis-4/12 flex flex-col justify-between">-->
-            <h1 class="font-semibold uppercase text-2xl text-gray-100 col-span-4">100% локализация производства пластинчатых теплообменников</h1>
-            <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 mvpc:text-base mvpc:py-0">
-              Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем
-              пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.
-              Производство пластин и уплотнений 100% локализовано на территории предприятия. <span class="mvpc:hidden">На базе пластинчатых теплообменников мы
-              изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</span>
-            </p>
-            <button class="p-4 bg-[--main-color] rounded-md max-w-[95%] col-span-4">Отправить запрос</button>
+          <h1 class="font-semibold uppercase text-2xl text-gray-100 col-span-4 laptop:col-span-6 laptop:row-span-1">100% локализация производства пластинчатых теплообменников</h1>
+          <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 mvpc:text-base mvpc:py-0 laptop:col-span-6 laptop:row-span-1">
+            Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем
+            пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.
+            Производство пластин и уплотнений 100% локализовано на территории предприятия. <span class="mvpc:hidden">На базе пластинчатых теплообменников мы
+            изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</span>
+          </p>
+          <button class="p-4 bg-[--main-color] rounded-md max-w-[95%] col-span-4">Отправить запрос</button>
           <!--</div>-->
-          <div class="header-index__video-container rounded-lg overflow-hidden col-span-7 row-span-4"><!--basis-7/12-->
+          <div class="header-index__video-container rounded-lg overflow-hidden col-span-7 row-span-4 laptop:col-span-4"><!--basis-7/12-->
             <figure class="header-index__darked"></figure>
             <!--Здесь рендерится видео в зависимости от разрешения экрана-->
             <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
@@ -66,7 +66,7 @@
               Your browser does not support the video tag.
             </video>data-swiper-parallax-scale="0.8"-->
           </div>
-          <div class="col-span-1 row-span-4"><!--basis-1/12-->
+          <div class="col-span-1 row-span-4 laptop:col-span-2 laptop:row-span-1 laptop:row-start-3 laptop:col-start-5"><!--basis-1/12-->
             <p class="span-color-theme uppercase text-xs font-semibold ml-2 sticky top-6">Подробнее о производстве</p>
           </div>
         </div>
@@ -139,7 +139,7 @@
     <section class="demonstration max-w-[1600px] mx-auto pc:max-w-[calc(100%-20px)]">
       <h2 class="text-2xl font-bold uppercase text-gray-100">Продукция предприятия</h2>
       <!--<p class="text-lg text-gray-100 max-w-[58%] my-10 py-4">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием. Производство пластин и уплотнений 100% локализовано на территории предприятия. На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>-->
-      <p class="max-w-[58%] my-10 py-4 text-xl mvpc:text-lg text-gray-50">Основное направление компании - производство теплообменников<span
+      <p class="max-w-[58%] my-10 py-4 text-xl mvpc:text-lg text-gray-50 laptop:max-w-full">Основное направление компании - производство теплообменников<span
         class="video-main__span-accent"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
       МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
       теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
@@ -231,6 +231,57 @@
           <button class="product-types__button-prev">←</button>
           <button class="product-types__button-next">→</button>
         <!--</div>-->
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#1f1f1f]">
+      <div class=" max-w-[1600px] mx-auto mvpc:max-w-[95%] mvpc:pt-8">
+        <h2 class="text-2xl font-bold uppercase text-gray-100">Новости компании</h2>
+        <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
+          <ul class="scroll-factory__inner flex w-full  gap-6">
+            <li class="shrink-0 max-w-sm w-full bg-gray-800 h-80 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden  transition-shadow hover:shadow-xl">
+              <a class=" transition-all flex h-full relative" href="#">
+                <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/2024content/aquathrm-poster.png')%>">
+                <div class="relative group w-full bg-zinc-800 bg-opacity-50 flex flex-col transition-all duration-300 justify-around hover:bg-opacity-75">
+                  <h3 class="text-2xl font-bold mt-10 ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Акватерм-2024</h3>
+                  <p class="text-base text-gray-200  ml-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Селфи с самым крупным теплообменником ТИ95 и что то еще.</p>
+                  <span></span>
+                </div>
+              </a>
+            </li>
+            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl">
+              <a class="transition-all flex h-full" href="#">
+                <img class="w-full basis-2/3 min-h-0 min-w-0"  src="<%=require('./images/2024content/test-news.jpg')%>">
+                <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-evenly before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+                  <span class="block justify-self-center text-sm text-gray-500">09.10.2023</span>
+                  <h3 class="text-xl font-bold mt-10 relative right-4 text-zinc-300  mobile:text-base mobile:mt-4">Запуск нового станка</h3>
+                  <p class="text-sm text-orange relative right-4 mobile:text-xs">Для производства элементов рамы теплообменника</p>
+                  <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="shrink-0 max-w-sm flex w-full bg-gray-800 h-80 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden    transition-shadow hover:shadow-xl"">
+                <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/about-seal.jpg')%>">
+                <div class="relative w-full bg-zinc-800 bg-opacity-50 flex flex-col justify-between ">
+                  <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300  mobile:text-base mobile:mt-4">Изготовление резиновых уплотнений</h3>
+                  <p class="text-sm text-gray-200  ml-4 mobile:text-xs">Все 14 типоразмеров штампуются и формуются на нашем предприятии</p>
+                  <span></span>
+                </div>
+            </li>
+            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl"">
+              <a class=" transition-all flex h-full" href="/plastinchatye-teploobmenniki/programma-rascheta.html">
+                <img class="w-full basis-2/3 min-h-0 min-w-0 opacity-70"  src="<%=require('./images/program_mini.png')%>">
+                <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+                  <h3 class="text-lg font-bold mt-10 relative right-4 text-zinc-300  mobile:text-base mobile:mt-4">Разработка программы расчёта</h3>
+                  <p class="text-base text-orange relative right-4 mobile:text-xs">Для эффективного подбора теплообменников</p>
+                  <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -387,7 +438,7 @@
               <div class="image-and-text relative transition rounded bg-orange-light group p-2 hover:bg-orange-lighter">
                 <img src="<%=require('./images/ufa_zaton.png')%>" alt="Реализованный проект котельной с пластинчатым теплообменником Теплохит" class="image-and-text__img mr-3">
                 <div class="flex flex-col justify-evenly">
-                  <p class="text-gray-800">С примерами проектов и статьями вы можете ознакомиться в информационномразделе сайта.</p>
+                  <p class="text-gray-800 text-base my-2 laptop:text-sm">С примерами проектов и статьями вы можете ознакомиться в информационномразделе сайта.</p>
                   <a class="no-underline text-sm" href="/blog-proizvodstva">
                     <span class="absolute inset-0"></span>
                     Перейти

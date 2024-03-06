@@ -27,6 +27,8 @@
 @import url(../blocks/link-beauty/link-beauty.css);
 @import url(../blocks/rotation/rotation.css);
 
+/*---------------Линия прокрутки        */
+@import url(../blocks/typesx/typesx.css);
 
 @import url(../blocks/nav/nav.css);
 @import url(../blocks/up-footer/up-footer.css);

@@ -135,7 +135,7 @@
     opacity: 1;*/
 
     border-radius: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #1f1f1fe6;
 }
 
@@ -241,10 +241,16 @@
 
   }
 
+  .nav__sub-link_subb {
+    font-size: 16px;
+  }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1441px) {
     .nav__sub-link  {
       font-size: 15px;
+    }
+    .nav__sub-link_subb {
+      font-size: 13px;
     }
   }
 

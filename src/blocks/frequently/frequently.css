@@ -60,12 +60,12 @@
 .frequently__question:hover {
     background-color: #f2f2f20c;
 }
-
+/*
 .frequently__question::after {
     font-weight: 200;
     content: '\E155';
     color: tomato;
-}
+}*/
 
 .frequently__answer {
     margin: 12px 0 20px;
@@ -94,10 +94,11 @@
   opacity: 1;
   transition-delay: 0s;
 }
+/*
 .frequently__item_active .frequently__question::after {
-    content: '\E156';
+    content: '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>';
     color: tomato;
-}
+}*/
 
 .frequently__item_active .frequently__answer {
     display: block;
