@@ -44,7 +44,7 @@ questions.forEach(element => {
     console.log(evt.target.closest('.frequently__item'));
     answerElem.classList.toggle('animate__animated');
     answerElem.classList.toggle('animate__slow');
-    answerElem.classList.toggle('animate__fadeIn');animate__slow
+    answerElem.classList.toggle('animate__fadeIn');
   })
 });
 

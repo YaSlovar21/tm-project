@@ -24,14 +24,17 @@
 
 .table__heading_clickable::after {
   color: tomato;
-  content: "\E155";
+  content: url(../../../images/2024content/plus.svg);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
   font-weight: 200;
   margin-left: 5px;
 }
 
 .table__heading_clickable-open::after {
   color: tomato;
-  content: "\E156";
+  content: url(../../../images/2024content/minus.svg);
   font-weight: 200;
   margin-left: 5px;
 }
