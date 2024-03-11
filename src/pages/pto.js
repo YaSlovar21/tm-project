@@ -144,8 +144,10 @@ popupHeatEx.setEventListeners();
 const platesSvg = document.querySelector('.plates__svg');
 
 platesSvg.addEventListener("click", (evt) => {
-  popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
-  console.log(initialHeatEx[evt.target.dataset.to]);
+  if (evt.target.dataset.to) {
+    popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
+    console.log(initialHeatEx[evt.target.dataset.to]);
+  }
 });
 
 
