@@ -8,31 +8,6 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>"  rel="canonical" />
-  <style>
-    .swiper-scrollbar-main {
-      width: 2px!important;
-      background: linear-gradient(180deg,hsla(0,0%,97%,0),#f7f7f7 49.49%,hsla(0,0%,97%,0) 92.71%);
-      height: 100%!important;
-    }
-
-    .swiper-scrollbar-main .swiper-scrollbar-drag {
-      background: #1b1b1b;
-      width: 10px!important;
-      border-radius: 0;
-      left: -5px;
-      top: 0;
-    }
-
-    @media screen and (max-width: 768px) {
-      .swiper-scrollbar-main {
-        display: none;
-      }
-    }
-    .swiper-scrollbar-main .swiper-scrollbar-drag:hover {
-      cursor: pointer;
-    }
-
-  </style>
 </head>
 
 <body class="page">
@@ -50,15 +25,15 @@
         <div class="max-w-[1600px] ml-auto grid grid-cols-12 grid-flow-col mvpc:max-w-[calc(100%-10px)] laptop:grid-cols-6 laptop:gap-2 ">
           <!--<div class="basis-4/12 flex flex-col justify-between">-->
           <h1 class="font-semibold uppercase text-2xl text-gray-100 col-span-4 laptop:col-span-6 laptop:row-span-1">100% локализация производства пластинчатых теплообменников</h1>
-          <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 mvpc:text-base mvpc:py-0 laptop:col-span-6 laptop:row-span-1">
+          <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 olpc:row-span-1 mvpc:text-base mvpc:py-0 laptop:col-span-6 laptop:row-span-1">
             Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем
             пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.
             Производство пластин и уплотнений 100% локализовано на территории предприятия. <span class="mvpc:hidden">На базе пластинчатых теплообменников мы
             изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</span>
           </p>
-          <button class="p-4 bg-[--main-color] rounded-md max-w-[95%] col-span-4">Отправить запрос</button>
+          <button class="p-4 bg-[--main-color] rounded-md max-w-[95%] col-span-4 row-span-1 olpc:row-start-4  laptop:row-start-5 mobile:row-start-3">Отправить запрос</button>
           <!--</div>-->
-          <div class="header-index__video-container rounded-lg overflow-hidden col-span-7 row-span-4 laptop:col-span-4"><!--basis-7/12-->
+          <div class="header-index__video-container rounded-lg overflow-hidden col-span-7 row-span-4 olpc:col-span-8 olpc:row-span-2 laptop:col-start-1 laptop:col-end-7 laptop:row-start-3 laptop:row-span-1"><!--basis-7/12-->
             <figure class="header-index__darked"></figure>
             <!--Здесь рендерится видео в зависимости от разрешения экрана-->
             <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
@@ -66,8 +41,8 @@
               Your browser does not support the video tag.
             </video>data-swiper-parallax-scale="0.8"-->
           </div>
-          <div class="col-span-1 row-span-4 laptop:col-span-2 laptop:row-span-1 laptop:row-start-3 laptop:col-start-5"><!--basis-1/12-->
-            <p class="span-color-theme uppercase text-xs font-semibold ml-2 sticky top-6">Подробнее о производстве</p>
+          <div class="col-span-1 row-span-4 olpc:col-span-8 olpc:row-span-1 olpc:row-start-4 olpc:col-start-5 laptop:col-span-2 laptop:row-span-1 laptop:row-start-5 mobile:row-start-3 mobile::col-start-5"><!--basis-1/12-->
+            <p class="span-color-theme uppercase text-xs font-semibold ml-2 sticky top-6 ">Подробнее о производстве</p>
           </div>
         </div>
       </div>
@@ -240,7 +215,7 @@
         <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
           <ul class="scroll-factory__inner flex w-full  gap-6">
             <li class="shrink-0 max-w-sm w-full bg-gray-800 h-80 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden  transition-shadow hover:shadow-xl">
-              <a class=" transition-all flex h-full relative" href="#">
+              <a class=" transition-all flex h-full relative" href="/blog-proizvodstva/aquatherm-2024.html">
                 <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/2024content/aquathrm-poster.png')%>">
                 <div class="relative group w-full bg-zinc-800 bg-opacity-50 flex flex-col transition-all duration-300 justify-around hover:bg-opacity-75">
                   <h3 class="text-2xl font-bold mt-10 ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Акватерм-2024</h3>

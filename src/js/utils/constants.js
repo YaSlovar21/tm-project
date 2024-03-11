@@ -84,9 +84,22 @@ export const tagsAliases = {
   'food': 'Пищевые',
   'example': 'Пример расчёта',
   'prod': 'Продукция',
+  'news': 'Новости компании',
 }
 
 export const initialArticles = [
+  {
+    tags: ['prod', 'news'],
+    linkPath: `/${blogPath}/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html`,
+    heading: 'Портальный фрезерный обрабатывающий центр',
+    description: 'Внедрен в производство',
+  },
+  {
+    tags: ['prod', 'news'],
+    linkPath: `/${blogPath}/aquatherm-2024.html`,
+    heading: 'АКВАТЕРМ-2024',
+    description: 'Представили обновленную линейку теплобменных пластин, пластинчатые теплообменники до ДУ250',
+  },
   {
     tags: ['gkh', 'prod', 'example'],
     linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,

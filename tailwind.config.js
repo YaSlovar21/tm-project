@@ -32,6 +32,8 @@ module.exports = {
         'mvpc': {'max': '1441px'},
         // => @media (max-width: 1441px) { ... }
   
+        'olpc': {'max': '1240px'},
+
         'laptop': {'max': '1024px'},
         // => @media (max-width: 1024px) { ... }
   

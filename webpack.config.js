@@ -235,6 +235,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        raschetsExamples: rawData,
+        razbegPoMoshnosti,
+      },
+      title: "Примеры расчётов разборных пластинчатых теплообменников",
+      heading: "Примеры расчётов пластинчатых теплообменников",
+      meta: {
+        keywords: "пример теплообменника, пример расчёта теплообменника, пример расчёта пластинчатого теплообменника",
+        description: "Разборные пластинчатые теплообменники, расчитанные под различные задачи, требования и характеристики. Расчёты теплообменников от 37 квт до 10000 квт.",
+      },
+      template: "./src/pto-raschets.html",
+      filename: "plastinchatye-teploobmenniki/raschets/index.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "teploizol.html",
         bannerImg: 'ti13front-with-izol.png',
@@ -573,6 +589,7 @@ module.exports = {
       filename: "equipment-selection/index.html",
       chunks: ["all", "equipment", "map"], //в чанке equipment лежит equipment1.js!!
     }) /*---------СЕКЦИЯ БЛОГА----------- */,
+    
     new HtmlWebpackPlugin({
       templateParameters: { canonicalURL: canonicalURL },
       title: "Новое в производстве пластинчатых теплообменников",
@@ -654,6 +671,30 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "2024aquatherm.html",
+        relevanceArticles: [
+          {
+            name: "Как производилось проектирование и запуск в производство новой теплообменной пластины ДУ250",
+            link: "/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html",
+          },
+        ],
+        buttonText: "Подобрать теплообменник",
+      },
+      title: "Участие компании в выставке АКВАТЕРМ-2024",
+      heading: "АКВАТЕРМ-2024",
+      meta: {
+        keywords:
+          "пластинчатые теплообменники на Акватерм-2024",
+        description: "Представили на выставке линейку пластинчатых теплообменников и теплообменных пластин, в том числе самый крупный теплообменник ТИ95 с ДУ 250",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/aquatherm-2024.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({

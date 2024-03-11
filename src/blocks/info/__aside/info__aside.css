@@ -28,6 +28,14 @@
   z-index: -1;
 }
 
+
+
+@media screen and (max-width: 1441px) {
+  .info__aside {
+    width: 552px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .info__aside {
     width: 300px;
