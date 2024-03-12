@@ -38,7 +38,7 @@
 .oakley_food::before {
   width: 10%;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1537px) {
   .oakley_gradient::after, .oakley_gradient::before {
     width: calc(2.5% + 20px);
   }

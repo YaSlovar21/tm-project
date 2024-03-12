@@ -36,11 +36,17 @@
 
   @media screen and (max-width: 768px) {
     .khan__buy-link {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 700;
     }
 
     .khan__buy-link_page_heatex {
       margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .khan__buy-link {
+      font-size: 12px;
     }
   }

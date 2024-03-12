@@ -27,6 +27,23 @@
 
 }
 
+@media screen and (max-width: 1537px) {
+  .kaufman_page_pto {
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .kaufman_page_pto {
+    padding-bottom: 30px;
+  }
+
+  .kaufman_page_pto .table__cell:last-child, .kaufman_page_pto .table__cell:nth-child(1), .kaufman_page_pto .table__cell:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .kaufman_page_pto {
 
@@ -36,16 +53,9 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .kaufman_page_pto {
-    width: 100%;
-    padding-bottom: 30px;
-  }
 
-  .kaufman_page_pto .table__cell:last-child, .kaufman_page_pto .table__cell:nth-child(1), .kaufman_page_pto .table__cell:nth-child(2) {
-    margin-top: 20px;
-  }
-}
+
+
 
 .kaufman__title-grid {
   /*grid-column: 2/3;

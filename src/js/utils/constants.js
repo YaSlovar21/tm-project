@@ -8,6 +8,8 @@ const ufaUmnDom = new URL('../../images/projects/ufa_umn_dom.png', import.meta.u
 
 const ti025Img = new URL('../../images/descTO/ti025.png', import.meta.url);
 const ti077Img = new URL('../../images/descTO/ti077.png', import.meta.url);
+const ti09Img = new URL('../../images/descTO/ti09.png', import.meta.url);
+const ti12Img = new URL('../../images/descTO/ti12.png', import.meta.url);
 const ti13Img = new URL('../../images/descTO/ti13.png', import.meta.url);
 const ti18Img = new URL('../../images/descTO/ti18.png', import.meta.url);
 const ti28Img = new URL('../../images/descTO/ti28.png', import.meta.url);
@@ -241,6 +243,26 @@ export const initialHeatEx = {
     Типоразмер также часто применяется в пищевой отрасли. (в т.ч. в многоступенчатом исполнении)`,
     link3d: "https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg",
     baseUrl: "/catalog/ti-077.html",
+  },
+  "ti-09": {
+    name: "ТИ 09",
+    img: ti09Img,
+    desc: `ТИ09 – имеет широкую гамму подключения патрубков: Ду32, Ду40, Ду50.
+    Новый теплообменник на базе гофрированной пластины нового типоразмера.
+    Особая конструкция клипа надежно закрепляет уплотнение на пластину,
+    это исключает обрыв при монтаже пластины и обеспечивает надежность эксплуатации.`,
+    link3d: "https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg",
+    baseUrl: "/catalog/ti-09.html",
+  },
+  "ti-12": {
+    name: "ТИ 12",
+    img: ti12Img,
+    desc: `ТИ12 – имеет широкую гамму подключения патрубков: Ду32, Ду40, Ду50.
+    Новый теплообменник на базе гофрированной пластины нового типоразмера.
+    Особая конструкция клипа надежно закрепляет уплотнение на пластину,
+    это исключает обрыв при монтаже пластины и обеспечивает надежность эксплуатации.`,
+    link3d: "https://disk.yandex.ru/d/kEiGbHo7Fi8Uwg",
+    baseUrl: "/catalog/ti-12.html",
   },
   "ti-13": {
     name: "ТИ 13",

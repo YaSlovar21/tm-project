@@ -25,104 +25,103 @@
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
               <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/raschets/">Примеры расчётов теплообменников</a>
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
+              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Теплообменник <%= moshnostNumber %><%= moshnostMeasure %><%= naznach ? ` на ${naznach}` : '' %> </a>
           </div>
           <h1 class="text-5xl font-bold text-gray-200  max-w-3xl">Теплообменник <%= moshnostNumber %> <%= moshnostMeasure %></h1>
           <p class="text-sm text-gray-300 max-w-3xl">Пример расчёта теплообменника мощностью <%= moshnostNumber %> <%= moshnostMeasure %></p>
         </div>
 
       </div>
-      <div class="uwrapper docspage docspage_raschet" style="margin-top: 50px;">
+      <div class="max-w-[1170px] mx-auto" style="margin-top: 50px;">
         <div class="docspage__content">
-          <h2 class="section-title" style="color: #c4c4c4; font-weight: 500; font-size: var(--article-title-size); margin-bottom: 20px;">Теплообменник <%=sreda1%>-<%=sreda2%>  ДУ<%= grSredaConnection.du%> <%= naznach ? `на ${naznach}` : '' %> <%= naznach==='гвс' ? `(горячее водоснабжение)` : '' %> </h2>
-          <ul class="bem__list" style="margin: 50px 0;">
-            <li><%= `${name.split(':')[0]} ${name.split(':')[1].toUpperCase()}` %></li>
-            <%= naznach ? `<li>Назначение теплообменника: ${naznach}</li>` : '' %>
-            <li>Мощность теплообменника <span class="span-500 span-alt-color-brand"><%= moshnostNumber %> <%= moshnostMeasure %></span></li>
-            <li>Расчёт № <%= (tiNumberFromTm !== '') ? tiNumberFromTm : '<span class="span-200 span-color-gray span-comment">(номер расчёта не закреплен)</span>' %></li>
-            <li>Площадь теплообмена: <span class="span-500 span-alt-color-brand"><%= sOfHeatexchange%> м<sup>2</sup></span></li>
-            <li>Запас поверхности: <%= zapasPoverhnosti %>%</li>
-            <li>Количество пластин в теплообменнике: <%= plastinKolich %></li>
-
-          </ul>
-          <p class="bem__paragraph" style="margin: 50px 0;">
-            Теплообмен идет между двух сред, по греющей стороне: <%=sreda1%>, по нагреваемой противотоком идет <%=sreda2%>.
-            Каналов по греющей среде <%= grSredaConnection.kanalsNumber %> (<%= grSredaConnection.kanalsRaskladka %>)
-            Каналов по нагреваемой среде <%= nagrSredaConnection.kanalsNumber %> (<%= nagrSredaConnection.kanalsRaskladka %>)
+          <p class="text-xl text-gray-100 max-w-4xl">
+            Теплообменник расчитан для двух сред, по греющей стороне: <span class="text-orange font-medium"><%=sreda1%></span>, по нагреваемой <span class="text-orange font-medium"><%=sreda2%></span>
+            <%= naznach==='гвс' ? `для системы горячего водоснабжения` : '' %><%= naznach==='отопление' ? `для системы отопления` : '' %>. Пластинчатый теплообменник <%= `${name.split(':')[1].toUpperCase().split('-')[0]}` %> на <%= plastinKolich %> пластин (<%= `${name.split(':')[1].toUpperCase().trim()}` %>)
+            способен обеспечить мощность <%= moshnostNumber %> <%= moshnostMeasure %> и имеет оптимальный запас поверхности теплообмена   <%= naznach ? `для ${naznach}` : '' %> <%= zapasPoverhnosti %>%. Общая площадь теплообмена составляет <%= sOfHeatexchange%> м<sup>2</sup>.
+            Условный диаметр присоединений теплообменника по греющей и нагреваемой среде ДУ<%= nagrSredaConnection.du%>.
           </p>
-
-          <h3 class="section-title" style="color: #c4c4c4; font-weight: 500; font-size: var(--article-title-size); margin-bottom: 20px;">Рабочие параметры теплообменника</h3>
-          <p class="bem__paragraph">Основные параметра теплообменника:</p>
-          <table class="bem__table">
-            <thead>
-              <tr>
-                  <th>Рабочие параметры</th>
+          <h2 class="text-3xl font-semibold text-orange mt-8 mb-6">Основные параметра теплообменника:</h2>
+          <ul class="text-base text-gray-200">
+            <li><%= `${name.split(':')[0]} ${name.split(':')[1].toUpperCase()}` %></li>
+            <%= naznach ? `<li>Назначение теплообменника: ${naznach} ${naznach ==='гвс' ? `(горячее водоснабжение\)` : ''}</li>` : '' %>
+            <li>Мощность теплообменника <span class="span-500 span-alt-color-brand"><%= moshnostNumber %> <%= moshnostMeasure %></span></li>
+            <li>Количество пластин в теплообменнике: <%= plastinKolich %></li>
+          </ul>
+          <table class="text-gray-50 my-4 table-auto border-collapse">
+            <thead class="bg-orange-dark text-base">
+              <tr class="*:px-5 *:py-4 *:font-medium *:text-left divide-x divide-solid divide-[#1f1f1f]">
+                  <th class="rounded-s-lg">Рабочие параметры</th>
                   <th>Греющая среда (<%=sreda1%>)</th>
-                  <th>Нагреваемая среда (<%=sreda2%>)</th>
+                  <th class="rounded-e-lg">Нагреваемая среда (<%=sreda2%>)</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody class="text-base relative -top-2 -z-[1] bg-[#2f2f2f]  divide-y divide-solid divide-[#1f1f1f] ">
+              <tr class="*:px-5 *:pb-3 *:pt-5  divide-x divide-solid divide-[#1f1f1f]">
                 <td>Температура на входе</td>
                 <td><%= grSredaParameters.in %> °C</td>
                 <td><%= nagrSredaParameters.in %> °C</td>
               </tr>
-              <tr>
+              <tr class="*:px-5 *:py-3  divide-x divide-solid divide-[#1f1f1f]">
                 <td>Температура на выходе</td>
                 <td><%= grSredaParameters.out %> °C</td>
                 <td><%= nagrSredaParameters.out %> °C</td>
               </tr>
-              <tr>
+              <tr class="*:px-5 *:py-3 divide-x divide-solid divide-[#1f1f1f]">
                 <td>Массовый расход</td>
                 <td><%= grSredaParameters.consumption %></td>
                 <td><%= nagrSredaParameters.consumption %></td>
               </tr>
-              <tr>
-                <td>Потери напора</td>
+              <tr class="*:px-5 *:py-3 divide-x divide-solid divide-[#1f1f1f]">
+                <td class="rounded-bl-lg">Потери напора</td>
                 <td><%= grSredaParameters.pressureLoss %></td>
-                <td><%= nagrSredaParameters.pressureLoss %></td>
+                <td class="rounded-br-lg"><%= nagrSredaParameters.pressureLoss %></td>
               </tr>
             </tbody>
           </table>
+          <ul class="text-base text-gray-200">
+            <li>Расчёт № <%= (tiNumberFromTm !== '') ? tiNumberFromTm : '<span class="span-200 span-color-gray span-comment">(номер расчёта не закреплен)</span>' %></li>
+            <li>Площадь теплообмена: <span class="span-500 span-alt-color-brand"><%= sOfHeatexchange%> м<sup>2</sup></span></li>
+            <li>Запас поверхности: <%= zapasPoverhnosti %>%</li>
+            <li>Каналов по греющей среде <%= grSredaConnection.kanalsNumber %> (<%= grSredaConnection.kanalsRaskladka %>)</li>
+            <li>Каналов по нагреваемой среде <%= nagrSredaConnection.kanalsNumber %> (<%= nagrSredaConnection.kanalsRaskladka %>)</li>
+          </ul>
+          <h3 class="text-2xl font-semibold text-gray-400 mt-6 mb-4">Присоединения к теплообменнику</h3>
+          <p class="max-w-3xl text-base text-gray-200">
+            Теплообменник по греющей среде имеет тип присоединения <span class="text-orange font-medium"><%= grSredaConnection.type%></span>  (ДУ <%= grSredaConnection.du%>), по нагреваемой среде
+            <span class="text-orange font-medium"><%= nagrSredaConnection.type%></span> (ДУ <%= nagrSredaConnection.du%>).
 
-          <h3 class="section-title" style="font-size: var(--section-title-sm-size); margin-bottom: 20px;">Конструкция теплообменника</h3>
-          <p class="bem__paragraph" style="max-width: 900px;">
-            Теплообменник ДУ <%= grSredaConnection.du%> (тип присоединения <%= grSredaConnection.type%> )
-            по греющей стороне и ДУ <%= nagrSredaConnection.du%> (тип присоединения <%= nagrSredaConnection.type%>)
-            по нагреваемой.
           </p>
           <div style="max-width: 99%;">
-            <svg style="transform: skewY(15deg); max-width: 500px; padding: 2%; margin: 50px 0; box-sizing:border-box; width:100%"  viewBox="0 0 450 573" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="110.5" y="16.5" width="339" height="489" fill="#8B8B8B" stroke="black"/>
-                <rect x="110.5" y="16.5" width="339" height="489" stroke="black"/>
-                <rect x="0.5" y="83.5" width="339" height="489" fill="#8B8B8B" stroke="black"/>
+            <svg class="my-10 w-full max-w-xs skew-y-[15deg]" style="padding: 1%;"  viewBox="0 0 450 573" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="fill-[--main-color]" x="110.5" y="16.5" width="339" height="489" fill="#ececec"  stroke="black"/>
+                <rect  class="stroke-[#4a0e0e] stroke-2" x="110.5" y="16.5" width="339" height="489" stroke="black"/>
+                <rect class="fill-[--main-color]" x="0.5" y="83.5" width="339" height="489"  stroke="black"/>
                 <circle cx="80" cy="163" r="40" fill="#1F1F1F"/>
-                <path style="fill: var(--main-equivalent-color); stroke: var(--main-equivalent-color); stroke-width: 2px;" d="M38.9393 201.939C38.3536 202.525 38.3536 203.475 38.9393 204.061C39.5251 204.646 40.4749 204.646 41.0607 204.061L38.9393 201.939ZM80 163L63.2697 167.483L75.5171 179.73L80 163ZM41.0607 204.061L71.5147 173.607L69.3934 171.485L38.9393 201.939L41.0607 204.061Z" fill="#E9E9E9"/>
+                <path class="fill-red-700 stroke-red-800 stroke-2" d="M38.9393 201.939C38.3536 202.525 38.3536 203.475 38.9393 204.061C39.5251 204.646 40.4749 204.646 41.0607 204.061L38.9393 201.939ZM80 163L63.2697 167.483L75.5171 179.73L80 163ZM41.0607 204.061L71.5147 173.607L69.3934 171.485L38.9393 201.939L41.0607 204.061Z" fill="#E9E9E9"/>
                 <circle cx="260" cy="163" r="40" fill="#1F1F1F"/>
-                <path style="fill: var(--theme-cold-water-color); stroke: var(--theme-cold-water-color); stroke-width: 2px;" d="M220 203L236.73 198.517L224.483 186.27L220 203ZM261.061 164.061C261.646 163.475 261.646 162.525 261.061 161.939C260.475 161.354 259.525 161.354 258.939 161.939L261.061 164.061ZM230.607 194.515L261.061 164.061L258.939 161.939L228.485 192.393L230.607 194.515Z" fill="#E9E9E9"/>
+                <path class="fill-blue-500 stroke-blue-500 stroke-2" d="M220 203L236.73 198.517L224.483 186.27L220 203ZM261.061 164.061C261.646 163.475 261.646 162.525 261.061 161.939C260.475 161.354 259.525 161.354 258.939 161.939L261.061 164.061ZM230.607 194.515L261.061 164.061L258.939 161.939L228.485 192.393L230.607 194.515Z" fill="#E9E9E9"/>
                 <circle cx="260" cy="493" r="40" fill="#1F1F1F"/>
-                <path style="fill: var(--theme-cold-water-color); stroke: var(--theme-cold-water-color); stroke-width: 2px;" d="M222.561 532.561C221.975 533.146 221.025 533.146 220.439 532.561C219.854 531.975 219.854 531.025 220.439 530.439L222.561 532.561ZM260 493L255.517 509.73L243.27 497.483L260 493ZM220.439 530.439L249.393 501.485L251.515 503.607L222.561 532.561L220.439 530.439Z" fill="#E9E9E9"/>
+                <path class="fill-blue-500 stroke-blue-500 stroke-2"  d="M222.561 532.561C221.975 533.146 221.025 533.146 220.439 532.561C219.854 531.975 219.854 531.025 220.439 530.439L222.561 532.561ZM260 493L255.517 509.73L243.27 497.483L260 493ZM220.439 530.439L249.393 501.485L251.515 503.607L222.561 532.561L220.439 530.439Z" fill="#E9E9E9"/>
                 <circle cx="80" cy="493" r="40" fill="#1F1F1F"/>
-                <path style="fill: var(--main-equivalent-color); stroke: var(--main-equivalent-color); stroke-width: 2px;" d="M41.5 531.5L46.144 514.814L58.2728 527.179L41.5 531.5ZM79.6996 491.929C80.291 491.349 81.2407 491.358 81.8208 491.95C82.401 492.541 82.3918 493.491 81.8004 494.071L79.6996 491.929ZM50.0872 520.976L79.6996 491.929L81.8004 494.071L52.188 523.117L50.0872 520.976Z" fill="#E9E9E9"/>
-                <rect y="83" width="340" height="490" stroke="black"/>
+                <path class="fill-red-700 stroke-red-800 stroke-2" d="M41.5 531.5L46.144 514.814L58.2728 527.179L41.5 531.5ZM79.6996 491.929C80.291 491.349 81.2407 491.358 81.8208 491.95C82.401 492.541 82.3918 493.491 81.8004 494.071L79.6996 491.929ZM50.0872 520.976L79.6996 491.929L81.8004 494.071L52.188 523.117L50.0872 520.976Z" fill="#E9E9E9"/>
+                <rect class="stroke-2 stroke-[#2c0808]" y="83" width="340" height="490" stroke="black"/>
               </svg>
             </div>
-            <h3 class="section-title" style="font-size: var(--section-title-sm-size); margin-bottom: 20px;">Дополнительные параметры теплообменника</h3>
+            <h3 class="text-2xl font-semibold text-gray-400 mt-6 mb-4">Дополнительные параметры теплообменника</h3>
             <ul class="bem__list" style="margin-bottom: 40px;">
               <li>Вес теплообменника (нетто): <%= massa %> кг</li>
             </ul>
-
           </div>
-          <div class="docspage__aside">
-            <ul class="listchoices listchoices_column" style="position: sticky; top:10px;">
-              <li class="listchoices__list-item listchoices__list-item_type_link listchoices__list-item_active listchoices__list-item_column">
-                <a class="listchoices__link" href="/">Скачать опросный лист</a>
-              </li>
-              <li class="listchoices__list-item listchoices__list-item_type_link listchoices__list-item_active listchoices__list-item_column">
-                <button class="listchoices__link listchoices__link_similar listchoices__link_button">Нужен похожий теплообменник</button>
-              </li>
-            </ul>
-          </div>
+          <% if (naznach === 'отопление') { %>
+            <div>
+              <a class="" href="/plastinchatye-teploobmenniki/otoplenie/">Пластинчатые теплообменники для отопления</a>
+            </div>
+          <% } %>
+          <% if (naznach === 'гвс') { %>
+            <div>
+              <a class="" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">Пластинчатые теплообменники для гвс</a>
+            </div>
+          <% } %>
       </div>
   </main>
 <script type="application/json" id="jsraschet">

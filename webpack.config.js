@@ -251,6 +251,38 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        raschetsExamples: rawData,
+        razbegPoMoshnosti,
+      },
+      title: "Теплообменники для отопления",
+      heading: "Теплообменники для отопления",
+      meta: {
+        keywords: "теплообменники для отопления",
+        description: "Разборные пластинчатые теплообменники для отопления",
+      },
+      template: "./src/pto-main-otop.html",
+      filename: "plastinchatye-teploobmenniki/otoplenie/index.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        raschetsExamples: rawData,
+        razbegPoMoshnosti,
+      },
+      title: "Теплообменники для гвс (горячее водоснабжение)",
+      heading: "Теплообменники для гвс",
+      meta: {
+        keywords: "теплообменники для гвс",
+        description: "Разборные пластинчатые теплообменники для гвс",
+      },
+      template: "./src/pto-main-gvs.html",
+      filename: "plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/index.html",
+      chunks: ["blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
         isGkh: true,
         articleFile: "teploizol.html",
         bannerImg: 'ti13front-with-izol.png',
@@ -695,6 +727,25 @@ module.exports = {
       },
       template: "./src/blog-page-abstract.html",
       filename: "blog-proizvodstva/aquatherm-2024.html",
+      chunks: ["blogPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
+        articleFile: "2024portal-center.html",
+        //relevanceArticles: [],
+        buttonText: "Подобрать теплообменник",
+      },
+      title: "Пуско-наладка портального фрезерного обрабатывающего станка для производства станин и плит теплообменников",
+      heading: "Портальный фрезерно обрабатывающий центр для производства станин и плит теплообменников",
+      meta: {
+        keywords:
+          "оборудование для производства пластинчатых теплообменников",
+        description: "Пуско-наладка станка для производства плит, станин пластинчатых теплообменников.",
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: "blog-proizvodstva/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html",
       chunks: ["blogPage", "all", "map"],
     }),
     new HtmlWebpackPlugin({
@@ -1160,7 +1211,7 @@ module.exports = {
       template: "./src/ti-xx-xx.html", // шаблон
       filename: "catalog/ti-09.html",
       templateParameters: {
-        tialias: "_ti09.png",
+        tialias: "ti09.png",
         drawalias: "_draw09.png",
         caption: "NEW",
         heading: "ТИ 09",
@@ -1175,7 +1226,7 @@ module.exports = {
       template: "./src/ti-xx-xx.html", // шаблон
       filename: "catalog/ti-12.html",
       templateParameters: {
-        tialias: "_ti12.png",
+        tialias: "ti12.png",
         drawalias: "_draw12.png",
         caption: "NEW",
         heading: "ТИ 12",

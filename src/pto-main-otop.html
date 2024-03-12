@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= require('html-loader!./inner-google.html').default %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+<body>
+  <%= require('html-loader!./inner-metrika.html').default %>
+  <div class="bg"></div>
+  <div class="page">
+    <header class="header" style="padding-left: 24px; padding-right: 24px;">
+      <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
+      <div class="header__right">
+        <%= require('html-loader!./insets/asides/inner-header.html').default %>
+      </div>
+    </header>
+    <main class="content">
+      <div class="flexburton flexburton_size_m flexburton_test flexburton_test-spec max-w-[1600px] mx-auto rounded-3xl drop-shadow-xl mobile:rounded-xl" style="background-color: #181717e3;">
+        <div class="flexburton__left-side max-w-[1170px] mx-auto">
+          <div class="flexburton__breadcrumbs flexburton__breadcrumbs_spec">
+              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
+              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
+              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
+          </div>
+          <h1 class="text-5xl font-bold text-gray-200  max-w-3xl laptop:text-3xl laptop:max-w-xl mobile:text-2xl"><%= htmlWebpackPlugin.options.heading %></h1>
+          <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
+        </div>
+        <img class="min-w-[150px] rounded-2xl self-center max-w-[382px] mobile:rounded-xl mobile:opacity-50 mobile:h-full mobile:-z-10 mobile:absolute mobile:w-36 mobile:top-0 mobile:right-1 mobile:object-cover mobile:object-left-top" src="<%= require(`./images/par-voda/ti28-par-voda-sp.png`)%>">
+      </div>
+      <div >
+        <section>
+          <div class="flex">
+            <img class="basis-1/3 w-full min-w-0" src="<%= require('./images/blog-otop-nezav.png') %>" alt="">
+            <div class="basis-1/3 w-full">
+              <p class="text-base text-gray-100 max-w-4xl">
+                Пластинчатый теплообменник предназначен для снижения энергозатрат в процессе теплообмена. Они широко используются в
+                обогреве промышленных зданий, складов, торговых залов, бассейнов и других помещений. Теплообменник является основным
+                элементом современной отопительной системы.
+              </p>
+              <p class="text-base text-gray-100 mt-4  max-w-4xl">
+                Пластинчатые теплообменники имеют преимущества в эффективности теплопередачи и удобстве эксплуатации. Переход на независимую систему отопления, в которой используется теплообменник, направлен на экономию энергии. Независимая система отопления разделяет теплоноситель на внутренний и внешний контуры, обеспечивая защиту от гидравлического удара.
+              </p>
+            </div>
+            <a class="basis-1/5" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">Читать подробнее в блоге</a>
+          </div>
+
+        </section>
+        <!--.filter(item => item.naznach === 'гвс')-->
+        <section class="max-w-[1170px] mx-auto py-10">
+          <h2 class="text-2xl max-w-md mt-8 mb-4 font-semibold text-gray-100">Примеры расчётов теплообменников для отопления</h2>
+          <p class="text-base text-gray-200 mb-4">Пластинчатые теплообменники для систем отопления</p>
+          <ul class="grid grid-cols-4 gap-5 laptop:grid-cols-2 laptop:gap-2 mobile:grid-cols-1 *:bg-[#323232] *:rounded *:relative *:flex">
+            <% raschetsExamples.filter(item => item.naznach === 'отопление').forEach(function(ptoData) { %>
+              <li class="ras" data-moshnost="<%-ptoData.moshnostNumber%>">
+                <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/raschets/<%-ptoData.path%>.html">
+                  Теплообменник <%-ptoData.naznach %> <%-ptoData.sreda1%>-<%-ptoData.sreda2%>
+                  <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-ptoData.moshnostNumber%> <%-ptoData.moshnostMeasure%></span>
+                </a>
+              </li>
+            <% }); %>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <section class="map">
+      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <div class="map__list-container">
+        <ul class="map__list">
+        </ul>
+        <!--Сюда встанут карточки партнеров-->
+        <div class="map__popup">
+          <span class="map__popup-close">&lt;-- Назад</span>
+          <ul class="map__popup-container"></ul>
+        </div>
+      </div>
+      <div class="map__partner"></div>
+    </section>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+  </div>
+  <!--Шаблон формы-->
+  <template class="form-big-template">
+    <%= require('html-loader!./insets/big-form-template.html').default %>
+  </template>
+  <!--Шаблон элемента партнера на карте-->
+  <template id="partner-item-template">
+    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+  </template>
+</body>
+</html>

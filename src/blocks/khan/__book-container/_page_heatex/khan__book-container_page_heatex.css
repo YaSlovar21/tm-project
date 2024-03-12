@@ -5,3 +5,9 @@
     padding: 10px;
     margin-top: 70px;
 }
+
+@media screen and (max-width: 636px) {
+  .khan__book-container_page_heatex {
+    min-height: 0;
+  }
+}
