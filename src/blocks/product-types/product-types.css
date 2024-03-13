@@ -32,6 +32,12 @@
     max-height: 26vw;
   }
 }
+@media screen and (max-width:530px) {
+  .product-types__image {
+    max-height: 65vw;
+    max-width: 65vw;
+  }
+}
 
 @media screen and (max-height: 500px) {
   .product-types__image {
@@ -211,5 +217,11 @@
 
   .product-types__button-prev {
     top: 40px; left: 0;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .product-types__button-next, .product-types__button-prev {
+    top: 70px;
   }
 }
