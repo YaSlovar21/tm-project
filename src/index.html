@@ -26,7 +26,7 @@
           <!--<div class="basis-4/12 flex flex-col justify-between">-->
           <h1 class="font-semibold uppercase text-2xl text-gray-100 col-span-4 laptop:col-span-6 laptop:row-span-1">100% локализация производства пластинчатых теплообменников</h1>
           <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 olpc:row-span-1 mvpc:text-base mvpc:py-0 laptop:col-span-6 laptop:row-span-1">
-            Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем
+            Производство полного цикла включает в себя разработку и изготовление пластин и уплотнений. Мы серийно выпускаем
             пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.
             Производство пластин и уплотнений 100% локализовано на территории предприятия. <span class="mvpc:hidden">На базе пластинчатых теплообменников мы
             изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</span>
@@ -214,29 +214,30 @@
         <h2 class="text-2xl font-bold uppercase text-gray-100">Новости компании</h2>
         <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
           <ul class="scroll-factory__inner flex w-full  gap-6">
-            <li class="shrink-0 max-w-sm w-full bg-gray-800 h-80 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden  transition-shadow hover:shadow-xl">
+            <li class="shrink-0 max-w-sm w-full bg-gray-800 h-80 mvpc:h-72 mobile:h-48 relative top-10 rounded-lg overflow-hidden  transition-shadow hover:shadow-xl">
               <a class=" transition-all flex h-full relative" href="/blog-proizvodstva/aquatherm-2024.html">
-                <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/2024content/aquathrm-poster.png')%>">
-                <div class="relative group w-full bg-zinc-800 bg-opacity-50 flex flex-col transition-all duration-300 justify-around hover:bg-opacity-75">
-                  <h3 class="text-2xl font-bold mt-10 ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Акватерм-2024</h3>
-                  <p class="text-base text-gray-200  ml-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Селфи с самым крупным теплообменником ТИ95 и что то еще.</p>
+                <img class="w-full h-full absolute inset-0 z-0 object-cover object-center" src="<%=require('./images/2024content/aquathrm-poster.png')%>">
+                <div class="relative group w-full bg-zinc-800 bg-opacity-70 py-8 flex flex-col transition-all duration-300 justify-start hover:bg-opacity-80">
+                  <span class="block justify-self-center text-sm text-gray-100 mb-1 ml-4 basis-6">12.02.2023</span>
+                  <h3 class="basis-16 text-lg uppercase font-bold my-2  ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Акватерм-2024</h3>
+                  <p class="text-sm basis-14 text-gray-200  ml-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Селфи с самым крупным теплообменником ТИ95 и что то еще.</p>
                   <span></span>
                 </div>
               </a>
             </li>
-            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl">
+            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-72 mobile:h-48 top-10 rounded-lg overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl">
               <a class="transition-all flex h-full" href="#">
-                <img class="w-full basis-2/3 min-h-0 min-w-0"  src="<%=require('./images/2024content/test-news.jpg')%>">
-                <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-evenly before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
-                  <span class="block justify-self-center text-sm text-gray-500">09.10.2023</span>
-                  <h3 class="text-xl font-bold mt-10 relative right-4 text-zinc-300  mobile:text-base mobile:mt-4">Запуск нового станка</h3>
-                  <p class="text-sm text-orange relative right-4 mobile:text-xs">Для производства элементов рамы теплообменника</p>
-                  <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+                <img class="w-full  object-cover object-center basis-2/3 min-h-0 min-w-0 opacity-90 transition-opacity duration-300 group-hover:opacity-75"  src="<%=require('./images/2024content/test-news.jpg')%>">
+                <div class="relative w-full basis-1/3 bg-zinc-800 py-8 flex flex-col justify-start before:block before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+                  <span class="block justify-self-center text-sm text-gray-500 relative right-4 mb-1 basis-6">09.10.2023</span>
+                  <h3 class="text-lg font-bold my-2 relative right-4 text-zinc-300 uppercase basis-16 mobile:text-base mobile:mt-4">Запуск нового станка</h3>
+                  <p class="text-sm text-orange relative right-4 basis-14 mobile:text-xs">Для производства элементов рамы теплообменника</p>
+                  <span class="inline-block mb-6 mt-auto text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
                 </div>
               </a>
             </li>
 
-            <li class="shrink-0 max-w-sm flex w-full bg-gray-800 h-80 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden    transition-shadow hover:shadow-xl"">
+            <li class="shrink-0 max-w-sm flex w-full bg-gray-800 h-80 mvpc:h-72 mobile:h-48 relative top-10 rounded-lg overflow-hidden    transition-shadow hover:shadow-xl"">
                 <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/about-seal.jpg')%>">
                 <div class="relative w-full bg-zinc-800 bg-opacity-50 flex flex-col justify-between ">
                   <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300  mobile:text-base mobile:mt-4">Изготовление резиновых уплотнений</h3>
@@ -244,7 +245,7 @@
                   <span></span>
                 </div>
             </li>
-            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl"">
+            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-72 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl"">
               <a class=" transition-all flex h-full" href="/plastinchatye-teploobmenniki/programma-rascheta.html">
                 <img class="w-full basis-2/3 min-h-0 min-w-0 opacity-70"  src="<%=require('./images/program_mini.png')%>">
                 <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
@@ -636,7 +637,7 @@
         <div class="bsz-new__content bsz__wrapper">
           <div class="bsz-new__intro">
             <p class="bsz-new__text" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
-              class="span span_color_orange span_uppercase">ООО "Термоблок" </span>- предприятие холдиноговой компании
+              class="span span_color_orange span_uppercase">ООО "Термоблок" </span>- предприятие холдинговой компании
             “Барнаульский
             станкостроительный завод”</p>
             <p class="bsz-new__text" style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим

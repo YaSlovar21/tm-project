@@ -87,7 +87,7 @@ const data = templateFiles.map(item => {
       naznach = 'отопление';
     };
 
-    dataForSitemap.push(slugify(`teploobmennik-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`));
+    dataForSitemap.push(slugify(`teploobmennik${naznach !== '' ? `-${naznach}` : ''}-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`));
     razbegPoMoshnosti.push(Math.round(Number(moshnostNumber)));
 
     return {
@@ -114,7 +114,7 @@ const data = templateFiles.map(item => {
 
       massa,
 
-      path: slugify(`teploobmennik-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`),
+      path: slugify(`teploobmennik${naznach !== '' ? `-${naznach}` : ''}-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`),
     };
   })
 

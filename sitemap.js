@@ -1,3 +1,4 @@
+const { dataForSitemap } = require("./raschets");
 
 const dateNow = (new Date()).toString();
 
@@ -18,6 +19,24 @@ module.exports.paths = [
       path: '/plastinchatye-teploobmenniki/',
       lastmod: dateNow,
       priority: 0.9,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/raschets/',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/otoplenie/',
+      lastmod: dateNow,
+      priority: 0.8,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/',
+      lastmod: dateNow,
+      priority: 0.8,
       changefreq: 'monthly'
     },
     {
@@ -274,6 +293,18 @@ module.exports.paths = [
     },
     {
       path: '/catalog/ti-077.html',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-09.html',
+      lastmod: dateNow,
+      priority: 0.6,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/catalog/ti-12.html',
       lastmod: dateNow,
       priority: 0.6,
       changefreq: 'monthly'
@@ -566,4 +597,11 @@ module.exports.paths = [
       changefreq: 'monthly'
       },
      
-];
+].concat( dataForSitemap.map((item)=>{
+  return {
+    path: `/plastinchatye-teploobmenniki/raschets/${item}.html`,
+    lastmod: dateNow,
+    priority: 0.7,
+    changefreq: 'monthly'
+  }
+}));

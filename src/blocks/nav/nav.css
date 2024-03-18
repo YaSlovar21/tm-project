@@ -249,9 +249,9 @@
     .nav__sub-link  {
       font-size: 15px;
     }
-    .nav__sub-link_subb {
+    /*.nav__sub-link_subb {
       font-size: 13px;
-    }
+    }*/
   }
 
   .nav__ul-item_sub:hover::after {
