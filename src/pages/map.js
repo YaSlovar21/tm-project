@@ -17,12 +17,13 @@ initialPartnersTowns.sort(function(a,b) {
 });
 
 const mapSection = document.querySelector('.map');
-const mapList = mapSection.querySelector('.map__list');
+console.log(mapSection);
+const mapList = mapSection?.querySelector('.map__list');
 
 
-const dinamicInfoPopup = mapSection.querySelector('.map__popup');
-const popupInfoCloseButton = dinamicInfoPopup.querySelector(".map__popup-close");
-const dinamicInfoPopupContainer = dinamicInfoPopup.querySelector('.map__popup-container');
+const dinamicInfoPopup = mapSection?.querySelector('.map__popup');
+const popupInfoCloseButton = dinamicInfoPopup?.querySelector(".map__popup-close");
+const dinamicInfoPopupContainer = dinamicInfoPopup?.querySelector('.map__popup-container');
 
 function createPartner(dataJson) {
   const partner = new Partner({
@@ -51,8 +52,9 @@ const partnerList = new Section({
   }
 }, partnersSectionConfig.containerSelector, 0);
 
-partnerList.renderItems();
-
+if (mapSection) {
+  partnerList.renderItems();
+}
 /*------------------------------- */
 
 //function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
@@ -94,7 +96,7 @@ function popupInfoOpen(arrayOfPartnersInTown) {
   dinamicInfoPopup.classList.add('map__popup_opened');
 }
 
-popupInfoCloseButton.addEventListener('click', function () {
+popupInfoCloseButton?.addEventListener('click', function () {
   dinamicInfoPopup.classList.remove('map__popup_opened');
   dinamicInfoPopupContainer.innerHTML ='';
   let mapActive = mapList.querySelector('.map__list-item_active')

@@ -21,7 +21,7 @@ function generateRaschetHtmlPlugins() {
     return new HtmlWebpackPlugin({
       title: ptoData.title ? ptoData.title:  `Какой то расчёт`,
       template: "./src/abstract-raschet-page.html", // шаблон
-      filename: `plastinchatye-teploobmenniki/raschets/${ptoData.path}.html`,
+      filename: `plastinchatye-teploobmenniki/${ptoData.naznach === 'гвс' ? 'goryachee-vodosnabzhenie-gvs' : ptoData.naznach === 'отопление' ? 'otoplenie' : 'raschets'}/${ptoData.path}.html`,
       templateParameters: ptoData,
       razbegPoMoshnosti,
       chunks: ["blogSpecPage", "all", "map"],
@@ -709,6 +709,7 @@ module.exports = {
       templateParameters: {
         canonicalURL: canonicalURL,
         isGkh: true,
+        customPoster: 'poster-aquatherm.png',
         articleFile: "2024aquatherm.html",
         relevanceArticles: [
           {
@@ -733,11 +734,12 @@ module.exports = {
       templateParameters: {
         canonicalURL: canonicalURL,
         isGkh: true,
+        customPoster: 'poster-portal.png',
         articleFile: "2024portal-center.html",
         //relevanceArticles: [],
         buttonText: "Подобрать теплообменник",
       },
-      title: "Пуско-наладка портального фрезерного обрабатывающего станка для производства станин и плит теплообменников",
+      title: "Пуско-наладка портального фрезерного обрабатывающего станка для теплообменников",
       heading: "Портальный фрезерно обрабатывающий центр для производства станин и плит теплообменников",
       meta: {
         keywords:

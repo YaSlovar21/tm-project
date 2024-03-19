@@ -213,6 +213,10 @@ document.querySelector('.mainmodels__raschet').addEventListener("mousedown", () 
   popupRaschet.open();
 });
 
+document.querySelector('.header-index-cta').addEventListener('mousedown', ()=> {
+  popupCallBack.open('Отправить запрос', '');
+});
+
 platesSvg.addEventListener("click", (evt) => {
   popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
   console.log(initialHeatEx[evt.target.dataset.to]);

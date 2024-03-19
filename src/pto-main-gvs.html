@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+  <link href="<%= canonicalURL %>/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/"  rel="canonical" />
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
@@ -51,7 +51,7 @@
         <ul class="grid grid-cols-4 gap-5 laptop:grid-cols-2 laptop:gap-2 mobile:grid-cols-1 *:bg-[#323232] *:rounded *:relative *:flex">
           <% raschetsExamples.filter(item => item.naznach === 'гвс').forEach(function(ptoData) { %>
             <li class="ras" data-moshnost="<%-ptoData.moshnostNumber%>">
-              <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/raschets/<%-ptoData.path%>.html">
+              <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/<%-ptoData.categoryPath%>/<%-ptoData.path%>.html">
                 Теплообменник <%-ptoData.naznach %> <%-ptoData.sreda1%>-<%-ptoData.sreda2%>
                 <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-ptoData.moshnostNumber%> <%-ptoData.moshnostMeasure%></span>
               </a>

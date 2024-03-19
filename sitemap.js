@@ -165,37 +165,37 @@ module.exports.paths = [
     {
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/plastinchatyy-pasterizator.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'weekly'
     },
     {
       path: '/blog-proizvodstva/mnogosektsionnye-teploobmenniki.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
@@ -207,43 +207,43 @@ module.exports.paths = [
     {
       path: '/blog-proizvodstva/plastinchatye-ohladiteli-ool.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/plastinchatii-ohladitel-ool-10.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/teploobmennik-dlya-bassejna.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     {
       path: '/blog-proizvodstva/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html',
       lastmod: dateNow,
-      priority: 0.8,
+      priority: 0.7,
       changefreq: 'monthly'
     },
     /* статьи - объекты */
@@ -277,8 +277,26 @@ module.exports.paths = [
       priority: 0.7,
       changefreq: 'monthly'
     },
-{
+    {
       path: '/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/aquatherm-2024.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html',
+      lastmod: dateNow,
+      priority: 0.7,
+      changefreq: 'monthly'
+    },
+    {
+      path: '/blog-proizvodstva/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html',
       lastmod: dateNow,
       priority: 0.7,
       changefreq: 'monthly'
@@ -599,7 +617,8 @@ module.exports.paths = [
      
 ].concat( dataForSitemap.map((item)=>{
   return {
-    path: `/plastinchatye-teploobmenniki/raschets/${item}.html`,
+    //в ${item} содержится подкатегория гвс или отопление или спец расчёт(пищевой на данный момент): подкатегория/слаг названия расчёта.html
+    path: `/plastinchatye-teploobmenniki/${item}.html`,
     lastmod: dateNow,
     priority: 0.7,
     changefreq: 'monthly'

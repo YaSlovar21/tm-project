@@ -87,7 +87,9 @@ const data = templateFiles.map(item => {
       naznach = 'отопление';
     };
 
-    dataForSitemap.push(slugify(`teploobmennik${naznach !== '' ? `-${naznach}` : ''}-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`));
+    let categoryPath = naznach === 'гвс' ? 'goryachee-vodosnabzhenie-gvs' : naznach === 'отопление' ? 'otoplenie' : 'raschets';
+
+    dataForSitemap.push(`${categoryPath}/` + slugify(`teploobmennik${naznach !== '' ? `-${naznach}` : ''}-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`));
     razbegPoMoshnosti.push(Math.round(Number(moshnostNumber)));
 
     return {
@@ -96,6 +98,7 @@ const data = templateFiles.map(item => {
       tiNumberFromTm: number.match(pullNumberRegex).groups.num,
       
       naznach: naznach,
+      naznachEN: slugify(naznach),
       sreda1: sreda1.toLowerCase(),
       sreda2: sreda2.toLowerCase(),
 
@@ -115,12 +118,14 @@ const data = templateFiles.map(item => {
       massa,
 
       path: slugify(`teploobmennik${naznach !== '' ? `-${naznach}` : ''}-${parseInt(moshnostNumber)}${moshnostMeasure}${number}`),
+      categoryPath: categoryPath,
+      categoryName: naznach === 'гвс' ? 'Теплообменники для горячего водоснабжения' : naznach === 'отопление' ? 'Теплообменники для отопления' : 'Нетиповые примеры расчётов',
     };
   })
 
 
   console.log(path.resolve(__dirname, 'raschets'));
-  console.log(dataForSitemap);
+  console.log(dataForSitemap.map(item => `/plastinchatye-teploobmenniki/${item}`));
   console.log(razbegPoMoshnosti);
 
   module.exports = {

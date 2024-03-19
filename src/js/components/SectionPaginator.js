@@ -9,10 +9,10 @@ export default class SectionPaginator extends Section {
     constructor(props, cardsContainerSelector, moreButtonElement) {
         super(props, cardsContainerSelector);
 
-        if (useWindowSize() > 1500) {
+        if (useWindowSize() > 1200) {
           this._countBase = 9;
         }
-        if (useWindowSize() <= 1500) {
+        if (useWindowSize() <= 1200) {
           this._countBase = 8;
         }
 
@@ -33,12 +33,17 @@ export default class SectionPaginator extends Section {
 
     additionalCount() {
       const widthScreen = useWindowSize();
-      if (widthScreen > 1500) {
+      if (widthScreen > 1200) {
         return 3;
+      } else {
+        if (widthScreen <= 1200 && widthScreen > 638) {
+          return 2;
+        }
+        else {
+          return 3;
+        }
       }
-      if (widthScreen <= 1500 && widthScreen > 1280) {
-        return 2;
-      }
+
 
     }
     renderFiltered(filteredData) {

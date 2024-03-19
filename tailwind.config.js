@@ -16,7 +16,7 @@ module.exports = {
             '--tw-prose-hr' : '#e5e5e5',
             '--tw-prose-quotes' : '#f2f2f2',
             '--tw-prose-quote-borders' : '#e5e5e5',
-            '--tw-prose-captions' : '#ebebeb',
+            '--tw-prose-captions' : '#a3a2a2',
             '--tw-prose-code' : '#171717',
             '--tw-prose-pre-code' : '#e5e5e5',
             '--tw-prose-pre-bg' : '#262626',

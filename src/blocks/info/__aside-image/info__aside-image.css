@@ -12,3 +12,9 @@
     grid-row-end: 3;
   }
 }
+
+.info__aside-img_custom {
+  width: 90%;
+  max-width: 90%;
+  object-position: right;
+}

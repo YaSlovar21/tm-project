@@ -12,15 +12,21 @@
   padding-right: 10px;
 }
 
+.info__heading_custom {
+  font-weight: 600;
+  font-size: 26px;
+}
+
 @media screen and (max-width: 1600px) {
   .info__heading {
     margin-left: 20px;
+    font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .info__heading {
-    
+
   }
 }
 
@@ -31,3 +37,4 @@
     font-weight: 500;
   }
 }
+

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+  <link href="<%= canonicalURL %>/plastinchatye-teploobmenniki/otoplenie/"  rel="canonical" />
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
@@ -71,7 +71,7 @@
               </a>
             </li>
             <li class="col-start-7 row-start-2  laptop:row-start-auto col-span-2 laptop:col-span-1 row-span-1 group relative overflow-visible">
-              <h3 class="text-xs uppercase font-extrabold text-orange-darker text-right">Объекты с системой отопления через теплообменник ></h3>
+              <h3 class="text-xs font-['Inter'] uppercase font-extrabold text-orange-darker text-right">Объекты с системой отопления через теплообменник ></h3>
             </li>
             <li class="flex flex-col items-start col-start-9 row-start-2 col-span-4 laptop:col-span-1 laptop:col-start-1  laptop:row-start-auto row-span-1 z-[1] group bg-[url('../images/ufa_umn_dom.png')] before:transition before:duration-500 bg-opacity-40 bg-cover bg-right relative before:w-full before:h-full before:bg-neutral-900 before:bg-opacity-60 hover:before:bg-opacity-70 before:absolute before:inset-0 before:-z-[1]">
               <h3 class="basis-3/6 p-5 text-lg text-gray-300 font-semibold">Теплообменник для отопления в многоквартирном доме с системой «умный дом»</h3>
@@ -137,7 +137,7 @@
           <ul class="grid grid-cols-4 gap-5 laptop:grid-cols-2 laptop:gap-2 mobile:grid-cols-1 *:bg-[#323232] *:rounded *:relative *:flex">
             <% raschetsExamples.filter(item => item.naznach === 'отопление').forEach(function(ptoData) { %>
               <li class="ras" data-moshnost="<%-ptoData.moshnostNumber%>">
-                <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/raschets/<%-ptoData.path%>.html">
+                <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/<%-ptoData.categoryPath%>/<%-ptoData.path%>.html">
                   Теплообменник <%-ptoData.naznach %> <%-ptoData.sreda1%>-<%-ptoData.sreda2%>
                   <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-ptoData.moshnostNumber%> <%-ptoData.moshnostMeasure%></span>
                 </a>
