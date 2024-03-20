@@ -42,7 +42,7 @@
                   <ul class="grid grid-cols-3 mvpc:grid-cols-2 laptop:grid-cols-1 gap-2">
                     <% relevanceArticles.forEach(function(article) { %>
                     <li>
-                      <a class="group relative w-full h-full flex bg-zinc-600 bg-opacity-50 text-base p-3 rounded-md overflow-hidden laptop:text-sm laptop:p-2" href="<%-article.link%>">
+                      <a class="group relative w-full h-full flex border-2 border-[#242424] bg-zinc-600 bg-opacity-50 text-base p-3 rounded-md overflow-hidden laptop:text-sm laptop:p-2" href="<%-article.link%>">
                         <span class="absolute inset-0"></span>
                         <%-article.name%>
                         <figure class="absolute w-8 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 invisible opacity-0  transition  group-hover:visible group-hover:opacity-100">
