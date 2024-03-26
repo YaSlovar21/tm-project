@@ -42,10 +42,10 @@
                   <ul class="grid grid-cols-3 mvpc:grid-cols-2 laptop:grid-cols-1 gap-2">
                     <% relevanceArticles.forEach(function(article) { %>
                     <li>
-                      <a class="group relative w-full h-full flex border-2 border-[#242424] bg-zinc-600 bg-opacity-50 text-base p-3 rounded-md overflow-hidden laptop:text-sm laptop:p-2" href="<%-article.link%>">
+                      <a class="group relative w-full h-full flex border-2 border-[#242424] bg-zinc-600 bg-opacity-50 text-base p-3 rounded-md overflow-hidden laptop:text-sm laptop:p-2 mobile:pr-8" href="<%-article.link%>">
                         <span class="absolute inset-0"></span>
                         <%-article.name%>
-                        <figure class="absolute w-8 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 invisible opacity-0  transition  group-hover:visible group-hover:opacity-100">
+                        <figure class="absolute w-8 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 invisible opacity-0  transition  group-hover:visible group-hover:opacity-100 mobile:visible mobile:opacity-100">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                           </svg>

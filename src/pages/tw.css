@@ -18,7 +18,7 @@
   }
 
   .info__article-container table thead {
-    @apply bg-orange-dark text-base;
+    @apply bg-orange-dark text-base mobile:text-sm;
   }
 
   .info__article-container table thead tr {
@@ -34,7 +34,7 @@
   }
 
   .info__article-container table tbody {
-    @apply text-base relative -top-2 -z-[1] bg-[#2f2f2f]  divide-y divide-solid divide-[#1f1f1f];
+    @apply text-base relative -top-2 -z-[1] bg-[#2f2f2f]  divide-y divide-solid divide-[#1f1f1f]  mobile:text-sm;
   }
 
   .info__article-container table tbody tr {
