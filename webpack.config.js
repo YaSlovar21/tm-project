@@ -345,6 +345,27 @@ module.exports = {
       templateParameters: {
         canonicalURL: canonicalURL,
         isGkh: true,
+        articleFile: "payanii.html",
+        bannerImg: 'payan/payanii-main.png',
+      },
+      title: "Паяные пластинчатые теплообменники Российского производства",
+      heading: "Паяные пластинчатые теплообменники",
+      intro:
+        "Паяные теплообменники Российского производства",
+      meta: {
+        keywords: "паяные теплообменники, паяный теплообменник, паяный пластинчатый теплообменник",
+        description:
+          "Запуск производствао полностью Российского паяного пластинчатого теплообменника. Процессы производства паяного теплообменника. Типоразмеры теплообменников.",
+      },
+      template: "./src/blogspec-page-abstract.html",
+      filename:
+        "plastinchatye-teploobmenniki/plastinchatye-payanye-teploobmenniki/index.html",
+      chunks: ["vakansii", "blogSpecPage", "all", "map"],
+    }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        isGkh: true,
         articleFile: "harakteristiki.html",
       },
       title: "Характеристики пластинчатого теплообменника",
