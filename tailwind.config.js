@@ -48,6 +48,9 @@ module.exports = {
           dark: '#B72F0B',
           darker: '#901E00',
         },
+        primary: {
+          strokke1: '#4F4F4F',
+        },
       }
     }
   },

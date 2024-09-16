@@ -40,7 +40,13 @@ export const cardArticleConfig = {
   cardListSection: '.cards-js-rendered',
 }
 
-
+/*
+      name: item.name,
+      link: item.link,
+      to: item.model,
+      naznach: item.naznach,
+      q: item.q,
+*/
 export const initialProjects = [
     {
       name: "Теплообменник пластинчатый в котельной квартала 34, г. Уфа, жилой район «Затон-Восточный»",
@@ -82,6 +88,144 @@ export const tagsAliases = {
   'prod': 'Продукция',
   'news': 'Новости компании',
 }
+
+export const initialArticles = [
+  {
+    tags: ['prod', 'news'],
+    linkPath: `/${blogPath}/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html`,
+    heading: 'Портальный фрезерный обрабатывающий центр',
+    description: 'Внедрен в производство',
+  },
+  {
+    tags: ['prod', 'news'],
+    linkPath: `/${blogPath}/aquatherm-2024.html`,
+    heading: 'АКВАТЕРМ-2024',
+    description: 'Представили обновленную линейку теплобменных пластин, пластинчатые теплообменники до ДУ250',
+  },
+  {
+    tags: ['gkh', 'prod', 'example'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-otopleniya.html`,
+    heading: 'Пластинчатые теплообменники отопления',
+    description: 'Производство теплообменников для отопления',
+  },
+  {
+    tags: ['prod', 'food'],
+    linkPath: `/${blogPath}/plastinchatyy-pasterizator.html`,
+    heading: 'Пластинчатые пастеризаторы',
+    description: 'Производство пластинчатых пастеризаторов пищевых жидкостей',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/plastinchatye-teploobmenniki-gvs.html`,
+    heading: 'Пластинчатые теплообменники для гвс',
+    description: 'Производство теплобменников горячего водоснабжения',
+  },
+  {
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/teploobmenniki-otopleniya-chastnogo-doma.html`,
+    heading: 'Теплообменник для отопления частного дома',
+    description: 'Особенности пластинчатых теплообменников при использовании в частных домах',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/plastinchatii-teploobmennik-du-250.html`,
+    heading: 'Пластинчатый теплообменник ДУ250',
+    description: 'О процессе разработки пластин и уплотнений, запуске в производство нового теплобоменника',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-par-voda-plastinchatyy.html`,
+    heading: 'Теплообменники пар-вода',
+    description: 'Пластинчатые пароводяные теплообменники для нагрева воды паром и прочих сред',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-glikol-voda.html`,
+    heading: 'Теплообменники гликоль-вода',
+    description: 'Пластинчатые теплообменники для гликоля: пропиленгликоля, этиленгликоля.',
+  },
+  {
+    tags: ['example', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-dlya-bassejna.html`,
+    heading: 'Теплообменник для бассейна',
+    description: 'Пример расчёта теплообменника пластинчатого бассейна, особенности подбора.',
+  },
+  {
+    tags: ['example', 'prod'],
+    linkPath: `/${blogPath}/oprosnyj-list-dlya-plastinchatogo-teploobmennika.html`,
+    heading: 'Опросный лист теплообменника пластинчатого',
+    description: 'Что из себя представляет опросный лист? Какие данные нужно заполить для подбора теплообменника, а какие можно не заполнять?',
+  },
+  {
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/teploobmenniki-mnogokvartirnogo-doma.html`,
+    heading: 'Теплообменник в многоквартирном доме',
+    description: 'Теплообменные аппараты в жилых многоквартирных домах (мкд). Как расчитываются? Как работают?',
+  },
+  {
+    tags: ['gkh', 'prod'],
+    linkPath: `/${blogPath}/teploobmennik-du-250-v-gazete.html`,
+    heading: 'Новые теплообменники упомянули в газете',
+    description: 'Статья в газете об отгрузке теплообменников ДУ250 в особую энономическую зону Липецк',
+  },
+  {
+    tags: ['gkh'],
+    linkPath: `/${blogPath}/preimushchestva-plastinchatykh-teploobmennikov.html`,
+    heading: 'Преимущества пластинчатых теплообменников',
+    description: 'Преимущества теплообменных аппаратов пластинчатого типа',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-u-timashevsk.html`,
+    heading: 'Объект: Кондитерский комбинат Кубань (г. Тимашевск)',
+    description: 'Теплообменник ТИ52-77 мощностью 3,5 Гкал/ч',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-p-zaton-vostok.html`,
+    heading: 'Объект: Котельная в г. Уфа, жилой район «Затон-Восточный»',
+    description: 'Теплообменник ТИ82-201, мощность 17500 кВт',
+  },
+  {
+    tags: ['gkh', 'project'],
+    linkPath: `/${blogPath}/teploobmenniki-gvs-object-p-umnii-dom.html`,
+    heading: 'Объект: Умный дом в г. Уфа (теплообменники для ИТП)',
+    description: 'Теплообменники ТИ13 для гвс, отопления, вентилиции',
+  },
+  {
+    tags: ['prod', 'food'],
+    linkPath: `/${blogPath}/mnogosektsionnye-teploobmenniki.html`,
+    heading: 'Многосекционные теплообменники',
+    description: 'Многосекционное исполнение теплообменников',
+  },
+
+  {
+    tags: ['gkh', 'btp'],
+    linkPath: `/${blogPath}/proektirovanie-blochnykh-teplovykh-punktov.html`,
+    heading: 'Проектирование блочных тепловых пунктов',
+    description: 'Запуск в производство готового решения для жилично-коммунального хозяйства',
+  },
+  {
+    tags: ['prod', 'food', 'example'],
+    linkPath: `/${blogPath}/plastinchatye-ohladiteli-ool.html`,
+    heading: 'Пластинчатые охладители ООЛ-3, ООЛ-5',
+    description: 'Примеры расчётов, принцип действия пластинчатых охладителей молока',
+  },
+  {
+    tags: ['prod', 'food', 'example'],
+    linkPath: `/${blogPath}/plastinchatii-ohladitel-ool-10.html`,
+    heading: 'Пластинчатый охладитель ООЛ-10',
+    description: 'Пример расчёта теплообменника охладителя на 10000 литров молока в час',
+  },
+  {
+    tags: ['project', 'gkh', 'example'],
+    linkPath: `/${blogPath}/teploobmennik-5-mvt-object-spb.html`,
+    heading: 'Теплообменник 5 мВт для отопления г. Санкт-Петербург',
+    description: 'Производство теплообменника отопления в бизнес-центр Морская Сталица города Санкт-Петербург',
+  }
+
+];
+
 
 export const initialHeatEx = {
   "ti-025": {

@@ -85,11 +85,13 @@
     /*max-height: 297px;
     max-width: 360px;*/
     max-height: 60%;
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    opacity: .8;
+    max-width: 80%;
     object-fit: contain;
     object-position: center;
-    margin-bottom: 20px;
+    margin: auto;
+
 }
 
 @media screen and (min-width: 1440px) {

@@ -10,8 +10,9 @@
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
-  <div class="page page_up">
-    <header class="header header-up">
+  <div class="bg"></div>
+  <div class="page">
+    <header class="header">
       <a href="/" class="header__logo">
         <img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/>
       </a>
@@ -21,12 +22,12 @@
   </header>
 
 
-  <main class="max-w-[calc(100%-80px)] mx-auto">
+  <main class="content max-w-[1600px] mx-auto">
     <div class="flexburton__breadcrumbs">
       <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
       <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
     </div>
-    <h1 class="title-page">Статьи и информация</h1>
+    <h1 class="content__title blog-grid__title">Статьи и информация</h1>
     <form class="filter-form flex gap-2 my-6" name="filterForm" id="filterForm">
       <label>
         <input class="filter-form__input" type="checkbox" name="filterbox" value="news">
@@ -35,17 +36,33 @@
       <label>
         <input class="filter-form__input" type="checkbox" name="filterbox" value="gkh">
         <span class="blog-grid__filter-span">ЖКХ</span>
+
       </label>
       <label>
         <input class="filter-form__input"  type="checkbox" name="filterbox" value="food">
         <span class="blog-grid__filter-span">Пищевые</span>
+
+      </label>
+      <label>
+        <input class="filter-form__input"  type="checkbox" name="filterbox" value="btp">
+        <span class="blog-grid__filter-span">БТП</span>
+
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="example">
+        <span class="blog-grid__filter-span">Пример расчёта</span>
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="prod">
+        <span class="blog-grid__filter-span">Продукция</span>
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="project">
+        <span class="blog-grid__filter-span">Проект</span>
       </label>
     </form>
-    <section class="grid grid-cols-2 items-start pt-9 border-t border-primary-strokke1">
-        <h2 class="up-title up-title_svg">Полезные материалы</h2>
-        <div>
-          <h3 class="subtitle">Теплообменники в сфере жкх</h3>
-          <ul class="cards-js-rendered">
+    <div class="infocards blog-grid__articles">
+          <ul class="infoitems cards-js-rendered">
             <!--<li class="infoitem">
               <div class="infoitem__header">
                 <span class="infoitem__span-button">Проект</span>
@@ -86,9 +103,9 @@
               </a>
             </li>-->
           </ul>
+
           <button class="infocards__more-button infocards__more-button_hidden button-bem button-bem_blog">Показать еще</button>
         </div>
-    </section>
 
 
         </main>
@@ -101,19 +118,15 @@
       </section>-->
         <%= require('html-loader!./insets/asides/inner-footer.html').default %>
         <template id="article-template">
-          <li class="card-item mb-3 border-t border-primary-strokke1 hover:border-orange-light group">
-            <div class="card-item-header">
+          <li class="infoitem">
+            <div class="infoitem__header">
               <!--<span class="infoitem__span-button">Проект</span>
               <span class="infoitem__span-button">ГВС</span>
               <span class="infoitem__span-button">ТИ82</span>-->
             </div>
-            <a class="card-item-link pt-5 pb-2 block relative" href="#">
-              <h2 class="card-item-title text-zinc-300 text-xl font-semibold leading-snug max-w-lg">Пластинчатые пастеризаторы</h2>
-              <p class="card-item-description text-zinc-300 text-base mt-7 max-w-sm hidden group-hover:block">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
-              <svg class="size-6 absolute top-5 stroke-primary-strokke1 group-hover:stroke-orange right-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-
+            <a class="infoitem__link" href="info.html">
+              <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
+              <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
             </a>
           </li>
         </template>

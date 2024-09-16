@@ -6,14 +6,16 @@
     align-items: stretch;
     padding: 20px 0;
     flex-wrap: no-wrap;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 80px);
     max-width: 1600px;
-    /*background: linear-gradient(93.42deg, #2A2C2F 5.09%, rgba(42, 44, 47, 0.42) 28.8%, rgba(208, 209, 210, 0.607549) 43.09%, rgba(255, 255, 255, 0.66) 48.78%, rgba(188, 188, 189, 0.587343) 54.14%, rgba(188, 188, 189, 0.587343) 54.14%, rgba(42, 44, 47, 0.43) 65.73%, #2A2C2F 88.13%);
-    background-blend-mode: luminosity;*/
 }
 
 .header_type_wrapper {
   max-width: 1600px;
+}
+
+.header-up {
+  max-width: calc(100% - 80px);
 }
 
 @media screen and (min-width: 1440px) {

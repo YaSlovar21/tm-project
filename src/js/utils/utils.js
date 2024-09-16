@@ -19,7 +19,7 @@ export function isFullInclude(arrA, arrB) {
 }
 
 export function articlesMapper(tags, articles) {
-  return articles.filter(item => isFullInclude(tags, item.tags));
+  return articles.filter(item => isFullInclude(tags, item.type));
 }
 
 export function useWindowSize() {

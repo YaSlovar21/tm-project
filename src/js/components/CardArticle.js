@@ -30,13 +30,13 @@ export default class CardArticle extends Card {
         this._cardDescription.textContent = this._descriptionText;
         this._link.href = this._linkPath;
 
-        this._tagsArray.forEach((tag) => {
+       /* this._tagsArray.forEach((tag) => {
           const tagSpan = document.createElement('span');
           tagSpan.textContent = this._tagsAliases[tag];
           tagSpan.classList.add(this._tagClass);
           this._tagsSection.append(tagSpan);
-        
-        });
+
+        });*/
 
         // если от родителя передался animateClass
         if( this._animateClass) {

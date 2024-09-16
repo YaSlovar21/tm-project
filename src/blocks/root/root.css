@@ -1,29 +1,24 @@
 .page {
-    /*min-width: 1100px;*/
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
     max-width: 100%;
-    /* выше установили ограничение по максимальной ширине */
-
     margin: 0 auto;
-    /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Inter', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-
-    /*background-color: #161616;*/
-  }
-
-h1, h2, h3, h4 {
-  font-family: 'Golos',  Arial, sans-serif;
 }
+
+.page_up {
+
+}
+
 html, body, main {
-    /*position: relative;
-    height: 100%;
-    font-family: 'Inter', Arial, sans-serif;*/
+
+}
+
+body {
+  background-color: #191919;
 }
 
 .swiper-container {
@@ -59,15 +54,11 @@ input {
     --main-equivalent-color: #ff5e3a;
     --main-color-contr: #ff7455;
 
-
-    --border-radius-xl: 20px;
-    --border-radius-l: 10px;
-    --border-radius-m: 6px;
-    --border-radius-s: 4px;
-    --border-radius-xs: 2px;
     --h2-size: 28px;
     --bg-darker-color: #1817178a;
     --text-color: #f2f2f2;
+
+    --stroke-gray-1: #4F4F4F;
 }
 
 @media screen and (max-width: 1441px){
@@ -102,23 +93,9 @@ input {
     }
 }
 
-.page_index {
-    font-family: 'Inter', Arial, sans-serif;
-    /*position: relative;*/
-    /*z-index: 2;*/
-
-    min-height: 100%;
-}
-
-
-
-.text-colot-white {
-    color: #f2f2f2;
-}
 
 
 /*----------------------------------------*/
-
 .bg {
     position: fixed;
     left: 0;
@@ -139,7 +116,6 @@ input {
   .bg {
     background-image: none;
     background: radial-gradient(63.43% 23.01% at 49.87% 45.13%, rgba(34, 34, 34, 0.81) 0%, #222222 100%);;
-
   }
 }
 
@@ -157,19 +133,11 @@ input {
     opacity: 0.8;
 }
 
+
+
+
+
 /*----------------------------------------*/
-
-
-
-.contact-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  position: relative;
-  z-index: 1;
-}
-
-
 @media screen and (max-width: 1024px) {
   .big-form-mob {
     display:inline;
@@ -185,54 +153,27 @@ input {
     cursor: pointer;
   }
 
-  .plast {
+.plast {
     transition: all .2s linear;
     stroke: #c4c4c4;
     stroke-width: 2px;
 
     fill: rgba(170, 170, 170, 0.411);
-  }
+}
 
-  .podp {
+.podp {
     fill: rgba(255, 255, 255);
-  }
-
-  #pl1 {
-    position: relative;
-    width: 200px;
-    height: 300px;
-  }
-
-  .pl1__text {
-    font-size: 20px;
-    color: white;
-    width: 50px;
-    height: 20px;
-  }
-
-
-  /**/
-.content {
-
 }
 
-.content__title {
-  font-size: 28px;
-  font-weight: 800;
-  color: #f2f2f2;
-  margin: 0 auto 20px;
+#pl1 {
+  position: relative;
+  width: 200px;
+  height: 300px;
 }
 
-.content__title_type_h2product {
-  margin-top: 70px;
-  text-transform: uppercase;
-  color: #c4c4c4;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-@media screen and (min-width: 1440px) {
-  .content__title {
-    max-width: calc(100% - 40px);
-  }
+.pl1__text {
+  font-size: 20px;
+  color: white;
+  width: 50px;
+  height: 20px;
 }
