@@ -19,9 +19,6 @@ const ti65Img = new URL('../../images/descTO/ti65.png', import.meta.url);
 const ti82Img = new URL('../../images/descTO/ti82.png', import.meta.url);
 const ti95Img = new URL('../../images/descTO/ti95.png', import.meta.url);
 
-export const callbackFormId = 'mdoygyzz';
-
-
 //секция, куда загружаются карточки проектов
 export const projectsContainerSelector = '.projects__items';
 
@@ -206,203 +203,6 @@ export const initialHeatEx = {
   },
 };
 
-export const initialPartnersTowns = [
-  {
-    name: 'Чита',
-    htmlData: [{
-      nameOfPartner: 'ООО «Интерсервис»',
-      telephoneNumbers: ['8-914-130-30-30'],
-    }],
-  },
-  {
-    name: 'Архангельск',
-    htmlData: [{
-      nameOfPartner: 'ООО «Теплогазстрой»',
-      telephoneNumbers: ['8(8182)-639-739'],
-      site: 'http://tgs29.ru/',
-    }],
-  },
-  {
-    name: 'Краснодар',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Астрахань',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Ростов-на-Дону',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Севастополь',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Ставрополь',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    },],
-  },
-  {
-    name: 'Махачкала',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Волгоград',
-    htmlData: [{
-      nameOfPartner: 'ООО «Ютермо»',
-      telephoneNumbers: ['8 800 700-09-58', '+7 (905) 406-75-76'],
-      site: 'https://utermo.ru/',
-    }],
-  },
-  {
-    name: 'Новосибирск',
-    htmlData: [{
-      nameOfPartner: 'ООО «Инженерные системы»',
-      telephoneNumbers: ['+7-903-900-36-63'],
-    }],
-  },
-  {
-    name: 'Искитим',
-    htmlData: [{
-      nameOfPartner: 'ООО «Инженерные системы»',
-      telephoneNumbers: ['+7-903-900-36-63'],
-    }],
-  },
-  {
-    name: 'Омск',
-    htmlData: [{
-      nameOfPartner: 'ООО «Термополис+»',
-      telephoneNumbers: ['+7(3812) 660-137'],
-    }, {
-      nameOfPartner: 'ООО «Компромисс»',
-      telephoneNumbers: ['+7(999)470-09-61'],
-    }],
-  },
-  {
-    name: 'Оренбург',
-    htmlData: [{
-      nameOfPartner: 'ООО «Отопление качество»',
-      telephoneNumbers: ['8-922-555-75-17'],
-    }],
-  },
-  {
-    name: 'Томск',
-    htmlData: [{
-      nameOfPartner: 'ООО «Амито»',
-      telephoneNumbers: ['8 (3822) 978-933'],
-      site: 'https://amito-t.ru/',
-    }],
-  },
-  {
-    name: 'Новокузнецк',
-    htmlData: [{
-      nameOfPartner: 'ООО «Амито»',
-      telephoneNumbers: ['8 (3822) 978-933'],
-      site: 'https://amito-t.ru/',
-    }],
-  },
-  {
-    name: 'Кемерово',
-    htmlData: [{
-      nameOfPartner: 'ООО «Амито»',
-      telephoneNumbers: ['8 (3822) 978-933'],
-      site: 'https://amito-t.ru/',
-    }],
-  },
-  {
-    name: 'Уфа',
-    htmlData: [{
-      nameOfPartner: 'ООО «Партнер»',
-      telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
-      site: 'https://www.termoblokufa.ru/',
-    }],
-  },
-  {
-    name: 'Стерлитамак',
-    htmlData: [{
-      nameOfPartner: 'ООО «Партнер»',
-      telephoneNumbers: ['+7(347) 236-05-34', '+7(347)236-65-38 '],
-      site: 'https://www.termoblokufa.ru/',
-    }],
-  },
-  {
-    name: 'Владивосток',
-    htmlData: [{
-      nameOfPartner: 'ООО «Солид ДВ»',
-      telephoneNumbers: ['+7-902-482-7837', '+7-902-480-5454'],
-    }],
-  },
-  {
-    name: 'Иркутск',
-    htmlData: [
-    {
-        nameOfPartner: 'ООО «Спарта»',
-        telephoneNumbers: ['+7(3952)956-712', '+7(914)895-67-12', 'sk@spartaspb.ru']
-    },
-    {
-      nameOfPartner: 'ООО «Константа»',
-      telephoneNumbers: ['+7 (3952) 42-87-03 '],
-    }],
-  },
-  {
-    name: 'Екатеринбург',
-    htmlData: [
-    {
-        nameOfPartner: 'ООО «Спарта»',
-        telephoneNumbers: ['+7(912)625-73-00', 'ekb@spartaspb.ru']
-    }],
-  },
-  {
-    name: 'Ижевск',
-    htmlData: [{
-      nameOfPartner: 'ООО «Отопление качество»',
-      telephoneNumbers: ['+7 (3412) 27-18-78'],
-    }],
-  },
-  {
-    name: 'Вологда',
-    htmlData: [{
-      nameOfPartner: 'ООО «Протемол»',
-      telephoneNumbers: [''],
-      site: ''
-    }],
-  },
-  {
-    name: 'Санкт-Петербург',
-    htmlData: [{
-      nameOfPartner: 'ООО «Хортэк-ОПТ»',
-      telephoneNumbers: ['+7 (812) 703-42-30'],
-    },
-    {
-      nameOfPartner: 'ООО «Спарта»',
-      telephoneNumbers: ['+7 (812) 643-55-28']
-    }],
-  },
-];
 
 export const ESC_CODE = 'Escape';
 
@@ -423,22 +223,9 @@ export const popupImageSelector = '.popup-viewport';
 export const callBackPopupSelector = '.popup-callback';
 export const popupWithToSelector = '.popup-to';
 export const popupWithMenuSelector = '.popup-menu';
-//формы
-/*
-export const formCallBack= document.forms.formCallBack;
-export const callbackSubmitButton = formCallBack.querySelector('.popup__button-save');
-
-//кнопки открытия модальных окон
-export const callBackPopupOpenButton = document.querySelector('.popup-callback-button');
-export const popupWithSertifOpenButton = document.querySelector('.about__doc');
-
-//интеактивные пластины
-export const platesSvg = document.querySelector('.plates__svg');
-*/
 
 
 //конфиги
-
 
 // конфиг селекторов в модальном окне с картиной и подписью
 export const popupImageSelectorsCongig = {

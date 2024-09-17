@@ -26,7 +26,7 @@ const formFilter = document.forms.filterForm;
 function createArticleCard(item) {
   const card = new CardArticle({
     tags: item.tags,
-    linkPath:item.linkPath,
+    linkPath: `/blog-proizvodstva/${item.staticPage}`,
     title: item.heading,
     description: item.description,
     // для супер класса

@@ -42,11 +42,7 @@
 @import url(../blocks/two-columns/__brief/_flexed/two-columns__brief_flexed.css);
 @import url(../blocks/two-columns/__main-text/_flexed/two-columns__main-text_flexed.css);
 
-@import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 
-@import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
 @import url(../blocks/link-beauty/link-beauty.css);
 @import url(../blocks/rotation/rotation.css);

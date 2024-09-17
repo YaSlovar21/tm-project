@@ -21,6 +21,17 @@ export default class Api {
         })
     }
 
+    getInitiatPartners() {
+      return fetch(`https://functions.yandexcloud.net/d4eivnnhtfhet7j0nvoh?base=partners`, {
+          headers: this._headers,
+      })
+      .then((response) => {
+          return this._isResponseOk(response);
+      })
+      
+  }
+
+
     sendCallForm(formDataJson) {
         return fetch(`${this._baseUrl}`, {
             method : 'POST',

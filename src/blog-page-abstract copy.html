@@ -12,10 +12,8 @@
   <%= require('html-loader!./inner-metrika.html').default %>
 
   <div class="page page_up">
-    <header class="header header-up">
-      <a href="/" class="header__logo">
-        <img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/>
-      </a>
+    <header class="header">
+      <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
@@ -26,19 +24,18 @@
         <a class="flexburton__breadcrumbs-link" href="/blog-proizvodstva/">Блог производителя</a>
         <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
-      <section class="grid grid-cols-12 items-start pt-9 border-t border-primary-strokke1">
-        <div class="col-span-2">
-          <span class="up-title up-title_svg">Теплообменники для жкх</span>
+      <section class="info">
+        <div class="info__aside">
+          <h1 class="<%= `info__heading ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__heading_custom' : ''}` %>"><%= htmlWebpackPlugin.options.heading %></h1>
           <img class="<%= `info__aside-img object-contain object-center ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__aside-img_custom' : ''}` %>" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? require(`./images/blogposters/${customPoster}`) : isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
           <a class="info__aside-button link-beauty info__aside-button_custom">
            <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
           </a>
         </div>
-        <article class="col-start-6 col-span-7 info__article-container overflow-y-auto">
-          <h1 class="text-4xl uppercase font-semibold max-w-[771px]" style="margin-top: 0;"><%= htmlWebpackPlugin.options.heading %></h1>
+        <article class="info__article-container p-2 lg:p-0 overflow-y-auto">
           <div class="parallax-bg info__parallax-bg" data-swiper-parallax-y="280" data-swiper-parallax-x="-350" data-swiper-parallax-scale="2" data-swiper-parallax-opacity="0.5"></div>
           <!--<div class="swiper-wrapper">-->
-            <div class="prose prose-termoblok prose-xl mvpc:prose-lg laptop:prose-base">
+            <div class="prose prose-termoblok prose-xl mvpc:prose-lg laptop:prose-base mx-auto">
               <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
                 <div class="not-prose">
                   <h2 class="info__relevance-title">Смотрите похожие материалы</h2>

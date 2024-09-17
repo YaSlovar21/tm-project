@@ -2,16 +2,13 @@
 @import url(../styles/normalize.css);
 @import url(../blocks/root/root.css);
 
-@import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+
 
 @import url(../blocks/link-beauty/link-beauty.css);
 @import url(../blocks/rotation/rotation.css);
 
 @import url(../blocks/bem/__list/bem__list.css);
 
-@import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);
@@ -40,8 +37,6 @@
 @import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
 @import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
 @import url(../blocks/bem/__paragraph/bem__paragraph.css);
-@import url(../blocks/bem/__section-title/bem__section-title.css);
-
 
 
 @import url(../blocks/header/header.css);

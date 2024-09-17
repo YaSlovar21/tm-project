@@ -84,13 +84,13 @@
 .productcard__image {
     /*max-height: 297px;
     max-width: 360px;*/
-    max-height: 60%;
-    width: 80%;
+    max-height: 65%;
+    width: 100%;
     opacity: .8;
     max-width: 80%;
     object-fit: contain;
     object-position: center;
-    margin: auto;
+    margin: auto auto 0;
 
 }
 

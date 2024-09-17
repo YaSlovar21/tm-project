@@ -1,25 +1,22 @@
 import Partner from '../js/components/Partner.js';
 import Section from '../js/components/Section.js';
+import Api from '../js/components/Api';
 
 import './map.css'
 
 import {
-  initialPartnersTowns,
   partnersSectionConfig,
 } from '../js/utils/constants.js';
 
-initialPartnersTowns.sort(function(a,b) {
-  const aSecondName = a.name.toLowerCase();
-  const bSecondName = b.name.toLowerCase();
-  if (aSecondName > bSecondName) return 1;
-  if (aSecondName < bSecondName) return -1;
-  return 0;
+const apiYdb = new Api({
+  baseUrl: '',
+  headers: {
+    'Content-Type': 'application/json'
+  }
 });
 
 const mapSection = document.querySelector('.map');
-console.log(mapSection);
 const mapList = mapSection?.querySelector('.map__list');
-
 
 const dinamicInfoPopup = mapSection?.querySelector('.map__popup');
 const popupInfoCloseButton = dinamicInfoPopup?.querySelector(".map__popup-close");
@@ -44,20 +41,6 @@ function createPartner(dataJson) {
   return partnerToAdd;
 }
 
-const partnerList = new Section({
-  data: initialPartnersTowns,
-  renderer: (itemData) => {
-    const partner = createPartner(itemData);
-    partnerList.appendItem(partner);
-  }
-}, partnersSectionConfig.containerSelector, 0);
-
-if (mapSection) {
-  partnerList.renderItems();
-}
-/*------------------------------- */
-
-//function popupInfoOpen(nameOfPartner, telephoneNumbers, site) {
 function popupInfoOpen(arrayOfPartnersInTown) {
   arrayOfPartnersInTown.forEach((item, i, arr) =>{
     if (item.nameOfPartner !== '') {
@@ -91,7 +74,7 @@ function popupInfoOpen(arrayOfPartnersInTown) {
     }
     const brEl = document.createElement('br');
     dinamicInfoPopupContainer.append(brEl);
-  //};
+
   });
   dinamicInfoPopup.classList.add('map__popup_opened');
 }
@@ -104,3 +87,53 @@ popupInfoCloseButton?.addEventListener('click', function () {
     mapActive.classList.remove('map__list-item_active');
   }
 });
+
+
+function groupNameById(result, partner) {
+  console.log(result);
+  return {
+    ...result,
+    [partner.city]: result[partner.city] ? result[partner.city].concat(partner) : [partner]
+  }
+}
+
+function groupNameByIdToArr(result, partner) {
+  let findedIndexInAcc = result.findIndex(i => i.name === partner.city);
+  if (findedIndexInAcc!==-1) {
+    result[findedIndexInAcc]['htmlData'].push({...partner, telephoneNumbers: JSON.parse(partner.telephoneNumbers)})
+    return result;
+  }
+  return [
+    ...result,
+    {
+      name: partner.city,
+      htmlData: [{...partner, telephoneNumbers: JSON.parse(partner.telephoneNumbers)}]
+    }
+  ]
+};
+
+async function getInitialPartners() {
+  mapSection.classList.add('section-loading');
+  const partners = await apiYdb.getInitiatPartners();
+  const initialPartners = partners.reduce(groupNameByIdToArr,[]);
+  initialPartners.sort(function(a,b) {
+    const aSecondName = a.name.toLowerCase();
+    const bSecondName = b.name.toLowerCase();
+    if (aSecondName > bSecondName) return 1;
+    if (aSecondName < bSecondName) return -1;
+    return 0;
+  });
+  const partnerList = new Section({
+    data: initialPartners,
+    renderer: (itemData) => {
+      const partner = createPartner(itemData);
+      partnerList.appendItem(partner);
+    }
+  }, partnersSectionConfig.containerSelector, 0);
+    partnerList.renderItems();
+
+  mapSection.classList.remove('section-loading')
+}
+if (mapSection) {
+  getInitialPartners();
+}

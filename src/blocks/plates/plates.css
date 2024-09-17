@@ -1,8 +1,8 @@
 .plates {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 .plates__interactive {
@@ -14,14 +14,15 @@
 
     /*min-height: 600px;*/
     margin-bottom: 40px;
-    max-width: 1000px;
-    /*margin: 0 auto;*/
+    max-width: 100%;
+    /*max-width: 1000px;
+    margin: 0 auto;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 10%;*/
+    padding: 1%;
 }
-
 @media screen and (min-width:1440px) {
   .plates__interactive {
     min-width: 1000px;
@@ -31,7 +32,7 @@
 
 .plates__svg {
   margin-top:30px;
-  transform: skewY(-15deg);
+  /*transform: skewY(-15deg);*/
 }
 
 .plates__svg_page_main {

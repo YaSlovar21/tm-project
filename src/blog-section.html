@@ -18,10 +18,10 @@
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
-  </header>
+    </header>
 
 
-  <main class="max-w-[calc(100%-80px)] mx-auto">
+  <main class="content">
     <div class="flexburton__breadcrumbs">
       <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
       <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
@@ -41,9 +41,9 @@
         <span class="blog-grid__filter-span">Пищевые</span>
       </label>
     </form>
-    <section class="grid grid-cols-2 items-start pt-9 border-t border-primary-strokke1">
-        <h2 class="up-title up-title_svg">Полезные материалы</h2>
-        <div>
+    <section class="grid grid-cols-12 items-start pt-9 border-t border-primary-strokke1">
+        <h2 class="col-span-2 up-title up-title_svg">Полезные материалы</h2>
+        <div class="col-start-6 col-span-7">
           <h3 class="subtitle">Теплообменники в сфере жкх</h3>
           <ul class="cards-js-rendered">
             <!--<li class="infoitem">

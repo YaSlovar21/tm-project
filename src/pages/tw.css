@@ -46,9 +46,13 @@
   :root {
     --head-wrap: calc(50% + 800px)
   }
-  .content {
+ .content {
     @apply max-w-[calc(100%-80px)] mx-auto;
   }
+ /*
+  .content {
+    @apply max-w-[1536px] mx-auto;
+  }*/
 
   .up-title {
     @apply text-lg text-white font-semibold uppercase leading-none mobile:text-base;
@@ -70,6 +74,10 @@
   }
 
   .subtitle {
+    @apply text-[36px] uppercase text-[#B9B9B9] font-semibold mb-12;
+  }
+
+  .subtitle-sm {
     @apply text-[32px] uppercase text-[#B9B9B9] font-semibold mb-12;
   }
 
