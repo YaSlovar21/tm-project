@@ -1,14 +1,14 @@
 .kaufman {
     position: relative;
     overflow: hidden;
-    padding-top: 90px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     /*background: url(../../images/sots_kauf.svg) no-repeat bottom right;*/
 
 
   }
   .kaufman_bg_fixed {
-    background: url(../../images/bg_kaufman.png) no-repeat right;
+    background: url(../../images/bg_kaufman.png) no-repeat 25% ;
 
     background-attachment: fixed;
   }

@@ -45,15 +45,15 @@ import {
   popupRaschet
 } from './popup-raschet.js'
 
-document.querySelector('.khan__buy-link').addEventListener('mousedown', ()=> {
+document.querySelector('.khan__buy-link')?.addEventListener('mousedown', ()=> {
   popupRaschet.open();
 });
 
-document.querySelector('.up-footer__raschet').addEventListener('mousedown', ()=> {
+document.querySelector('.up-footer__raschet')?.addEventListener('mousedown', ()=> {
   popupRaschet.open();
 });
 
-document.querySelector('.po__link').addEventListener('mousedown', ()=> {
+document.querySelector('.po__link')?.addEventListener('mousedown', ()=> {
   popupCallBack.open('Запрос программы расчёта', 'Здравствуйте, просьба разъяснить условия использование Вашей программы расчёта.');
 })
 
@@ -348,10 +348,10 @@ window.addEventListener("scroll", function () {
 });
 */
 
-const freqElements = Array.from(document.querySelectorAll('.table__cell')).map((element) =>
+const freqElements = Array.from(document.querySelectorAll('.t-cell')).map((element) =>
   new FreqDynamic({
-    headingSelector: 'table__heading',
-    descSelector: 'table__text-and-list',
+    headingSelector: 'table-heading',
+    descSelector: 'table-text-and-list',
   }, element)
 );
 
@@ -450,7 +450,7 @@ const isScrollingFact = (evt) => {
   scrollFactoryContainer.scrollLeft += evt.deltaY;
 }
 
-scrollFactoryContainer.addEventListener("wheel", (evt) => {
+scrollFactoryContainer?.addEventListener("wheel", (evt) => {
   console.log(scrollFactoryContainer.scrollLeft , scrollFactoryContainer.clientWidth, scrollFactoryContainer.querySelector('.scroll-factory__inner').scrollWidth)
   isScrollingFact(evt);
 });

@@ -1,11 +1,25 @@
 .map {
+    max-width: 100%;
+    background-color: #2f2f2f75;
+    padding-top: 100px;
 
-  @apply py-16;
+
+    /**/
+    background-color: #3636369e;
+    border-bottom: 3px solid #04040447;
+
+
 }
 
 
 
 .map__heading {
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    @apply text-gray-300;
+    font-size: 32px;
+    line-height: 1.1;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,14 +33,13 @@
 .map__list-container {
   position: relative;
   background-image: url(../../images/map_up_footer.png);
-  background-position: 25%;
-
-  background-repeat: no-repeat;
-  background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .map__list {
-  /*
+
     list-style-type: none;
 
     display: flex;
@@ -41,21 +54,24 @@
     padding: 0;
 
     width: 80%;
-    max-width: 1177px;*/
-    @apply py-14 col-start-6 grid grid-flow-col grid-cols-5 grid-rows-5 col-span-6 gap-5;
+    max-width: 1177px;
 }
 
 
 .map__popup {
-  @apply col-span-4;
-    /*content: '';
+    content: '';
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
     top: 0;
-    left: 0;*/
-
+    left: 0;
+    background-color: rgba(49, 49, 49, 0.8);
     padding: 0 5px;
     box-sizing: border-box;
-    background-color: rgba(49, 49, 49, 0.8);
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.7s, visibility 0s linear 0.3s;
@@ -63,13 +79,6 @@
     -moz-transition: opacity 0.7s, visibility 0s linear 0.3s;
     -ms-transition: opacity 0.7s, visibility 0s linear 0.3s;
     -o-transition: opacity 0.7s, visibility 0s linear 0.3s;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
 }
 
 .map__popup-container {
@@ -150,19 +159,31 @@
 
 .map__list-item {
     box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
     position: relative;
-    cursor: pointer;
 
+    background-color: #f2f2f223;
+    color: white;
+
+    width: 192px;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
 /*пробная новая тема*/
+    text-align: center;
+    background-color: #444444c2;
     box-sizing: border-box;
     color: #fff;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 10px;
-    padding: 2px;
+    padding: 14px;
+    position: relative;
     transition: opacity, background-color .2s ease-in;
-    /*width: 192px;
-    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);*/
+    width: 192px;
+    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
 }
 
 .map__list-item:hover {

@@ -1,5 +1,6 @@
 .popup__to-img{
     max-width: 371px;
+    margin: auto;
     max-height: 75vh;
     flex: 0 1 400px;
 
@@ -10,8 +11,8 @@
 }
 
 .popup__to-img-container{
-  max-width: 371px;
+  /*max-width: 371px;*/
   max-height: 75vh;
-  flex: 0 1 400px;
+  flex: 0 1 50%;
   min-width: 0;
 }

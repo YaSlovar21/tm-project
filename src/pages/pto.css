@@ -61,12 +61,12 @@
 
 @import url(../blocks/techniques/techniques.css);
 
+@import url(../blocks/upcard/upcard.css);
+@import url(../blocks/upborder/upborder.css);
+
 /*ПРЕИМУЩЕСТВА В ВИДЕ СЛАЙДЕРА СБОРКИ*/
 @import url(../blocks/slider-sborka/slider-sborka.css);
 
-/*Гвс-отопление-индивидуально*/
-@import url(../blocks/types/types.css);
-@import url(../blocks/typesx/typesx.css);
 
 /*Пластина пластинчатого теплообменника ГРИД*/
 @import url(../blocks/projects/projects.css);

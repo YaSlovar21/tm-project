@@ -32,10 +32,7 @@
 }
 
 .khan__pagination-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
+
 }
 @media screen and (max-width:420px) {
     .khan__pagination-list {
@@ -43,7 +40,7 @@
     }
 }
 .khan__pagination-list-item {
-    margin: 15px 5px 15px 0;
+    margin:0 0 8px 0;
     list-style-type: none;
     background-color: #f2f2f22d;
     font-size: 14px;

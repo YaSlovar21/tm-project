@@ -1,0 +1,13 @@
+.upcard {
+  @apply mb-3 border-t border-primary-strokke1 hover:border-orange-light;
+}
+
+.upcard__link {
+  @apply pt-5 pb-2 block relative text-white;
+}
+
+.upcard__link::after {
+  content: '';
+  background-image: url(../../images/svg-elems/upcardarrow.svg);
+  @apply size-6 absolute top-5 stroke-primary-strokke1 group-hover:stroke-orange right-2;
+}
