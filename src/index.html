@@ -710,21 +710,8 @@
       </ul>
     </div>
     </main>
-    <section class="map">
-      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-      <div class="map__list-container">
-        <ul class="map__list">
+<%= require('html-loader!./insets/asides/map-section.html').default %>
 
-        </ul>
-        <!--Сюда встанут карточки партнеров-->
-        <div class="map__popup">
-          <span class="map__popup-close">&lt;-- Назад</span>
-          <ul class="map__popup-container"></ul>
-        </div>
-      </div>
-      <div class="map__partner"></div>
-
-    </section>
 
   <!--FOOTER-->
   <%= require('html-loader!./insets/asides/inner-footer.html').default %>
@@ -773,11 +760,6 @@
       <img class="projects__image" alt="Здесь будет фото проекта" src="<%=require('./images/svg-elems/preloader.gif')%>">
       <p class="projects__item-description">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</p>
     </div>
-  </template>
-
-  <!--Шаблон элемента партнера на карте-->
-  <template id="partner-item-template">
-    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
   </template>
 </body>
 </html>

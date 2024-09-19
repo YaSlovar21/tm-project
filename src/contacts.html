@@ -72,7 +72,7 @@
                 <li>Бедарева Элла Владимировна</li>
             </ul>
             <p>Приёмная: <a  class="contacts__tel contacts__tel_small contacts__link span-no-wrap" href="tel:+73852775592"> +7 (3852) 77-55-92</a></p>
-            
+
             <a class="contacts__recv-download link-beauty" href="docu/Rekviziti_OOO_Termoblok.doc" download>Скачать реквизиты</a>
           </div>
           <div class="contacts__ya-map">
@@ -92,27 +92,12 @@
           </div>
         </section>
       </main>
-      <section class="map">
-        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-        <div class="map__list-container">
-          <ul class="map__list">
-          </ul>
-          <!--Сюда встанут карточки партнеров-->
-          <div class="map__popup">
-            <span class="map__popup-close">&lt;-- Назад</span>
-            <ul class="map__popup-container"></ul>
-          </div>
-        </div>
-        <div class="map__partner"></div>
-      </section>
+      <%= require('html-loader!./insets/asides/map-section.html').default %>
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
       <%= require('html-loader!./insets/popup-mini-form.html').default %>
       <%= require('html-loader!./insets/popup-big-form.html').default %>
     </div>
-    <!--Шаблон элемента партнера на карте-->
-    <template id="partner-item-template">
-      <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
-    </template>
+
     <script async src="//callkeeper.ru/w/?8e469928"></script>
   </body>
 </html>

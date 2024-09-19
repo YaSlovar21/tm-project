@@ -119,11 +119,11 @@
 
 .slider-text-sborka__head {
   width: 70%;
-  margin: 0 0 20px;
+  /*margin: 0 0 20px;
   font-size: 24px;
-  color: tomato;
-  font-weight: 700;
 
+  font-weight: 600;
+  text-transform: uppercase;*/color: tomato;
 }
 
 @media screen and (max-width: 768px) {

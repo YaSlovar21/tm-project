@@ -40,18 +40,19 @@
     }
 }
 .khan__pagination-list-item {
-    margin:0 0 8px 0;
+    margin: 0 0 8px 0;
     list-style-type: none;
-    background-color: #f2f2f22d;
+   /* background-color: #f2f2f22d;*/
+
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 20px;
     padding: 15px 25px;
     box-sizing: border-box;
 
-    border-radius: 10px;
-    border: 1px solid #202020;
-    box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
+    /*border-radius: 10px;*/
+
+    /*ox-shadow: 0 4px 1px rgb(0 0 0 / 22%);*/
 
     cursor: pointer;
 
@@ -63,6 +64,7 @@
     color: #d6d6d6;
 
     position: relative;
+    @apply text-right border-t border-primary-strokke1;
 }
 
 
@@ -86,8 +88,8 @@
     /*background-color: #ee6f07b8;
     border-left: 5px solid #FF5E3A;*/
     color: #FF5E3A;
-    background-color: #f2f2f211;
-
+    /*background-color: #f2f2f211;*/
+    @apply border-orange;
 
 }
 

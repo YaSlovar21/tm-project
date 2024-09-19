@@ -21,6 +21,8 @@ export default class PopupWithHeatEx extends Popup {
     }
 
     open(data) {
+        document.querySelector('.page').classList.add('body-fixed');
+
         this._popupToName.textContent = data.name;
 
         const imgTo = document.createElement('img');
@@ -43,7 +45,7 @@ export default class PopupWithHeatEx extends Popup {
     }
 
     close() {
-
+      document.querySelector('.page').classList.remove('body-fixed');
       setTimeout(()=> {
         this._popupImageContainer.innerHTML = '';
       }, 600)

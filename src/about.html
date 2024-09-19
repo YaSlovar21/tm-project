@@ -121,20 +121,10 @@
             <img class="frombsz__image" alt="География поставок Барнаульского станкостроительного завода" src="<%=require('./images/map_from_bsz.png')%>">
           </div>
         <!--</section>-->
+
+        <%= require('html-loader!./insets/asides/map-section.html').default %>
       </main>
-      <section class="map">
-        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-        <div class="map__list-container">
-          <ul class="map__list">
-          </ul>
-          <!--Сюда встанут карточки партнеров-->
-          <div class="map__popup">
-            <span class="map__popup-close">&lt;-- Назад</span>
-            <ul class="map__popup-container"></ul>
-          </div>
-        </div>
-        <div class="map__partner"></div>
-      </section>
+
 
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
 
@@ -150,9 +140,6 @@
     </div>
     </div>
 
-    <!--Шаблон элемента партнера на карте-->
-    <template id="partner-item-template">
-      <li class="map__list-item">Чита</li>
-    </template>
+    
   </body>
 </html>

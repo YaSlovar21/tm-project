@@ -51,6 +51,9 @@ module.exports = {
         primary: {
           strokke1: '#4F4F4F',
         },
+        blacktheme: {
+          DEFAULT: '#191919',
+        }
       }
     }
   },

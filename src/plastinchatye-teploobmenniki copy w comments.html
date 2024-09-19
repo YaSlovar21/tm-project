@@ -314,15 +314,15 @@
 
 
 <section class="description content flex flex-col-reverse">
-  <div class="mt-12 grid grid-cols-12 items-start twrapper">
+  <div class="my-12 grid grid-cols-12 items-start twrapper">
     <h2 class="up-title up-title_svg col-span-2">Основное</h2>
 
    <!--<ul class="grid grid-cols-12 gap-x-3 content-stretch text-gray-50 laptop:grid-cols-2 laptop:gap-4 mobile:grid-cols-1">
       <li class="col-span-4 laptop:col-span-1"></li>-->
       <div class="col-start-7 col-span-6">
         <h2 class="subtitle">Характеристики пластинчатых теплообменников</h2>
-        <ul class="text-gray-100 flex flex-col *:transition-all *:relative *:bg-blacktheme *:border-t *:border-primary-strokke1">
-          <li class="-mb-12 hover:-mb-0 z-[1]">
+        <ul class="text-gray-100 *:border-t *:border-primary-strokke1">
+          <li>
             <a class="flex h-full group items-start w-5/6 pt-4" href="/catalog/">
               <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
                 <img class="object-cover object-left-top w-full h-full min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/catalog-page-pto.png')%>" alt="Модельный ряд теплообменников">
@@ -333,7 +333,7 @@
               </div>
             </a>
           </li>
-          <li class="-mb-12 hover:-mb-0 z-[2]">
+          <li>
             <a class="flex h-full group items-start w-5/6 pt-4" href="/plastinchatye-teploobmenniki/raschets/">
               <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
                 <img class="object-cover object-left-top w-full h-full  min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/raschet.png')%>" alt="Пример расчёта теплообменника">
@@ -344,7 +344,7 @@
               </div>
             </a>
           </li>
-          <li class="-mb-12 hover:-mb-0 z-[3]">
+          <li>
             <a class="flex h-full group items-start w-5/6 pt-4" href="/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html">
               <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
                 <img class="object-cover object-left-top w-full h-full  min-w-[100px]  transition-all group-hover:scale-110" src="<%=require('./images/pagepto/princip-page-pto.png')%>" alt="Принцип работы пластинчатого теплообменника">
@@ -398,10 +398,10 @@
       </li>
     </ul>-->
   </div>
-  <div class="my-12 grid grid-cols-12  items-start twrapper *:bg-blacktheme">
+  <div class="my-12 grid grid-cols-12 items-start twrapper">
     <h2 class="up-title up-title_svg col-span-2">Основное</h2>
     <div class="col-start-7 col-span-6">
-      <p class="text-m text-gray-200 max-w-4xl mvpc:ml-0 mobile:text-base">Пластинчатые теплообменники торговой марки <img
+      <p class="text-m text-gray-200 max-w-4xl mvpc:ml-0 mobile:text-base" >Пластинчатые теплообменники торговой марки <img
           src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative; display: inline-block;" alt="Теплохит">
         изготавливаются на базе пластин собственного производства для различных отраслей: жилищно-коммунальное
         хозяйство, пищевая промышленность и прочие технологические процессы теплообмена. Производство теплообменников и всех
@@ -417,7 +417,7 @@
 
 </section>
 
-<section class="bg-blacktheme pt-12 z-[4] relative">
+<section class="techniques" style="padding-top: 0; ">
   <div class="grid grid-cols-2 items-start twrapper">
     <h2 class="up-title up-title_svg">Основные премиущества</h2>
     <div class="swiper-pagination-1"></div>
@@ -498,7 +498,56 @@
 <div class="techniques__after">
   <div class="techniques__after_before"></div>
 </div>
+<!--
+<section class="pt-20 max-w-[80%] mx-auto pc:max-w-[95%] mvpc:pt-8">
+  <h2 class="text-3xl font-bold text-[--main-color] mb-0 max-w-lg mvpc:text-2xl mvpc:relative mvpc:top-9">Производственные процессы</h2>
+  <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
+    <ul class="scroll-factory__inner flex w-full  gap-6">
+      <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-72 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl">
+        <a class="transition-all flex h-full" href="/about/">
+          <img class="w-full basis-2/3 min-h-0 min-w-0"  src="<%=require('./images/about-osnastka.png')%>" alt="процесс фрезировки оснастки для производства уплотнений теплобменника">
+          <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+            <h3 class="text-lg font-bold mt-10 relative right-4 text-zinc-300  mobile:text-base mobile:mt-4">Производство штампов и остнастки</h3>
+            <p class="text-base text-orange relative right-4 mobile:text-xs">Для производства пластин и уплотнений</p>
+            <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+          </div>
+        </a>
+      </li>
+      <li class="shrink-0 max-w-sm w-full bg-gray-800 h-72 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden  transition-shadow hover:shadow-xl">
+        <a class=" transition-all flex h-full relative" href="/plastinchatye-teploobmenniki/plastina-plastinchatogo-teploobmennika.html">
+          <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/press-plast-zag.png')%>" alt="обрубка заготовки пластины теплообменника">
+          <div class="relative group w-full bg-zinc-800 bg-opacity-50 flex flex-col transition-all duration-300 justify-between hover:bg-opacity-75">
+            <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Изготовление пластин</h3>
+            <p class="text-sm text-gray-200  ml-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Все 14 типоразмеров штампуются и формуются на нашем предприятии</p>
+            <span></span>
+          </div>
+        </a>
+      </li>
+      <li class="shrink-0 max-w-sm w-full bg-gray-800 h-72 mvpc:h-64 mobile:h-48 relative top-10 rounded-xl overflow-hidden  transition-shadow hover:shadow-xl">
+        <a class=" transition-all flex h-full relative" href="/about/">
+          <img class="w-full h-full absolute inset-0 z-0" src="<%=require('./images/about-seal.jpg')%>" alt="формовка уплотнений для теплообменника">
+          <div class="relative group w-full bg-zinc-800 bg-opacity-50 flex flex-col transition-all duration-300 justify-between hover:bg-opacity-75">
+            <h3 class="text-lg font-bold mt-10 ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Изготовление резиновых уплотнений</h3>
+            <p class="text-sm text-gray-200  ml-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Все 14 типоразмеров штампуются и формуются на нашем предприятии</p>
+            <span></span>
+          </div>
+        </a>
+      </li>
+      <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-72 mvpc:h-64 mobile:h-48 top-10 rounded-xl overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl"">
+        <a class=" transition-all flex h-full" href="/plastinchatye-teploobmenniki/programma-rascheta.html">
+          <img class="w-full basis-2/3 min-h-0 min-w-0 opacity-70"  src="<%=require('./images/program_mini.png')%>" alt="скриншот программы для расчёта теплообменника">
+          <div class="relative w-full basis-1/3 bg-zinc-800 flex flex-col justify-between before:block 0 before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
+            <h3 class="text-lg font-bold mt-10 relative right-4 text-zinc-300  mobile:text-base mobile:mt-4">Собственная программа расчёта</h3>
+            <p class="text-base text-orange relative right-4 mobile:text-xs">Постоянно обновляется и предоставляется партнёрам по лицензии</p>
+            <span class="inline-block mb-6 text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
+          </div>
+        </a>
+      </li>
 
+    </ul>
+  </div>
+</section>
+-->
 <!--Широкоформатная секция ( изготовление пластин, svg-типоразмер, конструктивные особенности)-->
 <section class="pb-11">
   <div class="my-14 grid grid-cols-12 items-start twrapper">
@@ -553,7 +602,10 @@
   </section>
   <section class="max-w-[calc(100%-80px)] mx-auto">
     <div class="grid grid-cols-2 items-start">
+      <!--<button class="p-6 text-orange-dark font-bold text-lg font-['Golos'] border border-orange-dark rounded-lg ">Смотреть подробнее</button>-->
+
       <span class="up-title up-title_svg ml-[calc(50%-760px)]">Примеры</span>
+
       <div class="">
         <h2 class="subtitle-sm mb-4">Примеры проектов</h2>
         <p class="text-m">Различной мощности и назначения пластичнатых теплообменников</p>
@@ -581,140 +633,195 @@
       </div>
     </div>
   </section>
-
-
-  <section class="py-14 grid grid-cols-12 items-start twrapper">
-    <h2 class="up-title up-title_svg col-span-3">Подбор теплообменника</h2>
-    <h2 class="subtitle col-start-7 col-span-6">Расчёт и подбор пластинчатого теплообменника</h2>
-    <div class="col-start-7 col-span-6">
-      <p class="text-m">Инженер по подбору и расчёту оборудования исходя из входных данных подберет пластинчатый теплообменник. В течение <span class="two-columns__span-accent" style="color: #ff5e3a;">30 минут</span> Вы получите три документа:</p>
-      <ul class="list khan__list text-xl">
-        <li class="list__item list__item_theme_dark">коммерческое предложение с указанием цены и сроков изготовления</li>
-        <li class="list__item list__item_theme_dark">спецификацию теплообменника</li>
-        <li class="list__item list__item_theme_dark">полные технические характеристики</li>
-      </ul>
-    </div>
-    <!--Пагинация (провеить на перерисовку скриптом)-->
-    <div class="khan__types-container col-start-5 col-span-2 mr-5 mt-6">
-      <ul class="khan__pagination-list flex flex-col items-end">
-        <li id="khan_1" class="khan__pagination-list-item khan__pagination-list-item_active">Коммерческое предложение</li>
-        <li id="khan_2" class="khan__pagination-list-item">Спецификация</li>
-        <li id="khan_3" class="khan__pagination-list-item">Тех. данные</li>
-      </ul>
-    </div>
-    <!--LazyLoadingSwiper Блок в котором отрисовывается расчёт-->
-    <div class="khan__book-container col-start-7 col-span-4 mt-6">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="swiper-zoom-container">
-            <img src="<%=require('./images/raschet-kp.png')%>" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
+    <!--<div class="mt-24 max-w-[50%] mx-auto pc:max-w-[95%] mobile:mt-6">
+      <p class="text-xl text-gray-100 max-w-2xl mt-8 mb-6 mvpc:text-lg mobile:text-base">Основные типы теплообменников для ЖКХ можно разделить на теплообменники для отопления и горячего водоснабжения</p>
+      <div class="grid grid-cols-2 gap-4 mobile:grid-cols-1">
+        <a class="linkblock linkblock_rev col-span-2  mobile:col-span-1" href="/catalog/">
+          <img style="width: 100%; flex-basis:200px; min-width: 0; object-position: center; object-fit: contain;" class=""
+            src="<%=require('./images/catalog.png')%>" alt="Пластинчатый теплообменник в сборе">
+          <div class="flex flex-col p-4">
+            <h3 class="text-lg font-semibold mvpc:text-base mobile:text-sm">Смотреть весь модельный ряд пластинатых теплообменников</h3>
+            <p class="text-sm mt-2 mb-3 text-orange mobile:text-xs">Чертежи, 3D модели и характеристики</p>
+            <span class="text-gray-400 text-base mvpc:text-sm">Подробнее</span>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-zoom-container">
-            <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-sp.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
-          </div>
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-zoom-container">
-            <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-teh-dann.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
-          </div>
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-      </div>
-    </div>
-    <!--LazyLoadingSwiper-->
-  </section>
-  <section class="py-14 grid grid-cols-12 items-start twrapper mb-12">
-    <h2 class="up-title up-title_svg col-span-3">Софт для партнёров</h2>
-    <div class="col-start-7 col-span-6 mb-8">
-      <h2 class="subtitle">Программа расчёта теплообменников</h2>
-      <p class="text-m mt-10 mb-12">Разработанная нами программа предназначена для расчета и подбора пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности. </p>
-      <div class="upborder">
-        <div class="flex gap-2 items-stretch">
-          <figure class="basis-1/2">
-              <img class="w-full h-full" src="<%=require('./images/program_mini.png')%>" alt="Интерфейс программы расчёта пластинчатых теплообменников Теплохит" >
-              <!--<figcaption class="figure__caption">Интерфейс программы расчёта пластинчатых теплообменников Теплохит</figcaption>-->
-          </figure>
-          <figure class="basis-1/2">
-              <img class="w-full h-full" src="<%=require('./images/po-constr.png')%>" alt="Конфигуратор теплообменника в программе расчёта">
-              <!--<figcaption class="figure__caption">Конфигуратор теплообменника в программе расчёта</figcaption>-->
-          </figure>
-        </div>
-      </div>
-    </div>
-    <a class="ui-button col-start-7 col-span-3" href="/equipment-selection/">Подобрать теплообменник</a>
-    <a class="ui-button-text self-center before-small-circle col-start-10 col-span-3 ml-2" href="/equipment-selection/">Запросить программу расчёта</a>
-  </section>
-  <!--SEO секция ( применение пластинчатых теплообменников )-->
-  <section class="kaufman kaufman_bg_fixed ">
-    <div class="twrapper grid grid-cols-2 items-start">
-      <span class="up-title up-title_svg">Где применяются</span>
-      <div class="">
-        <h2 class="subtitle">Применение пластинчатых теплообменников</h2>
-        <div class="t-cell">
-            <h3 class="subtitle-sm table-heading mb-10">Горячее водоснабжение гвс и отопление</h3>
-            <div class="table-text-and-list">
-              <!--<p class="">Cтавятся в системах водоснабжения и отопления жилых домов, в котельных.</p>-->
-              <ul>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html">Теплообменники для отопления частного дома</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html">Теплообменники в многоквартирном доме</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html">Пластинчатые теплообменники для гвс</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">Пластинчатые теплообменники для отопления</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-bassejna.html">Теплообменник для бассейна</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html">Теплообменник для системы снеготаяния</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-teplovogo-pola.html">Теплообменник системы теплого пола</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class="t-cell">
-            <h3 class="subtitle-sm table-heading  mb-10 mt-20">Специальные среды</h3>
-            <div class="table-text-and-list">
-            <!--<p class="">Пластинчатый теплообменник для теплых полов, бассейна, нестандартных производственных помещений, системы снеготаяния.</p>-->
-              <ul>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-par-voda-plastinchatyy.html">Теплообменник пар-вода пароводяной пластинчатый</a></li>
-                <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-glikol-voda.html">Теплообменник гликоль-вода пластинчатый</a></li>
-              </ul>
-            </div>
-        </div>
-        <!--<
-        <div class="t-cell">
-            <h3 class="subtitle-sm table-heading">Пищевая промышленность</h3>
-            <div class="table-text-and-list">
-              <p class="">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
-              <p class=""><a href="/pishchevye-teploobmenniki.html" class="bem__link bem__link_arrowup link-beauty">Подробнее про пищевые теплообменники</a></p>
-            </div>
-        </div>
-         div class="">
-            <h3 class="subtitle-sm">Фармацевтика</h3>
-            <p class="">Теплообменники специализированного исполнения.</p>
-        </div>-->
-        <!--<div class="">
-          <h3 class="table__heading table__heading_theme_dark">Нефтехимия</h3>
-          <p class=" table__text-and-list">Пластинчатые разборные теплообменники подходят под часть технологических процессов в нефтехимии.</p>
-        </div>-->
-      </div>
-    </div>
-  </section>
-  <section class="content py-12">
-    <div class="twrapper grid grid-cols-2 items-start">
-      <span class="up-title up-title_svg">Производство</span>
-      <div>
-        <h2 class="subtitle">Производственные процессы</h2>
-        <p class="text-m">Предприятие разрабатывает и само изготавливает формовочную оснастку, прессформы и штампы для производства теплообменных пластин и уплотнений</p>
-      </div>
+        </a>
+        <a class="linkblock p-4 pr-[20%] text-lg mvpc:text-base mobile:text-sm" href="/plastinchatye-teploobmenniki/otoplenie/">
+          Пластинчатые теплообменники для отопления
+        </a>
+        <a class="linkblock p-4 pr-[20%] text-lg mvpc:text-base mobile:text-sm" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">
+          Пластинчатые теплообменники для ГВС
+        </a>
 
+      </div>
+    </div>-->
+
+<section class="py-14 grid grid-cols-12 items-start twrapper">
+  <h2 class="up-title up-title_svg col-span-3">Подбор теплообменника</h2>
+  <h2 class="subtitle col-start-7 col-span-6">Расчёт и подбор пластинчатого теплообменника</h2>
+  <div class="col-start-7 col-span-6">
+    <p class="text-m">Инженер по подбору и расчёту оборудования исходя из входных данных подберет пластинчатый теплообменник. В течение <span class="two-columns__span-accent" style="color: #ff5e3a;">30 минут</span> Вы получите три документа:</p>
+    <ul class="list khan__list text-xl">
+      <li class="list__item list__item_theme_dark">коммерческое предложение с указанием цены и сроков изготовления</li>
+      <li class="list__item list__item_theme_dark">спецификацию теплообменника</li>
+      <li class="list__item list__item_theme_dark">полные технические характеристики</li>
+    </ul>
+  </div>
+  <!--Пагинация (провеить на перерисовку скриптом)-->
+  <div class="khan__types-container col-start-5 col-span-2 mr-5 mt-6">
+    <ul class="khan__pagination-list flex flex-col items-end">
+      <li id="khan_1" class="khan__pagination-list-item khan__pagination-list-item_active">Коммерческое предложение</li>
+      <li id="khan_2" class="khan__pagination-list-item">Спецификация</li>
+      <li id="khan_3" class="khan__pagination-list-item">Тех. данные</li>
+    </ul>
+  </div>
+  <!--LazyLoadingSwiper Блок в котором отрисовывается расчёт-->
+  <div class="khan__book-container col-start-7 col-span-4 mt-6">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="<%=require('./images/raschet-kp.png')%>" class="khan__book-pic" alt="Коммерческое предложение по пластинчатому теплообменнику">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-sp.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+        </div>
+        <div class="swiper-lazy-preloader"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="<%=require('./images/svg-elems/raschet-preload.svg')%>" data-src="<%=require('./images/raschet-teh-dann.png')%>" class="khan__book-pic swiper-lazy" alt="Коммерческое предложение по пластинчатому теплообменнику">
+        </div>
+        <div class="swiper-lazy-preloader"></div>
+      </div>
     </div>
-    <div class="mt-8 col-span-2 pl-[calc(50%-760px)] flex gap-2">
-      <% [1,2,3,4].map(i=> { %>
-        <img class="min-w-0" src="<%=require(`./images/uplist/${i}.png`)%>" alt="">
-      <%})%>
+  </div>
+  <!--LazyLoadingSwiper-->
+</section>
+<section class="py-14 grid grid-cols-12 items-start twrapper">
+  <h2 class="up-title up-title_svg col-span-3">Софт для партнёров</h2>
+  <div class="col-start-7 col-span-6">
+    <h2 class="subtitle">Программа расчёта теплообменников</h2>
+    <p class="text-m mt-10 mb-12">Разработанная нами программа предназначена для расчета и подбора пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности. </p>
+    <div class="upborder">
+      <div class="flex gap-2 items-stretch">
+        <figure class="basis-1/2">
+            <img class="w-full h-full" src="<%=require('./images/program_mini.png')%>" alt="Интерфейс программы расчёта пластинчатых теплообменников Теплохит" >
+            <!--<figcaption class="figure__caption">Интерфейс программы расчёта пластинчатых теплообменников Теплохит</figcaption>-->
+        </figure>
+        <figure class="basis-1/2">
+            <img class="w-full h-full" src="<%=require('./images/po-constr.png')%>" alt="Конфигуратор теплообменника в программе расчёта">
+            <!--<figcaption class="figure__caption">Конфигуратор теплообменника в программе расчёта</figcaption>-->
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!--SEO секция ( применение пластинчатых теплообменников )-->
+<section class="kaufman kaufman_bg_fixed ">
+  <div class="twrapper grid grid-cols-2 items-start">
+    <span class="up-title up-title_svg">Где применяются</span>
+    <div class="">
+      <h2 class="subtitle">Применение пластинчатых теплообменников</h2>
+      <p class="text-m">Сферы и теплообменные процессы, где используются пластинчатые теплообменные аппараты</p>
+      <div class="t-cell">
+          <h3 class="subtitle-sm table-heading mb-10">Горячее водоснабжение гвс и отопление</h3>
+          <div class="table-text-and-list">
+            <!--<p class="">Cтавятся в системах водоснабжения и отопления жилых домов, в котельных.</p>-->
+            <ul>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html">Теплообменники для отопления частного дома</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmenniki-mnogokvartirnogo-doma.html">Теплообменники в многоквартирном доме</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html">Пластинчатые теплообменники для гвс</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">Пластинчатые теплообменники для отопления</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-bassejna.html">Теплообменник для бассейна</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-sistemy-snegotayaniya.html">Теплообменник для системы снеготаяния</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-dlya-teplovogo-pola.html">Теплообменник системы теплого пола</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="t-cell">
+          <h3 class="subtitle-sm table-heading  mb-10 mt-20">Специальные среды</h3>
+          <div class="table-text-and-list">
+          <!--<p class="">Пластинчатый теплообменник для теплых полов, бассейна, нестандартных производственных помещений, системы снеготаяния.</p>-->
+            <ul>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-par-voda-plastinchatyy.html">Теплообменник пар-вода пароводяной пластинчатый</a></li>
+              <li class="upcard"><a class="upcard__link" href="/blog-proizvodstva/teploobmennik-glikol-voda.html">Теплообменник гликоль-вода пластинчатый</a></li>
+            </ul>
+          </div>
+      </div>
+      <!--<
+      <div class="t-cell">
+          <h3 class="subtitle-sm table-heading">Пищевая промышленность</h3>
+          <div class="table-text-and-list">
+            <p class="">Пластинчатые охладители и пастеризаторы для молочного производства, пивоварения, виноделия и прочих.</p>
+            <p class=""><a href="/pishchevye-teploobmenniki.html" class="bem__link bem__link_arrowup link-beauty">Подробнее про пищевые теплообменники</a></p>
+          </div>
+      </div>
+      div class="">
+          <h3 class="subtitle-sm">Фармацевтика</h3>
+          <p class="">Теплообменники специализированного исполнения.</p>
+      </div>-->
+      <!--<div class="">
+        <h3 class="table__heading table__heading_theme_dark">Нефтехимия</h3>
+        <p class=" table__text-and-list">Пластинчатые разборные теплообменники подходят под часть технологических процессов в нефтехимии.</p>
+      </div>-->
+    </div>
+  </div>
+</section>
+<section class="content py-12">
+  <div class="twrapper grid grid-cols-2 items-start">
+    <span class="up-title up-title_svg">Производство</span>
+    <div>
+      <h2 class="subtitle">Производственные процессы</h2>
+      <p class="text-m">Предприятие разрабатывает и само изготавливает формовочную оснастку, прессформы и штампы для производства теплообменных пластин и уплотнений</p>
+    </div>
+
+  </div>
+  <div class="mt-8 col-span-2 pl-[calc(50%-760px)] flex gap-2">
+    <% [1,2,3,4].map(i=> { %>
+      <img class="min-w-0" src="<%=require(`./images/uplist/${i}.png`)%>" alt="">
+    <%})%>
+  </div>
+</section>
+<!--Два блока (принцип работы пто, программа расчёта)
+<div style="overflow: hidden;">
+  <section class="princip">
+    <div class="princip__image">
+      <img class="princip__image-svg" alt="Принцип работы пластинчатого теплообменника - противоток"  src="<%=require('./images/princip_demo.svg')%>">
+    </div>
+    <div class="princip__description">
+      <h2 class="princip__heading" style="align-self: flex-end;">Принцип работы пластинчатых теплообменников</h2>
+      <p class="princip__text mt-12 mb-7 laptop:mt-6">
+        Теплообмен происходит между тонкостенными гофрированными пластинами, которые уплотняются
+        специальными резиновыми уплотнениями. Поток жидкости или пара, проходя через пластины теплообменника, испытывает
+        многочисленные изменения направления и скорости, что обеспечивает турбулентное движение и высокую эффективность
+        процесса передачи тепла от одного контура теплообменника к другому. Разборный пластинчатый теплообменник нашего
+        производства обеспечивают высокую надежность и устойчивость не только при работе в нормальных условиях, но и при
+        работе с загрязненными средами.
+      </p>
+      <a href="/plastinchatye-teploobmenniki/princip-raboty-i-ustrojstvo.html" class="bem__link bem__link_arrowup princip__link link-beauty princip__text" style="align-self: flex-end;">Подробнее про принцип работы теплообменника</a>
+      <a href="/blog-proizvodstva/preimushchestva-plastinchatykh-teploobmennikov.html" class="bem__link bem__link_arrowup princip__link link-beauty princip__text" style="align-self: flex-end;">Преимущества пластинчатых теплоомбенников</a>
     </div>
   </section>
-  <%= require('html-loader!./insets/asides/map-section.html').default %>
-
+</div>-->
 </main>
+<section class="map">
+  <div class="twrapper grid grid-cols-12 gap-5 items-start">
+    <span class="col-span-2 up-title up-title_svg">Партнёры</span>
+    <h2 class="map__heading col-start-7 col-span-6 subtitle">Партнёры по продажам и сервису</h2>
+  </div>
+  <div class="map__list-container grid grid-cols-12 gap-5">
+    <div class="map__popup">
+      <span class="map__popup-close">&lt;-- Назад</span>
+      <ul class="map__popup-container"></ul>
+    </div>
+    <ul class="map__list">
+    </ul>
+    <!--Сюда встанут карточки партнеров-->
+
+  </div>
+  <div class="map__partner"></div>
+</section>
 
 <div class="up-footer">
   <ul class="up-footer__list">
@@ -732,6 +839,10 @@
 <%= require('html-loader!./insets/popup-big-form.html').default %>
 <%= require('html-loader!./insets/popup-mini-form.html').default %>
 
+<!--Шаблон элемента партнера на карте-->
+<template id="partner-item-template">
+  <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+</template>
 <!--Шаблон карточки проекта-->
 <template id="project-template">
   <div class="projects__item">
@@ -754,6 +865,7 @@
       <h3 class="projects__item-description projects__item-description_horizontal text-gray-400">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
       <a class="column-description__link link-beauty mt-4 block text-orange text-sm font-m" href="#">Подробнее &#8594; </a>
     </div>
+
   </div>
 </template>
 
@@ -785,7 +897,7 @@
           <span class="span span_comment popup__span">Теплообменник</span>
           <h3 class="popup__to-name">ТИ 077</h3>
         </div>
-        <p class="popup__to-desc popup__to-desc_theme_dark"></p>
+        <p class="popup__to-desc popup__to-desc_theme_dark">rehgoreqwghorqeghh</p>
         <a class="popup__to-baseurl link-beauty" href="">Перейти на страницу теплообменника --></a>
         <!--<h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
         <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>-->
