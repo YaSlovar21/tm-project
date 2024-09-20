@@ -1,10 +1,11 @@
-module.exports.tis = [
+const tis = [
      /*---------------------ТЕПЛООБМЕННИКИ------------------------------------------*/
      {
         title: "Теплообменник ТИ025 пластинчатый разборный",
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-025.html",
         templateParameters: {
+          du: [25, 32, 40 ],
           tialias: "ti025.png",
           drawalias: "draw025.jpg",
           heading: "ТИ 025",
@@ -19,6 +20,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-077.html",
         templateParameters: {
+          du: [25, 32, 40 ],
           tialias: "ti077.png",
           drawalias: "draw077.jpg",
           heading: "ТИ 077",
@@ -35,6 +37,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-09.html",
         templateParameters: {
+          du: [32, 40, 50],
           tialias: "ti09.png",
           drawalias: "_draw09.png",
           caption: "NEW",
@@ -50,6 +53,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-12.html",
         templateParameters: {
+          du: [32, 40, 50],
           tialias: "ti12.png",
           drawalias: "_draw12.png",
           caption: "NEW",
@@ -66,6 +70,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-13.html",
         templateParameters: {
+          du: [50, 65],
           tialias: "ti13.png",
           drawalias: "draw13.jpg",
           heading: "ТИ 13",
@@ -81,6 +86,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-18.html",
         templateParameters: {
+          du: [50, 65],
           tialias: "ti18.png",
           drawalias: "draw18.jpg",
           heading: "ТИ 18",
@@ -97,6 +103,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-16-5.html",
         templateParameters: {
+          du: [50, 65, 80],
           tialias: "ti18.png",
           drawalias: "draw16-5.jpg",
           heading: "ТИ 16,5",
@@ -113,6 +120,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-28.html",
         templateParameters: {
+          du: [100, 125],
           tialias: "ti28.png",
           drawalias: "draw28.jpg",
           heading: "ТИ 28",
@@ -128,6 +136,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-45.html",
         templateParameters: {
+          du: [100, 125],
           tialias: "ti45.png",
           drawalias: "draw45.jpg",
           heading: "ТИ 45",
@@ -143,6 +152,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-52.html",
         templateParameters: {
+          du: [150],
           tialias: "ti52.png",
           drawalias: "draw52.jpg",
           heading: "ТИ 52",
@@ -159,6 +169,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-65.html",
         templateParameters: {
+          du: [100, 125],
           tialias: "ti65.png",
           drawalias: "draw52.jpg",
           heading: "ТИ 65",
@@ -174,6 +185,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-82.html",
         templateParameters: {
+          du: [150],
           tialias: "ti82.png",
           drawalias: "draw82.jpg",
           heading: "ТИ 82",
@@ -190,6 +202,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-95.html",
         templateParameters: {
+          du: [200, 250],
           tialias: "ti95.png",
           drawalias: "draw95.jpg",
           heading: "ТИ 95",
@@ -205,6 +218,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/ti-116.html",
         templateParameters: {
+          du: [200,250],
           tialias: "ti95.png",
           drawalias: "draw116.jpg",
           heading: "ТИ 116",
@@ -213,13 +227,17 @@ module.exports.tis = [
             Применение: ТЭЦ. (Обогревается совокупность микрорайонов)`,
         },
         chunks: ["ti", "all"],
-      } /*ПИЩЕВЫЕ */,
+      }
+];
+const foodtis = [ 
+      /*ПИЩЕВЫЕ */
       /*-1-------П025-----------*/
       {
         title: "Теплообменник П025 пищевой пластинчатый разборный",
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-025.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p025.png",
           drawalias: "draw116.jpg",
           heading: "П025",
@@ -235,6 +253,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-077.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p077.png",
           drawalias: "draw116.jpg",
           heading: "П077",
@@ -250,6 +269,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-13.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p13.png",
           drawalias: "draw116.jpg",
           heading: "П13",
@@ -265,6 +285,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-18.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p18.png",
           drawalias: "draw116.jpg",
           heading: "П18",
@@ -279,6 +300,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-16-5.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p18.png", ///ЖДЕМ ФОТО
           drawalias: "draw116.jpg",
           heading: "П16,5",
@@ -294,6 +316,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-28.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p28.png",
           drawalias: "draw116.jpg",
           heading: "П28",
@@ -309,6 +332,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-45.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p45.png",
           drawalias: "draw116.jpg",
           heading: "П45",
@@ -324,6 +348,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-52.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p52.png",
           heading: "П52",
           headingAlias: "П 52",
@@ -339,6 +364,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-65.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p65.png",
           drawalias: "draw116.jpg",
           heading: "П65",
@@ -354,6 +380,7 @@ module.exports.tis = [
         template: "./src/ti-xx-xx.html", // шаблон
         filename: "catalog/p-82.html",
         templateParameters: {
+          du: [25, 32, 40],
           tialias: "p65.png",
           drawalias: "draw116.jpg",
           heading: "П82",
@@ -364,4 +391,9 @@ module.exports.tis = [
         },
         chunks: ["ti", "all"],
       },
-]
+];
+
+module.exports = {
+  tis,
+  foodtis,
+}

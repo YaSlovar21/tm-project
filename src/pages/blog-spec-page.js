@@ -1,3 +1,4 @@
+import './tw.css';
 import './blog-spec-page.css';
 
 const truncatedSection = document.querySelector('.truncated-section');

@@ -10,31 +10,31 @@
 </head>
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
-  <div class="bg"></div>
   <div class="page">
-    <header class="header" style="padding-left: 24px; padding-right: 24px;">
+    <header class="header header-up" style="padding-left: 24px; padding-right: 24px;">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
     </header>
     <main class="content">
-      <h1 class="title"><%= htmlWebpackPlugin.options.heading %></h1>
-
-      <div class="flexburton flexburton_size_m flexburton_test flexburton_test-spec max-w-[1600px] mx-auto rounded-3xl drop-shadow-xl" style="background-color: #181717e3;">
-        <div class="flexburton__left-side max-w-[1170px] mx-auto">
-          <div class="flexburton__breadcrumbs flexburton__breadcrumbs_spec">
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
-          </div>
-          <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
-        </div>
-        <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('bannerImg')) { %>
-          <img class="min-w-[150px] rounded-2xl self-center max-w-[382px] mobile:rounded-xl mobile:opacity-50 mobile:h-full mobile:-z-10 mobile:absolute mobile:w-[45%] mobile:top-0 mobile:right-1 mobile:object-cover mobile:object-left-top" src="<%= require(`./images/${bannerImg}`)%>">
-        <% } %>
+      <div class="flexburton__breadcrumbs flexburton__breadcrumbs_spec">
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
+      <h1 class="title-page"><%= htmlWebpackPlugin.options.heading %></h1>
+      <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
 
+      <section class="grid grid-cols-12 gap-5 items-start pt-8 mt-14 border-t border-primary-strokke1">
+        <h2 class="up-title up-title_svg">Основное</h2>
+        <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('bannerImg')) { %>
+          <img class="col-start-3 col-span-3 min-w-[150px] rounded-2xl max-w-[382px] mobile:rounded-xl mobile:opacity-50 mobile:h-full mobile:-z-10 mobile:absolute mobile:w-[45%] mobile:top-0 mobile:right-1 mobile:object-cover mobile:object-left-top" src="<%= require(`./images/${bannerImg}`)%>">
+        <% } %>
+        <div class="col-start-6 col-span-7 grid grid-cols-7">
+          <%= require('html-loader!./articles-spec/' + articleFile).default %>
+        </div>
+      </section>
       <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('relevanceArticles')) { %>
         <div style="margin: 20px auto; width: calc(100% - 40px);">
           <h2 class="info__relevance-title">Смотрите похожие материалы</h2>
@@ -47,7 +47,7 @@
       <% } %>
 
 
-    <%= require('html-loader!./articles-spec/' + articleFile).default %>
+
 
     </main>
     <%= require('html-loader!./insets/asides/map-section.html').default %>

@@ -10,9 +10,8 @@
   </head>
   <body>
     <%= require('raw-loader!./inner-metrika.html').default %>
-    <div class="bg"></div>
     <div class="page">
-      <header class="header">
+      <header class="header header-up">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
           <%= require('html-loader!./insets/asides/inner-header.html').default %>
@@ -20,7 +19,7 @@
       </header>
       <p style="color: #f2f2f2;"><%= compilation.assets.source %></p>
       <main class="content">
-        <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside flexburton__breadcrumbs_ti">
+        <div class="flexburton__breadcrumbs">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
           <a class="flexburton__breadcrumbs-link" href="/catalog/">Каталог</a>
           <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%=heading%></a>
@@ -70,25 +69,20 @@
           </div>
         </section>
 
-        <section class="frequently">
-            <h2 class="frequently__heading mb-8">Часто задаваемые вопросы</h2>
+        <section class="twrapper grid grid-cols-2 items-start pt-4 border-t border-primary-strokke1">
+            <h2 class="up-title up-title_svg">Часто задаваемые вопросы</h2>
             <ul class="frequently__questions">
                 <li class="group frequently__item relative">
                     <h3 class="frequently__question ">Какая площадь теплообмена у теплообменника <%=heading%>?</h3>
                     <p class="frequently__answer">Площадь теплообмена может служить параметром расчёта по некоторым методикам. Однако для того, чтобы подобрать оптимальный теплообменный аппарат, мы не используем данную характеристику и опираемся на температурные графики, мощность и потери давления. Тем самым алгоритм подбора выдает компоновку каналов опираясь на математическую модель нашей пластины.</p>
-
-
                 </li>
                 <li class="group frequently__item relative">
                     <h3 class="frequently__question">Рассчитать теплообменник?</h3>
                     <p class="frequently__answer">Для расчёта пластинчатого теплообменника при стандартных потерях давления необходимо 5 значений: температурные графики (температуры греющей и нагреваемой сред на входе и выходе из теплообменника). А также мощность (тепловая нагрузка) или расход по нагреваемой среде. Форма заявки онлайн для расчёта доступна по ссылке <a style="text-decoration: none; color: #747474;" href="/equipment-selection/">подбор теплообменника онлайн</a></p>
-
-
                 </li>
                 <li class="group frequently__item relative">
                     <h3 class="frequently__question">Кто является производителем данного теплообменника?</h3>
                     <p class="frequently__answer">Производство пластин, уплотнений и сборка теплообменника <%=headingAlias%> локализовано в ООО "Термоблок" - дочернем предприятии Барнаульского станкостроительного завода. </p>
-
                 </li>
             </ul>
         </section>

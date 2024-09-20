@@ -11,7 +11,7 @@ const canonicalURL = 'https://www.termoblok.ru'
 const { paths } = require('./sitemap');
 const { rawData, razbegPoMoshnosti } = require('./raschets');
 const { btpexamples } = require('./btpexamples');
-const { tis } = require('./tis');
+const { tis, foodtis } = require('./tis');
 const { specPages } = require('./specPages');
 
 console.log(rawData);
@@ -30,7 +30,7 @@ function generateRaschetHtmlPlugins() {
 };
 
 function generateTisHtmlPlugins() {
-  return tis.map(ptoData => {
+  return tis.concat(foodtis).map(ptoData => {
     return new HtmlWebpackPlugin(ptoData)
   })
 }
@@ -220,7 +220,11 @@ function generateConfig(infoBlogData) {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          tis,
+          foodtis,
+        },
         title:
           "Российский производитель пластин и пластинчатых теплообменников Термоблок",
         meta: {
@@ -422,6 +426,8 @@ function generateConfig(infoBlogData) {
       new HtmlWebpackPlugin({
         templateParameters: {
           canonicalURL: canonicalURL,
+          tis,
+          foodtis,
         },
         title: "Каталог пластинчатых теплообменников | Каталог Теплохит",
         meta: {

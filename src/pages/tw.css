@@ -57,6 +57,15 @@
   .content {
     @apply max-w-[1536px] mx-auto;
   }*/
+
+  .specsec-grid-6 {
+    @apply col-span-6 col-start-2;
+  }
+
+  .specsec-grid-7 {
+    @apply col-span-7;
+  }
+
   .ui-button {
     @apply transition-all duration-200 p-3 text-white bg-[#E7381C] hover:bg-transparent hover:text-[#E7381C] rounded-md border-2 border-[#E7381C] text-base uppercase flex justify-center;
   }
@@ -70,10 +79,11 @@
 
   .before-small-circle::before {
     content: '';
-    width: .5em;
-    height: .5em;
+
+    width: 8px;
+    height: 8px;
     margin-right: 16px;
-    @apply bg-orange rounded-full;
+    @apply shrink-0 bg-orange rounded-full;
   }
 
   .up-title {

@@ -263,7 +263,7 @@ turnModelsButton.addEventListener('mousedown', (evt) => {
   wrapper.classList.toggle('mainmodels__wrapper_food');
 })
 
-
+/*
 const dsSecond = document.querySelector('.ds-second');
 const dsIntroImg = document.querySelector('.ds-intro__img-container');
 const dsList = document.querySelector('.bem__list_page_main');
@@ -290,7 +290,7 @@ function recalculateParallax() {
 const optimizedHandler = throttle(recalculateParallax, 850);
 // Передаём новую throttled-функцию в addEventListener:
 window.addEventListener("scroll", optimizedHandler);
-
+*/
 
 /*
 let dsSecondBox = dsSecond.getBoundingClientRect();
