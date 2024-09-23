@@ -13,6 +13,7 @@ const { rawData, razbegPoMoshnosti } = require('./raschets');
 const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
 const { specPages } = require('./specPages');
+const { cycleData } = require('./consts');
 
 console.log(rawData);
 
@@ -364,7 +365,10 @@ function generateConfig(infoBlogData) {
       }),
       /*---------О КОМПАНИИ----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          cycleData
+        },
         title: "О производстве пластинчатых теплообменников, этапы производства",
         meta: {
           keywords: "производитель пластинчатых теплобменников",

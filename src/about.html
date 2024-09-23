@@ -9,137 +9,136 @@
     <link href="<%= canonicalURL %>/about/"  rel="canonical" />
   </head>
 
-  <body>
+  <body class="page">
     <%= require('html-loader!./inner-metrika.html').default %>
-    <div class="bg"></div>
-    <div class="page">
-      <header class="header">
+
+      <header class="header header-up">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
           <%= require('html-loader!./insets/asides/inner-header.html').default %>
         </div>
       </header>
+      <div class="flexburton__breadcrumbs content mb-10">
+        <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">О компании</a>
+      </div>
+    <main>
 
-      <main class="content company-description">
-        <div class="flexburton__breadcrumbs company-description__breadcrubs ">
-          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
-          <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">О компании</a>
-        </div>
-
-        <h1 class="content__title company-description__title">Производство пластинчатых теплообменников</h1>
-
-        <!--<section class="">-->
-            <div class="company-description__intro">
-                <p class="company-description__paragraph">Наше предприятие производит самый широкий типоразмерный ряд теплообменных пластин и уплотнений в России, <span class="span span_color_orange span-no-wrap">от
-                    ДУ25 до ДУ250</span> включительно. На базе пластин собственной разработки, ООО «Термоблок» производит разборные
-                    пластинчатые теплообменники марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 22px;position: relative;top: 6px;" alt="Теплохит"> для систем отопления, горячего водоснабжения и вентиляции, а
-                    также в качестве охладителя или нагревателя практически любых жидкостей в широком диапазоне температур и
-                    давлений. Предприятие основано в 1997 году, имеет площадь около <span class="span-no-wrap">4000 м2</span>, численность сотрудников до 100
-                    человек.</p>
-                <p class="company-description__paragraph">Предприятие разрабатывает и само изготавливает формовочную оснастку, прессформы и штампы для производства
-                    теплообменных пластин и уплотнений. Производство пластинчатого теплообменника начинается с формовки пластины, которая осуществляется на гидравлических прессах,
-                    спроектированных и изготовленных усилиями завода. Опыт производства теплообменников - <span class="span span_color_orange">25 лет</span>,
-                    что позволяет предприятию предлагать эффективные и качественные теплообменные решения по оптимальной для
-                    заказчика цене.</p>
-                <p class="company-description__paragraph">Вы можете прочитать подробнее про запуск в <a class="bem__link bem__link_color_theme link-beauty  span-bold" href="/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html">производство пластинчатого теплообменника</a> ДУ250.</p>
-            </div>
-                <video  poster="images/bg_onload.svg" class="myvideo company-description__video" autoplay
+      <div class="content container-2">
+        <video  poster="images/bg_onload.svg" class="myvideo company-description__video max-w-[calc(100%-40px)] rounded-xl overflow-hidden" autoplay
                 playsinline="playsinline" muted="muted" loop="loop">
                 <source src="/videos/tm_test_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>
+        </video>
 
+        <div>
+        <h1 class="title-page mt-0">О компании</h1>
 
-            <div class="company-description__cycle" style="background-color: #3f3f3f62; height: 100%;">
-              <h3 class="listimage__title">Полный цикл производства, локализованный на территории предприятия</h3>
-              <ul class="listimage__list">
-                <li class="listimage__list-item" data-img="<%=require('./images/about-osnastka.png')%>">Изготовление производственной оснастки</li>
-                <!--<li class="listimage__list-item">Гарантийное и послегарантийное обслуживание</li>-->
-                <li class="listimage__list-item" data-img="<%=require('./images/press-plast-zag.png')%>">Изготовление пластин</li>
-                <li class="listimage__list-item" data-img="<%=require('./images/grospiron.png')%>">Производство теплообменников Теплохит</li>
-                <li class="listimage__list-item" data-img="<%=require('./images/program_mini.png')%>">Разработка программы расчета теплообменников RTO</li>
-                <li class="listimage__list-item" data-img="<%=require('./images/about-seal.jpg')%>">Изготовление резиновых уплотнений</li>
-                <li class="listimage__list-item" data-img="<%=require('./images/about-doc.png')%>">Разработка конструкторской документации</li>
-              </ul>
+        <p class="text-m">Наше предприятие производит самый широкий типоразмерный ряд теплообменных пластин и уплотнений в России, <span class="span span_color_orange span-no-wrap">от
+            ДУ25 до ДУ250</span> включительно. На базе пластин собственной разработки, ООО «Термоблок» производит разборные
+            пластинчатые теплообменники марки <img class="inline-block" src="<%=require('./images/svg-teplohit.svg')%>" style="height: 22px;position: relative;top: 6px;" alt="Теплохит"> для систем отопления, горячего водоснабжения и вентиляции, а
+            также в качестве охладителя или нагревателя практически любых жидкостей в широком диапазоне температур и
+            давлений. Предприятие основано в 1997 году, имеет площадь около <span class="span-no-wrap">4000 м2</span>, численность сотрудников до 100
+            человек.</p>
+        <p class="text-m mt-6">Предприятие разрабатывает и само изготавливает формовочную оснастку, прессформы и штампы для производства
+            теплообменных пластин и уплотнений. Производство пластинчатого теплообменника начинается с формовки пластины, которая осуществляется на гидравлических прессах,
+            спроектированных и изготовленных усилиями завода. Опыт производства теплообменников - <span class="span span_color_orange">25 лет</span>,
+            что позволяет предприятию предлагать эффективные и качественные теплообменные решения по оптимальной для
+            заказчика цене.</p>
+        <p class="text-m mt-6">Вы можете прочитать подробнее про запуск в <a class="bem__link bem__link_color_theme link-beauty  span-bold" href="/blog-proizvodstva/plastinchatii-teploobmennik-du-250.html">производство пластинчатого теплообменника</a> ДУ250.</p>
+       </div>
+      </div>
+      <section class="container-2 content mt-28">
+        <span class="up-title up-title_svg">Производство</span>
+        <h2 class="subtitle">Полный цикл производства</h2>
+        <p class="text-m col-start-2 mb-6">Локализованный на территории предприятия</p>
+        <ul class="col-span-2">
+          <% cycleData.map((i,index)=> { %>
+            <li class="relative transition-all bg-blacktheme py-6 container-2 border-t border-primary-strokke1 -mb-32 hover:mb-0" style="z-index: <%=index+1%>;">
+              <figure class="relative w-[58%] pb-[40%]">
+                <img class="absolute w-full h-full" src="<%= require(`./images/${i.image}`) %>">
+              </figure>
 
-            </div>
-
-            <div style="background-color: #3f3f3f62; height: 100%; display: flex; padding: 40px 0; box-sizing: border-box; max-width: 100%;">
-              <img class="listimage__image" alt="Фото этапа производства теплообменного аппарата"  src="<%=require('./images/about-osnastka.png')%>">
-            </div>
-
-            <div class="annotation annotation_firstabout">
-                <div class="annotation__text-content">
-                    <h2 class="annotation__title">Блог производителя</h2>
-                    <p class="annotation__intro">С полезной информацией о пластинчатых теплообменниках, изделиях, запущенных в производство и статьями вы можете
-                        ознакомиться в блоге производителя.</p>
-                    <div class="annotation__links">
-                        <a class="annotation__link annotation__link_tiny" href="/blog-proizvodstva">Перейти</a>
-                    </div>
-                </div>
-            </div>
-            <div class="annotation">
-                <div class="annotation__text-content">
-                    <h2 class="annotation__title">Документы</h2>
-                    <p class="annotation__intro">Сертификаты соответствия по пластинчатым теплообменникам, документация по блочным тепловым пунктам, спецоценка труда предприятия.</p>
-                    <div class="annotation__links">
-                        <a class="header_download-link header_download-link_ann annotation__link_download" href="/docu/Termoblok_Sout.pdf" download>Спецоценка условий труда</a>
-                        <a class="header_download-link header_download-link_ann annotation__link_download" href="/docu/Katalozhnii_list_BTP_Termoblok.pdf" download>Каталожный лист блочных тепловых пунктов</a>
-                        <a class="header_download-link header_download-link_ann annotation__link_download" href="/docu/btp-certificate.pdf" download>Сертификация блочных тепловых пунктов</a>
-                    </div>
-                </div>
-                <div class="annotation__images">
-                    <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник пищевой" src="<%=require('./images/cert/certificate-p.png')%>">
-                    <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник гвс и отопления" src="<%=require('./images/cert/certificate-ti.png')%>">
-                    <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник сейсмология" src="<%=require('./images/cert/certificate-seismo.png')%>">
-                </div>
-            </div>
-
-            <div class="frombsz">
-              <h3 class="frombsz__title">Немного о заводе в целом</h3>
-              <p class="frombsz__paragraph">ООО "Термоблок" - обособленное структурное подразделение <span class="span-no-wrap span-bold">АО ХК "Барнаульский станкостроительный завод"</span>. Совокупно предприятия
-                Холдинга поставляют свою продукцию в 30 стран мира и более 50 регионов России. Холдинг непрерывно работает над освоением
-                новых изделий и расширением рынков сбыта.</p>
-              <div class="numberedlist">
-                <h4 class="numberedlist__title"><span class="numberedlist__title-span">БСЗ</span>сегодня</h4>
-                <ul class="numberedlist__list">
-                  <li class="numberedlist__list-item"><span class="numberedlist__list-span">14</span><span style="z-index: 2;">предприятий бизнес-центров</span></li>
-                  <li class="numberedlist__list-item"><span class="numberedlist__list-span">2000</span><span style="z-index: 2;">сотрудников</span></li>
-                  <li class="numberedlist__list-item"><span class="numberedlist__list-span">80</span><span style="z-index: 2;">лет высокой деловой репутации</span></li>
-                </ul>
+              <div>
+                <h3 class="text-2xl font-semibold text-[#d4d4d4]"><%= i.title %></h3>
+                <p class="text-[#d4d4d4] mt-8 max-w-[400px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officiis assumenda autem eveniet temporibus pariatur inventore.</p>
               </div>
-              <p class="frombsz__paragraph"><span class="span span-bold">Производство пластинчатых теплообменников</span> берет свое начало с 1985 года, когда завод начал производство первых пластинчатых охладителей для молочной промышленности.</p>
-              <div style="display: flex; align-items: center; max-width: 100%;">
-                <img style="min-width: 0; max-width: 100%; flex-basis: 300px; margin-right: 10px; border-radius: 10px;" src="<%=require('./images/stankor-gkh.png')%>" alt="Пластинчатые разборные теплообменники барнаульские первые серии">
-                <img style="min-width: 0; max-width: 100%; flex-basis: 300px; border-radius: 10px;" src="<%=require('./images/stankor-food.png')%>" alt="Пластинчатые пищевые теплообменники барнаульские первые серии">
+            </li>
+          <% }) %>
 
-              </div>
-              <p class="frombsz__paragraph">На данный момент серийно изготавливется линейка тепоообменных пластин "ТИ". Постоянно разрабатываются новые пластины и уплотнения: в 2020 году запущена в производство пластина ДУ250. </p>
-              <a href="/plastinchatye-teploobmenniki/" class="bem__link bem__link_color_theme link-beauty">Подробнее про пластинчатые теплообменники ↗</a>
-            </div>
-         <div style="align-self: stretch;">
-            <img class="frombsz__image" alt="География поставок Барнаульского станкостроительного завода" src="<%=require('./images/map_from_bsz.png')%>">
-          </div>
-        <!--</section>-->
+        </ul>
+        <figure class="bg-blacktheme h-28 z-10"></figure>
+      </section>
 
-        <%= require('html-loader!./insets/asides/map-section.html').default %>
-      </main>
+      <section class="container-2 content mt-12">
+        <span class="up-title up-title_svg">Документы</span>
+        <div>
+        <h2 class="subtitle">Документация</h2>
+        <h3 class="up-text-title">Сертификаты</h3>
+        <div class="flex">
+          <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник пищевой" src="<%=require('./images/cert/certificate-p.png')%>">
+          <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник гвс и отопления" src="<%=require('./images/cert/certificate-ti.png')%>">
+          <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник сейсмология" src="<%=require('./images/cert/certificate-seismo.png')%>">
+        </div>
+        <h3 class="up-text-title mt-20">Спецоценка условий труда</h3>
+        <div class="annotation__links">
+            <a class="header_download-link header_download-link_ann annotation__link_download" href="/docu/Termoblok_Sout.pdf" download>Скачать спецоценку</a>
+        </div>
+        </div>
+     </section>
+    <section class="container-2 content mt-12">
+      <div>
+        <span class="up-title up-title_svg mb-16">О заводе</span>
+        <img class="w-3/4" alt="География поставок Барнаульского станкостроительного завода" src="<%=require('./images/map_from_bsz.png')%>">
+      </div>
+      <div class="">
+        <h2 class="subtitle">Барнаульский станкостроительный завод</h2>
+        <p class="frombsz__paragraph">
+          ООО "Термоблок" - обособленное структурное подразделение <span class="span-no-wrap span-bold">АО ХК "Барнаульский станкостроительный завод"</span>. Совокупно предприятия
+          Холдинга поставляют свою продукцию в 30 стран мира и более 50 регионов России. Холдинг непрерывно работает над освоением
+          новых изделий и расширением рынков сбыта.
+        </p>
+        <h3 class="subtitle-smm">БСЗ сегодня</h3>
+        <ul class="grid grid-cols-3 gap-5 *:text-[64px] *:font-semibold *:text-white">
+          <li>
+           14 <p class="text-sm uppercase font-normal">предприятий</p>
+          </li>
+          <li>
+           2000 <p class="text-sm uppercase font-normal">сотрудников</p>
+          </li>
+          <li>
+            82 <p class="text-sm uppercase font-normal">года работы</p>
+          </li>
+        </ul>
+        <h3 class="up-text-title mt-14">Производство теплообменников на заводе</h3>
+        <p class="frombsz__paragraph"><span class="span span-bold">Производство пластинчатых теплообменников</span> берет свое начало с 1985 года, когда завод начал производство первых пластинчатых охладителей для молочной промышленности.</p>
+        <div style="display: flex; align-items: center; max-width: 100%;">
+          <img style="min-width: 0; max-width: 100%; flex-basis: 300px; margin-right: 10px; border-radius: 10px;" src="<%=require('./images/stankor-gkh.png')%>" alt="Пластинчатые разборные теплообменники барнаульские первые серии">
+          <img style="min-width: 0; max-width: 100%; flex-basis: 300px; border-radius: 10px;" src="<%=require('./images/stankor-food.png')%>" alt="Пластинчатые пищевые теплообменники барнаульские первые серии">
+        </div>
+        <p class="frombsz__paragraph">На данный момент серийно изготавливется линейка тепоообменных пластин "ТИ". Постоянно разрабатываются новые пластины и уплотнения: в 2020 году запущена в производство пластина ДУ250. </p>
+      </div>
+
+    </section>
 
 
-      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+  </main>
 
-      <!--Форма модального окна с картинкой-->
-      <div class="popup popup_darked popup-viewport">
-        <div class="popup__container">
-            <button class="popup__button-close link-beauty popup__button-close_food" type="button"></button>
-            <div class="popup__image-view popup__image-view_food">
-                <img class="popup__image popup__image_food" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
-                <p class="popup__image-description popup__image-description_food"></p>
-            </div>
+  <%= require('html-loader!./insets/asides/map-section.html').default %>
+  <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+  <!--Форма модального окна с картинкой-->
+  <div class="popup popup_darked popup-viewport">
+    <div class="popup__container">
+        <button class="popup__button-close link-beauty popup__button-close_food" type="button"></button>
+        <div class="popup__image-view popup__image-view_food">
+            <img class="popup__image popup__image_food" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
+            <p class="popup__image-description popup__image-description_food"></p>
         </div>
     </div>
-    </div>
+  </div>
 
-    
+
+
   </body>
 </html>

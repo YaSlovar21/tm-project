@@ -35,7 +35,7 @@
             <div class="heatex__img-container">
               <img class="heatex__to-img" src="<%=require('./images/descTO/'+ tialias)%>" alt="Пластинчатый теплообменник <%= heading%>"/>
             </div>
-            <div class="heatex__desc-container">
+            <div class="basis-1/2">
               <span class="span span_comment">Теплообменник</span>
               <h1 class="heatex__to-name"><%=heading%></h1>
               <p class="heatex__to-desc heatex__to-desc_theme_dark">
@@ -52,25 +52,26 @@
           </div>
         </section>
 
-        <section class="khan khan_page_heatex">
+        <section class="container-2 twrapper">
+          <span class="up-title up-title_svg">Характеристики</span>
           <div class="khan__container khan__container_page_heatex">
-            <h2 class="khan__title khan__title_page_heatex">Чертеж и Размеры</h2>
+            <h2 class="subtitle text-orange">Чертеж и Размеры</h2>
             <p class="khan__quote khan__quote_page_heatex">
               Чертеж пластинчатого теплообменника <%= heading%> поможет разобраться в типоразмерах нашего модельного ряда, который отличается от других производителей.
               При необходимости в 3D моделях определенного формата, Вы всегда можете обратиться к нашим инженерам.
               Также размеры теплообменника указываются в документе "Технические данные", который идет вместе с коммерческим предложением (расчётом теплообменного аппарата).
             </p>
-            <div style="display: flex">
+            <div class="flex mt-16 items-start">
               <div class="khan__book-container khan__book-container_page_heatex">
                 <img src="<%=require('./images/drawings/'+ drawalias)%>" class="khan__book-pic khan__book-pic_page_heatex" alt="Чертеж пластинчатого теплообменника <%= heading%>"/>
               </div>
-              <a class="khan__buy-link khan__buy-link_page_heatex link-beauty wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="200" href="#">Открыть &#8594;</a>
+              <a class="khan__buy-link ui-button ml-5 link-beauty wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="200" href="#">Открыть</a>
             </div>
           </div>
         </section>
 
-        <section class="twrapper grid grid-cols-2 items-start pt-4 border-t border-primary-strokke1">
-            <h2 class="up-title up-title_svg">Часто задаваемые вопросы</h2>
+        <section class="twrapper grid grid-cols-2 my-14 items-start border-t border-primary-strokke1">
+            <h2 class="up-title up-title_svg pt-4">Часто задаваемые вопросы</h2>
             <ul class="frequently__questions">
                 <li class="group frequently__item relative">
                     <h3 class="frequently__question ">Какая площадь теплообмена у теплообменника <%=heading%>?</h3>

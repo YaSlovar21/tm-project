@@ -6,7 +6,7 @@ import {
   popupImageSelector,     //попап с картинкой (селектор)
   popupImageSelectorsCongig
 } from '../js/utils/constants.js'
-
+/*
 const imgToChange = document.querySelector('.listimage__image');
 const bullets = Array.from(document.querySelectorAll('.listimage__list-item'))
 
@@ -49,7 +49,7 @@ function unsetListeners(bullets) {
 }
 
 setEventListeners(bullets);
-
+**/
 
 
 /* */

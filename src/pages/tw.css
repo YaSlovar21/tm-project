@@ -58,6 +58,13 @@
     @apply max-w-[1536px] mx-auto;
   }*/
 
+  .container-2 {
+    @apply grid grid-cols-2 items-start;
+  }
+
+  .container-12 {
+    @apply grid grid-cols-12 items-start;
+  }
   .specsec-grid-6 {
     @apply col-span-6 col-start-2;
   }
@@ -76,7 +83,19 @@
   .before-small-circle {
     @apply flex items-center;
   }
+  .before-small-circle-indent {
+    @apply relative indent-4;
+  }
 
+  .before-small-circle-indent::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top:8px;
+    left:2px;
+    @apply bg-orange rounded-full;
+  }
   .before-small-circle::before {
     content: '';
 
@@ -116,6 +135,9 @@
 
   .subtitle-smm {
     @apply text-[26px] uppercase text-[#B9B9B9] font-semibold mb-12;
+  }
+  .up-text-title {
+    @apply text-2xl text-[#d4d4d4] font-medium mb-5;
   }
   .text-m {
     @apply text-xl text-white leading-snug;

@@ -3,7 +3,7 @@
     /*height: 680px;*/
     height: auto;
 
-   
+
 
     position: relative;
     overflow: hidden;
@@ -17,10 +17,5 @@
   @media screen and (max-width: 1440px) {
     .khan__book-container {
       width: 430px;
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    .khan__book-container {
-      margin-top: 30px;
     }
   }

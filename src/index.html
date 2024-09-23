@@ -20,10 +20,23 @@
     </div>
   </header>
   <main>
-    <div class="my-12">
+    <div class="my-12 content pt-4 border-t border-primary-strokke1 flex flex-row-reverse">
+      <div class="basis-1/2">
+        <h1 class="title-page">100% локализация производства</h1>
+        <h2 class="subtitle max-w-[650px]">Пластинчатых разборных тепплообменников</h2>
+      </div>
+      <div class="header-index__video-container basis-[calc(50%-20px)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
+        <figure class="header-index__darked"></figure>
+        <!--Здесь рендерится видео в зависимости от разрешения экрана-->
+        <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
+          <source src="videos/tm_test_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>data-swiper-parallax-scale="0.8"-->
+      </div>
+      <!--
       <div class="max-w-[--head-wrap] rounded-r-xl bg-[#1a1a1a] py-6 box-border mvpc:max-w-[calc(100%-10px)]">
         <div class="max-w-[1600px] ml-auto grid grid-cols-12 grid-flow-col mvpc:max-w-[calc(100%-10px)] laptop:grid-cols-6 laptop:gap-2 ">
-          <!--<div class="basis-4/12 flex flex-col justify-between">-->
+
           <h1 class="font-semibold uppercase text-2xl text-gray-100 col-span-4 laptop:col-span-6 laptop:row-span-1">100% локализация производства пластинчатых теплообменников</h1>
           <p class="text-lg text-gray-100 max-w-[95%] my-6 py-4 col-span-4 row-span-2 olpc:row-span-1 mvpc:text-base mvpc:py-0 laptop:col-span-6 laptop:row-span-1">
             Производство полного цикла включает в себя разработку и изготовление пластин и уплотнений. Мы серийно выпускаем
@@ -32,133 +45,80 @@
             изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</span>
           </p>
           <button class="header-index-cta p-4 bg-[--main-color] rounded-md max-w-[95%] col-span-4 row-span-1 olpc:row-start-4  laptop:row-start-5 mobile:row-start-3">Отправить запрос</button>
-          <!--</div>-->
-          <div class="header-index__video-container rounded-lg overflow-hidden col-span-7 row-span-4 olpc:col-span-8 olpc:row-span-2 laptop:col-start-1 laptop:col-end-7 laptop:row-start-3 laptop:row-span-1"><!--basis-7/12-->
-            <figure class="header-index__darked"></figure>
-            <!--Здесь рендерится видео в зависимости от разрешения экрана-->
-            <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
-              <source src="videos/tm_test_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>data-swiper-parallax-scale="0.8"-->
-          </div>
-          <div class="col-span-1 row-span-4 olpc:col-span-8 olpc:row-span-1 olpc:row-start-4 olpc:col-start-5 laptop:col-span-2 laptop:row-span-1 laptop:row-start-5 mobile:row-start-3 mobile::col-start-5"><!--basis-1/12-->
+
+
+          <div class="col-span-1 row-span-4 olpc:col-span-8 olpc:row-span-1 olpc:row-start-4 olpc:col-start-5 laptop:col-span-2 laptop:row-span-1 laptop:row-start-5 mobile:row-start-3 mobile::col-start-5">
             <a class="span-color-theme uppercase text-xs font-semibold ml-2 sticky top-6 block link-beauty" href="/about/">Подробнее о <span class="whitespace-nowrap">производстве ></span></a>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
-  <!--Слайд с продукцией-->
-    <section class="demonstration max-w-[1600px] mx-auto pc:max-w-[calc(100%-20px)]">
-      <h2 class="text-2xl font-bold uppercase text-gray-100">Продукция предприятия</h2>
-      <!--<p class="text-lg text-gray-100 max-w-[58%] my-10 py-4">Производство полного цикла включает в себя разработу и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием. Производство пластин и уплотнений 100% локализовано на территории предприятия. На базе пластинчатых теплообменников мы изготавливаем блочные тепловые пункты и установки для пищевой промышленности.</p>-->
-      <p class="max-w-[58%] my-10 py-4 text-xl mvpc:text-lg text-gray-50 laptop:max-w-full">Основное направление компании - производство теплообменников<span
-        class="video-main__span-accent"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
-      МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
-      теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
-      сложности.
-      </p>
-      <div class="product-types">
-        <div class="swiper-wrapper">
-          <div class="product-types__type swiper-slide">
-            <img class="product-types__image" src="<%=require('./images/3dSlider/pto.png')%>" data-swiper-parallax-scale="0.5"
-              data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" alt="Пластинчатый теплообменник для жкх">
-            <div class="product-types__category-info" data-swiper-parallax-opacity="0">
-              <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Пластинчатые теплообменники</h3>
-              <!--<div class="product-types__description">-->
-              <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Пластинчатые теплообменники для отопления, горячего водоснабжения, процессов теплообмена не требующих пищевого исполнения.</p>
-              <a href="/plastinchatye-teploobmenniki/" class="link-beauty product-types__link" data-swiper-parallax-x="-22%"
-                data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
-              <!--</div>-->
-            </div>
-          </div>
-          <div class="product-types__type swiper-slide">
-            <img class="product-types__image" src="<%=require('./images/3dSlider/food.png')%>" data-swiper-parallax-scale="0.5"
-              data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" alt="Пластинчатый теплообменник пищевого исполнения">
-            <div class="product-types__category-info" data-swiper-parallax-opacity="0">
-              <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Пищевые теплообменники</h3>
-              <!--<div class="product-types__description">-->
-              <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Теплообменники для пищевой промышленности: пластинчатые
-                пастеризаторы, охладители, многосекционные теплообменники для молочного производства, пивоварения и
-                прочих отраслей, требующих пищевого исполнения теплообменника</p>
-              <a href="/pishchevye-teploobmenniki.html" class="link-beauty product-types__link" data-swiper-parallax-x="-22%"
-                data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
-              <!--</div>-->
+    <section class="content container-12 pt-4 border-t border-primary-strokke1">
+      <h2 class="up-title up-title_svg col-span-2">О продукции</h2>
+      <div class="col-start-7 col-span-6">
+        <p class="text-m">Основное направление компании - производство теплообменников<span
+          class="video-main__span-accent"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
+        МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
+        теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
+        сложности.
+        </p>
+        <ul class="flex pt-4 mt-8 border-y border-primary-strokke1">
+          <li class="border-r border-primary-strokke1">
+            <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+            <p class="text-m">для жкх</p>
+            <img class="" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
 
-            </div>
-          </div>
-          <div class="product-types__type swiper-slide">
-            <img class="product-types__image" src="<%=require('./images/3dSlider/btp.png')%>" data-swiper-parallax-scale="0.5"
-              data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" alt="Блочный тепловой пункт">
-            <div class="product-types__category-info relative" data-swiper-parallax-opacity="0">
-              <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Блочные тепловые пункты</h3>
-              <!--<div class="product-types__description">-->
-              <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Готовые блочные тепловые узлы на базе теплообменников собственного производства.</p>
-              <a href="/blochnye-teplovye-punkty/" class="link-beauty product-types__link" data-swiper-parallax-x="-42%"
-                data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000"><span class="inset-0 absolute"></span>Перейти &#8594;</a>
-              <!--</div>-->
-            </div>
-          </div>
-          <div class="product-types__type swiper-slide">
-            <img class="product-types__image" src="<%=require('./images/3dSlider/pou.png')%>" data-swiper-parallax-scale="0.5"
-              data-swiper-parallax-opacity="0.7" data-swiper-parallax-duration="600" alt="Пастеризационная охладительная установка с пластинчатыми теплообменниками">
-            <div class="product-types__category-info" data-swiper-parallax-opacity="0">
-              <h3 class="product-types__heading" data-swiper-parallax-opacity="0.2" data-swiper-parallax-x="-14%" data-swiper-parallax-duration="1900">Установки ПОУ</h3>
-              <!--<div class="product-types__description">-->
-              <p class="product-types__p" data-swiper-parallax-x="-10%" data-swiper-parallax-opacity="0.2"
-                data-swiper-parallax-duration="1500">Установки блочного типа на базе пищевых пластинчатых теплообменников, соответствующие требованиям пищевого производства.</p>
-              <a href="/pasterizatsionno-okhladitelnye-ustanovki.html" class="link-beauty product-types__link" data-swiper-parallax-x="-42%"
-                data-swiper-parallax-opacity="0.5" data-swiper-parallax-duration="1000">Перейти &#8594;</a>
-              <!--</div>-->
-            </div>
-          </div>
-        </div>
-        <!--<div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="product-types__panel">-->
-          <button class="product-types__button-prev">←</button>
-          <button class="product-types__button-next">→</button>
-        <!--</div>-->
+          </li>
+          <li class="pl-2">
+            <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+            <p class="text-m">для пищевой отрасли</p>
+            <img class="" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+
+          </li>
+        </ul>
+    </div>
+    </section>
+    <section class="content container-2 py-12">
+      <span class="up-title up-title_svg">Дополнительно</span>
+      <div>
+        <h2 class="subtitle">Дополнительно</h2>
+        <p class="text-gray-200 text-m ">Вместе с теплообменником могут быть поставлены теплоизоляция разаботанная специально под нашу линейку теплообменников</p>
+        <ul class="py-8 w-2/3">
+          <li class="mb-4">
+            <a class="flex h-full group items-start text-gray-200" href="/plastinchatye-teploobmenniki/teploizolyaciya.html">
+              <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
+                <img class="object-cover object-left-top w-full h-full  min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/teplo-page-pto.png')%>" alt="Теплоизоляция пластинчатого теплообменника">
+              </div>
+              <div class="basis-2/3 ml-4">
+                <h3 class="text-2xl font-semibold my-1 group-hover:opacity-70 transition-all mvpc:my-0 mvpc:text-lg laptop:my-0 laptop:text-lg">Теплоизоляция теплообменника в комплекте</h3>
+                <p class="text-base group-hover:opacity-70 transition-all laptop:mt-2">Теплоизоляция пластинчатого теплообменника точно в размер</p>
+              </div>
+            </a>
+          </li>
+          <li class="mb-4">
+            <a class="flex h-full group items-start text-gray-200" href="#">
+              <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
+                <img class="object-cover object-left-top w-full h-full  min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/2024content/poddon-nerzh-mini.png')%>" alt="Теплоизоляция пластинчатого теплообменника">
+              </div>
+              <div class="basis-2/3 ml-4">
+                <h3 class="text-2xl font-semibold my-1 group-hover:opacity-70 transition-all mvpc:my-0 mvpc:text-lg laptop:my-0 laptop:text-lg">Поддоны из нержавеющей стали</h3>
+                <p class="text-base group-hover:opacity-70 transition-all laptop:mt-2">Для сбора конденсата, удобного проведения сервисных работ</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
-
-    <section class="py-20 bg-[#1f1f1f]">
-      <div class=" max-w-[1600px] mx-auto mvpc:max-w-[95%] mvpc:pt-8">
-        <h2 class="text-2xl font-bold uppercase text-gray-100">Новости компании</h2>
-        <div class="scroll-factory  relative  snap-x snap-mandatory overflow-x-auto pb-14 top-10 z-10">
-          <ul class="scroll-factory__inner flex w-full  gap-6">
-            <li class="shrink-0 max-w-sm w-full bg-gray-800 h-80 mvpc:h-72 mobile:h-48 relative top-10 rounded-lg overflow-hidden  transition-shadow hover:shadow-xl">
-              <a class=" transition-all flex h-full relative" href="/blog-proizvodstva/aquatherm-2024.html">
-                <img class="w-full h-full absolute inset-0 z-0 object-cover object-center" src="<%=require('./images/2024content/aquathrm-poster.png')%>" alt="Наш стенд на выставке теплообменного оборудования">
-                <div class="relative group w-full bg-zinc-800 bg-opacity-70 py-8 flex flex-col transition-all duration-300 justify-start hover:bg-opacity-80">
-                  <span class="block justify-self-center text-sm text-gray-100 mb-1 ml-4 basis-6">12.02.2024</span>
-                  <h3 class="basis-16 text-lg uppercase font-bold my-2  ml-4 text-zinc-300 transition-all duration-300 mobile:text-base mobile:mt-4 group-hover:text-orange">Акватерм-2024</h3>
-                  <p class="text-sm basis-14 text-gray-200  mx-4 transition-all duration-300 group-hover:text-orange mobile:text-xs">Представили теплообменник ДУ250 (ТИ95), 14 типоразмеров российских пластин, включая 2 новой разработки</p>
-                  <span></span>
-                </div>
-              </a>
-            </li>
-            <li class="group relative max-w-2xl w-full shrink-0  bg-gray-800 h-80 mvpc:h-72 mobile:h-48 top-10 rounded-lg overflow-hidden border border-zinc-900 transition-shadow hover:shadow-xl">
-              <a class="transition-all flex h-full" href="/blog-proizvodstva/zapusk-novogo-stanka-dlya-proizvodstva-plit-teploobmennikov.html">
-                <img class="w-full  object-cover object-center basis-2/3 min-h-0 min-w-0 opacity-90 transition-opacity duration-300 group-hover:opacity-75"  src="<%=require('./images/2024content/test-news.jpg')%>" alt="Портальный фрезерный станок для производства плит и станин теплообменников">
-                <div class="relative w-full basis-1/3 bg-zinc-800 py-8 flex flex-col justify-start before:block before:transition before:absolute before:-left-20 before:top-0 before:w-20 before:h-full before:bg-gradient-to-l before:from-zinc-800 before:via-zinc-800">
-                  <span class="block justify-self-center text-sm text-gray-500 relative right-4 mb-1 basis-6">09.10.2023</span>
-                  <h3 class="text-lg font-bold my-2 relative right-4 text-zinc-300 uppercase basis-16 mobile:text-base mobile:mt-4">Запуск нового станка</h3>
-                  <p class="text-sm text-orange relative right-4 basis-14 mobile:text-xs">Для производства элементов рамы теплообменника</p>
-                  <span class="inline-block mb-6 mt-auto text-sm text-zinc-400  relative right-4 transition-all duration-300 translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0  after:inline-block after:content-['\0027F6'] after:transition after:duration-700 group-hover:after:translate-x-3 ">Подробнее</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <section class="content container-2 py-12">
+      <h2 class="up-title up-title_svg">Типоразмерный ряд</h2>
+      <div>
+        <h3 class="subtitle">14 типоразмеров теплообменников</h3>
+        <p class="text-m">Собственного производства</p>
+        <p class="before-small-circle text-m mt-4">На данный момент в разработке: 2 новых теплообменника</p>
       </div>
-    </section>
-
     <!--ОСНОВНОЙ ДВУХСЕКЦИОННЫЙ СЛАЙД-->
 
-    <div class="max-w-[calc(100%-80px)] mx-auto">
+    <div class="col-span-2">
       <svg class="plates__svg"  viewBox="0 0 1432 476" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1336_34)">
         <path  d="M1403.84 457.389C1404.05 457.177 1404.05 456.834 1403.84 456.621L1400.4 453.16C1400.35 453.109 1400.29 453.069 1400.23 453.042C1400.16 453.014 1400.09 453 1400.02 453C1399.87 453 1399.73 453.056 1399.63 453.159C1399.42 453.37 1399.42 453.715 1399.63 453.927L1402.69 457.003L1399.62 460.072C1399.57 460.123 1399.53 460.183 1399.5 460.249C1399.48 460.316 1399.46 460.386 1399.46 460.458C1399.46 460.528 1399.48 460.6 1399.5 460.665C1399.54 460.731 1399.57 460.791 1399.62 460.842C1399.68 460.892 1399.73 460.932 1399.8 460.959C1399.93 461.014 1400.08 461.014 1400.22 460.959C1400.28 460.931 1400.34 460.891 1400.39 460.841L1403.84 457.389ZM22 455.748L1403.46 457.547V456.461L22 454.662V455.748Z" fill="#F2F2F2"/>
@@ -197,6 +157,7 @@
         </g>
       </svg>
   </div>
+  </section>
     <!--Типоразмерный ряд-->
     <section class="mainmodels py-14">
       <div class="mainmodels__wrapper content grid grid-cols-2 items-start">
@@ -222,103 +183,43 @@
             </li>
           <% }) %>
         </ul>
-        <div>
+        <div class="flex gap-5 mt-8">
           <button class="ui-button mainmodels__raschet">Рассчитать теплообменник</button>
-          <button class="mainmodels__turnbutton">Смотреть в пищевом исполнении</button>
+          <button class="mainmodels__turnbutton text-white">Смотреть в пищевом исполнении</button>
         </div>
       </div>
       </div>
     </section>
 
     <!--Слайд БТП-ПИЩ-УСТАНОВКИ-->
-    <section class="turnkey">
-      <!--<div class="bg-video"></div>-->
-        <div class="turnkey__heading">
-          <h2 class="turnkey__title">Готовые решения</h2>
-          <p class="turnkey__intro">На базе теплоообменников собственного производства предприятие предлагает
+    <section class="content container-2 py-14">
+      <span class="up-title up-title_svg">Готовые решения</span>
+      <div>
+        <h2 class="subtitle">Оборудование на базе теплообменников</h2>
+        <p class="text-m">На базе теплоообменников собственного производства предприятие предлагает
             готовые решения.</p>
-          <!--<a class="turnkey__consultation-link link-beauty" href="#">Проконсультироваться со специалистом завода</a>-->
-        </div>
-        <div class="turnkey__solutions">
-          <a class="turnkey__solution link-beauty_moveup" href="/blochnye-teplovye-punkty/" >
-            <img src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт" class="turnkey__image">
-            <div class="turnkey__aboutsolution">
-              <p class="turnkey__solution-description">Блочные тепловые пункты для жилищно-коммунального хозяйства</p>
-              <span class="turnkey__solution-detail-link">Подробнее &#8594;</span>
-            </div>
+        <div class="my-8 border-primary-strokke1">
+          <a class="pt-4 border-t border-primary-strokke1 flex flex-row-reverse justify-between link-beauty_moveup" href="/blochnye-teplovye-punkty/" >
+            <h3 class="text-m max-w-[300px] font-medium text-gray-300">Блочные тепловые пункты</h3>
+            <img class="max-w-[90%] min-w-0 basis-1/3" src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт">
           </a>
-          <figure class="turnkey__line"></figure>
-          <a class="turnkey__solution link-beauty_moveup" href="/pasterizatsionno-okhladitelnye-ustanovki.html">
-            <!--data-animation-del-class="animate__delay-1s"-->
-            <img src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка" class="turnkey__image">
-            <div class="turnkey__aboutsolution">
-              <p class="turnkey__solution-description">Установки пищевые пастеризационно охладительные</p>
-              <span class="turnkey__solution-detail-link">Подробнее &#8594;</span>
-            </div>
+          <a class="pt-4 border-t border-primary-strokke1 flex flex-row-reverse justify-between link-beauty_moveup" href="/pasterizatsionno-okhladitelnye-ustanovki.html">
+            <h3 class="text-m font-medium text-gray-300">Установки пищевые пастеризационно охладительные</h3>
+            <img class="max-w-[90%] min-w-0 basis-1/3" src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка">
           </a>
-        </div>
-    </section>
-
-    <section class="bsz">
-      <div class="bsz__wrapper">
-          <h2 class="turnkey__title">О производстве</h2>
-          <p class="turnkey__intro" style="margin-bottom: 0px;">Наше предприятие одно из немногих в России, обладающее
-            полным циклом производства пластинчатых теплообменников</p>
-
-      </div>
-      <div class="bsz-new">
-        <div class="bsz-new__content bsz__wrapper">
-          <div class="bsz-new__intro">
-            <p class="bsz-new__text" style="margin-bottom: 20px; position: relative; z-index: 2;"><span
-              class="span span_color_orange span_uppercase">ООО "Термоблок" </span>- предприятие холдинговой компании
-            “Барнаульский
-            станкостроительный завод”</p>
-            <p class="bsz-new__text" style="position: relative; z-index: 2;">Производственные мощности и стандарты качества крупного предприятия дают нашим
-              партнерам преимущества в плане качества продуции и выгодной цены за счёт оптовой закупки металла и серийного производства.</p>
-             <a class="group text-gray-200 max-w-[95%] mb-6  block font-['Golos'] border border-[#191919] shadow drop-shadow-lg text-lg transition duration-700 relative w-full  bg-[#1a1a1a] bg-opacity-50 p-3 rounded-md overflow-hidden hover:text-orange hover:shadow-md laptop:text-base" href="/about/">
-              <span class="absolute inset-0"></span>
-              Производство пластинчатых теплообменников
-              <figure class="absolute w-14 px-2 right-0 top-0 h-full items-center flex bg-gradient-to-l from-zinc-900 opacity-20 transition-opacity duration-700 group-hover:opacity-100 mobile:w-8;">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
-              </figure>
-            </a>
-          </div>
-          <div class="bsz-new__img-container overflow-hidden rounded-md relative">
-            <img src="<%=require('./images/logo_BSZ_svg.svg')%>" class="bsz-new__logo" alt="Барнаульский станкостроительный завод">
-            <a class="bsz-new__link-blank" href="https://bszholding.ru" target="_blank"><span class="absolute inset-0"></span>Подробнее --></a>
-          </div>
-        </div>
-      </div>
-      <div class="tablemod tablemod_theme_dark bsz__wrapper">
-        <div class="tablemod__cell tablemod__cell_theme_dark" data-wow-offset="50">
-          <h3 class="tablemod__heading tablemod__heading_theme_dark">Лабораторная проверка металла</h3>
-          <p class="tablemod__text tablemod__text_theme_dark">Нержавеющая сталь для теплообменников проходит проверку на
-            соответствие маркам 304 и 316 ANSI.</p>
-        </div>
-        <div class="tablemod__cell tablemod__cell_theme_dark" data-wow-delay=".3s"
-          data-wow-offset="50">
-          <h3 class="tablemod__heading tablemod__heading_theme_dark">Широкие возможности производства</h3>
-          <p class="tablemod__text tablemod__text_theme_dark">Производственные мощности и научно-технический потенциал
-            завода позволяет изготавливать как новые изделия, так и совершенствовать производственную базу для
-            теплообменников.</p>
-        </div>
-        <div class="tablemod__cell tablemod__cell_theme_dark" data-wow-delay=".6s"
-          data-wow-offset="50">
-          <h3 class="tablemod__heading tablemod__heading_theme_dark">Система контроля качества</h3>
-          <p class="tablemod__text tablemod__text_theme_dark">Системы контроля качества унаследованы от основного
-            дочернего предприятия холдинга - Барнаульского патронного завода.</p>
-        </div>
-        <div class="tablemod__cell tablemod__cell_theme_dark" data-wow-delay=".9s"
-          data-wow-offset="50">
-          <h3 class="tablemod__heading tablemod__heading_theme_dark">Ответственность за репутацию</h3>
-          <p class="tablemod__text tablemod__text_theme_dark">Мы держим марку Станкостроительного завода. Обеспечиваем качество изделий и комплектующих. Постоянно разрабатываем новые пластины и уплотнения. </p>
         </div>
       </div>
     </section>
+    <section class="content container-2 py-14">
+      <span class="up-title up-title_svg">Что нового</span>
+      <div>
+        <h2 class="subtitle max-w-[543px]">Разработка новых пластин и уплотнений</h2>
+        <p class="before-small-circle-indent  max-w-[83%] text-m">На данный момент мы осуществляем изготовление штампов, остнастки для производства двух новых теплообменников ДУ65. Данные пластины будут иметь инновационную гофрированную поверхность.</p>
+      </div>
+      <img class="col-span-2 my-8" src="<%=require('./images/2024content/aboutmain.jpg')%>" alt="">
+    </section>
 
-    <!--Галлерея + UP FOOTER-->
+    <!--Галлерея + UP FOOTER
     <div class="photo-grid" style="margin-top: 40px; max-width: 100%; top:0;">
       <figure class="photo-grid__item" data-animation-dur="1s" data-class-animaton="animate__fadeInUp"><img
           class="photo-grid__image photo-grid__image_position_right" alt="Процесс сборки пластинчатого теплообменника" src="<%=require('./images/prod-big-1.png')%>"></figure>
@@ -336,7 +237,7 @@
       </figure>
       <figure class="photo-grid__item" data-animation-dur="4s" data-class-animaton="animate__fadeInRight"><img
           class="photo-grid__image photo-grid__image_position_center" alt="Готовые к отгрузке пластинчатые теплообменники в цехе" src="<%=require('./images/3-to-small-to-big.png')%>"></figure>
-    </div>
+    </div>-->
     <div class="up-footer up-footer_bg_none">
       <ul class="up-footer__list">
         <li class="up-footer__list-item animated fadeInRight popup-raschet-button delay-1s" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>

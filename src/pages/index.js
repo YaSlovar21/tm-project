@@ -213,7 +213,7 @@ document.querySelector('.mainmodels__raschet').addEventListener("mousedown", () 
   popupRaschet.open();
 });
 
-document.querySelector('.header-index-cta').addEventListener('mousedown', ()=> {
+document.querySelector('.header-index-cta')?.addEventListener('mousedown', ()=> {
   popupCallBack.open('Отправить запрос', '');
 });
 
@@ -357,7 +357,7 @@ const windowWidth= useWindowSize();
     swiperInfo.destroy(false,false);
   } else {
     swiperInfo.update();
-}*/
+}
 
 
 const types_swiper = new Swiper('.product-types', {
@@ -419,7 +419,7 @@ const types_swiper = new Swiper('.product-types', {
   // And if we need scrollbar
 })
 types_swiper.update();
-
+*/
 const videoContainer = document.querySelector('.header-index__video-container');
 const widthScreen = useWindowSize();
 if (widthScreen > 768) {
