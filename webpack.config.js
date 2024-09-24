@@ -38,7 +38,7 @@ function generateTisHtmlPlugins() {
 
 function generateSpecPagesHtmlPlugins() {
   return specPages.map(articleData => {
-    return new HtmlWebpackPlugin(articleData)
+    return new HtmlWebpackPlugin({...articleData, templateParameters: {...articleData.templateParameters,specPages}})
   })
 }
 

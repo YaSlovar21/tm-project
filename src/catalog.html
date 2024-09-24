@@ -12,7 +12,7 @@
   <body>
     <%= require('html-loader!./inner-metrika.html').default %>
     <div class="page">
-      <header class="header">
+      <header class="header header-up">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
           <%= require('html-loader!./insets/asides/inner-header.html').default %>
@@ -20,35 +20,25 @@
       </header>
 
       <main class="content">
-        <div class="flexburton flexburton_size_m flexburton_test">
-          <div class="flexburton__left-side">
-            <div class="flexburton__breadcrumbs">
-                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
-                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Каталог пластинчатых теплообменников</a>
+        <h1 class="title-page">Каталог пластинчатых теплообменников</h1>
+        <div class="mt-12 grid grid-cols-12 items-start">
+            <h2 class="up-title up-title_svg col-span-2">Основное</h2>
+            <div class="col-start-7 col-span-6 justify-start">
+              <p class="text-m">Номенклатура предприятия включает в себя 14 типоразмеров теплообменных разборных аппаратов. Каждый из теплообменников может иметь разное количество пластин, разное сочетание каналов и исполнение (пищевое или классическое)</p>
+              <a class="flex justify-start items-center my-6 text-orange relative" href="/docu/termoblok_catalog.pdf" download>
+                <span class="inset0"></span>
+                <svg class="w-7 h-7 mr-2 stroke-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Скачать каталог
+              </a>
             </div>
-            <h1 class="flexburton__title flexburton__title_size_m">Каталог пластинчатых теплообменников</h1>
-            <p class="flexburton__subtitle flexburton__subtitle_size_m">Модельный ряд пластинчатых теплообменников <span class="span-no-wrap">торговой марки <img class="inline-block" src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;" alt="Теплохит"> ™.</span> Пластины и уплотнения Вы можете посмотреть в разделе "Сервис" <a class="flexburton__link link-beauty" href="#">Комплектующие &#8594;</a></p>
-          </div>
-          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
         </div>
-
-        <div class="catalog-grid">
-          <div class="catalog-grid__pdf-preview relative bg-[#f2f2f21a] group">
-            <img class="catalog-grid__preview-img" alt="Каталог пластинчатых теплообменников" src="<%= require('./images/termoblok_catalog.png')%>">
-            <a class="catalog-grid__preview-link flex justify-center group-hover:bg-orange-darker" href="/docu/termoblok_catalog.pdf" download>
-              <span class="absolute inset-0"></span>
-              <svg class="w-7 h-7 mr-2 stroke-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-              </svg>
-              Скачать каталог
-            </a>
-          </div>
-        <!--<section style="max-width: 767px; margin: 0 auto; position: relative;">-->
-          <div style="width: 100%; flex-basis: 1490px; flex-shrink: 3;">
-          <section class="mainmodels mainmodels_page_catalog catalog-grid__ti" >
-          <div class="mainmodels__wrapper mainmodels__wrapper_page_catalog">
-            <h2 class="mainmodels__title mainmodels__title_page_catalog ">Теплообменники в классическом исполнении</h2>
-            <ul class="mainmodels__models models-ti timodels">
+        <ul class="my-12">
+          <li class="pt-8 border-t border-primary-strokke1 grid grid-cols-12 items-start">
+            <h2 class="upsubtitle col-span-2">Теплообменники в классическом исполнении</h2>
+            <img class="col-start-5 col-span-2" src="<%= require('./images/catalog.png')%>">
+            <ul class="col-start-7 col-span-6 mainmodels__models models-ti timodels">
               <% tis.map(pto => { %>
                 <li class="timodels__pto">
                   <a class="timodels__link" href="<%= `/${pto.filename}`%>">
@@ -58,14 +48,11 @@
                 </li>
               <% }) %>
             </ul>
-            <button class="mainmodels__raschet button-bem mainmodels__raschet_ti">Рассчитать теплообменник</button>
-          </div>
-
-        </section>
-        <section class="mainmodels mainmodels_page_catalog catalog-grid__food">
-          <div class="mainmodels__wrapper mainmodels__wrapper_page_catalog  mainmodels__wrapper_food">
-            <h2 class="mainmodels__title mainmodels__title_page_catalog ">Пищевые теплообменники</h2>
-            <ul class="mainmodels__models models-food timodels">
+          </li>
+          <li class="pt-8 mt-12 border-t border-primary-strokke1 grid grid-cols-12 items-start">
+            <h2 class="upsubtitle col-span-2">Теплообменники в пищевом исполнении</h2>
+            <img class="col-start-5 col-span-2" src="<%= require('./images/pasteriz-article.png')%>">
+            <ul class="col-start-7 col-span-6 mainmodels__models models-ti timodels">
               <% foodtis.map(pto => { %>
                 <li class="timodels__pto">
                   <a class="timodels__link" href="<%= `/${pto.filename}`%>">
@@ -75,11 +62,8 @@
                 </li>
               <% }) %>
             </ul>
-            <button class="mainmodels__raschet button-bem mainmodels__raschet_p">Рассчитать теплообменник</button>
-          </div>
-        </section>
-        </div>
-      </div>
+          </li>
+        </ul>
       </main>
       <%= require('html-loader!./insets/asides/map-section.html').default %>
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>

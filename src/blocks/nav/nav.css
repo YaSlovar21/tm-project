@@ -74,8 +74,8 @@
 .nav__ul-item::after {
   position: absolute;
   content: '';
-    height: 4px;
-    bottom: 10px;
+    height: 1px;
+    bottom: 6px;
     left: 0;
     width: 100%;
     background-color: #FF5E3A;
@@ -88,10 +88,10 @@
 
 .nav__ul-item:hover::after {
   visibility: visible;
-  opacity: 0.5  ;
+  opacity: 1  ;
   /*transition: visibility .0s ease-in;
   transition-delay: 0;*//*Дает резкий отскок, в это состояние элемент не анимируется*/
-  height: 9px;
+  height: 2px;
   left: 0;
   bottom: 3px;
 }
@@ -122,7 +122,7 @@
     z-index: 10;
     transition: opacity 0.5s ease-in-out, color .2s ease-in;
     transition: all .4s ease-in;
-    
+
 
     visibility: hidden;
     opacity: 0;

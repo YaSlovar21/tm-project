@@ -28,11 +28,11 @@ const wowAnimation = new WOW({
 });
 wowAnimation.init();
 
-document.querySelector('.introgrid__button').addEventListener('mousedown', (evt)=> {
+document.querySelector('.introgrid__button')?.addEventListener('mousedown', (evt)=> {
   evt.preventDefault();
   popupCallBack.open('Проконсультироваться с инженером');
 });
-
+/*
 var mySwiper = new Swiper('.food-types-container', {
   // Optional parameters
   direction: 'horizontal',
@@ -84,7 +84,7 @@ mySwiper.on('orientationchange', function () {
   swiper_on_video.update();
   console.log('UPDATED_ORIENT');
 });
-
+*/
 const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
 popupImage.setEventListeners();
 

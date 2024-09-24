@@ -122,11 +122,11 @@
 
 @import url(../blocks/footer/footer.css);
 
-
+/*
 @import url(../blocks/circle/circle.css);
 @import url(../blocks/circle/__feat/circle__feat.css);
 @import url(../blocks/circle/__list/circle__list.css);
-
+*/
 
 
 @import url(../blocks/about/about.css);
