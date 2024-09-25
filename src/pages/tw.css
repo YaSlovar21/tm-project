@@ -56,10 +56,6 @@
   .twrapper {
     @apply max-w-[1520px] mx-auto;
   }
- /*
-  .content {
-    @apply max-w-[1536px] mx-auto;
-  }*/
 
   .container-2 {
     @apply grid grid-cols-2 items-start;
@@ -67,18 +63,6 @@
 
   .container-12 {
     @apply grid grid-cols-12 items-start;
-  }
-  /*СПЕЦ СЕКЦИЯ*/
-  .specarticle-cont p{
-
-  }
-
-  .specsec-grid-6 {
-    @apply col-span-6 col-start-2;
-  }
-
-  .specsec-grid-7 {
-    @apply col-span-7;
   }
 
   .ui-button {
@@ -89,7 +73,7 @@
   }
 
   .before-small-circle {
-    @apply flex items-center;
+    @apply flex items-stretch;
   }
   .before-small-circle-indent {
     @apply relative indent-4;
@@ -110,6 +94,7 @@
     width: 8px;
     height: 8px;
     margin-right: 16px;
+    margin-top: 0.5em;
     @apply shrink-0 bg-orange rounded-full;
   }
 
@@ -147,7 +132,7 @@
   }
 
   .subtitle {
-    @apply text-[33px] uppercase text-[#B9B9B9] font-semibold mb-12;
+    @apply text-[33px] uppercase text-[#B9B9B9] font-semibold mb-12 mvpc:text-3xl;
   }
   .subtitle_spec {
     @apply mt-14;
@@ -163,7 +148,7 @@
     @apply text-2xl text-[#d4d4d4] font-medium mb-5;
   }
   .text-m {
-    @apply text-xl text-white leading-snug;
+    @apply text-xl text-white leading-snug mvpc:text-lg;
   }
 }
 

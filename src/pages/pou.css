@@ -48,22 +48,8 @@
 @import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
 
 
-@import url(../blocks/introgrid/introgrid.css);
-@import url(../blocks/table-grid/table-grid.css);
-@import url(../blocks/image-and-text/image-and-text.css);
+/*Часто задаваемые вопросы*/
+@import url(../blocks/frequently/frequently.css);
 
 
-@import url(../blocks/lineform/lineform.css);
-@import url(../blocks/lineform/__heading/lineform__heading.css);
-@import url(../blocks/lineform/__line/lineform__line.css);
-@import url(../blocks/lineform/__field/lineform__field.css);
-
-@import url(../blocks/lineform/__input/lineform__input.css);
-@import url(../blocks/lineform/__input/_type_margo/lineform__input_type_margo.css);
-@import url(../blocks/lineform/__input/_spec_pou/lineform__input_spec_pou.css);
-
-@import url(../blocks/lineform/__input-error/lineform__input-error.css);
-
-@import url(../blocks/lineform/__button-save/lineform__button-save.css);
-@import url(../blocks/lineform/__description/lineform__description.css);
 @import url(../blocks/footer/footer.css);

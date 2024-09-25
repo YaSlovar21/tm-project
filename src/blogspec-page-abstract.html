@@ -36,19 +36,44 @@
         </div>
       </section>
       <h2 class="up-title up-title_svg">Смотрите также</h2>
-      <ul class="py-12">
-        <% specPages.filter(i => i.filename !== htmlWebpackPlugin.options.filename).map(art => { %>
-          <li class="relative pt-4 border-t border-primary-strokke1 grid grid-cols-12">
-            <div class="col-start-6 col-span-7">
-              <h3 class="up-text-title mb-6"><%= art.heading %></h3>
-              <p class="text-m max-w-[444px]"><%= art.intro %></p>
-            </div>
-            <a class="" href="<%= `/${art.filename}` %>">
-              <span class="inset0"></span>
-            </a>
-          </li>
-        <% }) %>
-      </ul>
+      <div class="my-6 grid grid-cols-12 gap-5 border-t border-primary-strokke1">
+        <h3 class="upsubtitle mt-4 leading-none">Конструкция</h3>
+        <ul class="col-start-4 col-span-9 ">
+          <% specPages.filter(i => i.filename !== htmlWebpackPlugin.options.filename).filter(i=> i.type==='construction').map((art, index) => { %>
+            <li class="relative pt-4 <%= index!==0 ? `border-t border-primary-strokke1` : '' %> grid grid-cols-9 gap-5">
+              <% if (art.templateParameters.poster) { %>
+                <img class="col-span-2" src="<%= require(`./images/serv/${art.templateParameters.poster}`) %>">
+              <% } %>
+              <div class="col-span-7">
+                <h3 class="up-text-title mb-6"><%= art.heading %></h3>
+                <p class="text-m max-w-[444px]"><%= art.intro %></p>
+              </div>
+              <a class="" href="<%= `/${art.filename}` %>">
+                <span class="inset0"></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="my-6 grid grid-cols-12 gap-5 border-t border-primary-strokke1">
+        <h3 class="upsubtitle mt-4 leading-none">Эксплуатация</h3>
+        <ul class="col-start-4 col-span-9 ">
+          <% specPages.filter(i => i.filename !== htmlWebpackPlugin.options.filename).filter(i=> i.type==='service').map((art, index) => { %>
+            <li class="relative pt-4 <%= index!==0 ? `border-t border-primary-strokke1` : '' %> grid grid-cols-9 gap-5">
+              <% if (art.templateParameters.poster) { %>
+                <img class="col-span-2" src="<%= require(`./images/serv/${art.templateParameters.poster}`) %>">
+              <% } %>
+              <div class="col-span-7">
+                <h3 class="up-text-title mb-6"><%= art.heading %></h3>
+                <p class="text-m max-w-[444px]"><%= art.intro %></p>
+              </div>
+              <a class="" href="<%= `/${art.filename}` %>">
+                <span class="inset0"></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
     </main>
     <%= require('html-loader!./insets/asides/map-section.html').default %>
     <%= require('html-loader!./insets/asides/inner-footer.html').default %>

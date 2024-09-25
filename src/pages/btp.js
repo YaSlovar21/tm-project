@@ -33,10 +33,10 @@ const wowAnimation = new WOW({
 wowAnimation.init();
 
 const lineformBtp = document.forms.lineformBtp;
-const lineformSubmitButton = lineformBtp.querySelector(lineformConfig.submitButtonSelector);
+const lineformSubmitButton = lineformBtp?.querySelector(lineformConfig.submitButtonSelector);
 const lineformValidator = new FormValidator(lineformConfig, lineformBtp);
 
-lineformValidator.enableValidation();
+//lineformValidator.enableValidation();
 
 const formApi = new Api({
   //baseUrl: 'https://formspree.io',
@@ -47,7 +47,7 @@ const formApi = new Api({
     'Content-Type': 'application/json;charset=utf-8',
   },
 });
-
+/*
 const lineformBtpStatic = new FormStatic({
   formSubmitHandler: (formCallbackData) => {
     renderLoading(true, lineformSubmitButton, 'Оставить заявку', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
@@ -69,7 +69,7 @@ const lineformBtpStatic = new FormStatic({
     //raschetValidatorForm.cleanAllErrors();
   }}, lineformBtp, '.lineform__input');
 
-lineformBtpStatic.setEventListeners();
+//lineformBtpStatic.setEventListeners();*/
 
 var swiperBigBtp = new Swiper(".btpBigSwiper", {
   spaceBetween: 0,
@@ -165,7 +165,7 @@ var mySwiper1 = new Swiper('.btp-schemes', {
 
 import FreqDynamic from '../js/components/FreqDynamic.js';
 
-/*let windowWidth = useWindowSizeTest();*/
+/*let windowWidth = useWindowSizeTest();
 
 const freqElements = Array.from(document.querySelectorAll('.table__cell_type_grid')).map((element) =>
   new FreqDynamic({
@@ -177,16 +177,16 @@ const freqElements = Array.from(document.querySelectorAll('.table__cell_type_gri
 freqElements.forEach((element) => {
   element.setEventListeners();
 });
+*/
 
-
-document.querySelector('.introgrid__button').addEventListener('mousedown', ()=> {
+document.querySelector('.introgrid__button')?.addEventListener('mousedown', ()=> {
   popupCallBack.open('Проконсультироваться по расчёту теплового пункта', 'Здравствуйте! Необходимо рассчитать стоимость теплового пункта.');
 });
-document.querySelector('.popup-mini').addEventListener('mousedown', ()=> {
+document.querySelector('.popup-mini')?.addEventListener('mousedown', ()=> {
   popupCallBack.open();
 });
 
-document.querySelector('.btp-adv__link').addEventListener('mousedown', ()=> {
+document.querySelector('.btp-adv__link')?.addEventListener('mousedown', ()=> {
   popupCallBack.open('Проконсультироваться по расчёту теплового пункта', 'Здравствуйте! Необходимо рассчитать стоимость теплового пункта.');
 });
 

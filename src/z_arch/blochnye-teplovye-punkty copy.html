@@ -16,7 +16,7 @@
     .swiper-slide-btp {
       text-align: center;
       font-size: 18px;
-
+      background: rgba(66, 66, 66, 0.678);
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -47,11 +47,11 @@
       width: 100%;
       overflow: hidden;
       position: relative;
-
+      max-width: 1600px;
       margin: 0px auto 20px;
       border: 1px solid #1f1f1f;
       background-color: #f2f2f221;
-      border-radius: 12px;
+      border-radius: 20px;
       box-shadow: 1px 2px 1px rgb(0 0 0 / 22%);
     }
     .btp-big-swiper .swiper-wrapper {
@@ -173,6 +173,7 @@
               style="height: 1em;position: relative;" alt="Теплохит"> ™ </span> , мы обладаем большим опытом
           производства теплообменного оборудования и установок.
       </p>
+
       <div class="row-span-3">
         тут фото подробнее
       </div>
@@ -200,7 +201,7 @@
       <p class="text-m uppercase font-medium"><span class="text-orange">Срок изготовления: </span>от 20 дней</p>
     </section>
     <section class="container-2 mt-14 border-t border-primary-strokke1">
-      <h2 class="up-title up-title_svg mt-4">Преимущества</h2>
+      <h2 class="up-title up-title_svg"></h2>
       <ul class="frequently__questions">
         <li class="group frequently__item relative">
           <h3 class="frequently__question">Оперативный расчёт</h3>
@@ -222,74 +223,117 @@
       </li>
       </ul>
     </section>
+      <section class="description">
+        <div class="introgrid">
+          <div class="introgrid__wrapper">
+            <h3 class="introgrid__header">Преимущества работы с производителем</h3>
+              <p class="introgrid__desc" style="padding-bottom: 3em;">Тепловые пункты изготавливаются на базе теплообменников собственной разработки и
+                производства.</p>
+              <div class="introgrid__button">
+                <button class="link-beauty">Рассчитать тепловой пункт</button>
+              </div>
+              <div class="introgrid__feat" style="flex: 0 0 570px; position: relative;">
+                <ul class="table-grid">
+                  <li>
+                    <h4 class="table-grid__heading">Расчёт теплового пункта</h4>
+                    <p class="table-grid__description">Квалифицированные инженеры произведут подбор оборудования на тепловой пункт,
+                      рассчитают стоимость и подготовят спецификацию.
+                    </p>
+                    <a class="bem__link bem__link_arrowup bem__link_color_theme link-beauty" style="margin-top: 10px; display: block;" href="/blog-proizvodstva/proektirovanie-blochnykh-teplovykh-punktov.html">Подробнее про проектирование тепловых пунктов</a>
+                  </li>
+                  <li>
+                    <h4 class="table-grid__heading">Собственное производство теплообменников</h4>
+                    <p class="table-grid__description">Наш опыт производства теплообменников для тепловых пунктов (как индивидуальных, так и блочных) более 25 лет.</p>
+                  </li>
+                  <li>
+                    <h4 class="table-grid__heading">Сотрудничество напрямую с заводом</h4>
+                    <p class="table-grid__description ">Более гибкое ценообразование за счёт высокого уровня локализации
+                      производства комплектующих бтп.</p>
+                  </li>
+                  <!-- class="wow fadeInUp" data-wow-delay=".6s"-->
+                  <li>
+                    <h4 class="table-grid__heading">Доставка и гарантия</h4>
+                    <p class="table-grid__description">Отгрузим удобной для Вас транспортной компанией.</p>
+                  </li>
+                </ul>
+              </div>
+          </div>
 
-    <!--<div class="techniques__after" >
-      <div class="techniques__after_before wow" data-wow-offset="100"></div>
-    </div>-->
-    <section class="container-2 my-20">
-      <h2 class="up-title up-title_svg mt-4">Примеры блочных тепловых пунктов</h2>
-      <p class="subtitle subtitle-sm max-w-[750px]">Блочные тепловые пункты можно разделить по назначению</p>
-      <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Для отопления</h3>
-        <ul class="">
-          <% btps.filter(i => i.type==='otop').sort((a,b) => Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-            <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
-          <% }); %>
-        </ul>
+        </div>
+      </section>
+
+      <div class="techniques__after" >
+        <div class="techniques__after_before wow" data-wow-offset="100"></div>
       </div>
-      <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Для ГВС</h3>
-        <ul class="">
-          <% btps.filter(i => i.type==='gvs').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-            <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
-          <% }); %>
+
+    <section class="bem__section">
+      <div class="bem__section-wrapper">
+      <h2 class="bem__section-title section-title_schemes">Примеры блочных тепловых пунктов</h2>
+        <p class="bem__paragraph" style="font-size: var(--cell-description-font);">Блочные тепловые пункты можно разделить по назначению</p>
+        <ul class="bem__list bem__filter-list" style="margin-bottom: 20px;">
+          <li class="bem__filter-list-item">для отопления</li>
+          <li class="bem__filter-list-item">для гвс</li>
+          <li class="bem__filter-list-item">для вентиляции</li>
+          <li class="bem__filter-list-item">узлы ввода и учета (уутэ)</li>
         </ul>
-      </div>
-      <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Для вентиляции</h3>
-        <ul class="">
-          <% btps.filter(i => i.type==='vent').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-            <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
-          <% }); %>
-        </ul>
-      </div>
-      <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Узлы ввода</h3>
-        <ul class="">
-          <% btps.filter(i => i.type==='vvoda').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-            <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
+
+        <ul class="bem__list" style="font-size: var(--cell-description-font);">
+          <% btps.forEach(function(item) { %>
+            <li class="bem__list-item"><a class="bem__link link-beauty" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
           <% }); %>
         </ul>
       </div>
     </section>
-  <div class="btp-big-swiper">
-    <div class="swiper-container btpBigSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные" src="<%=require('./images/btp_slider/btp-slider-1.png')%>" />
-        </div>
-        <div class="swiper-slide">
-          <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные 2" src="<%=require('./images/btp_slider/btp-slider-2.png')%>" />
-        </div>
-        <div class="swiper-slide">
-          <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные 3" src="<%=require('./images/btp_slider/btp-slider-3.png')%>" />
+
+
+
+
+    <section class="secondgridbtp">
+      <h2 class="secondgridbtp__title">Блочные тепловые пункты от производителя</h2>
+      <div class="btp-big-swiper">
+        <div class="swiper-container btpBigSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные" src="<%=require('./images/btp_slider/btp-slider-1.png')%>" />
+            </div>
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные 2" src="<%=require('./images/btp_slider/btp-slider-2.png')%>" />
+            </div>
+            <div class="swiper-slide">
+              <img class="btp-big-swiper__image" alt="Блочные тепловые пункты изготовленные 3" src="<%=require('./images/btp_slider/btp-slider-3.png')%>" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-  <section class="container-2 py-14">
-    <span class="up-title up-title_svg">Смотрите также</span>
-    <a class="pt-4 border-t border-primary-strokke1 grid grid-cols-6 link-beauty_moveup" href="/pasterizatsionno-okhladitelnye-ustanovki.html">
+      <div style=" padding: 20px 0;">
 
-      <img class="col-span-2 row-span-3" src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка">
-      <h3 class="up-text-title col-span-4">Установки пищевые пастеризационно охладительные</h3>
-      <p class="text-m col-span-4">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
-      <span class="col-span-4 text-m uppercase font-medium text-orange mt-5">Перейти ↗</span>
-    </a>
-  </section>
+    </div>
+    </section>
+    <section class="bpou highliterz">
+
+        <div class="bpou__info">
+          <span class="bpou__intro">Смотрите также</span>
+          <h2 class="bpou__heading">Блочные пастеризационно охладительные установки</h2>
+          <p class="bpou__description">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>
+          <!--<div class="beauty-button"><a href="#" class="po__link" style="text-align:center; width: 100%;font-size: 16px;margin: 0; color: white;">Перейти</a></div>
+          <a href="/pasterizatsionno-okhladitelnye-ustanovki.html" style="display: block; text-decoration: none;" class="button-bem">Перейти &#8594;</a>-->
+          <a href="/pasterizatsionno-okhladitelnye-ustanovki.html" style="display: block; text-decoration: none; color: var(--main-equivalent-color);">Пастеризационные охладительные установки ↗</a>
+        </div>
+        <div class="bpou__image-container">
+          <img src="<%=require('./images/pou_page_btp.png')%>" alt="Блочное решение для пищевой промышленности на базе пластинчатых теплообменников" class="bpou__image">
+        </div>
+
+    </section>
+    <!--<div class="up-footer up-footer_bg_none ">
+      <ul class="up-footer__list">
+        <li class="up-footer__list-item popup-mini wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Проконсультироваться с инженером</li>
+        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s"><a class="up-footer__link" href="/docu/Oprosnii_list_podbora_teplovogo_punkta.doc" download>Скачать опросный лист <span class="span-mobile-hidden">на тепловой пункт</span></a></li>
+        <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s"><a class="up-footer__link" href="/equipment-selection">Подобрать <span class="span-no-wrap">теплообменник ↗</span></a></li>
+      </ul>
+    </div>-->
   </main>
   <%= require('html-loader!./insets/asides/inner-footer.html').default %>
   <%= require('html-loader!./insets/popup-mini-form.html').default %>

@@ -53,6 +53,7 @@ module.exports = {
         },
         blacktheme: {
           DEFAULT: '#191919',
+          white: '#e8e8e8',
         }
       }
     }

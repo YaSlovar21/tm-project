@@ -78,6 +78,10 @@
 @import url(../blocks/free-form/__desc-field/free-form__desc-field.css);
 
 @import url(../blocks/service/service.css);
-
+@import url(../blocks/formx/formx.css);
+@import url(../blocks/formx/__input/formx__input.css);
+@import url(../blocks/formx/__input-error/formx__input-error.css);
+@import url(../blocks/formx/__field/formx__field.css);
+@import url(../blocks/formx/__button-save/formx__button-save.css);
 
 @import url(../blocks/footer/footer.css);

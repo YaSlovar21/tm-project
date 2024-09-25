@@ -1,11 +1,13 @@
-const canonicalURL = 'https://www.termoblok.ru'
+const canonicalURL = "https://www.termoblok.ru"
 module.exports.specPages = [
     {
+      type: "construction",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "teploizol.html",
-          bannerImg: 'ti13front-with-izol.png',
+          bannerImg: "ti13front-with-izol.png",
+          poster: "teploizol.png",
         },
         title: "Теплоизоляция теплообменников, изоляция пластинчатых теплообменников",
         heading: "Теплоизоляция теплообменников",
@@ -19,10 +21,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "construction",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "plastina.html",
+          poster: "plast-page-pto.png",
         },
         title: "Пластины пластинатого теплообменника",
         heading: "Пластина пластинатого теплообменника",
@@ -36,10 +40,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "construction",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "uplotnenie.html",
+          poster: "uplot.png",
         },
         title: "Уплотнения для теплообменника",
         heading: "Уплотнение пластинатого теплообменника",
@@ -53,11 +59,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "production",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "payanii.html",
-          bannerImg: 'payan/payanii-main.png',
+          bannerImg: "payan/payanii-main.png",
         },
         title: "Паяные пластинчатые теплообменники Российского производства",
         heading: "Паяные пластинчатые теплообменники",
@@ -71,6 +78,7 @@ module.exports.specPages = [
         chunks: ["vakansii", "blogSpecPage", "all", "map"],
       },
       {
+        type: "production",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
@@ -88,10 +96,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "service",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "promyvka.html",
+          poster: "wash.png",
         },
         title: "Промывка пластинчатого теплообменника",
         heading: "Промывка теплообменника",
@@ -105,10 +115,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "construction",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "princip.html",
+          poster: "princip.png",
         },
         title: "Пластинчатый теплообменник: принцип работы и устройство",
         heading: "Принцип работы пластинчатого теплообменника",
@@ -122,10 +134,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "service",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "montazh.html",
+          poster: "montazh.png",
         },
         title: "Монтаж пластинчатого теплообменника, ввод в эксплуатацию теплообменного аппрата",
         heading: "Монтаж пластинчатого теплообменника",
@@ -140,6 +154,7 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "production",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
@@ -158,10 +173,12 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "service",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
           articleFile: "remont.html",
+          poster: "remont.png",
         },
         title: "Как осуществить ремонт пластинчатого теплообменника правильно",
         heading: "Ремонт пластинчатого теплообменника",
@@ -175,6 +192,7 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
       {
+        type: "production",
         templateParameters: {
           canonicalURL: canonicalURL,
           isGkh: true,
