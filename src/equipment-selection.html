@@ -189,26 +189,8 @@
         <%= require('html-loader!./insets/mini-form-template.html').default %>
       </template>
 
-      <section class="map">
-        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-        <div class="map__list-container">
-          <ul class="map__list">
-          </ul>
-          <!--Сюда встанут карточки партнеров-->
-          <div class="map__popup">
-            <span class="map__popup-close">&lt;-- Назад</span>
-            <ul class="map__popup-container"></ul>
-          </div>
-        </div>
-        <div class="map__partner"></div>
-      </section>
-
+      <%= require('html-loader!./insets/asides/map-section.html').default %>
       <%= require('html-loader!./insets/asides/inner-footer.html').default %>
     </div>
-
-    <!--Шаблон элемента партнера на карте-->
-    <template id="partner-item-template">
-      <li class="map__list-item">Чита</li>
-    </template>
   </body>
 </html>

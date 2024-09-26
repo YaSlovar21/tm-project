@@ -11,8 +11,10 @@
 <body>
   <%= require('html-loader!./inner-metrika.html').default %>
   <div class="page">
-    <header class="header header-up" style="padding-left: 24px; padding-right: 24px;">
-      <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
+    <header class="header header-up">
+      <a href="/" class="header__logo">
+        <img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок">
+      </a>
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>

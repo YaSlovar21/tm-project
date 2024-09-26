@@ -54,7 +54,7 @@
         <p class="text-m col-start-2 mb-6">Локализованный на территории предприятия</p>
         <ul class="col-span-2">
           <% cycleData.map((i,index)=> { %>
-            <li class="relative transition-all bg-blacktheme py-6 container-2 border-t border-primary-strokke1 -mb-32 hover:mb-0" style="z-index: <%=index+1%>;">
+            <li class="relative transition-all duration-300 bg-blacktheme py-6 container-2 border-t border-primary-strokke1 -mb-32 hover:mb-0" style="z-index: <%=index+1%>;">
               <figure class="relative w-[58%] pb-[40%]">
                 <img class="absolute w-full h-full" src="<%= require(`./images/${i.image}`) %>">
               </figure>

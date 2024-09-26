@@ -31,6 +31,14 @@ const cycleData = [
     },
 ];
 
+
+const blogThemesDict = {
+    "news": "Новости",
+    "gkh": "Тепллообменники для ЖКХ",
+    "food": "Теплообменники пищевые",
+};
+
 module.exports = {
-    cycleData
+    cycleData,
+    blogThemesDict
 }

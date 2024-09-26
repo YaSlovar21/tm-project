@@ -25,27 +25,10 @@ openDrawingButton.addEventListener("mousedown", ()=> {
   })
 })
 popupImage.setEventListeners();
-const questions = Array.from(
-  document
-    .querySelectorAll('.frequently__question')
-);
-
 
 new simpleParallax(drawing, {
 	delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
-});
-
-questions.forEach(element => {
-  element.addEventListener('click', function(evt) {
-    const questionElem = evt.target.closest('.frequently__item');
-    const answerElem = questionElem.querySelector('.frequently__answer')
-    questionElem.classList.toggle('frequently__item_active');
-    console.log(evt.target.closest('.frequently__item'));
-    answerElem.classList.toggle('animate__animated');
-    answerElem.classList.toggle('animate__slow');
-    answerElem.classList.toggle('animate__fadeIn');
-  })
 });
 
 const tiAlias = window.location.pathname;

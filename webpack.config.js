@@ -13,9 +13,10 @@ const { rawData, razbegPoMoshnosti } = require('./raschets');
 const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
 const { specPages } = require('./specPages');
-const { cycleData } = require('./consts');
+const { cycleData, blogThemesDict } = require('./consts');
 
 console.log(rawData);
+
 
 function generateRaschetHtmlPlugins() {
   return rawData.map(ptoData => {
@@ -47,8 +48,10 @@ function generateBlogPagesHtmlPlugins(articles) {
     return new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL: canonicalURL,
+        upsubtitle: article.type.includes('news') ? blogThemesDict['news'] : blogThemesDict[article.type[0]],
         isGkh: true,
         articleFile: `${article.articleInnerFile}.html`,
+        customPoster: article.type.includes('news') ? `${article.articleInnerFile}.png` : '',
         /*relevanceArticles: [
           {
             name: "Теплобоменник для отопления частного дома",
@@ -96,6 +99,8 @@ function generateConfig(infoBlogData) {
       equipment: "./src/pages/equipment1.js",
       pou: "./src/pages/pou.js",
       vakansii: "./src/pages/vakansii.js",
+      /* Компоненты */
+      freq: "./src/pages/components/freq.js",
     },
     output: {
       path: path.resolve(__dirname, "dist"),
@@ -155,7 +160,22 @@ function generateConfig(infoBlogData) {
           exclude: [
             path.resolve(__dirname, "./src/images/favicon.svg"),
             path.resolve(__dirname, "./src/blog-images/"),
+            path.resolve(__dirname, "./src/api-images/"),
           ],
+        },
+        {
+          // регулярное выражение, которое ищет все файлы с такими расширениями
+          test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf|webm)$/,
+          type: "asset/resource",
+          include: [
+            path.resolve(__dirname, "./src/api-images/"),
+          ],
+          generator: {
+            filename: (pathData) => {         
+              return `api-images/[name][ext]`;
+          },
+       
+          }
         },
         /*{
           // Прогрузка картинок в блог в обход лоадера
@@ -225,6 +245,7 @@ function generateConfig(infoBlogData) {
           canonicalURL,
           tis,
           foodtis,
+          newsData: infoBlogData.filter(i=> i.type.includes('news')),
         },
         title:
           "Российский производитель пластин и пластинчатых теплообменников Термоблок",
@@ -336,7 +357,7 @@ function generateConfig(infoBlogData) {
         },
         template: "./src/blochnye-teplovye-punkty.html",
         filename: "blochnye-teplovye-punkty/index.html",
-        chunks: ["btp", "all", "map"],
+        chunks: ["btp", "all", "map", "freq"],
       }) /*---------ПАСТЕРИЗАЦИОННЫЕ УСТАНОВКИ----------- */,
       new HtmlWebpackPlugin({
         templateParameters: {
@@ -349,7 +370,7 @@ function generateConfig(infoBlogData) {
         },
         template: "./src/pou.html",
         filename: "pasterizatsionno-okhladitelnye-ustanovki.html",
-        chunks: ["pou", "all", "map"],
+        chunks: ["pou", "all", "map", "freq"],
       }),
       /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
       new HtmlWebpackPlugin({
@@ -416,7 +437,10 @@ function generateConfig(infoBlogData) {
 
       /*---------СЕКЦИЯ БЛОГА----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL: canonicalURL,
+          newsData: infoBlogData.filter(i=> i.type.includes('news')),
+        },
         title: "Новое в производстве пластинчатых теплообменников",
         meta: {
           keywords: "Информация о продукции предприятия: пластинчатых теплобменников для отопления, гвс; теплообменников пищевого назначения",
@@ -454,6 +478,18 @@ function generateConfig(infoBlogData) {
 
 const proxyAgent = new HttpsProxyAgent.HttpsProxyAgent('http://10.10.14.14:3128');
 
+function articleDateMapper(newsArr) {
+  return newsArr.map((item) => {
+    const date = new Date(item.date);
+    const month = date.getMonth() + 1;
+    return {
+      ...item,
+      type: JSON.parse(item.type),
+      formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
+    }
+  })
+}
+
 module.exports = () => {
   return new Promise((resolve, reject) => {
       Promise.all([
@@ -462,7 +498,7 @@ module.exports = () => {
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=objects', { agent: proxyAgent}).then(res => res.json()), 
         ])
         .then((data) => {
-          resolve(generateConfig(data[0]));
+          resolve(generateConfig(articleDateMapper(data[0])));
         })
      
   });

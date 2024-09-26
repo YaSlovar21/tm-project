@@ -21,16 +21,18 @@
       </div>
     </header>
     <main class="content">
-      <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside max-w-[1600px] mx-auto pc:max-w-[calc(100%-20px)]">
+      <div class="flexburton__breadcrumbs">
         <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
         <a class="flexburton__breadcrumbs-link" href="/blog-proizvodstva/">Блог производителя</a>
         <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
-      <section class="grid grid-cols-12 items-start pt-9 border-t border-primary-strokke1">
+      <section class="grid grid-cols-12 items-start pt-8 my-14 border-t border-primary-strokke1">
         <div class="col-span-2">
-          <span class="up-title up-title_svg">Теплообменники для жкх</span>
-          <img class="<%= `info__aside-img object-contain object-center ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__aside-img_custom' : ''}` %>" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? require(`./images/blogposters/${customPoster}`) : isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
-          <a class="info__aside-button link-beauty info__aside-button_custom">
+          <span class="upsubtitle"><%= upsubtitle %></span>
+        </div>
+        <div class="col-span-3 flex flex-col items-start">
+          <img class="<%= `info__aside-img object-contain object-center ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__aside-img_custom' : ''}` %>" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? require(`./api-images/blog-posters/${customPoster}`) : isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
+          <a class="info__aside-button link-beauty ui-button mt-3">
            <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
           </a>
         </div>
@@ -83,28 +85,13 @@
         </div>
       </section>
     </main>
-    <section class="map">
-      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
-      <div class="map__list-container">
-        <ul class="map__list">
-        </ul>
-        <!--Сюда встанут карточки партнеров-->
-        <div class="map__popup">
-          <span class="map__popup-close">&lt;-- Назад</span>
-          <ul class="map__popup-container"></ul>
-        </div>
-      </div>
-      <div class="map__partner"></div>
-    </section>
+    <%= require('html-loader!./insets/asides/map-section.html').default %>
     <%= require('html-loader!./insets/asides/inner-footer.html').default %>
   </div>
   <!--Шаблон формы-->
   <template class="form-big-template">
     <%= require('html-loader!./insets/big-form-template.html').default %>
   </template>
-  <!--Шаблон элемента партнера на карте-->
-  <template id="partner-item-template">
-    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
-  </template>
+
 </body>
 </html>

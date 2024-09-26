@@ -27,6 +27,19 @@
       <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
     </div>
     <h1 class="title-page">Статьи и информация</h1>
+    <ul class="grid grid-cols-3 gap-5">
+      <% newsData.map(art => { %>
+        <li class="relative">
+          <img src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
+          <p class="text-sm my-1 text-gray-400"><%= art.formattedDate %></p>
+          <h3 class="text-m font-medium mb-2"><%= art.heading %></h3>
+          <p class="text-sm text-blacktheme-white max-w-[384px]"><%= art.description %></p>
+          <a class="" href="/blog-proizvodstva/<%= art.staticPage %>">
+            <span class="inset0"></span>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
     <form class="filter-form flex gap-2 my-6" name="filterForm" id="filterForm">
       <label>
         <input class="filter-form__input" type="checkbox" name="filterbox" value="news">

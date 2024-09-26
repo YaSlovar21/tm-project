@@ -51,7 +51,7 @@
   }
 
  .content {
-    @apply max-w-[calc(100%-80px)] mx-auto;
+    @apply max-w-[calc(100%-180px)] mx-auto;
   }
   .twrapper {
     @apply max-w-[1520px] mx-auto;
@@ -71,7 +71,9 @@
   .ui-button-text {
     @apply transition-all duration-200 py-3 px-0 text-[#E7381C] rounded-md text-base uppercase flex;
   }
-
+  .ui-button-gray {
+    @apply transition-all duration-200 p-3 text-gray-500 hover:bg-transparent hover:text-[#E7381C] rounded-md border-2 border-gray-500 hover:border-[#E7381C] text-base uppercase flex justify-center;
+  }
   .before-small-circle {
     @apply flex items-stretch;
   }
@@ -99,7 +101,7 @@
   }
 
   .upsubtitle {
-    @apply text-orange text-base lowercase;
+    @apply text-orange text-xl lowercase;
   }
   .upsubtitle::before {
     content: '[';

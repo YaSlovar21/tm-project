@@ -217,6 +217,30 @@
         <p class="before-small-circle-indent  max-w-[83%] text-m">На данный момент мы осуществляем изготовление штампов, остнастки для производства двух новых теплообменников ДУ65. Данные пластины будут иметь инновационную гофрированную поверхность.</p>
       </div>
       <img class="col-span-2 my-8" src="<%=require('./images/2024content/aboutmain.jpg')%>" alt="">
+      <img class="max-w-[58%] mx-auto row-span-2" src="<%=require('./images/2024content/test-turbulent.png')%>">
+      <p class="text-m max-w-[700px]">Гофрированная поверхность обеспечивает большую площадь теплообмена, снижая тем самым металлоемкость и цену изделия. Также при такой поверхности в теплообменнике становится меньше точек застоя, повышается общая эффективность теплообмена.</p>
+      <a class="ui-button-gray mr-auto" href="/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html">Подробнее</a>
+
+      <span class="row-span-2"></span>
+      <h3 class="subtitle mt-20">Актуальные события</h3>
+      <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
+      <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1">
+        <% newsData.map((art, index) => { %>
+          <li class=" transition-all duration-300 relative -mb-32 hover:mb-0 bg-blacktheme" style="z-index: <%=index+1%>;">
+            <p class="text-lg my-1 text-gray-400 mx-auto"><%= art.formattedDate %></p>
+            <img class="col-start-3 col-span-3" src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
+            <div class="col-start-7 col-span-4">
+              <h3 class="up-text-title font-medium mb-2"><%= art.heading %></h3>
+              <p class="text-lg text-blacktheme-white max-w-[384px]"><%= art.description %></p>
+            </div>
+            <a class="ui-button-gray col-start-11" href="/blog-proizvodstva/<%= art.staticPage %>">
+              <span class="inset0"></span>
+              Читать
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+      <figure class="bg-blacktheme h-36 z-10"></figure>
     </section>
 
     <!--Галлерея + UP FOOTER

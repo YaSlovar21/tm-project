@@ -32,7 +32,7 @@ const raschetSection = document.querySelector('.inforaschet');
 
 openRaschetButton.addEventListener('click', ()=>{
   if (!raschetSection.classList.contains('inforaschet_active')) {
-    openRaschetButton.scrollIntoView({
+    raschetSection.scrollIntoView({
       behavior: 'smooth'
     });
   }
