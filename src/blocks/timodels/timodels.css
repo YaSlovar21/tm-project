@@ -91,6 +91,15 @@
 
   .timodels {
       gap: 20px 17px;
+      grid-template-columns: repeat(4,65px);
+      grid-template-rows: repeat(4,67px);
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .timodels {
+      gap: 20px 17px;
       grid-template-columns: repeat(3,65px);
       grid-template-rows: repeat(5,67px);
   }

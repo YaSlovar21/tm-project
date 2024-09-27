@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   margin: 90px auto 30px;
-  max-width: calc(100% - 40px);
+  max-width: 100%;
 }
 
 @media screen and (max-width:768px) {
   .raschet-bem__parameters {
-    max-width: calc(100% - 20px);
+   
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;

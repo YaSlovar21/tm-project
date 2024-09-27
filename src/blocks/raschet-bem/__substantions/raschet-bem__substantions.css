@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto 0;
-  width: calc(100% - 40px);
+  width: 100%;
 
   flex-basis: 98px;
 }
@@ -13,7 +13,7 @@
 @media screen and (max-width: 768px) {
 
   .raschet-bem__substantions{
-    width: calc(100% - 20px);
+    width: 100%;
     margin: 0 auto 10px;
   }
 }

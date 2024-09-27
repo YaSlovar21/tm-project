@@ -15,6 +15,18 @@ import logo_dialog from '../images/svg-elems/logo_dialog.png';
 import FormStaticJsRendered from '../js/components/FormStaticJsRendered.js';
 
 const messageList = [
+	{
+		image: logo_dialog,
+		text: 'Добрый день! Заполнив основные поля формы, наш инженер рассчитает пластинчатый теплобменник за 30 минут!'
+	},
+	{
+		text: 'Сейчас попробуем!',
+    isOwner: true
+	},
+	{
+		image: logo_dialog,
+		text: 'Ждём!'
+	},
 ];
 const cardListSection = '.card-list';
 
@@ -50,6 +62,7 @@ const formApi = new Api({
     'Content-Type': 'text/plain'
   },
 });
+
 
 const formRaschet = new FormStaticJsRendered({
   templateSelector: '.form-big-template',
@@ -127,10 +140,54 @@ function changeForm(type) {
 }
 changeForm('big');
 
+
+
+//const raschetForm = document.forms.formRaschetPopup;
+//const raschetSubmitButton = raschetForm.querySelector('.raschet-bem__submit-button');
+
+/*
+const raschetValidatorForm = new FormValidator(raschetValidatorConfig, formElement1);
+raschetValidatorForm.enableValidation();
+const freeValidatorForm = new FormValidator(formValidatorConfig, formElement2);
+freeValidatorForm.enableValidation();
+*/
 const formChoice = document.forms.formChoice;
+
 formChoice.addEventListener("change" , ()=>{
+    //console.log(formChoice.elements.radio.value);
     setTimeout(2000, changeForm(formChoice.elements.radio.value));
 });
+
+
+/*
+const formRaschetStatic = new FormStatic({
+  formSubmitHandler: (formCallbackData) => {
+    renderLoading(true, raschetSubmitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
+    formApi.sendBigForm(formCallbackData)
+      .then((response) => {
+        console.log(response);
+        const message = new DefaultMessage({image:logo_dialog, text: generateResponseMessage(response)}, '.message-template_type_default');
+        const messageElement = message.generateHTML();
+        cardsList.appendItem(messageElement);
+        formRaschetStatic.cleanAll();
+
+        //сделать сообщение об успешной отправке
+      })
+      .catch((err) => console.log(err)) //сделать сообщение об успешной ошибке
+      .finally(() => {
+          raschetValidatorForm.disableSaveButton();
+          renderLoading(false, raschetSubmitButton, 'Отправить', 'Отправка...');
+      });
+    console.log(formCallbackData);
+    },
+  formCleanError: () => {
+    raschetValidatorForm.cleanAllErrors();
+  }}, raschetForm, '.raschet-bem__input');
+
+  formRaschetStatic.setEventListeners();
+*/
+
+
 
 
 /* -----Диалоги----- */
@@ -171,3 +228,9 @@ function generateResponseMessage(response) {
 
 console.log(generateResponseMessage({"23":"252"}));
 
+
+const mobileRaschetButton = document.querySelector('.equipment__mobile-raschet');
+const raschetSection = document.querySelector('.equipment__form-container ');
+mobileRaschetButton.addEventListener('click', ()=>{
+  raschetSection.setAttribute('style','background-color: #202020; transform: translateX(-100%)');
+});
