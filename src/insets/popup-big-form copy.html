@@ -1,9 +1,9 @@
 <!--Форма расчёта теплообменника  -->
-<div class="popup popup-raschet bg-blacktheme">
-  <div class="max-w-[900px] relative">
+<div class="popup popup-raschet">
+  <div class="popup__container popup__container_type_big popup__container_type_form">
       <button class="popup__button-close link-beauty popup__button-close_type_form" type="button"></button>
-      <form class="popup__form max-w-[768px] raschet-bem raschet-bem_flexed" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
-          <h2 class="subtitle">Заявка на расчёт</h2>
+      <form class="popup__form raschet-bem raschet-bem_flexed" method="post" action="#" id="formRaschetPopup" name="formRaschetPopup" novalidate>
+          <h2 class="raschet-bem__title">Заявка на расчёт</h2>
           <!--Среды вход/выход-->
           <div class="first-step" style="display: flex;flex-direction: column; max-width: 100%; padding: 0; border: none; max-height: 90vh;">
           <div class="raschet-bem__substantions">
@@ -100,7 +100,7 @@
             </div>
           </div>
           <!--<button class="popup__button-save popup__button-save_type_callback form-next-step" type="submit">Отправить</button>-->
-          <button class="form-next-step ui-button first-step-button"  type="button">Далее</button>
+          <button class="form-next-step button-bem first-step-button"  type="button">Далее</button>
         </div>
           <div class="popup__form-fio popup-absolute second-step">
             <h3 class="raschet-bem__title">Куда мы можем отправить расчёт?</h3>
@@ -123,7 +123,7 @@
             </div>
             <div style="display: flex;  flex-basis: 100%;align-items: flex-end;">
               <button type="button"  class="button-bem button-bem_back form-back-button" style="flex-basis: 200px">Назад</button>
-              <button type="submit" class="raschet-bem__submit-button  ui-button second-step-button" style="flex-basis: 100%;">Отправить</button>
+              <button type="submit" class="raschet-bem__submit-button button-bem second-step-button" style="flex-basis: 100%;">Отправить</button>
             </div>
           </div>
       </form>

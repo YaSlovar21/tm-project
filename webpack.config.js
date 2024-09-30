@@ -49,7 +49,7 @@ function generateBlogPagesHtmlPlugins(articles) {
       templateParameters: {
         canonicalURL: canonicalURL,
         upsubtitle: article.type.includes('news') ? blogThemesDict['news'] : blogThemesDict[article.type[0]],
-        isGkh: true,
+        isGkh: article.type.includes('gkh'),
         articleFile: `${article.articleInnerFile}.html`,
         customPoster: article.type.includes('news') ? `${article.articleInnerFile}.png` : '',
         /*relevanceArticles: [
@@ -67,7 +67,7 @@ function generateBlogPagesHtmlPlugins(articles) {
       },
       template: "./src/blog-page-abstract.html",
       filename: `blog-proizvodstva/${article.staticPage}`,
-      chunks: ["blogPage", "all", "map"],
+      chunks: ["blogPage", "all", "map", "popupImage"],
     })
   })
 }
@@ -101,6 +101,7 @@ function generateConfig(infoBlogData) {
       vakansii: "./src/pages/vakansii.js",
       /* Компоненты */
       freq: "./src/pages/components/freq.js",
+      popupImage: "./src/pages/components/popupImage.js",
     },
     output: {
       path: path.resolve(__dirname, "dist"),

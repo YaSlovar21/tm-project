@@ -29,6 +29,11 @@ function createPartner(dataJson) {
     classActive: partnersSectionConfig.activeClass,
     handleItemClick: (arrayOfPartnersInTown) => {
       //(desc, link) передаем во внутреннем методе карточки
+      dinamicInfoPopupContainer.innerHTML ='';
+      let mapActive = mapList.querySelector('.map__list-item_active')
+      if (mapActive) {
+        mapActive.classList.remove('map__list-item_active');
+      }
       popupInfoOpen(arrayOfPartnersInTown);
       try {
         ym(56583337,'reachGoal','partner-town', {clickedTown: dataJson.name});

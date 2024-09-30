@@ -1,8 +1,10 @@
 .raschet-bem__submit-button_disabled {
   background: transparent;
-  border: 1px solid rgba(0,0,1,.2);
+  
   border-radius: 2px;
   box-sizing: border-box;
-  color: rgba(0,0,1,.2);
+
   pointer-events: none;
+
+  @apply border border-gray-600 text-gray-600;
 }

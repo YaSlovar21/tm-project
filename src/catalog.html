@@ -42,7 +42,7 @@
               <% tis.map(pto => { %>
                 <li class="timodels__pto">
                   <a class="timodels__link" href="<%= `/${pto.filename}`%>">
-                    <h5 class="timodels__ptotitle"><%= pto.templateParameters.heading %></h5>
+                    <h5 class="timodels__ptotitle"><%= pto.templateParameters.headingAlias %></h5>
                     <p class="timodels__ptodu">ДУ <%= pto.templateParameters.du.map(i=> ` ${i}`) %></p>
                   </a>
                 </li>
