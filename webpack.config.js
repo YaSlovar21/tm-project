@@ -14,6 +14,7 @@ const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
 const { specPages } = require('./specPages');
 const { cycleData, blogThemesDict } = require('./consts');
+const { ROUTES } = require('./constants');
 
 console.log(rawData);
 
@@ -244,6 +245,7 @@ function generateConfig(infoBlogData) {
       new HtmlWebpackPlugin({
         templateParameters: { 
           canonicalURL,
+          ROUTES,
           tis,
           foodtis,
           newsData: infoBlogData.filter(i=> i.type.includes('news')),
@@ -260,7 +262,10 @@ function generateConfig(infoBlogData) {
       }),
       /*---------ПРОДУКЦИЯ----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          ROUTES,
+        },
         title: "Производство теплообменого оборудования и установок. Продукция завода.",
         meta: {
           keywords: "производство теплообменного оборудования",
@@ -287,6 +292,7 @@ function generateConfig(infoBlogData) {
       new HtmlWebpackPlugin({
         templateParameters: {
           canonicalURL: canonicalURL,
+          ROUTES,
           raschetsExamples: rawData,
           razbegPoMoshnosti,
         },
@@ -303,7 +309,8 @@ function generateConfig(infoBlogData) {
       /*----------АГРЕГ ТО ОТОПЛЕНИЕ---------- */
       new HtmlWebpackPlugin({
         templateParameters: {
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
           raschetsExamples: rawData,
           razbegPoMoshnosti,
         },
@@ -320,7 +327,8 @@ function generateConfig(infoBlogData) {
       /*----------АГРЕГ ТО ГВС---------- */
       new HtmlWebpackPlugin({
         templateParameters: {
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
           raschetsExamples: rawData,
           razbegPoMoshnosti,
         },
@@ -337,7 +345,8 @@ function generateConfig(infoBlogData) {
       /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
       new HtmlWebpackPlugin({
         templateParameters: {
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
         },
         title: "Пищевые теплообменники | Теплообменники для пищевой промышленности",
         meta: {
@@ -349,7 +358,11 @@ function generateConfig(infoBlogData) {
         chunks: ["ptoFood", "all", "map"],
       }) /*---------БЛОЧНЫЕ ТЕПЛОВЫЕ ПУНТЫ----------- */,
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL, btps: btpexamples },
+        templateParameters: { 
+          canonicalURL, 
+          btps: btpexamples,
+          ROUTES,
+        },
         title:
           "Блочные тепловые пункты | Производство тепловых узлов, модулей итп заводской готовности",
         meta: {
@@ -362,7 +375,8 @@ function generateConfig(infoBlogData) {
       }) /*---------ПАСТЕРИЗАЦИОННЫЕ УСТАНОВКИ----------- */,
       new HtmlWebpackPlugin({
         templateParameters: {
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
         },
         title: "Пастеризационные охладительные установки на базе теплообменников",
         meta: {
@@ -375,7 +389,10 @@ function generateConfig(infoBlogData) {
       }),
       /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          ROUTES,
+         },
         title: "Сервис и обслуживание пластинчатых теплоомбенников Теплохит",
         meta: {
           keywords: "сервис и обслуживание пластинчатого теплообменника",
@@ -389,6 +406,7 @@ function generateConfig(infoBlogData) {
       new HtmlWebpackPlugin({
         templateParameters: { 
           canonicalURL,
+          ROUTES,
           cycleData
         },
         title: "О производстве пластинчатых теплообменников, этапы производства",
@@ -402,7 +420,10 @@ function generateConfig(infoBlogData) {
       }),
       /* ВАКАНСИИ */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          ROUTES, 
+         },
         title: "Вакансии на официальном сайте завода | Работа на производстве",
         meta: {
           keywords: "вакансии барнаул, вакансии инженер",
@@ -414,7 +435,10 @@ function generateConfig(infoBlogData) {
       }),
       /*---------КОНТАКТЫ----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          ROUTES, 
+        },
         title: "Контакты ООО Термоблок",
         meta: {
           keywords: "ооо термоблок, контакты",
@@ -425,7 +449,10 @@ function generateConfig(infoBlogData) {
         chunks: ["contacts", "all", "map"],
       }) /*---------ПОДБОР И РАСЧЁТ----------- */,
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL: canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          ROUTES, 
+        },
         title: "Подбор и расчет пластинчатых теплообменников онлайн",
         meta: {
           keywords: "пластинчатый теплообменник подбор, расчет пластинчатого теплообменника онлайн",
@@ -439,7 +466,8 @@ function generateConfig(infoBlogData) {
       /*---------СЕКЦИЯ БЛОГА----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
           newsData: infoBlogData.filter(i=> i.type.includes('news')),
         },
         title: "Новое в производстве пластинчатых теплообменников",
@@ -454,7 +482,8 @@ function generateConfig(infoBlogData) {
       /*---------КАТАЛОГ----------- */
       new HtmlWebpackPlugin({
         templateParameters: {
-          canonicalURL: canonicalURL,
+          canonicalURL,
+          ROUTES,
           tis,
           foodtis,
         },

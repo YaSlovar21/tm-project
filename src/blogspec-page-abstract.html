@@ -28,10 +28,10 @@
       <h1 class="title-page"><%= htmlWebpackPlugin.options.heading %></h1>
       <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
 
-      <section class="grid grid-cols-12 gap-5 items-start pt-8 mt-14 border-t border-primary-strokke1">
+      <section class="grid grid-cols-12 gap-5 items-start pt-8 mt-14 border-t border-primary-strokke1 mobile:grid-cols-1 mobile:mx-auto mobile:*:col-start-1 mobile:*:col-span-1">
         <h2 class="up-title up-title_svg">Основное</h2>
         <% if (Object.keys(htmlWebpackPlugin.options.templateParameters).includes('bannerImg')) { %>
-          <img class="col-start-3 col-span-3 min-w-[150px] rounded-2xl max-w-[382px] mobile:rounded-xl mobile:opacity-50 mobile:h-full mobile:-z-10 mobile:absolute mobile:w-[45%] mobile:top-0 mobile:right-1 mobile:object-cover mobile:object-left-top" src="<%= require(`./images/${bannerImg}`)%>">
+          <img class="col-start-3 col-span-3 min-w-[150px] rounded-2xl max-w-[382px] mobile:object-cover mobile:object-left-top" src="<%= require(`./images/${bannerImg}`)%>">
         <% } %>
         <div class="specarticle-cont col-start-6 col-span-7">
           <%= require('html-loader!./articles-spec/' + articleFile).default %>

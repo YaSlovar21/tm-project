@@ -55,27 +55,61 @@
     </div>
     <section class="content container-12 pt-4 border-t border-primary-strokke1">
       <h2 class="up-title up-title_svg col-span-2">О продукции</h2>
+      <figure class="col-span-3 relative after:bg-blacktheme after:bg-opacity-25 after:w-full after:h-full after:top-0 after:left-0 after:absolute">
+        <img class="" src="<%=require('./images/2024content/osn-prod.png')%>" alt="продукция">
+      </figure>
+
       <div class="col-start-7 col-span-6">
-        <p class="text-m">Основное направление компании - производство теплообменников<span
-          class="video-main__span-accent"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
+        <p class="text-2xl text-white max-w-[811px]">Основное направление компании - производство теплообменников<span
+          class="video-main__span-accent whitespace-nowrap"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
         МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
         теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
         сложности.
         </p>
-        <ul class="flex pt-4 mt-8 border-y border-primary-strokke1">
-          <li class="border-r border-primary-strokke1">
-            <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
-            <p class="text-m">для жкх</p>
-            <img class="" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
-
+        <ul class="mt-14 border-t border-primary-strokke1">
+          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex  relative z-[1] -mb-24 hover:mb-0 ">
+            <img class="basis-1/3  min-w-0" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+              <p class="text-m">для жкх</p>
+            </div>
+            <a class="mr-8 ml-auto block" href="<%= ROUTES.pto %>">
+              <span class="inset0"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
           </li>
-          <li class="pl-2">
-            <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
-            <p class="text-m">для пищевой отрасли</p>
-            <img class="" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
-
+          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex group pl-2 border-t relative z-[2] -mb-24 hover:mb-0 border-primary-strokke1">
+            <img class="basis-1/3 min-w-0" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+              <p class="text-m">для пищевой отрасли</p>
+            </div>
+            <a class="mr-8 ml-auto block" href="<%= ROUTES.ptoFood %>">
+              <span class="inset0"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+          </li>
+          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex pl-2 border-t relative z-[3] -mb-24  hover:mb-0 border-primary-strokke1">
+            <div class="basis-1/3">
+              <img class="min-w-0 mx-auto max-w-[180px]" src="<%=require('./images/payan/payanii-main.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+              <p class="text-m">паяные</p>
+            </div>
+            <a class="mr-8 ml-auto block" href="<%= ROUTES.payan %>">
+              <span class="inset0"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
           </li>
         </ul>
+        <figure class="bg-blacktheme relative h-24 z-10 border-t border-primary-strokke1"></figure>
     </div>
     </section>
     <section class="content container-2 py-12">
@@ -199,13 +233,13 @@
         <p class="text-m">На базе теплоообменников собственного производства предприятие предлагает
             готовые решения.</p>
         <div class="my-8 border-primary-strokke1">
-          <a class="pt-4 border-t border-primary-strokke1 flex flex-row-reverse justify-between link-beauty_moveup" href="/blochnye-teplovye-punkty/" >
+          <a class="pt-4 border-t border-primary-strokke1 flex  link-beauty_moveup" href="<%= ROUTES.btp %>" >
+            <img class="max-w-[90%] min-w-0 basis-1/3 mr-5" src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт">
             <h3 class="text-m max-w-[300px] font-medium text-gray-300">Блочные тепловые пункты</h3>
-            <img class="max-w-[90%] min-w-0 basis-1/3" src="<%=require('./images/main_mini/btp-adv-img.png')%>" alt="Готовое решение - блочный тепловой пункт">
           </a>
-          <a class="pt-4 border-t border-primary-strokke1 flex flex-row-reverse justify-between link-beauty_moveup" href="/pasterizatsionno-okhladitelnye-ustanovki.html">
-            <h3 class="text-m font-medium text-gray-300">Установки пищевые пастеризационно охладительные</h3>
-            <img class="max-w-[90%] min-w-0 basis-1/3" src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка">
+          <a class="pt-4 border-t border-primary-strokke1 flex link-beauty_moveup" href="<%= ROUTES.pou %>">
+            <img class="max-w-[90%] min-w-0 basis-1/3 mr-5" src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка">
+            <h3 class="text-m max-w-[300px] font-medium text-gray-300">Установки пищевые пастеризационно охладительные</h3>
           </a>
         </div>
       </div>
@@ -217,17 +251,19 @@
         <p class="before-small-circle-indent  max-w-[83%] text-m">На данный момент мы осуществляем изготовление штампов, остнастки для производства двух новых теплообменников ДУ65. Данные пластины будут иметь инновационную гофрированную поверхность.</p>
       </div>
       <img class="col-span-2 my-8" src="<%=require('./images/2024content/aboutmain.jpg')%>" alt="">
-      <img class="max-w-[58%] mx-auto row-span-2" src="<%=require('./images/2024content/test-turbulent.png')%>">
-      <p class="text-m max-w-[700px]">Гофрированная поверхность обеспечивает большую площадь теплообмена, снижая тем самым металлоемкость и цену изделия. Также при такой поверхности в теплообменнике становится меньше точек застоя, повышается общая эффективность теплообмена.</p>
-      <a class="ui-button-gray mr-auto" href="/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html">Подробнее</a>
+      <div class="col-span-2 grid grid-cols-12">
+        <img class="row-span-2 col-start-3 col-span-3" src="<%=require('./images/2024content/test-turbulent.png')%>">
+        <p class="text-m max-w-[700px] col-start-7 col-span-6">Гофрированная поверхность обеспечивает большую площадь теплообмена, снижая тем самым металлоемкость и цену изделия. Также при такой поверхности в теплообменнике становится меньше точек застоя, повышается общая эффективность теплообмена.</p>
+        <a class="ui-button-gray mr-auto self-end col-start-7 col-span-2" href="<%= ROUTES.ptoNewGofr %>">Подробнее</a>
+      </div>
 
-      <span class="row-span-2"></span>
+      <span class="row-span-2 up-title up-title_svg mt-28">События</span>
       <h3 class="subtitle mt-20">Актуальные события</h3>
       <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
       <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1">
         <% newsData.map((art, index) => { %>
           <li class=" transition-all duration-300 relative -mb-32 hover:mb-0 bg-blacktheme" style="z-index: <%=index+1%>;">
-            <p class="text-lg my-1 text-gray-400 mx-auto"><%= art.formattedDate %></p>
+            <p class="text-lg my-1 text-gray-400"><%= art.formattedDate %></p>
             <img class="col-start-3 col-span-3" src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
             <div class="col-start-7 col-span-4">
               <h3 class="up-text-title font-medium mb-2"><%= art.heading %></h3>

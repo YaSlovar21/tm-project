@@ -82,7 +82,7 @@
     @apply flex items-stretch;
   }
   .before-small-circle-indent {
-    @apply relative indent-4;
+    @apply relative indent-8;
   }
 
   .before-small-circle-indent::before {

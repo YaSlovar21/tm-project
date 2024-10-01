@@ -78,6 +78,12 @@
             </tr>
           </tbody>
         </table>
+      </div>
+      </div>
+    <div class="container-12 pt-4 border-t border-primary-strokke1 mt-14">
+        <span class="up-title up-title_svg row-span-2 col-span-5">Дополнительно</span>
+        <div class="col-span-7">
+
         <ul class="text-base text-gray-200 mobile:text-sm">
           <li>Расчёт № <%= (tiNumberFromTm !== '') ? tiNumberFromTm : '<span class="span-200 span-color-gray span-comment">(номер расчёта не закреплен)</span>' %></li>
           <li>Площадь теплообмена: <span class="span-500 span-alt-color-brand"><%= sOfHeatexchange%> м<sup>2</sup></span></li>
@@ -112,13 +118,13 @@
           </ul>
         </div>
         <% if (naznach === 'отопление') { %>
-          <div class="col-span-2">
-            <a class="text-orange text-2xl font-semibold link-beauty my-10 block" href="/plastinchatye-teploobmenniki/otoplenie/">Пластинчатые теплообменники для отопления --></a>
+          <div class="col-span-7 py-4 border-t border-primary-strokke1 my-20">
+            <a class="text-orange text-2xl max-w-[338px] font-semibold link-beauty block" href="/plastinchatye-teploobmenniki/otoplenie/">Пластинчатые теплообменники для отопления --></a>
           </div>
         <% } %>
         <% if (naznach === 'гвс') { %>
-          <div class="col-span-2">
-            <a class="text-orange text-2xl font-semibold link-beauty my-20 block" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">Пластинчатые теплообменники для гвс --></a>
+          <div class="col-span-7 py-4 border-t border-primary-strokke1 my-20">
+            <a class="text-orange text-2xl max-w-[338px] font-semibold link-beauty  block" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">Пластинчатые теплообменники для гвс --></a>
           </div>
         <% } %>
     </div>
