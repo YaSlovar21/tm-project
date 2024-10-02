@@ -80,14 +80,8 @@
 
 .contacts__ya-map {
   min-height: 200px;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  border: 1px solid #2f2f2f;
   border-radius: 10px;
-  box-shadow: 0 4px 1px rgb(0 0 0 / 22%);
   overflow: hidden;
-
 }
 
 .contacts__main-title {
@@ -106,7 +100,7 @@
 .contacts__tel {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 157%;
   /* or 28px */
   letter-spacing: -0.035em;
@@ -181,9 +175,6 @@
     min-width: calc(100% - 20px);
     margin-left: auto;
     margin-right: auto;
-  }
-  .contacts__tel {
-    font-size: 14px;
   }
   .contacts__main-title {
     font-size: 14px;

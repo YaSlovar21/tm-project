@@ -12,7 +12,7 @@
   <%= require('html-loader!./inner-metrika.html').default %>
 
   <div class="page page_up">
-    <header class="header header-up">
+    <header class="header header-up content">
       <a href="/" class="header__logo">
         <img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/>
       </a>
@@ -26,13 +26,13 @@
         <a class="flexburton__breadcrumbs-link" href="/blog-proizvodstva/">Блог производителя</a>
         <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
-      <section class="grid grid-cols-12 items-start pt-8 my-14 border-t border-primary-strokke1">
+      <section class="grid grid-cols-12 items-start pt-8 my-14 border-t border-primary-strokke1 mobile:block">
         <div class="col-span-2">
           <span class="upsubtitle"><%= upsubtitle %></span>
         </div>
         <div class="col-span-3 flex flex-col items-start">
-          <img class="<%= `info__aside-img object-contain object-center ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__aside-img_custom' : ''}` %>" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? require(`./api-images/blog-posters/${customPoster}`) : isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
-          <a class="info__aside-button link-beauty ui-button mt-3">
+          <img class="<%= `info__aside-img object-contain object-center ${Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? 'info__aside-img_custom' : ''}` %> mobile:my-4" alt="<%= htmlWebpackPlugin.options.title %>" src="<%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('customPoster') && customPoster!=='' ? require(`./api-images/blog-posters/${customPoster}`) : isGkh ? require('./images/main_mini/ti45_new.png') : require('./images/main_mini/many-section-grid.png') %>">
+          <a class="info__aside-button link-beauty ui-button mt-3 mobile:absolute">
            <%= Object.keys(htmlWebpackPlugin.options.templateParameters).includes('buttonText') ? buttonText : `Рассчитать теплообменник` %>
           </a>
         </div>

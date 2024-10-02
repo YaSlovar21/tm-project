@@ -17,7 +17,7 @@
     <%= require('html-loader!./inner-metrika.html').default %>
     <div >
 
-    <header class="header header-up">
+    <header class="header header-up content">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
       <div class="header__right">
           <%= require('html-loader!./insets/asides/inner-header.html').default %>
@@ -59,17 +59,17 @@
         <h2 class="subtitle">Области применения</h2>
         <p class="text-m max-w-[760px]">Пластинчатый теплообменник марки <img class="inline-block" src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;" alt="Теплохит"> имеет высокую эффективность, что позволяет создавать теплообменники с коэффициентом регенерации тепла 92% и выше и вести <span class="span-bold span-bold_spacing" >температурную обработку в мягких режимах</span>, не допуская перегрева или переохлаждения продукта.</p>
       </div>
-      <ul class="col-span-2 mt-8 *:pt-4 *:border-t *:border-primary-strokke1 *:grid *:grid-cols-12">
+      <ul class="col-span-2 mt-8 *:pt-4 *:border-t *:border-primary-strokke1 *:grid *:grid-cols-12 mobile:*:block mobile:*:py-4">
         <li>
           <span class="upsubtitle col-span-2">молоко, сливки, мороженое</span>
           <img class="col-span-4 justify-self-end" src="<%=require('./images/foodnew/mol.png')%>" alt="теплообменники для молока сливок и мороженого">
           <div class="col-span-6">
             <h3 class="up-text-title text-orange">Теплообменники для молочной промышленности</h3>
-            <p class="text-m max-w-[444px] my-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis error obcaecati, nulla quibusdam totam, dolorem similique corrupti consectetur culpa doloribus veniam.</p>
+            <p class="text-m max-w-[444px] my-7">Для охлаждения и пастеризации молока и молочных продкутов. Теплообменники с секциями регенерации тепла, различными средами нагрева (пар, вода).</p>
             <ul class="flex gap-5">
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Расход</h4>
-                <p class="text-m uppercase">тонн/ч</p>
+                <p class="text-m uppercase">0,5-25 тонн/ч</p>
               </li>
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Рабочее давление</h4>
@@ -83,11 +83,11 @@
           <img class="col-span-4 justify-self-end" src="<%=require('./images/foodnew/piv.png')%>" alt="">
           <div class="col-span-6">
             <h3 class="up-text-title text-orange">Теплообменники для пивоваренной промышленности</h3>
-            <p class="text-m max-w-[444px] my-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis error obcaecati, nulla quibusdam totam, dolorem similique corrupti consectetur culpa doloribus veniam.</p>
+            <p class="text-m max-w-[444px] my-7">Пастеризация и охлаждения сусла с использованием различных сред и температур для охлаждения. Возможно изготопление с полимерным покрытием.</p>
             <ul class="flex gap-5">
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Расход</h4>
-                <p class="text-m uppercase">тонн/ч</p>
+                <p class="text-m uppercase">0,5-25 тонн/ч</p>
               </li>
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Рабочее давление</h4>
@@ -105,7 +105,7 @@
             <ul class="flex gap-5">
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Расход</h4>
-                <p class="text-m uppercase">тонн/ч</p>
+                <p class="text-m uppercase">3-12 тонн/ч</p>
               </li>
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Рабочее давление</h4>
@@ -123,7 +123,7 @@
             <ul class="flex gap-5">
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Расход</h4>
-                <p class="text-m uppercase">тонн/ч</p>
+                <p class="text-m uppercase">3-12 тонн/ч</p>
               </li>
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Рабочее давление</h4>
@@ -141,7 +141,7 @@
             <ul class="flex gap-5">
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Расход</h4>
-                <p class="text-m uppercase">тонн/ч</p>
+                <p class="text-m uppercase">По согласованию</p>
               </li>
               <li>
                 <h4 class="text-[#c4c4c4] text-base font-bold mb-3">Рабочее давление</h4>

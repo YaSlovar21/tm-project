@@ -4,4 +4,5 @@
     align-self: stretch;
     justify-content: flex-end;
     line-height: 1.4;
+    align-items: flex-start;
 }

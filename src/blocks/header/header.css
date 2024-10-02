@@ -4,13 +4,9 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 20px 0;
-    flex-wrap: no-wrap;
-    max-width: calc(100% - 80px);
-    max-width: 1600px;
 }
 
 .header-up {
-  max-width: calc(100% - 180px);
   @apply grid grid-cols-12;
 }
 
@@ -38,7 +34,7 @@
 }
 
 .header__under-nav {
-    @apply grid grid-cols-10;
+    @apply grid grid-cols-10 laptop:block;
 
 
 }

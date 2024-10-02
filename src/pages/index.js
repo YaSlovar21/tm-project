@@ -218,8 +218,10 @@ document.querySelector('.header-index-cta')?.addEventListener('mousedown', ()=> 
 });
 
 platesSvg.addEventListener("click", (evt) => {
-  popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
-  console.log(initialHeatEx[evt.target.dataset.to]);
+  if (evt.target.dataset.to) {
+    popupHeatEx.open(initialHeatEx[evt.target.dataset.to]);
+    console.log(initialHeatEx[evt.target.dataset.to]);
+  }
 });
 
 document.querySelectorAll('.photo-grid__item').forEach((item) => {

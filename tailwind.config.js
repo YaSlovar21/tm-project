@@ -47,6 +47,7 @@ module.exports = {
           DEFAULT: '#E7461C',
           dark: '#B72F0B',
           darker: '#901E00',
+          accent: '#E7381C',
         },
         primary: {
           strokke1: '#4F4F4F',

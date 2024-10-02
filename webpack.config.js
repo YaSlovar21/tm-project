@@ -418,7 +418,7 @@ function generateConfig(infoBlogData) {
         filename: "about/index.html",
         chunks: ["about", "all", "map"],
       }),
-      /* ВАКАНСИИ */
+      /* ВАКАНСИИ 
       new HtmlWebpackPlugin({
         templateParameters: { 
           canonicalURL,
@@ -432,7 +432,7 @@ function generateConfig(infoBlogData) {
         template: "./src/vakansii.html",
         filename: "about/vakansii/index.html",
         chunks: ["vakansii", "all", "map"],
-      }),
+      }),*/
       /*---------КОНТАКТЫ----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
@@ -468,7 +468,7 @@ function generateConfig(infoBlogData) {
         templateParameters: { 
           canonicalURL,
           ROUTES,
-          newsData: infoBlogData.filter(i=> i.type.includes('news')),
+          newsData: infoBlogData,
         },
         title: "Новое в производстве пластинчатых теплообменников",
         meta: {

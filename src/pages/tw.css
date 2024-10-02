@@ -53,6 +53,7 @@
  .content {
     @apply max-w-[calc(100%-180px)] mx-auto pc:max-w-[calc(100%-80px)] mobile:max-w-[calc(100%-20px)];
   }
+
   .twrapper {
     @apply max-w-[1520px] mx-auto;
   }
@@ -153,7 +154,7 @@
     @apply text-2xl text-[#d4d4d4] font-medium mb-5  mobile:text-xl;
   }
   .text-m {
-    @apply text-xl text-white leading-snug mvpc:text-lg mobile:text-base;
+    @apply text-xl text-white leading-snug mvpc:text-lg mobile:text-sm;
   }
 }
 
