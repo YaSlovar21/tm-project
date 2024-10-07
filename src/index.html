@@ -20,18 +20,20 @@
     </div>
   </header>
   <main>
-    <div class="my-12 content pt-4 border-t border-primary-strokke1 flex flex-row-reverse">
-      <div class="basis-1/2">
-        <h1 class="title-page">100% локализация производства</h1>
-        <h2 class="subtitle max-w-[650px]">Пластинчатых разборных тепплообменников</h2>
-      </div>
-      <div class="header-index__video-container basis-[calc(50%-20px)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
-        <figure class="header-index__darked"></figure>
-        <!--Здесь рендерится видео в зависимости от разрешения экрана-->
-        <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
-          <source src="videos/tm_test_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>data-swiper-parallax-scale="0.8"-->
+    <div class="my-12 content pt-4 border-t border-primary-strokke1">
+      <h1 class="title-page">Производство пластинчатых теплообменников</h1>
+      <div class=" flex flex-row items-end">
+        <div class="basis-1/4">
+          <h2 class="subtitle max-w-[650px]">100% локализация производства Пластинчатых разборных тепплообменников</h2>
+        </div>
+        <div class="header-index__video-container basis-[calc(75%-20px)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
+          <figure class="header-index__darked"></figure>
+          <!--Здесь рендерится видео в зависимости от разрешения экрана-->
+          <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
+            <source src="videos/tm_test_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>data-swiper-parallax-scale="0.8"-->
+        </div>
       </div>
       <!--
       <div class="max-w-[--head-wrap] rounded-r-xl bg-[#1a1a1a] py-6 box-border mvpc:max-w-[calc(100%-10px)]">
@@ -55,71 +57,120 @@
     </div>
     <section class="content container-12 pt-4 border-t border-primary-strokke1 mobile:block">
       <h2 class="up-title up-title_svg col-span-2">О продукции</h2>
-      <figure class="col-span-3 relative after:bg-blacktheme after:bg-opacity-25 after:w-full after:h-full after:top-0 after:left-0 after:absolute">
+     <!-- <figure class="col-span-3 relative after:bg-blacktheme after:bg-opacity-25 after:w-full after:h-full after:top-0 after:left-0 after:absolute">
         <img class="" src="<%=require('./images/2024content/osn-prod.png')%>" alt="продукция">
-      </figure>
+      </figure>-->
 
-      <div class="col-start-7 col-span-6">
-        <p class="text-2xl text-white max-w-[811px]">Основное направление компании - производство теплообменников<span
+      <div class="col-start-4 col-span-9">
+        <p class="text-2xl text-white max-w-[811px] max-w-full text-4xl">Основное направление компании - производство теплообменников<span
           class="video-main__span-accent whitespace-nowrap"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
         МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
         теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
         сложности.
         </p>
-        <ul class="mt-14 border-t border-primary-strokke1 mobile:*:mb-4">
-          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex  relative z-[1] -mb-24 hover:mb-0 ">
-            <img class="basis-1/3  min-w-0" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
-            <div>
-              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
-              <p class="text-m">для жкх</p>
-            </div>
-            <a class="mr-8 ml-auto block" href="<%= ROUTES.pto %>">
-              <span class="inset0"></span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </a>
-          </li>
-          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex group pl-2 border-t relative z-[2] -mb-24 hover:mb-0 border-primary-strokke1">
-            <img class="basis-1/3 min-w-0" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
-            <div>
-              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
-              <p class="text-m">для пищевой отрасли</p>
-            </div>
-            <a class="mr-8 ml-auto block" href="<%= ROUTES.ptoFood %>">
-              <span class="inset0"></span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </a>
-          </li>
-          <li class="bg-blacktheme pt-4 group transition-all duration-200 flex pl-2 border-t relative z-[3] -mb-24  hover:mb-0 border-primary-strokke1">
-            <div class="basis-1/3">
-              <img class="min-w-0 mx-auto max-w-[180px]" src="<%=require('./images/payan/payanii-main.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
-            </div>
-            <div>
-              <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
-              <p class="text-m">паяные</p>
-            </div>
-            <a class="mr-8 ml-auto block" href="<%= ROUTES.payan %>">
-              <span class="inset0"></span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <figure class="bg-blacktheme relative h-24 z-10 border-t border-primary-strokke1"></figure>
+        <div class="mt-14 border-t border-primary-strokke1 mobile:*:mb-4 relative">
+          <!--
+          <ul class="">
+            <li class="bg-blacktheme pt-4 group transition-all duration-200 flex  relative z-[1] -mb-24 hover:mb-0 ">
+              <img class="basis-1/3  min-w-0" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">для жкх</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.pto %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+            <li class="bg-blacktheme pt-4 group transition-all duration-200 flex group pl-2 border-t relative z-[2] -mb-24 hover:mb-0 border-primary-strokke1">
+              <img class="basis-1/3 min-w-0" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">для пищевой отрасли</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.ptoFood %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+            <li class="bg-blacktheme pt-4 group transition-all duration-200 flex pl-2 border-t relative z-[3] -mb-24  hover:mb-0 border-primary-strokke1">
+              <div class="basis-1/3">
+                <img class="min-w-0 mx-auto max-w-[180px]" src="<%=require('./images/payan/payanii-main.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">паяные</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.payan %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+            <figure class="bg-blacktheme relative h-24 z-10 border-t border-primary-strokke1"></figure>
+          </ul>
+          -->
+          <ul class=" flex gap-5">
+            <li class="bg-blacktheme pt-4 group transition-all duration-200 hover:mb-0 ">
+              <img class="basis-1/3  min-w-0" src="<%=require('./images/3dSlider/pto.png')%>"alt="Пластинчатый теплообменник для жкх">
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">для жкх</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.pto %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+            <li class="bg-blacktheme pt-4 group transition-all duration-200  border-primary-strokke1">
+              <img class="basis-1/3 min-w-0" src="<%=require('./images/3dSlider/food.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">для пищевой отрасли</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.ptoFood %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+            <li class="pt-4 group transition-all duration-200 flex pl-2 border-t relative border-primary-strokke1">
+              <div class="basis-1/3">
+                <img class="min-w-0 mx-auto max-w-[180px]" src="<%=require('./images/payan/payanii-main.png')%>" alt="Пластинчатый теплообменник пищевого исполнения">
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
+                <p class="text-m">паяные</p>
+              </div>
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.payan %>">
+                <span class="inset0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
     </div>
     </section>
-    <section class="content container-2 py-12">
+    <section class="content container-2 pb-12 pt-4 border-t border-primary-strokke1 mt-20 ">
       <span class="up-title up-title_svg">Дополнительно</span>
       <div>
         <h2 class="subtitle">Дополнительно</h2>
         <p class="text-gray-200 text-m ">Вместе с теплообменником могут быть поставлены теплоизоляция разаботанная специально под нашу линейку теплообменников</p>
         <ul class="py-8 w-2/3 laptop:w-full">
           <li class="mb-4">
-            <a class="flex h-full group items-start text-gray-200" href="/plastinchatye-teploobmenniki/teploizolyaciya.html">
+            <a class="flex h-full group items-start text-gray-200" href="<%= ROUTES.teploizol %>">
               <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
                 <img class="object-cover object-left-top w-full h-full  min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/teplo-page-pto.png')%>" alt="Теплоизоляция пластинчатого теплообменника">
               </div>

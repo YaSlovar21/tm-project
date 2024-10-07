@@ -2,6 +2,7 @@ const ROUTES = {
     catalog: '/catalog/',
     pto: '/plastinchatye-teploobmenniki/',
     ptoNewGofr: '/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html',
+    teploizol: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
 
     ptoFood: '/pishchevye-teploobmenniki.html',
     btp: '/blochnye-teplovye-punkty/',

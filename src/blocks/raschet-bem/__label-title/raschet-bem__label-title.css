@@ -1,6 +1,8 @@
 .raschet-bem__label-title {
   font-size: 13px;
   color: #f2f2f2;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .raschet-bem__label-title_fluid {    /* Стиль для плавающего span *//* работает в связке с класом [input-id]-placeholder*/

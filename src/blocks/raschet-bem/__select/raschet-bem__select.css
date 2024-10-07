@@ -5,14 +5,21 @@
   font-weight: 300;
   font-size: 16px;
   margin: 0 0 0 10px;
+  margin: 0 0 0 10px;
   border-bottom: 1px solid #c2c2c2;
   border-bottom: 2px solid #565656b7;
   background: transparent;
 
-  padding: 7px 0;
+  padding: 8px 0;
   box-sizing: border-box;
   outline: none;
   position: relative;
   transition: all .6s linear;
 }
 
+.raschet-bem__select_dop {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid;
+  @apply border-y border-r border-primary-strokke1;
+}

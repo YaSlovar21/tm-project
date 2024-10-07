@@ -12,7 +12,7 @@ const { paths } = require('./sitemap');
 const { rawData, razbegPoMoshnosti } = require('./raschets');
 const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
-const { specPages } = require('./specPages');
+const { specPages, specPagesTypes } = require('./specPages');
 const { cycleData, blogThemesDict } = require('./consts');
 const { ROUTES } = require('./constants');
 
@@ -40,7 +40,7 @@ function generateTisHtmlPlugins() {
 
 function generateSpecPagesHtmlPlugins() {
   return specPages.map(articleData => {
-    return new HtmlWebpackPlugin({...articleData, templateParameters: {...articleData.templateParameters,specPages}})
+    return new HtmlWebpackPlugin({...articleData, templateParameters: {...articleData.templateParameters,specPages, upsubtitle: specPagesTypes[articleData.type]}})
   })
 }
 

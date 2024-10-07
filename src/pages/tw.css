@@ -138,7 +138,7 @@
   }
 
   .subtitle {
-    @apply text-[33px] uppercase text-[#B9B9B9] font-semibold mb-12 mvpc:text-3xl mobile:text-2xl;
+    @apply text-[33px] uppercase text-[#B9B9B9] font-semibold text-4xl mb-12 mvpc:text-3xl mobile:text-2xl;
   }
   .subtitle_spec {
     @apply mt-14;

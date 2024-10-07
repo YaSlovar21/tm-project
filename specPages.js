@@ -1,5 +1,5 @@
 const canonicalURL = "https://www.termoblok.ru"
-module.exports.specPages = [
+const specPages = [
     {
       type: "construction",
         templateParameters: {
@@ -210,3 +210,14 @@ module.exports.specPages = [
         chunks: ["blogSpecPage", "all", "map"],
       },
 ];
+
+const specPagesTypes = {
+  "production": "Продукция",
+  "service": "Эксплуатация",
+  "construction": "Конструкция теплообменника"
+}
+
+module.exports = {
+  specPages,
+  specPagesTypes
+}
