@@ -78,7 +78,7 @@ const data = templateFiles.map(item => {
     }
 
 
-    let naznach = '';
+    let naznach;
 
     if (nagrSredaParameters.out === '65.00') {
       naznach = 'гвс';

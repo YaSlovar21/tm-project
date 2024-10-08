@@ -8,63 +8,60 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/"  rel="canonical" />
 </head>
-<body>
+<body class="page">
   <%= require('html-loader!./inner-metrika.html').default %>
-  <div class="bg"></div>
-  <div class="page">
-    <header class="header" style="padding-left: 24px; padding-right: 24px;">
+    <header class="header header-up content">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
       <div class="header__right">
         <%= require('html-loader!./insets/asides/inner-header.html').default %>
       </div>
     </header>
     <main class="content">
-      <div class="flexburton flexburton_size_m flexburton_test flexburton_test-spec max-w-[1600px] mx-auto rounded-3xl drop-shadow-xl mobile:rounded-xl" style="background-color: #181717e3;">
-        <div class="flexburton__left-side max-w-[1170px] mx-auto">
-          <div class="flexburton__breadcrumbs flexburton__breadcrumbs_spec">
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
-              <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
-          </div>
-          <h1 class="text-5xl font-bold text-gray-200  max-w-3xl laptop:text-3xl laptop:max-w-xl mobile:text-2xl"><%= htmlWebpackPlugin.options.heading %></h1>
-          <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
-        </div>
-        <img class="min-w-[150px] rounded-2xl self-center max-w-[382px] mobile:rounded-xl mobile:opacity-50 mobile:h-full mobile:-z-10 mobile:absolute mobile:w-36 mobile:top-0 mobile:right-1 mobile:object-cover mobile:object-left-top" src="<%= require(`./images/par-voda/ti28-par-voda-sp.png`)%>">
+      <div class="flexburton__breadcrumbs flexburton__breadcrumbs_spec">
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/">Главная</a>
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec" href="/plastinchatye-teploobmenniki/">Пластинчатые теплообменники</a>
+        <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_spec flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a>
       </div>
-      <div class="max-w-[1170px] mx-auto py-10">
-
-          <p class="text-gray-200 text-lg max-w-4xl">
-            Теплообменник для горячего водоснабжения разделяет систему на два независимых контура.
-            Внешний контур циркулирует теплоноситель от ТЭЦ или котельной, внутренний контур - горячая вода для потребителя.
-            В системе горячего водоснабжения могут использоваться разные типы теплообменников, разборный пластинчатый является эффективным вариантом.
-          </p>
-          <p class="text-gray-200 text-lg max-w-4xl mt-4">
-            Существуют одноступенчатая и двухступенчатая схемы ГВС через пластинчатый теплообменник. Двухступенчатая схема ГВС
-            экономит теплоноситель за счет вторичного использования тепла из обратного трубопровода отопления.
-          </p>
-          <a class="text-lg text-orange-dark block font-semibold mt-4 link-beauty" href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html">Подробнее про теплообменники для горячего водоснабжения --></a>
-
+      <div class="container-2-lefted">
+        <h1 class="title-page col-start-2"><%= htmlWebpackPlugin.options.heading %></h1>
+        <p class="text-m col-start-2">
+          Теплообменник для горячего водоснабжения разделяет систему на два независимых контура.
+          Внешний контур циркулирует теплоноситель от ТЭЦ или котельной, внутренний контур - горячая вода для потребителя.
+          В системе горячего водоснабжения могут использоваться разные типы теплообменников, разборный пластинчатый является эффективным вариантом.
+        </p>
+        <p class="text-m mt-4 col-start-2">
+          Существуют одноступенчатая и двухступенчатая схемы ГВС через пластинчатый теплообменник. Двухступенчатая схема ГВС
+          экономит теплоноситель за счет вторичного использования тепла из обратного трубопровода отопления.
+        </p>
+        <a class=" col-start-2 text-m text-orange-dark block font-semibold mt-4 link-beauty" href="/blog-proizvodstva/plastinchatye-teploobmenniki-gvs.html">Подробнее про теплообменники для горячего водоснабжения --></a>
+      </div>
       <!--.filter(item => item.naznach === 'гвс')-->
-      <section class="">
-        <h2 class="text-2xl max-w-md mt-8 mb-4 font-semibold text-gray-100">Примеры расчётов теплообменников для горячего водоснабжения</h2>
-        <p class="text-base text-gray-200 mb-4">Пластинчатые теплообменники для систем гвс</p>
-        <ul class="grid grid-cols-4 gap-5 laptop:grid-cols-2 laptop:gap-2 mobile:grid-cols-1 *:bg-[#323232] *:rounded *:relative *:flex">
-          <% raschetsExamples.filter(item => item.naznach === 'гвс').forEach(function(ptoData) { %>
-            <li class="ras" data-moshnost="<%-ptoData.moshnostNumber%>">
-              <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/<%-ptoData.categoryPath%>/<%-ptoData.path%>.html">
-                Теплообменник <%-ptoData.naznach %> <%-ptoData.sreda1%>-<%-ptoData.sreda2%>
-                <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-ptoData.moshnostNumber%> <%-ptoData.moshnostMeasure%></span>
+      <section class="container-2-lefted items-start mt-24">
+        <span class="up-title up-title_svg row-span-4">Примеры расчётов</span>
+        <h2 class="subtitle">Примеры расчётов теплообменников для горячего водоснабжения</h2>
+        <p class="text-m mb-6">Пластинчатые теплообменники для систем гвс</p>
+        <div class="container-2-lefted col-span-2 border-t border-primary-strokke1">
+          <h3 class="upsubtitle mt-4">Для гвс</h3>
+          <ul class="">
+            <% raschetsExamples.filter(i => i.naznach ==='гвс').map((item,index) => { %>
+              <li class="">
+                <a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="/plastinchatye-teploobmenniki/<%-item.categoryPath%>/<%-item.path%>.html">
+                 Теплообменник <%-item.naznach %> <%-item.sreda1%>-<%-item.sreda2%>
+                <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-item.moshnostNumber%> <%-item.moshnostMeasure%></span>
               </a>
             </li>
-          <% }); %>
-        </ul>
-
+            <% }); %>
+          </ul>
+          <div class="col-start-2 py-4 border-t border-primary-strokke1 my-2">
+            <a class="text-orange text-m max-w-[338px] font-semibold link-beauty  block" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">Пластинчатые теплообменники для гвс --></a>
+          </div>
+        </div>
       </section>
-      </div>
+
     </main>
-  
+
     <%= require('html-loader!./insets/asides/inner-footer.html').default %>
-  </div>
+
   <!--Шаблон формы-->
   <template class="form-big-template">
     <%= require('html-loader!./insets/big-form-template.html').default %>

@@ -40,7 +40,14 @@ function generateTisHtmlPlugins() {
 
 function generateSpecPagesHtmlPlugins() {
   return specPages.map(articleData => {
-    return new HtmlWebpackPlugin({...articleData, templateParameters: {...articleData.templateParameters,specPages, upsubtitle: specPagesTypes[articleData.type]}})
+    return new HtmlWebpackPlugin({
+      ...articleData, 
+      templateParameters: {
+        ...articleData.templateParameters,
+        specPages, 
+        upsubtitle: specPagesTypes[articleData.type]
+      }
+    })
   })
 }
 
