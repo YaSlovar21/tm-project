@@ -25,25 +25,8 @@
       </div>
       <h1 class="title-page"><%= htmlWebpackPlugin.options.heading %></h1>
       <p class="text-sm text-gray-300 max-w-3xl mobile:text-xs"><%= htmlWebpackPlugin.options.intro %></p>
-
-
-      <!--.filter(item => item.naznach === 'гвс')
-      <section class="max-w-[1170px] mx-auto py-10">
-      <ul class="grid grid-cols-4 gap-5 laptop:grid-cols-2 laptop:gap-2 mobile:grid-cols-1 *:bg-[#323232] *:rounded *:relative *:flex">
-        <% raschetsExamples.forEach(function(ptoData) { %>
-          <li class="ras" data-moshnost="<%-ptoData.moshnostNumber%>">
-            <a class="py-6 px-4 text-gray-50 text-lg laptop:text-base hover:bg-[#2d2d2d] transition duration-300" href="/plastinchatye-teploobmenniki/<%-ptoData.categoryPath%>/<%-ptoData.path%>.html">
-              Теплообменник <%-ptoData.naznach %> <%-ptoData.sreda1%>-<%-ptoData.sreda2%>
-              <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-ptoData.moshnostNumber%> <%-ptoData.moshnostMeasure%></span>
-            </a>
-          </li>
-        <% }); %>
-      </ul>
-      <span class="text-gray-700 block text-base my-5">Раздел в разработке</span>
-      </section>-->
-
       <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Для гвс</h3>
+        <h2 class="upsubtitle mt-4  row-span-2">Для гвс</h2>
         <ul class="">
           <% raschetsExamples.filter(i => i.naznach ==='гвс').map((item,index) => { %>
             <li class="">
@@ -54,12 +37,12 @@
           </li>
           <% }); %>
         </ul>
-        <div class="col-start-2 py-4 border-t border-primary-strokke1 my-2">
+        <div class="py-4 border-t border-primary-strokke1 my-2">
           <a class="text-orange text-m max-w-[338px] font-semibold link-beauty  block" href="/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/">Пластинчатые теплообменники для гвс --></a>
         </div>
       </div>
       <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Для отопления</h3>
+        <h2 class="upsubtitle mt-4 row-span-2">Для отопления</h2>
         <ul class="">
           <% raschetsExamples.filter(i => i.naznach ==='отопление').map((item,index) => { %>
             <li class="">
@@ -70,12 +53,12 @@
           </li>
           <% }); %>
         </ul>
-        <div class="col-start-2 py-4 border-t border-primary-strokke1 my-2">
+        <div class="py-4 border-t border-primary-strokke1 my-2">
           <a class="text-orange text-m max-w-[338px] font-semibold link-beauty block" href="/plastinchatye-teploobmenniki/otoplenie/">Пластинчатые теплообменники для отопления --></a>
         </div>
       </div>
       <div class="container-2 col-span-2 border-t border-primary-strokke1">
-        <h3 class="upsubtitle mt-4">Специальные</h3>
+        <h2 class="upsubtitle mt-4">Специальные</h2>
         <ul class="">
           <% raschetsExamples.filter(i => !i.naznach).map((item,index) => { %>
             <li class="">

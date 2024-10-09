@@ -72,7 +72,7 @@
 @import url(../blocks/sections/secondgridbtp/secondgridbtp.css);
 
 @import url(../blocks/introgrid/introgrid.css);
-@import url(../blocks/table-grid/table-grid.css);
+
 
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__link/feynman__link.css);
@@ -95,7 +95,6 @@
 
 
 @import url(../blocks/animate/animate.css);
-@import url(../blocks/tm-btp-advantages/tm-btp-advantages.css);
 @import url(../blocks/btp-adv/btp-adv.css);
 /*Часто задаваемые вопросы*/
 @import url(../blocks/frequently/frequently.css);

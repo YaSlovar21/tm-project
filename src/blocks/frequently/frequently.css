@@ -19,8 +19,8 @@
 }
 
 .frequently__question {
-    font-size: 20px;
-    font-weight: 400;
+
+    font-weight: 500;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -31,12 +31,6 @@
 
 .frequently__item:first-of-type .frequently__question {
   @apply border-none;
-}
-
-@media screen and (max-width: 768px) {
-  .frequently__question {
-    font-size: 18px;
-  }
 }
 
 
@@ -53,11 +47,7 @@
     margin: 12px 0 20px;
     display: none;
     visibility: hidden;
-    font-size: 18px;
     background-color: transparent;
-
-    line-height: 1.4;
-
     opacity: 0;
     transition: opacity 2s, visibility 1s linear 1s;
     transition-delay: 2s, 0s;

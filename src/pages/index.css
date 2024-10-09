@@ -55,10 +55,7 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
 
-@import url(../blocks/prod-intro/prod-intro.css);
-@import url(../blocks/prod-intro/__title/prod-intro__title.css);
-@import url(../blocks/prod-intro/__paragraph/prod-intro__paragraph.css);
-@import url(../blocks/prod-intro/__link/prod-intro__link.css);
+
 
 /*
 @import url(../blocks/table/table.css);
@@ -189,11 +186,6 @@
 /*ПРОДУКЦИЯ 3D Slider*/
 @import url(../blocks/product-types/product-types.css);
 
-@import url(../blocks/ds/ds.css);
-@import url(../blocks/ds/__link-to/ds-intro__link-to.css);
-@import url(../blocks/ds/__link-to/_place_brand/ds-intro__link-to_place_brand.css);
-
-@import url(../blocks/ds-intro/ds-intro.css);
 
 @import url(../blocks/highliter/highliter.css);
 

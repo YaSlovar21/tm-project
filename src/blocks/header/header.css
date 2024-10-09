@@ -11,7 +11,7 @@
 }
 
 .header__right {
-    @apply col-span-10 w-full;
+    @apply col-span-10 w-full mobile:col-span-9;
 
     display: flex;
     flex-direction: column;
@@ -30,8 +30,14 @@
 }
 
 .header__logo {
-    @apply col-span-2;
+    @apply col-span-2 mobile:col-span-3;
 }
+
+
+  .header__logo-img {
+    @apply mvpc:max-w-[158px] mobile:max-w-full;
+  }
+
 
 .header__under-nav {
     @apply grid grid-cols-10 laptop:block;

@@ -56,8 +56,6 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
 
-@import url(../blocks/relev/relev.css);
-
 
 @import url(../blocks/techniques/techniques.css);
 
@@ -79,8 +77,6 @@
 
 @import url(../blocks/table/table.css);
 @import url(../blocks/kaufman/kaufman.css);
-
-@import url(../blocks/linkblock/linkblock.css);
 
 @import url(../blocks/princip/princip.css);
 @import url(../blocks/po/po.css);
