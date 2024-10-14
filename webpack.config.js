@@ -9,40 +9,49 @@ const fetch1 = require('node-fetch');
 const canonicalURL = 'https://www.termoblok.ru'
 
 const { paths } = require('./sitemap');
+
+
 const { rawData, razbegPoMoshnosti } = require('./raschets');
+const { staticRaschet } = require('./raschetStatic');
+
 const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
 const { specPages, specPagesTypes } = require('./specPages');
 const { cycleData, blogThemesDict } = require('./consts');
 const { ROUTES } = require('./constants');
 
-console.log(rawData);
 
-
-function generateRaschetHtmlPlugins() {
-  return rawData.map(ptoData => {
-    return new HtmlWebpackPlugin({
-      title: ptoData.title ? ptoData.title:  `Какой то расчёт`,
-      template: "./src/abstract-raschet-page.html", // шаблон
-      filename: `plastinchatye-teploobmenniki/${ptoData.naznach === 'гвс' ? 'goryachee-vodosnabzhenie-gvs' : ptoData.naznach === 'отопление' ? 'otoplenie' : 'raschets'}/${ptoData.path}.html`,
-      templateParameters: ptoData,
-      razbegPoMoshnosti,
-      chunks: ["blogSpecPage", "all", "map"],
+function generateRaschetHtmlPlugins(isDevServer) {
+    return rawData.map(ptoData => {
+      return new HtmlWebpackPlugin({
+        title: ptoData.title ? ptoData.title:  `Какой то расчёт`,
+        template: "./src/abstract-raschet-page.html", // шаблон
+        filename: `plastinchatye-teploobmenniki/${ptoData.naznach === 'гвс' ? 'goryachee-vodosnabzhenie-gvs' : ptoData.naznach === 'отопление' ? 'otoplenie' : 'raschets'}/${ptoData.path}.html`,
+        templateParameters: {...ptoData, isDevServer},
+        razbegPoMoshnosti,
+        chunks: ["blogSpecPage", "all", "map"],
+      })
     })
-  })
 };
 
-function generateTisHtmlPlugins() {
+function generateTisHtmlPlugins(isDevServer) {
   return tis.concat(foodtis).map(ptoData => {
-    return new HtmlWebpackPlugin(ptoData)
+    return new HtmlWebpackPlugin({
+      ...ptoData,
+      templateParameters: {
+        ...ptoData.templateParameters,
+        isDevServer
+      }
+    })
   })
 }
 
-function generateSpecPagesHtmlPlugins() {
+function generateSpecPagesHtmlPlugins(isDevServer) {
   return specPages.map(articleData => {
     return new HtmlWebpackPlugin({
       ...articleData, 
       templateParameters: {
+        isDevServer,
         ...articleData.templateParameters,
         specPages, 
         upsubtitle: specPagesTypes[articleData.type]
@@ -51,10 +60,22 @@ function generateSpecPagesHtmlPlugins() {
   })
 }
 
-function generateBlogPagesHtmlPlugins(articles) {
+const dateNow = (new Date()).toString();
+let generatedPaths = [];
+
+function generateBlogPagesHtmlPlugins(articles, isDevServer) {
   return articles.map(article => {
+    generatedPaths.push(
+      {
+        path: `${ROUTES.blog}${article.staticPage}`,
+        lastmod: dateNow,
+        priority: 0.7,
+        changefreq: 'monthly'
+      }
+    )
     return new HtmlWebpackPlugin({
       templateParameters: {
+        isDevServer,
         canonicalURL: canonicalURL,
         upsubtitle: article.type.includes('news') ? blogThemesDict['news'] : blogThemesDict[article.type[0]],
         isGkh: article.type.includes('gkh'),
@@ -80,12 +101,12 @@ function generateBlogPagesHtmlPlugins(articles) {
   })
 }
 
-function generateConfig(infoBlogData) {
+function generateConfig(infoBlogData, isDevServer) {
 
-  const htmlRaschetPlugins = generateRaschetHtmlPlugins();
-  const htmlTisPlugins = generateTisHtmlPlugins();
-  const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData);
-  const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins();
+  const htmlRaschetPlugins = generateRaschetHtmlPlugins(isDevServer);
+  const htmlTisPlugins = generateTisHtmlPlugins(isDevServer);
+  const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData, isDevServer);
+  const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins(isDevServer);
 
   return {
     entry: {
@@ -253,6 +274,7 @@ function generateConfig(infoBlogData) {
         templateParameters: { 
           canonicalURL,
           ROUTES,
+          isDevServer,
           tis,
           foodtis,
           newsData: infoBlogData.filter(i=> i.type.includes('news')),
@@ -270,6 +292,7 @@ function generateConfig(infoBlogData) {
       /*---------ПРОДУКЦИЯ----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES,
         },
@@ -285,7 +308,10 @@ function generateConfig(infoBlogData) {
       }),
       /*---------ПЛАСТИНЧАТЫЕ ТЕПЛООБМЕННИКИ----------- */
       new HtmlWebpackPlugin({
-        templateParameters: { canonicalURL },
+        templateParameters: { 
+          canonicalURL,
+          isDevServer,
+        },
         title: "Пластинчатые теплообменники | Аппараты теплообменные разборные",
         meta: {
           keywords: "пластинчатые теплообменники, пластинчатый теплообменник",
@@ -298,6 +324,7 @@ function generateConfig(infoBlogData) {
       /*---------ПРИМЕРЫ РАСЧЁТОВ----------- */
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL: canonicalURL,
           ROUTES,
           raschetsExamples: rawData,
@@ -316,6 +343,7 @@ function generateConfig(infoBlogData) {
       /*----------АГРЕГ ТО ОТОПЛЕНИЕ---------- */
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL,
           ROUTES,
           raschetsExamples: rawData,
@@ -334,6 +362,7 @@ function generateConfig(infoBlogData) {
       /*----------АГРЕГ ТО ГВС---------- */
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL,
           ROUTES,
           raschetsExamples: rawData,
@@ -352,6 +381,7 @@ function generateConfig(infoBlogData) {
       /*---------ПИЩЕВЫЕ ТЕПЛООМБЕННИКИ----------- */
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL,
           ROUTES,
         },
@@ -366,6 +396,7 @@ function generateConfig(infoBlogData) {
       }) /*---------БЛОЧНЫЕ ТЕПЛОВЫЕ ПУНТЫ----------- */,
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL, 
           btps: btpexamples,
           ROUTES,
@@ -382,6 +413,7 @@ function generateConfig(infoBlogData) {
       }) /*---------ПАСТЕРИЗАЦИОННЫЕ УСТАНОВКИ----------- */,
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL,
           ROUTES,
         },
@@ -397,6 +429,7 @@ function generateConfig(infoBlogData) {
       /*---------СЕРВИС И ЗАПАСНЫЕ ЧАСТИ----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES,
          },
@@ -412,6 +445,7 @@ function generateConfig(infoBlogData) {
       /*---------О КОМПАНИИ----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES,
           cycleData
@@ -443,6 +477,7 @@ function generateConfig(infoBlogData) {
       /*---------КОНТАКТЫ----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES, 
         },
@@ -457,6 +492,7 @@ function generateConfig(infoBlogData) {
       }) /*---------ПОДБОР И РАСЧЁТ----------- */,
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES, 
         },
@@ -473,6 +509,7 @@ function generateConfig(infoBlogData) {
       /*---------СЕКЦИЯ БЛОГА----------- */
       new HtmlWebpackPlugin({
         templateParameters: { 
+          isDevServer,
           canonicalURL,
           ROUTES,
           newsData: infoBlogData,
@@ -489,6 +526,7 @@ function generateConfig(infoBlogData) {
       /*---------КАТАЛОГ----------- */
       new HtmlWebpackPlugin({
         templateParameters: {
+          isDevServer,
           canonicalURL,
           ROUTES,
           tis,
@@ -508,7 +546,7 @@ function generateConfig(infoBlogData) {
       new MiniCssExtractPlugin({
         filename: "[name].css",
       }),
-      new SitemapPlugin({ base: canonicalURL, paths }),
+      new SitemapPlugin({ base: canonicalURL, paths: paths.concat(generatedPaths).sort((a,b)=> b.priority - a.priority) }),
     ].concat(htmlRaschetPlugins, htmlTisPlugins, htmlArticlesPlugins,htmlSpecPagesPluginst),
   }
 };
@@ -528,6 +566,8 @@ function articleDateMapper(newsArr) {
 }
 
 module.exports = () => {
+  const isDevServer = process.env.WEBPACK_SERVE;
+  console.log(isDevServer);
   return new Promise((resolve, reject) => {
       Promise.all([
           fetch1('https://functions.yandexcloud.net/d4eivnnhtfhet7j0nvoh', { agent: proxyAgent}).then(res => res.json()), 
@@ -535,7 +575,7 @@ module.exports = () => {
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=objects', { agent: proxyAgent}).then(res => res.json()), 
         ])
         .then((data) => {
-          resolve(generateConfig(articleDateMapper(data[0])));
+          resolve(generateConfig(articleDateMapper(data[0]), isDevServer));
         })
      
   });

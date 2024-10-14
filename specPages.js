@@ -1,4 +1,6 @@
-const canonicalURL = "https://www.termoblok.ru"
+const canonicalURL = "https://www.termoblok.ru";
+const dateNow = (new Date()).toString();
+
 const specPages = [
     {
       type: "construction",
@@ -219,5 +221,11 @@ const specPagesTypes = {
 
 module.exports = {
   specPages,
-  specPagesTypes
+  specPagesTypes,
+  dataSpecPagesForSitemap: specPages.map(i=> ({
+    path: `/${i.filename}`, //'/catalog/ti-09.html',
+    lastmod: dateNow,
+    priority: 0.9,
+    changefreq: 'monthly'
+  }))
 }

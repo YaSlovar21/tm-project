@@ -1,19 +1,30 @@
 const ROUTES = {
     catalog: '/catalog/',
-    pto: '/plastinchatye-teploobmenniki/',
-    ptoNewGofr: '/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html',
-    teploizol: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
+    calc: '/equipment-selection/',
+    productuion: '/production.html',
+    blog: '/blog-proizvodstva/',
 
+    pto: '/plastinchatye-teploobmenniki/',
+    ptoRaschets: '/plastinchatye-teploobmenniki/raschets/',
+    ptoOtopAgr: '/plastinchatye-teploobmenniki/otoplenie/',
+    ptoGvsAgr: '/plastinchatye-teploobmenniki/goryachee-vodosnabzhenie-gvs/',
+  
     ptoFood: '/pishchevye-teploobmenniki.html',
+
     btp: '/blochnye-teplovye-punkty/',
     pou: '/pasterizatsionno-okhladitelnye-ustanovki.html',
-    payan: '/plastinchatye-teploobmenniki/plastinchatye-payanye-teploobmenniki/',
     about: '/about/',
     service: '/service.html',
     contacts: '/contacts.html',
-    vacs: '/about/vakansii/',
-
+    //vacs: '/about/vakansii/',
 };
+
+const ROUTES_SPEC = {
+
+  ptoNewGofr: '/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html',
+  ptoTeploizol: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
+  ptoPayan: '/plastinchatye-teploobmenniki/plastinchatye-payanye-teploobmenniki/',
+}
 
 const techNames = {
 
@@ -29,7 +40,8 @@ const standartClasses = {
 }
 
 module.exports = {
-  ROUTES,
+  ROUTES_SITEMAP: ROUTES,
+  ROUTES: {...ROUTES, ...ROUTES_SPEC},
   techNames,
   standartClasses,
   featuresForCats

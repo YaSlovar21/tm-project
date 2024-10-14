@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <%= require('html-loader!./inner-metrika.html').default %>
+    <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
     <div class="bg"></div>
     <div class="page">
       <header class="header">

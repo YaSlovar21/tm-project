@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <%= require('html-loader!./inner-google.html').default %>
+  <%= require(`html-loader!./inner-google${isDevServer ? '-dev-server' : ''}.html`).default %>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
@@ -9,7 +9,7 @@
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
 </head>
 <body>
-  <%= require('html-loader!./inner-metrika.html').default %>
+  <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
 
   <div class="page page_up">
     <header class="header header-up content">

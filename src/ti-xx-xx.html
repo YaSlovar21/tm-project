@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <%= require('html-loader!./inner-google.html').default %>
+    <%= require(`html-loader!./inner-google${isDevServer ? '-dev-server' : ''}.html`).default %>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
@@ -9,7 +9,7 @@
     <link href="https://www.termoblok.ru/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
   </head>
   <body>
-    <%= require('raw-loader!./inner-metrika.html').default %>
+    <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
     <div class="page">
       <header class="header header-up content">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>

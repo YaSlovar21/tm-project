@@ -47,46 +47,7 @@
 @import url(../blocks/video/__iframes/video__iframes.css);
 
 
-@import url(../blocks/description/description.css);
-@import url(../blocks/two-columns/two-columns.css);
-@import url(../blocks/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
-@import url(../blocks/two-columns/__image/two-columns__image.css);
-
-
-
-/*
-@import url(../blocks/table/table.css);
-@import url(../blocks/table/_theme/table_theme_dark.css);
-@import url(../blocks/table/__cell/table__cell.css);
-@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
-@import url(../blocks/table/__heading/table__heading.css);
-@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
-@import url(../blocks/table/__text/table__text.css);
-@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
-
-
-@import url(../blocks/feynman/feynman.css);
-@import url(../blocks/feynman/__link/feynman__link.css);
-@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
-@import url(../blocks/feynman/__title/feynman__title.css);
-
-/*
-@import url(../blocks/localprod/localprod.css);
-@import url(../blocks/localprod/__link/localprod__link.css);
-@import url(../blocks/localprod/__subtitle/localprod__subtitle.css);
-@import url(../blocks/localprod/__title/localprod__title.css);
-
-
-
-@import url(../blocks/kaufman/kaufman.css);
-@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-*/
-
 @import url(../blocks/plates/plates.css);
-@import url(../blocks/about/about.css); /*Что за стили?????*/
 @import url(../blocks/animate/animate.css);
 
 
@@ -113,8 +74,8 @@
 
 
 
-/*ПЕРВЫЙ БЛОК ГЛАВНОЙ*/
-@import url(../blocks/video-main/video-main.css);
+/*ПЕРВЫЙ БЛОК ГЛАВНОЙ
+@import url(../blocks/video-main/video-main.css);*/
 
 
 
@@ -174,17 +135,17 @@
 
 
 @import url(../blocks/raschet-bem/raschet-bem.css);
-@import url(../blocks/free-form/free-form.css);
+/*@import url(../blocks/free-form/free-form.css);
 @import url(../blocks/free-form/__data-fields/free-form__data-fields.css);
 @import url(../blocks/free-form/__desc-field/free-form__desc-field.css);
 
-/*Блоки секций главной страницы*/
+Блоки секций главной страницы*/
 
 @import url(../blocks/sections/header-index/header-index.css);
-
+/*
 @import url(../blocks/sections/demonstration/demonstration.css);
-/*ПРОДУКЦИЯ 3D Slider*/
-@import url(../blocks/product-types/product-types.css);
+ПРОДУКЦИЯ 3D Slider
+@import url(../blocks/product-types/product-types.css);*/
 
 
 @import url(../blocks/highliter/highliter.css);
@@ -194,29 +155,13 @@
 @import url(../blocks/timodels/timodels.css);
 
 
-/*ГОТОВЫЕ РЕШЕНИЯ*/
-@import url(../blocks/turnkey/turnkey.css);
+/*ГОТОВЫЕ РЕШЕНИЯ
+@import url(../blocks/turnkey/turnkey.css);*/
 @import url(../blocks/bsz-new/bsz-new.css);
 
 @import url(../blocks/photo-grid/photo-grid.css);
 @import url(../blocks/photo-grid/__item/photo-grid__item.css);
 @import url(../blocks/photo-grid/__image/photo-grid__image.css);
 
-
-@import url(../blocks/image-and-text/image-and-text.css);
-@import url(../blocks/info/info.css);
-@import url(../blocks/info/__span-bsz-accent/info__span-bsz-accent.css);
-@import url(../blocks/info/__span-termoblok-accent/info__span-termoblok-accent.css);
-@import url(../blocks/info/__link-in-text/info__link-in-text.css);
-@import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
-@import url(../blocks/info/__paragraph-title/_page_main/info__paragraph-title_page_main.css);
-@import url(../blocks/info/__paragraph/info__paragraph.css);
-@import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
-@import url(../blocks/info/__paragraph/_page_main/info__paragraph_page_main.css);
-@import url(../blocks/info/__quote/info__quote.css);
-@import url(../blocks/info/__quote/_page_main/info__quote_page_main.css);
-
-@import url(../blocks/info/__list/info__list.css);
-@import url(../blocks/info/__list/_page_main/info__list_page_main.css);
 
 @import url(../blocks/footer/footer.css);

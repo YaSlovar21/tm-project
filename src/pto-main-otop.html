@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <%= require('html-loader!./inner-google.html').default %>
+  <%= require(`html-loader!./inner-google${isDevServer ? '-dev-server' : ''}.html`).default %>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
@@ -9,7 +9,7 @@
   <link href="<%= canonicalURL %>/plastinchatye-teploobmenniki/otoplenie/"  rel="canonical" />
 </head>
 <body class="page">
-  <%= require('html-loader!./inner-metrika.html').default %>
+  <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
     <header class="header header-up content">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термблок"></a>
       <div class="header__right">
@@ -143,7 +143,7 @@
             <% raschetsExamples.filter(i => i.naznach ==='отопление').map((item,index) => { %>
               <li class="">
                 <a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="/plastinchatye-teploobmenniki/<%-item.categoryPath%>/<%-item.path%>.html">
-                Теплообменник <%-item.naznach %> <%-item.sreda1%>-<%-item.sreda2%>
+                  Теплообменник <%-item.naznach %> <%-item.sreda1%>-<%-item.sreda2%>
                   <span class="span-no-wrap text-orange font-semibold font-['Golos']">• <%-item.moshnostNumber%> <%-item.moshnostMeasure%></span>
                 </a>
             </li>

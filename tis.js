@@ -1,3 +1,5 @@
+const dateNow = (new Date()).toString();
+
 const tis = [
      /*---------------------ТЕПЛООБМЕННИКИ------------------------------------------*/
      {
@@ -396,4 +398,10 @@ const foodtis = [
 module.exports = {
   tis,
   foodtis,
+  dataTisForSitemap: tis.concat(foodtis).map(i=> ({
+    path: `/${i.filename}`, //'/catalog/ti-09.html',
+    lastmod: dateNow,
+    priority: 0.6,
+    changefreq: 'monthly'
+  }))
 }

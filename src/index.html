@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <%= require('html-loader!./inner-google.html').default %>
+  <%= require(`html-loader!./inner-google${isDevServer ? '-dev-server' : ''}.html`).default %>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
@@ -11,7 +11,7 @@
 </head>
 
 <body class="page">
-  <%= require('html-loader!./inner-metrika.html').default %>
+  <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
 
   <header class="header header-up content">
     <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" class="header__logo-img" alt="Лого Термоблок"/></a>
@@ -21,6 +21,7 @@
   </header>
   <main>
     <div class="my-12 content pt-4 border-t border-primary-strokke1">
+      <p class="text-8xl text-red-600"><%= isDevServer ? 'Включен режим разработчика' : ''%></p>
       <h1 class="title-page">Производство пластинчатых теплообменников</h1>
       <div class=" flex flex-row items-end">
         <div class="basis-1/4">
@@ -150,7 +151,7 @@
                 <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
                 <p class="text-m">паяные</p>
               </div>
-              <a class="mr-8 ml-auto block" href="<%= ROUTES.payan %>">
+              <a class="mr-8 ml-auto block" href="<%= ROUTES.ptoPayan %>">
                 <span class="inset0"></span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 stroke-primary-strokke1 transition duration-200 group-hover:stroke-orange">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -170,7 +171,7 @@
         <p class="text-gray-200 text-m ">Вместе с теплообменником могут быть поставлены теплоизоляция разаботанная специально под нашу линейку теплообменников</p>
         <ul class="py-8 w-2/3 laptop:w-full">
           <li class="mb-4">
-            <a class="flex h-full group items-start text-gray-200" href="<%= ROUTES.teploizol %>">
+            <a class="flex h-full group items-start text-gray-200" href="<%= ROUTES.ptoTeploizol %>">
               <div class="basis-1/3 overflow-hidden rounded mvpc:mt-1">
                 <img class="object-cover object-left-top w-full h-full  min-w-[100px] transition-all group-hover:scale-110" src="<%=require('./images/pagepto/teplo-page-pto.png')%>" alt="Теплоизоляция пластинчатого теплообменника">
               </div>
