@@ -1,13 +1,12 @@
 import Swiper from 'swiper/bundle';
-
 import 'swiper/swiper-bundle.css';
-import 'animate.css';
-import WOW from 'wow.js';
+//import 'animate.css';
+//import WOW from 'wow.js';
 import simpleParallax from 'simple-parallax-js';
 
 import './pto.css';
 
-const wowAnimation = new WOW({
+/*const wowAnimation = new WOW({
   boxClass:     'wow',      // animated element css class (default is wow)
   animateClass: 'animated', // animation css class (default is animated)
   offset:       0,          // distance to the element when triggering the animation (default is 0)
@@ -17,7 +16,7 @@ const wowAnimation = new WOW({
   resetAnimation: true,     // reset animation on end (default is true)
 });
 wowAnimation.init();
-
+*/
 import {
   //данные проектов
   initialProjects,

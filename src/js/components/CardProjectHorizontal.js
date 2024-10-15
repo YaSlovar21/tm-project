@@ -30,8 +30,8 @@ export default class CardProjectHorizontal extends Card {
         this._cardImage.alt = this._name;
         this._cardHeading.textContent = this._name;
 
-        this._element.querySelector('.column-description__link').href = this._path;
-        
+        this._element.querySelector('.column-description-link').href = this._path;
+
         this._toModelDesc.textContent = this._to;
         this._toQDesc.textContent = this._q;
         this._naznachDesc.textContent = this._naznach;

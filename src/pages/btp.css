@@ -18,7 +18,7 @@
 
 @import url(../blocks/nav/nav.css);
 @import url(../blocks/up-footer/up-footer.css);
-@import url(../blocks/stickaround/stickaround.css);
+/*@import url(../blocks/stickaround/stickaround.css);*/
 
 @import url(../blocks/bem/__section/bem__section.css);
 @import url(../blocks/bem/__section-wrapper/bem__section-wrapper.css);
@@ -68,11 +68,11 @@
 
 
 @import url(../blocks/digits/digits.css);
-@import url(../blocks/table/table.css);
+/*@import url(../blocks/table/table.css);
 @import url(../blocks/sections/secondgridbtp/secondgridbtp.css);
 
 @import url(../blocks/introgrid/introgrid.css);
-
+*/
 
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__link/feynman__link.css);

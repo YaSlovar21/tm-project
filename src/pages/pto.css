@@ -1,16 +1,10 @@
 
 
 @import url(../blocks/link-beauty/link-beauty.css);
-@import url(../blocks/bem/__link/bem__link.css);
-@import url(../blocks/bem/__link/_color_theme/bem__link_color_theme.css);
-@import url(../blocks/bem/__link/_more/bem__link_more.css);
-@import url(../blocks/bem/__link/_arrowup/bem__link_arrowup.css);
-@import url(../blocks/bem/__link/_arrowright/bem__link_arrowright.css);
-@import url(../blocks/bem/__link/_spec_du250/bem__link_spec_du250.css);
+
 
 @import url(../blocks/rotation/rotation.css);
 
-@import url(../blocks/column-description/column-description.css);
 
 @import url(../blocks/animatecss/_base.css);
 @import url(../blocks/animatecss/_vars.css);
@@ -20,7 +14,7 @@
 @import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
 @import url(../blocks/animatecss/attention_seekers/pulse.css);
 
-@import url(../blocks/stickaround/stickaround.css);
+/*@import url(../blocks/stickaround/stickaround.css);*/
 
 @import url(../blocks/nav/nav.css);
 @import url(../blocks/up-footer/up-footer.css);
@@ -33,8 +27,6 @@
 @import url(../blocks/header/__lang-column/header__lang-column.css);
 @import url(../blocks/header/__contacts/header__contacts.css);
 
-
-@import url(../blocks/list/list.css);
 
 @import url(../blocks/flexburton/flexburton.css);
 @import url(../blocks/flexburton/__link/flexburton__link.css);
@@ -49,13 +41,14 @@
 
 
 @import url(../blocks/description/description.css);
+/*
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
 @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/__image/two-columns__image.css);
-
+*/
 
 @import url(../blocks/techniques/techniques.css);
 
@@ -74,8 +67,8 @@
 
 
 @import url(../blocks/khan/khan.css);
-
-@import url(../blocks/table/table.css);
+/*
+@import url(../blocks/table/table.css);kaufman*/
 @import url(../blocks/kaufman/kaufman.css);
 
 @import url(../blocks/princip/princip.css);
@@ -88,13 +81,6 @@
 @import url(../blocks/heatex/__models-heading/_theme_dark/heatex__models-heading_theme_dark.css);
 
 @import url(../blocks/heatex/__to-3dlink/heatex__to-3dlink.css);
-
-@import url(../blocks/bem/__list/bem__list.css);
-@import url(../blocks/bem/__list/_page_pto/bem__list_page_pto.css);
-@import url(../blocks/bem/__list-heading/bem__list-heading.css);
-@import url(../blocks/bem/__list-item/bem__list-item.css);
-@import url(../blocks/bem/__list-item/_newpage/bem__list-item_newpage.css);
-
 
 
 

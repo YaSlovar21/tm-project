@@ -1,7 +1,7 @@
 import 'core-js/actual';
-import Swiper from 'swiper/bundle';
+//import Swiper from 'swiper/bundle';
 
-import WOW from 'wow.js';
+//import WOW from 'wow.js';
 //import anime from 'animejs/lib/anime.es.js';
 
 import FormValidatorNew from '../js/components/FormValidatorNew.js';
@@ -13,7 +13,7 @@ import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 import PopupWithImage from '../js/components/PopupWithImage.js';
 import Api from '../js/components/Api.js';
 
-import 'swiper/swiper-bundle.css';
+//import 'swiper/swiper-bundle.css';
 //import 'animate.css';
 //import '../pages/animation.css';
 //import './tw.css';
@@ -113,7 +113,7 @@ const formApi = new Api({
     'Content-Type': 'text/plain'
   },
 });
-
+/*
 const wowAnimation = new WOW({
   boxClass:     'wow',      // animated element css class (default is wow)
   animateClass: 'animated', // animation css class (default is animated)
@@ -124,7 +124,7 @@ const wowAnimation = new WOW({
   resetAnimation: true,     // reset animation on end (default is true)
 });
 wowAnimation.init();
-
+*/
 
 const popupImage = new PopupWithImage(popupImageSelectorsCongig, popupImageSelector);
 const popupHeatEx = new PopupWithHeatEx(popupToConfig, popupWithToSelector);

@@ -47,7 +47,8 @@
 
 @layer components {
   :root {
-    --head-wrap: calc(50% + 800px)
+    --head-wrap: calc(50% + 800px);
+    --content-width: calc(100% - 180px); /*pc:calc(100%-40px) mobile:calc(100%-20px);*/
   }
 
  .content {
@@ -73,7 +74,7 @@
     @apply col-span-6;
   }
   .ui-button {
-    @apply transition-all ease-in-out duration-200 p-3 text-white bg-[#E7381C] hover:bg-transparent hover:text-[#E7381C] rounded-md border-2 border-[#E7381C] text-base uppercase flex justify-center mobile:text-sm;
+    @apply transition-all ease-in-out duration-200 p-3 text-white bg-[#E7381C] hover:bg-transparent hover:text-[#E7381C] rounded-md border-[1.5px] border-[#E7381C] text-base uppercase flex justify-center mobile:text-sm;
   }
   .ui-button-text {
     @apply transition-all duration-200 py-3 px-0 text-[#E7381C] rounded-md text-base uppercase flex  mobile:text-sm;
