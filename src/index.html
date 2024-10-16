@@ -12,7 +12,7 @@
 
 <body class="page">
   <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
-
+  <p class="text-4xl absolute top-0 left-0 text-red-600"><%= isDevServer ? 'Включен режим разработчика' : ''%></p>
   <header class="header header-up content">
     <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" class="header__logo-img" alt="Лого Термоблок"/></a>
     <div class="header__right">
@@ -21,13 +21,14 @@
   </header>
   <main>
     <div class="my-12 content pt-4 border-t border-primary-strokke1">
-      <p class="text-8xl text-red-600"><%= isDevServer ? 'Включен режим разработчика' : ''%></p>
-      <h1 class="title-page">Производство пластинчатых теплообменников</h1>
-      <div class=" flex flex-row items-end">
-        <div class="basis-1/4">
-          <h2 class="subtitle max-w-[650px]">100% локализация производства Пластинчатых разборных тепплообменников</h2>
+
+
+      <div class=" flex flex-row-reverse">
+        <div class="basis-2/4">
+          <h1 class="title-page ">Производство пластинчатых теплообменников</h1>
+          <h2 class="subtitle mt-20 max-w-[504px]">100% локализация производства пластин и уплотнений</h2>
         </div>
-        <div class="header-index__video-container basis-[calc(75%-20px)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
+        <div class="header-index__video-container basis-[calc(50%-20px)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
           <figure class="header-index__darked"></figure>
           <!--Здесь рендерится видео в зависимости от разрешения экрана-->
           <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
@@ -56,15 +57,14 @@
         </div>
       </div>-->
     </div>
-    <section class="content container-12 pt-4 border-t border-primary-strokke1 mobile:block">
+    <section class="content container-12 mt-20 pt-4 border-t border-primary-strokke1 mobile:block">
       <h2 class="up-title up-title_svg col-span-2">О продукции</h2>
      <!-- <figure class="col-span-3 relative after:bg-blacktheme after:bg-opacity-25 after:w-full after:h-full after:top-0 after:left-0 after:absolute">
         <img class="" src="<%=require('./images/2024content/osn-prod.png')%>" alt="продукция">
       </figure>-->
 
       <div class="col-start-4 col-span-9">
-        <p class="-mt-1 subtitle subtitle_type_p">Основное направление компании - производство теплообменников<span
-          class="video-main__span-accent whitespace-nowrap"> для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
+        <p class="-mt-1 subtitle subtitle_type_p indent-[33.33%] max-w-[1213px]">Основное направление компании - <span class="text-orange font-medium">производство теплообменников для жилищно-коммунального хозяйства</span> мощностью от 5 кВт до 40
         МВт, от небольших котельных до микрорайонов. Также мы имеем значительный опыт, чтобы подобрать и изготовить пластинчатый
         теплообменник для <span class="video-main__span-accent">пищевых технологических процессов</span> любой
         сложности.

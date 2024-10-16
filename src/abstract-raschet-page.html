@@ -28,7 +28,7 @@
     <div class="container-12 mt-14">
       <span class="up-title up-title_svg row-span-2 col-span-5">Пример расчёта теплообменника мощностью <%= moshnostNumber %> <%= moshnostMeasure %></span>
       <h1 class="title-page mt-0 col-span-7">Теплообменник <%= moshnostNumber %> <%= moshnostMeasure %></h1>
-      <p class="text-m col-span-7">
+      <p class="text-m col-span-7 max-w-3xl">
         Теплообменник расчитан для двух сред, по греющей стороне: <span class="text-orange font-medium"><%=sreda1%></span>, по нагреваемой <span class="text-orange font-medium"><%=sreda2%></span>
         <%= naznach==='гвс' ? `для системы горячего водоснабжения` : '' %><%= naznach==='отопление' ? `для системы отопления` : '' %>. Пластинчатый теплообменник <%= `${name.split(':')[1].toUpperCase().split('-')[0]}` %> на <%= plastinKolich %> пластин (<%= `${name.split(':')[1].toUpperCase().trim()}` %>)
         способен обеспечить мощность <%= moshnostNumber %> <%= moshnostMeasure %> и имеет оптимальный запас поверхности теплообмена   <%= naznach ? `для ${naznach}` : '' %> <%= zapasPoverhnosti %>%. Общая площадь теплообмена составляет <%= sOfHeatexchange%> м<sup>2</sup>.

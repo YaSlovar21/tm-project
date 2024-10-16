@@ -49,33 +49,35 @@
   padding: 5px 0;
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .header_download-link {
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 13px;
+
+    font-weight: 400;
     font-style: italic;
     color: #c4c4c4;
-    margin-right: 80px;
+
     position: relative;
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 1;
     transition: opacity .5s ease-in-out;;
 
     font-style: normal;
-    font-weight: 500;
-
+    text-transform: uppercase;
     display: flex;
     align-items: center;
 }
 
 .header_download-link_raschet{
-  background: linear-gradient(63.18deg,#e7441c,#FF5E3A);
-
-  color: #1f1f1f;
+  background: linear-gradient(63.18deg,#e7451ce8,#ff5e3aee);
+  @apply bg-opacity-90;
+  color: white;
   display: flex;
   align-items: center;
   transition: all .3s ease-in;
+  text-align: center;
 }
 
 .header_download-link_raschet:hover {
@@ -86,7 +88,7 @@
 
 .header_download-link_raschet svg {
   width: 35px;
-  margin-right: 4px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1440px) {
@@ -117,9 +119,10 @@
 
 .header_download-link::before {
     content: '';
-    position: absolute;
-    left: -30px;
-    /*top: -5px;*/
+    position: relative;
+    /*left: -30px;
+    top: -5px;*/
+    margin-right: 8px;
     width: 25px;
     height: 25px;
     background-image: url(../../images/download-icon.svg);

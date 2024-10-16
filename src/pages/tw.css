@@ -48,11 +48,11 @@
 @layer components {
   :root {
     --head-wrap: calc(50% + 800px);
-    --content-width: calc(100% - 180px); /*pc:calc(100%-40px) mobile:calc(100%-20px);*/
+    --aside-width: 60px; /*pc:calc(100%-40px) mobile:calc(100%-20px);*/
   }
 
  .content {
-    @apply max-w-[calc(100%-180px)] mx-auto pc:max-w-[calc(100%-40px)] mobile:max-w-[calc(100%-20px)];
+    @apply max-w-[calc(100%-120px)] mx-auto pc:max-w-[calc(100%-40px)] mobile:max-w-[calc(100%-20px)];
   }
 
   .twrapper {
@@ -139,7 +139,7 @@
   }
 
   .title-page {
-    @apply text-[57px] uppercase font-bold text-zinc-300 mvpc:text-[52px] mobile:text-3xl mobilesm:text-2xl;
+    @apply text-[57px] uppercase font-bold mt-8 mb-16 text-zinc-300 mvpc:text-[52px] mobile:text-3xl mobilesm:text-2xl;
   }
 
   .subtitle {

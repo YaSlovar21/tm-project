@@ -20,15 +20,15 @@
         </div>
       </header>
 
-      <main class="content">
-        <div class="flexburton__breadcrumbs tmproduction__breadcrumbs">
+      <main class="">
+        <div class="flexburton__breadcrumbs  content">
           <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
           <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Продукция</a>
         </div>
-        <h1 class="title-page">Продукция</h1>
+        <h1 class="title-page content mt-4">Продукция</h1>
         <ul class="grid grid-cols-4 border-t border-b border-primary-strokke1 laptop:grid-cols-2 laptop:*:border laptop:border mobile:grid-cols-1">
             <li class="relative pb-[100%] w-full border-r  border-primary-strokke1">
-              <a class="flex flex-col absolute w-full h-full p-8 pl-0 laptop:p-8" href="/plastinchatye-teploobmenniki/">
+              <a class="flex flex-col absolute w-full h-full p-8 pl-[--aside-width] laptop:p-8" href="/plastinchatye-teploobmenniki/">
                 <h3 class="up-title up-title_svg font-semibold">Пластинчатые теплообменники</h3>
                 <img class="productcard__image" src="<%=require('./images/main_mini/ti45_new.png')%>" alt="Пластинчатые теплообменники">
                </a>
@@ -52,7 +52,7 @@
               </a>
             </li>
         </ul>
-        <section class="container-2 py-12">
+        <section class="container-2 py-12 content">
           <span class="up-title up-title_svg">Дополнительно</span>
           <div>
             <h2 class="subtitle">Сопутствующая продукция</h2>
@@ -83,7 +83,7 @@
             </ul>
           </div>
         </section>
-        <div class="container-2 mb-12">
+        <div class="container-2 mb-12 content">
           <h2 class="up-title up-title_svg">О производстве</h2>
           <div>
             <p class="text-m mb-3">
