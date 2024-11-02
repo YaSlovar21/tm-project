@@ -18,7 +18,8 @@ const { btpexamples } = require('./btpexamples');
 const { tis, foodtis } = require('./tis');
 const { specPages, specPagesTypes } = require('./specPages');
 const { cycleData, blogThemesDict } = require('./consts');
-const { ROUTES } = require('./constants');
+const { ROUTES, phProcs } = require('./constants');
+
 
 
 function generateRaschetHtmlPlugins(isDevServer) {

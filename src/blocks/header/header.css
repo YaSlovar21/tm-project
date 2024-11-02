@@ -11,7 +11,7 @@
 }
 
 .header__right {
-    @apply col-span-10 w-full mobile:col-span-9;
+    @apply col-span-9 col-start-4 w-full mobile:col-span-9;
 
     display: flex;
     flex-direction: column;
@@ -35,12 +35,12 @@
 
 
   .header__logo-img {
-    @apply mvpc:max-w-[158px] mobile:max-w-full;
+    @apply w-10/12 mvpc:max-w-[198px] mobile:max-w-full;
   }
 
 
 .header__under-nav {
-    @apply grid grid-cols-10 laptop:block;
+    @apply grid grid-cols-9 items-end laptop:block;
 
 
 }
@@ -53,7 +53,7 @@
 }
 
 .header_download-link {
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: 400;
     font-style: italic;

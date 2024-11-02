@@ -26,9 +26,23 @@ const ROUTES_SPEC = {
   ptoPayan: '/plastinchatye-teploobmenniki/plastinchatye-payanye-teploobmenniki/',
 }
 
-const techNames = {
-
-}
+const phProcs = [
+  {
+    id: 'prod',
+    name: 'Готовая продукция',
+    pathId: 'production',
+  },
+  {
+    id: 'plastAndUplot',
+    name: 'Производство пластин и уплотнений',
+    pathId: 'proizvodstvo-plastin-i-uplotnenii'
+  },
+  {
+    id: 'ptoDetails',
+    name: 'Производство деталей теплообменников',
+    pathId: 'proizvodstvo-detalei-teploobmennicov'
+  }
+]
 
 const featuresForCats = {
 
@@ -42,7 +56,7 @@ const standartClasses = {
 module.exports = {
   ROUTES_SITEMAP: ROUTES,
   ROUTES: {...ROUTES, ...ROUTES_SPEC},
-  techNames,
+  phProcs,
   standartClasses,
   featuresForCats
 }

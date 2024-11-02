@@ -40,28 +40,28 @@ export const cardArticleConfig = {
 
 export const initialProjects = [
     {
-      name: "Теплообменник пластинчатый в котельной квартала 34, г. Уфа, жилой район «Затон-Восточный»",
+      name: "Котельная квартала №34, г. Уфа, жилой район «Затон-Восточный»",
       link: zatonUfa,
       to: "ТИ82-201",
-      naznach: "Теплообменник в котельной микрорайона",
+      naznach: "в котельной микрорайона",
       q: "17500 кВт",
       animateClass: 'animate__fadeIn',
       path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-zaton-vostok.html'
     },
     {
-      name: "Теплообменники пластинчатые в кондитерском комбинате «Кубань», г. Тимашевск, Краснодарский край",
+      name: "Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край",
       link: timashevskCondit,
       to: "ТИ52-77",
-      naznach: "Теплообменники в системе ГВС кондитерского комбината",
+      naznach: "в системе ГВС кондитерского комбината",
       q: "3,5 Гкал/ч",
       animateClass: 'animate__fadeIn',
       path: '/blog-proizvodstva/teploobmenniki-gvs-object-u-timashevsk.html',
     },
     {
-      name: "Теплообменники в тепловом пункте. Новый умный дом в г. Уфа, ул. Злобина, 31",
+      name: "Новый умный дом в г. Уфа, ул. Злобина, 31",
       link: ufaUmnDom,
       to: "ТИ13 (31-53 пластин)",
-      naznach: "Теплообменники в системе отопления, ГВС жилого дома",
+      naznach: "в системе отопления и ГВС жилого дома",
       q: "от 0.3 до 0.5 Гкал/ч",
       animateClass: 'animate__fadeIn',
       path: '/blog-proizvodstva/teploobmenniki-gvs-object-p-umnii-dom.html',

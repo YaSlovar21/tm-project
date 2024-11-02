@@ -1,9 +1,9 @@
 .header__link {
     text-decoration: none;
     color: #a8a8a8;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -0.02em;
-    font-size: 18px;
+    font-size: 22px;
   }
 
 .header__link:nth-child(1) {

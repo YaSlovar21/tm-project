@@ -6,7 +6,7 @@ export default class Section {
         this._renderer = renderer;
         this._delay = 0;
         this._delayTime = delayTime;
-        
+
     }
 
     setItem(element) {

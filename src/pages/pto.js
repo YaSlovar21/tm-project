@@ -68,6 +68,9 @@ import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 
 const formProjectViewChange = document.forms.formProjectsViewChange;
 
+let initialProjectsToRender = [].concat(initialProjects[0]);
+
+
 const projectList = new Section({
   data: initialProjects,
   renderer: (item) => {
@@ -93,7 +96,7 @@ const projectList = new Section({
 }, projectsContainerSelector);
 
 const projectHorizontalList = new Section({
-  data: initialProjects,
+  data: initialProjectsToRender,
   renderer: (item) => {
     const card = new CardProjectHorizontal({
       name: item.name,
@@ -120,16 +123,18 @@ const projectHorizontalList = new Section({
 }, projectsContainerSelector);
 
 projectList.clear();
-projectList.renderItems();
+projectHorizontalList.renderItems();
 
 
 formProjectViewChange.addEventListener('change', (evt)=>{
   if (evt.target.checked) {
-    projectList.clear();
-    projectHorizontalList.renderItems();
-  } else {
+    initialProjectsToRender = initialProjects;
     projectHorizontalList.clear();
-    projectList.renderItems();
+    projectHorizontalList.renderFiltered(initialProjectsToRender);
+  } else {
+    initialProjectsToRender =  [].concat(initialProjects[0]);
+    projectHorizontalList.clear();
+    projectHorizontalList.renderFiltered(initialProjectsToRender);
   }
 })
 
