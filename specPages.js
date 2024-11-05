@@ -211,6 +211,26 @@ const specPages = [
         filename: "plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html",
         chunks: ["blogSpecPage", "all", "map"],
       },
+      {
+        type: "production",
+        templateParameters: {
+          canonicalURL: canonicalURL,
+          isGkh: true,
+          articleFile: "poddony.html",
+          poster: "poddon-nerzh.png",
+        },
+        title: "Поддоны для теплообменников пластинчатых из нержавеющей стали",
+        heading: "Поддоны для теплообменников из нержавеющей стали",
+        intro: "",
+        meta: {
+          keywords: "поддоны под теплообменник из нержавеющей стали",
+          description: "",
+        },
+        template: "./src/blogspec-page-abstract.html",
+        filename: "plastinchatye-teploobmenniki/poddony-iz-nerzhaveyushchej-stali.html",
+        chunks: ["blogSpecPage", "all", "map"],
+      },
+      
 ];
 
 const specPagesTypes = {

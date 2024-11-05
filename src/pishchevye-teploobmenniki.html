@@ -8,14 +8,14 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
 </head>
-<aside class="py-2 bg-gray-500">
+<!--<aside class="py-2 bg-gray-500">
   <div class="content">
     <p class="uppercase text-m font-medium">Приглашаем на выставку HEAT&POWER-2024!</p>
   </div>
-</aside>
+</aside>-->
 <body class="page">
      <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
-    <div >
+    <div>
 
     <header class="header header-up content">
       <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>

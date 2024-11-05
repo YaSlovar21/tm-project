@@ -24,6 +24,7 @@ const ROUTES_SPEC = {
   ptoNewGofr: '/plastinchatye-teploobmenniki/novaya-rossijskaya-plastina-teploobmennika.html',
   ptoTeploizol: '/plastinchatye-teploobmenniki/teploizolyaciya.html',
   ptoPayan: '/plastinchatye-teploobmenniki/plastinchatye-payanye-teploobmenniki/',
+  ptoPoddony: '/plastinchatye-teploobmenniki/poddony-iz-nerzhaveyushchej-stali.html'
 }
 
 const phProcs = [
