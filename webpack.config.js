@@ -571,7 +571,7 @@ module.exports = () => {
   console.log(isDevServer);
   return new Promise((resolve, reject) => {
       Promise.all([
-          fetch1('https://functions.yandexcloud.net/d4eivnnhtfhet7j0nvoh', { agent: proxyAgent}).then(res => res.json()), 
+          fetch1('https://api.termoblok.ru/blogcards', { agent: proxyAgent}).then(res => res.json()), 
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=news', { agent: proxyAgent}).then(res => res.json()), 
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=objects', { agent: proxyAgent}).then(res => res.json()), 
         ])

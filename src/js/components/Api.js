@@ -13,7 +13,7 @@ export default class Api {
     }
 
      getInitialCards() {
-        return fetch(`https://functions.yandexcloud.net/d4eivnnhtfhet7j0nvoh`, {
+        return fetch(`https://api.termoblok.ru/blogcards`, {
             headers: this._headers,
         })
         .then((response) => {
@@ -22,13 +22,13 @@ export default class Api {
     }
 
     getInitiatPartners() {
-      return fetch(`https://functions.yandexcloud.net/d4eivnnhtfhet7j0nvoh?base=partners`, {
+      return fetch(`https://api.termoblok.ru/partners`, {
           headers: this._headers,
       })
       .then((response) => {
           return this._isResponseOk(response);
       })
-      
+
   }
 
 

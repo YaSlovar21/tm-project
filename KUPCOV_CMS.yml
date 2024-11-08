@@ -1,0 +1,147 @@
+openapi: 3.0.0
+info:
+  title: TERMOBLOK API
+  version: 1.0
+servers:
+  - url: https://d5ds3tb4bcfsv0tv4a3o.apigw.yandexcloud.net
+x-yc-apigateway:
+  cors:
+    origin: '*'
+    methods: '*'
+    allowedHeaders: '*'
+  service_account_id: ajet8qukh9v528cbndga
+paths:
+  /login:
+    post:
+      operationId: login_w_pass
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4er414relua2jgd6seg
+        context:
+          command: login
+      responses:
+        '200':
+          description: LOGIN_OK
+  /logout:
+    post: 
+      operationId: logout
+      security:
+        - httpBearerAuth: [ ]
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4er414relua2jgd6seg
+        context:
+          command: logout
+      responses:
+        '200':
+          description: LOGOUT_DONE
+  /blogcards:
+    get:
+      description: Get all blog cards
+      operationId: get_blog_data
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4eivnnhtfhet7j0nvoh
+        payload_format_version: '1.0'
+        context:
+          base: blogCards
+          command: getAllCards
+      responses:
+        '200':
+          description: Blog Cards
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BlogCard'
+                type: array
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'     
+    post:
+      description: Post new blog card
+      operationId: post_new_blog
+      security:
+        - httpBearerAuth: [ ]
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4eivnnhtfhet7j0nvoh
+        payload_format_version: '1.0'
+        context:
+          base: blogCards
+          command: postNewBlogCard
+      requestBody: 
+        description: Blog card object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BlogCard'
+      responses:
+        '200':
+          description: Blog Cards with new card
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BlogCard'
+                type: array
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    BlogCard: 
+      properties:
+        id: 
+          type: integer
+        staticPage:
+          type: utf8
+        heading:
+          type: utf8
+        description:
+          type: utf8
+        seoTitle:
+          type: utf8
+        seoKeywords:
+          type: utf8
+        seoDesc:
+          type: utf8
+        h1:
+          type: utf8
+        articleInnerFile:
+          type: utf8
+        relev:
+          type: utf8
+        type:
+          type: utf8
+        date:
+         type: string
+      required:
+        - id
+        - heading
+        - description
+      type: object
+    Error:
+      properties:
+        message:
+          type: string
+      required:
+        - message
+      type: object
+  securitySchemes:
+    httpBearerAuth:
+      type: http
+      scheme: bearer
+      x-yc-apigateway-authorizer:
+        type: function
+        function_id: d4e9jur1onba7rnccqfg
+        tag: "$latest"
+        service_account_id: ajet8qukh9v528cbndga
