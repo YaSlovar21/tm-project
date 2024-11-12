@@ -106,8 +106,8 @@ const raschetValidatorForm = new FormValidatorNew(raschetValidatorConfig, rasche
 raschetValidatorForm.enableStepValidation();
 
 const formApi = new Api({
-  //baseUrl: 'https://formspree.io',
-  baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
+  //baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
+  baseUrl: 'https://api.termoblok.ru',
   headers: {
     'Accept': '*/*',
     'Content-Type': 'text/plain'

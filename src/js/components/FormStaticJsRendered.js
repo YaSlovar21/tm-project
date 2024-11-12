@@ -34,7 +34,7 @@ export default class FormStaticJsRendered {
 
         // добавляем в этот объект значения всех полей
         this._inputList.forEach(input => {
-          if (input.dataset.alias) {
+          /*if (input.dataset.alias) {
             if (input.name==='moshnost') {
               return this._formValues[input.dataset.alias] = input.value +' '+ this._element.t_typesr1.value;
             }
@@ -42,9 +42,9 @@ export default class FormStaticJsRendered {
               return this._formValues[input.dataset.alias] = input.value +' '+ this._element.t_typesr2.value;
             }
             this._formValues[input.dataset.alias] = input.value;
-          } else {
+          } else {*/
             this._formValues[input.name] = input.value;
-          }
+          /*}*/
         });
         console.log(this._formValues);
         if (localStorage.getItem('clientId')) {

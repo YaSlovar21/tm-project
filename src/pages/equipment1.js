@@ -43,8 +43,8 @@ try {
 }
 
 const formApi = new Api({
-  //baseUrl: 'https://formspree.io',
-  baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
+  //baseUrl: 'https://functions.yandexcloud.net/d4emmiecboqc61f8q1kk',
+  baseUrl: 'https://api.termoblok.ru',
   headers: {
     'Accept': '*/*',
     'Content-Type': 'text/plain'
@@ -82,7 +82,7 @@ const formFree = new FormStaticJsRendered({
   templateSelector: '.form-free-template',
   formSubmitHandler: (formCallbackData, submitButton) => {
     renderLoading(true, submitButton, 'Отправить', 'Отправка...'); //вынести фразы в отдельный объект? elem: profileSubmBut, onLoadText:' ....
-    formApi.sendBigForm(formCallbackData)
+    formApi.sendCallForm(formCallbackData)
       .then((response) => {
         console.log(response);
         const message = new DefaultMessage({image:logo_dialog, text: generateResponseMessage(response)}, '.message-template_type_default');

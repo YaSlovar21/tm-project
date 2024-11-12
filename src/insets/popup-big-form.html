@@ -36,13 +36,13 @@
               <label class="raschet-bem__field">
                 <span class="raschet-bem__label-title span-mobile-hidden">Температура среды на входе</span>
                 <span class="raschet-bem__label-title span-mobile-show">t на входе</span>
-                <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
+                <input data-alias="Температура греющей среды на входе" type="text" name="tGrIn" id="temp-grin-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
                 <span class="raschet-bem__input-error temp-grin-input-error"></span>
               </label>
               <label class="raschet-bem__field">
                 <span class="raschet-bem__label-title span-mobile-hidden">Температура среды на выходе</span>
                 <span class="raschet-bem__label-title span-mobile-show">t на выходе</span>
-                <input data-alias="Температура греющей среды на выходе" type="text" name="temperature_of_the_heating_out" id="temp-grout-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
+                <input data-alias="Температура греющей среды на выходе" type="text" name="tGrOut" id="temp-grout-input" class="raschet-bem__input raschet-bem__input_type_flex" required minlength="1">
                 <span class="raschet-bem__input-error temp-grout-input-error"></span>
               </label>
             </div>
@@ -51,13 +51,13 @@
               <label class="raschet-bem__field">
                 <span class="raschet-bem__label-title span-mobile-hidden">Температура среды на выходе</span>
                 <span class="raschet-bem__label-title span-mobile-show">t на выходе</span>
-                <input data-alias="Температура нагреваемой среды на выходе" type="text" name="temperature_of_the_heated_out"  id="temp-nagrout-input" class="raschet-bem__input raschet-bem__input_type_flex" required  minlength="1">
+                <input data-alias="Температура нагреваемой среды на выходе" type="text" name="tNagrOut"  id="temp-nagrout-input" class="raschet-bem__input raschet-bem__input_type_flex" required  minlength="1">
                 <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
               </label>
               <label class="raschet-bem__field">
                 <span class="raschet-bem__label-title span-mobile-hidden">Температура среды на входе</span>
                 <span class="raschet-bem__label-title span-mobile-show">t на входе</span>
-                <input data-alias="Температура нагреваемой среды на входе" type="text"  name="temperature_of_the_heated_in" id="temp-nagrin-input" class="raschet-bem__input raschet-bem__input_type_flex" minlength="1" required>
+                <input data-alias="Температура нагреваемой среды на входе" type="text"  name="tNagrIn" id="temp-nagrin-input" class="raschet-bem__input raschet-bem__input_type_flex" minlength="1" required>
                 <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
               </label>
             </div>
@@ -72,13 +72,14 @@
                   </label>
                   <div style="display: flex; margin: 0; padding: 0; border: none;">
                     <input data-alias="Мощность" type="text" name="moshnost"  id="q-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                    <select class="raschet-bem__select raschet-bem__select_dop " name="t_typesr1" >
+                    <select class="raschet-bem__select raschet-bem__input raschet-bem__select_dop " name="moshnostMeasure"  id="q-meas-input">
                       <option selected value="квт">кВт</option>
                       <option value="мвт">мВт</option>
                       <option value="ккал">Ккал</option>
                       <option value="гкал">Гкал</option>
                     </select>
                     <span class="raschet-bem__input-error q-input-error"></span>
+                    <span class="raschet-bem__input-error q-meas-input-error"></span>
                   </div>
               </div>
             </div>
@@ -90,10 +91,11 @@
                 </label>
                 <div style="display: flex; margin: 0; padding: 0; border: none;">
                   <input data-alias="Расход нагреваемой среды" name="rashod" type="text"  id="rash-input" class="raschet-bem__input raschet-bem__input_type_flex">
-                  <select class="raschet-bem__select raschet-bem__select_dop " name="t_typesr2" >
+                  <select class="raschet-bem__select  raschet-bem__input  raschet-bem__select_dop " name="rashodMeasure" id="rash-meas-input">
                     <option selected value="м3/ч">м3/ч</option>
                     <option value="т/ч">т/ч</option>
                   </select>
+                  <span class="raschet-bem__input-error rash-meas-input-error"></span>
                   <span class="raschet-bem__input-error rash-input-error"></span>
                 </div>
               </div>
@@ -112,12 +114,12 @@
               </label>
               <label class="raschet-bem__field raschet-bem__contact-field">
                 <span class="raschet-bem__label-title">Почта, куда удобнее принять расчёт</span>
-                <input name="contact" data-alias="Email" type="email"  id="contact-input" class="raschet-bem__input"  required>
+                <input name="email" data-alias="Email" type="email"  id="contact-input" class="raschet-bem__input"  required>
                 <span class="raschet-bem__input-error contact-input-error"></span>
               </label>
               <label class="raschet-bem__field raschet-bem__contact-field">
                 <span class="raschet-bem__label-title">Телефон</span>
-                <input name="tel-raschet" data-alias="Телефон" type="text"  id="tel-raschet-input" class="raschet-bem__input"  required>
+                <input name="tel" data-alias="Телефон" type="text"  id="tel-raschet-input" class="raschet-bem__input"  required>
                 <span class="raschet-bem__input-error tel-raschet-input-error"></span>
               </label>
             </div>
