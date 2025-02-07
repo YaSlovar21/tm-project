@@ -52,7 +52,7 @@ document.querySelector('.up-footer__raschet')?.addEventListener('mousedown', ()=
   popupRaschet.open();
 });
 
-document.querySelector('.po__link')?.addEventListener('mousedown', ()=> {
+document.querySelector('.po-link-button')?.addEventListener('mousedown', ()=> {
   popupCallBack.open('Запрос программы расчёта', 'Здравствуйте, просьба разъяснить условия использование Вашей программы расчёта.');
 })
 
@@ -67,6 +67,8 @@ import PopupWithHeatEx from '../js/components/PopupWithHeatEx.js';
 
 
 const formProjectViewChange = document.forms.formProjectsViewChange;
+const projectViewMoreButton = formProjectViewChange.querySelector('.ui-button');
+const projectsItemsSect = document.querySelector('.projects__items');
 
 let initialProjectsToRender = [].concat(initialProjects[0]);
 
@@ -131,10 +133,13 @@ formProjectViewChange.addEventListener('change', (evt)=>{
     initialProjectsToRender = initialProjects;
     projectHorizontalList.clear();
     projectHorizontalList.renderFiltered(initialProjectsToRender);
+    projectViewMoreButton.textContent = 'Скрыть';
   } else {
+    projectsItemsSect.scrollIntoView({behavior: 'smooth'});
     initialProjectsToRender =  [].concat(initialProjects[0]);
     projectHorizontalList.clear();
     projectHorizontalList.renderFiltered(initialProjectsToRender);
+    projectViewMoreButton.textContent = 'Смотреть ещё';
   }
 })
 
