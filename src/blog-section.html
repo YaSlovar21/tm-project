@@ -63,17 +63,19 @@
         <div class="col-start-6 col-span-7">
           <h3 class="subtitle">Теплообменники в сфере жкх</h3>
           <ul class="cards-js-rendered">
-            <!--<li class="infoitem">
-              <div class="infoitem__header">
-                <span class="infoitem__span-button">Проект</span>
-                <span class="infoitem__span-button">Отопление</span>
-              </div>
-              <a class="infoitem__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">
-                <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
-                <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
-              </a>
-            </li>
-            -->
+            <% newsData.filter(i=> !i.type.includes('food')).map(art => { %>
+              <li class="card-item mb-3 border-t border-primary-strokke1 hover:border-orange-light group">
+                <div class="card-item-header">
+                </div>
+                <a class="card-item-link pt-5 pb-2 block relative" href="/blog-proizvodstva/<%= art.staticPage %>">
+                  <h2 class="card-item-title text-zinc-300 text-xl font-semibold leading-snug max-w-lg"><%= art.heading %></h2>
+                  <p class="card-item-description text-zinc-300 text-base mt-7 max-w-sm hidden group-hover:block"><%= art.description %></p>
+                  <svg class="size-6 absolute top-5 stroke-primary-strokke1 group-hover:stroke-orange right-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </a>
+              </li>
+            <% }) %>
           </ul>
           <button class="infocards__more-button infocards__more-button_hidden button-bem button-bem_blog">Показать еще</button>
         </div>

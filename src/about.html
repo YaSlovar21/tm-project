@@ -51,20 +51,20 @@
       <section class="container-2 content mt-28">
         <span class="up-title up-title_svg">Производство</span>
         <h2 class="subtitle">Полный цикл производства</h2>
-        <p class="text-m col-start-2 mb-6">Локализованный на территории предприятия</p>
+        <p class="text-m col-start-2 mb-6 mobile:col-start-1">Локализованный на территории предприятия</p>
         <ul class="col-span-2">
           <% cycleData.map((i,index)=> { %>
-            <li class="relative group transition-all duration-300 bg-blacktheme py-6 container-2 border-t border-primary-strokke1 -mb-32 <%=index===cycleData.length-1 ? 'mb-0 overflow-hidden' : ''%> hover:mb-0" style="z-index: <%=index+1%>;">
-              <figure class="relative w-[58%] pb-[40%]">
+            <li class="relative group transition-all duration-300 bg-[#151515] py-6 container-2 border-t border-primary-strokke1 -mb-32 <%=index===cycleData.length-1 ? 'mb-0 overflow-hidden' : ''%> hover:mb-0" style="z-index: <%=index+1%>;">
+              <figure class="relative w-[58%] pb-[40%] mobile:w-[45%] mobile:pb-[33%]">
                 <img class="absolute w-full h-full" src="<%= require(`./images/${i.image}`) %>">
               </figure>
 
               <div>
-                <h3 class="text-2xl font-semibold text-[#d4d4d4]"><%= i.title %></h3>
+                <h3 class="text-2xl font-semibold text-[#d4d4d4] mobile:text-xl"><%= i.title %></h3>
                 <p class="text-[#d4d4d4] mt-8 max-w-[400px]"><%= i.desc %></p>
               </div>
               <% if (index===cycleData.length-1) { %>
-              <figure class="bg-blacktheme  transition-all duration-300 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-28 z-10"></figure>
+              <figure class="bg-[#151515]  transition-all duration-300 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-28 z-10"></figure>
               <% } %>
             </li>
           <% }) %>
@@ -84,9 +84,8 @@
           <img class="annotation__image" alt="Сертификат на пластинчатый теплообменник сейсмология" src="<%=require('./images/cert/certificate-seismo.png')%>">
         </div>
         <h3 class="up-text-title mt-20">Спецоценка условий труда</h3>
-        <div class="annotation__links">
-            <a class="header_download-link header_download-link_ann annotation__link_download" href="/docu/Termoblok_Sout.pdf" download>Скачать спецоценку</a>
-        </div>
+        <a class="bem__link bem__link_download" href="/docu/Termoblok_Sout.pdf" download>Скачать спецоценку</a>
+
         </div>
      </section>
     <section class="container-2 content mt-12">
@@ -102,7 +101,7 @@
           новых изделий и расширением рынков сбыта.
         </p>
         <h3 class="subtitle-smm">БСЗ сегодня</h3>
-        <ul class="grid grid-cols-3 gap-5 *:text-[64px] *:font-semibold *:text-white">
+        <ul class="grid grid-cols-3 gap-5 *:text-[64px] mobile:*:text-4xl *:font-semibold *:text-white">
           <li>
            14 <p class="text-sm uppercase font-normal">предприятий</p>
           </li>

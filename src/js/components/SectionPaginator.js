@@ -89,6 +89,7 @@ export default class SectionPaginator extends Section {
     }
 
     renderItems() {
+      this.clear();
         this._renderedItems.slice(0, this._countBase).forEach(item => {
           this._renderer(item);
         });

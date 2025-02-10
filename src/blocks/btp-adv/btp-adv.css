@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 768px) {
   .btp-adv__plus:before {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -112,6 +112,12 @@
     bottom: 10%;
 }
 
+
+@media screen and (max-width: 769px) {
+    .btp-adv__plus:nth-child(3) {
+      right: 60px;
+  }
+}
 
 .btp-adv__feat {
     position: absolute;

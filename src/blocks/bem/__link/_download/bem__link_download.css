@@ -1,0 +1,24 @@
+.bem__link_download {
+  display: flex;
+}
+
+.bem__link_download:hover::before {
+  transform: translateY(-3px);
+  opacity: 1;
+
+}
+
+.bem__link_download::before {
+  content: '';
+  position: relative;
+  /*left: -30px;
+  top: -5px;*/
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../../images/download-icon.svg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  transition: all .3s ease-in;
+}

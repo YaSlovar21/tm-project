@@ -22,9 +22,9 @@
   <main>
     <div class="my-12 content ">
 
-      <h1 class="title-page mt-40 text-8xl leading-tight">Производство пластинчатых <span class="block ml-auto">теплообменников</span></h1>
-      <div class=" flex gap-5 pt-4 border-t border-primary-strokke1">
-        <div class="basis-1/4">
+      <h1 class="title-page mt-40 text-8xl mvpc:text-7xl olpc:text-6xl leading-tight">Производство пластинчатых <span class="block ml-auto">теплообменников</span></h1>
+      <div class="grid grid-cols-4 items-start gap-5 pt-4 border-t border-primary-strokke1">
+        <div class="basis-1/4 olpc:hidden">
           <span class="block w-4 h-4 bg-orange rounded-full"></span>
         </div>
         <div class="basis-1/4">
@@ -35,7 +35,7 @@
           <p class="text-m">Производство полного цикла включает в себя разработку и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.</p>
           <p class="text-m mt-2">Производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
         </div>
-        <div class="header-index__video-container basis-[calc(50%)] mr-auto rounded-lg overflow-hidden"><!--basis-7/12-->
+        <div class="header-index__video-container col-span-2 rounded-lg overflow-hidden olpc:col-span-3"><!--basis-7/12-->
           <figure class="header-index__darked"></figure>
           <!--Здесь рендерится видео в зависимости от разрешения экрана-->
           <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
@@ -153,7 +153,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
             </li>
-            <li class="pt-4 group basis-1/3 transition-all duration-200 flex pl-2 relative ">
+            <li class="pt-4 group basis-1/3 transition-all duration-200 flex pl-2 relative olpc:hidden">
               <div>
                 <h3 class="text-2xl font-semibold text-white mb-2">Пластинчатые теплообменники</h3>
                 <p class="text-m">паяные</p>
@@ -325,7 +325,7 @@
       <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
       <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1 mobile:*:block mobile:*:mb-4">
         <% newsData.map((art, index) => { %>
-          <li class="group transition-all duration-300 relative -mb-32 hover:mb-0 bg-blacktheme <%=index===newsData.length-1 ? 'mb-0 overflow-hidden' : ''%> " style="z-index: <%=index+1%>;">
+          <li class="group transition-all duration-300 relative -mb-32 hover:mb-0 bg-[#151515] <%=index===newsData.length-1 ? 'mb-0 overflow-hidden' : ''%> " style="z-index: <%=index+1%>;">
             <p class="text-lg my-1 text-gray-400"><%= art.formattedDate %></p>
             <img class="col-start-3 col-span-3" src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
             <div class="col-start-7 col-span-4">
@@ -337,7 +337,7 @@
               Читать
             </a>
             <% if (index === newsData.length-1) { %>
-              <figure class="bg-blacktheme  transition-all duration-150 group-hover:duration-250 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-36 z-10"></figure>
+              <figure class="bg-[#151515]  transition-all duration-150 group-hover:duration-250 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-36 z-10"></figure>
             <% } %>
           </li>
         <% }) %>
