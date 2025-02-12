@@ -74,13 +74,13 @@
     @apply col-span-6;
   }
   .ui-button {
-    @apply transition-all ease-in-out duration-200 p-3 text-white bg-[#E7381C] hover:bg-transparent hover:text-[#E7381C] rounded-md border-[1.5px] border-[#E7381C] text-base uppercase flex justify-center mobile:text-sm;
+    @apply transition-all ease-in-out duration-200 p-3 text-white bg-[#E7381C] hover:bg-transparent hover:text-[#E7381C] rounded-md border-[1.5px] border-[#E7381C] text-base uppercase flex justify-center laptop:text-sm;
   }
   .ui-button-text {
-    @apply transition-all duration-200 py-3 px-0 text-[#E7381C] rounded-md text-base uppercase flex  mobile:text-sm;
+    @apply transition-all duration-200 py-3 px-0 text-[#E7381C] rounded-md text-base uppercase flex  laptop:text-sm;
   }
   .ui-button-gray {
-    @apply transition-all duration-200 p-3 text-primary-strokke1 hover:bg-transparent hover:text-[#E7381C] rounded-md border border-primary-strokke1 hover:border-[#E7381C] text-base uppercase flex justify-center mobile:text-sm;
+    @apply transition-all duration-200 p-3 text-primary-strokke1 hover:bg-transparent hover:text-[#E7381C] rounded-md border border-primary-strokke1 hover:border-[#E7381C] text-base uppercase flex justify-center laptop:text-sm;
   }
 
 
@@ -161,7 +161,7 @@
     @apply text-[26px] uppercase text-[#B9B9B9] font-semibold mb-12 mobile:text-xl;
   }
   .up-text-title {
-    @apply text-2xl text-[#d4d4d4] font-medium mb-5  mobile:text-xl;
+    @apply text-2xl text-[#d4d4d4] font-medium mb-5  laptop:text-xl;
   }
   .text-m {
     @apply text-xl text-white leading-snug mvpc:text-lg mobile:text-sm;

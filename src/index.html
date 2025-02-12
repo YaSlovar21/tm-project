@@ -12,7 +12,9 @@
 
 <body class="page">
   <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
-  <p class="text-4xl absolute top-0 left-0 text-red-600"><%= isDevServer ? 'Включен режим разработчика' : ''%></p>
+  <% if (isDevServer) { %>
+    <p class="text-4xl absolute top-0 left-0 text-red-600">Включен режим разработчика</p>
+  <% } %>
   <header class="header header-up content">
     <a href="/" class="header__logo"><img src="<%=require('./images/header-logo-1.svg')%>" class="header__logo-img" alt="Лого Термоблок"/></a>
     <div class="header__right">
@@ -22,8 +24,8 @@
   <main>
     <div class="my-12 content ">
 
-      <h1 class="title-page mt-40 text-8xl mvpc:text-7xl olpc:text-6xl leading-tight">Производство пластинчатых <span class="block ml-auto">теплообменников</span></h1>
-      <div class="grid grid-cols-4 items-start gap-5 pt-4 border-t border-primary-strokke1">
+      <h1 class="title-page mt-40 text-8xl mvpc:text-7xl olpc:text-6xl laptop:text-5xl mobile:text-2xl mobilesm:text-3xl leading-tight">Производство пластинчатых <span class="block ml-auto">теплообменников</span></h1>
+      <div class="grid grid-cols-4 items-start gap-5 pt-4 border-t border-primary-strokke1 laptop:grid-cols-1">
         <div class="basis-1/4 olpc:hidden">
           <span class="block w-4 h-4 bg-orange rounded-full"></span>
         </div>
@@ -35,7 +37,7 @@
           <p class="text-m">Производство полного цикла включает в себя разработку и изготовление пластин и уплотнений. Мы серийно выпускаем пластинчатые теплообменники Теплохит ™ и рады сотрудничеству с фирмами, занимающимися теплообменным оборудованием.</p>
           <p class="text-m mt-2">Производство пластин и уплотнений 100% локализовано на территории предприятия.</p>
         </div>
-        <div class="header-index__video-container col-span-2 rounded-lg overflow-hidden olpc:col-span-3"><!--basis-7/12-->
+        <div class="header-index__video-container col-span-2 rounded-lg overflow-hidden olpc:col-span-3 laptop:col-span-1"><!--basis-7/12-->
           <figure class="header-index__darked"></figure>
           <!--Здесь рендерится видео в зависимости от разрешения экрана-->
           <!--<video style="max-width: 100%;" poster="images/bg_onload.svg" class="myvideo" autoplay playsinline="playsinline" muted="muted" loop="loop">
@@ -64,7 +66,7 @@
         </div>
       </div>-->
     </div>
-    <section class="content container-12 gap-5 mt-20 pt-4 border-t border-primary-strokke1 mobile:block">
+    <section class="content container-12 gap-5 mt-20 pt-4 border-t border-primary-strokke1 laptop:block">
       <h2 class="up-title up-title_svg col-span-2">О продукции</h2>
      <!-- <figure class="col-span-3 relative after:bg-blacktheme after:bg-opacity-25 after:w-full after:h-full after:top-0 after:left-0 after:absolute">
         <img class="" src="<%=require('./images/2024content/osn-prod.png')%>" alt="продукция">
@@ -124,7 +126,7 @@
           </ul>
           -->
           <ul class="flex gap-5">
-            <li class=" basis-1/3 relative pt-4 group transition-all duration-200 hover:mb-0 ">
+            <li class=" basis-1/3 relative pt-4 group transition-all duration-200 hover:mb-0 laptop:basis-1/2">
               <div>
                 <h3 class="text-2xl font-semibold text-white mb-2 max-w-96">Пластинчатые теплообменники</h3>
                 <p class="text-m">для жкх</p>
@@ -138,7 +140,7 @@
                 </svg>
               </a>
             </li>
-            <li class=" basis-1/3 relative pt-4 group transition-all duration-200 ">
+            <li class=" basis-1/3 relative pt-4 group transition-all duration-200 laptop:basis-1/2">
               <div>
                 <h3 class="text-2xl font-semibold text-white mb-2  max-w-96">Пластинчатые теплообменники</h3>
                 <p class="text-m">для пищевой отрасли</p>
@@ -179,7 +181,7 @@
       <span class="up-title up-title_svg">Дополнительно</span>
       <div>
         <h2 class="subtitle">Дополнительно</h2>
-        <p class="text-gray-200 text-m ">Вместе с теплообменником могут быть поставлены теплоизоляция разаботанная специально под нашу линейку теплообменников</p>
+        <p class="text-gray-200 text-m ">Вместе с теплообменником может быть поставлена теплоизоляция, разработанная специально под нашу линейку теплообменников.</p>
         <ul class="py-8 w-2/3 laptop:w-full">
           <li class="mb-4">
             <a class="flex h-full group items-start text-gray-200" href="<%= ROUTES.ptoTeploizol %>">
@@ -260,31 +262,31 @@
       <div class="mainmodels__wrapper content container-2">
         <h2 class="up-title up-title_svg">Модельный ряд теплообменников</h2>
         <div>
-        <ul class="models-ti timodels">
-          <% tis.map(pto => { %>
-            <li class="timodels__pto">
-              <a class="timodels__link" href="<%= `/${pto.filename}`%>">
-                <h5 class="timodels__ptotitle"><%= pto.templateParameters.headingAlias %></h5>
-                <p class="timodels__ptodu">ДУ <%= pto.templateParameters.du.map(i=> ` ${i}`) %></p>
-              </a>
-            </li>
-          <% }) %>
-        </ul>
-        <ul class="models-food timodels">
-          <% foodtis.map(pto => { %>
-            <li class="timodels__pto">
-              <a class="timodels__link" href="<%= `/${pto.filename}`%>">
-                <h5 class="timodels__ptotitle"><%= pto.templateParameters.heading %></h5>
-                <p class="timodels__ptodu">ДУ <%= pto.templateParameters.du.map(i=> ` ${i}`) %></p>
-              </a>
-            </li>
-          <% }) %>
-        </ul>
-        <div class="flex gap-5 mt-8">
-          <button class="ui-button mainmodels__raschet">Рассчитать теплообменник</button>
-          <button class="mainmodels__turnbutton text-white">Смотреть в пищевом исполнении</button>
+          <ul class="models-ti timodels">
+            <% tis.map(pto => { %>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="<%= `/${pto.filename}`%>">
+                  <h5 class="timodels__ptotitle"><%= pto.templateParameters.headingAlias %></h5>
+                  <p class="timodels__ptodu">ДУ <%= pto.templateParameters.du.map(i=> ` ${i}`) %></p>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+          <ul class="models-food timodels">
+            <% foodtis.map(pto => { %>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="<%= `/${pto.filename}`%>">
+                  <h5 class="timodels__ptotitle"><%= pto.templateParameters.heading %></h5>
+                  <p class="timodels__ptodu">ДУ <%= pto.templateParameters.du.map(i=> ` ${i}`) %></p>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+          <div class="flex gap-5 mt-8">
+            <button class="ui-button mainmodels__raschet">Рассчитать теплообменник</button>
+            <button class="mainmodels__turnbutton text-white">Смотреть в пищевом исполнении</button>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -307,42 +309,44 @@
         </div>
       </div>
     </section>
-    <section class="content container-2 pb-14 mt-10 pt-4 border-t border-primary-strokke1">
-      <span class="up-title up-title_svg">Что нового</span>
-      <div>
-        <h2 class="subtitle max-w-[595px]">Разработка новых пластин и уплотнений</h2>
-        <p class="before-small-circle-indent  max-w-[83%] text-m">На данный момент мы осуществляем изготовление штампов, остнастки для производства двух новых теплообменников ДУ65. Данные пластины будут иметь инновационную гофрированную поверхность.</p>
+    <section class="  pb-14  ">
+      <div class="content container-2 mt-10 pt-4 border-t border-primary-strokke1">
+        <span class="up-title up-title_svg">Что нового</span>
+        <div>
+          <h2 class="subtitle max-w-[595px]">Разработка новых пластин и уплотнений</h2>
+          <p class="before-small-circle-indent  max-w-[83%] text-m">На данный момент мы осуществляем изготовление штампов, остнастки для производства двух новых теплообменников ДУ65. Данные пластины будут иметь инновационную гофрированную поверхность.</p>
+        </div>
       </div>
       <img class="col-span-2 my-8 rounded" src="<%=require('./images/2024content/aboutmain.jpg')%>" alt="Изготовление пресс-формы для производства пластин теплообменников">
       <div class="col-span-2 grid grid-cols-12 mobile:block ">
         <img class="row-span-2 col-start-3 col-span-3" src="<%=require('./images/2024content/test-turbulent.png')%>">
         <p class="text-m max-w-[700px] col-start-7 col-span-6 mobile:my-4 ">Гофрированная поверхность обеспечивает большую площадь теплообмена, снижая тем самым металлоемкость и цену изделия. Также при такой поверхности в теплообменнике становится меньше точек застоя, повышается общая эффективность теплообмена.</p>
-        <a class="ui-button-gray mr-auto self-end col-start-7 col-span-2" href="<%= ROUTES.ptoNewGofr %>">Подробнее</a>
+        <a class="ui-button-gray mr-auto self-end mt-4 col-start-7 col-span-2" href="<%= ROUTES.ptoNewGofr %>">Подробнее</a>
       </div>
-
-      <span class="row-span-2 up-title up-title_svg mt-28">События</span>
-      <h3 class="subtitle mt-20">Актуальные события</h3>
-      <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
-      <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1 mobile:*:block mobile:*:mb-4">
-        <% newsData.map((art, index) => { %>
-          <li class="group transition-all duration-300 relative -mb-32 hover:mb-0 bg-[#151515] <%=index===newsData.length-1 ? 'mb-0 overflow-hidden' : ''%> " style="z-index: <%=index+1%>;">
-            <p class="text-lg my-1 text-gray-400"><%= art.formattedDate %></p>
-            <img class="col-start-3 col-span-3" src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
-            <div class="col-start-7 col-span-4">
-              <h3 class="up-text-title font-medium mb-2"><%= art.heading %></h3>
-              <p class="text-lg text-blacktheme-white max-w-[384px]"><%= art.description %></p>
-            </div>
-            <a class="ui-button-gray col-start-11" href="/blog-proizvodstva/<%= art.staticPage %>">
-              <span class="inset0"></span>
-              Читать
-            </a>
-            <% if (index === newsData.length-1) { %>
-              <figure class="bg-[#151515]  transition-all duration-150 group-hover:duration-250 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-36 z-10"></figure>
-            <% } %>
-          </li>
-        <% }) %>
-      </ul>
-
+      <div class="content container-2">
+        <span class="row-span-2 up-title up-title_svg mt-28">События</span>
+        <h3 class="subtitle mt-20">Актуальные события</h3>
+        <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
+        <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1 mobile:*:block mobile:*:mb-4">
+          <% newsData.map((art, index) => { %>
+            <li class="group transition-all duration-300 relative -mb-32 hover:mb-0 bg-[#151515] <%=index===newsData.length-1 ? 'mb-0 overflow-hidden' : ''%> " style="z-index: <%=index+1%>;">
+              <p class="text-lg my-1 text-gray-400"><%= art.formattedDate %></p>
+              <img class="col-start-3 col-span-3" src="<%= require(`./api-images/blog-posters/${art.articleInnerFile}.png`)%>" alt="<%= art.heading %>">
+              <div class="col-start-7 col-span-4">
+                <h3 class="up-text-title font-medium mb-2"><%= art.heading %></h3>
+                <p class="text-lg text-blacktheme-white max-w-[384px]"><%= art.description %></p>
+              </div>
+              <a class="ui-button-gray col-start-11" href="/blog-proizvodstva/<%= art.staticPage %>">
+                <span class="inset0"></span>
+                Читать
+              </a>
+              <% if (index === newsData.length-1) { %>
+                <figure class="bg-[#151515]  transition-all duration-150 group-hover:duration-250 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-36 z-10"></figure>
+              <% } %>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
     </section>
 
     <!--Галлерея + UP FOOTER

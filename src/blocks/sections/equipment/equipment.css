@@ -69,6 +69,7 @@
 @media screen and (max-width: 768px) {
   .equipment__desc {
     padding: 20px 5px;
+    display: none;
   }
 }
 
@@ -88,6 +89,8 @@
 @media screen and (max-width: 768px) {
   .equipment__form-container {
     border-left: none;
+    grid-row: auto;
+    grid-column: auto;
   }
 }
 .equipment__form-container form {

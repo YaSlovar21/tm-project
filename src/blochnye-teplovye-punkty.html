@@ -171,7 +171,7 @@
               производства теплообменного оборудования и установок.
           </p>
           <div class="row-span-3">
-            тут фото подробнее
+            <!-- тут фото подробнее-->
           </div>
           <div class="btp-adv">
             <div class="btp-adv__feats">
@@ -230,7 +230,7 @@
             <h3 class="upsubtitle mt-4">Для отопления</h3>
             <ul class="">
               <% btps.filter(i => i.type==='otop').sort((a,b) => Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
+                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>">БТП <%-item.name%></a></li>
               <% }); %>
             </ul>
           </div>
@@ -238,7 +238,7 @@
             <h3 class="upsubtitle mt-4">Для ГВС</h3>
             <ul class="">
               <% btps.filter(i => i.type==='gvs').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
+                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>">БТП <%-item.name%></a></li>
               <% }); %>
             </ul>
           </div>
@@ -246,7 +246,7 @@
             <h3 class="upsubtitle mt-4">Для вентиляции</h3>
             <ul class="">
               <% btps.filter(i => i.type==='vent').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
+                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>">БТП <%-item.name%></a></li>
               <% }); %>
             </ul>
           </div>
@@ -254,7 +254,7 @@
             <h3 class="upsubtitle mt-4">Узлы ввода</h3>
             <ul class="">
               <% btps.filter(i => i.type==='vvoda').sort((a,b)=> Number(a.name.split(' ')[0])- Number(b.name.split(' ')[0])).forEach(function(item, index) { %>
-                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>"><%-item.name%></a></li>
+                <li class=""><a class="link-beauty text-m py-4 block <%= index!==0 ? `border-t border-primary-strokke1` : '' %>" target="_blank" href="<%-item.link%>">БТП <%-item.name%></a></li>
               <% }); %>
             </ul>
           </div>
@@ -280,7 +280,6 @@
       <section class="container-2 py-14">
         <span class="up-title up-title_svg">Смотрите также</span>
         <a class="pt-4 border-t border-primary-strokke1 grid grid-cols-6 link-beauty_moveup" href="/pasterizatsionno-okhladitelnye-ustanovki.html">
-
           <img class="col-span-2 row-span-3" src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Готовое решение - пастеризационная охладительная остановка">
           <h3 class="up-text-title col-span-4">Установки пищевые пастеризационно охладительные</h3>
           <p class="text-m col-span-4">На базе теплообменников собственного производства наше предприятие имеет большой опыт в изготовлении пищевых установок. Зачастую - это пастеризаторы вина, сусла на основе двухступенчатой системы нагрева.</p>

@@ -108,7 +108,7 @@ function generateConfig(infoBlogData, isDevServer) {
   const htmlTisPlugins = generateTisHtmlPlugins(isDevServer);
   const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData, isDevServer);
   const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins(isDevServer);
-
+  console.log(infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id));
   return {
     entry: {
       index: "./src/pages/index.js",
@@ -278,7 +278,7 @@ function generateConfig(infoBlogData, isDevServer) {
           isDevServer,
           tis,
           foodtis,
-          newsData: infoBlogData.filter(i=> i.type.includes('news')),
+          newsData: infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id),
         },
         title:
           "Российский производитель пластин и пластинчатых теплообменников Термоблок",
@@ -495,7 +495,7 @@ function generateConfig(infoBlogData, isDevServer) {
         templateParameters: { 
           isDevServer,
           canonicalURL,
-          ROUTES, 
+          ROUTES,
         },
         title: "Подбор и расчет пластинчатых теплообменников онлайн",
         meta: {
@@ -555,15 +555,16 @@ function generateConfig(infoBlogData, isDevServer) {
 const proxyAgent = new HttpsProxyAgent.HttpsProxyAgent('http://10.10.14.14:3128');
 
 function articleDateMapper(newsArr) {
-  return newsArr.map((item) => {
-    const date = new Date(item.date);
-    const month = date.getMonth() + 1;
-    return {
-      ...item,
-      type: JSON.parse(item.type),
-      formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
-    }
-  })
+  return newsArr
+            .map((item) => {
+              const date = new Date(item.date);
+              const month = date.getMonth() + 1;
+              return {
+                ...item,
+                type: JSON.parse(item.type),
+                formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
+              }
+            })
 }
 
 module.exports = () => {

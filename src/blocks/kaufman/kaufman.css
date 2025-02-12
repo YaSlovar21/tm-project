@@ -1,15 +1,15 @@
 .kaufman {
     position: relative;
     overflow: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     /*background: url(../../images/sots_kauf.svg) no-repeat bottom right;*/
 
 
   }
   .kaufman_bg_fixed {
     background: url(../../images/bg_kaufman.png) no-repeat 25% ;
-
+    background-color: #111;
     background-attachment: fixed;
   }
 

@@ -63,10 +63,25 @@
   .up-footer {
     position: relative;
     top: 0;
+    width: 100%;
+    display: flex;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
   }
 
   .up-footer__list {
     flex-direction: row;
+    margin: 0;
+    width: 100%;
+
+  }
+
+  .up-footer__list-item {
+    @apply rounded-t-md rounded-b-none;
+  }
+
+  .up-footer__list-item:last-child {
+    @apply rounded-t-md rounded-b-none;
   }
 }
 
@@ -87,6 +102,5 @@
   .up-footer__list-item  {
     font-size: 12px;
     font-weight: 300;
-
   }
 }
