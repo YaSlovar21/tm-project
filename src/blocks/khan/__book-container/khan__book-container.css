@@ -19,3 +19,10 @@
       width: 430px;
     }
   }
+
+
+  @media screen and (max-width: 636px) {
+    .khan__book-container {
+      width: 100%;
+    }
+  }
