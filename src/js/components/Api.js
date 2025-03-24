@@ -13,7 +13,7 @@ export default class Api {
     }
 
      getInitialCards() {
-        return fetch(`https://api.termoblok.ru/blogcards`, {
+        return fetch(`https://api.termoblok.ru/data/blogCards`, {
             headers: this._headers,
         })
         .then((response) => {
@@ -21,8 +21,18 @@ export default class Api {
         })
     }
 
+
+    getNews() {
+      return fetch(`https://api.termoblok.ru/news`, {
+          headers: this._headers,
+      })
+      .then((response) => {
+          return this._isResponseOk(response);
+      })
+  }
+
     getInitiatPartners() {
-      return fetch(`https://api.termoblok.ru/partners`, {
+      return fetch(`https://api.termoblok.ru/data/partners`, {
           headers: this._headers,
       })
       .then((response) => {
@@ -33,7 +43,7 @@ export default class Api {
 
 
     sendCallForm(formDataJson) {
-        return fetch(`${this._baseUrl}/small-form`, {
+        return fetch(`${this._baseUrl}/forms/small-form`, {
             method : 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -48,7 +58,7 @@ export default class Api {
     }
 
     sendBigForm(formDataJson) {
-      return fetch(`${this._baseUrl}/big-form`, {
+      return fetch(`${this._baseUrl}/forms/big-form`, {
         method : 'POST',
         headers: {
 

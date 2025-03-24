@@ -82,12 +82,6 @@ function generateBlogPagesHtmlPlugins(articles, isDevServer) {
         isGkh: article.type.includes('gkh'),
         articleFile: `${article.articleInnerFile}.html`,
         customPoster: article.type.includes('news') ? `${article.articleInnerFile}.png` : '',
-        /*relevanceArticles: [
-          {
-            name: "Теплобоменник для отопления частного дома",
-            link: "/blog-proizvodstva/teploobmenniki-otopleniya-chastnogo-doma.html",
-          },
-        ],*/
       },
       title: article.seoTitle,
       heading: article.h1,
@@ -102,12 +96,45 @@ function generateBlogPagesHtmlPlugins(articles, isDevServer) {
   })
 }
 
-function generateConfig(infoBlogData, isDevServer) {
+function generateNewsPagesToBlogHtmlPlugins(articles, isDevServer) {
+  return articles.filter(a=> a.isStaticPage).map(article => {
+    generatedPaths.push(
+      {
+        path: `${ROUTES.blog}${article.isStaticPage}`,
+        lastmod: dateNow,
+        priority: 0.7,
+        changefreq: 'monthly'
+      }
+    )
+    return new HtmlWebpackPlugin({
+      templateParameters: {
+        isDevServer,
+        canonicalURL: canonicalURL,
+        upsubtitle: 'новости',
+        isGkh: true,
+        articleFile: `${article.textId}.html`
+      },
+      title: article.title,
+      heading: article.title,
+      meta: {
+        keywords: article.title,
+        description: article.intro,
+      },
+      template: "./src/blog-page-abstract.html",
+      filename: `blog-proizvodstva/${article.isStaticPage}`,
+      chunks: ["blogPage", "all", "map", "popupImage"],
+    })
+  })
+}
 
+
+function generateConfig(infoBlogData, newsData, isDevServer) {
   const htmlRaschetPlugins = generateRaschetHtmlPlugins(isDevServer);
   const htmlTisPlugins = generateTisHtmlPlugins(isDevServer);
   const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData, isDevServer);
+  const htmlNewsToBlog = generateNewsPagesToBlogHtmlPlugins(newsData, isDevServer);
   const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins(isDevServer);
+
   console.log(infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id));
   return {
     entry: {
@@ -278,7 +305,7 @@ function generateConfig(infoBlogData, isDevServer) {
           isDevServer,
           tis,
           foodtis,
-          newsData: infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id),
+          newsData: newsData,
         },
         title:
           "Российский производитель пластин и пластинчатых теплообменников Термоблок",
@@ -513,7 +540,8 @@ function generateConfig(infoBlogData, isDevServer) {
           isDevServer,
           canonicalURL,
           ROUTES,
-          newsData: infoBlogData,
+          infoBlogData: infoBlogData,
+          newsData,
         },
         title: "Новое в производстве пластинчатых теплообменников",
         meta: {
@@ -548,7 +576,7 @@ function generateConfig(infoBlogData, isDevServer) {
         filename: "[name].css",
       }),
       new SitemapPlugin({ base: canonicalURL, paths: paths.concat(generatedPaths).sort((a,b)=> b.priority - a.priority) }),
-    ].concat(htmlRaschetPlugins, htmlTisPlugins, htmlArticlesPlugins,htmlSpecPagesPluginst),
+    ].concat(htmlRaschetPlugins, htmlTisPlugins, htmlArticlesPlugins, htmlNewsToBlog, htmlSpecPagesPluginst),
   }
 };
 
@@ -556,28 +584,47 @@ const proxyAgent = new HttpsProxyAgent.HttpsProxyAgent('http://10.10.14.14:3128'
 
 function articleDateMapper(newsArr) {
   return newsArr
-            .map((item) => {
-              const date = new Date(item.date);
-              const month = date.getMonth() + 1;
-              return {
-                ...item,
-                type: JSON.parse(item.type),
-                formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
-              }
-            })
+      .map((item) => {
+        const date = new Date(item.date);
+        const month = date.getMonth() + 1;
+        return {
+          ...item,
+          type: JSON.parse(item.tags),
+          formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
+        }
+      })
 }
+
+function newsDateMapper(newsArr) {
+  return newsArr
+      .map((item) => {
+        const date = new Date(item.date);
+        const month = date.getMonth() + 1;
+        return {
+          ...item,
+          formattedDate: item.date ? `${date.getDate()}.${month < 10 ? '0' : ''}${month}.${date.getFullYear()}` : ''
+        }
+      })
+}
+
 
 module.exports = () => {
   const isDevServer = process.env.WEBPACK_SERVE;
   console.log(isDevServer);
   return new Promise((resolve, reject) => {
       Promise.all([
-          fetch1('https://api.termoblok.ru/blogcards').then(res => res.json()), 
-          //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=news', { agent: proxyAgent}).then(res => res.json()), 
+          fetch1('https://api.termoblok.ru/data/blogCards').then(res => res.json()), 
+          fetch1('https://api.termoblok.ru/news').then(res => res.json()), 
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=objects', { agent: proxyAgent}).then(res => res.json()), 
         ])
         .then((data) => {
-          resolve(generateConfig(articleDateMapper(data[0]), isDevServer));
+          resolve(
+            generateConfig(
+              articleDateMapper(data[0]), //карточки блока
+              newsDateMapper(data[1]), //новости
+              isDevServer
+            )
+          );
         })
      
   });

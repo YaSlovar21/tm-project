@@ -41,7 +41,7 @@ let initialCards;
 
 async function getInitialNews() {
   const newsCards = await apiYdb.getInitialCards();
-  initialCards = newsCards.map(i=> ({...i, type: JSON.parse(i.type)})).filter(i => i.type.includes('gkh'));
+  initialCards = newsCards.map(i=> ({...i, tags: JSON.parse(i.tags)})).filter(i => i.tags.includes('gkh'));
   console.log(initialCards);
   const cardsList = new SectionPaginator({
     data: initialCards,
