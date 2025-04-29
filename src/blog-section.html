@@ -29,15 +29,17 @@
     <h1 class="title-page">Блог производителя</h1>
     <h2 class="up-title up-title_svg mt-14">Новости</h2>
     <ul class="grid grid-cols-3 gap-5 pt-4 border-t border-primary-strokke1 mobile:grid-cols-1">
-      <% newsData.map(art => { %>
+      <% newsData.sort((a,b)=> b.id-a.id).map(art => { %>
         <li class="relative">
-          <img src="<%= isDevServer ? 'https://www.termoblok.ru' : ''%>/api-images/<%= art.id %>/<%= art.poster%>" alt="<%= art.title %>">
+          <img class="rounded-lg" src="<%= isDevServer ? 'https://www.termoblok.ru' : ''%>/api-images/news/<%= art.textId %>/<%= art.poster%>" alt="<%= art.title %>">
           <p class="text-sm my-1 text-gray-400"><%= art.formattedDate %></p>
           <h3 class="up-text-title font-medium mb-2"><%= art.title %></h3>
           <p class="text-m text-blacktheme-white max-w-[384px]"><%= art.intro %></p>
-          <a class="" href="/blog-proizvodstva/<%= art.isStaticPage %>">
-            <span class="inset0"></span>
-          </a>
+          <% if (art.isStaticPage) { %>
+            <a class="" href="/blog-proizvodstva/<%= art.isStaticPage %>">
+              <span class="inset0"></span>
+            </a>
+          <% } %>
         </li>
       <% }) %>
     </ul>

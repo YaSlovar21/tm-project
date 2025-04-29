@@ -128,12 +128,13 @@ function generateNewsPagesToBlogHtmlPlugins(articles, isDevServer) {
 }
 
 
-function generateConfig(infoBlogData, newsData, isDevServer) {
+function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
   const htmlRaschetPlugins = generateRaschetHtmlPlugins(isDevServer);
   const htmlTisPlugins = generateTisHtmlPlugins(isDevServer);
   const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData, isDevServer);
   const htmlNewsToBlog = generateNewsPagesToBlogHtmlPlugins(newsData, isDevServer);
   const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins(isDevServer);
+  console.log(galleryData);
 
   console.log(infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id));
   return {
@@ -164,7 +165,7 @@ function generateConfig(infoBlogData, newsData, isDevServer) {
       path: path.resolve(__dirname, "dist"),
       filename: "js/[name].js",
       assetModuleFilename: "images/[hash][ext]",
-      //publicPath: ''
+      publicPath: '/'
     },
     // добавили режим разработчика
     mode: "development",
@@ -487,6 +488,23 @@ function generateConfig(infoBlogData, newsData, isDevServer) {
         filename: "about/index.html",
         chunks: ["about", "all", "map"],
       }),
+      /*---------ГАЛЕРЕЯ----------- */
+      new HtmlWebpackPlugin({
+        templateParameters: { 
+          isDevServer,
+          canonicalURL,
+          ROUTES,
+          galleryData
+        },
+        title: "Галерея произвзводства пластинчатых теплообменников и комплектующих к ним",
+        meta: {
+          keywords: "фото производства пластинчатых теплообменников",
+          description: "Вы можете увидеть как производятся пластинчатые теплообменники и теплообменные пластины полностью Российского производства. От размотки ленты нержавеющей стали до формовки и сборки готового теплообменного аппарата.",
+        },
+        template: "./src/_gallery.html",
+        filename: "about/gallery/index.html",
+        chunks: ["about", "all", ],
+      }),
       /* ВАКАНСИИ 
       new HtmlWebpackPlugin({
         templateParameters: { 
@@ -615,6 +633,7 @@ module.exports = () => {
       Promise.all([
           fetch1('https://api.termoblok.ru/data/blogCards').then(res => res.json()), 
           fetch1('https://api.termoblok.ru/news').then(res => res.json()), 
+          fetch1('https://api.termoblok.ru/gallery').then(res => res.json()), 
           //fetch1('https://functions.yandexcloud.net/d4e9aq1evmfdb0cc7uo4?base=objects', { agent: proxyAgent}).then(res => res.json()), 
         ])
         .then((data) => {
@@ -622,6 +641,7 @@ module.exports = () => {
             generateConfig(
               articleDateMapper(data[0]), //карточки блока
               newsDateMapper(data[1]), //новости
+              data[2], //gallery
               isDevServer
             )
           );

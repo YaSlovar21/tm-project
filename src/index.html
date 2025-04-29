@@ -328,18 +328,20 @@
         <h3 class="subtitle mt-20">Актуальные события</h3>
         <p class="text-m">Новости компании, участие в выставках, новые внедрения и прочее.</p>
         <ul class="col-span-2 mt-10 *:grid *:grid-cols-12 *:items-start *:py-6 *:border-t *:border-primary-strokke1 mobile:*:block mobile:*:mb-4">
-          <% newsData.map((art, index) => { %>
+          <% newsData.sort((a,b)=> b.id-b.id).map((art, index) => { %>
             <li class="group transition-all duration-300 relative -mb-32 hover:mb-0 bg-[#151515] <%=index===newsData.length-1 ? 'mb-0 overflow-hidden' : ''%> " style="z-index: <%=index+1%>;">
               <p class="text-lg my-1 text-gray-400"><%= art.formattedDate %></p>
-              <img class="col-start-3 col-span-3" src="<%= isDevServer ? 'https://www.termoblok.ru' : ''%>/api-images/<%= art.id %>/<%= art.poster%>" alt="<%= art.title %>">
+              <img class="col-start-3 col-span-3 rounded-lg" src="<%= isDevServer ? 'https://www.termoblok.ru' : ''%>/api-images/news/<%= art.textId %>/<%= art.poster%>" alt="<%= art.title %>">
               <div class="col-start-7 col-span-4">
                 <h3 class="up-text-title font-medium mb-2"><%= art.title %></h3>
                 <p class="text-lg text-blacktheme-white max-w-[384px]"><%= art.intro %></p>
               </div>
-              <a class="ui-button-gray col-start-11" href="/blog-proizvodstva/<%= art.isStaticPage %>">
-                <span class="inset0"></span>
-                Читать
-              </a>
+              <% if (art.isStaticPage) { %>
+                <a class="ui-button-gray col-start-11" href="/blog-proizvodstva/<%= art.isStaticPage %>">
+                  <span class="inset0"></span>
+                  Читать
+                </a>
+              <% } %>
               <% if (index === newsData.length-1) { %>
                 <figure class="bg-[#151515]  transition-all duration-150 group-hover:duration-250 absolute bottom-0 left-0 w-full group-hover:translate-y-full h-36 z-10"></figure>
               <% } %>
