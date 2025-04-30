@@ -588,7 +588,21 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
         filename: "catalog/index.html",
         chunks: ["catalog", "all", "map"],
       }),
-
+      new HtmlWebpackPlugin({
+        templateParameters: {
+          isDevServer,
+          canonicalURL,
+          ROUTES,
+        },
+        title: "Согласие на обработку персональных данных",
+        meta: {
+          keywords: "Согласие на обработку персональных данных",
+          description: "Согласие на обработку персональных данных",
+        },
+        template: "./src/sonsent.html",
+        filename: "sonsent/index.html",
+        chunks: ["blogSpecPage", "all"],
+      }),
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
         filename: "[name].css",
