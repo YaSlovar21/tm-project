@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link href="<%= canonicalURL %>/about/"  rel="canonical" />
+    <link href="<%= canonicalURL %><%= linkPathFunc(currentPage) %>"  rel="canonical" />
   </head>
-
   <body class="page">
     <%= require(`html-loader!./inner-metrika${isDevServer ? '-dev-server' : ''}.html`).default %>
-
       <header class="header header-up content">
         <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
         <div class="header__right">
@@ -27,13 +25,22 @@
       <h1 class="title-page mt-0">Галерея производства</h1>
       <ul class="grid grid-cols-3 gap-x-8 gap-y-12 items-start olpc:grid-cols-2 laptop:grid-cols-1 laptop:gap-y-16">
       <% galleryData.map((photo)=> { %>
-        <li class="flex flex-col-reverse">
+        <li class="flex flex-col-reverse relative">
           <h2 class="text-2xl mt-4 text-slate-300 font-medium mvpc:text-xl"><%= photo.title %></h2>
           <img loading="lazy" class="rounded-lg w-full" src="<%= isDevServer ? 'https://www.termoblok.ru' : '' %>/api-images/gallery/<%= photo.fileName %>" alt="<%= photo.title %>">
+          <a class="" href="/about/gallery/<%= photo.textId%>.html">
+            <span class="inset0"></span>
+          </a>
         </li>
       <% }) %>
       </ul>
-
+      <% if (totalPage!==1) { %>
+        <div class="py-2 flex mt-16 mb-6">
+        <% Array.from({length: totalPage}, (_, i) => i + 1).map(page => { %>
+          <a class="flex mr-2 px-4 py-3 rounded <%=page===currentPage ? 'bg-orange' : '' %> text-white text-2xl font-semibold" href="<%= linkPathFunc(page) %>"><%= page %> </a>
+        <% }) %>
+        </div>
+      <% } %>
     </main>
 
   <%= require('html-loader!./insets/asides/inner-footer.html').default %>

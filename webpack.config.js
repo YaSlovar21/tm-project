@@ -19,8 +19,80 @@ const { tis, foodtis } = require('./tis');
 const { specPages, specPagesTypes } = require('./specPages');
 const { cycleData, blogThemesDict } = require('./consts');
 const { ROUTES, phProcs } = require('./constants');
+const { genSitemapObj } = require('./utils-hexie');
+
+const GALL_PAGE_SIZE = 9;
+
+const dateNow = (new Date()).toString();
+let generatedPaths = [];
 
 
+function generateGalleryPageHtmlPlugins(isDevServer, galleryData) {
+  const htmlPlugins = [];   
+  const totalPage = Math.ceil( galleryData.length / GALL_PAGE_SIZE);
+
+  for( let i=1; i<=totalPage; i++ ) {
+    const indexStart = (i-1)*GALL_PAGE_SIZE;
+    const indexEnd = i*GALL_PAGE_SIZE;
+    const currentPageHtmlPlugin = generateGallPageHtmlPlugin(isDevServer, i, totalPage, galleryData.slice(indexStart, indexEnd));
+    htmlPlugins.push(currentPageHtmlPlugin);
+  }
+
+  return htmlPlugins;
+}
+
+function linkPathForGalleryPage(pageNumber) {
+  return `/about/gallery/${pageNumber!==1 ? `${pageNumber}/` : ''}`
+}
+
+function generateGallPageHtmlPlugin(isDevServer, currentPage, totalPage, galleryDataSliced) {
+  generatedPaths.push(genSitemapObj(`about/gallery/${currentPage!==1 ? `${currentPage}/` : ''}`, 0.8, 'monthly'));
+  return new HtmlWebpackPlugin({
+    templateParameters: {
+      isDevServer,
+      canonicalURL,
+      ROUTES,
+      galleryData: galleryDataSliced,
+      currentPage,
+      totalPage,
+      linkPathFunc: linkPathForGalleryPage,
+      GALL_PAGE_SIZE
+    },
+    title: "Галерея произвзводства пластинчатых теплообменников и комплектующих к ним",
+    meta: {
+      keywords: "фото производства пластинчатых теплообменников",
+      description: "Вы можете увидеть как производятся пластинчатые теплообменники и теплообменные пластины полностью Российского производства. От размотки ленты нержавеющей стали до формовки и сборки готового теплообменного аппарата.",
+    },
+    template: "./src/_gallery.html",
+    filename: `about/gallery/${currentPage!==1 ? `${currentPage}/` : ''}index.html`,
+    chunks: [ "all" , "gallery"],
+  })
+}
+
+
+function generateMonoPhotoPageHtmlPlugins(isDevServer, galleryData) {
+  return galleryData.map((photo) => {
+    //запиливаем страничку в карту сайта
+    generatedPaths.push(genSitemapObj(`/about/gallery/${photo.textId}.html`, 0.7, 'monthly'));
+    console.log(`/about/gallery/${photo.textId}.html`);
+    return new HtmlWebpackPlugin({
+      templateParameters: {
+        isDevServer,
+        canonicalURL,
+        ROUTES,
+        photo,
+      },
+      title: photo.title,
+      meta: {
+        keywords: "фото производства пластинчатых теплообменников",
+        description: photo.desc,
+      },
+      template: "./src/_gallery_photo_item.html",
+      filename: `about/gallery/${photo.textId}.html`,
+      chunks: ["all", "gallery"],
+    })
+  })
+}
 
 function generateRaschetHtmlPlugins(isDevServer) {
     return rawData.map(ptoData => {
@@ -61,8 +133,7 @@ function generateSpecPagesHtmlPlugins(isDevServer) {
   })
 }
 
-const dateNow = (new Date()).toString();
-let generatedPaths = [];
+
 
 function generateBlogPagesHtmlPlugins(articles, isDevServer) {
   return articles.map(article => {
@@ -134,6 +205,9 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
   const htmlArticlesPlugins = generateBlogPagesHtmlPlugins(infoBlogData, isDevServer);
   const htmlNewsToBlog = generateNewsPagesToBlogHtmlPlugins(newsData, isDevServer);
   const htmlSpecPagesPluginst = generateSpecPagesHtmlPlugins(isDevServer);
+  const htmlGalleryPagesPlugins = generateGalleryPageHtmlPlugins(isDevServer, galleryData);
+  const htmlMonoPhotoPlugins = generateMonoPhotoPageHtmlPlugins(isDevServer, galleryData);
+
   console.log(galleryData);
 
   console.log(infoBlogData.filter(i=> i.type.includes('news')).toSorted((a,b) => b.id - a.id));
@@ -150,6 +224,7 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
       production: "./src/pages/production.js",
       service: "./src/pages/service.js",
       about: "./src/pages/about.js",
+      gallery: "./src/pages/gallery.js",
       contacts: "./src/pages/contacts.js",
       blogSection: "./src/pages/blog-section.js",
       blogPage: "./src/pages/blog-page.js",
@@ -198,6 +273,22 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
               },
             },
           ],
+        },
+        { test: /\.(ejs)$/,
+          include: [
+            path.join(__dirname, 'src/blog-faq-abstract.ejs'),  
+          ],
+          use: {
+            loader: 'ejs-loader',
+            options: {
+              esModule: false,
+              // Отключаем выполнение кода в <% %>
+              delimiter: '$',  // Теперь {%= %} вместо <%= %>
+              // Игнорируем стандартные <% %>
+              compileDebug: false,
+              client: false,
+            }
+          }
         },
         {
           test: /favicon\.svg/,
@@ -488,9 +579,12 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
         filename: "about/index.html",
         chunks: ["about", "all", "map"],
       }),
-      /*---------ГАЛЕРЕЯ----------- */
+      /*---------ГАЛЕРЕЯ----------- 
+      // в данную страницу должны быть переданы
+      // - currentPage
+      // - totalPage (всего страниц) = Math.ceil(galleryData.length / GALL_PAGE_SIZE)
       new HtmlWebpackPlugin({
-        templateParameters: { 
+        templateParameters: {
           isDevServer,
           canonicalURL,
           ROUTES,
@@ -504,7 +598,7 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
         template: "./src/_gallery.html",
         filename: "about/gallery/index.html",
         chunks: ["about", "all", ],
-      }),
+      }),*/
       /* ВАКАНСИИ 
       new HtmlWebpackPlugin({
         templateParameters: { 
@@ -603,12 +697,22 @@ function generateConfig(infoBlogData, newsData, galleryData, isDevServer) {
         filename: "sonsent/index.html",
         chunks: ["blogSpecPage", "all"],
       }),
+      /*new HtmlWebpackPlugin({
+        templateParameters: {
+          isDevServer,
+          canonicalURL,
+          ROUTES,
+        },
+        template: "./src/blog-faq-abstract.ejs",
+        filename: "templates/blog-faq-abstract-template.html",
+        chunks: ["all"],
+      }),*/
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
         filename: "[name].css",
       }),
       new SitemapPlugin({ base: canonicalURL, paths: paths.concat(generatedPaths).sort((a,b)=> b.priority - a.priority) }),
-    ].concat(htmlRaschetPlugins, htmlTisPlugins, htmlArticlesPlugins, htmlNewsToBlog, htmlSpecPagesPluginst),
+    ].concat(htmlRaschetPlugins, htmlTisPlugins, htmlArticlesPlugins, htmlNewsToBlog, htmlSpecPagesPluginst, htmlGalleryPagesPlugins, htmlMonoPhotoPlugins),
   }
 };
 
